@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime.CNC7AqOflz.chunk.js";function t(e){return!e.defaultPrevented&&(e.metaKey||e.ctrlKey)&&(e.key===`K`||e.key===`k`)}var n=e((()=>{}));export{t as n,n as t};

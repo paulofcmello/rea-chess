@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime.CNC7AqOflz.chunk.js";var t,n=e((()=>{t={guest:0,cheater:5,abuser:6,voluntarilyClosed:7,unspecifiedClosed:8,basic:10,silver:20,gold:30,platinum:40,diamond:50,moderator:80,staff:90}}));export{t as n,n as t};

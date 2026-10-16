@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime.CNC7AqOflz.chunk.js";function t(e){let t=!1,n;return function(...r){return t||(t=!0,n=e(...r)),n}}var n=e((()=>{}));function r(e){return(e||``).replace(`_`,`-`)}function i(e){return`${e[0].toUpperCase()}${e.slice(1)}`}function a(e){return`${e[0].toLowerCase()}${e.slice(1)}`}var o=e((()=>{}));export{a,o as i,t as n,r as o,i as r,n as t};

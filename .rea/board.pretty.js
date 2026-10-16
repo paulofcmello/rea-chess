@@ -1,0 +1,1797 @@
+try {
+  (function () {
+    var e =
+        typeof window < `u`
+          ? window
+          : typeof global < `u`
+            ? global
+            : typeof globalThis < `u`
+              ? globalThis
+              : typeof self < `u`
+                ? self
+                : {},
+      t = new e.Error().stack;
+    t &&
+      ((e._sentryDebugIds = e._sentryDebugIds || {}),
+      (e._sentryDebugIds[t] = `a788c481-65c2-49e3-931d-a8374202ef11`),
+      (e._sentryDebugIdIdentifier = `sentry-dbid-a788c481-65c2-49e3-931d-a8374202ef11`));
+  })();
+} catch {}
+(function () {
+  try {
+    var e =
+      typeof window < `u`
+        ? window
+        : typeof global < `u`
+          ? global
+          : typeof globalThis < `u`
+            ? globalThis
+            : typeof self < `u`
+              ? self
+              : {};
+    ((e._sentryModuleMetadata = e._sentryModuleMetadata || {}),
+      (e._sentryModuleMetadata[new e.Error().stack] = (function (e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = arguments[t];
+          if (n != null) for (var r in n) n.hasOwnProperty(r) && (e[r] = n[r]);
+        }
+        return e;
+      })({}, e._sentryModuleMetadata[new e.Error().stack], {
+        clientPackageName: `puzzles`,
+        clientPackageVersion: `2026.10.3`,
+      })));
+  } catch {}
+})();
+import { n as e, r as t } from "./rolldown-runtime.B-a1K2Sipg.chunk.js";
+import {
+  $d as n,
+  $f as r,
+  $p as i,
+  $u as a,
+  Ad as o,
+  Af as s,
+  Ap as c,
+  Bd as l,
+  Bm as u,
+  Bp as d,
+  Cm as f,
+  Dd as p,
+  Df as m,
+  Dm as h,
+  Ed as g,
+  Ef as _,
+  Em as v,
+  Fd as ee,
+  Fp as y,
+  Fu as b,
+  Gd as x,
+  Gf as S,
+  Gp as C,
+  Hd as w,
+  Hf as T,
+  Hm as E,
+  Hp as te,
+  Hu as ne,
+  Ip as re,
+  Jf as D,
+  Jm as ie,
+  Jp as ae,
+  Kd as O,
+  Kf as oe,
+  Kp as se,
+  Lp as ce,
+  Mf as k,
+  Mp as A,
+  Nd as le,
+  Nf as j,
+  Np as M,
+  Om as ue,
+  Pd as de,
+  Pp as N,
+  Pu as fe,
+  Qd as pe,
+  Qp as me,
+  Qu as he,
+  Rd as ge,
+  Rf as _e,
+  Rp as ve,
+  Sm as ye,
+  Tm as be,
+  Uf as P,
+  Um as F,
+  Up as I,
+  Uu as xe,
+  Vd as L,
+  Vm as Se,
+  Vp as R,
+  Wf as z,
+  Wp as B,
+  Xf as Ce,
+  Yf as V,
+  Zm as we,
+  Zp as Te,
+  _f as Ee,
+  _m as De,
+  _p as Oe,
+  ad as ke,
+  af as Ae,
+  bd as je,
+  bf as Me,
+  bm as Ne,
+  cf as Pe,
+  ch as Fe,
+  df as Ie,
+  dp as Le,
+  ef as Re,
+  em as ze,
+  ep as H,
+  ff as Be,
+  fp as Ve,
+  gd as U,
+  gm as He,
+  gp as Ue,
+  hd as W,
+  hf as We,
+  hm as Ge,
+  id as Ke,
+  if as qe,
+  jf as G,
+  jp as K,
+  km as Je,
+  lf as Ye,
+  lh as q,
+  mf as Xe,
+  mm as Ze,
+  nd as Qe,
+  nf as $e,
+  nm as J,
+  od as et,
+  of as tt,
+  pf as nt,
+  qd as Y,
+  qf as X,
+  qp as rt,
+  rd as it,
+  rf as at,
+  sf as ot,
+  sh as st,
+  tf as Z,
+  tm as ct,
+  uf as lt,
+  uh as ut,
+  vf as dt,
+  vm as ft,
+  vp as pt,
+  wm as Q,
+  xd as mt,
+  xf as ht,
+  xm as gt,
+  yd as _t,
+  yf as vt,
+  ym as yt,
+  yp as bt,
+  zd as xt,
+  zf as St,
+  zp as Ct,
+} from "./shared.eager.CZJHaxB19i.chunk.js";
+import {
+  i as wt,
+  n as Tt,
+  r as $,
+  t as Et,
+} from "./shared.6a60d0d3.BeXa4FZzWB.chunk.js";
+import { n as Dt, t as Ot } from "./shared.525adf09.MTX5un5VSS.chunk.js";
+var kt,
+  At = e(() => {
+    kt = `element-pool`;
+  });
+function jt(e) {
+  let t = Math.max(e.x, -50);
+  t = Math.min(t, 750);
+  let n = Math.max(e.y, -50);
+  return ((n = Math.min(n, 750)), { x: t, y: n });
+}
+var Mt = e(() => {});
+function Nt(e, t) {
+  return e.map(([e, n]) => `${t.x + e} ${t.y + n}`).join(`, `);
+}
+var Pt = e(() => {});
+function Ft(e, t, n) {
+  return !e || e === `none`
+    ? t
+    : n.test(e)
+      ? e.replace(n, t)
+      : `${e} ${t}`.trim();
+}
+var It = e(() => {});
+function Lt({ board: e }) {
+  let { classList: t } = e.el;
+  return { addAnalysisOverlay: n, removeAnalysisOverlay: r };
+  function n() {
+    t.add(`analysis-overlay`);
+  }
+  function r() {
+    t.remove(`analysis-overlay`);
+  }
+}
+var Rt = e(() => {});
+function zt({ from: e, to: t, animationProgress: n = 1 }) {
+  let r = Pe({ from: e, to: t });
+  return Nt(nt({ squareSize: Vt, length: r, animationProgress: n }), e);
+}
+function Bt({ from: e, to: t }) {
+  let n = Pe({ from: e, to: t });
+  return Xe({ squareSize: Vt, length: n });
+}
+var Vt,
+  Ht = e(() => {
+    (Ye(), We(), Pt(), (Vt = 12.5));
+  });
+function Ut({ polygon: e, durationMs: t, buildPoints: n, onComplete: r }) {
+  let i = parseFloat(e.style.opacity || `1`),
+    a = performance.now(),
+    o = (s) => {
+      let c = Math.min((s - a) / t, 1),
+        l = E(c);
+      (e.setAttribute(`points`, n(l)),
+        (e.style.opacity = String(i * l)),
+        c < 1 ? requestAnimationFrame(o) : r && r());
+    };
+  requestAnimationFrame(o);
+}
+var Wt = e(() => {
+  F();
+});
+function Gt({ from: e, to: t, polygon: n, animated: r = !1, key: i }) {
+  let a = tt({ from: e, to: t });
+  if ((n.setAttribute(`transform`, `rotate(${a} ${e.x} ${e.y})`), !r))
+    return (n.setAttribute(`points`, zt({ from: e, to: t })), n);
+  let o = Bt({ from: e, to: t });
+  return (
+    Ut({
+      polygon: n,
+      durationMs: $.AnimatedArrowGrowDuration,
+      buildPoints: (n) => zt({ from: e, to: t, animationProgress: n }),
+      onComplete: () => {
+        Je.register(i, (r) => {
+          let i = o + r * (1 - o);
+          n.setAttribute(
+            `points`,
+            zt({ from: e, to: t, animationProgress: i }),
+          );
+        });
+      },
+    }),
+    n
+  );
+}
+var Kt = e(() => {
+  (ot(), Ht(), wt(), ue(), Wt());
+});
+function qt({ from: e, animationProgress: t = 1 }) {
+  return Nt(lt({ squareSize: Yt, animationProgress: t }), e);
+}
+function Jt() {
+  return Ie({ squareSize: Yt });
+}
+var Yt,
+  Xt = e(() => {
+    (Be(), Pt(), (Yt = 12.5));
+  });
+function Zt(e) {
+  let { from: t, to: n, polygon: r, slope: i, animated: a, key: o } = e,
+    s = `rotate(${$e({ from: t, slope: i, to: n })} ${t.x} ${t.y})`;
+  if (
+    (Ee.includes(i) && (s += ` scale(-1, 1) translate(-${2 * t.x}, 0)`),
+    r.setAttribute(`transform`, s),
+    !a)
+  )
+    return (r.setAttribute(`points`, qt({ from: t })), r);
+  let c = Jt();
+  return (
+    Ut({
+      polygon: r,
+      durationMs: $.AnimatedArrowGrowDuration,
+      buildPoints: (e) => qt({ from: t, animationProgress: e }),
+      onComplete: () => {
+        Je.register(o, (e) => {
+          let n = c + e * (1 - c);
+          r.setAttribute(`points`, qt({ from: t, animationProgress: n }));
+        });
+      },
+    }),
+    r
+  );
+}
+var Qt = e(() => {
+  (dt(), at(), wt(), ue(), Wt(), Xt());
+});
+function $t(e, t) {
+  let { from: n, to: r } = e.data,
+    i = Z[n],
+    a = Z[r];
+  if (!i || !a) return;
+  let o = document.createElementNS(`http://www.w3.org/2000/svg`, `g`);
+  (o.setAttribute(`id`, `arrow-${n}${r}`),
+    o.setAttribute(`data-arrow`, `${n}${r}`),
+    o.setAttribute(`class`, `arrow pointer-finger-container`));
+  let s = document.createElementNS(`http://www.w3.org/2000/svg`, `svg`);
+  (s.setAttribute(`width`, `12.5`),
+    s.setAttribute(`height`, `12.5`),
+    s.setAttribute(`viewBox`, `0 0 47 47`),
+    s.setAttribute(`class`, `pointer-finger`),
+    (s.innerHTML = Tt.replace(/<svg[^>]*>/, ``)
+      .replace(`</svg>`, ``)
+      .trim()));
+  let c = Math.abs(a.x - i.x) / 12.5,
+    l = Math.abs(a.y - i.y) / 12.5,
+    u =
+      Math.sqrt(c * c + l * l) * $.PointerFingerAnimation.MovePerSquareDuration,
+    d = $.PointerFingerAnimation.FadeInDuration,
+    f = $.PointerFingerAnimation.FadeOutDuration,
+    p = $.PointerFingerAnimation.FadeOutDelay + d + u;
+  (o.style.setProperty(`--from-x`, `${i.x}px`),
+    o.style.setProperty(`--from-y`, `${i.y}px`),
+    o.style.setProperty(`--to-x`, `${a.x}px`),
+    o.style.setProperty(`--to-y`, `${a.y}px`),
+    o.style.setProperty(`--offset-x`, `5.053191489361702px`),
+    o.style.setProperty(`--offset-y`, `1.8617021276595747px`));
+  let m = `finger-fade-in ${d}ms ease-out forwards,finger-move ${u}ms ease-in-out ${d}ms forwards,finger-fade-out ${f}ms ease-out ${p}ms forwards`;
+  return ((o.style.animation = m), h(o), o.appendChild(s), o);
+  function h(e) {
+    [`animationend`, `animationcancel`].forEach((t) => {
+      e.addEventListener(t, (t) => {
+        t.animationName === `finger-fade-out` &&
+          ((e.style.animation = ``),
+          setTimeout(() => {
+            e.style.animation = m;
+          }, $.PointerFingerAnimation.LoopDelay));
+      });
+    });
+  }
+}
+var en = e(() => {
+  (Re(), wt(), Et());
+});
+function tn(e, t) {
+  if (!e.key) return;
+  let {
+    color: n,
+    from: r,
+    opacity: i,
+    to: a,
+    animated: o,
+    pointerFinger: s,
+  } = e.data;
+  if (s) return $t(e);
+  let c = document.createElementNS(`http://www.w3.org/2000/svg`, `polygon`);
+  (c.setAttribute(`id`, `arrow-${r}${a}`),
+    c.setAttribute(`data-arrow`, `${r}${a}`),
+    c.setAttribute(`class`, `arrow`),
+    o && c.setAttribute(`data-animated`, `true`));
+  let { arrowColors: l } = t.options;
+  ((c.style.fill = pe(n, l)), i && (c.style.opacity = String(i)));
+  let u = Z[r],
+    d = Z[a];
+  if (!u || !d) return;
+  let f = Pe({ from: u, to: d }),
+    p = qe({ from: u, to: d });
+  return vt.includes(p) && f === 27.95084971874737
+    ? Zt({ from: u, polygon: c, slope: p, to: d, animated: o, key: e.key })
+    : Gt({ from: u, polygon: c, to: d, animated: o, key: e.key });
+}
+var nn = e(() => {
+  (Ye(), Ae(), Re(), dt(), Kt(), Qt(), n(), en());
+});
+function rn({ board: e }) {
+  let t = document.createElementNS(`http://www.w3.org/2000/svg`, `svg`);
+  (t.setAttribute(`viewBox`, `0 0 100 100`),
+    t.classList.add(`arrows`),
+    e.addToDom({ el: t, type: I.Arrows }));
+  let n = new Map();
+  return { addArrows: r, removeArrows: i };
+  function r(e, r) {
+    e.forEach((e) => {
+      let i = tn(e, r);
+      i && (t.appendChild(i), n.set(e.key, i));
+    });
+  }
+  function i(e) {
+    e.forEach((e) => {
+      let { key: r } = e,
+        i = n.get(r);
+      i && (t.removeChild(i), n.delete(r));
+    });
+  }
+}
+var an = e(() => {
+  (B(), nn());
+});
+function on({
+  boardStyles: e,
+  isHydrating: t = !1,
+  options: n,
+  pieceStyles: r,
+}) {
+  let i = o();
+  return (
+    (t && i !== null && i.innerHTML.length > 0) || l(n),
+    {
+      destroy: a,
+      getStyleEl: o,
+      getPieceStyles: () => r,
+      getBoardStyles: () => e,
+      updateStyles: l,
+    }
+  );
+  function a() {
+    let e = document.getElementById(s());
+    !e || !e.parentNode || e.parentNode.removeChild(e);
+  }
+  function o() {
+    return document.getElementById(s());
+  }
+  function s() {
+    return Ge({ id: n.id, useSharedStyleTag: n.useSharedStyleTag });
+  }
+  function c(t, n = !1) {
+    let i = fe({ options: t, boardStyles: e, pieceStyles: r, fallback: n }),
+      a = `#${Ze(t.id)}`;
+    return (
+      i +
+      `${a}, ${a} .piece {
+      ${sn}
+    }`
+    );
+  }
+  function l(e, t = !1) {
+    let n = s(),
+      r = o();
+    if (!r) {
+      ((r = document.createElement(`style`)),
+        (r.type = `text/css`),
+        (r.id = n));
+      let e = document.head;
+      e && e.appendChild(r);
+    }
+    let i = c(e, t);
+    r.innerHTML !== i &&
+      ((r.innerHTML = i),
+      setTimeout(() => {
+        r && (r.innerHTML = r.innerHTML.replace(sn, ``));
+      }, 350));
+  }
+}
+var sn,
+  cn = e(() => {
+    (b(), He(), (sn = `transition: background-image 300ms linear;`));
+  });
+function ln({
+  boardStyles: e,
+  el: t,
+  isHydrating: n,
+  options: r,
+  pieceStyles: i,
+}) {
+  let a = on({ boardStyles: e, isHydrating: n, options: r, pieceStyles: i });
+  return {
+    destroy: o,
+    updateBoardImage: s,
+    updatePieceBaseImage: c,
+    togglePseudo3d: l,
+    getPieceStyles: a.getPieceStyles,
+    getBoardStyles: a.getBoardStyles,
+  };
+  function o() {
+    a.destroy();
+  }
+  function s(e, t = !1) {
+    a.updateStyles(J(e.options), t);
+  }
+  function c(e, t = !1) {
+    (l(e.options), a.updateStyles(J(e.options), t));
+  }
+  function l(e) {
+    let n = Ve(e, i);
+    t.classList.toggle(ft.Pseudo3d, n);
+  }
+}
+var un = e(() => {
+  (cn(), Ne(), ct(), Le());
+});
+function dn({ el: e, options: t, testElement: n = c.Board, isHydrating: r }) {
+  var i;
+  let a = je(t.animationType),
+    o = r ? pn(e, a) : fn(e, a),
+    s = de();
+  (i = s.resolve) == null || i.call(s, !0);
+  let l = P(t.animationType);
+  return (
+    e.style.setProperty(te.MoveAnimationDuration, `${l}ms`),
+    t.test && M(e, { [K.Element]: n }),
+    {
+      addToDom: u,
+      animationComplete: g,
+      el: e,
+      flipBoard: d,
+      setBoardEnabled: m,
+      isAnimating: h,
+      isFlipped: _,
+      placeholders: o,
+      setAnimatingStatus: v,
+      reset: f,
+    }
+  );
+  function u({ type: t, el: n, insertAfter: r = !1 }) {
+    r ? e.insertBefore(n, o[t].nextSibling) : e.insertBefore(n, o[t]);
+  }
+  function d(t, n) {
+    if ((e.classList.toggle(ft.Flipped, t), n?.options.allowMarkings)) {
+      let e = n.api.markings.getAllWhere({ types: [ie] });
+      e.length > 0 && p(e, n.renderer);
+    }
+  }
+  function f() {
+    ((e.innerHTML = ``), e.classList.remove(ft.Flipped));
+  }
+  function p(t, n) {
+    t.forEach((t) => {
+      let {
+          data: { square: r },
+          key: i,
+        } = t,
+        a = n?.getEffectElements?.call(n).get(i);
+      a &&
+        (a.forEach((e) => {
+          (e.classList.contains(`tuck-right`) ||
+            e.classList.contains(`tuck-top`)) &&
+            (e.classList.remove(`tuck-right`), e.classList.remove(`tuck-top`));
+        }),
+        bt(r) &&
+          a.forEach((t) => {
+            Oe({
+              square: r,
+              isFlipped: e.classList.contains(`flipped`),
+              effectEl: t,
+            });
+          }));
+    });
+  }
+  function m() {}
+  function h() {
+    return !!e.dataset.testAnimating;
+  }
+  function g(e) {
+    return [De.All, De.Move].includes(e) ? s.promise : Promise.resolve(!0);
+  }
+  function _() {
+    return t.flipped;
+  }
+  function v(t) {
+    var n;
+    t
+      ? ((e.dataset.testAnimating = `true`), (s = de()))
+      : (delete e.dataset.testAnimating,
+        (n = s.resolve) == null || n.call(s, !0));
+  }
+}
+function fn(e, t) {
+  let n = Object.fromEntries(t.map((e) => [e, document.createComment(_t[e])]));
+  return (t.forEach((t) => e.appendChild(n[t])), n);
+}
+function pn(e, t) {
+  let n = new Map(t.map((e) => [_t[e], e])),
+    r = {};
+  e.childNodes.forEach(i);
+  for (let e of t)
+    if (!r[e])
+      throw Error(
+        `SSR hydration: missing comment placeholder ${_t[e]} on board element. Server and client are out of sync — verify renderBoardToString options match createGame options.`,
+      );
+  return r;
+  function i(e) {
+    if (e.nodeType !== Node.COMMENT_NODE) return;
+    let t = e.nodeValue;
+    if (t === null) return;
+    let i = n.get(t);
+    i !== void 0 && (r[i] = e);
+  }
+}
+var mn = e(() => {
+  (Ne(), B(), we(), A(), ee(), pt(), Ue(), z(), mt());
+});
+function hn({ board: e }) {
+  let t;
+  return { fadeSetup: a };
+  function n(n) {
+    ((t = document.createElement(`div`)),
+      t.classList.add(`fade-in-overlay`),
+      e.addToDom({ el: t, type: I.FadeSetup }),
+      t.addEventListener(`animationend`, r),
+      n.test && M(t, { [K.Element]: c.FadeInOverlay }));
+  }
+  function r() {
+    t && ((t.style.animationDuration = ``), t.classList.remove(`animate`));
+  }
+  function i() {
+    (t && t.remove(), (t = void 0));
+  }
+  function a({ options: e }) {
+    if (e.fadeSetup === 0) {
+      t && i();
+      return;
+    }
+    (t || n(e),
+      t &&
+        ((t.style.animationDuration = `${e.fadeSetup / 1e3}s`),
+        t.classList.add(`animate`)));
+  }
+}
+var gn = e(() => {
+  (B(), A());
+});
+function _n({ board: e, options: t }) {
+  let n = o(),
+    r;
+  return { hideHoverSquare: a, showHoverSquare: i };
+  function i(e) {
+    r !== e &&
+      ((n.style.visibility = ``),
+      t.test && M(n, { [K.Element]: c.HoverSquare }),
+      y({ el: n, square: e }),
+      (r = e));
+  }
+  function a() {
+    n && ((n.style.visibility = `hidden`), (r = void 0));
+  }
+  function o() {
+    let n = document.createElement(`div`),
+      r = document.createElementNS(`http://www.w3.org/2000/svg`, `svg`);
+    return (
+      r.setAttribute(`viewBox`, `0 0 100 100`),
+      (r.innerHTML = `<rect x="0" y="0" width="100" height="100" stroke="rgba(255, 255, 255, 0.65)" stroke-width="10" fill="none"/>`),
+      n.append(r),
+      n.classList.add(`hover-square`),
+      (n.style.visibility = `hidden`),
+      e.addToDom({ el: n, type: I.HoverSquare }),
+      t.test && M(n, { [K.Element]: c.HoverSquare }),
+      n
+    );
+  }
+}
+var vn = e(() => {
+  (B(), N(), A());
+});
+function yn(e) {
+  let t = {},
+    { board: n } = e,
+    r = () => e.options.animationType;
+  return { addCaptureHints: a, addMoveHints: i, removeHints: o };
+  function i(e) {
+    e.forEach((e) => {
+      t[e] || ((t[e] = s(e)), n.addToDom({ el: t[e], type: I.MoveHints }));
+    });
+  }
+  function a(e) {
+    e.forEach((e) => {
+      (t[e] && l(e),
+        (t[e] = s(e, { isPotentialCapture: !0 })),
+        n.addToDom({ el: t[e], type: I.CaptureHints }),
+        (t[e].style.borderWidth = `${t[e].clientWidth * 0.1}px`));
+    });
+  }
+  function o(e) {
+    e.forEach(l);
+  }
+  function s(e, t = {}) {
+    let n = document.createElement(`div`);
+    if (
+      (M(n, {
+        [K.Element]: t.isPotentialCapture ? c.PotentialCapture : c.Hint,
+      }),
+      n.classList.add(t.isPotentialCapture ? `capture-hint` : `hint`),
+      r() === f.Animation.Types.Dynamic)
+    ) {
+      n.classList.add(`dynamic`);
+      let e = document.createElement(`div`);
+      (e.classList.add(`circle`), n.appendChild(e));
+    }
+    return (y({ el: n, square: e }), n);
+  }
+  function l(e) {
+    if (!t[e]) return;
+    let n = t[e];
+    (delete t[e], r() === f.Animation.Types.Dynamic ? d(n) : u(n));
+  }
+  function u(e) {
+    var t;
+    (t = e.parentNode) == null || t.removeChild(e);
+  }
+  function d(e) {
+    let t = e.querySelector(`.circle`);
+    if (!t) return u(e);
+    M(e, { [K.Element]: void 0 });
+    let n = () => e.parentNode?.removeChild(e);
+    (e.classList.add(`removing`),
+      t.classList.add(`removing`),
+      t.addEventListener(`animationend`, n),
+      t.addEventListener(`animationcancel`, n));
+  }
+}
+var bn = e(() => {
+  (Q(), B(), A(), N());
+});
+function xn(e, t) {
+  return {
+    data: { color: t, interval: 500, opacity: 0.5, square: e, times: 3 },
+    key: e,
+    type: st,
+  };
+}
+var Sn = e(() => {
+  Fe();
+});
+function Cn(e, t) {
+  if (!e) return { x: 0, y: 0 };
+  let n = d(e),
+    r = t.flipped;
+  return { x: r ? 8 - n.file : n.file - 1, y: r ? n.rank - 1 : 8 - n.rank };
+}
+var wn = e(() => {
+  R();
+});
+function Tn(e, t) {
+  let { el: n, from: r, to: i } = e;
+  if (!r || !i) return;
+  let a = Cn(r, t),
+    o = Cn(i, t);
+  (n.style.setProperty(`--from-x`, `${a.x * 100}%`),
+    n.style.setProperty(`--from-y`, `${a.y * 100}%`),
+    n.style.setProperty(`--to-x`, `${o.x * 100}%`),
+    n.style.setProperty(`--to-y`, `${o.y * 100}%`),
+    n.classList.add(l.Classes.Moving));
+}
+function En(e) {
+  (e.classList.remove(l.Classes.Moving),
+    e.style.removeProperty(`--from-x`),
+    e.style.removeProperty(`--from-y`),
+    e.style.removeProperty(`--to-x`),
+    e.style.removeProperty(`--to-y`));
+}
+var Dn = e(() => {
+  (wn(), w());
+});
+function On(e, t) {
+  let n = e.el,
+    r = P(t.animationType);
+  (n.style.setProperty(`--fade-out-animation-delay`, `${r * 0.75}ms`),
+    n.style.setProperty(`--fade-out-animation-duration`, `${r * 0.25}ms`),
+    n.classList.add(l.Classes.FadeOut));
+}
+function kn(e) {
+  (e.classList.remove(l.Classes.FadeOut),
+    e.style.removeProperty(`--fade-out-animation-delay`),
+    e.style.removeProperty(`--fade-out-animation-duration`));
+}
+var An = e(() => {
+  (z(), w());
+});
+function jn(e) {
+  let t = [],
+    n = [],
+    r = 0,
+    i = (e) => {
+      let t = e.target,
+        r = n.findIndex(
+          (n) => n.el === t && ge[e.animationName] === n.type && Nn(t, n.id),
+        ),
+        i = n[r];
+      i && (Pn(i), n.splice(r, 1));
+    };
+  return (
+    e.el.addEventListener(`animationend`, i),
+    e.el.addEventListener(`animationcancel`, i),
+    { add: a, flush: s, run: o, destroy: c }
+  );
+  function a(e, r) {
+    let i = e.map((e) => {
+        let t = { ...e, id: l() };
+        return (n.push(t), t);
+      }),
+      a = requestAnimationFrame(() => {
+        i.forEach((e) => {
+          var t;
+          ((t = In[e.type]) == null || t.call(In, e, r),
+            (e.el.dataset[e.id] = `1`));
+        });
+      });
+    t.push(a);
+  }
+  function o() {}
+  function s() {
+    (t.forEach((e) => {
+      cancelAnimationFrame(e);
+    }),
+      (t.length = 0),
+      n.forEach((e) => {
+        Pn(e);
+      }),
+      (n.length = 0));
+  }
+  function c() {
+    (e.el.removeEventListener(`animationend`, i),
+      e.el.removeEventListener(`animationcancel`, i));
+  }
+  function l() {
+    return `animationId${r++}`;
+  }
+}
+function Mn(e, t) {
+  e instanceof HTMLElement && delete e.dataset[t];
+}
+function Nn(e, t) {
+  return e instanceof HTMLElement && e.dataset[t] === `1`;
+}
+function Pn(e) {
+  var t, n;
+  let r = xt[e.type];
+  ((t = Fn[r]) == null || t.call(Fn, e.el),
+    (n = e.callback) == null || n.call(e),
+    Mn(e.el, e.id));
+}
+var Fn,
+  In,
+  Ln = e(() => {
+    (D(),
+      w(),
+      Dn(),
+      An(),
+      (Fn = { [l.Animations.Move]: En, [l.Animations.FadeOut]: kn }),
+      (In = {
+        [X.Slide]: (e, t) => {
+          e.from && e.to && Tn(e, t);
+        },
+        [X.FadeOut]: (e, t) => {
+          On(e, t);
+        },
+      }));
+  });
+function Rn({
+  appendTo: e,
+  elementType: t = `div`,
+  insertBefore: n,
+  startingCount: r = 0,
+}) {
+  if (!e && !n)
+    throw new k({
+      code: s.BadData,
+      message: `When creating an element pool, you must provide an element to "appendTo" or "insertBefore".`,
+    });
+  let i = Array(r)
+    .fill(void 0)
+    .map(a)
+    .map(l);
+  return { destroy: o, get: c, put: u };
+  function a() {
+    var r;
+    let i = document.createElement(t);
+    return (
+      (i.className = kt),
+      e
+        ? e.appendChild(i)
+        : (r = n?.parentNode) == null || r.insertBefore(i, n),
+      i
+    );
+  }
+  function o() {
+    (i.forEach((e) => e.parentNode?.removeChild(e)), (i.length = 0));
+  }
+  function c() {
+    return d(i.pop() || a());
+  }
+  function l(e) {
+    for (let t in e.dataset) e.dataset[t] && (e.dataset[t] = ``);
+    return ((e.className = kt), (e.style.cssText = ``), e);
+  }
+  function u(e) {
+    return (l(e), i.push(e), e);
+  }
+  function d(e) {
+    return ((e.className = ``), e);
+  }
+}
+var zn = e(() => {
+  (j(), G(), At());
+});
+function Bn({ details: e, el: t, emitter: n, test: r }) {
+  let i,
+    a = { ...e };
+  return (
+    t.classList.add(`piece`),
+    n.emit(L.Created, { ...a }),
+    l(a.color, a.type),
+    f(a.square),
+    r && M(t, { [K.Element]: c.Piece }),
+    {
+      el: t,
+      getDetails: s,
+      setDetails: l,
+      setDraggingState: u,
+      setPositionByCoords: p,
+      setPositionBySquare: f,
+    }
+  );
+  function o(e, t) {
+    return `${O(e)}${t}`;
+  }
+  function s() {
+    return e;
+  }
+  function l(a, s) {
+    (i && t.classList.remove(i),
+      (i = o(a, s)),
+      t.classList.add(i),
+      (e.type = s),
+      (e.color = a),
+      n.emit(L.DetailsSet, { ...e, shortString: i }),
+      r &&
+        M(t, {
+          [K.Type]: s,
+          [K.Color]: O(a),
+          [K.ShortString]: a === V.ColorsAsNumbers.Black ? s : s.toUpperCase(),
+        }));
+  }
+  function u(i) {
+    if (i) {
+      (t.classList.add(`dragging`),
+        n.emit(L.DragStarted, { ...e }),
+        r && M(t, { [K.Dragging]: `true` }));
+      return;
+    }
+    (r && M(t, { [K.Dragging]: void 0 }),
+      t.classList.remove(`dragging`),
+      n.emit(L.DragEnded, { ...e }));
+  }
+  function f(i, a) {
+    if (r) {
+      let e = d(i);
+      if (!e) return;
+      e &&
+        !a &&
+        M(t, {
+          [K.File]: e.file.toString(),
+          [K.Rank]: e.rank.toString(),
+          [K.Square]: i,
+        });
+    }
+    (y({ el: t, square: i }), n.emit(L.PositionSetBySquare, { ...e }));
+  }
+  function p(e, n, r = 1) {
+    t.style.transform = `translate(${e.x}%, ${e.y}%) rotate(${n}deg) scale(${r})`;
+  }
+}
+var Vn = e(() => {
+  (Ce(), A(), Y(), R(), N(), w());
+});
+function Hn(e, t, n) {
+  let r = t.getBoundingClientRect().width / 8,
+    i = d(e);
+  return (
+    n && ((i.file = 9 - i.file), (i.rank = 9 - i.rank)),
+    { x: (i.file - 1) * r, y: (8 - i.rank) * r }
+  );
+}
+var Un = e(() => {
+  R();
+});
+function Wn(e, t, n) {
+  let { el: r, from: i, to: a } = e;
+  if (!i || !a) throw Error(`From and to are required`);
+  let o = P(n.animationType) * 1.5,
+    s = a[0].charCodeAt(0) - i[0].charCodeAt(0),
+    c = (Math.abs(s) - Jn) / (Yn - Jn),
+    l = Math.sign(s),
+    u = l === 0 ? 0 : l * Dt({ from: Kn, to: qn, alpha: c }),
+    d = { angle: 0 };
+  return {
+    target: d,
+    keyframes: {
+      0: { angle: 0 },
+      60: { angle: u },
+      80: { angle: u * -0.5 },
+      100: { angle: 0 },
+    },
+    duration: o,
+    onEnd: () => {
+      r.style.transform = ``;
+    },
+    onUpdate: () => {
+      let e = `rotate(${d.angle}deg)`;
+      r.style.transform = Ft(r.style.transform, e, Gn);
+    },
+    easing: Se,
+  };
+}
+var Gn,
+  Kn,
+  qn,
+  Jn,
+  Yn,
+  Xn = e(() => {
+    (F(),
+      Ot(),
+      z(),
+      It(),
+      (Gn = /rotate\(\s*[^)]+\)/),
+      (Kn = 5),
+      (qn = 20),
+      (Jn = 1),
+      (Yn = 7));
+  });
+function Zn(e, t, n) {
+  let { el: r, from: i, to: a } = e,
+    { flipped: o } = n;
+  if (!i || !a) throw Error(`From and to are required`);
+  let s = Hn(i, t, o),
+    c = Hn(a, t, o),
+    l = P(n.animationType),
+    d = { x: 0, y: 0 },
+    p = n.animationType === f.Animation.Types.Dynamic,
+    m = [
+      {
+        target: d,
+        keyframes: { 0: { x: s.x, y: s.y }, 100: { x: c.x, y: c.y } },
+        onEnd: () => {
+          p || (r.style.transform = ``);
+        },
+        duration: l,
+        onUpdate: () => {
+          let e = `translate(${d.x}px, ${d.y}px)`;
+          r.style.transform = Ft(r.style.transform, e, Qn);
+        },
+        easing: u,
+      },
+    ];
+  return (p && m.push(Wn(e, t, n)), m);
+}
+var Qn,
+  $n = e(() => {
+    (Q(), F(), Un(), z(), It(), Xn(), (Qn = /translate\(\s*[^)]+\)/));
+  });
+function er(e, t, n) {
+  let r = P(n.animationType),
+    i = r * 0.75,
+    a = r * 0.25;
+  return [
+    {
+      target: e.el.style,
+      keyframes: { 0: { opacity: 1 }, 100: { opacity: 0 } },
+      delay: i,
+      duration: a,
+      onEnd: () => {
+        var t;
+        (t = e.callback) == null || t.call(e);
+      },
+    },
+  ];
+}
+var tr = e(() => {
+  z();
+});
+function nr(e) {
+  let t = rt();
+  function n(n, r) {
+    n.flatMap((t) => rr(t, e.el, r)).forEach(t.play);
+  }
+  return {
+    add: n,
+    flush: () => {
+      t.endAll();
+    },
+    run: () => {},
+    destroy: () => {
+      t.endAll();
+    },
+  };
+}
+function rr(e, t, n) {
+  return { [X.Slide]: Zn, [X.FadeOut]: er }
+    [e.type](e, t, n)
+    .map((e) => ({ ...e, immediateFirstFrame: !0 }));
+}
+var ir = e(() => {
+  (ae(), D(), $n(), tr());
+});
+function ar({ board: e, emitter: t, isHydrating: n, options: r }) {
+  let i = n ? or(e.el) : new Map(),
+    a = Rn({ insertBefore: e.placeholders.pieces, startingCount: n ? 0 : 32 }),
+    o = r.pieceAnimationsEngine ?? f.PieceAnimationsEngine.JS,
+    c = sr[o](e),
+    u,
+    d = C(),
+    p = new Map();
+  return {
+    clearPieceTransform: h,
+    getAnimations: D,
+    create: v,
+    destroy: ee,
+    drainHydrationOrphans: b,
+    get: x,
+    getDraggingSquare: S,
+    hidePiece: g,
+    move: w,
+    remove: T,
+    revealAllPieces: _,
+    setDraggingState: E,
+    setPositionByCoords: te,
+    setPositionBySquare: ne,
+    suspendOverSquare: re,
+  };
+  function h(e) {
+    let t = x(e, !1);
+    t && (t.el.style.transform = ``);
+  }
+  function g(e) {
+    let t = x(e, !1);
+    if (!t) return m;
+    let { el: n } = t,
+      r = Symbol(`piece-hide`),
+      i = p.get(n) ?? new Set();
+    return (
+      i.add(r),
+      p.set(n, i),
+      n.classList.add(l.Classes.Hidden),
+      function () {
+        let e = p.get(n);
+        e?.delete(r) &&
+          (e.size > 0 || (p.delete(n), n.classList.remove(l.Classes.Hidden)));
+      }
+    );
+  }
+  function _() {
+    (p.forEach((e, t) => {
+      t.classList.remove(l.Classes.Hidden);
+    }),
+      p.clear());
+  }
+  function v(e) {
+    let n = e.square,
+      i = Bn({ details: e, el: y(e, n) ?? a.get(), emitter: t, test: r.test });
+    return (
+      p.delete(i.el),
+      i.el.classList.remove(l.Classes.Hidden),
+      d.set(n, i),
+      t.emit(L.PieceShown, { ...d.get(n) }),
+      i
+    );
+  }
+  function ee() {
+    (a.destroy(), ie());
+  }
+  function y({ color: e, type: t }, n) {
+    let r = i.get(n);
+    if (r?.classList.contains(`${O(e)}${t}`)) return (i.delete(n), r);
+  }
+  function b() {
+    i.size !== 0 &&
+      (console.warn(
+        `chessboard SSR hydration: ${i.size} server-rendered piece(s) had no match in the client state and were reclaimed. Likely cause: server and client passed different init/FEN to renderBoardToString and createGame.`,
+      ),
+      i.forEach((e) => {
+        a.put(e);
+      }),
+      i.clear());
+  }
+  function x(e, t = !0) {
+    if (!e) return d;
+    if (!d.isDefined(e) && t)
+      throw new k({
+        code: s.ElementNotFound,
+        data: { square: e, pieces: d.getCollection() },
+        message: `Piece does not exist on [${e}].`,
+      });
+    return d.isDefined(e) ? d.get(e) : void 0;
+  }
+  function S() {
+    return u;
+  }
+  function w(e, t) {
+    let n = Array.isArray(e) ? e : [e],
+      r = n.filter(Boolean).map((e) => H(e)),
+      i = n.filter(Boolean).map((e) => x(e.from)),
+      a = [];
+    (n.forEach((e, t) => {
+      if (!e)
+        throw new k({
+          code: s.ElementNotFound,
+          message: `Move object does not exist.`,
+        });
+      let n = H(e);
+      n &&
+        (i[t].setPositionBySquare(n),
+        e.animate &&
+          a.push({ el: i[t].el, from: e.from, to: n, type: X.Slide }),
+        d.set(n, i[t]),
+        r.includes(e.from) || d.deleteItem(e.from),
+        e.promotion && d.get(n).setDetails(e.color, e.promotion));
+    }),
+      a.length && D().add(a, t));
+  }
+  function T({ animate: e, options: n, squares: r }) {
+    let i = [];
+    (r.forEach((n) => {
+      if (!d.isDefined(n)) return;
+      let r = x(n).el;
+      (e ? i.push({ callback: o, el: x(n).el, type: X.FadeOut }) : o(),
+        d.deleteItem(n));
+      function o() {
+        if (!r)
+          throw new k({
+            code: s.ElementNotFound,
+            data: { square: n },
+            message: `Piece does not exist. Cannot remove.`,
+          });
+        (a.put(r), t.emit(L.PieceHidden, n));
+      }
+    }),
+      i.length && D().add(i, n),
+      u && !d.isDefined(u) && (u = void 0));
+  }
+  function E(e, t) {
+    if (t && e === u) return;
+    let n = x(e, !1);
+    if (!n) {
+      !t && e === u && (u = void 0);
+      return;
+    }
+    (n.setDraggingState(t), (u = t ? e : void 0));
+  }
+  function te(e, t, n = 0, r = 1) {
+    let i = x(e, !1),
+      a = S();
+    (a && a !== e && E(a, !1), i && i.setPositionByCoords(t, n, r));
+  }
+  function ne(e, t) {
+    let n = x(e);
+    (t !== e && (d.set(t, d.get(e)), d.deleteItem(e)),
+      n.setPositionBySquare(t));
+  }
+  function re(e, t) {
+    x(e).setPositionBySquare(t, !0);
+  }
+  function D() {
+    let t = r.pieceAnimationsEngine ?? f.PieceAnimationsEngine.JS;
+    return c && o === t ? c : (ie(), (c = sr[t](e)), (o = t), c);
+  }
+  function ie() {
+    c &&= (c.flush(), c.destroy(), void 0);
+  }
+}
+function or(e) {
+  let t = new Map();
+  return (e.querySelectorAll(`.piece[class*="${re}"]`).forEach(n), t);
+  function n(e) {
+    let n = Array.from(e.classList)
+      .map(ce)
+      .find((e) => e !== void 0);
+    n && t.set(n, e);
+  }
+}
+var sr,
+  cr = e(() => {
+    (D(),
+      Q(),
+      j(),
+      z(),
+      Ln(),
+      zn(),
+      Vn(),
+      se(),
+      G(),
+      w(),
+      r(),
+      _(),
+      Y(),
+      ir(),
+      ve(),
+      (sr = {
+        [f.PieceAnimationsEngine.JS]: T,
+        [f.PieceAnimationsEngine.CSS]: jn,
+        [f.PieceAnimationsEngine.Animator]: nr,
+      }));
+  });
+function lr({ board: e, emitter: t, isHydrating: n, options: r }) {
+  let i = ar({ board: e, emitter: t, isHydrating: n, options: r });
+  return {
+    clearPieceTransform: i.clearPieceTransform,
+    destroy: i.destroy,
+    dragPiece: a,
+    dropPiece: o,
+    hidePiece: i.hidePiece,
+    illegalMove: s,
+    loadPieces: l,
+    makeMove: c,
+    removePiece: u,
+    revealAllPieces: i.revealAllPieces,
+    undoMove: d,
+    flushAnimations: () => i.getAnimations().flush(),
+    setPiecePosition: i.setPositionByCoords,
+  };
+  function a(e) {
+    e &&
+      (e.toSquare
+        ? i.suspendOverSquare(e.square, e.toSquare)
+        : e.coords &&
+          i.setPositionByCoords(
+            e.square,
+            e.coords,
+            e.rotation ?? 0,
+            e.scale ?? 1,
+          ),
+      i.setDraggingState(e.square, !0));
+  }
+  function o() {
+    let e = i.getDraggingSquare();
+    e && (i.setPositionBySquare(e, e), i.setDraggingState(e, !1));
+  }
+  function s(e, t) {
+    if (e && t.options.animationType !== f.Animation.Types.Dynamic) {
+      let { renderer: n } = t;
+      n?.blinkHighlights([xn(e, r.checkBlinkingSquareColor)], t);
+    }
+  }
+  function c(e, t) {
+    if ((i.getAnimations().flush(), e.drop)) {
+      i.create({ color: e.color, square: H(e), type: e.piece });
+      return;
+    }
+    e.EPCapturedSquare
+      ? i.remove({
+          animate: e.animate,
+          options: t.options,
+          squares: [e.EPCapturedSquare],
+        })
+      : i.get(e.to, !1) &&
+        !St(e) &&
+        i.remove({ animate: e.animate, options: t.options, squares: [e.to] });
+    let n = [e, e.rookMove].filter(Boolean);
+    (i.move(n, t.options), i.getAnimations().run());
+  }
+  function l(e, t) {
+    let n = e.pieces,
+      r = e.reloadAll;
+    i.getAnimations().flush();
+    let a = n.keys(),
+      o = i
+        .get()
+        .keys()
+        .filter((e) => !a.includes(e));
+    if (r) {
+      let e = Array.from(`abcdefgh`, (e) =>
+        Array.from(`12345678`, (t) => e + t),
+      ).flat();
+      i.remove({ options: t.options, squares: e });
+    } else i.remove({ options: t.options, squares: o });
+    (n.keys().forEach((e) => {
+      let t = n.get(e),
+        a = i.get(e, !1);
+      if (r || !a) {
+        i.create(t);
+        return;
+      }
+      let { type: o, color: s } = a.getDetails();
+      (o !== t.type || s !== t.color) && a.setDetails(t.color, t.type);
+    }),
+      i.drainHydrationOrphans(),
+      i.getAnimations().run());
+  }
+  function u(e, t) {
+    i.remove({ options: t.options, squares: [e] });
+  }
+  function d(e, t) {
+    if ((i.getAnimations().flush(), e.drop)) {
+      u(e.to, t);
+      return;
+    }
+    let { movedPieces: n, restoredPiece: r, promotedSquare: a } = Me(e);
+    if ((i.move(n, t.options), r && i.create(r), a)) {
+      let e = i.get(a),
+        { color: t } = e.getDetails();
+      e.setDetails(t, V.Piece.Types.Pawn);
+    }
+    i.getAnimations().run();
+  }
+}
+var ur = e(() => {
+  (Q(), Ce(), Sn(), cr(), _e(), ht(), r());
+});
+function dr({ board: e, options: t }) {
+  let n,
+    r,
+    a = !1,
+    l = !1,
+    u,
+    d = `promotion-window--visible`,
+    p = { b: void 0, n: void 0, q: void 0, r: void 0 };
+  return { closePromotionWindow: ee, openPromotionWindow: v };
+  function m() {
+    ((n = document.createElement(`div`)),
+      n.classList.add(`promotion-window`),
+      t.test && M(n, { [K.Element]: c.PromotionWindow }),
+      e.addToDom({ el: n, type: I.PromotionWindow }),
+      n.addEventListener(`transitionend`, T),
+      n.addEventListener(`animationend`, T),
+      n.addEventListener(`animationcancel`, T),
+      n.addEventListener(`transitionend`, x));
+  }
+  function h(e) {
+    ((r = document.createElement(`i`)),
+      (r.className = `close-button icon-font-chess x`),
+      t.test && M(r, { [K.Element]: c.PromotionCloseButton }),
+      n.appendChild(r),
+      r.addEventListener(o, (t) => {
+        if ((t.stopPropagation(), a)) {
+          t.preventDefault();
+          return;
+        }
+        e(i(q.BoardEvents.PromotionAreaClosePointerdown));
+      }));
+  }
+  function g(e) {
+    Object.keys(p).forEach((r) => {
+      let a = document.createElement(`div`);
+      (a.addEventListener(o, (t) => {
+        if ((t.stopPropagation(), et(t))) {
+          e(i(q.UserEvents.PointerdownRight));
+          return;
+        }
+        e(i(q.BoardEvents.PromotionPiecePointerdown, { piece: r }));
+      }),
+        a.classList.add(`promotion-piece`),
+        (p[r] = a),
+        t.test && M(p[r], { [K.Element]: c.PromotionPiece, [K.Type]: r }),
+        n.appendChild(a));
+    });
+  }
+  function _({ flipped: e, promotionMove: t }) {
+    let n;
+    return (
+      (n = e
+        ? t.color === V.ColorsAsNumbers.White
+          ? `bottom`
+          : `top`
+        : t.color === V.ColorsAsNumbers.White
+          ? `top`
+          : `bottom`),
+      {
+        color: t.color,
+        file: (e ? `hgfedcba` : `abcdefgh`).indexOf(t.to.slice(0, 1)) + 1,
+        position: n,
+      }
+    );
+  }
+  function v(e, i) {
+    let {
+        options: { flipped: a, animationType: o },
+        run: s,
+      } = i,
+      { color: c, file: u, position: d } = _({ flipped: a, promotionMove: e });
+    (n || m(),
+      r || h(s),
+      p.q || g(s),
+      l && b(),
+      o === f.Animation.Types.Dynamic
+        ? n.classList.add(`dynamic`)
+        : n.classList.remove(`dynamic`),
+      C(d),
+      w(u),
+      S(c),
+      t.test &&
+        M(n, { [K.Color]: O(c), [K.File]: u.toString(), [K.Position]: d }),
+      E());
+  }
+  function ee() {
+    if (!n)
+      throw new k({
+        code: s.ElementNotFound,
+        message: `Promotion window does not exist.`,
+      });
+    if (((a = !1), !n.classList.contains(`dynamic`))) {
+      (n.classList.remove(d), (n.style.display = `none`));
+      return;
+    }
+    y();
+  }
+  function y() {
+    ((l = !0),
+      n.style.setProperty(`--promotion-close-duration`, `200ms`),
+      n.classList.add(`closing`),
+      n.classList.remove(d),
+      clearTimeout(u),
+      (u = setTimeout(b, fr)));
+  }
+  function b() {
+    (clearTimeout(u),
+      (u = void 0),
+      (l = !1),
+      (n.style.display = `none`),
+      n.classList.remove(`closing`));
+  }
+  function x(e) {
+    !l || e.target !== p.q || e.propertyName !== `opacity` || b();
+  }
+  function S(e) {
+    Object.keys(p).forEach((n) => {
+      ((p[n].className = `promotion-piece ${O(e)}${n}`),
+        t.test && M(p[n], { [K.Color]: O(e) }));
+    });
+  }
+  function C(e) {
+    e === `top` ? n.classList.add(`top`) : n.classList.remove(`top`);
+  }
+  function w(e) {
+    n.style.transform = `translateX(${(e - 1) * 100}%`;
+  }
+  function T(e) {
+    !a ||
+      e.target !== n ||
+      (e.type === `transitionend` && e.propertyName !== `clip-path`) ||
+      (a = !1);
+  }
+  function E() {
+    ((n.style.display = ``),
+      n.classList.remove(d),
+      n.offsetHeight,
+      n.classList.contains(`dynamic`) && (a = !0),
+      n.classList.add(d));
+  }
+}
+var fr,
+  pr = e(() => {
+    (Ce(),
+      ut(),
+      A(),
+      B(),
+      le(),
+      ze(),
+      Y(),
+      ke(),
+      j(),
+      G(),
+      Q(),
+      x(),
+      (fr = 280));
+  });
+function mr({ board: e, options: t }) {
+  let n = Rn({ insertBefore: e.placeholders.squares, startingCount: 3 }),
+    r = C(),
+    i = t.test;
+  return { addHighlights: a, blinkHighlights: l, removeHighlights: u };
+  function a(e) {
+    e.forEach((e) => {
+      let { square: t } = e.data;
+      if (r.isDefined(t) || !e) return;
+      let n = d(t, e);
+      r.set(t, n);
+    });
+  }
+  function o({ el: e, interval: t, opacity: n, times: r }) {
+    let i = 0,
+      a = !0,
+      o = setInterval(() => {
+        if (((i += 1), i === r * 2)) {
+          if ((clearInterval(o), e)) {
+            let t = e.parentNode;
+            t && t.removeChild(e);
+          }
+          return;
+        }
+        a
+          ? ((e.style.opacity = `0`), (a = !1))
+          : ((e.style.opacity = n.toString()), (a = !0));
+      }, t / 2);
+  }
+  function l(t) {
+    t.forEach((t) => {
+      let { color: n, interval: r, opacity: a, square: s, times: l } = t.data,
+        u = d(s, t);
+      (e.addToDom({ el: u, type: I.BlinkingHighlights }),
+        i &&
+          M(u, {
+            [K.Element]: c.BlinkingHighlight,
+            [K.Square]: s,
+            [K.Color]: n,
+            [K.Interval]: r,
+            [K.Opacity]: a,
+            [K.Times]: l,
+            [K.Type]: K.Blinking,
+          }),
+        o({ el: u, interval: r, opacity: a, times: l }));
+    });
+  }
+  function u(e) {
+    e.forEach(f);
+  }
+  function d(e, t) {
+    let r = n.get();
+    return (
+      M(r, { [K.Element]: c.Highlight, [K.Type]: t.type }),
+      r.classList.add(`highlight`),
+      t.data.growingCircle ? m(r, t) : p(r, t),
+      y({ el: r, square: e }),
+      r
+    );
+  }
+  function f(e) {
+    let { square: t } = e.data;
+    if (!r.isDefined(t)) return;
+    let i = r.get(t);
+    (n.put(i), r.deleteItem(t));
+  }
+  function p(e, t) {
+    if (!e)
+      throw new k({
+        code: s.ElementNotFound,
+        data: { highlight: t },
+        message: `Highlight does not exist.`,
+      });
+    let {
+        data: { color: n, opacity: r },
+      } = t,
+      i = n || ``,
+      a = String(r);
+    (e.style.backgroundColor !== i && (e.style.backgroundColor = i),
+      e.style.opacity !== a && (e.style.opacity = a));
+  }
+  function m(e, t) {
+    let {
+      data: { color: n, opacity: r },
+    } = t;
+    (e.offsetHeight,
+      e.classList.add(`growing-circle`),
+      e.style.setProperty(`--background-color`, n),
+      e.style.setProperty(`--opacity`, r.toString()));
+  }
+}
+var hr = e(() => {
+  (se(), B(), A(), N(), j(), G(), zn());
+});
+function gr(e, t) {
+  let n = Math.max(e, 1);
+  n = Math.min(n, 8);
+  let r = Math.max(t, 1);
+  return ((r = Math.min(r, 8)), W({ file: n, rank: r }));
+}
+var _r = e(() => {
+  U();
+});
+function vr({ el: e, event: t, flipped: n }) {
+  let r = e.getBoundingClientRect(),
+    { x: i, y: a } = g(t),
+    o = r.width / 8,
+    s = { x: Math.round((i - r.left) % o), y: Math.round((a - r.top) % o) },
+    c = Math.ceil((i - r.left) / o),
+    l = Math.ceil((r.bottom - a) / o),
+    u = n ? 9 - c : c,
+    d = n ? 9 - l : l,
+    f = W({ file: u, rank: d }),
+    p = {
+      x: ((i - r.left - o / 2) / r.width) * 800,
+      y: ((a - r.top - o / 2) / r.height) * 800,
+    };
+  return {
+    coords: p,
+    coordsInsideBoard: jt(p),
+    coordsInsideSquare: s,
+    square: f,
+    squareInsideBoard: gr(u, d),
+  };
+}
+var yr = e(() => {
+  (U(), Mt(), _r(), p());
+});
+function br(e) {
+  let t = {};
+  return (
+    e.forEach((e) => {
+      let n = e.className.split(` `),
+        r = n.find(Ct),
+        i = n.find((e) => e.startsWith(`w`) || e.startsWith(`b`));
+      if (!r || !i) return;
+      let [a, o] = i,
+        s = W({
+          file: parseInt(r[r.length - 2], 10),
+          rank: parseInt(r[r.length - 1], 10),
+        });
+      s && (t[s] = { color: he(a), type: o });
+    }),
+    t
+  );
+}
+var xr = e(() => {
+    (U(), ve(), a());
+  }),
+  Sr = t({ createRenderer: () => Cr });
+function Cr({
+  el: e,
+  emitter: t = Te(),
+  options: n = gt(),
+  boardStyles: r = be,
+  pieceStyles: i = v,
+  testElement: a,
+}) {
+  let o = Ke(e),
+    s = dn({ el: e, options: n, testElement: a, isHydrating: o }),
+    c = { board: s, el: e, emitter: t, options: n, isHydrating: o },
+    l = ln({ ...c, boardStyles: r, pieceStyles: i, options: J(n) }),
+    u = lr(c);
+  (Qe(e), s.isFlipped() && s.flipBoard(!0), l.togglePseudo3d(n));
+  let d = {
+    ...Lt(c),
+    ...rn(c),
+    ...l,
+    ...ne(c),
+    ...hn(c),
+    ..._n(c),
+    ...yn(c),
+    ...mr(c),
+    ...dr(c),
+    ...u,
+    animationComplete: s.animationComplete,
+    areAssetsLoaded: () => !0,
+    createRenderer: Cr,
+    destroy: f,
+    ...t,
+    extendRenderer: p,
+    flipBoard: s.flipBoard,
+    setBoardEnabled: s.setBoardEnabled,
+    getCoordsFromSquare: S,
+    getPieces: m,
+    getPointerPosition: vr,
+    getRendererOptions: () => ({
+      boardStyles: r,
+      el: e,
+      options: n,
+      pieceStyles: i,
+      emitter: t,
+    }),
+    getBoardContainerAspectRatio: () => 1,
+    isAnimating: s.isAnimating,
+    name: yt.Types.Default,
+    resize: h,
+  };
+  return d;
+  function f() {
+    (l.destroy(), u.destroy(), s.reset());
+  }
+  function p(e) {
+    Object.assign(d, e(c));
+  }
+  function m() {
+    return br(Array.from(e.querySelectorAll(`.piece`)));
+  }
+  function h() {}
+}
+var wr = e(() => {
+  (Ne(),
+    ye(),
+    Rt(),
+    an(),
+    un(),
+    mn(),
+    xe(),
+    gn(),
+    vn(),
+    bn(),
+    ur(),
+    pr(),
+    hr(),
+    yr(),
+    oe(),
+    h(),
+    xr(),
+    me(),
+    ct(),
+    it());
+});
+export { wr as n, Sr as t };

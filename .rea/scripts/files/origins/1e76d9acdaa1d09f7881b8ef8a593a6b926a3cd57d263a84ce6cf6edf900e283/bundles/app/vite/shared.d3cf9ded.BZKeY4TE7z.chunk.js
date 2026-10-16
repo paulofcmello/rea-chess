@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime.CNC7AqOflz.chunk.js";var t,n=e((()=>{t=(e=0)=>new Promise(t=>{setTimeout(t,e)})}));export{t as n,n as t};

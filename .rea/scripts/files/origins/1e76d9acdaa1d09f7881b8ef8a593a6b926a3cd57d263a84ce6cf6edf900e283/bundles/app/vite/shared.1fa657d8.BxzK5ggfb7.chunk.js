@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime.CNC7AqOflz.chunk.js";function t(){return!!window.context?.user?.isGuest}var n=e((()=>{}));export{t as n,n as t};

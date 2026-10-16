@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime.CNC7AqOflz.chunk.js";import{n as t,t as n}from"./shared.e0678aaa.BzyiuUJtoG.chunk.js";async function r(e,t){(await n()).sendEvent(e,t)}var i=e((()=>{t()}));export{r as n,i as t};

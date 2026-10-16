@@ -1,0 +1,4306 @@
+{
+  "capture_path": "/Users/paulomello/REA Chess/.rea/puzzles-src.json",
+  "capture_sha256": "8fef94fce543ef285e19072b2df5d51387fbfdf9c6153133f41396c352f2c3f7",
+  "capture_kind": "page-inspection",
+  "source_evidence_id": "ev_d34fdce937804c27b8e767d80d8be093270ba24f78b014972dbd3e70c39b04f7",
+  "capture_completeness": {
+    "status": "policy_filtered",
+    "conditions": [
+      "attach_limited",
+      "policy_filtered"
+    ],
+    "policy_filtered_sections": [
+      "accessibility",
+      "console_text",
+      "dom",
+      "frames",
+      "json_body_shapes",
+      "metadata",
+      "resources",
+      "scripts",
+      "storage_keys",
+      "websocket_shapes",
+      "workers"
+    ],
+    "attach_limited_sections": [
+      "console_events",
+      "metadata",
+      "network_requests",
+      "websocket_connections",
+      "websocket_frames"
+    ],
+    "truncated_sections": [],
+    "unavailable_sections": [],
+    "excluded": [
+      {
+        "section": "accessibility",
+        "reason": "not_approved",
+        "count": 30
+      },
+      {
+        "section": "console_text",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "dom",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "frames",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "json_body_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "metadata",
+        "reason": "disallowed_origin",
+        "count": 23
+      },
+      {
+        "section": "metadata",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "resources",
+        "reason": "disallowed_origin",
+        "count": 28
+      },
+      {
+        "section": "scripts",
+        "reason": "disallowed_origin",
+        "count": 7
+      },
+      {
+        "section": "storage_keys",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "websocket_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "workers",
+        "reason": "unattributed_origin",
+        "count": 1
+      }
+    ],
+    "dropped_events": {
+      "scripts": 0,
+      "network_requests": 0,
+      "console_events": 0,
+      "websocket_connections": 0,
+      "websocket_frames": 0,
+      "webmcp_tools": 0,
+      "timeline_events": 0,
+      "total": 0
+    }
+  },
+  "output_directory": "/Users/paulomello/REA Chess/.rea/scripts",
+  "analysis_input": {
+    "input_path": "/Users/paulomello/REA Chess/.rea/scripts/files",
+    "format": "directory"
+  },
+  "scripts": [
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_00c16a0a4bae97a11c0ccd5e286cd831ef8ce0bfb48f286146c05767238b6c2b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-1-1025085b84a38bd4154d63f82f770669aea16d24e7345b43328e6c72e1b776f1.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "2ab3147fe884d77bf63188fa553a53435311bd1af98e265ad5c1f19b89ca9568",
+        "bytes": 851,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_012a6d14c8076b65bbb83725847443127c22cd7cdb37c031159b624fe552b95b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-bots-limit.a54d3fd8.BxfgUkM2Aj.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/monetization-bots-limit.a54d3fd8.BxfgUkM2Aj.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2550352fd0dfd20ebc9f32416f504d1a378d82d986cc3ef8f28cad5e66cc52b2",
+        "bytes": 1027,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_01580d4894e6d35c263b19c366547eeba239089b5efc20ef1d161eb4c007fa35",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.50341bd8.DR0SLo0qMp.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.50341bd8.DR0SLo0qMp.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2a6b0117cd02a6e6aff57370580534ba63ab619b6dfc6c2f2c4289267c31190d",
+        "bytes": 170,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_036a69502ca93f5466a922d8a538a41ef4c0f66f544d5c0b1a1bddeac67cd2bd",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-4-54f831ab0330cf631b94950182afd242596961614f5ec5065b2d63fcc030a3bb.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "a43df2edb90c00f6a5f21e808906106a664c3b84f7dc3f208ba34d4eda04c8bf",
+        "bytes": 11924,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_038bf4e8a386381463f91275c2200001a55451a8bd0d5b337ed0e2d45a50bff9",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.acb51e48.CbITZ3Xv8L.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.acb51e48.CbITZ3Xv8L.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "048a95874a5b40cdbb757090e575700cf34e91eace986472d2187e7c3b578399",
+        "bytes": 7533,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_03dae31365c59e7122bc39a32805f01a9773b5ee7d43ecfa1dc4e552cc52f268",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/add-chessboard-slam-animation.b44146bc.DiWVvzxomW.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/add-chessboard-slam-animation.b44146bc.DiWVvzxomW.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "854a781122d4e9f35daaa3589b4dd358ab7705f0287e8ded742efc0ddcca1f49",
+        "bytes": 2783,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_04352d66053f611848a1713a128603582be11249912f37e1836bf8ed04b1df74",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-7-39a1b7263dfcb6ad1997986e76e98ba361a13aba7d01176baab91445eebd9ab3.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "694468c292c29f16605d75ec44d8b9d0ab5ab12d3045208fb148fb68e11204d5",
+        "bytes": 485,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_049820f6f65ed67aec40d3095707a015b4b4abbcdd1daf04283752f8f6f6f79f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.1fa657d8.BxzK5ggfb7.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.1fa657d8.BxzK5ggfb7.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "328bfd36e6bfd72fcb8d74fac2b3fa4f6092f3c4b26b243b6069726b2f56c31e",
+        "bytes": 150,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_04eb4dbb29aabdbde20a7bc50119297d5680aebb88590962247c1205cfbd3f45",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/sentry.sGzKJdPHz-.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/sentry.sGzKJdPHz-.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "b01046ddc6f544f018c2e0a5b6196f4863b31c51c3f6010c7565b45f5623ebe5",
+        "bytes": 9041,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_076367a210b5f960f91d055c5ede236b55023d8e9b05295c9fba25d98a5c97c2",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.1ea1f6fd.DyGLMFYdpH.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.1ea1f6fd.DyGLMFYdpH.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4e569706dfe50a6e432986c6b6fb86b691a3c718b3d31acabaf7531d2a546ce1",
+        "bytes": 47662,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_07a392992080c48a684af6819f6c39873a4ba8afad61241fe2336e636198ba8f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/turnstile.D1iPmSIzhN.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/turnstile.D1iPmSIzhN.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d4a825181735f8b07cf617b87c41b78b344f602ac0286a7fa15660a9260be413",
+        "bytes": 79647,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_0b8ca5fd77861968166233cdc51bf9525e0364c033e7b32b07fdd70b16c1c552",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.8dc4b7b1.n9nBW7QPx5.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.8dc4b7b1.n9nBW7QPx5.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "021d7d7650b5bc3f635e94fca91b491df3135edbf13c4fd18e8d38190ebc64c6",
+        "bytes": 3602,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_0d09dd6d50ac5287723e05ac0a2f8fbe648111cae26f84e163b6f3aace314da2",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-13-7d2d3f2efa0c0a517723fd14ca6a55d4694b51be9db6c2fb91ad42b52688f744.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "115cb225210c22734dcf7ad7adad15bf5c44a41b924528b0ae01fee5dc898478",
+        "bytes": 787,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_12ef66d005cb02fa89f835b8cabc5f2d16443caef080b71a1c75ea8d796feb9f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.5c6737e6.GVqf8_RDVM.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.5c6737e6.GVqf8_RDVM.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "abaab72e56be1f1811aff15548945485596fb8677854ee8f34856a5e9efc4a2c",
+        "bytes": 2091,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_13a539969a1f7fe5e4519408e91ea9a1d52ae0ecc155cd323e90132826ff6479",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.e0cae063.ROl0TllyEB.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.e0cae063.ROl0TllyEB.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "50d597b0f814372240604b6c0d50b5700286935d38d9622b02d77ff3ac1ba077",
+        "bytes": 101,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_17d1c005fd1de482f4371cc2abbdf899eb73c74aa26ec9f854d04c67a82f9b61",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.9ae2fa18.kHJ1jXmlfw.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.9ae2fa18.kHJ1jXmlfw.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "8bf62ce21064a12ee35f5a8596d3b7cf6242fbaf5b815981b1103cf25d541030",
+        "bytes": 14128,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_18c2aec0d6e05e378027d44213f5cff01893b0fddde3b6275fbb73c0c1177859",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.1adb7ccd.ClKvYyiY0l.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.1adb7ccd.ClKvYyiY0l.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "953f8343f08cdff92c44724e59b7b48cfe0a44d70a7789438281beba64909526",
+        "bytes": 22464,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_18f73bbea32b5786ef33789f7a256e9cedab707eb8799a28a5b062d20fb04a15",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.3c217321.rZNU_OYhvl.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.3c217321.rZNU_OYhvl.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2ddd36b28ab11df26f0f3bad5095bd5a39098615af747e39ae952aa1fbe51754",
+        "bytes": 153,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_1938be2852486d0acd8f516dfcc339332c6b92e7efea439a5f4f963ff3b40471",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.69aa68ae.DrBL-1J1yN.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.69aa68ae.DrBL-1J1yN.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "14fa17bcc08dfed5d6e52b6efc55d6c047b03f467562df7a99a7f4557765c0d0",
+        "bytes": 8673,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_1d7dc8a7368944ab90f6d680dcf16da6bb2bbe611cd2d7e900df05cf9d677582",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.a78e6ac1.BOxxvRfX8H.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.a78e6ac1.BOxxvRfX8H.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7a04bdca11bc325838fad85944a78a4ca2aaee85fa86cb35ca8d8b9c5ecec8ed",
+        "bytes": 858,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_1dfa10bbc9d34f14bf5fb8923da4fc541f24f33a9db691d884ccc65fe41c5211",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-21-2e0a79b59dbe2900a71a49a04cbdabdf92ca755277fb4c3c98116817d8257e67.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "2e5405847d882614b0d8a0c0797eceebd5527c3bc7c38053d2b43a896d98e29a",
+        "bytes": 185,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_1e409f405dd831e79a28633614b844d5316d0e6c9dc6da7337d100cd51452f5a",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.7583d66c.DsDWPWfC7F.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.7583d66c.DsDWPWfC7F.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "cfd2a27f4735e709de5c186e1d348566529b1cb8c0d4ee058a99622e5113fbd0",
+        "bytes": 2704,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2058dd6e6f69a5b076e09382589a4f63a8d0981507ead4986f2aa0c7c59ae23e",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-daily-puzzle-limit.9c1716e2.BM3-lCsth3.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/monetization-daily-puzzle-limit.9c1716e2.BM3-lCsth3.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2b8370991767f679b951eb354effb2f94640325d3854d754233ee74778a2734e",
+        "bytes": 1035,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2262389e4e295c3a64d51967f07831b4cfeae24251a479229ea5cf9b26b48ff5",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-24-984e71946f4b848a8d95814ed12386292d2e536b26ee671deff3cab1a5c60df4.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "a7b2138ae18a3787bbe6a2e72b1f1472254ee101bc8253ce4e5e2eb6fdd1dce5",
+        "bytes": 198,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2324732ab2bf6592b7c777f704500231c90ea93f1a35f35ef32ce5961dfdb49f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.85bcebe7.XbfYXDg3_j.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.85bcebe7.XbfYXDg3_j.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "5647fd77e201a732a872fd62f4026deefd2cfe7c1848904acf90afcf156db8c1",
+        "bytes": 2124,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_24447f1127ed3eb8e98b11824a823f38bdb15bfd0bbe06a06b011e30917824e8",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.2c5787a1.ArR0TDErgH.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.2c5787a1.ArR0TDErgH.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "00b38cbcc3df8a27da93dcfbd1fc9eb83857efda34adeca9d73833f7b4343600",
+        "bytes": 191,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2515832445cc83c82f5cb5326bf4d2c8b75be8d95204fa0a902457078e7a1f46",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.41a3f1cd.zPsfQNmNZo.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.41a3f1cd.zPsfQNmNZo.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f2639a85c1cd0995e42c88082509084a05dbf6c60cc438755472b59fc60bc9a4",
+        "bytes": 175,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_27b54f4ee2dff453541eb79b686e8be978b42327bb5f454d6cc8f3278da9b2c5",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/puzzles.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/puzzles.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4ce8595048b3cdb18b1a4596aee213efb99fcb6ce8f8517ac490e910a26a05f4",
+        "bytes": 1439147,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_27db1e2f4de1ade65bd6af1a31279f2309a56d753d466a8ef6f6a01116197de1",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.c89fcea7.C51iBVfGpg.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.c89fcea7.C51iBVfGpg.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "743ba8e849db44ce7ab6760e8e59d1be61e9d0771a734b872e09d43e1468593c",
+        "bytes": 13174,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_27de3cb59a59be7575c46f21ca6276a10cb243b696b0e4205cac73118bdcd5d6",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.dcbe2e65.WKxMk7Io8o.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.dcbe2e65.WKxMk7Io8o.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "931de0f40f5821b08374cbd1abf2a15440ad490b34ca93845d7030f1afc4366e",
+        "bytes": 25208,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_290fab7055ec79a9f736ef17bdcedc6bb57cdd7f7b04b5056c707d0cecaa8078",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.7865641f.iCe8WDwa_D.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.7865641f.iCe8WDwa_D.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3de2d95bcd6811b80bc85ae011a525c3af5591e86ea2c31baa912b774e806dbc",
+        "bytes": 2288,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2925428278a2786d469ba91dfcc4ee6bdce30a4b178b901f1802154f1b257954",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/navigation/2026.10.3/navigation-logged-out.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/navigation/2026.10.3/navigation-logged-out.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e5d0b6aa10f0e229f804be38cb7a04e7ea1c9851d51f2207ad5e0c14d9e5c926",
+        "bytes": 688803,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_29430777b62a3e45c3da9e356a281d605888dcc60ac76d3485cde02a29f061de",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.c6bf29a4.B0Is2L1DwN.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.c6bf29a4.B0Is2L1DwN.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3ca4d61a545ad7c1c49a45fa6cf20efa5f640a197116eb7bc5acaa0511b10bcb",
+        "bytes": 6431,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2aa12f28e740e92c9f0138fdf1fa3506788a96baa7cb7a4200d37751a191d76b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.7059d249.DZJblu7_bf.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.7059d249.DZJblu7_bf.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "70a0334afcaae1fe53d7c646ebe2589a375244428b616d3f9fc4e867e18c06bd",
+        "bytes": 332,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2ae89ce8a9c2b7ab8f3059aa82a0ac216b0f58774f580533cd73227c4abc7d67",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.b06859ee.C0_77zN-AR.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.b06859ee.C0_77zN-AR.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f900b0e8801d0666716588b230603b028a77461d37dab54ca41e16b58cde6100",
+        "bytes": 231,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2b176fbd4ad928fb73f4b85518a5100802f397fb5a85aa4c1996c5b553bbe049",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/shared.eager.CZJHaxB19i.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/shared.eager.CZJHaxB19i.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "44b1331ddf0c92e0765248dcf10326f65492057dc5eb223e327b8928ed5387a0",
+        "bytes": 2309570,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2b87db4efd5549afeb0bd3da383fc10ea27dba831320553bd605188b27ced578",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.0ee0ab03.BdUaQm0OW7.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.0ee0ab03.BdUaQm0OW7.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "66f378951457b61001f643a1552edd9cf296a6ad3f4d420a3df55874a9469081",
+        "bytes": 733,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2c7cb9d439e5c0181c61ec1c7aa4ea6bd83520aa769b72c30f5e4693a400a024",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.9d0197e7.DYMeFytWlU.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.9d0197e7.DYMeFytWlU.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f2bef51756f90c938ccdadf1c94180053dc0fc1c8425b0375953ec8bc0256570",
+        "bytes": 298243,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2dad6623f377cbf6cd7c140e5ba4b8eb7bd9984d519b6835f63c64d9c9c0967f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-39-54f33154e663233f58a9e3df8cc65aa68efe8451253b231d47174da0485eabd1.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "9502159d4ba64d389d67ee6771d4d3654f7b9711bbe50d69d8cd5aa5c1610442",
+        "bytes": 9957,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2dd4895d6fe824d842208f8f76b14e4688db7d5bc7bccdf0f906594d3d7079d6",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.d3cf9ded.BZKeY4TE7z.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.d3cf9ded.BZKeY4TE7z.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "256290cfb1968d267f9051ce4939466f8532aa3c7dc8dcc1fa15a313054c614d",
+        "bytes": 143,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_30e07908953c872d7d1ca719a1d594a472ca7fddfcf120c28f5f4de0205ef41c",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.c6648ebc.BLb0Newyw9.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.c6648ebc.BLb0Newyw9.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4bdb6f5dec59ad334fb0a25e1cdf8b73e7b9e22f98153b327d19d2dfd568e275",
+        "bytes": 61799,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_3126f9ffd8b23923f5d67fdf820bb65fd85e273d43eb7f0696a200bc822270be",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.185de41a.DibV4XTbwR.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.185de41a.DibV4XTbwR.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "a18aba20bcdd4d54cf06396c2d51784707f67800c0714c0e696b9a19a3a68d29",
+        "bytes": 398,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_338370f8507b2be08265e6e3e279c926e62bfa63d0b5323d492842a54c2ea714",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/js/client/es6-translations/es6-translation.en_US.4d234165.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/js/client/es6-translations/es6-translation.en_US.4d234165.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "952b644db429939015fa970c1ecdb9974b845805cbe279c54e03e8809995f2bd",
+        "bytes": 5314,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_341e8a406f77d6f3e09c1923f354e80c47c77ac4264a2ed9df42835bc4d17a2e",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.875db8e6.loXODpXbr7.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.875db8e6.loXODpXbr7.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "a34890d91673b95c7e49b9b475f87de6aa9a2b56f604e5321614536d5934b950",
+        "bytes": 398,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_35fb8ed73b3654b3e51e5ee6c159b0c013c442f4853fdc7437fd382fc533fd8a",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/chessboard-636d356.62221e19.BvBnUAvPMT.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/chessboard-636d356.62221e19.BvBnUAvPMT.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7272e8354d27fcb5b8e81ce8d12aded1f082a660a370349f1f4149bd7bfcdbc8",
+        "bytes": 31111,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_3926ebfe96b940c7f14dd1d7b9e5c2c6609f2b31f4d5b084bb1cc2476ea18e9f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/ui-fragments.BSwkpQh9N5.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/ui-fragments.BSwkpQh9N5.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "dcae72dbba323ff97c782e72899eb9b00e1e649c2cc598ef404eb2752dd767fb",
+        "bytes": 1558,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_3950ec5392813d105f1d3e60b364552af2857f55115f671dc7db16a990112b2e",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.9638da5e.DUsC7NR4ed.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.9638da5e.DUsC7NR4ed.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "53c8b3605320b99cdaa23e0c0d04d4b66ce0f604ec489450e6b2b2d46ac76d86",
+        "bytes": 281,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_396e7c7cd40247bb751f5794aca98bb0e1a1f4096018ed287d8fdde914e261df",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.466fcff2.BwURrVlg2I.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.466fcff2.BwURrVlg2I.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "55ffc313a707245edbea955d1601c60e6b2e746b05eeb9262c17dcca05a8ab5b",
+        "bytes": 10422,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_397c46e9ce9afe716bfe6309c658f77abc60e726a08e2413ba2d65536f950010",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.72412b75.D0_dxG-ofJ.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.72412b75.D0_dxG-ofJ.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2f5f54b6adea5163da2675b21936aa3c5cde08d8506ad08bd73fad2c6f1cb008",
+        "bytes": 1017,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_3be48cd2a91a5dab8d51b2f673efa920657d2d579512c1487fda0a38359fcff3",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.d7dccad2.ChNfDEoX_O.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.d7dccad2.ChNfDEoX_O.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "99081e23cefe4599974bf2324efebfa493d46b35d8415ae6c8b0a2f6aa1ff1d1",
+        "bytes": 554,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_3f314df5bf5a4fffcb314d097e62a4a27c94ffc04dbe32cfabe973db30d3f540",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/client.b398b226.CVbDYzM7bV.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/client.b398b226.CVbDYzM7bV.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "0e6dd1e432caf4395c64ec4829b35f260833d7391852b9b9fc971893547244dc",
+        "bytes": 7841,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4041906bd511bb08c790764fc79e94d09f701f3fc6706664c3d142b32132fb07",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.b291509a.BhlfqyQkAn.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.b291509a.BhlfqyQkAn.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "053ba7506e1eb63c42447af1f9e0b9421c751657ccda1c62d7c896a99b8ae63b",
+        "bytes": 1366,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_44cea375d720e04ee59b26898d1d94c6972c7c6aaab084f35c76485d0227e2ce",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.e3a95e99.B5IGNUgjjz.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.e3a95e99.B5IGNUgjjz.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "35be2f1caf8ae9b7e7d3ff95a9c326bdd240c315e5f90b6cdba3c56e3cb88c37",
+        "bytes": 1514,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4586858053add0f8c869a75eb529e3e965b712fec061c62bec79507cd70bf670",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.eager.D-xW2kgKYc.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.eager.D-xW2kgKYc.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "0d28b713c766230db04e731d4d1253fd9d87092873fb793345e50914a614fcc1",
+        "bytes": 148785,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_463ab40ae1af4b195edc2d19831450ba975038e5186470926336d8c5d8391ec0",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/welcome-modal.9e406a88.g9onZxKum2.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/welcome-modal.9e406a88.g9onZxKum2.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "57860e697bc59872c9dbaee06daa3cdf5c1899cd3ef0c5908a9034c96482486f",
+        "bytes": 11153,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_475336d6c683db492a7649d3c0a33467ae78b6c9a9182c5efecdca413f4fad50",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.4e0192c0.D_vgToyuzQ.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.4e0192c0.D_vgToyuzQ.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d5232e4f55a4a23d2250fcedcf40109bfd469c22785e8ce5a55a784e401b1c68",
+        "bytes": 14241,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4845ab49c8734573f8a6fdd45d241fa468e0fdee99be64f479c0c34bedc16c44",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.84a2029e.CZZNnEQhmX.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.84a2029e.CZZNnEQhmX.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "09c797d973cac3d03698ab425e511e5677c14ae90f38c7bfb99a25f9aad1c73b",
+        "bytes": 1354,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4871c4012a4dbe5b624cc922d6138c9b4cc94106478f2215ac4e38813ba3e491",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.76a83361.dESzeBjq0p.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.76a83361.dESzeBjq0p.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "07f068fce83b5863a8788cf5789a2e2165f6911952b62f152be0fcd088363075",
+        "bytes": 100,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4925abfef7b67ae5eabe994afe4ac93ca9c212de84682c4df7e7cf7f6df1caec",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.09b3ecc8.C_FJom6Jt4.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.09b3ecc8.C_FJom6Jt4.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "34b985b17eb28b619e6c7f00549aeb7bbc690c3aebfa803cc6b108af77f8c50f",
+        "bytes": 273,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_49687de7ee71e7c99a728ab7bb4c90ce2a91bc6962a299e77c6069206e213d6d",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/coaches.dd1c6bed.DilvuGDYAb.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/coaches.dd1c6bed.DilvuGDYAb.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f490b026fb9578aeffbfc48c50e14f377f79a30ab280000ee68b3504d3c5f83f",
+        "bytes": 1054,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4a0debf11df0dab189b2265789f1182e9b82d00d5bf5ad9ff551e4c5362c0d55",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/client.411a4358.DaUs43Cy5P.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/client.411a4358.DaUs43Cy5P.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "13a530fbab37a7eb7a3f3ae2aa96046cf02ffd0116cbffc3b6a8e5cc1e7e2ea9",
+        "bytes": 56419,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4ab71aaa46a4af19edf85bc01cd7be0f2d3c06b944f308508abbe2ac267957d4",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.42187097.CW0wp94Fvp.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.42187097.CW0wp94Fvp.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "31731feec8b235141b6875733f15b5f014ad813890a8d3c1e39ad9edea0ec3ed",
+        "bytes": 35779,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4b1d6e1ebb568acb238116dac9fed2e8b581eee72c481e70509682ea4a3e29b5",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.74f90ef2.hGs5eUlAdo.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.74f90ef2.hGs5eUlAdo.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "afc06742136a9846f08c3faa9ea3146b2d445a4dfb7acc617305aa4937afe862",
+        "bytes": 2055,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4b2cd643b7c34676e67b4329c57348dfa5d627ff4db4e68b6a45a42b1dcd2ff9",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.b5f2561e.Ci3NzwxYFZ.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.b5f2561e.Ci3NzwxYFZ.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "348c125e28c1d0ba2b741ee15414db5307a8ab3db6657a161b6b4590b51b4f82",
+        "bytes": 4746,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4c73ecbef8b4fcca21ea3a49c0d89d38c424d5ae8d7c9cba3504723b0dc4cc00",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.50848263.CLvGuPXH8T.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.50848263.CLvGuPXH8T.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "b43c4242821934ad05476e66055727fd66b5f0f026fcb749b4f9b20c2ee433a0",
+        "bytes": 1136,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4fdfde433c01b0e0aec00ef20560e85803b31f4dd617ed90c1656e1ae8eb92aa",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-videos-limit.03df9d5a.D7SK80T_z_.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/monetization-videos-limit.03df9d5a.D7SK80T_z_.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "a87d3b7af694d8db4b4fda071fe47984719f4feba201f6c5fdff60ff7fc2b168",
+        "bytes": 1029,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_502b836cfb33d8fc6b5061b3dede9377a6e9461e9fc3a665c08115a478b1becb",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.90b1e73f.DSrEPfKpvl.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.90b1e73f.DSrEPfKpvl.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "b47e0b9008124c0ac69e2053cc2ed2ab7aa1085fd76caee76d658268fc78ca01",
+        "bytes": 2255,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_513c6844e0b8d935b55b7e3a3827bc3f2405e1e629585a2bc814d2fe821f699c",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.4a48336f.DAaOC5epMz.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.4a48336f.DAaOC5epMz.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "455613d4464d8360b8cab55a548d07f4f0657f51084cc773edb88333d6c024e1",
+        "bytes": 1562,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_51e22e070ae2d814a044438869772d5fab3efb08d908347838099d9dffce9be0",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/checkmate/2026.10.13/checkmate.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/checkmate/2026.10.13/checkmate.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f8fe646724609c1beb74264308389e92ca22320a1de9db2c0b3f9ef4f5db064f",
+        "bytes": 175349,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_52bd51d1bb46a0e91154902ea6b80d4fa925e14ef6e99612ace568e5fced454b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.6a86e6ce.D7nA3-fGW9.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.6a86e6ce.D7nA3-fGW9.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4f2867186b4f572b0ccebb9ac5d196e11cb79c474f9314727facbe2680c3d0ae",
+        "bytes": 14413,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_547a2a22de4087978f09b685280748bf68e3316af38c32de9147341c9b4e9031",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.eager.CLNRbjq1VY.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.eager.CLNRbjq1VY.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f8cf0e323698e3ff646bc928911dce6e90354fbc5d82481f21c349a73ed2828a",
+        "bytes": 1446,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_5823187adcbbec3120ff98b9b1f7092d5a25c660cc1c95a8d3279651c6860bd4",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.eed4955d.e9HsTZ0tiK.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.eed4955d.e9HsTZ0tiK.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "00f1834c28b83c7a8c5306d76bba107ce1799f6a72c953a3b26fd4ccb3b9525b",
+        "bytes": 2265,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_5924af180612819f50d137d2e3bf06e51e30f60849b1cbceaa41c66c16f1a081",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.b0dbc7e5.BocEGJ78vQ.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.b0dbc7e5.BocEGJ78vQ.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e7b02b8b384af082c9ce159723ed766905aaf3f2796672a99d890ab56633db42",
+        "bytes": 226,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_5a2a2000a402b7cad0a5937754437344cb6483b5ca62bcc970920b930e784745",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.158c98ea.DDuHL3UWh-.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.158c98ea.DDuHL3UWh-.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7f1abbbbb43afcd10d248ab5f2f2ec1bf46102b3a26b3d516825a3fc132a2efd",
+        "bytes": 3963,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6026927b4574a7a21bc5063a10e5713f20fe2d67bcbc93c15321a1c3144cb2cd",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.360f8737.BLUjmrcth8.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.360f8737.BLUjmrcth8.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "1df767d9fed51d3498e367b5067e9dfc0355b2c8c349201348bc70397215173e",
+        "bytes": 1685,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_61c57b3a2091664547565aa5b93d97a48528f57a70d4dffb39a5318fec2553a7",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/diagram-viewer.Dh_PTuYo5M.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/diagram-viewer.Dh_PTuYo5M.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "187b15cd7586dad95fe5b46e35e9f65a0b4cb74f6c4485feb061438a51ac7b76",
+        "bytes": 8914,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_65408188563fa5abb5678ac1ee09ada477ed7e825284d4c9776672f234606098",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.2640f551.NzYpbsScKo.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.2640f551.NzYpbsScKo.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "601d62e1365da0e5fbe09f3bf2dd4a728053798b6d791e5707c7f4f2bd825bf1",
+        "bytes": 9910,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_677de6e6c14e00f32f28d2e1e3cafac97950eedfc0b1ead07969cd2334291b7a",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.7b58dca4.LwnDWzBo-T.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.7b58dca4.LwnDWzBo-T.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "fd34c86e705ce72c7a48f09a6c145e54bcb64523ce79f1ddb09ed052b36c9183",
+        "bytes": 480,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6819d14be04d3c82ed3274c93b9e5f076f6937cdb121a8df4b7d7af8c3e65d10",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-openings-limit.f906a457.tfYNEcG-WY.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/monetization-openings-limit.f906a457.tfYNEcG-WY.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c49b57bb73e221fd8835aa69ee08d1516bed90ff52d44215f1fdf5196035d68c",
+        "bytes": 1031,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_684ed35730f0fe3108a47bcb8cf6bf9719709fa8326aab7a5ef451acae157403",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-end-games-limit.aa1b2c83.DOyU_Y9aaR.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/monetization-end-games-limit.aa1b2c83.DOyU_Y9aaR.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "39a4675fb0e87532072969294f54b3b01a2596554d4703f96586606bc1a01d1b",
+        "bytes": 1032,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_689ad7a9c2df356fde43edc1945a0d4d13f39631bb3a6bad6f7f74193f0e769a",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/global.DsmdgTRfMC.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/global.DsmdgTRfMC.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "fdfb36a06cbf231a35add9f77e5b5de74086d2cc3a3a4773977f27d9b3e400ad",
+        "bytes": 847,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6b06f8342e41cd606db4a53624d94111a1ef8b00c6fe3a92a0799685df0181de",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.6555ef83.zmPp7kvYzj.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.6555ef83.zmPp7kvYzj.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d0b796b2b9fedcce2a7992a251d3b62f32d549ebb0c2de849f0c603ab8c79afb",
+        "bytes": 2987,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6d5f4730cc0af147d81047ad6b5e570e65ee8780c63cc55b720f82c8b0e00e7d",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.8d5cdae9.Dv4_1HuDMl.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.8d5cdae9.Dv4_1HuDMl.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "cff2a6d424d351185c1a32793c24698b43fcff7d500fb3db8cfeba2df2e1cb88",
+        "bytes": 70930,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6dedc1db48a5c7f71a23c4d5319609f87e5b875a4cfbf7bcce712e5d6d23e525",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.71339a57.DZO6ALwTmX.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.71339a57.DZO6ALwTmX.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "572280978eb600fcafd5c6061d9027e7025a08f241e14277992816bc3f3da0c7",
+        "bytes": 309,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6e36ab0f196e9ea30a690926f872c908dd2ecf9d763269d661b2f5dbeaba42db",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.373e8841.M0rjluteH6.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.373e8841.M0rjluteH6.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "ad1fad2b885a55a10246b00de619ac45d2efc5c47a24660800eb401301ebf58b",
+        "bytes": 229,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6ed884bffa08e33906bec8f283eedba089d33b307260efbe6da7a3beea514659",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/assets-chess/vite/vendors/@sentry/browser.BlrLLymbcR.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-86-d3caa993a37d8d6444bf9583a2aa6fb0246147bbcce3a0e6463ed238adbd1a66.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "71c332080f5e98e4a057a720c3e4188bdaf54743a9790fc6137fa74201ef00a7",
+        "bytes": 395810,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_7058cec27e7fabe3be4905e3326458fbc74466cbba8ed7a5cc54f76177996301",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.8d80fa67.BNHFxD1iwh.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.8d80fa67.BNHFxD1iwh.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4b265cd513691abcf9dc25ef441c184eab00e8f29ff14785a1e543e8c8c58809",
+        "bytes": 94078,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_71d280740713517705a9ec28138c72734e584c7f564dc22d3656c2fd2b77fa43",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/assets-chess/vite/vendors/vue.BKxuR4qG0F.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/assets-chess/vite/vendors/vue.BKxuR4qG0F.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "9ae8387a4fee33f68db00e58df02504c24113f1741164dbbdda23beae96347d8",
+        "bytes": 37014,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_72f6d26adf7f2b8cdb36409238c86afbe287e5d9326d6e86d515dab3056a077b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-89-f34682ad427c02ea85cf58d1dbdbb11b90008de3ae75807e5705a2ab76665d4d.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "cbc7af455b2047928bcad53d98b6337308b57c6e5b5b2e2fa837c73cf9ed1679",
+        "bytes": 10706,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_7437eb54b29a187cb010456b6596e751517e92444925b3fd90809b9f3cda2106",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-90-6af3738cdefc5358426d7b2eb185e75c0b796c9b14f11b61fd9937b562944014.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "2cdb9779517b395e7cb0fc3a084d2c7f4c9eb1af058e913961675b2e54cbb55b",
+        "bytes": 1335,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_75adb5215d2f9b2b8424bf1ec8f12e1f1087865311bb012ef4b22c3d01253f19",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.e961f674.BbPMsbd-ny.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.e961f674.BbPMsbd-ny.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "5f42bbf72b00b55892d6c7d2de2133771ce2d84b593b146b926272dab90c36e4",
+        "bytes": 203,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_764102fd8f563f75bc68ea91d1f38455cca6c84ae3399290df2688387e4ae6f2",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.b8339702.BCsBFfHl3X.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.b8339702.BCsBFfHl3X.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "a41ede854e8be3268b742f37396a9ba2ef45503d30e187d0d5e564bfdeb507d4",
+        "bytes": 5974,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_78464212d9a01c8288c3e6d2be5e093ceaed223b4a978f1d3002a03c8e1776b4",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.cd09b259.iI8FW9Twli.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.cd09b259.iI8FW9Twli.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f8d8f5b712525ad34deb4fa7482af3d97933708b90fd825081836414701a10cb",
+        "bytes": 555,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_795f852c660ce5a73edd350570c78fd05787fa9b084358e2ca25a815cef8a066",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.7380a7c9.BgMN9UOrSA.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.7380a7c9.BgMN9UOrSA.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4f2c47a53993fad8cfdd22eca6f9c1599db3197bc235fd9f95cfa523a5b2070a",
+        "bytes": 8976,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_7add1b990ab07678cfd74e96f375638f208f2dfaac34f6df7c503acbe475111b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.18069091.D0_dxG-ofJ.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.18069091.D0_dxG-ofJ.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2f5f54b6adea5163da2675b21936aa3c5cde08d8506ad08bd73fad2c6f1cb008",
+        "bytes": 1017,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_7bd99344537bb69d0cb870b700530ab03615d53071f08aeff3dc885a424eb189",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.b037bfd3.BpZjsliA1d.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.b037bfd3.BpZjsliA1d.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "12c71be903cca5642a2bd5fd3e51960efbe61a33421e6d4cdaa88ea91ceb9dad",
+        "bytes": 8049,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_7c7b5113c316682bb3ed2dde5be6908bef8d7035ada094d0c7bd2d33b0bf4694",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.ae9a3a60.nvU1puQ_Km.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.ae9a3a60.nvU1puQ_Km.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "22138ad07c4f80b9e2bedd385a512bdfe43065e8a8311aa2a5fd36b431345293",
+        "bytes": 597,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_7eecb76242fe3c834f61c0a92082ce5b3e6ddd289a8e1581bffee4473207072b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.11d604e7.DZ0y9iSW2m.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.11d604e7.DZ0y9iSW2m.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "5f38b1f6531045a2293cf86368a1632174072497a78f1c0ee57a4f1881b2dd6b",
+        "bytes": 4046,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_80d561a994d5b79f71f06479e2f81f3d2b1c76142d9653a6596e2192864a2f81",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.6dc09601.B-muZQL9sh.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.6dc09601.B-muZQL9sh.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e8d27030f94b6e14fb3e99192686b683e675ad2738cb9902bf214dae260e11f6",
+        "bytes": 661,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_82b383d856947d67ea53a6d76a0848d6fd3bdcc215bb3037d1d233623482d400",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.77ce3857.DWK5LlC0bA.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.77ce3857.DWK5LlC0bA.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "955277d75c4a55d574b579e88c27fbd9cbac686df968798ff07119fd7ab84857",
+        "bytes": 42199,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_836e8435c571581464cf5452f832e9037c4979b4132f244e6ba081533b8e46dc",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-101-415c1b70ce19488a46420e97fc5e0942aabdbe621a33cc96c2cb81c37e8d9bb1.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "12ebe26d924ab2ba1549e5d398dc22c5effeac5c18f5ee26a76c30564dde0a85",
+        "bytes": 60,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_83a0994e22a4f65822f569cfd8564dcbeb7e540dd85539f603145cc96d5da96a",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.9b8235be.DyUOu5KVgy.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.9b8235be.DyUOu5KVgy.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "6db86facd5ea47e8a59ee53f4c0ea04235e31e7b1999e227f6b7bdaccccabad9",
+        "bytes": 130,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_85502211eefec2122879d0a9f99743b48d64633d1c7dfc4161c27bcfc2494aeb",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.51a052f0.BDJ7Uj9aDg.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.51a052f0.BDJ7Uj9aDg.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3666758003e4b16a23714d5ae55cf394e1e302d90e04917c7fb6fc33a43deeb6",
+        "bytes": 23946,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_88dc0518d1e5538d78bd173cbf8239fcb4bcb6fec42344ddda91b884fa688d1f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.fd685339.HnbRANZbxu.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.fd685339.HnbRANZbxu.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "1a3ea824d0583b45074b73cfcbd7bbd44daaf314850c6b667888c0fae3f43175",
+        "bytes": 39104,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_895bba3c798c767c3cc127bd0f3a9c0c2b9de27cd6083d7943fb3c225bc36835",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.9b7ec7db.CjiqfoJCwK.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.9b7ec7db.CjiqfoJCwK.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "8ccb98b8829f7df4b1e5847932b3932e2ae0dfe8b6df196fad8dc5ed81019b38",
+        "bytes": 15607,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_8a8a678702926e96911c64407ebd6ce0d772eff296b012186a4dd41586b458e8",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.289ce152.D9u2U0CtTp.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.289ce152.D9u2U0CtTp.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "5d0b8fae6064f218a7fd73112692bb5b54978f6867eb9e40fd9f4c957f0874f9",
+        "bytes": 1032,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_8b5d12ac0b1d4a07dffa2e8373f8b1137b2ce96cda6b748a0eb3b85ff18abcd3",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/assets-chess/vite/vendors/runtime-core.esm-bundler.CUagP75OtQ.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/assets-chess/vite/vendors/runtime-core.esm-bundler.CUagP75OtQ.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c423c07ccf2e6c532482eaa2d4a90af12300467f5a3b0b7df3e962f440a3775e",
+        "bytes": 132718,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_8c222212ff7387da688c44366bd96a30ae787c728152972b3cadfbc4a3799320",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-108-6b6d7d1a1465bfd3f164c137722042c28cc390946e0c0cc9dce15f3c6d6cab77.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "c732f8c1ed4c50395925575aa28414bf8d3e75cef9d36a9c0bff99966da0f3cc",
+        "bytes": 12279,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9024521dc07af67b960a0c55f6b59ab59379b92faf7a1a6d690d7c1e94033321",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.3c2ffc82.DRi06zhS17.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.3c2ffc82.DRi06zhS17.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "ff9cc3e3a11b937c575d6fd11863ccbcfe2ff0ecf36f63f6f8d153941daab57f",
+        "bytes": 13791,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_91a71bd5b5396edad2925558e2845b9a88e40d1cdc0c141db0d1e9a36b7a3c88",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.5e437596.DtDEKwopNr.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.5e437596.DtDEKwopNr.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "6a99423dee519ce30b3acb69e5b93ce1fb97dbc3481de2b5d5c5616f6091c31e",
+        "bytes": 175,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_91a966c0515f0a8cf9b5ff0107323a43a66a8d87fa087412d5bb6e54225077eb",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.cfa0c172.BKghG45KIe.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.cfa0c172.BKghG45KIe.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3b5447f249c30d2b2ad2a80f4043bcc601a016659d06f9e90c513f2ecfec1ae0",
+        "bytes": 18310,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9552d3473b9603857b3cfb770719a25f536ce681c05142419d580f323ad9e302",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.b07624ee.C93S8xO1lK.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.b07624ee.C93S8xO1lK.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7e9699fba016d5c31d020eda2aa85b025861656774afbfd22235799a5b7abeee",
+        "bytes": 3390,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_95908f7b672bd39a96e29d0422ebe4840d5e5e454875e00c1c894abe7e24ba98",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.394659cf.mt6_pQZ0Tn.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.394659cf.mt6_pQZ0Tn.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "fe7b801824318bbae89d198517d6c42c2ffaadbb43a25f7902bb6f56f464aaa5",
+        "bytes": 657,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_98efb7cf047cfabcdf22893e792623d0681e8f2e38678ba4bc45784c81e2611a",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.a777db36.SZo10sEOru.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.a777db36.SZo10sEOru.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "ebe0447eb4bfc2cc81c5846fd8af134ac042091e6505e40296c4fa21b68f9593",
+        "bytes": 10306,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9b190cf91f4d4900b4f48c3671a10c39a765e5f7b172b698c4069c81a0d0abcf",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.fc210e25.CTxeeEtLE-.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.fc210e25.CTxeeEtLE-.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2954a9a286d162e450ae0e5ac72461a3a3755d06ae73ec0ccc97da94607b9973",
+        "bytes": 217,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9bdf95acf3c3b0bad5af70ed113f8789ccdfec2697402c77ff7b45c515a35739",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/rolldown-runtime.BX80bFGj3K.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/rolldown-runtime.BX80bFGj3K.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "fa2eba114b7100e0f47404641cd03e82678a28e17b62f6e950ff17b9efd11166",
+        "bytes": 323,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9c83af68744a83312aa76ed969c95ae63c73ef68ce31ec83b71af218bee388a7",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-117-9526b27c7b9f3f41b6252d369b00837c1e3d1386680af9e51f76e746c9aaae6b.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "0a78178a5bd8cf8cec64f749c010831f17802d0dfe1e7071f123528be650e39b",
+        "bytes": 179,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9d47083563807d50b09d396f722661b8b40b8ea3fa0fee3c7bd9b7ef01e91b2b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.26bcdb62.CiL2ukII7r.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.26bcdb62.CiL2ukII7r.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "ebeb5c6513ab90d0ad0e4642b0b16ae1abbe3c2e0befc8854cc9d003f0d0a1ba",
+        "bytes": 7261,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9f5a36d4a006a177311d113e7d046bc347bb02c524356ff36badc75aca7b0cf9",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/u1t2Ucums2DFDaE7gI-CMkakmmJGqNgXjxYQ9nEOZLuqD6s2uhRLlI_KVtwp9I2l_hujgB-VMR6RuIdcgi_CUje3lJnUP7SytR5Mh9-aRb2qKa85Qmfi-RtYlkUI5m08BSMys9DjVjpGgGEFJ0eaF3v0UrYs_CYX9evbUEYmRXkeaiD9Z_dkt-bRGU_vGdMDtlRTHXf7dyRacxschQPGHVUijtRD5h8mmo0JKu3Z43REMZpLbimZc-kUkl-fNDZ2yKGWSoBKY91j2aelMt2uoAmCgKvrZb5ERnqXxgq8s7jYLxBF1dddpYfO5MH9cNNCrcsw5SPu_STwSgjKo8j1ydE8swgHmTxCUQekW9bIvonPLqEBICGD_iWfKA1yOgnFpDMs32gumKAlBtYeWbOfNqxI3Gq3RaDoHSw7-csdVpBO8qtxq0Yq0OVeHWMPPhINVIUClD4iQszTsXjDKAeN1g",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-119-8a7114fd3d3ed816b8f86cc0221598b83bd9e5707381f72f6b483b3e972a5c58.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "a6eb75c5fcd4c5012c502207df69b1a4794d0f421d6bca79749025b36edb6e14",
+        "bytes": 128379,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a0aa78b6445a8684cf154d73c6d7914410becff74ccedc556dd811c35fa451f8",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/assets-chess/vite/vendors/pinia.JlH1PbuzUC.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/assets-chess/vite/vendors/pinia.JlH1PbuzUC.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3c250830b55c7cbb3ad780779074e43a9f9053f016d41e5082535ae5aaee00d0",
+        "bytes": 96676,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a25946eb15e3a00f00c9a578c6b15752e3db83028d12de478b33bbcaa41e45d2",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-121-916f5a468b31e24c32668bce99d982c86feb740f83a88ab4d70e421e33fd0a6b.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "c4be1a3819ea50894b3470a77b6582916ec6b63ddfc0112824957fa515b7ef5d",
+        "bytes": 173,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a3f1ed4b0b44a12230aef6b10808d3e76aa9fa04002a143c3f9df0866d3f3a3e",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-drills-limit.b51903cc.Dd_NjCl79l.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/monetization-drills-limit.b51903cc.Dd_NjCl79l.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "934c94182490a60cfb5b7a50aaae9a338548d4008913f984ba8802badc530f7c",
+        "bytes": 1029,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a53b6e79dab29abaa90e814acda8ff0866b905e9c9036af132366dbd163bfadb",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.59c528de.IY50l-k2gK.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.59c528de.IY50l-k2gK.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7088f798a8dfc873faeb87ba4947ae155b908840f8597b989f401fdf43820d99",
+        "bytes": 376,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a56a5fe7f81b6154bb826b06a2db2bc24d923ddd4ada630ee7b470b8cd191c29",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.eager.D1Fbqv2C49.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.eager.D1Fbqv2C49.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "95cd4558506ba587be141230bb275fc65ea9fcce470bd93d1ae9d230ac969a7c",
+        "bytes": 786482,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a63414aaad626b08c243ac65dc34e964341fff79158454c548cc090803c4a5f7",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.c7c8d780.Dhs6HGVJR7.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.c7c8d780.Dhs6HGVJR7.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "8df3ca0db06a1bcf68026c042dbb9c129f1481cd1987d743aaedaaabda92d28c",
+        "bytes": 502,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_aa2d74234e16efe136840e06ed27ce781bb447b32d493e390ca380e51b1be661",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.d770ea22.CvHyYqGPhp.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.d770ea22.CvHyYqGPhp.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "dd2d2fcc2fb2596dda4af204237b9b64484827b9127a41ea858aed6d4717a997",
+        "bytes": 243,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_aa40444837bd5b2749e2f26bced3237773b048e50d409187aef9d9a7f47bcb49",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/shared.525adf09.MTX5un5VSS.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/shared.525adf09.MTX5un5VSS.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e5a546e82702584b7364734d06feab3bfc5b8c2a71bde7ecd4924e253d33fcbd",
+        "bytes": 1098,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ad314e22c287bbd38059806e856640c54e30490b76e9398bb800b4f6f428bb3d",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.13d5ced8.GxodpdYe9T.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.13d5ced8.GxodpdYe9T.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "de3ac1865d16c0d2b9ae6bdbf8dcd50904361f6ca45f129e6c6aa2b5ac308c89",
+        "bytes": 107308,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_adc15259a323ddcf5d92bfd648b1092283e987d640369b82d7a7413012bdc6f0",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.0bea904a.xoGOW0IdU5.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.0bea904a.xoGOW0IdU5.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "ac7c4dddb37069930870e15f1381c96e7892edc7ce9aee676c47fb4673789ca7",
+        "bytes": 3034,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_add8dbac9a6ee65743a4fd5f5cf457f0eeb5969da63c41d641992caebb52b5ff",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.82c5bdd1.4cssc9gERx.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.82c5bdd1.4cssc9gERx.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "1ef431547e487e0c9d4168a2efd6b762dd11cbe3f96aba5059469b2ad6aa5900",
+        "bytes": 849,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b38fd91d2656fc2d1a3444fe48da4a5473ee9cf918c0f5e33e25c62eb82fbb7c",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.2c5b4f8c.DJRMTf16XH.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.2c5b4f8c.DJRMTf16XH.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2a3f578537f20a7e2bfacccec06c8f7f358c311760d8cbb15f99cefae5fbccc5",
+        "bytes": 275,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_b6d68a76ca210e59c76bc0315d32b6562254185c8355bf4303b868a3341d5e15",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.6cdb381c.zPsfQNmNZo.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.6cdb381c.zPsfQNmNZo.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f2639a85c1cd0995e42c88082509084a05dbf6c60cc438755472b59fc60bc9a4",
+        "bytes": 175,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_be82beb32d34bf4826edffdc6da27af68e5b6edcb5416a5ec416a88bdede5374",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-133-00b46bcee06ffa6a612eac1ca6f432e6cb2a4cc2814b3f2522123fa29c204c4d.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "a4a8e4ae70d0816650e9b3e5e44b9d219403d52a1a615743318f6a186cc2c1b2",
+        "bytes": 135,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_bfeba194ff3abcd4686ad23e03cf2dc9c4eda744188b5e0d31cf11a9a1798016",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.2bcd3e8b.Brtw17qQGe.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.2bcd3e8b.Brtw17qQGe.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f471a7e6b518aaa344e28d4e64308315e61804e2b9617be937d43b1e32963a6d",
+        "bytes": 2472,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c017fc54b9415b7c58af01a842ffa4741534a20d34a4041e3080efb793bfab7c",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.e00d4c91.C36rEcq6Fm.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.e00d4c91.C36rEcq6Fm.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4a3c11b9ef0e0befab55f839bf09988e0006db89a12192caab3b4c1218b4da8d",
+        "bytes": 1789,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c1f8702687fbf16a5ccaf7e0d45c9eaa0b5698551e4483d78ef91ff54975b8d2",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.bb78f02f.CMQ_blVpuV.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.bb78f02f.CMQ_blVpuV.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "9ba3f02c68d23a1d910e0c30a1906aae0047ff0637d0d74e4178c402c73f9de4",
+        "bytes": 155,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c2958bbbb4df91e1e93110c57b1be45d8568c4dbe10d5d7813d3da51795bf9ec",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.50f7aa72.o2GhEUikAM.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.50f7aa72.o2GhEUikAM.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "71fcdc7003edad3b9fc59f01d4ec770998c9e319f44914b8f221bfb1d1a37733",
+        "bytes": 504,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c56a41aeb9cfd5d03058a86004e0cb2eb0adac631ea799b484c062b906bbe255",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.8b198ecc.DojrQNyIR5.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.8b198ecc.DojrQNyIR5.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "8d23e6efa464b611932020fac1a835ae7b02ad73d1df53ce85285eb961046851",
+        "bytes": 1053,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c9cdd07cb214ce544f89a216de04527af1a89eae089d7266160a887226047c58",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.b826e2a2.BrfCnggAmo.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.b826e2a2.BrfCnggAmo.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7cd87091650570abc8d941b74d9f1671f7b33b7f616620a5a63c41a528ed17a0",
+        "bytes": 1899,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ccaaadbe076d78e8da60a41285523b9e503af223743606960272c7647e78e5e8",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.7e6b4c57.69YudkSGL-.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.7e6b4c57.69YudkSGL-.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f2cafb843b3eb7cbe11cc9c276e1436df8697e790064bba07588a231f26e4202",
+        "bytes": 1138,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ccdf57f42d1370b688c135c8c41a31374e0ac6502eaa0d6c62c10f9a3279f542",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.41e0b08b.Dv328L3Rb7.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.41e0b08b.Dv328L3Rb7.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "afd022efdcf6ceefdf4910ef9a8cabbc22ce4bbd3e0f021f5d85708f489ddfcb",
+        "bytes": 216,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_cd61b515a802cc22bd44e5cb64fe8fb51cec39d04511795faabaa35a4dad3861",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.c6b909fe.2N9xwXsFTy.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.c6b909fe.2N9xwXsFTy.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "156736b1cb31e0ccb52597781b4db8cefe4a2d0ec51b93491fc434b752937526",
+        "bytes": 660,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_cda24f004b4be016434acc70dd12e4e5fb7f7ab555db7c90431b7fb08e29452f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/rolldown-runtime.CNC7AqOflz.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/rolldown-runtime.CNC7AqOflz.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d4a36920c7bab6ec97d0bdc5d1233622f28fe010198ca32bcdd80c8cb6b64aae",
+        "bytes": 879,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_cdd63e03aff8b4e42844ed1c3d293ea7018e24a86eca707f1a3745ffc49b8776",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-144-6afa4b58560bf30fac27a04cec6f85d13802c213fccedd3a3d733885ab7df1b2.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "5b75e39e3d2fe996df6b21ff33bd6b079b0ed809bb6b56eef38540c6f2afc7bd",
+        "bytes": 188,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d012ffd7dc671a885f8a009be5446b5f77b496e5f10eb489b00ffa76da394087",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/navigation/2026.10.3/shared.eager.CKhDTXsPiS.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/navigation/2026.10.3/shared.eager.CKhDTXsPiS.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "98093349f728cfae6fab854a132cdc95bfcf87b6a4360ced9ff032b321d083bb",
+        "bytes": 540034,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d298d7437547adf40fcf04eab7ced4a879016d8a649238a56704ae80e347b67f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/client.94ba06e3.CMPjm3jaE4.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/client.94ba06e3.CMPjm3jaE4.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "863509b2faa6e3e7b08d8e882a7e54613c31ef21fba6e67031cb725d2f9b5073",
+        "bytes": 149329,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d35c8f052ebb8e3477498f6bb1e9e4783682add77332cd345b26fc3c0184acfc",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.637db6fe.DlB2K-c59j.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.637db6fe.DlB2K-c59j.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e551e0b7f265694dea01d3add064aedd6cc846e3789aa83e4d89c28aefb84e91",
+        "bytes": 3447,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d3b0199ce46f7ada90c55b1e09ce45ba79a3aa7386f15862e5b08b986852cb13",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/index.e0182068.BdDt_1XbA6.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/index.e0182068.BdDt_1XbA6.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "bcd3f00605f038257e526e0e993e2a95adce98e1038af3b8a553cd8255a4ec14",
+        "bytes": 36944,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d3d34f779898478635590ad0c9031183a1bb251153230dc0b0d7f4a337968c14",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.058c3712.B7goU79SFF.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.058c3712.B7goU79SFF.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "0f9daad1158064972397052b220d552e3c2cdbaeb854e238af6eafb437c9daaa",
+        "bytes": 1961,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d6d6ce835fa8ea9a85e4b2dd77716e4b67440a49100932b728a4936c5993ce7b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.ede0ff90.Dp7LhdFOmw.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.ede0ff90.Dp7LhdFOmw.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3a2ace262b362661b5dc600724cabc214f820716096932658ad98e75959e8fb0",
+        "bytes": 216,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d82bb3cdba7afe54d0a2fe05a0374e0972ee8749430a9d750a4b84e722763345",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.fa9b7b5c.DKA4VjDCSY.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.fa9b7b5c.DKA4VjDCSY.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "8ce0a3afe9b70f7f836ec7904f9859cfadc3348026596952acd47a43ce103ed2",
+        "bytes": 63161,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d9628797527cd83ba0573b4f616562851e3b0e3d8f7e48c19d519bd7565d3ee8",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.003306f0.Cdov7pkY8w.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.003306f0.Cdov7pkY8w.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "15f19aa6bd82482ed8eab55bbf739588b0d0ca1fcc2edc1a48fa33a2b50874d5",
+        "bytes": 229,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_d9ba67f4b77a3fc047ab9d26cd73d9107e09b268e8dad4a5c91e06b11a73af2f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/client.aefa87fa.DgCCdLaaiQ.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/client.aefa87fa.DgCCdLaaiQ.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f0bc07cd9cba30cfa86fb99c06601e976c3ba7f06dbc5b36924b3d668d03db81",
+        "bytes": 3039,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_da59873687c32c668062b702183c96c3bcbcdd15ed3cabdacbf1cfbc90fee6c2",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.4b99ab68.1VSVbIwLWa.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.4b99ab68.1VSVbIwLWa.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "370108841ecc348a1cfd94a2ee1a7a6220a44f0c49af8cf2d8f91ccf3701bdbd",
+        "bytes": 1778,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_dae9382d45c83ef156c79f4b8d0de25cca595fcfca3227ad36e718c4fcd5b92e",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.f4e5ebe1.Bbouu_0zMK.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.f4e5ebe1.Bbouu_0zMK.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7e742fd6d7a3ade58f16d880e16cd11835912d9089bfea48d6c2a77a1b80df4c",
+        "bytes": 1443,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_daf09d8ca854121bd0dc30af1fbc94d00ed56e105b90ce2d4c8e90e4891615c8",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.7b41abec.DSwHCqpxJp.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.7b41abec.DSwHCqpxJp.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "aa08796faf9b263c43d977e56876182bcfead07441dcaa4e570363b81bbf6ecb",
+        "bytes": 1002,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_dbb16262ecb1a5c132e8050598e7d4bc1ecd2fa5f725d94a0bea9daa85b01730",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.d7bb8211.ewd8rMfFzz.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.d7bb8211.ewd8rMfFzz.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "9f43e41139e524b3a495562f432107633d5a01a99f0c46112c9104dc170e16e3",
+        "bytes": 229,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_dc07d86569d95414ad2a0542387d5b6009f5a8b16b9806b1a77ae9158e81a881",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/pubsub-connection.BzLoSSKa0v.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/pubsub-connection.BzLoSSKa0v.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "b2082caca36f92bf02d4e53c06b5b894cac1656bd80dfae13bfdcb47e1364060",
+        "bytes": 127674,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_dea7998c12e9770c483871dfca95ac832cd23e711fe442f2d5e3a608b4e4cf5c",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/global-ads.C_axr6cghq.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/global-ads.C_axr6cghq.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "1ccb23cecb53ea7c1f353012881e7244b166f7182f6beaad2720d761b84afb9a",
+        "bytes": 139518,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_dfcc0840cd3fb54eb0632298eb7cb9fb611b2a85dd6ad8a44d37ad857ac269bd",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.eager.AnHOGK5Yyo.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.eager.AnHOGK5Yyo.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "85e1ed70183c00700218aa6be95ded47dd6fe1329e1e90e3cf82c11a9f4f2f9f",
+        "bytes": 249102,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e0af1905109a944b0a733ffbcf90170dd6faf978889213e1933f3ecfd72eab52",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.c3080931.CGMQztfwVe.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.c3080931.CGMQztfwVe.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "39f56e76b95b1b0e83f7b036ee5002db2b0c387a43a39090d971ea9572fbf2f5",
+        "bytes": 784,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e14368722abd283b42f599c3d9018d2fe2f207d5b0e515014fe41026dcc75832",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.e395f390.BNE5k_4dK6.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.e395f390.BNE5k_4dK6.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "66993f9a915a3d2a1a5fdb0628ecd2e6bf642e77e9e995da0f38cfdfbc1e8b23",
+        "bytes": 2155,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e2d272bc901bcd39aed3facbad5a4b97e8f7efc51967d4763ae9dd909b30a898",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-163-2e617066a00e72db9b97c40b51782b926c6e378b0759ab7ff25a0385db6faed3.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "db64e1f099a237d86ed0895f87940a6338828c635758d22e92843fad9fa99a51",
+        "bytes": 222,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e3046ebe7e6059f14ca91ffc0d305ea895693e4914096918c7c96bf6a1195205",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/navigation/2026.10.3/rolldown-runtime.CFLHBfi5F_.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/navigation/2026.10.3/rolldown-runtime.CFLHBfi5F_.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "88716f8cbb5fd1d4f315933b9f2755bcea6d7c725c30c0d82eba7ed53e15836b",
+        "bytes": 1713,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e36411306fb9db22ea08e345d9fbaaa9d574196dab1436a7c6b3e58bf3cbc4f5",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.1ffa137d.B0mCEx5TW1.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.1ffa137d.B0mCEx5TW1.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "0ffcac0b23f33c8daff996cba66cb23cbcfb2d8373cea802cf45f6de0be710d5",
+        "bytes": 649,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e37d1d1d8823ff97ac5f369fe0749caca20bbadd751bb006b6bf677bda1f1fb1",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.a12d4e2d.ByPNpEBprk.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.a12d4e2d.ByPNpEBprk.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "52ed693b2cf807139b0f71800b00ca8a0758c5bc08ec0cfa43cd02e3945682ff",
+        "bytes": 16702,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e737c5f856e7af1842d42711bfaf44af3364421101788f4a1a59678fbbe0ef85",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.713df6b4.BbiZPxJ9j-.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.713df6b4.BbiZPxJ9j-.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e6f07369a8cd01929168919b1102724390e96c0803964745efbf5efcb4186cb9",
+        "bytes": 5483,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e797e099e58c1d3114054459aa01ec344f99f97f36dedd922dcd8d14d5dbe0b2",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.14db4dde.CKYmT3i_oC.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.14db4dde.CKYmT3i_oC.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "48653ee6bdcecf8332ad40966aee8d688a25ddf5b407a2373c158c0672a39a94",
+        "bytes": 1592,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e8cc41d8600a039705c9243c82dc0f9736b417aaaf3dddac16193613e2988087",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.5fea350d.Cz2ntjIuTh.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.5fea350d.Cz2ntjIuTh.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "57e66a44b3cd81e71c10f74c60bc745a797ad2747e3364388d793b18cf1778a5",
+        "bytes": 2087,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ead8d00dd253c9dc4e672ba6a0a85a9c741633d17df701f9fa662b622dc22d04",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.e0678aaa.BzyiuUJtoG.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.e0678aaa.BzyiuUJtoG.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c80a0280be81d481913edf7051ea9900c56b1163b2435836e6ee4604e214ae65",
+        "bytes": 2223,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_eb3beffd883237d635143bc222b6c9c810be5c84473fb64232eaf8fbd163944c",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-171-c988d4de255a9bd2281e479c7e9e11ef78cb46b297ccbf1006f8b66bc2529d41.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "e45fa37e15b4a59b79ff951ee807b0408a61a9431fb8f5679ed817df7de7ea9b",
+        "bytes": 195,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ecca89f89f699ee2a700d6af3055ecb0f7596c96740f34abeaa825ae84440a07",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/init.df2717bf.dmVvGVUtUr.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/init.df2717bf.dmVvGVUtUr.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e463a692265e38fb0872357f48cacb334cd349d27a8ca73bc07c1fe3bc4a0e1e",
+        "bytes": 44768,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ed5552bee17c9803fbfab136b9c35d26834f477f1e38569f84dea8775e9a1637",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.2571a7a4.9fPGFQFjgT.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.2571a7a4.9fPGFQFjgT.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "cbdb031eeb39c9a9e6490f7c62aaacdf78343a7354a7976f7c5e95f79032e2d1",
+        "bytes": 8247,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ee4cc92cf5ffedb1cedb406e8cb0d7010f95e8ecc61b04d4dfe3ce109204ee0f",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.297fa8a9.mseXURyll2.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.297fa8a9.mseXURyll2.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "a80d394f74012e13b10ec1efad60df2e2422614ed7972facb486bb1be0ef9c3b",
+        "bytes": 23382,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ef37cbf223baaf700ddf34d4755f9f05b5d1962446e255cb964fadfe024937b0",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.39b75d40.CZA391Pnvf.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.39b75d40.CZA391Pnvf.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "502972e4c045acef0a374631c89de8854ddbc4c27f04f9255ab11cf011c87ec6",
+        "bytes": 15855,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ef91802e03564e7b4841063b044d4f49c5baf4a7220ec305c22617f66d5aca75",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/rolldown-runtime.B-a1K2Sipg.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/rolldown-runtime.B-a1K2Sipg.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "ac1ea6fe281658ad438947d342514dce1f48911fd53ba0e04ca7e346f470e154",
+        "bytes": 1710,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ef986708863642ea129b2187612e0a8d140880bf98fe2f9515242bdcf81e7746",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/shared.6a60d0d3.BeXa4FZzWB.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/shared.6a60d0d3.BeXa4FZzWB.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f3051c3364f5efd9be210521ead0e3fe107b00e085e542d99a329558e8898ab8",
+        "bytes": 5164,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_f01be3889cc32dae7d0c131be181ba0c1578a1fe6d34357ceb814da7d24fe41d",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.6b00aaa1.C3KulKieb1.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.6b00aaa1.C3KulKieb1.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "bb276130e62120cdcfb0eea6140f189ace053e6dc0d3c8764540ec7390d6e54d",
+        "bytes": 6426,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_f03e31fe8997299ddfdf6a269b603720946d5afbd8225b1e4790d138f76321fe",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.80c9e326.D1BWRYwEXk.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.80c9e326.D1BWRYwEXk.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "730c362b2d0a69747193c3ab12b52afacbca7cc64f25e0a4e5dd2a3a8ce05860",
+        "bytes": 1550,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_f3615a857f5bf48e8a22cfae455aea7593f2a8f14909f2c77ad1e109426a7840",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.cab26832.CkqdclbvMP.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.cab26832.CkqdclbvMP.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d054c888f1a434719b6062674fe9ceb412e7a74dbcd6aca9ef850fa52430d84a",
+        "bytes": 344,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_f5e53e707318f191f23ecf147e0791f38131fc5cd0eab6197c6287964531069b",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.a7449c5e.BfWNLb6012.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.a7449c5e.BfWNLb6012.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "67ad9f918a4797edd87eb3d8c16cff90a7f59cc804246fb6e49487f8b3d7d3ed",
+        "bytes": 684,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_f8ead879505e84174a3a1876abdab73d8e593dc81532155e3a329d3dad921d58",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/chessboard-layout.HnVOpg4u5j.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/chessboard-layout.HnVOpg4u5j.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "50a0b5148ea43aaa9197d2da71e54cead7a733abe473867ddd1980c4225cff5f",
+        "bytes": 6246,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_fb5af981376b95577fd0ea469cf2387d2d64e05369763367b60e28f83287f8a0",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-183-3f60cff609abbb5a65352819a1a633c76c3aee1bc05ab017699d1d1622900101.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "2ac7b4d3f443316dbc9984932c9545c0d6431cd51c0b8c10e37b21ed1a19c518",
+        "bytes": 55,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_fbd20a0486ae3478f292ab4701b1db0dc154de5b14a3ef55cc45b33cece9adda",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.88021cf4.m7olkoAyEi.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.88021cf4.m7olkoAyEi.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "9ddff4f56e96377764334d14da2a2c98e940340377410f663bdb7b53d4f7267d",
+        "bytes": 159,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_fc002bcb20e8760fdf840e9ade7866b140423f91e43a6c8ee4f5c9932d17552a",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.e7c46f48.1WXTkxV9dW.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.e7c46f48.1WXTkxV9dW.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "eedfd23dbc6402bb73272764f098256bbd6566bfe116b135a078dd848a392ea1",
+        "bytes": 872,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_fc44a8dac2cad629157dadc5f88431410b823760e779cdcfd82c02ce2180cb51",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/client.dbeb9287.BLAxM7Ijm4.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/r2/client-packages/puzzles/2026.10.3/client.dbeb9287.BLAxM7Ijm4.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "88fbe4c122efd387869d1e2c951794884749733a3c8492c99944c55cf65176ca",
+        "bytes": 1470,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_fdf6b1b5009223d806700f8915e6040104699ebafc395c4e6b3761757cfa73e3",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/puzzles/rated",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-187-5361e2319c8a8c24253394d643f6db43a1384c9b1c80a1fd6a486a5c79744bd2.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "b927aadfff612f1d484f9b7b72694013462d09c2cfa3781020bfde3e9c00d9a1",
+        "bytes": 1022,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_fe723780dc6ab8d24310df86b007b7c61eb7cb6dd1c06459c0cc97ad313f9bba",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.8e8b702d.DWFViyq4PN.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.8e8b702d.DWFViyq4PN.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d4da55af14aff49a8e06c6d55040c272a6ce8405c87dc3719e1ea8165a1a5484",
+        "bytes": 86200,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ff2038abcea71916d202818e00b5a8b9147dac569bc9ef42b312e6cb8a123bcc",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.eager.DDJB8ambzr.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.eager.DDJB8ambzr.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d3dcf288caac36af00a84e26b9436a884bd368dad765786e805a18d1ea45046f",
+        "bytes": 1017,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ff7614b7b8e4b71d0c1bf6f84f6f452daee9311fd937c27d0db9b2f0d2f8491e",
+        "frame_id": "4E0F6A10A132C0205536B85892D9C347",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.chess.com/bundles/app/vite/shared.ac2294d6.DDszAx8abU.chunk.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.ac2294d6.DDszAx8abU.chunk.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d068c741f7e84ea65a74527c8622f20ac343da3ddbcf6ef8060445150f66b985",
+        "bytes": 85728,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    }
+  ],
+  "limitations": [
+    "Observation starts when REA attaches; prior network and console activity is unavailable.",
+    "Raw network headers, bodies, cookies, storage values, console objects, and WebSocket payloads are never retained; explicitly requested primitive console text is retained verbatim, while payload captures retain value-free shapes.",
+    "Source maps are reported only as declarative URLs and are not fetched.",
+    "URL-less scripts and console events without an allowed source URL are excluded because their origin cannot be proven.",
+    "CDP discovery omitted the target attachment state; attached is reported as unknown.",
+    "Only script bytes retained in this capture are exported. Sources are not refetched or executed, and a response or Debugger source does not prove execution.",
+    "Ordinary unambiguous URL paths preserve relative module layouts by origin, including case-distinct spellings. Query variants, exact path collisions, file/directory prefixes, inline sources, and unrepresentable paths are isolated. A case-distinct pair is isolated only when the destination filesystem cannot store both spellings; the record names that pair. Browser module relationships of isolated paths remain unknown.",
+    "Local JavaScript analysis does not implement browser import maps, root-relative URL resolution, remote URL loading, or browser runtime behavior. It may strip import queries and fragments; isolated variants are not canonical targets.",
+    "Source-map declarations are retained as metadata. No source maps or missing dependencies are fetched or reconstructed.",
+    "Scenario response bytes preserve the output of Playwright's Response.body() API; any source-body provenance caveat from the capture is retained in this manifest. Debugger sources are the exposed text encoded as UTF-8. Redacted bytes are exported exactly as retained, and may no longer parse as JavaScript."
+  ]
+}

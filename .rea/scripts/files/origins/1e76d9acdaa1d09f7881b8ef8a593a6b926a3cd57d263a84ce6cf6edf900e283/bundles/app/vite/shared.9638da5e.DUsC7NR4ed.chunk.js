@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime.CNC7AqOflz.chunk.js";function t(){let e=window.location?.hostname??``;return!!(window.Cypress||window.Config?.cypress||e===`localhost`||e===`127.0.0.1`||e===`::1`||e===`[::1]`||e.endsWith(`.localhost`))}var n=e((()=>{}));export{t as n,n as t};
