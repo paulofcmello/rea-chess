@@ -2,8 +2,8 @@ import { useStored } from '../lib/storage'
 import { pieceUrl } from '../lib/theme'
 import { useStreak } from '../lib/streak'
 import { PuzzleStreakIcon } from '../components/PuzzleSidebar'
-import { bots } from '../lib/bots'
-import { Avatar } from '../components/ui'
+import { useEffect, useState } from 'react'
+import { loadBots, type Bot } from '../lib/bots'
 import { dailyStreak, todayKey } from './Daily'
 
 export default function Home() {
@@ -12,6 +12,10 @@ export default function Home() {
   const [rush] = useStored<Record<string, number>>('rushBest', { '3min': 0, '5min': 0, survival: 0 })
   const [daily] = useStored<Record<string, boolean>>('dailyLog', {})
   const [records] = useStored<Record<string, { w: number }>>('botRecords', {})
+  const [bots, setBots] = useState<Bot[]>([])
+  useEffect(() => {
+    loadBots().then((g) => setBots(g.flatMap((x) => x.bots)))
+  }, [])
   const beaten = bots.filter((b) => records[b.id]?.w).length
   const nextBot = bots.find((b) => !records[b.id]?.w) ?? bots[bots.length - 1]
   const doneToday = todayKey() in daily
@@ -35,11 +39,11 @@ export default function Home() {
           </div>
         </a>
         <a className="home-card hero" href="#/bots">
-          <Avatar emoji={nextBot.avatar} color={nextBot.color} size={56} />
+          {nextBot && <img className="home-bot-avatar" src={nextBot.image} alt="" width={56} height={56} />}
           <div>
             <div className="card-title">Play Bots</div>
             <div className="muted">
-              {beaten}/{bots.length} beaten · next up: {nextBot.name} ({nextBot.rating})
+              {beaten}/{bots.length} beaten{nextBot ? ` · next up: ${nextBot.name} (${nextBot.rating})` : ''}
             </div>
           </div>
         </a>

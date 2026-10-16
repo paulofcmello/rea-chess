@@ -1,38 +1,47 @@
 import { Chess } from 'chess.js'
 import type { Engine } from './engine'
 
+// Roster captured from chess.com's BotGroupService/ListBotGroups (via REA network capture).
 export interface Bot {
   id: string
   name: string
   rating: number
-  avatar: string
-  color: string
-  tier: 'New to Chess' | 'Beginner' | 'Intermediate' | 'Advanced' | 'Master'
-  bio: string
-  greet: string
-  onCheck: string[]
-  onWin: string
-  onLose: string
-  style?: 'aggressive' | 'defensive'
+  country: string
+  image: string
+  style?: 'aggressive' | 'defensive' | null
+  adapt?: boolean
+  group: string
 }
 
-export const bots: Bot[] = [
-  { id: 'pip', name: 'Pip', rating: 250, avatar: '🐣', color: '#f6c445', tier: 'New to Chess', bio: 'Just hatched. Knows how the pieces move... mostly.', greet: 'Hi!! Is the horse the one that jumps?', onCheck: ['Uh oh!', 'Is that bad?'], onWin: 'I WON?! Wow!', onLose: 'Good game! You are really good!' },
-  { id: 'milo', name: 'Milo', rating: 400, avatar: '🐶', color: '#c98b4a', tier: 'New to Chess', bio: 'Loves chasing pieces around the board.', greet: 'Woof! Let’s play!', onCheck: ['Bark bark!', 'Grrr...'], onWin: 'Good boy points for me!', onLose: 'Can we play fetch now?', style: 'aggressive' },
-  { id: 'nora', name: 'Nora', rating: 550, avatar: '👩‍🎨', color: '#e2777a', tier: 'Beginner', bio: 'Paints by day, plays chess by night.', greet: 'Every game is a blank canvas.', onCheck: ['A bold stroke!', 'Hmm, careful now.'], onWin: 'A masterpiece, if I say so myself.', onLose: 'Beautiful play. I’ll paint it.' },
-  { id: 'bob', name: 'Bishop Bob', rating: 700, avatar: '🧔', color: '#6c9bd2', tier: 'Beginner', bio: 'Thinks bishops are the best piece. Will argue about it.', greet: 'Diagonals are the way of the future.', onCheck: ['Check! Diagonally, ideally.', 'Ha!'], onWin: 'The bishops prevail once again.', onLose: 'Next time, more bishops.' },
-  { id: 'ruth', name: 'Ruth', rating: 900, avatar: '👵', color: '#a77bca', tier: 'Beginner', bio: 'Has played every Sunday since 1968.', greet: 'Sit down dear, I’ll go easy on you.', onCheck: ['Oh my!', 'Watch your king, sweetie.'], onWin: 'Cookies are on the table, dear.', onLose: 'Well played. You remind me of my grandson.', style: 'defensive' },
-  { id: 'fork', name: 'Captain Fork', rating: 1100, avatar: '🏴‍☠️', color: '#4d4d4d', tier: 'Intermediate', bio: 'Plunders loose pieces on the high seas.', greet: 'Arr! Hand over yer hanging pieces!', onCheck: ['Arr, check!', 'Walk the plank, king!'], onWin: 'The booty be mine!', onLose: 'Ye sank me ship...', style: 'aggressive' },
-  { id: 'lena', name: 'Lena', rating: 1300, avatar: '👩‍💻', color: '#3fa796', tier: 'Intermediate', bio: 'Software engineer who treats openings like code reviews.', greet: 'Let’s see if your opening compiles.', onCheck: ['Exception thrown.', 'Interesting edge case.'], onWin: 'All tests passing on my side.', onLose: 'Okay, that was clean. Merged.' },
-  { id: 'viktor', name: 'Viktor', rating: 1500, avatar: '🧑‍🏫', color: '#b5524a', tier: 'Intermediate', bio: 'Club champion. Very serious about the Sicilian.', greet: 'I hope you have prepared.', onCheck: ['Predictable.', 'Mm.'], onWin: 'As expected.', onLose: 'I must review this game.' },
-  { id: 'pawnsky', name: 'Professor Pawnsky', rating: 1700, avatar: '🎓', color: '#5c6bc0', tier: 'Advanced', bio: 'Wrote three books on pawn structure. Nobody read them.', greet: 'Pawns are the soul of chess, you know.', onCheck: ['Hm! Ambitious.', 'An instructive moment.'], onWin: 'Chapter 4 explains your mistake.', onLose: 'Remarkable. I shall add a footnote.', style: 'defensive' },
-  { id: 'sasha', name: 'Sasha', rating: 1900, avatar: '🦊', color: '#e8833a', tier: 'Advanced', bio: 'Sly, tricky, and loves a swindle.', greet: 'Don’t blink.', onCheck: ['Hehe.', 'Sneaky, sneaky.'], onWin: 'Outfoxed!', onLose: 'Okay, you got me fair and square.', style: 'aggressive' },
-  { id: 'gus', name: 'Grandmaster Gus', rating: 2200, avatar: '👴', color: '#8d6e63', tier: 'Master', bio: 'Retired GM. Still remembers every game he ever lost.', greet: 'Show me what you’ve got, kid.', onCheck: ['Not bad.', 'I’ve seen this before.'], onWin: 'Experience wins again.', onLose: 'Impressive. Truly.' },
-  { id: 'ivan', name: 'Iron Ivan', rating: 2500, avatar: '🤖', color: '#78909c', tier: 'Master', bio: 'A cold, calculating machine with a heart of steel.', greet: 'CALCULATING YOUR DEFEAT.', onCheck: ['IRRELEVANT.', 'THREAT LOGGED.'], onWin: 'RESULT: EXPECTED.', onLose: 'ERROR. ERROR. RECALIBRATING.' },
-  { id: 'max', name: 'Max', rating: 3200, avatar: '🧠', color: '#d81b60', tier: 'Master', bio: 'Full-strength Stockfish. Good luck.', greet: '...', onCheck: ['...'], onWin: 'gg', onLose: 'How?!' },
-]
+export interface BotGroup {
+  name: string
+  avatar: string
+  bots: Bot[]
+}
 
-export const tiers: Bot['tier'][] = ['New to Chess', 'Beginner', 'Intermediate', 'Advanced', 'Master']
+let roster: Promise<BotGroup[]> | null = null
+export function loadBots(): Promise<BotGroup[]> {
+  roster ??= fetch(`${import.meta.env.BASE_URL}data/bots.json`)
+    .then((r) => r.json())
+    .then((groups: Omit<BotGroup, 'bots'> & { bots: Omit<Bot, 'group'>[] }[]) =>
+      (groups as unknown as { name: string; avatar: string; bots: Omit<Bot, 'group'>[] }[]).map((g) => ({
+        ...g,
+        bots: g.bots.map((b) => ({ ...b, group: g.name })),
+      })),
+    )
+  return roster
+}
+
+const pick = <T,>(xs: T[]) => xs[Math.floor(Math.random() * xs.length)]
+
+/** Generic chat lines (the roster has no phrases for logged-out users). */
+export const chat = {
+  greet: () => pick(['Hi! Let\u2019s play!', 'Good luck, have fun!', 'Ready when you are.', 'Let\u2019s have a great game!']),
+  check: () => pick(['Check!', 'Watch your king!', 'Careful now.', 'Hmm, interesting.']),
+  botWon: () => pick(['Good game! Want to play again?', 'That was fun! Rematch?', 'Great game, thanks for playing!']),
+  botLost: () => pick(['Well played! You got me.', 'Wow, nice game!', 'Congratulations, great win!']),
+  draw: () => pick(['A draw! Well fought.', 'Evenly matched today!']),
+}
 
 const pieceValue: Record<string, number> = { p: 1, n: 3, b: 3, r: 5, q: 9, k: 0 }
 
@@ -60,7 +69,7 @@ export async function botMove(engine: Engine, bot: Bot, fen: string): Promise<st
   }
 
   // Low-rated play.
-  const t = (bot.rating - 250) / 1100 // 0 (weakest) .. ~1
+  const t = Math.max(0, (bot.rating - 250) / 1100) // 0 (weakest) .. ~1
   const randomChance = 0.45 * (1 - t) + 0.03
   if (Math.random() < randomChance) {
     let pool = legal

@@ -19,6 +19,12 @@ export interface Highlight {
   opacity?: number
 }
 export type EffectType = 'correct' | 'incorrect'
+/** Game-result badges chess.com puts on the kings (captured from /play/computer). */
+export type ResultType = 'winner' | 'resign' | 'checkmated' | 'draw' | 'timeout'
+export interface ResultBadge {
+  square: string
+  type: ResultType
+}
 export interface Effect {
   square: string
   type: EffectType
@@ -34,6 +40,7 @@ interface Props {
   lastMoveColor?: string
   highlights?: Highlight[]
   effects?: Effect[]
+  results?: ResultBadge[]
   arrows?: Arrow[]
   /** Queued premoves (shown on the board in chess.com's premove red) and who may premove. */
   premoves?: [string, string][]
@@ -214,6 +221,18 @@ const EFFECT_SVG: Record<EffectType, string> = {
     '<svg viewBox="0 0 18 19" width="100%" height="100%"><path opacity="0.3" d="M9,.5C4.03,.5,0,4.53,0,9.5s4.03,9,9,9,9-4.03,9-9S13.97,.5,9,.5Z"/><path fill="#FF7769" d="M9,0C4.03,0,0,4.03,0,9s4.03,9,9,9,9-4.03,9-9S13.97,0,9,0Z"/><path opacity="0.2" d="M13.99,12.51s.06,.08,.08,.13c.02,.05,.03,.1,.03,.15s-.01,.1-.03,.15c-.02,.05-.05,.09-.08,.13l-1.37,1.37s-.08,.06-.13,.08c-.05,.02-.1,.03-.15,.03s-.1-.01-.15-.03c-.05-.02-.09-.05-.13-.08l-3.06-3.06-3.06,3.06s-.08,.06-.13,.08c-.05,.02-.1,.03-.15,.03s-.1-.01-.15-.03c-.05-.02-.09-.05-.13-.08l-1.37-1.37c-.07-.07-.11-.17-.11-.28s.04-.2,.11-.28l3.06-3.06-3.06-3.06c-.07-.07-.11-.17-.11-.28s.04-.2,.11-.28l1.37-1.37c.07-.07,.17-.11,.28-.11s.2,.04,.28,.11l3.06,3.06,3.06-3.06c.07-.07,.17-.11,.28-.11s.2,.04,.28,.11l1.37,1.37s.06,.08,.08,.13c.02,.05,.03,.1,.03,.15s-.01,.1-.03,.15c-.02,.05-.05,.09-.08,.13l-3.06,3.06,3.06,3.06Z"/><path fill="#f1f2f2" d="M13.99,12.01s.06,.08,.08,.13c.02,.05,.03,.1,.03,.15s-.01,.1-.03,.15c-.02,.05-.05,.09-.08,.13l-1.37,1.37s-.08,.06-.13,.08c-.05,.02-.1,.03-.15,.03s-.1-.01-.15-.03c-.05-.02-.09-.05-.13-.08l-3.06-3.06-3.06,3.06s-.08,.06-.13,.08c-.05,.02-.1,.03-.15,.03s-.1-.01-.15-.03c-.05-.02-.09-.05-.13-.08l-1.37-1.37c-.07-.07-.11-.17-.11-.28s.04-.2,.11-.28l3.06-3.06-3.06-3.06c-.07-.07-.11-.17-.11-.28s.04-.2,.11-.28l1.37-1.37c.07-.07,.17-.11,.28-.11s.2,.04,.28,.11l3.06,3.06,3.06-3.06c.07-.07,.17-.11,.28-.11s.2,.04,.28,.11l1.37,1.37s.06,.08,.08,.13c.02,.05,.03,.1,.03,.15s-.01,.1-.03,.15c-.02,.05-.05,.09-.08,.13l-3.06,3.06,3.06,3.06Z"/></svg>',
 }
 
+const RESULT_SVG: Record<ResultType, string> = {
+  winner:
+    '<svg viewBox="0 0 18 19" width="70%" height="70%"><path fill="#fff" transform="matrix(0.25173118,0,0,0.25173118,2.8497971,2.8741344)" d="m 24.4334,39.6517 c 15.9034,0 22.8584,-4.7017 22.8584,-4.7017 l 0.975,-23.6167 c 0,-2.16663 -1.495,-2.79497 -3.25,-1.4083 L 34.1834,17.53 26.6868,2.66667 C 26.0151,0.911667 25.1484,0.5 24.5201,0.5 23.8918,0.5 22.9384,0.955 22.3534,2.66667 L 14.6834,17.53 3.85008,9.925 C 2.09508,8.53833 0.513416,9.16667 0.600083,11.3333 L 1.57508,34.95 c 0,0 6.955,4.55 22.85832,4.7017 z"/></svg>',
+  resign:
+    '<svg viewBox="0 0 18 19" width="70%" height="70%"><path fill="#fff" d="M4.12 5.46a.57.57 0 0 0-1.1.29l2.33 8.69a.57.57 0 1 0 1.1-.3z"/><path fill="#fff" d="M14.47 6.74c-.13-.59-.31-1.14-.47-1.74L13.46 3c-.45.49-1.04.84-1.7.99-.55.13-1.1.18-1.66.16-.55 0-1.1-.04-1.64-.05-.56-.01-1.12.05-1.67.17-.65.14-1.25.48-1.7.97l.54 2 .47 1.74.45 1.68.09.32c.46-.49 1.06-.83 1.71-.98a6.5 6.5 0 0 1 1.66-.16c.55 0 1.09.05 1.63.05.56.02 1.12-.03 1.67-.16.65-.15 1.24-.49 1.69-.98-.21-.77-.37-1.41-.53-2.01z"/></svg>',
+  checkmated:
+    '<svg viewBox="0 0 18 19" width="70%" height="70%"><text x="9" y="14" text-anchor="middle" font-size="13" font-weight="800" fill="#fff" font-family="Chess Sans, sans-serif">#</text></svg>',
+  timeout:
+    '<svg viewBox="0 0 24 24" width="62%" height="62%"><circle cx="12" cy="13" r="8" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M12 9v4l3 2" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>',
+  draw: '<svg viewBox="0 0 18 19" width="70%" height="70%"><text x="9" y="14" text-anchor="middle" font-size="11" font-weight="800" fill="#fff" font-family="Chess Sans, sans-serif">½</text></svg>',
+}
+
 export default function Board({
   fen,
   orientation = 'white',
@@ -223,6 +242,7 @@ export default function Board({
   lastMoveColor,
   highlights = [],
   effects = [],
+  results = [],
   arrows = [],
   premoves = [],
   premoveColor,
@@ -553,6 +573,19 @@ export default function Board({
             style={{ transform: `translate(${x * 100}%, ${y * 100}%)` }}
             dangerouslySetInnerHTML={{ __html: EFFECT_SVG[ef.type] }}
           />
+        )
+      })}
+
+      {results.map((r) => {
+        const [x, y] = toXY(r.square)
+        return (
+          <div
+            key={'r' + r.square}
+            className={`result-badge ${r.type} ${y === 0 ? 'tuck-top' : ''} ${x === 7 ? 'tuck-right' : ''}`}
+            style={{ transform: `translate(${x * 100}%, ${y * 100}%)` }}
+          >
+            <span className="result-badge-icon" dangerouslySetInnerHTML={{ __html: RESULT_SVG[r.type] }} />
+          </div>
         )
       })}
 
