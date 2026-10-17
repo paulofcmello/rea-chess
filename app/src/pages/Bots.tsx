@@ -40,7 +40,7 @@ function gameOver(sans: string[]): GameResult | null {
 }
 
 function flag(cc: string) {
-  if (!cc || cc.length !== 2) return ''
+  if (!cc || cc.length !== 2 || cc[0].toLowerCase() === 'x') return '' // x* = chess.com custom regions
   return String.fromCodePoint(...[...cc.toUpperCase()].map((c) => 0x1f1a5 + c.charCodeAt(0)))
 }
 
@@ -51,6 +51,7 @@ function kingSquare(fen: string, color: 'w' | 'b') {
 
 export default function Bots() {
   const [groups, setGroups] = useState<BotGroup[]>([])
+  const [tip, setTip] = useState<{ bot: Bot; x: number; y: number } | null>(null)
   const [botId, setBotId] = useStored('botId', '')
   const [openGroup, setOpenGroup] = useStored('botGroup', 'The Cryptids')
   const [colorChoice, setColorChoice] = useStored<ColorChoice>('botColor', 'w')
@@ -393,7 +394,7 @@ export default function Bots() {
                   </span>
                 ) : null}
               </div>
-              <div className="bot-groups">
+              <div className="bot-groups" onScroll={() => setTip(null)}>
                 {groups.map((g) =>
                   g.name === openGroup ? (
                     <div key={g.name} className="bot-group open">
@@ -403,7 +404,13 @@ export default function Bots() {
                       </button>
                       <div className="bot-tiles">
                         {g.bots.map((b) => (
-                          <button key={b.id} className={`bot-tile ${b.id === bot.id ? 'selected' : ''}`} onClick={() => setBotId(b.id)} title={`${b.name} (${b.rating})`}>
+                          <button key={b.id} className={`bot-tile ${b.id === bot.id ? 'selected' : ''}`} onClick={() => setBotId(b.id)}
+                            onMouseEnter={(e) => {
+                              const r = e.currentTarget.getBoundingClientRect()
+                              setTip({ bot: b, x: r.left + r.width / 2, y: r.top })
+                            }}
+                            onMouseLeave={() => setTip(null)}
+                          >
                             <img src={b.image} alt={b.name} loading="lazy" />
                             {records[b.id]?.w ? <span className="bot-tile-check">✓</span> : null}
                           </button>
@@ -420,6 +427,11 @@ export default function Bots() {
                 )}
               </div>
             </div>
+            {tip && (
+              <div className="bot-tooltip" style={{ left: tip.x, top: tip.y }}>
+                {tip.bot.name} <span className="bot-tooltip-rating">({tip.bot.rating})</span> {flag(tip.bot.country)}
+              </div>
+            )}
             <div className="cc-sidebar-footer bots-footer">
               {showOptions && (
                 <div className="bots-options-panel">

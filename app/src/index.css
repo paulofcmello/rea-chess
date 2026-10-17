@@ -2432,10 +2432,56 @@ h2 {
   place-items: center;
 }
 
+.bots-select {
+  overflow: hidden;
+}
+.bots-select > :not(.bot-groups) {
+  flex-shrink: 0;
+}
+
+/* chess.com: avatar, speech and name stay docked; only the group list scrolls */
 .bot-groups {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  margin: 0 -12px;
+  padding: 0 12px;
+}
+.bot-groups > * {
+  flex-shrink: 0;
+}
+
+/* chess.com cc-tooltip (top, anchor center) */
+.bot-tooltip {
+  position: fixed;
+  z-index: 50;
+  transform: translate(-50%, calc(-100% - 9px));
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.77);
+  color: #fff;
+  font: 600 14px/16px -apple-system, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif;
+  padding: 8px;
+  border-radius: 3px;
+  pointer-events: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.bot-tooltip::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-5px);
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.77);
+}
+.bot-tooltip-rating {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .bot-group {
