@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import Home from './pages/Home'
 import Puzzles from './pages/Puzzles'
 import Rush from './pages/Rush'
@@ -15,10 +15,13 @@ import { useSettings, type Settings } from './lib/storage'
 import { boards, pieceSets, pieceUrl, soundThemes } from './lib/theme'
 import { play } from './lib/sound'
 
+const Friend = lazy(() => import('./pages/Friend'))
+
 const ICONS = 'https://assets-ds.chess.com/color-icons'
 const routes = {
   '': { label: 'Home', icon: 'home', el: Home },
   bots: { label: 'Play Bots', icon: 'bots', el: Bots },
+  friend: { label: 'Play a Friend', icon: 'friends', el: Friend },
   puzzles: { label: 'Puzzles', icon: 'puzzle-piece', el: Puzzles },
   rush: { label: 'Puzzle Rush', icon: 'puzzle-rush', el: Rush },
   daily: { label: 'Daily Puzzle', icon: 'pawn-green', el: Daily },
@@ -79,7 +82,7 @@ export default function App() {
         </button>
       </nav>
       <main className="main">
-        <Page key={route} />
+        <Suspense fallback={<div className="page muted">Loading…</div>}><Page key={route} /></Suspense>
       </main>
 
       {showSettings && (
