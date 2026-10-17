@@ -1,6 +1,6 @@
 # REA Chess
 
-Personal chess.com clone (puzzles + bots, no multiplayer yet). Vite + React + TS in `app/`. Deployed via GitHub Pages (`.github/workflows`, repo paulofcmello/rea-chess): changes go live only after commit + push to `main`.
+Personal chess.com clone (puzzles, bots, game import + review, P2P play with friends). Vite + React + TS in `app/`. Deployed via GitHub Pages (`.github/workflows`, repo paulofcmello/rea-chess): changes go live only after commit + push to `main`.
 
 ## Run
 `cd app && npm run dev` · `npx tsc -b && npm run build` to verify.
@@ -20,12 +20,18 @@ This project recreates chess.com by reverse-engineering it with **REA** (`npx re
 - Progress in localStorage via `lib/storage.ts` (`useStored`, `updateStored`); streaks in `lib/streak.ts`.
 - Testing UI: debug Chrome with `--remote-debugging-port=9222` + a small CDP script (bring tab to front before synthetic input).
 
-## Roadmap (do one per session)
-1. ~~Bots page restyle~~ (done)
-2. Fix 3D piece sets (chess.com "pseudo3d" taller pieces render wrong)
-3. Game Review (move classifications, accuracy, eval graph; local Stockfish)
-4. Online play with friends (PeerJS P2P or Supabase Realtime)
-Other gaps: puzzle punish-move arrow, time-bonus rating, Puzzle Path, figurine move list, stats page.
+## Features (done)
+Home (chess.com logged-in home), Play Bots, Puzzles/Rush/Daily/Themes, My Games (chess.com public API import), Game Review (`pages/Review.tsx`, `lib/review.ts`: classifications, accuracy calibrated to chess.com, eval graph, coach), Stats, Play a Friend (`pages/Friend.tsx`, PeerJS P2P, `lib/friendGame.ts`), Analysis. Figurine notation via chess.com "Chess V3" font.
+
+## Codex workflow (saves Claude tokens)
+Claude plans + reviews + browser-tests; Codex builds. Write `docs/plan-<x>.md` (exact files, values from `.rea/` evidence, acceptance steps), then run
+`codex exec -m gpt-6.1-sol -C . -s workspace-write -c sandbox_workspace_write.network_access=true -c model_reasoning_effort=high -o <out.md> "Read AGENTS.md, then implement docs/plan-<x>.md exactly." < /dev/null` (the `< /dev/null` is required or it hangs on stdin). `AGENTS.md` holds Codex's rules (no commits).
+
+## Roadmap / gaps
+- Puzzle punish-move arrow, time-bonus rating, Puzzle Path (need logged-in chess.com captures; don't solve puzzles on the user's real account without asking).
+- Game Review: Brilliant detection untested; coach "Explain" deeper comments.
+- Play a Friend: cross-network (NAT) connectivity untested; may need a TURN server.
+- ~~3D piece sets~~ (user doesn't care).
 
 ## Working style
-User is token-conscious: be concise, ask before big steps, commit + push when a step is done (only if asked).
+User is token-conscious: be concise, ask before big steps, commit + push when a step is done.
