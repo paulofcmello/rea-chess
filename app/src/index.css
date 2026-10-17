@@ -2207,6 +2207,22 @@ h2 {
   width: calc(var(--board-size) + 34px);
 }
 
+/* The desktop formula above goes negative on narrow screens; reuse the .cc-layout mobile sizes. */
+@media (max-width: 1000px) {
+  .cc-board-area.with-players {
+    --board-size: min(calc(100vw - 64px - 32px - 32px - 6px), 640px);
+  }
+}
+
+@media (max-width: 560px) {
+  .cc-board-area.with-players {
+    --board-size: calc(100vw - 32px - 6px);
+  }
+  .cc-board-area.with-players.with-eval {
+    --board-size: calc(100vw - 32px - 6px - 34px);
+  }
+}
+
 .cc-board-row {
   display: flex;
   gap: 8px;
