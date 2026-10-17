@@ -479,6 +479,10 @@ h2 {
   z-index: 3;
 }
 
+.board.piece-hover {
+  cursor: grab;
+}
+
 .board.is-dragging {
   cursor: grabbing;
 }

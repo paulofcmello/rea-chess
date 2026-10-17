@@ -2,7 +2,7 @@
 // `chessboard` chunk and puzzles.css): pieces keep identity across positions so moves slide and
 // captures fade, drag shows a hover-square outline, right-click marks squares / draws arrows with
 // chess.com's arrow geometry (including L-shaped knight arrows), and effects render as square badges.
-import { useLayoutEffect, useMemo, useRef, useState, type PointerEvent } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent } from 'react'
 import { Chess, type Square } from 'chess.js'
 import { useSettings } from '../lib/storage'
 import { boards, boardUrl, pieceUrl } from '../lib/theme'
@@ -259,6 +259,13 @@ export default function Board({
   const [selected, setSelected] = useState<string | null>(null)
   const [drag, setDrag] = useState<{ sq: string; x: number; y: number; moved: boolean; wasSelected: boolean } | null>(null)
   const [hover, setHover] = useState<string | null>(null)
+  // chess.com toggles `piece-hover` on the board (pieces ignore pointer events) to show the grab cursor.
+  const [grab, setGrab] = useState(false)
+  // Square whose piece returns from a drag without the slide transition (cleared after each commit).
+  const snapSq = useRef<string | null>(null)
+  useEffect(() => {
+    snapSq.current = null
+  })
   const [promo, setPromo] = useState<{ from: string; to: string } | null>(null)
   const [marks, setMarks] = useState<{ square: string; color: string }[]>([])
   const [userArrows, setUserArrows] = useState<Arrow[]>([])
@@ -398,7 +405,9 @@ export default function Board({
     if (piece && canMove(piece.color)) {
       const rect = ref.current!.getBoundingClientRect()
       ref.current!.setPointerCapture(e.pointerId)
+      // Like chess.com, the piece jumps under the cursor on press; no drag threshold.
       setDrag({ sq, x: e.clientX - rect.left, y: e.clientY - rect.top, moved: false, wasSelected: selected === sq })
+      setHover(sq)
       setSelected(sq)
     } else {
       setSelected(null)
@@ -412,13 +421,19 @@ export default function Board({
       if (to && to !== rd.to) setRightDrag({ ...rd, to })
       return
     }
-    if (!drag) return
+    if (!drag) {
+      const sq = sqFromEvent(e)
+      const piece = sq ? display.get(sq as Square) : null
+      setGrab(!promo && !!piece && canMove(piece.color))
+      return
+    }
     const rect = ref.current!.getBoundingClientRect()
     const x = e.clientX - rect.left
     const y = e.clientY - rect.top
+    // `moved` only separates a click (toggle selection) from a drag; the piece follows regardless.
     const moved = drag.moved || Math.hypot(x - drag.x, y - drag.y) > 3
     setDrag({ ...drag, x, y, moved })
-    if (moved) setHover(sqFromEvent(e))
+    setHover(sqFromEvent(e))
   }
 
   const onPointerUp = (e: PointerEvent) => {
@@ -443,11 +458,12 @@ export default function Board({
     const to = sqFromEvent(e)
     setDrag(null)
     setHover(null)
-    if (drag.moved) {
-      if (to && to !== drag.sq) tryMove(drag.sq, to, true)
-    } else if (drag.wasSelected) {
+    if (to && to !== drag.sq) {
+      if (!tryMove(drag.sq, to, true)) snapSq.current = drag.sq
+    } else {
+      snapSq.current = drag.sq
       // Clicking an already-selected piece deselects it.
-      setSelected(null)
+      if (!drag.moved && drag.wasSelected) setSelected(null)
     }
   }
 
@@ -494,7 +510,7 @@ export default function Board({
   return (
     <div
       ref={ref}
-      className={`board ${drag?.moved ? 'is-dragging' : ''}`}
+      className={`board ${drag ? 'is-dragging' : grab ? 'piece-hover' : ''}`}
       data-fen={fen}
       style={{
         backgroundImage: `url(${boardUrl(settings.board)})`,
@@ -503,6 +519,7 @@ export default function Board({
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
+      onPointerLeave={() => setGrab(false)}
       onContextMenu={(e) => e.preventDefault()}
     >
       {settings.coords && (
@@ -530,7 +547,7 @@ export default function Board({
           <div key={'d' + sq} className={cap ? 'capture-hint' : 'hint'} style={{ transform: pos(sq) }} />
         ))}
 
-      {hover && drag?.moved && (
+      {hover && drag && (
         <div className="hover-square" style={{ transform: pos(hover) }}>
           <svg viewBox="0 0 100 100">
             <rect x="0" y="0" width="100" height="100" stroke="rgba(255, 255, 255, 0.65)" strokeWidth="10" fill="none" />
@@ -546,11 +563,11 @@ export default function Board({
         />
       ))}
       {pieces.map((p) => {
-        const dragging = drag?.moved && drag.sq === p.square
+        const dragging = !!drag && drag.sq === p.square
         const rect = ref.current?.getBoundingClientRect()
         const size = rect ? rect.width / 8 : 0
         const transform = dragging ? `translate(${drag!.x - size / 2}px, ${drag!.y - size / 2}px)` : pos(p.square)
-        const instant = dragging || instantId === p.id || !moveMs
+        const instant = dragging || instantId === p.id || snapSq.current === p.square || !moveMs
         return (
           <div
             key={p.id}
