@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Chess } from 'chess.js'
 import Board, { type Arrow, type ResultBadge } from '../components/Board'
-import { EvalBar, type Score } from '../components/ui'
+import { EvalBar, SanText, type Score } from '../components/ui'
 import { Glyph } from '../components/glyphs'
 import { CCButton, ICONS } from '../components/PuzzleSidebar'
 import { botMove, chat as lines, loadBots, type Bot, type BotGroup } from '../lib/bots'
@@ -11,7 +11,7 @@ import { buildPositions, material } from '../lib/game'
 import { play, playMove } from '../lib/sound'
 import { useStored } from '../lib/storage'
 import { pieceUrl } from '../lib/theme'
-import { openInAnalysis } from './Analysis'
+import { openReview } from './Review'
 import { BoardControls } from './puzzleUi'
 
 const START = new Chess().fen()
@@ -262,7 +262,18 @@ export default function Bots() {
     a.click()
   }
 
-  const review = () => openInAnalysis(START, sans, userColor === 'w' ? 'white' : 'black')
+  const review = () => {
+    if (!bot) return
+    const c = new Chess()
+    for (const san of sans) c.move(san)
+    c.setHeader('White', userColor === 'w' ? 'You' : bot.name)
+    c.setHeader('Black', userColor === 'b' ? 'You' : bot.name)
+    c.setHeader('Result', !result ? '*' : result.winner == null ? '1/2-1/2' : result.winner === 'w' ? '1-0' : '0-1')
+    c.setHeader('Date', new Date().toISOString().slice(0, 10).replaceAll('-', '.'))
+    const user = { username: 'You' }
+    const opponent = { username: bot.name, rating: bot.rating, avatar: bot.image }
+    openReview({ pgn: c.pgn(), white: userColor === 'w' ? user : opponent, black: userColor === 'b' ? user : opponent, me: 'You' })
+  }
 
   if (!bot) return <div className="page muted">Loading bots…</div>
 
@@ -548,11 +559,11 @@ function MoveRows({ sans, ply, onSelect, result }: { sans: string[]; ply: number
       <div className="cc-move-row" key={i}>
         <span className="cc-move-num">{i / 2 + 1}.</span>
         <button className={`cc-move ${ply === i + 1 ? 'selected' : ''}`} onClick={() => onSelect(i + 1)}>
-          {sans[i]}
+          <SanText san={sans[i]} color="w" />
         </button>
         {sans[i + 1] && (
           <button className={`cc-move ${ply === i + 2 ? 'selected' : ''}`} onClick={() => onSelect(i + 2)}>
-            {sans[i + 1]}
+            <SanText san={sans[i + 1]} color="b" />
           </button>
         )}
       </div>,

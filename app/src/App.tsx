@@ -6,6 +6,7 @@ import Themes from './pages/Themes'
 import Daily from './pages/Daily'
 import Bots from './pages/Bots'
 import Games from './pages/Games'
+import Stats from './pages/Stats'
 import Analysis from './pages/Analysis'
 import Review from './pages/Review'
 import { Modal } from './components/ui'
@@ -23,6 +24,7 @@ const routes = {
   daily: { label: 'Daily Puzzle', icon: 'pawn-green', el: Daily },
   themes: { label: 'Themes', icon: 'training', el: Themes },
   games: { label: 'My Games', icon: 'binoculars', el: Games },
+  stats: { label: 'Stats', icon: 'binoculars', el: Stats },
   review: { label: 'Game Review', icon: 'magnifier-star', el: Review },
   analysis: { label: 'Analysis', icon: 'binoculars', el: Analysis },
 } as const

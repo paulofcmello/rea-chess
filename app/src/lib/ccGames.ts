@@ -1,4 +1,7 @@
 import { Chess } from 'chess.js'
+import { load, save } from './storage'
+
+export const TIME_CLASSES = ['bullet', 'blitz', 'rapid', 'daily'] as const
 
 export interface CcGame {
   url: string
@@ -13,9 +16,18 @@ export interface CcGame {
   black: { username: string; rating: number; result: string }
 }
 
+export interface TimeClassStats {
+  last?: { rating: number }
+  best?: { rating: number }
+  record?: { win: number; loss: number; draw: number }
+}
+export type CcStats = Partial<Record<`chess_${CcGame['time_class']}`, TimeClassStats>>
+
 const START = new Chess().fen()
 const archiveCache = new Map<string, Promise<string[]>>()
 const monthCache = new Map<string, Promise<CcGame[]>>()
+const avatarCache = new Map<string, Promise<string | null>>()
+const statsCache = new Map<string, Promise<CcStats>>()
 
 function cached<T>(cache: Map<string, Promise<T>>, key: string, load: () => Promise<T>) {
   const existing = cache.get(key)
@@ -26,6 +38,30 @@ function cached<T>(cache: Map<string, Promise<T>>, key: string, load: () => Prom
   })
   cache.set(key, request)
   return request
+}
+
+export function fetchAvatar(username: string): Promise<string | null> {
+  const normalized = username.trim().toLowerCase()
+  return cached(avatarCache, normalized, async () => {
+    const stored = load<string | null | undefined>(`avatar:${normalized}`, undefined)
+    if (stored !== undefined) return stored
+    const response = await fetch(`https://api.chess.com/pub/player/${encodeURIComponent(normalized)}`)
+    if (!response.ok && response.status !== 404) throw new Error('Could not load avatar')
+    const data = response.status === 404 ? {} : await response.json() as { avatar?: string }
+    const avatar = data.avatar ?? null
+    save(`avatar:${normalized}`, avatar)
+    return avatar
+  })
+}
+
+export function fetchStats(username: string): Promise<CcStats> {
+  const normalized = username.trim().toLowerCase()
+  return cached(statsCache, normalized, async () => {
+    const response = await fetch(`https://api.chess.com/pub/player/${encodeURIComponent(normalized)}/stats`)
+    if (response.status === 404) throw new Error('User not found')
+    if (!response.ok) throw new Error('Could not load stats')
+    return await response.json() as CcStats
+  })
 }
 
 export function fetchArchives(username: string): Promise<string[]> {
@@ -52,7 +88,7 @@ export function fetchMonth(url: string): Promise<CcGame[]> {
 export function gameToAnalysis(
   game: CcGame,
   me: string,
-): { fen: string; sans: string[]; orientation: 'white' | 'black' } {
+): { fen: string; sans: string[]; clocks: string[]; orientation: 'white' | 'black' } {
   let chess = new Chess()
   try {
     chess.loadPgn(game.pgn)
@@ -64,8 +100,26 @@ export function gameToAnalysis(
   return {
     fen: chess.getHeaders().FEN ?? game.initial_setup ?? START,
     sans: chess.history(),
+    clocks: clocksFromGame(chess),
     orientation: game.black.username.toLowerCase() === me.trim().toLowerCase() ? 'black' : 'white',
   }
+}
+
+function clocksFromGame(chess: Chess): string[] {
+  const comments = new Map(chess.getComments().map(({ fen, comment }) => [fen, comment]))
+  const clocks = chess.history({ verbose: true }).map((move) => {
+    const match = comments.get(move.after)?.match(/\[%clk\s+(\d+):(\d{2}):(\d{2})(?:\.\d+)?\]/)
+    if (!match) return ''
+    const hours = Number(match[1])
+    return hours ? `${hours}:${match[2]}:${match[3]}` : `${Number(match[2])}:${match[3]}`
+  })
+  return clocks.some(Boolean) ? clocks : []
+}
+
+export function parseClocks(pgn: string): string[] {
+  const chess = new Chess()
+  chess.loadPgn(pgn)
+  return clocksFromGame(chess)
 }
 
 const DRAW_RESULTS = new Set(['agreed', 'repetition', 'stalemate', 'insufficient', '50move', 'timevsinsufficient'])

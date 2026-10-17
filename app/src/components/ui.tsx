@@ -5,6 +5,19 @@ export interface Score {
   mate?: number
 }
 
+const FIGURINES = {
+  w: { K: 'Ā', Q: 'Į', R: 'Ľ', B: 'Ă', N: 'Ç' },
+  b: { K: 'Ą', Q: 'Ķ', R: 'Ļ', B: 'Ä', N: 'Ė' },
+}
+
+export function SanText({ san, color }: { san: string; color: 'w' | 'b' }) {
+  return <>{san.split(/(^[KQRBN]|=[QRBN])/).map((part, i) => {
+    const piece = part.startsWith('=') ? part.slice(1) : part
+    if (piece in FIGURINES[color]) return <span key={i}>{part.startsWith('=') && '='}<span className="figurine">{FIGURINES[color][piece as keyof typeof FIGURINES.w]}</span></span>
+    return part
+  })}</>
+}
+
 /** Formats a white-perspective score like chess.com: "+1.4", "M3", "-M2". */
 export function formatScore(s: Score | null) {
   if (!s) return '0.0'
@@ -43,7 +56,7 @@ export function MoveList({ sans, ply, onSelect, startFen }: { sans: string[]; pl
         <span className="mv muted">{c === null ? '…' : ''}</span>
       ) : (
         <button className={`mv ${ply === c + 1 ? 'active' : ''}`} onClick={() => onSelect?.(c + 1)}>
-          {sans[c]}
+          <SanText san={sans[c]} color={(c + Number(blackFirst)) % 2 === 0 ? 'w' : 'b'} />
         </button>
       )
     rows.push(

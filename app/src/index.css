@@ -3062,16 +3062,11 @@ h2 {
   white-space: nowrap;
 }
 
-.games-time-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.games-time-fallback {
-  max-width: 42px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.games-time-glyph { display: inline-block; flex-shrink: 0; text-transform: none; }
+.games-time-glyph.bullet { color: #e3aa24; }
+.games-time-glyph.blitz { color: #fad541; }
+.games-time-glyph.rapid { color: #81b64c; }
+.games-time-glyph.daily { color: #f7c631; }
 
 .games-players {
   flex: 1;
@@ -3228,4 +3223,65 @@ h2 {
   .review-body { padding: 16px; }
   .review-coach-avatar { width: 64px; height: 64px; flex-basis: 64px; }
   .review-bubble { padding: 12px; }
+}
+@font-face {
+  font-family: 'Chess V3';
+  font-display: block;
+  src: url(https://www.chess.com/bundles/web/fonts/chessglyph-v3/chessglyph-v3.3e78f81f.woff2) format('woff2');
+}
+.figurine {
+  font-family: 'Chess V3';
+  font-size: 22px;
+  line-height: 20px;
+  margin: 0 2px 2px;
+  font-weight: 400;
+}
+
+/* Game Review clocks and player photos. */
+.review-layout .cc-player { align-items: center; }
+.review-layout .cc-player-avatar.you img,
+.review-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.review-layout .cc-player-info { flex: 1; }
+.review-layout .cc-player-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.review-clock { margin-left: auto; flex-shrink: 0; min-width: 90px; height: 40px; padding: 3px 12px; border-radius: 4px; background: #262421; color: #8b8987; text-align: right; font-family: 'Chess Sans', sans-serif; font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.review-clock.active.white { background: #fff; color: #262421; }
+.review-clock.active.black { color: #fff; }
+
+/* Stats uses the same dark cards as My Games. */
+.stats-page { display: flex; flex-direction: column; gap: 20px; }
+.stats-page .games-header { margin-bottom: 0; }
+.stats-page h2 { margin: 0 0 12px; font-size: 19px; }
+.stats-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.stats-card { min-width: 0; padding: 18px; border-radius: 5px; background: var(--panel); }
+.stats-card h2 { display: flex; align-items: center; gap: 6px; text-transform: capitalize; }
+.stats-rating { color: #fff; font-family: var(--font-heading); font-weight: 800; font-size: 36px; }
+.stats-card p { margin: 4px 0 16px; }
+.stats-record { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.stats-record .win { color: #81b64c; }
+.stats-record .draw { color: #8b8987; }
+.stats-record .loss { color: #fa412d; }
+.stats-record-bar { display: flex; height: 5px; border-radius: 3px; margin-top: 8px; overflow: hidden; background: var(--line); }
+.stats-record-bar .win, .stats-result.win { background: #81b64c; }
+.stats-record-bar .draw, .stats-result.draw { background: #8b8987; }
+.stats-record-bar .loss, .stats-result.loss { background: #fa412d; }
+.stats-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.stats-tabs button { display: flex; align-items: center; gap: 5px; text-transform: capitalize; }
+.stats-tabs button.active { outline: 2px solid var(--green); outline-offset: -2px; }
+.stats-graph { display: block; width: 100%; height: auto; overflow: visible; }
+.stats-graph line { stroke: rgba(255, 255, 255, .12); stroke-width: 1; }
+.stats-graph text { fill: var(--muted); font-size: 13px; }
+.stats-graph polyline { fill: none; stroke: #81b64c; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.stats-graph circle { fill: #81b64c; }
+.stats-recent { display: flex; flex-wrap: wrap; gap: 8px; }
+.stats-result { display: grid; place-items: center; width: 36px; height: 36px; border: 0; border-radius: 4px; color: #fff; font-weight: 800; cursor: pointer; }
+.stats-result:hover { filter: brightness(1.15); }
+.stats-result:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+@media (max-width: 900px) {
+  .stats-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .stats-page { gap: 16px; }
+  .stats-card { padding: 14px; }
+  .stats-card h2 { font-size: 17px; }
+  .review-clock { min-width: 74px; padding: 5px 8px; font-size: 23px; }
 }

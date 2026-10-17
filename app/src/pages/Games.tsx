@@ -2,8 +2,7 @@ import { useEffect, useState, type SyntheticEvent } from 'react'
 import { fetchArchives, fetchMonth, outcome, type CcGame } from '../lib/ccGames'
 import { useStored } from '../lib/storage'
 import { openInReview } from './Review'
-
-const TIME_ICONS = 'https://assets-ds.chess.com/color-icons'
+import { TimeClassIcon } from '../components/TimeClassIcon'
 
 function monthLabel(url: string) {
   const match = url.match(/\/(\d{4})\/(\d{2})$/)
@@ -30,19 +29,6 @@ function formatTimeControl(value: string) {
   return value
 }
 
-function TimeClass({ game }: { game: CcGame }) {
-  const [failed, setFailed] = useState(false)
-  if (failed) return <span className="games-time-fallback">{game.time_class}</span>
-  return (
-    <img
-      className="games-time-icon"
-      src={`${TIME_ICONS}/${game.time_class}.svg`}
-      alt={game.time_class}
-      onError={() => setFailed(true)}
-    />
-  )
-}
-
 function GameRow({ game, username }: { game: CcGame; username: string }) {
   const result = outcome(game, username)
   const marker = result === 'win' ? '+' : result === 'loss' ? '−' : '='
@@ -61,7 +47,7 @@ function GameRow({ game, username }: { game: CcGame; username: string }) {
     <div className="games-row" role="button" tabIndex={0} onClick={open} onKeyDown={onKeyDown}>
       <span className={`games-result ${result}`} aria-label={result}>{marker}</span>
       <span className="games-time">
-        <TimeClass game={game} />
+        <TimeClassIcon timeClass={game.time_class} />
         <span>{formatTimeControl(game.time_control)}</span>
       </span>
       <span className="games-players">

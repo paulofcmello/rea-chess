@@ -2,27 +2,31 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Chess } from 'chess.js'
 import Board from '../components/Board'
 import { CoachAvatar, type CoachEmotion } from '../components/Coach'
-import { EvalBar, NavButtons, formatScore } from '../components/ui'
+import { EvalBar, NavButtons, SanText, formatScore } from '../components/ui'
 import { Engine } from '../lib/engine'
 import { buildPositions } from '../lib/game'
-import type { CcGame } from '../lib/ccGames'
+import { fetchAvatar, parseClocks, type CcGame } from '../lib/ccGames'
 import { pieceUrl } from '../lib/theme'
 import { BAD_MOVES, CLASS_COLOR, CLASS_LABEL, CLASSIFICATIONS, MARKED_MOVES, bookPliesFromEcoUrl, coachLine, expectedPoints, reviewGame, type Review as GameReview } from '../lib/review'
 import { ClassIcon } from '../lib/reviewIcons'
 import { loadReview, reviewKey, saveReview } from '../lib/reviewCache'
 import { openInAnalysis } from './Analysis'
 
-interface ReviewInput {
+export interface ReviewInput {
   pgn: string
   url?: string
-  white: { username: string; rating: number }
-  black: { username: string; rating: number }
+  white: { username: string; rating?: number; avatar?: string }
+  black: { username: string; rating?: number; avatar?: string }
   me: string
 }
 // Required route handoff API, matching openInAnalysis.
 // eslint-disable-next-line react/only-export-components
 export function openInReview(game: CcGame, me: string) {
-  sessionStorage.setItem('rea-chess:review', JSON.stringify({ pgn: game.pgn, url: game.url, white: game.white, black: game.black, me }))
+  openReview({ pgn: game.pgn, url: game.url, white: game.white, black: game.black, me })
+}
+// eslint-disable-next-line react/only-export-components
+export function openReview(input: ReviewInput) {
+  sessionStorage.setItem('rea-chess:review', JSON.stringify(input))
   location.hash = '#/review'
 }
 function readInput() {
@@ -36,7 +40,7 @@ function readInput() {
     const headers = chess.getHeaders()
     const sans = chess.history()
     const startFen = headers.FEN ?? new Chess().fen()
-    return { input, sans, startFen, headers, ...buildPositions(startFen, sans) }
+    return { input, sans, clocks: parseClocks(input.pgn), startFen, headers, ...buildPositions(startFen, sans) }
   } catch { return null }
 }
 
@@ -73,7 +77,7 @@ function ReviewMoves({ review, startFen, ply, onSelect }: { review: GameReview; 
         const m = review.moves[i]
         const marked = MARKED_MOVES.includes(m.cls)
         return <button key={col} className={`mv ${ply === i + 1 ? 'active' : ''}`} style={marked ? { color: CLASS_COLOR[m.cls] } : undefined} onClick={() => onSelect(i + 1)} title={`${m.san}: ${CLASS_LABEL[m.cls]}`}>
-          {marked && <ClassIcon c={m.cls} size={16} />}{m.san}
+          {marked && <ClassIcon c={m.cls} size={16} />}<span><SanText san={m.san} color={col === 0 ? 'w' : 'b'} /></span>
         </button>
       })}
     </div>)}
@@ -81,10 +85,27 @@ function ReviewMoves({ review, startFen, ply, onSelect }: { review: GameReview; 
   </div>
 }
 
-function PlayerBar({ player, color }: { player: ReviewInput['white']; color: 'w' | 'b' }) {
+function PlayerAvatar({ player, color }: { player: ReviewInput['white']; color: 'w' | 'b' }) {
+  const [avatar, setAvatar] = useState<{ username: string; src: string | null } | null>(null)
+  useEffect(() => {
+    if (player.avatar) return
+    let active = true
+    void fetchAvatar(player.username).then((src) => {
+      if (active) setAvatar({ username: player.username, src })
+    }).catch(() => { /* keep the pawn fallback */ })
+    return () => { active = false }
+  }, [player.username, player.avatar])
+  const fallback = pieceUrl(`${color}p`, 'neo', 150)
+  return <img src={player.avatar || (avatar?.username === player.username ? avatar.src : null) || fallback} alt={`${player.username}'s avatar`} onError={(e) => {
+    if (e.currentTarget.src !== fallback) e.currentTarget.src = fallback
+  }} />
+}
+
+function PlayerBar({ player, color, clock, active }: { player: ReviewInput['white']; color: 'w' | 'b'; clock?: string; active: boolean }) {
   return <div className="cc-player">
-    <div className="cc-player-avatar you"><img src={pieceUrl(`${color}p`, 'neo', 150)} alt="" /></div>
-    <div className="cc-player-info"><div className="cc-player-top"><span className="cc-player-name">{player.username}</span><span className="cc-player-rating">({player.rating})</span></div></div>
+    <div className="cc-player-avatar you"><PlayerAvatar player={player} color={color} /></div>
+    <div className="cc-player-info"><div className="cc-player-top"><span className="cc-player-name">{player.username}</span>{player.rating != null && <span className="cc-player-rating">({player.rating})</span>}</div></div>
+    {clock != null && <div className={`review-clock ${color === 'w' ? 'white' : 'black'} ${active ? 'active' : ''}`} aria-label={`${player.username}'s clock`}>{clock}</div>}
   </div>
 }
 
@@ -124,11 +145,25 @@ export default function Review() {
   }, [data, key, review, attempt])
 
   if (!data) return <div className="page"><h1>Game Review</h1><p>Choose a game from <a href="#/games">My Games</a> to start a review.</p></div>
-  const { input, fens, moves, sans, startFen, headers } = data
+  const { input, fens, moves, sans, clocks, startFen, headers } = data
   const orientation = input.black.username.toLowerCase() === input.me.trim().toLowerCase() ? 'black' : 'white'
   const topColor = orientation === 'white' ? 'b' : 'w'
   const bottomColor = topColor === 'w' ? 'b' : 'w'
   const players = { w: input.white, b: input.black }
+  const turn = new Chess(fens[ply]).turn()
+  const clockFor = (color: 'w' | 'b') => {
+    if (!clocks.length) return undefined
+    const blackFirst = startFen.split(' ')[1] === 'b'
+    for (let i = ply - 1; i >= 0; i--) {
+      if (((i + Number(blackFirst)) % 2 === 0 ? 'w' : 'b') === color && clocks[i]) return clocks[i]
+    }
+    const seconds = Number(headers.TimeControl?.match(/^(\d+)(?:\+|$)/)?.[1])
+    if (!Number.isFinite(seconds)) return '—'
+    const hours = Math.floor(seconds / 3600)
+    const minutes = Math.floor(seconds / 60) % 60
+    const rest = String(seconds % 60).padStart(2, '0')
+    return hours ? `${hours}:${String(minutes).padStart(2, '0')}:${rest}` : `${minutes}:${rest}`
+  }
   const move = started && ply > 0 ? review?.moves[ply - 1] : undefined
   const feedback = move ? coachLine(move, ply - 1) : null
   const myColor = orientation === 'white' ? 'w' : 'b'
@@ -146,7 +181,7 @@ export default function Review() {
 
   return <div className="cc-layout review-layout">
     <div className="cc-board-area with-players with-eval">
-      <PlayerBar player={players[topColor]} color={topColor} />
+      <PlayerBar player={players[topColor]} color={topColor} clock={clockFor(topColor)} active={turn === topColor} />
       <div className="cc-board-row">
         <EvalBar score={review?.evals[ply] ?? null} flip={orientation === 'black'} />
         <div className="cc-board-wrap"><Board fen={fens[ply]} orientation={orientation}
@@ -154,7 +189,7 @@ export default function Review() {
           highlights={move ? [move.uci.slice(0, 2), move.uci.slice(2, 4)].map((square) => ({ square, color: CLASS_COLOR[move.cls], opacity: 0.5 })) : []}
           effects={move ? [{ square: move.uci.slice(2, 4), type: move.cls }] : []} arrows={arrows} /></div>
       </div>
-      <PlayerBar player={players[bottomColor]} color={bottomColor} />
+      <PlayerBar player={players[bottomColor]} color={bottomColor} clock={clockFor(bottomColor)} active={turn === bottomColor} />
     </div>
     <section className="cc-sidebar review-sidebar">
       <header className="cc-sidebar-header secondary review-header">
@@ -167,7 +202,7 @@ export default function Review() {
       <div className={`review-body ${started ? 'review-playing' : ''}`}>
         <div className="review-coach"><div className="review-coach-avatar"><CoachAvatar emotion={emotion} /></div>
           <div className="review-bubble" aria-live="polite">
-            {!review ? <strong>{error ? 'Analysis paused' : 'Analyzing your game…'}</strong> : feedback && move ? <><div className="review-feedback-title"><ClassIcon c={move.cls} /><strong>{feedback.title}</strong><span className="review-eval-chip">{formatScore(move.after)}</span></div><p>{feedback.text}</p></> : <strong>{started ? 'Start at the first move to see your coach’s feedback.' : greeting}</strong>}
+            {!review ? <strong>{error ? 'Analysis paused' : 'Analyzing your game…'}</strong> : feedback && move ? <><div className="review-feedback-title"><ClassIcon c={move.cls} /><strong><SanText san={move.san} color={new Chess(fens[ply - 1]).turn()} />{feedback.title.slice(move.san.length)}</strong><span className="review-eval-chip">{formatScore(move.after)}</span></div><p>{feedback.text}</p></> : <strong>{started ? 'Start at the first move to see your coach’s feedback.' : greeting}</strong>}
           </div>
         </div>
         {!review ? <div className="review-loading">
@@ -177,7 +212,7 @@ export default function Review() {
           <div className="review-players">
             <span /><strong>{input.white.username}</strong><strong>{input.black.username}</strong>
             <strong>Players</strong>
-            {(['w', 'b'] as const).map((color) => <div key={color} className={`review-avatar ${color === myColor ? 'review-me' : ''}`}><img src={pieceUrl(`${color}p`, 'neo', 150)} alt={`${players[color].username}'s avatar`} /></div>)}
+            {(['w', 'b'] as const).map((color) => <div key={color} className={`review-avatar ${color === myColor ? 'review-me' : ''}`}><PlayerAvatar player={players[color]} color={color} /></div>)}
             <strong>Accuracy</strong><div className="review-accuracy white">{review.accuracy.w.toFixed(1)}</div><div className="review-accuracy black">{review.accuracy.b.toFixed(1)}</div>
           </div>
           <div className="review-tallies" aria-label="Move classifications">{CLASSIFICATIONS.filter((c) => c !== 'forced').map((c) => <div className="review-tally" key={c}>
