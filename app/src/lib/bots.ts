@@ -26,6 +26,8 @@ export function loadBots(): Promise<BotGroup[]> {
     .then((groups: Omit<BotGroup, 'bots'> & { bots: Omit<Bot, 'group'>[] }[]) =>
       (groups as unknown as { name: string; avatar: string; bots: Omit<Bot, 'group'>[] }[]).map((g) => ({
         ...g,
+        // chess.com falls back to a group bot's image when the API avatar is empty
+        avatar: g.avatar || g.bots[0]?.image || '',
         bots: g.bots.map((b) => ({ ...b, group: g.name })),
       })),
     )
