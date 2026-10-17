@@ -1,7 +1,7 @@
 import { useEffect, useState, type SyntheticEvent } from 'react'
-import { fetchArchives, fetchMonth, gameToAnalysis, outcome, type CcGame } from '../lib/ccGames'
+import { fetchArchives, fetchMonth, outcome, type CcGame } from '../lib/ccGames'
 import { useStored } from '../lib/storage'
-import { openInAnalysis } from './Analysis'
+import { openInReview } from './Review'
 
 const TIME_ICONS = 'https://assets-ds.chess.com/color-icons'
 
@@ -48,8 +48,7 @@ function GameRow({ game, username }: { game: CcGame; username: string }) {
   const marker = result === 'win' ? '+' : result === 'loss' ? '−' : '='
   const normalized = username.trim().toLowerCase()
   const open = () => {
-    const analysis = gameToAnalysis(game, username)
-    openInAnalysis(analysis.fen, analysis.sans, analysis.orientation)
+    openInReview(game, username)
   }
   const onKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
     if (event.key !== 'Enter' && event.key !== ' ') return

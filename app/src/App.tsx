@@ -7,6 +7,7 @@ import Daily from './pages/Daily'
 import Bots from './pages/Bots'
 import Games from './pages/Games'
 import Analysis from './pages/Analysis'
+import Review from './pages/Review'
 import { Modal } from './components/ui'
 import Board from './components/Board'
 import { useSettings, type Settings } from './lib/storage'
@@ -22,6 +23,7 @@ const routes = {
   daily: { label: 'Daily Puzzle', icon: 'pawn-green', el: Daily },
   themes: { label: 'Themes', icon: 'training', el: Themes },
   games: { label: 'My Games', icon: 'binoculars', el: Games },
+  review: { label: 'Game Review', icon: 'magnifier-star', el: Review },
   analysis: { label: 'Analysis', icon: 'binoculars', el: Analysis },
 } as const
 
@@ -61,7 +63,7 @@ export default function App() {
           </span>
         </a>
         {(Object.keys(routes) as Route[])
-          .filter((r) => r !== '')
+          .filter((r) => r !== '' && r !== 'review')
           .map((r) => (
             <a key={r} href={`#/${r}`} className={`nav-item ${route === r ? 'active' : ''}`}>
               <img className="nav-icon" src={`${ICONS}/${routes[r].icon}.svg`} alt="" />

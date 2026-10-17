@@ -6,6 +6,8 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEven
 import { Chess, type Square } from 'chess.js'
 import { useSettings } from '../lib/storage'
 import { boards, boardUrl, pieceUrl } from '../lib/theme'
+import type { Classification } from '../lib/review'
+import { ClassIcon } from '../lib/reviewIcons'
 
 export interface Arrow {
   from: string
@@ -18,7 +20,7 @@ export interface Highlight {
   color: string
   opacity?: number
 }
-export type EffectType = 'correct' | 'incorrect'
+export type EffectType = 'correct' | 'incorrect' | Classification
 /** Game-result badges chess.com puts on the kings (captured from /play/computer). */
 export type ResultType = 'winner' | 'resign' | 'checkmated' | 'draw' | 'timeout'
 export interface ResultBadge {
@@ -214,7 +216,7 @@ function knightArrowPoints() {
   return [[-A.half, u], [-A.half, f], [h, f], [h, d + A.headHalf], [m, d], [h, d - A.headHalf], [h, d - A.half], [A.half, d - A.half], [A.half, u]]
 }
 
-const EFFECT_SVG: Record<EffectType, string> = {
+const EFFECT_SVG: Record<'correct' | 'incorrect', string> = {
   correct:
     '<svg viewBox="0 0 18 19" width="100%" height="100%"><path opacity="0.3" d="M9,.5a9,9,0,1,0,9,9A9,9,0,0,0,9,.5Z"/><path fill="#81b64c" d="M9,0a9,9,0,1,0,9,9A9,9,0,0,0,9,0Z"/><path opacity="0.2" d="M15.11,6.81,9.45,12.47,7.79,14.13a.39.39,0,0,1-.28.11.39.39,0,0,1-.27-.11L2.89,9.78a.39.39,0,0,1-.11-.28.39.39,0,0,1,.11-.27L4.28,7.85a.34.34,0,0,1,.12-.09l.15,0a.37.37,0,0,1,.15,0,.38.38,0,0,1,.13.09l2.69,2.68,5.65-5.65a.38.38,0,0,1,.13-.09.37.37,0,0,1,.15,0,.4.4,0,0,1,.15,0,.34.34,0,0,1,.12.09l1.39,1.38a.41.41,0,0,1,.08.13.33.33,0,0,1,0,.15.4.4,0,0,1,0,.15A.5.5,0,0,1,15.11,6.81Z"/><path fill="#fff" d="M15.11,6.31,9.45,12,7.79,13.63a.39.39,0,0,1-.28.11.39.39,0,0,1-.27-.11L2.89,9.28A.39.39,0,0,1,2.78,9a.39.39,0,0,1,.11-.27L4.28,7.35a.34.34,0,0,1,.12-.09l.15,0a.37.37,0,0,1,.15,0,.38.38,0,0,1,.13.09L7.52,10l5.65-5.65a.38.38,0,0,1,.13-.09.37.37,0,0,1,.15,0,.4.4,0,0,1,.15,0,.34.34,0,0,1,.12.09l1.39,1.38a.41.41,0,0,1,.08.13.33.33,0,0,1,0,.15.4.4,0,0,1,0,.15A.5.5,0,0,1,15.11,6.31Z"/></svg>',
   incorrect:
@@ -588,8 +590,11 @@ export default function Board({
             key={'e' + ef.square + ef.type}
             className={`effect ${y === 0 ? 'tuck-top' : ''} ${x === 7 ? 'tuck-right' : ''}`}
             style={{ transform: `translate(${x * 100}%, ${y * 100}%)` }}
-            dangerouslySetInnerHTML={{ __html: EFFECT_SVG[ef.type] }}
-          />
+          >
+            {ef.type === 'correct' || ef.type === 'incorrect'
+              ? <span style={{ display: 'contents' }} dangerouslySetInnerHTML={{ __html: EFFECT_SVG[ef.type] }} />
+              : <ClassIcon c={ef.type} size="100%" />}
+          </div>
         )
       })}
 
