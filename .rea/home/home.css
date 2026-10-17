@@ -1,0 +1,1285 @@
+.icon-font-chess.chess::before { content: "i"; }
+.icon-font-chess.oddschess::before { content: "i"; }
+.icon-font-chess.chess960::before { content: "Ἠ"; }
+.icon-font-chess.threecheck::before { content: "Ë"; }
+.icon-font-chess.kingofthehill::before { content: "Ī"; }
+.icon-font-chess.losers::before { content: "ī"; }
+.icon-font-chess.crazyhouse::before { content: "Ď"; }
+.icon-font-chess.bughouse::before { content: "Ě"; }
+.icon-font-chess.solo-chess::before { content: "ἆ"; }
+.icon-font-chess.liveChess960::before { content: "Ñ"; }
+.icon-font-chess.tournament::before { content: "O"; }
+.icon-font-chess.teammatch::before { content: "τ"; }
+.icon-font-chess.live-teammatch::before { content: "τ"; }
+.icon-font-chess.vs-bot::before { content: "ὰ"; }
+.icon-font-chess.four-ffa::before { content: "Ὡ"; }
+.icon-font-chess.variants::before { content: "Ὢ"; }
+.icon-font-chess.horde::before { content: "ὼ"; }
+.icon-font-chess.chaturanga::before { content: "ώ"; }
+.icon-font-chess.classical::before { content: "ᾊ"; }
+.icon-font-chess.classroom::before { content: "ᾑ"; }
+.icon-font-chess.endgames::before { content: "ᾖ"; }
+.icon-font-chess.doubles-unpartner::before { content: "ᾦ"; }
+.icon-font-chess.nav-horizontal::before { content: "R"; }
+.icon-font-chess.nav-vertical::before { content: "ç"; }
+.icon-font-chess.nav-expanded::before { content: "ϡ"; }
+.icon-font-chess.nav-collapsed::before { content: "Ϡ"; }
+.icon-font-chess.collapse-down::before { content: "Ἡ"; }
+.icon-font-chess.nav-pawn::before { content: "Ἢ"; }
+.icon-font-chess.bug::before { content: "õ"; }
+.icon-font-chess.hourglass::before { content: "Ϻ"; }
+.icon-font-chess.camera::before { content: "H"; }
+.icon-font-chess.camera-plus::before { content: "ϟ"; }
+.icon-font-chess.globe::before { content: "M"; }
+.icon-font-chess.order::before { content: "O"; }
+.icon-font-chess.flag::before { content: "Y"; }
+.icon-font-chess.calendar::before { content: "a"; }
+.icon-font-chess.three-day::before { content: "ᾐ"; }
+.icon-font-chess.daily-game::before { content: "Ἒ"; }
+.icon-font-chess.chat::before { content: "c"; }
+.icon-font-chess.chat-alt::before { content: "z"; }
+.icon-font-chess.chat-x::before { content: "⁄"; }
+.icon-font-chess.quickchat::before { content: "ᾓ"; }
+.icon-font-chess.chess-book::before { content: "o"; }
+.icon-font-chess.filter::before { content: "›"; }
+.icon-font-chess.sort::before { content: "Ὕ"; }
+.icon-font-chess.lock::before { content: "d"; }
+.icon-font-chess.inbox::before { content: "e"; }
+.icon-font-chess.lightbulb::before { content: "g"; }
+.icon-font-chess.nametag::before { content: "h"; }
+.icon-font-chess.mail::before { content: "u"; }
+.icon-font-chess.mail-alt::before { content: "y"; }
+.icon-font-chess.mail-plus::before { content: "k"; }
+.icon-font-chess.mail-exclaimation::before { content: "λ"; }
+.icon-font-chess.book::before { content: "o"; }
+.icon-font-chess.book-alt::before { content: "¤"; }
+.icon-font-chess.book-open::before { content: "´"; }
+.icon-font-chess.files::before { content: "σ"; }
+.icon-font-chess.popup::before { content: "p"; }
+.icon-font-chess.depth::before { content: "ἵ"; }
+.icon-font-chess.bell::before { content: "q"; }
+.icon-font-chess.bell-off::before { content: "ᾲ"; }
+.icon-font-chess.menu::before { content: "t"; }
+.icon-font-chess.home::before { content: "w"; }
+.icon-font-chess.home-alt::before { content: "ϛ"; }
+.icon-font-chess.custom-home::before { content: "Ἲ"; }
+.icon-font-chess.bullet::before { content: "Ἕ"; }
+.icon-font-chess.chess-board-puzzle::before { content: "ἕ"; }
+.icon-font-chess.chess-board-vision::before { content: "đ"; }
+.icon-font-chess.puzzle-rush::before { content: "Ẻ"; }
+.icon-font-chess.fire::before { content: "ἅ"; }
+.icon-font-chess.fire-alt::before { content: "ἥ"; }
+.icon-font-chess.survival::before { content: "ἐ"; }
+.icon-font-chess.smartphone::before { content: ""; }
+.icon-font-chess.computer::before { content: "ἡ"; }
+.icon-font-chess.computer-search::before { content: "ξ"; }
+.icon-font-chess.comp-analysis::before { content: "Ἳ"; }
+.icon-font-chess.comp-analysis-done::before { content: "Ἴ"; }
+.icon-font-chess.max-analysis::before { content: "ὤ"; }
+.icon-font-chess.comp-drills::before { content: "Ἶ"; }
+.icon-font-chess.vscomp::before { content: "Ὂ"; }
+.icon-font-chess.tag::before { content: "½"; }
+.icon-font-chess.toolbox::before { content: "¼"; }
+.icon-font-chess.cake::before { content: "¾"; }
+.icon-font-chess.asterisk::before { content: "*"; }
+.icon-font-chess.trash::before { content: "•"; }
+.icon-font-chess.download::before { content: "\""; }
+.icon-font-chess.upgrade::before { content: "‹"; }
+.icon-font-chess.pushpin::before { content: "»"; }
+.icon-font-chess.key::before { content: "¢"; }
+.icon-font-chess.page::before { content: "£"; }
+.icon-font-chess.page-alt::before { content: "€"; }
+.icon-font-chess.page-pencil::before { content: "x"; }
+.icon-font-chess.news::before { content: "E"; }
+.icon-font-chess.news-alt::before { content: "ἓ"; }
+.icon-font-chess.equal::before { content: "="; }
+.icon-font-chess.stats::before { content: ";"; }
+.icon-font-chess.stats-arrow-up::before { content: "č"; }
+.icon-font-chess.stats-x::before { content: "ð"; }
+.icon-font-chess.graphs::before { content: "υ"; }
+.icon-font-chess.binoculars::before { content: "—"; }
+.icon-font-chess.magnifying-glass::before { content: "–"; }
+.icon-font-chess.magnifying-glass-done::before { content: "Ὁ"; }
+.icon-font-chess.present::before { content: "¾"; }
+.icon-font-chess.enter::before { content: "ἒ"; }
+.icon-font-chess.exit::before { content: "×"; }
+.icon-font-chess.draw::before { content: "+"; }
+.icon-font-chess.cup::before { content: "‡"; }
+.icon-font-chess.leaguecup::before { content: "ᾥ"; }
+.icon-font-chess.scales::before { content: "ͱ"; }
+.icon-font-chess.paper-pencil::before { content: "Σ"; }
+.icon-font-chess.todo-list::before { content: "ď"; }
+.icon-font-chess.trophy-plus::before { content: "Υ"; }
+.icon-font-chess.trophy-minus::before { content: "κ"; }
+.icon-font-chess.trophy-podium::before { content: "ε"; }
+.icon-font-chess.events::before { content: "ἶ"; }
+.icon-font-chess.privacy::before { content: "β"; }
+.icon-font-chess.survey::before { content: "ρ"; }
+.icon-font-chess.arena::before { content: "Ἱ"; }
+.icon-font-chess.clubs::before { content: "ᾛ"; }
+.icon-font-chess.club-arena::before { content: "ᾌ"; }
+.icon-font-chess.battle::before { content: "Ὗ"; }
+.icon-font-chess.tracked-content::before { content: "Õ"; }
+.icon-font-chess.pawn-tracked::before { content: "ἣ"; }
+.icon-font-chess.queen-wreath::before { content: "ñ"; }
+.icon-font-chess.crosshair::before { content: "đ"; }
+.icon-font-chess.shield::before { content: "ŋ"; }
+.icon-font-chess.chip::before { content: "ö"; }
+.icon-font-chess.chip-crossed::before { content: "ἇ"; }
+.icon-font-chess.comp-challenge::before { content: "ἷ"; }
+.icon-font-chess.smiley::before { content: "ς"; }
+.icon-font-chess.smileyadd::before { content: "ὄ"; }
+.icon-font-chess.troll::before { content: "ὴ"; }
+.icon-font-chess.eye::before { content: "W"; }
+.icon-font-chess.eye-off::before { content: "ὀ"; }
+.icon-font-chess.select::before { content: "έ"; }
+.icon-font-chess.store::before { content: "ὃ"; }
+.icon-font-chess.question-mark::before { content: "Ἆ"; }
+.icon-font-chess.inaccuracy::before { content: "Ὧ"; }
+.icon-font-chess.cycle::before { content: "ἴ"; }
+.icon-font-chess.gift::before { content: "Ὅ"; }
+.icon-font-chess.perfect::before { content: "Ὄ"; }
+.icon-font-chess.four-teams::before { content: "Ὑ"; }
+.icon-font-chess.four-custom::before { content: "Ὓ"; }
+.icon-font-chess.percentile::before { content: "Ἦ"; }
+.icon-font-chess.carousel::before { content: "ἑ"; }
+.icon-font-chess.edit-time::before { content: "ϙ"; }
+.icon-font-chess.add-time::before { content: "Ὤ"; }
+.icon-font-chess.switches::before { content: "ή"; }
+.icon-font-chess.torpedo::before { content: "ά"; }
+.icon-font-chess.blindfold::before { content: "έ"; }
+.icon-font-chess.camera-on::before { content: "Ὥ"; }
+.icon-font-chess.camera-off::before { content: "Ὦ"; }
+.icon-font-chess.cloud::before { content: "Ὣ"; }
+.icon-font-chess.disconnected::before { content: "ᾍ"; }
+.icon-font-chess.library::before { content: "ὅ"; }
+.icon-font-chess.library-add::before { content: "ὗ"; }
+.icon-font-chess.atomic::before { content: "ύ"; }
+.icon-font-chess.bookmark::before { content: "ὦ"; }
+.icon-font-chess.bookmark-add::before { content: "ᾠ"; }
+.icon-font-chess.excellent::before { content: "ὧ"; }
+.icon-font-chess.fork::before { content: "ᾎ"; }
+.icon-font-chess.handshake::before { content: "ᾈ"; }
+.icon-font-chess.target::before { content: "ᾏ"; }
+.icon-font-chess.target-off::before { content: "ᾇ"; }
+.icon-font-chess.official::before { content: "ᾉ"; }
+.icon-font-chess.verified::before { content: "ᾝ"; }
+.icon-font-chess.location::before { content: "ᾆ"; }
+.icon-font-chess.practice::before { content: "ᾕ"; }
+.icon-font-chess.quality::before { content: "ᾚ"; }
+.icon-font-chess.castling::before { content: "ᾙ"; }
+.icon-font-chess.pieces-all::before { content: "ᾘ"; }
+.icon-font-chess.phases::before { content: "ᾗ"; }
+.icon-font-chess.savedisk::before { content: "ᾞ"; }
+.icon-font-chess.qrcode::before { content: "ᾡ"; }
+.icon-font-chess.magout::before { content: "ᾢ"; }
+.icon-font-chess.randomcolor::before { content: "ᾣ"; }
+.icon-font-chess.duck::before { content: "ᾟ"; }
+.icon-font-chess.undo::before { content: "L"; }
+.icon-font-chess.link::before { content: "A"; }
+.icon-font-chess.challenge-link::before { content: "ὡ"; }
+.icon-font-chess.x::before { content: "B"; }
+.icon-font-chess.reply::before { content: "C"; }
+.icon-font-chess.checkmark::before { content: "G"; }
+.icon-font-chess.correct::before { content: "ἰ"; }
+.icon-font-chess.incorrect::before { content: "Ἷ"; }
+.icon-font-chess.redo::before { content: "ἢ"; }
+.icon-font-chess.plus::before { content: "V"; }
+.icon-font-chess.eval::before { content: "ἳ"; }
+.icon-font-chess.copy::before { content: "ἤ"; }
+.icon-font-chess.list::before { content: "r"; }
+.icon-font-chess.embed::before { content: "∞"; }
+.icon-font-chess.darklight::before { content: "Ἵ"; }
+.icon-font-chess.image-plus::before { content: "ζ"; }
+.icon-font-chess.follow::before { content: "Ğ"; }
+.icon-font-chess.unfollow::before { content: "Ġ"; }
+.icon-font-chess.quote::before { content: "Ö"; }
+.icon-font-chess.web-view::before { content: "Ħ"; }
+.icon-font-chess.circle::before { content: "T"; }
+.icon-font-chess.circle-dashboard::before { content: "N"; }
+.icon-font-chess.circle-x::before { content: "Q"; }
+.icon-font-chess.circle-3-dots::before { content: "Ώ"; }
+.icon-font-chess.circle-gearwheel::before { content: "·"; }
+.icon-font-chess.circle-clock::before { content: "'"; }
+.icon-font-chess.circle-clock-alt::before { content: "°"; }
+.icon-font-chess.circle-question::before { content: "("; }
+.icon-font-chess.circle-info::before { content: ")"; }
+.icon-font-chess.circle-arrow::before { content: "÷"; }
+.icon-font-chess.circle-block::before { content: "∫"; }
+.icon-font-chess.circle-stop::before { content: "&"; }
+.icon-font-chess.circle-danger::before { content: "†"; }
+.icon-font-chess.circle-checkmark::before { content: "χ"; }
+.icon-font-chess.circle-compass::before { content: "ġ"; }
+.icon-font-chess.donate::before { content: "Ὃ"; }
+.icon-font-chess.more::before { content: "Ἣ"; }
+.icon-font-chess.best::before { content: "ᾔ"; }
+.icon-font-chess.time-warning::before { content: "ᾋ"; }
+.icon-font-chess.piechart::before { content: "ᾱ"; }
+.icon-font-chess.success::before { content: ""; }
+.icon-font-chess.square::before { content: "ἄ"; }
+.icon-font-chess.square-reply::before { content: "X"; }
+.icon-font-chess.square-pencil::before { content: "Z"; }
+.icon-font-chess.square-brush::before { content: "l"; }
+.icon-font-chess.square-in::before { content: "¡"; }
+.icon-font-chess.square-out::before { content: "¿"; }
+.icon-font-chess.square-bottom-in::before { content: "Ξ"; }
+.icon-font-chess.square-x::before { content: "ü"; }
+.icon-font-chess.square-plus::before { content: "ἁ"; }
+.icon-font-chess.square-equal::before { content: "ἃ"; }
+.icon-font-chess.square-checkmark::before { content: "ο"; }
+.icon-font-chess.square-four::before { content: "ϸ"; }
+.icon-font-chess.arc-sharp::before { content: "ὐ"; }
+.icon-font-chess.arc-rough::before { content: "ὑ"; }
+.icon-font-chess.arc-throwaway::before { content: "ὒ"; }
+.icon-font-chess.arc-balanced::before { content: "ὓ"; }
+.icon-font-chess.arc-wild::before { content: "ὔ"; }
+.icon-font-chess.arc-sudden::before { content: "ὕ"; }
+.icon-font-chess.arc-smooth::before { content: "ὖ"; }
+.icon-font-chess.wld::before { content: "ὣ"; }
+.icon-font-chess.square-minus::before { content: "ἂ"; }
+.icon-font-chess.thumb-lrg::before { content: "ᾀ"; }
+.icon-font-chess.thumb-med::before { content: "ᾁ"; }
+.icon-font-chess.thumb-sml::before { content: "ᾂ"; }
+.icon-font-chess.thumb-alt::before { content: "ᾃ"; }
+.icon-font-chess.thumb-row::before { content: "ᾄ"; }
+.icon-font-chess.thumb-left::before { content: "ᾅ"; }
+.icon-font-chess.caret-up::before { content: "|"; }
+.icon-font-chess.caret-down::before { content: "?"; }
+.icon-font-chess.caret-left::before { content: "/"; }
+.icon-font-chess.caret-right::before { content: "\\"; }
+.icon-font-chess.chevron-up::before { content: ">"; }
+.icon-font-chess.chevron-down::before { content: "<"; }
+.icon-font-chess.chevron-left::before { content: ","; }
+.icon-font-chess.chevron-right::before { content: "…"; }
+.icon-font-chess.double-chevron-left::before { content: "!"; }
+.icon-font-chess.double-chevron-right::before { content: "α"; }
+.icon-font-chess.chevron-previous::before { content: "#"; }
+.icon-font-chess.chevron-next::before { content: "@"; }
+.icon-font-chess.arrow-return::before { content: "_"; }
+.icon-font-chess.arrow-up::before { content: "}"; }
+.icon-font-chess.arrow-down::before { content: "{"; }
+.icon-font-chess.arrow-left::before { content: "["; }
+.icon-font-chess.arrow-right::before { content: "]"; }
+.icon-font-chess.round-arrow-return::before { content: "μ"; }
+.icon-font-chess.bold-arrow-right::before { content: "Ά"; }
+.icon-font-chess.arrow-cross::before { content: "Đ"; }
+.icon-font-chess.pulse::before { content: "ὠ"; }
+.icon-font-chess.user::before { content: "b"; }
+.icon-font-chess.users::before { content: "m"; }
+.icon-font-chess.users-alt::before { content: "n"; }
+.icon-font-chess.user-info::before { content: "v"; }
+.icon-font-chess.user-question::before { content: "-"; }
+.icon-font-chess.user-search::before { content: "$"; }
+.icon-font-chess.user-search-alt::before { content: "Ŋ"; }
+.icon-font-chess.user-feed::before { content: "%"; }
+.icon-font-chess.user-block::before { content: "¦"; }
+.icon-font-chess.user-plus::before { content: "¶"; }
+.icon-font-chess.users-plus::before { content: "ÿ"; }
+.icon-font-chess.user-x::before { content: "§"; }
+.icon-font-chess.user-chain::before { content: "ř"; }
+.icon-font-chess.user-broken-chain::before { content: "Ř"; }
+.icon-font-chess.user-shield::before { content: "Ϛ"; }
+.icon-font-chess.user-shield-plus::before { content: "ͳ"; }
+.icon-font-chess.profile-alt::before { content: "ᾜ"; }
+.icon-font-chess.chess-board::before { content: "i"; }
+.dark-mode .icon-font-chess.chess-board::before { content: "’"; }
+.icon-font-chess.chess-board-search::before { content: "Δ"; }
+.icon-font-chess.chess-board-search-alt::before { content: "Ω"; }
+.icon-font-chess.question::before { content: "©"; }
+.icon-font-chess.chess-board-plus::before { content: "ˆ"; }
+.icon-font-chess.lessons::before { content: "ἠ"; }
+.icon-font-chess.chess-board-circle::before { content: "«"; }
+.icon-font-chess.chess-board-gear::before { content: "Ϸ"; }
+.icon-font-chess.chess-crown::before { content: "ϻ"; }
+.icon-font-chess.chess-crown-alt::before { content: "ἦ"; }
+.icon-font-chess.crown-learning::before { content: "ἲ"; }
+.icon-font-chess.chess-pawn::before { content: "Ἑ"; }
+.icon-font-chess.chess-pawn-left-half-rook::before { content: "Ē"; }
+.icon-font-chess.chess-pawn-right-half-rook::before { content: "ē"; }
+.icon-font-chess.chess-pawn-rook::before { content: "s"; }
+.icon-font-chess.chess-pawn-square::before { content: "η"; }
+.icon-font-chess.chess-move::before { content: "Ἐ"; }
+.icon-font-chess.chess-move-alt::before { content: "j"; }
+.icon-font-chess.chess-board-folder::before { content: "Θ"; }
+.icon-font-chess.chess-board-arrow-down::before { content: "ό"; }
+.icon-font-chess.chess-board-arrow-up::before { content: "Ϗ"; }
+.icon-font-chess.chess-board-arrow-right::before { content: "ώ"; }
+.icon-font-chess.chess-board-arrow-left::before { content: "ύ"; }
+.icon-font-chess.chess-salad::before { content: "Ἂ"; }
+.icon-font-chess.play-new::before { content: "Ἤ"; }
+.icon-font-chess.play-alt::before { content: "Ἥ"; }
+.icon-font-chess.lesson::before { content: "ἔ"; }
+.icon-font-chess.lesson-student::before { content: ""; }
+.icon-font-chess.no-castling::before { content: "ὸ"; }
+.icon-font-chess.fog-of-war::before { content: "ό"; }
+.icon-font-chess.sideways-pawns::before { content: "ί"; }
+.icon-font-chess.capture-anything::before { content: "ὶ"; }
+.icon-font-chess.board-arrow::before { content: "ὢ"; }
+.icon-font-chess.checkbox::before { content: "Ψ"; }
+.icon-font-chess.checkbox-plus::before { content: "Φ"; }
+.icon-font-chess.printer::before { content: "å"; }
+.icon-font-chess.play::before { content: "J"; }
+.icon-font-chess.pause::before { content: "K"; }
+.icon-font-chess.sound-off::before { content: "P"; }
+.icon-font-chess.sound-on::before { content: "U"; }
+.icon-font-chess.repeat::before { content: "f"; }
+.icon-font-chess.shuffle::before { content: "I"; }
+.icon-font-chess.resize::before { content: "π"; }
+.icon-font-chess.rss::before { content: "ἱ"; }
+.icon-font-chess.favorites::before { content: "ή"; }
+.icon-font-chess.facebook::before { content: "S"; }
+.icon-font-chess.twitter::before { content: "F"; }
+.icon-font-chess.linkedin::before { content: "Å"; }
+.icon-font-chess.tumblr::before { content: "ë"; }
+.icon-font-chess.mix::before { content: "ß"; }
+.icon-font-chess.reddit::before { content: "±"; }
+.icon-font-chess.google::before { content: "Ἀ"; }
+.icon-font-chess.instagram::before { content: "ἀ"; }
+.icon-font-chess.wikipedia::before { content: "Ἰ"; }
+.icon-font-chess.youtube::before { content: "`"; }
+.icon-font-chess.share::before { content: "¥"; }
+.icon-font-chess.twitch::before { content: "Γ"; }
+.icon-font-chess.discord::before { content: "Ὀ"; }
+.icon-font-chess.fide::before { content: "ὁ"; }
+.icon-font-chess.android::before { content: "þ"; }
+.icon-font-chess.apple::before { content: "◊"; }
+.icon-font-chess.win-phone::before { content: "Π"; }
+.icon-font-chess.thumbs-down::before { content: "≥"; }
+.icon-font-chess.thumbs-up::before { content: "≤"; }
+.icon-font-chess.card::before { content: "Ϝ"; }
+.icon-font-chess.paypal::before { content: "ͷ"; }
+.icon-font-chess.heart::before { content: "Ἧ"; }
+.icon-font-chess.vk::before { content: "ὲ"; }
+.icon-font-chess.tiktok::before { content: "ᾰ"; }
+.icon-font-chess.chessable::before { content: "ᾨ"; }
+.icon-font-chess.chessable-rook::before { content: "ᾧ"; }
+.icon-font-chess.x-twitter::before { content: ""; }
+.icon-font-chess.membership-diamond::before { content: "Ͱ"; }
+.icon-font-chess.membership-platinum::before { content: "Ͷ"; }
+.icon-font-chess.membership-staff::before { content: "Ͳ"; }
+.icon-font-chess.membership-mod::before { content: "Ͳ"; }
+.icon-font-chess.membership-gold::before { content: "ή"; }
+.icon-font-chess.circle-hollow::before { content: "ν"; }
+.icon-font-chess.binoculars-crossed::before { content: "Þ"; }
+.icon-font-chess.border-resize::before { content: "ά"; }
+.icon-font-chess.maximize::before { content: "ϝ"; }
+.icon-font-chess.minimize::before { content: "Ϙ"; }
+.icon-font-chess.live::before { content: "Ἓ"; }
+.icon-font-chess.live960::before { content: "Ñ"; }
+.icon-font-chess.livematch::before { content: "ὥ"; }
+.icon-font-chess.live-bullet::before { content: "Ἕ"; }
+.icon-font-chess.live-standard::before { content: "Ἔ"; }
+.icon-font-chess.signal::before { content: "ί"; }
+.icon-font-chess.proleague::before { content: "ŋ"; }
+.icon-font-chess.streamer::before { content: "ἣ"; }
+.icon-font-chess.bishop-white::before { content: "Ä"; }
+.icon-font-chess.bishop-black::before { content: "Ă"; }
+.icon-font-chess.knight-white::before { content: "Ė"; }
+.icon-font-chess.knight-black::before { content: "Ç"; }
+.icon-font-chess.rook-white::before { content: "Ļ"; }
+.icon-font-chess.rook-black::before { content: "Ľ"; }
+.icon-font-chess.king-white::before { content: "Ą"; }
+.icon-font-chess.king-black::before { content: "Ā"; }
+.icon-font-chess.queen-white::before { content: "Ķ"; }
+.icon-font-chess.queen-black::before { content: "Į"; }
+.icon-font-chess.pawn-white::before { content: "Ģ"; }
+.icon-font-chess.pawn-black::before { content: "Ę"; }
+.icon-font-chess.shared-analysis::before { content: "Ὠ"; }
+.icon-font-chess.boardexpand::before { content: "ᾤ"; }
+.dark-mode .icon-font-chess.bishop-white::before { content: "Ă"; }
+.dark-mode .icon-font-chess.bishop-black::before { content: "Ä"; }
+.dark-mode .icon-font-chess.knight-white::before { content: "Ç"; }
+.dark-mode .icon-font-chess.knight-black::before { content: "Ė"; }
+.dark-mode .icon-font-chess.rook-white::before { content: "Ľ"; }
+.dark-mode .icon-font-chess.rook-black::before { content: "Ļ"; }
+.dark-mode .icon-font-chess.king-white::before { content: "Ā"; }
+.dark-mode .icon-font-chess.king-black::before { content: "Ą"; }
+.dark-mode .icon-font-chess.queen-white::before { content: "Į"; }
+.dark-mode .icon-font-chess.queen-black::before { content: "Ķ"; }
+.dark-mode .icon-font-chess.pawn-white::before { content: "Ę"; }
+.dark-mode .icon-font-chess.pawn-black::before { content: "Ģ"; }
+.icon-font-chess.bishop-stroke::before { content: ""; }
+.icon-font-chess.bishop-fill::before { content: ""; }
+.icon-font-chess.knight-stroke::before { content: ""; }
+.icon-font-chess.knight-fill::before { content: ""; }
+.icon-font-chess.rook-stroke::before { content: ""; }
+.icon-font-chess.rook-fill::before { content: ""; }
+.icon-font-chess.king-stroke::before { content: ""; }
+.icon-font-chess.king-fill::before { content: ""; }
+.icon-font-chess.queen-stroke::before { content: ""; }
+.icon-font-chess.queen-fill::before { content: ""; }
+.icon-font-chess.pawn-stroke::before { content: ""; }
+.icon-font-chess.pawn-fill::before { content: ""; }
+.icon-font-chess.zero::before { content: "0"; }
+.icon-font-chess.one::before { content: "1"; }
+.icon-font-chess.two::before { content: "2"; }
+.icon-font-chess.three::before { content: "3"; }
+.icon-font-chess.four::before { content: "4"; }
+.icon-font-chess.five::before { content: "5"; }
+.icon-font-chess.six::before { content: "6"; }
+.icon-font-chess.seven::before { content: "7"; }
+.icon-font-chess.eight::before { content: "8"; }
+.icon-font-chess.nine::before { content: "9"; }
+.icon-font-chess.colon::before { content: ":"; }
+.icon-font-chess.period::before { content: "."; }
+.icon-font-chess.matetag::before { content: "ᾒ"; }
+html[dir="rtl"] .icon-font-chess.upgrade::before { content: "›"; }
+html[dir="rtl"] .icon-font-chess.filter::before { content: "‹"; }
+html[dir="rtl"] .icon-font-chess.nav-expanded::before { content: "Ϡ"; }
+html[dir="rtl"] .icon-font-chess.nav-collapsed::before { content: "ϡ"; }
+html[dir="rtl"] .icon-font-chess.arrow-up::before { content: "{"; }
+html[dir="rtl"] .icon-font-chess.arrow-down::before { content: "}"; }
+html[dir="rtl"] .icon-font-chess.chevron-up::before { content: "<"; }
+html[dir="rtl"] .icon-font-chess.chevron-down::before { content: ">"; }
+html[dir="rtl"] .icon-font-chess.thumbs-down::before { content: "≤"; }
+html[dir="rtl"] .icon-font-chess.thumbs-up::before { content: "≥"; }
+html[dir="rtl"] .icon-font-chess.chevron-left::before { content: "…"; }
+html[dir="rtl"] .icon-font-chess.chevron-right::before { content: ","; }
+html[dir="rtl"] .icon-font-chess.circle-question::before { content: ")"; }
+html[dir="rtl"] .icon-font-chess.circle-info::before { content: "("; }
+html[dir="rtl"] .icon-font-chess.caret-left::before { content: "\\"; }
+html[dir="rtl"] .icon-font-chess.caret-right::before { content: "/"; }
+html[dir="rtl"] .icon-font-chess.double-chevron-left::before { content: "α"; }
+html[dir="rtl"] .icon-font-chess.double-chevron-right::before { content: "!"; }
+html[dir="rtl"] .icon-font-chess.chess-board-circle::before { content: "»"; }
+html[dir="rtl"] .icon-font-chess.pushpin::before { content: "«"; }
+.icon-font-chess.daily::before { content: "Ἒ"; }
+.icon-font-chess.rapid::before { content: "Ἓ"; }
+.icon-font-chess.circle-timer::before { content: "Ἓ"; }
+.icon-font-chess.standard::before { content: "i"; }
+.icon-font-chess.blitz::before { content: "Ἔ"; }
+.icon-font-chess.lightning::before { content: "Ἔ"; }
+.icon-font-chess.crossed-swords::before { content: "τ"; }
+body.cc-ds-chess-note .icon-font-chess.bishop-white, body.cc-ds-chess-note .icon-font-chess.bishop-black, body.cc-ds-chess-note .icon-font-chess.king-white, body.cc-ds-chess-note .icon-font-chess.king-black, body.cc-ds-chess-note .icon-font-chess.knight-white, body.cc-ds-chess-note .icon-font-chess.knight-black, body.cc-ds-chess-note .icon-font-chess.pawn-white, body.cc-ds-chess-note .icon-font-chess.pawn-black, body.cc-ds-chess-note .icon-font-chess.queen-white, body.cc-ds-chess-note .icon-font-chess.queen-black, body.cc-ds-chess-note .icon-font-chess.rook-white, body.cc-ds-chess-note .icon-font-chess.rook-black { font-family: var(--font-family-notation); }
+body.cc-ds-chess-note .icon-font-chess.bishop-white::before { content: "B"; }
+body.cc-ds-chess-note .icon-font-chess.bishop-black::before { content: "b"; }
+body.cc-ds-chess-note .icon-font-chess.king-white::before { content: "K"; }
+body.cc-ds-chess-note .icon-font-chess.king-black::before { content: "k"; }
+body.cc-ds-chess-note .icon-font-chess.knight-white::before { content: "N"; }
+body.cc-ds-chess-note .icon-font-chess.knight-black::before { content: "n"; }
+body.cc-ds-chess-note .icon-font-chess.pawn-white::before { content: "P"; }
+body.cc-ds-chess-note .icon-font-chess.pawn-black::before { content: "p"; }
+body.cc-ds-chess-note .icon-font-chess.queen-white::before { content: "Q"; }
+body.cc-ds-chess-note .icon-font-chess.queen-black::before { content: "q"; }
+body.cc-ds-chess-note .icon-font-chess.rook-white::before { content: "R"; }
+body.cc-ds-chess-note .icon-font-chess.rook-black::before { content: "r"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.bishop-white::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.bishop-white::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.bishop-white::before { content: "b"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.bishop-black::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.bishop-black::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.bishop-black::before { content: "B"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.king-white::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.king-white::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.king-white::before { content: "k"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.king-black::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.king-black::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.king-black::before { content: "K"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.knight-white::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.knight-white::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.knight-white::before { content: "n"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.knight-black::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.knight-black::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.knight-black::before { content: "N"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.pawn-white::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.pawn-white::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.pawn-white::before { content: "p"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.pawn-black::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.pawn-black::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.pawn-black::before { content: "P"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.queen-white::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.queen-white::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.queen-white::before { content: "q"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.queen-black::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.queen-black::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.queen-black::before { content: "Q"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.rook-white::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.rook-white::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.rook-white::before { content: "r"; }
+.dark-mode body.cc-ds-chess-note .icon-font-chess.rook-black::before, body.cc-ds-chess-note.dark-mode .icon-font-chess.rook-black::before, body.cc-ds-chess-note .dark-mode .icon-font-chess.rook-black::before { content: "R"; }
+.icon-font-chess { display: inline-block; font-family: var(--font-family-icons); -webkit-font-smoothing: antialiased; font-weight: 400; line-height: 1; text-align: center; text-transform: none; }
+.navigation-friends-icon { transition-duration: var(--motion-steady); transition-property: --iconColor, --iconColorHover; transition-timing-function: var(--motion-ease-in-out-strong); }
+.navigation-friends-icon-friend-is-online { --iconColorHover: var(--color-green-200); --iconColor: var(--color-green-300); }
+.friends-sub-menu-controller-header-text { color: var(--color-text-subtle); }
+.friends-sub-menu-controller-see-all-friends-button-text { color: var(--button-color-text-secondary); }
+.friends-sub-menu-controller-skeleton { width: 100%; }
+[dir="ltr"] .flair-pro_chess_league { background-position: 0% 67.65%; }
+[dir="rtl"] .flair-pro_chess_league { background-position: 100% 67.65%; }
+.post-view-meta-stats { align-items: center; color: var(--color-text-subtle); display: flex; flex-wrap: wrap; font-size: 1.3rem; }
+#home-main #leaderboard-atf-ad, #home-sidebar #medium-rectangle-atf-ad { margin-bottom: 0px; }
+#home-sidebar #medium-rectangle-btf-ad { margin-top: 0px; }
+#home-activity-feed:empty { display: none; }
+#home-main[hidden] { display: none; }
+#streaks-modal-controller[data-v-76cfc3c3] { pointer-events: auto; }
+.streak-popover-container-streak-container { align-items: center; background: var(--color-bg-opaque); border-radius: 0.625rem; box-shadow: 0 .2rem .4rem 0 var(--color-transparent-black-30); display: flex; flex-direction: column; justify-content: center; padding: var(--space-32) var(--space-24); position: absolute; width: var(--container-300); z-index: 1000; }
+[dir="ltr"] .streak-popover-container-streak-container.streak-popover-container-position-left { transform: translate(calc(-100% - 2.5rem)); }
+[dir="rtl"] .streak-popover-container-streak-container.streak-popover-container-position-left { transform: translate(calc(100% + 2.5rem)); }
+.streak-popover-container-streak-container.streak-popover-container-position-left::before { background-color: var(--color-bg-opaque); border-radius: 0.425rem; content: ""; height: 2rem; position: absolute; top: 10%; width: 2rem; }
+[dir="ltr"] .streak-popover-container-streak-container.streak-popover-container-position-left::before { right: -1rem; transform: rotate(45deg); }
+[dir="rtl"] .streak-popover-container-streak-container.streak-popover-container-position-left::before { left: -1rem; transform: rotate(-45deg); }
+[dir="ltr"] .streak-popover-container-streak-container.streak-popover-container-position-right { transform: translate(2.5rem); }
+[dir="rtl"] .streak-popover-container-streak-container.streak-popover-container-position-right { transform: translate(-2.5rem); }
+.streak-popover-container-streak-container.streak-popover-container-position-right::before { background-color: var(--color-bg-opaque); border-radius: 0.425rem; content: ""; height: 2rem; position: absolute; top: 10%; width: 2rem; }
+[dir="ltr"] .streak-popover-container-streak-container.streak-popover-container-position-right::before { left: -1rem; transform: rotate(45deg); }
+[dir="rtl"] .streak-popover-container-streak-container.streak-popover-container-position-right::before { right: -1rem; transform: rotate(-45deg); }
+[dir="ltr"] .streak-popover-container-streak-container.streak-popover-container-position-bottom { transform: translate(calc(-50% + 2.5rem), 1.6rem); }
+[dir="rtl"] .streak-popover-container-streak-container.streak-popover-container-position-bottom { transform: translate(calc(50% - 2.5rem), 1.6rem); }
+.streak-popover-container-streak-container.streak-popover-container-position-bottom::before { background-color: var(--color-bg-opaque); border-radius: 0.425rem; content: ""; height: 2rem; position: absolute; top: -0.75rem; width: 2rem; }
+[dir="ltr"] .streak-popover-container-streak-container.streak-popover-container-position-bottom::before { transform: rotate(45deg); }
+[dir="rtl"] .streak-popover-container-streak-container.streak-popover-container-position-bottom::before { transform: rotate(-45deg); }
+.streak-popover-container-streak-container.streak-popover-container-mobile-modal { box-shadow: none; position: relative; }
+.streak-popover-container-streak-container.streak-popover-container-mobile-modal.streak-popover-container-position-left, .streak-popover-container-streak-container.streak-popover-container-mobile-modal.streak-popover-container-position-right, .streak-popover-container-streak-container.streak-popover-container-mobile-modal.streak-popover-container-position-bottom { transform: none; }
+.streak-popover-container-streak-container.streak-popover-container-mobile-modal::before { display: none; }
+.streak-popover-container-main-streak-text { align-items: center; display: flex; flex-direction: column; gap: var(--space-24); }
+.streak-popover-container-streak-icon-wrapper { align-items: center; display: flex; justify-content: center; margin: auto; position: absolute; width: 100%; }
+.streak-popover-container-streak-icon { background-image: var(--background-image); background-position: center center; background-repeat: no-repeat; background-size: contain; height: 7.5rem; position: absolute; width: 7.5rem; }
+.streak-popover-container-streak-icon.streak-popover-container-frozen { background-image: var(--frozen-streak-icon); }
+.streak-popover-container-streak-icon.streak-popover-container-inactive { background-image: var(--inactive-streak-icon); }
+.streak-popover-container-streak-icon--introduction { background-image: var(--active-3-backgroundless-streak-icon); background-position: center center; background-repeat: no-repeat; background-size: contain; height: 7.5rem; width: 7.5rem; }
+.streak-popover-container-streak-count-number { font-family: var(--font-family-heading); font-size: 8rem; font-weight: 900; letter-spacing: 0.4rem; line-height: 8rem; }
+.streak-popover-container-streak-count-text { color: var(--color-text-boldest); font-size: 2.5rem; line-height: 2.8rem; text-align: center; white-space: pre-line; }
+.streak-popover-container-five-day-window { align-items: center; display: flex; gap: var(--space-8); }
+.streak-popover-container-five-day-window-day { align-items: flex-start; display: flex; flex-direction: column; gap: var(--space-4); }
+.streak-popover-container-checkbox { background-position: center top; background-repeat: no-repeat; background-size: contain; height: var(--icon-24); width: var(--icon-24); }
+.streak-popover-container-checkbox.streak-popover-container-checked { background-image: var(--checked-checkbox-icon-redesigned); }
+.streak-popover-container-checkbox.streak-popover-container-filled { background-color: var(--color-streak-play-high); background-image: var(--checked-checkbox-icon-redesigned); border-radius: var(--space-4); }
+.streak-popover-container-checkbox.streak-popover-container-paused { background-image: var(--paused-checkbox-icon-redesigned); }
+.streak-popover-container-checkbox.streak-popover-container-empty, .streak-popover-container-checkbox.streak-popover-container-pending { background-image: var(--empty-checkbox-icon); }
+.streak-popover-container-empty-checkbox { --checkbox-animation-delay: calc(1s + .25s * var(--animation-delay)); align-items: center; background-image: var(--empty-checkbox-icon); background-repeat: no-repeat; background-size: contain; display: flex; height: var(--icon-24); justify-content: center; position: relative; width: 2.3rem; }
+.streak-popover-container-empty-checkbox .streak-popover-container-circle { animation-delay: calc(var(--checkbox-animation-delay) + .15s); animation-duration: 0.3s; animation-fill-mode: forwards; animation-name: streak-popover-container-circle-grow; animation-timing-function: ease-in; background: var(--colors-fire-fire-2); border-radius: var(--radius-circular); height: 2.9rem; opacity: 0; position: absolute; width: 2.9rem; z-index: 0; }
+.streak-popover-container-empty-checkbox .streak-popover-container-filled-checkbox { animation-delay: var(--checkbox-animation-delay); animation-duration: 0.15s; animation-fill-mode: both; animation-name: streak-popover-container-checkbox-entry; animation-timing-function: ease-in; background-position: center top; background-repeat: no-repeat; background-size: contain; height: var(--icon-24); position: absolute; width: var(--icon-24); }
+.streak-popover-container-empty-checkbox .streak-popover-container-filled-checkbox.streak-popover-container-checked { background-image: var(--checked-checkbox-icon-redesigned); }
+.streak-popover-container-empty-checkbox .streak-popover-container-filled-checkbox.streak-popover-container-paused { background-image: var(--paused-checkbox-icon-redesigned); }
+.streak-popover-container-caption { color: var(--color-text-default); text-align: center; }
+.streak-popover-container-button { align-self: stretch; margin: 0px auto; max-width: 36rem; width: 100%; }
+.streak-popover-container-header { align-items: center; align-self: stretch; display: flex; flex-direction: column; height: 7.5rem; justify-content: center; margin-bottom: var(--space-24); z-index: 0; }
+.streak-popover-container-header--large-flame { height: 15rem; }
+.streak-popover-container-streak-icon-wrapper { align-items: center; display: flex; justify-content: center; position: relative; width: 100%; }
+.streak-popover-container-title { color: var(--color-text-boldest); text-align: center; }
+.streak-popover-container-streak-tracker { align-items: center; align-self: stretch; display: flex; flex-direction: column; gap: var(--space-12); justify-content: center; padding-bottom: var(--space-24); }
+.streak-popover-container-day-label { align-self: stretch; color: var(--color-text-default); text-align: center; }
+.streak-popover-container-day-checkbox { align-items: center; background-image: var(--checked-checkbox-icon-redesigned); background-position: center center; background-repeat: no-repeat; background-size: contain; display: flex; height: var(--icon-24); justify-content: center; width: var(--icon-24); }
+.streak-popover-container-checkbox-circle { animation-delay: calc(var(--checkbox-animation-delay) + .15s); animation-duration: 0.3s; animation-fill-mode: forwards; animation-name: streak-popover-container-circle-grow; animation-timing-function: ease-in; background: var(--colors-fire-fire-2); border-radius: var(--radius-circular); height: 2.9rem; opacity: 0; position: absolute; width: 2.9rem; z-index: 0; }
+.streak-popover-container-checkbox-filled { animation-delay: var(--checkbox-animation-delay); animation-duration: 0.15s; animation-fill-mode: both; animation-name: streak-popover-container-checkbox-entry; animation-timing-function: ease-in; background-position: center top; background-repeat: no-repeat; background-size: contain; height: var(--icon-24); position: absolute; width: var(--icon-24); }
+.streak-popover-container-checkbox-filled.streak-popover-container-checked { background-image: var(--checked-checkbox-icon-redesigned); }
+.streak-popover-container-checkbox-filled.streak-popover-container-paused { background-image: var(--paused-checkbox-icon-redesigned); }
+.streak-popover-container-content { align-items: flex-start; align-self: stretch; display: flex; flex-direction: column; z-index: 2; }
+.streak-popover-container-footer { align-items: flex-start; align-self: stretch; display: flex; padding-top: var(--space-24); }
+.streak-modal-streak-container { align-items: center; background: var(--color-bg-opaque); border-radius: 0.625rem; box-shadow: 0 .2rem .4rem 0 var(--color-transparent-black-30); display: flex; flex-direction: column; justify-content: center; padding: var(--space-32) var(--space-24); position: absolute; width: var(--container-300); z-index: 1000; }
+[dir="ltr"] .streak-modal-streak-container.streak-modal-position-left { transform: translate(calc(-100% - 2.5rem)); }
+[dir="rtl"] .streak-modal-streak-container.streak-modal-position-left { transform: translate(calc(100% + 2.5rem)); }
+.streak-modal-streak-container.streak-modal-position-left::before { background-color: var(--color-bg-opaque); border-radius: 0.425rem; content: ""; height: 2rem; position: absolute; top: 10%; width: 2rem; }
+[dir="ltr"] .streak-modal-streak-container.streak-modal-position-left::before { right: -1rem; transform: rotate(45deg); }
+[dir="rtl"] .streak-modal-streak-container.streak-modal-position-left::before { left: -1rem; transform: rotate(-45deg); }
+[dir="ltr"] .streak-modal-streak-container.streak-modal-position-right { transform: translate(2.5rem); }
+[dir="rtl"] .streak-modal-streak-container.streak-modal-position-right { transform: translate(-2.5rem); }
+.streak-modal-streak-container.streak-modal-position-right::before { background-color: var(--color-bg-opaque); border-radius: 0.425rem; content: ""; height: 2rem; position: absolute; top: 10%; width: 2rem; }
+[dir="ltr"] .streak-modal-streak-container.streak-modal-position-right::before { left: -1rem; transform: rotate(45deg); }
+[dir="rtl"] .streak-modal-streak-container.streak-modal-position-right::before { right: -1rem; transform: rotate(-45deg); }
+[dir="ltr"] .streak-modal-streak-container.streak-modal-position-bottom { transform: translate(calc(-50% + 2.5rem), 1.6rem); }
+[dir="rtl"] .streak-modal-streak-container.streak-modal-position-bottom { transform: translate(calc(50% - 2.5rem), 1.6rem); }
+.streak-modal-streak-container.streak-modal-position-bottom::before { background-color: var(--color-bg-opaque); border-radius: 0.425rem; content: ""; height: 2rem; position: absolute; top: -0.75rem; width: 2rem; }
+[dir="ltr"] .streak-modal-streak-container.streak-modal-position-bottom::before { transform: rotate(45deg); }
+[dir="rtl"] .streak-modal-streak-container.streak-modal-position-bottom::before { transform: rotate(-45deg); }
+.streak-modal-streak-container.streak-modal-mobile-modal { box-shadow: none; position: relative; }
+.streak-modal-streak-container.streak-modal-mobile-modal.streak-modal-position-left, .streak-modal-streak-container.streak-modal-mobile-modal.streak-modal-position-right, .streak-modal-streak-container.streak-modal-mobile-modal.streak-modal-position-bottom { transform: none; }
+.streak-modal-streak-container.streak-modal-mobile-modal::before { display: none; }
+.streak-modal-main-streak-text { align-items: center; display: flex; flex-direction: column; gap: var(--space-24); }
+.streak-modal-streak-icon-wrapper { align-items: center; display: flex; justify-content: center; margin: auto; position: absolute; width: 100%; }
+.streak-modal-streak-icon { background-image: var(--background-image); background-position: center center; background-repeat: no-repeat; background-size: contain; height: 7.5rem; position: absolute; width: 7.5rem; }
+.streak-modal-streak-icon.streak-modal-frozen { background-image: var(--frozen-streak-icon); }
+.streak-modal-streak-icon.streak-modal-inactive { background-image: var(--inactive-streak-icon); }
+.streak-modal-streak-icon--introduction { background-image: var(--active-3-backgroundless-streak-icon); background-position: center center; background-repeat: no-repeat; background-size: contain; height: 7.5rem; width: 7.5rem; }
+.streak-modal-streak-count-number { font-family: var(--font-family-heading); font-size: 8rem; font-weight: 900; letter-spacing: 0.4rem; line-height: 8rem; }
+.streak-modal-streak-count-text { color: var(--color-text-boldest); font-size: 2.5rem; line-height: 2.8rem; text-align: center; white-space: pre-line; }
+.streak-modal-five-day-window { align-items: center; display: flex; gap: var(--space-8); }
+.streak-modal-five-day-window-day { align-items: flex-start; display: flex; flex-direction: column; gap: var(--space-4); }
+.streak-modal-checkbox { background-position: center top; background-repeat: no-repeat; background-size: contain; height: var(--icon-24); width: var(--icon-24); }
+.streak-modal-checkbox.streak-modal-checked { background-image: var(--checked-checkbox-icon-redesigned); }
+.streak-modal-checkbox.streak-modal-filled { background-color: var(--color-streak-play-high); background-image: var(--checked-checkbox-icon-redesigned); border-radius: var(--space-4); }
+.streak-modal-checkbox.streak-modal-paused { background-image: var(--paused-checkbox-icon-redesigned); }
+.streak-modal-checkbox.streak-modal-empty, .streak-modal-checkbox.streak-modal-pending { background-image: var(--empty-checkbox-icon); }
+.streak-modal-empty-checkbox { --checkbox-animation-delay: calc(1s + .25s * var(--animation-delay)); align-items: center; background-image: var(--empty-checkbox-icon); background-repeat: no-repeat; background-size: contain; display: flex; height: var(--icon-24); justify-content: center; position: relative; width: 2.3rem; }
+.streak-modal-empty-checkbox .streak-modal-circle { animation-delay: calc(var(--checkbox-animation-delay) + .15s); animation-duration: 0.3s; animation-fill-mode: forwards; animation-name: streak-modal-circle-grow; animation-timing-function: ease-in; background: var(--colors-fire-fire-2); border-radius: var(--radius-circular); height: 2.9rem; opacity: 0; position: absolute; width: 2.9rem; z-index: 0; }
+.streak-modal-empty-checkbox .streak-modal-filled-checkbox { animation-delay: var(--checkbox-animation-delay); animation-duration: 0.15s; animation-fill-mode: both; animation-name: streak-modal-checkbox-entry; animation-timing-function: ease-in; background-position: center top; background-repeat: no-repeat; background-size: contain; height: var(--icon-24); position: absolute; width: var(--icon-24); }
+.streak-modal-empty-checkbox .streak-modal-filled-checkbox.streak-modal-checked { background-image: var(--checked-checkbox-icon-redesigned); }
+.streak-modal-empty-checkbox .streak-modal-filled-checkbox.streak-modal-paused { background-image: var(--paused-checkbox-icon-redesigned); }
+.streak-modal-caption { color: var(--color-text-default); text-align: center; }
+.streak-modal-button { align-self: stretch; margin: 0px auto; max-width: 36rem; width: 100%; }
+.streak-modal-header { align-items: center; align-self: stretch; display: flex; flex-direction: column; height: 7.5rem; justify-content: center; margin-bottom: var(--space-24); z-index: 0; }
+.streak-modal-header--large-flame { height: 15rem; }
+.streak-modal-streak-icon-wrapper { align-items: center; display: flex; justify-content: center; position: relative; width: 100%; }
+.streak-modal-title { color: var(--color-text-boldest); text-align: center; }
+.streak-modal-streak-tracker { align-items: center; align-self: stretch; display: flex; flex-direction: column; gap: var(--space-12); justify-content: center; padding-bottom: var(--space-24); }
+.streak-modal-day-label { align-self: stretch; color: var(--color-text-default); text-align: center; }
+.streak-modal-day-checkbox { align-items: center; background-image: var(--checked-checkbox-icon-redesigned); background-position: center center; background-repeat: no-repeat; background-size: contain; display: flex; height: var(--icon-24); justify-content: center; width: var(--icon-24); }
+.streak-modal-checkbox-circle { animation-delay: calc(var(--checkbox-animation-delay) + .15s); animation-duration: 0.3s; animation-fill-mode: forwards; animation-name: streak-modal-circle-grow; animation-timing-function: ease-in; background: var(--colors-fire-fire-2); border-radius: var(--radius-circular); height: 2.9rem; opacity: 0; position: absolute; width: 2.9rem; z-index: 0; }
+.streak-modal-checkbox-filled { animation-delay: var(--checkbox-animation-delay); animation-duration: 0.15s; animation-fill-mode: both; animation-name: streak-modal-checkbox-entry; animation-timing-function: ease-in; background-position: center top; background-repeat: no-repeat; background-size: contain; height: var(--icon-24); position: absolute; width: var(--icon-24); }
+.streak-modal-checkbox-filled.streak-modal-checked { background-image: var(--checked-checkbox-icon-redesigned); }
+.streak-modal-checkbox-filled.streak-modal-paused { background-image: var(--paused-checkbox-icon-redesigned); }
+.streak-modal-content { align-items: flex-start; align-self: stretch; display: flex; flex-direction: column; z-index: 2; }
+.streak-modal-footer { align-items: flex-start; align-self: stretch; display: flex; padding-top: var(--space-24); }
+.streak-icon-proto-badge { align-items: center; color: var(--color-text-boldest); cursor: pointer; display: flex; gap: 0.12rem; }
+.streak-icon-proto-count { color: var(--color-neutrals-white); }
+.feed-item-card-actions { align-items: center; display: flex; flex-shrink: 0; gap: var(--space-4); }
+.feed-item-card-avatar { cursor: pointer; flex-shrink: 0; }
+.feed-item-card-card { contain-intrinsic-size: auto 33rem; content-visibility: auto; display: flex; flex-direction: column; overflow: hidden; padding: var(--space-16) var(--space-16) var(--space-12); -webkit-tap-highlight-color: transparent; }
+.feed-item-card-card-standalone { content-visibility: visible; }
+.feed-item-card-content { padding: 0px; }
+.feed-item-card-header { align-items: flex-start; display: flex; gap: var(--space-16); padding-bottom: var(--space-12); }
+.feed-item-card-interactions { align-items: center; display: flex; gap: var(--space-24); padding-top: var(--space-12); }
+.feed-item-card-comments-wrapper { border-top: .1rem solid var(--color-border-default); }
+.feed-item-card-meta { display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-4); min-width: 0px; }
+.feed-item-card-pinned { display: flex; }
+.feed-item-card-timestamp { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+.brilliant-move-card-heading-xx-large { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; }
+.brilliant-move-card-heading-xx-large-bold { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; font-weight: 800; }
+.brilliant-move-card-heading-x-large { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; }
+.brilliant-move-card-heading-x-large-bold { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; font-weight: 800; }
+.brilliant-move-card-heading-large { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; }
+.brilliant-move-card-heading-large-bold { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; font-weight: 800; }
+.brilliant-move-card-heading-medium { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; }
+.brilliant-move-card-heading-medium-bold { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; font-weight: 800; }
+.brilliant-move-card-heading-small { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; }
+.brilliant-move-card-heading-small-bold { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; font-weight: 800; }
+.brilliant-move-card-heading-x-small { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; }
+.brilliant-move-card-heading-x-small-bold { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; font-weight: 800; }
+.brilliant-move-card-heading-xx-small { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; }
+.brilliant-move-card-heading-xx-small-bold { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; font-weight: 800; }
+.brilliant-move-card-heading-xxx-small { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; }
+.brilliant-move-card-heading-xxx-small-bold { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; font-weight: 800; }
+.brilliant-move-card-heading-label { font-family: var(--font-family-heading); font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1.14286; text-transform: uppercase; }
+.brilliant-move-card-text-x-large { font-size: 1.8rem; line-height: 1.33333; }
+.brilliant-move-card-text-x-large-bold { font-size: 1.8rem; line-height: 1.33333; font-weight: 600; }
+.brilliant-move-card-text-large { font-size: 1.6rem; line-height: 1.25; }
+.brilliant-move-card-text-large-bold { font-size: 1.6rem; line-height: 1.25; font-weight: 600; }
+.brilliant-move-card-text-medium { font-size: 1.4rem; line-height: 1.14286; }
+.brilliant-move-card-text-medium-bold { font-size: 1.4rem; line-height: 1.14286; font-weight: 600; }
+.brilliant-move-card-text-small { font-size: 1.2rem; line-height: 1.33333; }
+.brilliant-move-card-text-small-bold { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; }
+.brilliant-move-card-text-x-small { font-size: 1rem; line-height: 1; }
+.brilliant-move-card-text-x-small-bold { font-size: 1rem; line-height: 1; font-weight: 600; }
+.brilliant-move-card-text-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; letter-spacing: 0.05rem; text-transform: uppercase; }
+.brilliant-move-card-text-speech { font-size: 1.5rem; font-weight: 500; line-height: 1.33333; }
+.brilliant-move-card-text-speech-bold { font-size: 1.5rem; line-height: 1.33333; font-weight: 600; }
+.brilliant-move-card-paragraph-x-large { font-size: 1.8rem; line-height: 1.55556; }
+.brilliant-move-card-paragraph-x-large-bold { font-size: 1.8rem; line-height: 1.55556; font-weight: 600; }
+.brilliant-move-card-paragraph-large { font-size: 1.6rem; line-height: 1.5; }
+.brilliant-move-card-paragraph-large-bold { font-size: 1.6rem; line-height: 1.5; font-weight: 600; }
+.brilliant-move-card-paragraph-medium { font-size: 1.4rem; line-height: 1.42857; }
+.brilliant-move-card-paragraph-medium-bold { font-size: 1.4rem; line-height: 1.42857; font-weight: 600; }
+.brilliant-move-card-paragraph-x-small { font-size: 1rem; line-height: 1.3; }
+.brilliant-move-card-paragraph-x-small-bold { font-size: 1rem; line-height: 1.3; font-weight: 600; }
+.brilliant-move-card-monospace { font-variant-numeric: tabular-nums; }
+[class^="cc-heading"], .brilliant-move-card-ligatures-disabled { font-variant-ligatures: none; }
+.brilliant-move-card-ligatures-enabled { font-variant-ligatures: normal; }
+.brilliant-move-card-text-wrap-pretty { text-wrap: pretty; }
+.brilliant-move-card-artwork { filter: drop-shadow(calc(-1 * var(--space-8)) var(--space-8) 0 var(--color-transparent-black-10)); flex-shrink: 0; padding: var(--space-12) 0; }
+.brilliant-move-card-board { border-radius: var(--radius-3); height: 12rem; overflow: hidden; width: 12rem; }
+.brilliant-move-card-card { color: var(--color-neutrals-white); container: af-card / inline-size; display: flex; gap: var(--space-16); margin: var(--space-12) calc(-1 * var(--space-16)); overflow: hidden; padding: 0 var(--space-16); position: relative; text-decoration: none; }
+[dir="ltr"] .brilliant-move-card-card { background: linear-gradient(180deg,var(--color-aqua-400, #109888) 0%,var(--color-aqua-700, #073745) 100%); }
+[dir="rtl"] .brilliant-move-card-card { background: linear-gradient(-180deg,var(--color-aqua-400, #109888) 0%,var(--color-aqua-700, #073745) 100%); }
+.brilliant-move-card-card::before { background-image: url("/bundles/web/images/activity-feed/brilliant-pattern-tile.svg"); background-repeat: repeat; background-size: 7.2rem 7.2rem; content: ""; inset: -10rem; pointer-events: none; position: absolute; }
+[dir="ltr"] .brilliant-move-card-card::before { transform: rotate(-15deg); }
+[dir="rtl"] .brilliant-move-card-card::before { transform: rotate(15deg); }
+.brilliant-move-card-headline { margin: 0px; text-shadow: 0 .1rem 0 var(--color-elevation-foreground-dark-only); }
+.brilliant-move-card-info { align-items: flex-start; display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-8); justify-content: center; min-width: 0px; position: relative; }
+.brilliant-move-card-notation { align-items: center; display: flex; gap: var(--space-4); }
+.content-teaser-card-content-teaser { container: af-card / inline-size; cursor: pointer; display: block; position: relative; width: 100%; }
+.content-teaser-card-content-teaser:focus-within { outline: var(--space-2) solid var(--color-border-selected); outline-offset: var(--space-2); }
+.content-teaser-card-source-link { clip-path: inset(50%); height: 0.1rem; overflow: hidden; pointer-events: none; position: absolute; white-space: nowrap; width: 0.1rem; }
+.content-teaser-card-layout { align-items: center; display: flex; flex-direction: row; gap: var(--space-24); max-height: 20rem; }
+.content-teaser-card-no-image { align-items: flex-start; }
+.content-teaser-card-image-wrap { aspect-ratio: 668 / 375; border-radius: var(--radius-5); flex: 1 1 0%; min-width: 0px; overflow: hidden; }
+.content-teaser-card-image { display: block; height: 100%; object-fit: cover; pointer-events: none; width: 100%; }
+.content-teaser-card-image-fallback { align-items: center; background-color: var(--color-bg-base-2); color: var(--color-icon-subtle); display: flex; height: 100%; justify-content: center; width: 100%; }
+.content-teaser-card-info { display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-12); min-width: 0px; }
+.content-teaser-card-chip { align-self: flex-start; pointer-events: none; }
+.content-teaser-card-title { -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2; margin: 0px; overflow: hidden; user-select: text; word-break: break-word; }
+.content-teaser-card-preview { -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 4; margin: 0px; overflow: hidden; user-select: text; word-break: break-word; }
+.game-session-card-heading-xx-large { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; }
+.game-session-card-heading-xx-large-bold { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; font-weight: 800; }
+.game-session-card-heading-x-large { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; }
+.game-session-card-heading-x-large-bold { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; font-weight: 800; }
+.game-session-card-heading-large { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; }
+.game-session-card-heading-large-bold { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; font-weight: 800; }
+.game-session-card-heading-medium { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; }
+.game-session-card-heading-medium-bold { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; font-weight: 800; }
+.game-session-card-heading-small { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; }
+.game-session-card-heading-small-bold { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; font-weight: 800; }
+.game-session-card-heading-x-small { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; }
+.game-session-card-heading-x-small-bold { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; font-weight: 800; }
+.game-session-card-heading-xx-small { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; }
+.game-session-card-heading-xx-small-bold { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; font-weight: 800; }
+.game-session-card-heading-xxx-small { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; }
+.game-session-card-heading-xxx-small-bold { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; font-weight: 800; }
+.game-session-card-heading-label { font-family: var(--font-family-heading); font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1.14286; text-transform: uppercase; }
+.game-session-card-text-x-large { font-size: 1.8rem; line-height: 1.33333; }
+.game-session-card-text-x-large-bold { font-size: 1.8rem; line-height: 1.33333; font-weight: 600; }
+.game-session-card-text-large { font-size: 1.6rem; line-height: 1.25; }
+.game-session-card-text-large-bold { font-size: 1.6rem; line-height: 1.25; font-weight: 600; }
+.game-session-card-text-medium { font-size: 1.4rem; line-height: 1.14286; }
+.game-session-card-text-medium-bold { font-size: 1.4rem; line-height: 1.14286; font-weight: 600; }
+.game-session-card-text-small { font-size: 1.2rem; line-height: 1.33333; }
+.game-session-card-text-small-bold { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; }
+.game-session-card-text-x-small { font-size: 1rem; line-height: 1; }
+.game-session-card-text-x-small-bold { font-size: 1rem; line-height: 1; font-weight: 600; }
+.game-session-card-text-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; letter-spacing: 0.05rem; text-transform: uppercase; }
+.game-session-card-text-speech { font-size: 1.5rem; font-weight: 500; line-height: 1.33333; }
+.game-session-card-text-speech-bold { font-size: 1.5rem; line-height: 1.33333; font-weight: 600; }
+.game-session-card-paragraph-x-large { font-size: 1.8rem; line-height: 1.55556; }
+.game-session-card-paragraph-x-large-bold { font-size: 1.8rem; line-height: 1.55556; font-weight: 600; }
+.game-session-card-paragraph-large { font-size: 1.6rem; line-height: 1.5; }
+.game-session-card-paragraph-large-bold { font-size: 1.6rem; line-height: 1.5; font-weight: 600; }
+.game-session-card-paragraph-medium { font-size: 1.4rem; line-height: 1.42857; }
+.game-session-card-paragraph-medium-bold { font-size: 1.4rem; line-height: 1.42857; font-weight: 600; }
+.game-session-card-paragraph-x-small { font-size: 1rem; line-height: 1.3; }
+.game-session-card-paragraph-x-small-bold { font-size: 1rem; line-height: 1.3; font-weight: 600; }
+.game-session-card-monospace { font-variant-numeric: tabular-nums; }
+[class^="cc-heading"], .game-session-card-ligatures-disabled { font-variant-ligatures: none; }
+.game-session-card-ligatures-enabled { font-variant-ligatures: normal; }
+.game-session-card-text-wrap-pretty { text-wrap: pretty; }
+.game-session-card-badges { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+.game-session-card-board-container { border-radius: var(--radius-3); flex-shrink: 0; height: 12rem; overflow: hidden; width: 12rem; }
+.game-session-card-board-link { display: block; filter: drop-shadow(calc(-1 * var(--space-8)) var(--space-8) 0 var(--color-transparent-black-10)); flex-shrink: 0; }
+.game-session-card-card { container: af-card / inline-size; display: flex; flex-direction: column; padding: var(--space-12) 0; }
+.game-session-card-headline { margin: 0px; }
+.game-session-card-info { display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-16); min-width: 0px; }
+.game-session-card-heading-group { display: flex; flex-direction: column; gap: var(--space-8); }
+.game-session-card-summary { align-items: center; display: flex; gap: var(--space-16); }
+.game-won-card-heading-xx-large { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; }
+.game-won-card-heading-xx-large-bold { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; font-weight: 800; }
+.game-won-card-heading-x-large { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; }
+.game-won-card-heading-x-large-bold { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; font-weight: 800; }
+.game-won-card-heading-large { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; }
+.game-won-card-heading-large-bold { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; font-weight: 800; }
+.game-won-card-heading-medium { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; }
+.game-won-card-heading-medium-bold { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; font-weight: 800; }
+.game-won-card-heading-small { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; }
+.game-won-card-heading-small-bold { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; font-weight: 800; }
+.game-won-card-heading-x-small { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; }
+.game-won-card-heading-x-small-bold { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; font-weight: 800; }
+.game-won-card-heading-xx-small { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; }
+.game-won-card-heading-xx-small-bold { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; font-weight: 800; }
+.game-won-card-heading-xxx-small { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; }
+.game-won-card-heading-xxx-small-bold { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; font-weight: 800; }
+.game-won-card-heading-label { font-family: var(--font-family-heading); font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1.14286; text-transform: uppercase; }
+.game-won-card-text-x-large { font-size: 1.8rem; line-height: 1.33333; }
+.game-won-card-text-x-large-bold { font-size: 1.8rem; line-height: 1.33333; font-weight: 600; }
+.game-won-card-text-large { font-size: 1.6rem; line-height: 1.25; }
+.game-won-card-text-large-bold { font-size: 1.6rem; line-height: 1.25; font-weight: 600; }
+.game-won-card-text-medium { font-size: 1.4rem; line-height: 1.14286; }
+.game-won-card-text-medium-bold { font-size: 1.4rem; line-height: 1.14286; font-weight: 600; }
+.game-won-card-text-small { font-size: 1.2rem; line-height: 1.33333; }
+.game-won-card-text-small-bold { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; }
+.game-won-card-text-x-small { font-size: 1rem; line-height: 1; }
+.game-won-card-text-x-small-bold { font-size: 1rem; line-height: 1; font-weight: 600; }
+.game-won-card-text-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; letter-spacing: 0.05rem; text-transform: uppercase; }
+.game-won-card-text-speech { font-size: 1.5rem; font-weight: 500; line-height: 1.33333; }
+.game-won-card-text-speech-bold { font-size: 1.5rem; line-height: 1.33333; font-weight: 600; }
+.game-won-card-paragraph-x-large { font-size: 1.8rem; line-height: 1.55556; }
+.game-won-card-paragraph-x-large-bold { font-size: 1.8rem; line-height: 1.55556; font-weight: 600; }
+.game-won-card-paragraph-large { font-size: 1.6rem; line-height: 1.5; }
+.game-won-card-paragraph-large-bold { font-size: 1.6rem; line-height: 1.5; font-weight: 600; }
+.game-won-card-paragraph-medium { font-size: 1.4rem; line-height: 1.42857; }
+.game-won-card-paragraph-medium-bold { font-size: 1.4rem; line-height: 1.42857; font-weight: 600; }
+.game-won-card-paragraph-x-small { font-size: 1rem; line-height: 1.3; }
+.game-won-card-paragraph-x-small-bold { font-size: 1rem; line-height: 1.3; font-weight: 600; }
+.game-won-card-monospace { font-variant-numeric: tabular-nums; }
+[class^="cc-heading"], .game-won-card-ligatures-disabled { font-variant-ligatures: none; }
+.game-won-card-ligatures-enabled { font-variant-ligatures: normal; }
+.game-won-card-text-wrap-pretty { text-wrap: pretty; }
+.game-won-card-activity-card-shell-content { align-items: stretch; container: af-card / inline-size; display: flex; flex-direction: row; gap: var(--space-16); justify-content: space-between; position: relative; }
+.game-won-card-artwork-wrap { border-radius: var(--radius-3); filter: drop-shadow(calc(-1 * var(--space-8)) var(--space-8) 0 var(--color-transparent-black-10)); flex-shrink: 0; height: 12rem; overflow: hidden; width: 12rem; }
+.game-won-card-details { display: flex; flex: 1 1 0%; flex-direction: column; min-width: 0px; }
+.game-won-card-heading { margin: 0px; text-decoration: none; }
+.game-won-card-inline-interactive { position: relative; z-index: 1; }
+.game-won-card-stretched-link::before { content: ""; inset: 0px; position: absolute; z-index: 0; }
+.game-won-card-opponent { align-items: center; display: flex; flex-direction: row; gap: var(--space-8); }
+.game-won-card-result-block { display: flex; flex-direction: column; gap: var(--space-8); }
+.game-won-card-text-content { display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-16); justify-content: center; min-width: 0px; }
+.game-won-card-vs { flex-shrink: 0; }
+.post-card-card { display: flex; flex-direction: column; gap: var(--space-12); padding: var(--space-12) 0; }
+.post-card-body { margin: 0px; white-space: pre-wrap; word-break: break-word; }
+.post-card-clamped { -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: var(--max-lines); overflow: hidden; }
+.post-card-more-btn { background-color: transparent; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; margin: 0px; padding: 0px; cursor: pointer; display: inline; font-family: inherit; }
+.puzzle-progress-card-heading-xx-large { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; }
+.puzzle-progress-card-heading-xx-large-bold { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; font-weight: 800; }
+.puzzle-progress-card-heading-x-large { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; }
+.puzzle-progress-card-heading-x-large-bold { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; font-weight: 800; }
+.puzzle-progress-card-heading-large { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; }
+.puzzle-progress-card-heading-large-bold { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; font-weight: 800; }
+.puzzle-progress-card-heading-medium { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; }
+.puzzle-progress-card-heading-medium-bold { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; font-weight: 800; }
+.puzzle-progress-card-heading-small { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; }
+.puzzle-progress-card-heading-small-bold { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; font-weight: 800; }
+.puzzle-progress-card-heading-x-small { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; }
+.puzzle-progress-card-heading-x-small-bold { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; font-weight: 800; }
+.puzzle-progress-card-heading-xx-small { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; }
+.puzzle-progress-card-heading-xx-small-bold { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; font-weight: 800; }
+.puzzle-progress-card-heading-xxx-small { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; }
+.puzzle-progress-card-heading-xxx-small-bold { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; font-weight: 800; }
+.puzzle-progress-card-heading-label { font-family: var(--font-family-heading); font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1.14286; text-transform: uppercase; }
+.puzzle-progress-card-text-x-large { font-size: 1.8rem; line-height: 1.33333; }
+.puzzle-progress-card-text-x-large-bold { font-size: 1.8rem; line-height: 1.33333; font-weight: 600; }
+.puzzle-progress-card-text-large { font-size: 1.6rem; line-height: 1.25; }
+.puzzle-progress-card-text-large-bold { font-size: 1.6rem; line-height: 1.25; font-weight: 600; }
+.puzzle-progress-card-text-medium { font-size: 1.4rem; line-height: 1.14286; }
+.puzzle-progress-card-text-medium-bold { font-size: 1.4rem; line-height: 1.14286; font-weight: 600; }
+.puzzle-progress-card-text-small { font-size: 1.2rem; line-height: 1.33333; }
+.puzzle-progress-card-text-small-bold { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; }
+.puzzle-progress-card-text-x-small { font-size: 1rem; line-height: 1; }
+.puzzle-progress-card-text-x-small-bold { font-size: 1rem; line-height: 1; font-weight: 600; }
+.puzzle-progress-card-text-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; letter-spacing: 0.05rem; text-transform: uppercase; }
+.puzzle-progress-card-text-speech { font-size: 1.5rem; font-weight: 500; line-height: 1.33333; }
+.puzzle-progress-card-text-speech-bold { font-size: 1.5rem; line-height: 1.33333; font-weight: 600; }
+.puzzle-progress-card-paragraph-x-large { font-size: 1.8rem; line-height: 1.55556; }
+.puzzle-progress-card-paragraph-x-large-bold { font-size: 1.8rem; line-height: 1.55556; font-weight: 600; }
+.puzzle-progress-card-paragraph-large { font-size: 1.6rem; line-height: 1.5; }
+.puzzle-progress-card-paragraph-large-bold { font-size: 1.6rem; line-height: 1.5; font-weight: 600; }
+.puzzle-progress-card-paragraph-medium { font-size: 1.4rem; line-height: 1.42857; }
+.puzzle-progress-card-paragraph-medium-bold { font-size: 1.4rem; line-height: 1.42857; font-weight: 600; }
+.puzzle-progress-card-paragraph-x-small { font-size: 1rem; line-height: 1.3; }
+.puzzle-progress-card-paragraph-x-small-bold { font-size: 1rem; line-height: 1.3; font-weight: 600; }
+.puzzle-progress-card-monospace { font-variant-numeric: tabular-nums; }
+[class^="cc-heading"], .puzzle-progress-card-ligatures-disabled { font-variant-ligatures: none; }
+.puzzle-progress-card-ligatures-enabled { font-variant-ligatures: normal; }
+.puzzle-progress-card-text-wrap-pretty { text-wrap: pretty; }
+.puzzle-progress-card-artwork { align-items: center; display: flex; flex-shrink: 0; justify-content: center; overflow: hidden; }
+.puzzle-progress-card-artwork-img { height: 14rem; object-fit: contain; width: 14rem; }
+.puzzle-progress-card-bg { background-position: center center; background-size: cover; inset: 0px; pointer-events: none; position: absolute; }
+.puzzle-progress-card-card { color: var(--color-text-boldest); container: af-card / inline-size; display: flex; margin: var(--space-12) calc(-1 * var(--space-16)); overflow: hidden; position: relative; }
+.puzzle-progress-card-content { align-items: center; background-color: var(--color-bg-overlay); display: flex; padding: var(--space-12) var(--space-16); position: relative; width: 100%; }
+.puzzle-progress-card-headline { margin: 0px; text-shadow: 0 .1rem 0 var(--color-elevation-foreground-dark-only); }
+.puzzle-progress-card-info { align-items: flex-start; color: var(--color-neutrals-white); display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-8); justify-content: center; min-width: 0px; }
+.puzzle-progress-card-points { vertical-align: middle; }
+.puzzle-progress-card-rating { align-items: center; display: flex; gap: var(--space-8); }
+.puzzle-progress-card-rating-value { display: block; font-size: 0px; white-space: nowrap; }
+.puzzle-progress-card-streak { align-items: center; display: inline-flex; vertical-align: middle; }
+[dir="ltr"] .puzzle-progress-card-streak { margin-left: var(--space-4); }
+[dir="rtl"] .puzzle-progress-card-streak { margin-right: var(--space-4); }
+.puzzle-progress-card-streak-count, .puzzle-progress-card-streak-icon { color: var(--color-streak-medium); }
+.puzzle-progress-card-tier-up .puzzle-progress-card-content { background-color: var(--color-bg-overlay-subtle); }
+.rating-milestone-card-heading-xx-large { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; }
+.rating-milestone-card-heading-xx-large-bold { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; font-weight: 800; }
+.rating-milestone-card-heading-x-large { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; }
+.rating-milestone-card-heading-x-large-bold { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; font-weight: 800; }
+.rating-milestone-card-heading-large { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; }
+.rating-milestone-card-heading-large-bold { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; font-weight: 800; }
+.rating-milestone-card-heading-medium { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; }
+.rating-milestone-card-heading-medium-bold { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; font-weight: 800; }
+.rating-milestone-card-heading-small { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; }
+.rating-milestone-card-heading-small-bold { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; font-weight: 800; }
+.rating-milestone-card-heading-x-small { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; }
+.rating-milestone-card-heading-x-small-bold { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; font-weight: 800; }
+.rating-milestone-card-heading-xx-small { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; }
+.rating-milestone-card-heading-xx-small-bold { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; font-weight: 800; }
+.rating-milestone-card-heading-xxx-small { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; }
+.rating-milestone-card-heading-xxx-small-bold { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; font-weight: 800; }
+.rating-milestone-card-heading-label { font-family: var(--font-family-heading); font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1.14286; text-transform: uppercase; }
+.rating-milestone-card-text-x-large { font-size: 1.8rem; line-height: 1.33333; }
+.rating-milestone-card-text-x-large-bold { font-size: 1.8rem; line-height: 1.33333; font-weight: 600; }
+.rating-milestone-card-text-large { font-size: 1.6rem; line-height: 1.25; }
+.rating-milestone-card-text-large-bold { font-size: 1.6rem; line-height: 1.25; font-weight: 600; }
+.rating-milestone-card-text-medium { font-size: 1.4rem; line-height: 1.14286; }
+.rating-milestone-card-text-medium-bold { font-size: 1.4rem; line-height: 1.14286; font-weight: 600; }
+.rating-milestone-card-text-small { font-size: 1.2rem; line-height: 1.33333; }
+.rating-milestone-card-text-small-bold { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; }
+.rating-milestone-card-text-x-small { font-size: 1rem; line-height: 1; }
+.rating-milestone-card-text-x-small-bold { font-size: 1rem; line-height: 1; font-weight: 600; }
+.rating-milestone-card-text-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; letter-spacing: 0.05rem; text-transform: uppercase; }
+.rating-milestone-card-text-speech { font-size: 1.5rem; font-weight: 500; line-height: 1.33333; }
+.rating-milestone-card-text-speech-bold { font-size: 1.5rem; line-height: 1.33333; font-weight: 600; }
+.rating-milestone-card-paragraph-x-large { font-size: 1.8rem; line-height: 1.55556; }
+.rating-milestone-card-paragraph-x-large-bold { font-size: 1.8rem; line-height: 1.55556; font-weight: 600; }
+.rating-milestone-card-paragraph-large { font-size: 1.6rem; line-height: 1.5; }
+.rating-milestone-card-paragraph-large-bold { font-size: 1.6rem; line-height: 1.5; font-weight: 600; }
+.rating-milestone-card-paragraph-medium { font-size: 1.4rem; line-height: 1.42857; }
+.rating-milestone-card-paragraph-medium-bold { font-size: 1.4rem; line-height: 1.42857; font-weight: 600; }
+.rating-milestone-card-paragraph-x-small { font-size: 1rem; line-height: 1.3; }
+.rating-milestone-card-paragraph-x-small-bold { font-size: 1rem; line-height: 1.3; font-weight: 600; }
+.rating-milestone-card-monospace { font-variant-numeric: tabular-nums; }
+[class^="cc-heading"], .rating-milestone-card-ligatures-disabled { font-variant-ligatures: none; }
+.rating-milestone-card-ligatures-enabled { font-variant-ligatures: normal; }
+.rating-milestone-card-text-wrap-pretty { text-wrap: pretty; }
+.rating-milestone-card-card { align-items: center; container: af-card / inline-size; display: flex; gap: var(--space-12); justify-content: space-between; position: relative; text-decoration: none; }
+.rating-milestone-card-celebration { background-color: var(--color-bg-tertiary); margin: 0 calc(-1 * var(--space-16)); overflow: hidden; padding: 0 var(--space-16); }
+.rating-milestone-card-confetti { background-position: center center; background-size: cover; inset: 0px; opacity: 0.25; pointer-events: none; position: absolute; }
+.rating-milestone-card-text { display: flex; flex-direction: column; gap: var(--space-8); position: relative; }
+.rating-milestone-card-rating { align-items: center; display: flex; gap: var(--space-4); }
+.rating-milestone-card-artwork { flex-shrink: 0; position: relative; }
+.streak-milestone-card-heading-xx-large { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; }
+.streak-milestone-card-heading-xx-large-bold { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; font-weight: 800; }
+.streak-milestone-card-heading-x-large { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; }
+.streak-milestone-card-heading-x-large-bold { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; font-weight: 800; }
+.streak-milestone-card-heading-large { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; }
+.streak-milestone-card-heading-large-bold { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; font-weight: 800; }
+.streak-milestone-card-heading-medium { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; }
+.streak-milestone-card-heading-medium-bold { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; font-weight: 800; }
+.streak-milestone-card-heading-small { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; }
+.streak-milestone-card-heading-small-bold { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; font-weight: 800; }
+.streak-milestone-card-heading-x-small { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; }
+.streak-milestone-card-heading-x-small-bold { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; font-weight: 800; }
+.streak-milestone-card-heading-xx-small { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; }
+.streak-milestone-card-heading-xx-small-bold { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; font-weight: 800; }
+.streak-milestone-card-heading-xxx-small { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; }
+.streak-milestone-card-heading-xxx-small-bold { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; font-weight: 800; }
+.streak-milestone-card-heading-label { font-family: var(--font-family-heading); font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1.14286; text-transform: uppercase; }
+.streak-milestone-card-text-x-large { font-size: 1.8rem; line-height: 1.33333; }
+.streak-milestone-card-text-x-large-bold { font-size: 1.8rem; line-height: 1.33333; font-weight: 600; }
+.streak-milestone-card-text-large { font-size: 1.6rem; line-height: 1.25; }
+.streak-milestone-card-text-large-bold { font-size: 1.6rem; line-height: 1.25; font-weight: 600; }
+.streak-milestone-card-text-medium { font-size: 1.4rem; line-height: 1.14286; }
+.streak-milestone-card-text-medium-bold { font-size: 1.4rem; line-height: 1.14286; font-weight: 600; }
+.streak-milestone-card-text-small { font-size: 1.2rem; line-height: 1.33333; }
+.streak-milestone-card-text-small-bold { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; }
+.streak-milestone-card-text-x-small { font-size: 1rem; line-height: 1; }
+.streak-milestone-card-text-x-small-bold { font-size: 1rem; line-height: 1; font-weight: 600; }
+.streak-milestone-card-text-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; letter-spacing: 0.05rem; text-transform: uppercase; }
+.streak-milestone-card-text-speech { font-size: 1.5rem; font-weight: 500; line-height: 1.33333; }
+.streak-milestone-card-text-speech-bold { font-size: 1.5rem; line-height: 1.33333; font-weight: 600; }
+.streak-milestone-card-paragraph-x-large { font-size: 1.8rem; line-height: 1.55556; }
+.streak-milestone-card-paragraph-x-large-bold { font-size: 1.8rem; line-height: 1.55556; font-weight: 600; }
+.streak-milestone-card-paragraph-large { font-size: 1.6rem; line-height: 1.5; }
+.streak-milestone-card-paragraph-large-bold { font-size: 1.6rem; line-height: 1.5; font-weight: 600; }
+.streak-milestone-card-paragraph-medium { font-size: 1.4rem; line-height: 1.42857; }
+.streak-milestone-card-paragraph-medium-bold { font-size: 1.4rem; line-height: 1.42857; font-weight: 600; }
+.streak-milestone-card-paragraph-x-small { font-size: 1rem; line-height: 1.3; }
+.streak-milestone-card-paragraph-x-small-bold { font-size: 1rem; line-height: 1.3; font-weight: 600; }
+.streak-milestone-card-monospace { font-variant-numeric: tabular-nums; }
+[class^="cc-heading"], .streak-milestone-card-ligatures-disabled { font-variant-ligatures: none; }
+.streak-milestone-card-ligatures-enabled { font-variant-ligatures: normal; }
+.streak-milestone-card-text-wrap-pretty { text-wrap: pretty; }
+.streak-milestone-card-card { align-items: center; color: inherit; container: af-card / inline-size; display: flex; gap: var(--space-12); justify-content: space-between; position: relative; text-decoration: none; }
+.streak-milestone-card-text { display: flex; flex-direction: column; min-width: 0px; position: relative; }
+.streak-milestone-card-celebration { margin: var(--space-12) calc(-1 * var(--space-16)); overflow: hidden; padding: var(--space-12) var(--space-16); }
+.streak-milestone-card-celebration .streak-milestone-card-label { text-shadow: 0 .1rem 0 var(--color-elevation-foreground-dark-only); }
+.streak-milestone-card-bg { inset: 0px; pointer-events: none; position: absolute; }
+.streak-milestone-card-bg-365 { background-image: radial-gradient(ellipse 100% 364% at 100% 50%,var(--color-orange-200) 0%,var(--color-red-400) 50%,var(--color-red-700) 100%); }
+.streak-milestone-card-bg-1000 { background-image: radial-gradient(ellipse 100% 183% at 100% 50%,var(--color-green-200) 0%,var(--color-green-500) 50%,var(--color-green-800) 100%); }
+.streak-milestone-card-artwork { flex-shrink: 0; height: 14rem; position: relative; width: 14rem; }
+.streak-milestone-card-board, .streak-milestone-card-flame, .streak-milestone-card-particles, .streak-milestone-card-shadow { position: absolute; }
+.streak-milestone-card-board { bottom: 0px; width: 81%; }
+[dir="ltr"] .streak-milestone-card-board { left: 50%; transform: translate(-50%); }
+[dir="rtl"] .streak-milestone-card-board { right: 50%; transform: translate(50%); }
+.streak-milestone-card-shadow { background-image: radial-gradient(36% 9% at 50% 76%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.42) 20%, rgba(0, 0, 0, 0.28) 45%, rgba(0, 0, 0, 0.12) 70%, transparent 100%); inset: 0px; }
+.streak-milestone-card-flame { aspect-ratio: 1 / 1; top: 0px; width: 71%; }
+[dir="ltr"] .streak-milestone-card-flame { left: 50%; transform: translate(-50%); }
+[dir="rtl"] .streak-milestone-card-flame { right: 50%; transform: translate(50%); }
+.streak-milestone-card-particles { inset: 0px; }
+.feed-skeleton-card-avatar { border-radius: 50%; flex-shrink: 0; height: 4.8rem; width: 4.8rem; }
+.feed-skeleton-card-body { display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-8); padding-top: var(--space-4); }
+.feed-skeleton-card-card { align-items: flex-start; border-bottom: .1rem solid var(--color-border-subtle); display: flex; gap: var(--space-12); padding: var(--space-12); }
+.feed-skeleton-card-line { border-radius: var(--radius-2); height: 1.4rem; width: 100%; }
+.feed-skeleton-card-line-short { width: 60%; }
+.find-friends-card-heading-xx-large { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; }
+.find-friends-card-heading-xx-large-bold { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; font-weight: 800; }
+.find-friends-card-heading-x-large { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; }
+.find-friends-card-heading-x-large-bold { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; font-weight: 800; }
+.find-friends-card-heading-large { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; }
+.find-friends-card-heading-large-bold { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; font-weight: 800; }
+.find-friends-card-heading-medium { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; }
+.find-friends-card-heading-medium-bold { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; font-weight: 800; }
+.find-friends-card-heading-small { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; }
+.find-friends-card-heading-small-bold { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; font-weight: 800; }
+.find-friends-card-heading-x-small { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; }
+.find-friends-card-heading-x-small-bold { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; font-weight: 800; }
+.find-friends-card-heading-xx-small { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; }
+.find-friends-card-heading-xx-small-bold { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; font-weight: 800; }
+.find-friends-card-heading-xxx-small { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; }
+.find-friends-card-heading-xxx-small-bold { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; font-weight: 800; }
+.find-friends-card-heading-label { font-family: var(--font-family-heading); font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1.14286; text-transform: uppercase; }
+.find-friends-card-text-x-large { font-size: 1.8rem; line-height: 1.33333; }
+.find-friends-card-text-x-large-bold { font-size: 1.8rem; line-height: 1.33333; font-weight: 600; }
+.find-friends-card-text-large { font-size: 1.6rem; line-height: 1.25; }
+.find-friends-card-text-large-bold { font-size: 1.6rem; line-height: 1.25; font-weight: 600; }
+.find-friends-card-text-medium { font-size: 1.4rem; line-height: 1.14286; }
+.find-friends-card-text-medium-bold { font-size: 1.4rem; line-height: 1.14286; font-weight: 600; }
+.find-friends-card-text-small { font-size: 1.2rem; line-height: 1.33333; }
+.find-friends-card-text-small-bold { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; }
+.find-friends-card-text-x-small { font-size: 1rem; line-height: 1; }
+.find-friends-card-text-x-small-bold { font-size: 1rem; line-height: 1; font-weight: 600; }
+.find-friends-card-text-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; letter-spacing: 0.05rem; text-transform: uppercase; }
+.find-friends-card-text-speech { font-size: 1.5rem; font-weight: 500; line-height: 1.33333; }
+.find-friends-card-text-speech-bold { font-size: 1.5rem; line-height: 1.33333; font-weight: 600; }
+.find-friends-card-paragraph-x-large { font-size: 1.8rem; line-height: 1.55556; }
+.find-friends-card-paragraph-x-large-bold { font-size: 1.8rem; line-height: 1.55556; font-weight: 600; }
+.find-friends-card-paragraph-large { font-size: 1.6rem; line-height: 1.5; }
+.find-friends-card-paragraph-large-bold { font-size: 1.6rem; line-height: 1.5; font-weight: 600; }
+.find-friends-card-paragraph-medium { font-size: 1.4rem; line-height: 1.42857; }
+.find-friends-card-paragraph-medium-bold { font-size: 1.4rem; line-height: 1.42857; font-weight: 600; }
+.find-friends-card-paragraph-x-small { font-size: 1rem; line-height: 1.3; }
+.find-friends-card-paragraph-x-small-bold { font-size: 1rem; line-height: 1.3; font-weight: 600; }
+.find-friends-card-monospace { font-variant-numeric: tabular-nums; }
+[class^="cc-heading"], .find-friends-card-ligatures-disabled { font-variant-ligatures: none; }
+.find-friends-card-ligatures-enabled { font-variant-ligatures: normal; }
+.find-friends-card-text-wrap-pretty { text-wrap: pretty; }
+.find-friends-card-card { container: af-card / inline-size; }
+.find-friends-card-content { display: flex; height: 30rem; overflow: clip; }
+.find-friends-card-text { align-items: flex-start; display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-24); justify-content: center; min-width: 0px; padding: var(--space-24); }
+.find-friends-card-text .find-friends-card-heading { color: var(--color-text-boldest); }
+.find-friends-card-artwork { align-items: flex-end; display: flex; flex-shrink: 0; }
+.find-friends-card-image { display: block; max-height: 100%; object-fit: contain; width: auto; }
+.emotes-popup-disabled-overlay .emotes-popup-lock .icon-font-chess { color: var(--color-neutrals-white); }
+.streak-badge-component { align-items: center; cursor: pointer; display: inline-flex; gap: var(--space-8); min-width: 0px; position: relative; }
+.streak-badge-modal-anchor { bottom: 0px; pointer-events: none; position: absolute; z-index: 9999; }
+[dir="ltr"] .streak-badge-modal-anchor { right: 0px; }
+[dir="rtl"] .streak-badge-modal-anchor { left: 0px; }
+[dir="ltr"] #streak-modal-anchor [data-position="bottom"] { transform: translate(-100%,var(--space-8)); }
+[dir="rtl"] #streak-modal-anchor [data-position="bottom"] { transform: translate(100%,var(--space-8)); }
+[dir="ltr"] #streak-modal-anchor [data-position="bottom"]::before { left: auto; right: var(--space-16); }
+[dir="rtl"] #streak-modal-anchor [data-position="bottom"]::before { right: auto; left: var(--space-16); }
+.streak-badge-icon { flex-shrink: 0; height: 3.2rem; width: 3.2rem; }
+.streak-badge-label { color: var(--color-text-boldest); font-feature-settings: "liga" 0; font-weight: 800; }
+.streak-badge-full-label { display: none; }
+.play-online-quick-links-component, .play-online-quick-links-quick-start, .play-online-quick-links-buttons { display: flex; flex-direction: column; gap: var(--space-24); }
+.play-online-quick-links-quick-start { gap: var(--space-12); }
+.play-online-quick-links-buttons { gap: var(--space-8); }
+.puzzle-streak-icon-component { align-items: baseline; color: var(--v30a68c84); display: inline-flex; gap: var(--space-2); }
+.puzzle-streak-icon-icon { align-self: center; display: inline-flex; flex-shrink: 0; }
+.puzzle-streak-icon-text { align-items: baseline; display: inline-flex; font-variant-numeric: tabular-nums; gap: var(--space-2); }
+.recommended-activity-card-stats-col { display: flex; flex: 1 1 0%; flex-direction: column; gap: var(--space-4); min-width: 0px; width: 100%; }
+.recommended-activity-card-stats-row { align-items: center; display: flex; gap: var(--space-4); min-width: 0px; }
+.header-streak { flex: 0 1 auto; min-width: 0px; }
+.main-game-history { --game-history-empty-min-height: auto; }
+.streak-badge-sidebar-wrapper { position: relative; width: 100%; }
+.streak-badge-sidebar-modal-anchor { bottom: 0px; pointer-events: none; position: absolute; z-index: 9999; }
+[dir="ltr"] .streak-badge-sidebar-modal-anchor { right: 0px; }
+[dir="rtl"] .streak-badge-sidebar-modal-anchor { left: 0px; }
+[dir="ltr"] #streak-modal-anchor-sidebar [data-position="bottom"] { transform: translate(-100%,var(--space-8)); }
+[dir="rtl"] #streak-modal-anchor-sidebar [data-position="bottom"] { transform: translate(100%,var(--space-8)); }
+[dir="ltr"] #streak-modal-anchor-sidebar [data-position="bottom"]::before { left: auto; right: var(--space-16); }
+[dir="rtl"] #streak-modal-anchor-sidebar [data-position="bottom"]::before { right: auto; left: var(--space-16); }
+.streak-badge-sidebar-component { align-self: stretch; cursor: pointer; display: flex; gap: var(--space-12); padding: var(--space-12); position: relative; }
+.streak-badge-sidebar-icon-container { align-items: center; display: flex; flex-shrink: 0; height: 4rem; justify-content: center; width: 4rem; }
+.streak-badge-sidebar-streak-icon { flex-shrink: 0; height: 4rem; object-fit: contain; width: 4rem; }
+.streak-badge-sidebar-content { align-items: flex-start; display: flex; flex-direction: column; gap: var(--space-2); }
+.streak-badge-sidebar-text-content { display: flex; flex-direction: column; justify-content: center; }
+.streak-badge-sidebar-title { color: var(--color-text-bolder); display: inline-block; line-height: 2rem; position: relative; }
+.streak-badge-sidebar-weekly-tracker { align-items: center; display: flex; gap: var(--space-4); }
+.streak-badge-sidebar-day-item { align-items: center; display: flex; flex-direction: column; gap: var(--space-4); }
+.streak-badge-sidebar-day-label { color: var(--color-text-subtle); font-size: 1.1rem; font-weight: 500; text-transform: uppercase; }
+.streak-badge-sidebar-checkbox { background-position: center center; background-repeat: no-repeat; background-size: contain; border-radius: var(--radius-3); height: 2.4rem; width: 2.4rem; }
+.streak-badge-sidebar-checkbox.streak-badge-sidebar-checked { background-image: var(--checked-checkbox-icon-redesigned); }
+.streak-badge-sidebar-checkbox.streak-badge-sidebar-empty { border: var(--border-2) solid var(--color-border-subtler); }
+.streak-badge-sidebar-checkbox.streak-badge-sidebar-paused { background-image: var(--paused-checkbox-icon-redesigned); }
+.streak-badge-sidebar-checkbox.streak-badge-sidebar-pending { border: var(--border-2) solid var(--color-border-subtler); }
+.courses-course-card-root { display: flex; flex-direction: column; gap: var(--space-12); padding: 0 var(--space-12) var(--space-12); }
+.courses-course-card-card { align-items: center; display: flex; gap: var(--space-12); }
+.courses-course-card-artwork { border-radius: var(--radius-3); flex-shrink: 0; overflow: hidden; }
+.courses-course-card-text { display: flex; flex-direction: column; gap: var(--space-4); min-width: 0px; }
+.courses-course-card-title { -webkit-box-orient: vertical; color: var(--color-text-boldest); display: -webkit-box; -webkit-line-clamp: 2; margin: 0px; overflow: hidden; }
+.courses-course-card-author { color: var(--color-text-subtle); margin: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.courses-course-card-row { align-items: center; display: flex; gap: var(--space-8); }
+.courses-course-card-percent { color: var(--color-text-bolder); flex-shrink: 0; }
+.courses-course-card-cta { margin-top: var(--space-4); }
+.daily-puzzle-content { align-items: center; display: flex; flex-direction: column; gap: var(--space-12); justify-content: center; transform: translateZ(0px); }
+.daily-puzzle-message-description { color: var(--color-text-subtle); font-weight: 400; }
+.daily-puzzle-content { padding: 0 var(--space-12) var(--space-12); }
+.daily-puzzle-daily-puzzle-image { border-radius: var(--radius-2); display: block; height: auto; max-width: 100%; overflow: hidden; position: relative; width: 100%; }
+.daily-puzzle-preview { display: flex; width: 100% !important; }
+.daily-puzzle-wrap { align-items: center; display: flex; flex-direction: column; gap: var(--space-12); width: 100%; }
+.daily-puzzle-message { width: calc(100% - 4rem); }
+.daily-puzzle-message-wrapper { display: flex; width: 100%; }
+.daily-puzzle-checkmark { color: var(--color-green-300); }
+.daily-puzzle-friends-solved { align-items: center; display: flex; margin-top: var(--space-8); }
+.daily-puzzle-friends-avatars { display: flex; flex-shrink: 0; }
+.daily-puzzle-friend-avatar { background-color: var(--color-bg-opaque); border-radius: var(--radius-5); display: block; padding: var(--space-2); position: relative; }
+[dir="ltr"] .daily-puzzle-friend-avatar + .daily-puzzle-friend-avatar { margin-left: calc(var(--space-16) * -1); }
+[dir="rtl"] .daily-puzzle-friend-avatar + .daily-puzzle-friend-avatar { margin-right: calc(var(--space-16) * -1); }
+[dir="ltr"] .daily-puzzle-friends-solved-message { margin-left: var(--space-8); }
+[dir="rtl"] .daily-puzzle-friends-solved-message { margin-right: var(--space-8); }
+.daily-puzzle-friends-solved-message span { font-weight: 600; }
+.daily-puzzle-completed-overlay { background: var(--color-transparent-black-14); inset: 0px; position: absolute; }
+[dir="ltr"] .daily-puzzle-completed-overlay { background-image: linear-gradient(180deg,rgba(0,0,0,0) 0%,var(--color-transparent-black-50) 100%); }
+[dir="rtl"] .daily-puzzle-completed-overlay { background-image: linear-gradient(-180deg,rgba(0,0,0,0) 0%,var(--color-transparent-black-50) 100%); }
+.friends-button-wrapper, .friends-content { padding: 0 var(--space-12) var(--space-12); }
+.friends-content { column-gap: var(--space-4); display: grid; grid-template-columns: repeat(auto-fill,minmax(var(--avatar-64),1fr)); overflow: hidden; row-gap: var(--space-12); }
+.stat-item-stats-section { color: var(--color-text-default); position: relative; }
+.stat-item-stats-section.stat-item-expanded::after { background-color: var(--color-border-default); bottom: 0px; content: ""; height: 0.1rem; position: absolute; width: 100%; }
+.stat-item-stats-section:last-child::after { height: 0px; }
+.stat-item-stats-content-wrapper { --animation: stat-item-expand var(--motion-fast) var(--motion-ease-in-out-strong); animation: var(--animation); display: grid; grid-template-rows: 1fr; }
+.stat-item-stats-content { min-height: 0px; overflow: hidden; }
+.game-stat-text-data-stats-list { display: flex; flex-direction: column; }
+.puzzles-stat-text-data-stats-list { display: flex; flex-direction: column; }
+.stats-divider { background: var(--color-border-default); display: flex; height: var(--space-1); justify-content: center; margin: 0 var(--space-12); }
+.stats-button-wrapper { padding: var(--space-12); }
+:where(.cc-card-component_b9c2cc8) { --cc-button-secondary-enabled-start: var(--color-transparent-black-5); --cc-button-secondary-enabled-end: var(--color-transparent-black-14); --cc-button-secondary-hovered-start: var(--color-transparent-black-2); --cc-button-secondary-hovered-end: var(--color-transparent-black-10); --cc-bg-box-shadow: inset 0 .1rem 0 0 var(--color-transparent-white-8), 0 .1rem .2rem 0 var(--color-transparent-black-14), 0 .2rem .4rem 0 var(--color-transparent-black-10); --cc-bg-box-shadow-hover: inset 0 .1rem 0 0 var(--color-transparent-white-14), 0 .1rem .2rem 0 var(--color-transparent-black-14), 0 .2rem .4rem 0 var(--color-transparent-black-10); --cc-bg-color: linear-gradient(180deg, var(--cc-button-secondary-enabled-start) 0%, var(--cc-button-secondary-enabled-end) 100%); --cc-bg-color-hover: linear-gradient(180deg, var(--cc-button-secondary-hovered-start) 0%, var(--cc-button-secondary-hovered-end) 100%), linear-gradient(180deg, var(--color-transparent-white-5) 0%, #fff0 100%); background: var(--cc-bg-color); border-radius: var(--radius-10); box-shadow: var(--cc-bg-box-shadow); align-items: center; gap: var(--space-12); max-width: var(--cc-card-max-width); min-width: var(--cc-card-min-width); padding: var(--cc-card-padding); text-align: center; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; flex-direction: column; width: 100%; text-decoration: none; display: flex; }
+.dark-mode :where(.cc-card-component_b9c2cc8) { --cc-button-secondary-enabled-start: var(--color-transparent-white-10); --cc-button-secondary-enabled-end: var(--color-transparent-white-5); --cc-button-secondary-hovered-start: var(--color-transparent-white-14); --cc-button-secondary-hovered-end: var(--color-transparent-white-5); }
+:where(.cc-card-component_b9c2cc8):not(:where(.cc-card-disabled_b9c2cc8)):active { opacity: 0.9 !important; }
+:where(.cc-card-centered_b9c2cc8) { justify-content: center; }
+:where(.cc-card-slot_b9c2cc8) { align-items: center; gap: var(--space-2); flex-direction: column; width: 100%; display: flex; }
+:where(.cc-card-small_b9c2cc8) { --cc-card-color-header: var(--color-text-bolder); --cc-card-color-header-hover: var(--color-text-boldest); --cc-card-color-body: var(--color-text-default); --cc-card-max-width: 16rem; --cc-card-media-size: var(--icon-48); --cc-card-min-width: 12rem; --cc-card-padding: var(--space-12) var(--space-8) var(--space-8); gap: var(--space-8); min-height: 12rem; }
+:where(.cc-card-small_b9c2cc8) > :where(.cc-card-slot_b9c2cc8) { gap: 0px; }
+:where(.cc-card-large_b9c2cc8) { --cc-card-color-header: var(--color-text-bolder); --cc-card-color-header-hover: var(--color-text-boldest); --cc-card-color-body: var(--color-text-default); --cc-card-max-width: 22rem; --cc-card-media-size: var(--icon-64); --cc-card-min-width: 13rem; --cc-card-padding: var(--space-24) var(--space-12) var(--space-12); min-height: 15.55rem; }
+:where(.cc-card-disabled_b9c2cc8) { opacity: 0.5; pointer-events: none; }
+:where(.cc-card-media_b9c2cc8) { height: var(--cc-card-media-size); width: var(--cc-card-media-size); position: relative; }
+:where(.cc-card-header_b9c2cc8) { color: var(--cc-card-color-header); align-items: center; gap: var(--space-4); flex-flow: wrap; justify-content: center; display: flex; }
+:where(.cc-card-body_b9c2cc8) { color: var(--cc-card-color-body); gap: var(--space-4); flex-wrap: wrap; justify-content: center; width: 100%; display: flex; }
+.cc-card-body_b9c2cc8.cc-text-small { line-height: 1.5; }
+.cc-card-header_b9c2cc8.cc-heading-xxx-small { line-height: 1.6rem; }
+.cc-card-header_b9c2cc8.cc-heading-xx-small { line-height: 2rem; }
+.cc-card-component { align-items: center; background: var(--cc-bg-color); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; border-radius: var(--radius-10); box-shadow: var(--cc-bg-box-shadow); display: flex; flex-direction: column; gap: var(--space-12); max-width: var(--cc-card-max-width); min-width: var(--cc-card-min-width); padding: var(--cc-card-padding); text-align: center; width: 100%; }
+.cc-card-component:not(.cc-card-disabled):active { opacity: 0.9 !important; }
+.cc-card-centered { justify-content: center; }
+.cc-card-small { --cc-card-color-header: var(--color-text-bolder); --cc-card-color-header-hover: var(--color-text-boldest); --cc-card-color-body: var(--color-text-subtle); --cc-card-max-width: 16rem; --cc-card-media-size: var(--space-32); --cc-card-min-width: 12rem; --cc-card-padding: var(--space-12) var(--space-8); gap: var(--space-8); }
+.cc-card-small .cc-card-slot { gap: var(--space-2); }
+.cc-card-large { --cc-card-color-header: var(--color-text-bolder); --cc-card-color-header-hover: var(--color-text-boldest); --cc-card-color-body: var(--color-text-default); --cc-card-max-width: 22rem; --cc-card-media-size: 6.4rem; --cc-card-min-width: 13rem; --cc-card-padding: var(--space-24) var(--space-12) var(--space-12); min-height: 15.6rem; }
+.cc-card-disabled { opacity: 0.5; pointer-events: none; }
+.cc-card-media { height: var(--cc-card-media-size); position: relative; width: var(--cc-card-media-size); }
+.cc-card-slot { align-items: center; display: flex; flex-direction: column; gap: var(--space-4); width: 100%; }
+.cc-card-header { align-items: center; color: var(--cc-card-color-header); display: flex; flex-flow: wrap; gap: var(--space-4); justify-content: center; }
+.cc-card-body { color: var(--cc-card-color-body); display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; width: 100%; }
+.cc-card-custom-body:not(:empty) { max-width: 24rem; width: 100%; }
+.stats-mobile-content { display: grid; gap: var(--space-8); grid-template-columns: repeat(auto-fit, minmax(13.2rem, 1fr)); justify-items: center; padding: var(--space-12); }
+.stats-mobile-card { min-width: 100%; }
+.game-icon-heading-xx-large { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; }
+.game-icon-heading-xx-large-bold { font-family: var(--font-family-heading); font-size: 5.8rem; line-height: 1.10345; font-weight: 800; }
+.game-icon-heading-x-large { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; }
+.game-icon-heading-x-large-bold { font-family: var(--font-family-heading); font-size: 4.2rem; line-height: 1.14286; font-weight: 800; }
+.game-icon-heading-large { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; }
+.game-icon-heading-large-bold { font-family: var(--font-family-heading); font-size: 3.6rem; line-height: 1.11111; font-weight: 800; }
+.game-icon-heading-medium { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; }
+.game-icon-heading-medium-bold { font-family: var(--font-family-heading); font-size: 3.1rem; line-height: 1.16129; font-weight: 800; }
+.game-icon-heading-small { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; }
+.game-icon-heading-small-bold { font-family: var(--font-family-heading); font-size: 2.8rem; line-height: 1.14286; font-weight: 800; }
+.game-icon-heading-x-small { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; }
+.game-icon-heading-x-small-bold { font-family: var(--font-family-heading); font-size: 2.2rem; line-height: 1.27273; font-weight: 800; }
+.game-icon-heading-xx-small { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; }
+.game-icon-heading-xx-small-bold { font-family: var(--font-family-heading); font-size: 1.7rem; line-height: 1.17647; font-weight: 800; }
+.game-icon-heading-xxx-small { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; }
+.game-icon-heading-xxx-small-bold { font-family: var(--font-family-heading); font-size: 1.4rem; line-height: 1.14286; font-weight: 800; }
+.game-icon-heading-label { font-family: var(--font-family-heading); font-size: 1.2rem; letter-spacing: 0.05rem; line-height: 1.14286; text-transform: uppercase; }
+.game-icon-text-x-large { font-size: 1.8rem; line-height: 1.33333; }
+.game-icon-text-x-large-bold { font-size: 1.8rem; line-height: 1.33333; font-weight: 600; }
+.game-icon-text-large { font-size: 1.6rem; line-height: 1.25; }
+.game-icon-text-large-bold { font-size: 1.6rem; line-height: 1.25; font-weight: 600; }
+.game-icon-text-medium { font-size: 1.4rem; line-height: 1.14286; }
+.game-icon-text-medium-bold { font-size: 1.4rem; line-height: 1.14286; font-weight: 600; }
+.game-icon-text-small { font-size: 1.2rem; line-height: 1.33333; }
+.game-icon-text-small-bold { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; }
+.game-icon-text-x-small { font-size: 1rem; line-height: 1; }
+.game-icon-text-x-small-bold { font-size: 1rem; line-height: 1; font-weight: 600; }
+.game-icon-text-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; letter-spacing: 0.05rem; text-transform: uppercase; }
+.game-icon-text-speech { font-size: 1.5rem; font-weight: 500; line-height: 1.33333; }
+.game-icon-text-speech-bold { font-size: 1.5rem; line-height: 1.33333; font-weight: 600; }
+.game-icon-paragraph-x-large { font-size: 1.8rem; line-height: 1.55556; }
+.game-icon-paragraph-x-large-bold { font-size: 1.8rem; line-height: 1.55556; font-weight: 600; }
+.game-icon-paragraph-large { font-size: 1.6rem; line-height: 1.5; }
+.game-icon-paragraph-large-bold { font-size: 1.6rem; line-height: 1.5; font-weight: 600; }
+.game-icon-paragraph-medium { font-size: 1.4rem; line-height: 1.42857; }
+.game-icon-paragraph-medium-bold { font-size: 1.4rem; line-height: 1.42857; font-weight: 600; }
+.game-icon-paragraph-x-small { font-size: 1rem; line-height: 1.3; }
+.game-icon-paragraph-x-small-bold { font-size: 1rem; line-height: 1.3; font-weight: 600; }
+.game-icon-monospace { font-variant-numeric: tabular-nums; }
+[class^="cc-heading"], .game-icon-ligatures-disabled { font-variant-ligatures: none; }
+.game-icon-ligatures-enabled { font-variant-ligatures: normal; }
+.game-icon-text-wrap-pretty { text-wrap: pretty; }
+.game-icon-component { align-items: center; display: flex; flex-direction: column; gap: var(--space-8); }
+.game-icon-label { font-size: 1.2rem; line-height: 1.33333; font-weight: 600; color: var(--color-text-default); display: block; text-align: center; }
+.game-history-user-tagline-component { align-items: center; display: flex; gap: var(--space-4); }
+.game-history-user-tagline-tagline { align-items: center; display: flex; gap: var(--space-8); max-width: 100%; }
+.game-history-user-tagline-avatar, .game-history-user-tagline-icon { display: none; }
+.game-history-user-tagline-white { background-color: var(--color-neutrals-white); border: var(--border-1) solid var(--color-gray-400); }
+.dark-mode .game-history-user-tagline-white:not(.game-history-user-tagline-won) { border-width: medium; border-style: none; border-color: currentcolor; border-image: none; }
+.game-history-user-tagline-black { background-color: var(--color-gray-600); }
+.game-history-user-tagline-won { border: var(--border-2) solid var(--color-border-win); }
+.game-history-user-tagline-rating-diff { display: none; }
+.game-history-user-tagline-green { color: var(--color-text-win); }
+.game-history-user-tagline-red { color: var(--color-text-loss); }
+.game-history-games-component { display: flex; flex: 1 1 0%; flex-direction: column; }
+.game-history-games-empty { align-items: center; display: flex; flex: 1 1 0%; justify-content: center; min-height: var(--game-history-empty-min-height, 50vh); }
+.game-history-games-games { --grid-row: auto; --players-column-min: 20rem; column-gap: var(--space-8); container-type: inline-size; display: grid; grid-template-columns: var(--grid-column); grid-template-rows: var(--grid-row); overflow: auto; width: 100%; }
+.game-history-games-row { align-items: center; cursor: pointer; display: grid; grid-column: 1 / -1; grid-template-columns: subgrid; position: relative; }
+[dir="ltr"] .game-history-games-row { padding: var(--space-12) var(--space-8) var(--space-12) var(--space-4); }
+[dir="rtl"] .game-history-games-row { padding: var(--space-12) var(--space-4) var(--space-12) var(--space-8); }
+.game-history-games-row:nth-child(2n) { background-color: var(--color-bg-subtlest); }
+.game-history-games-row:hover { background-color: var(--color-transparent-white-8); }
+.game-history-games-row-link { inset: 0px; position: absolute; z-index: 0; }
+.game-history-games-interactive-cell { position: relative; z-index: 1; }
+.game-history-games-result-cell { justify-self: center; }
+.game-history-games-players-cell { min-width: 0px; }
+.game-history-games-accuracy-cell { min-width: 5.6rem; }
+.game-history-games-header-row { background-color: var(--color-bg-tertiary); cursor: default; display: grid; grid-template-rows: 4rem; overflow: hidden; }
+[dir="ltr"] .game-history-games-header-row { padding: 0 var(--space-8) 0 var(--space-4); }
+[dir="rtl"] .game-history-games-header-row { padding: 0 var(--space-4) 0 var(--space-8); }
+.game-history-games-header-row:hover { background-color: var(--color-bg-tertiary); }
+.game-history-games-header-cell { align-items: center; color: var(--color-text-default); display: flex; font-size: 1.2rem; font-weight: 600; }
+.game-history-games-header-row .game-history-games-icon { grid-row: auto; }
+.game-history-games-header-row .game-history-games-actions { display: none; }
+.game-history-games-preview { border-radius: var(--radius-3); display: block; flex-shrink: 0; grid-row: 1 / 3; }
+.game-history-games-icon { grid-row: 1 / 3; }
+.game-history-games-center { justify-self: center; text-align: center; }
+.game-history-games-moves { display: block; justify-self: center; min-width: 3.2rem; text-align: center; }
+.game-history-games-date { display: block; justify-self: end; min-width: 4rem; text-align: end; white-space: nowrap; }
+.game-history-games-actions { align-items: center; display: flex; gap: var(--space-8); height: 5rem; justify-content: end; padding-inline-start: var(--space-8); position: relative; z-index: 1; }
+.game-history-games-pagination { border-top: var(--border-1) solid var(--color-border-subtlest); grid-column: 1 / -1; padding: var(--space-16); }
+.game-history-games-footer { grid-column: 1 / -1; inline-size: 100cqw; inset-inline-start: 0px; position: sticky; }
+.game-history-games-full { --grid-column: 16.4rem 8rem max-content 4.8rem 12rem max-content max-content; --grid-row: auto auto; }
+.game-history-games-full .game-history-games-moves { display: none; }
+.game-history-games-full .game-history-games-info-footer { grid-column: 3 / -2; }
+.game-history-games-compact { --grid-column: 7.2rem max-content minmax(6.4rem, max-content) minmax(10rem, max-content) minmax(4.8rem, max-content) max-content max-content; }
+.card--ZyIw2 { position: relative; display: flex; align-items: center; gap: 12px; width: 795px; max-width: 100%; padding: 24px; border-radius: 16px; background: rgb(255, 255, 255); border: 1px solid rgb(245, 245, 243); box-sizing: border-box; }
+.cardClose--n8Q6S { position: absolute; top: 16px; right: 16px; z-index: 2; display: flex; flex-direction: row; align-items: center; justify-content: flex-end; gap: 8px; }
+.bankcardContainer--kBXHx .cardDetail--p8ecA { display: flex; flex-direction: column; margin-bottom: 12px; }
+.bankcardContainer--kBXHx .cardDetail--p8ecA .card--cWls9 { margin-bottom: 8px; }
+.bankcardContainer--kBXHx .cardDetail--p8ecA .description--uom7i { margin-bottom: 6px; }
+.bankcardContainer--kBXHx .cardDetail--p8ecA .line--TfmWn { margin: 12px 0px; }
+.bankcardContainer--kBXHx .cardsWraper--j0Cbc { padding: 0px 12px; max-height: 350px; overflow-y: auto; }
+.bankcardContainer--kBXHx .content--FPgkg { padding: 12px; border-radius: 10px; background-color: rgb(248, 248, 248); max-height: 260px; overflow-y: auto; }
+.bankcardContainer--kBXHx .addCardModule--hyeSK { display: flex; flex-direction: column; max-height: 260px; min-height: 0px; border-radius: 10px; background-color: rgb(248, 248, 248); overflow: hidden; }
+.bankcardContainer--kBXHx .addCardSearchBar--UKhMj { flex-shrink: 0; padding: 16px 12px 12px; background-color: rgb(248, 248, 248); }
+.bankcardContainer--kBXHx .addCardListScroll--iuXvA { flex: 1 1 0%; min-height: 0px; overflow-y: auto; padding: 0px 12px 12px; scrollbar-width: thin; scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0); }
+.bankcardContainer--kBXHx .addCardListScroll--iuXvA .cardsList--diwEc.bankcardList--KIl6X { max-height: none; }
+.bankcardContainer--kBXHx .addCardListScroll--iuXvA::-webkit-scrollbar { width: 4px; }
+.bankcardContainer--kBXHx .addCardListScroll--iuXvA::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0); }
+.bankcardContainer--kBXHx .addCardListScroll--iuXvA::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.2); border-radius: 3px; transition: background 0.2s; }
+.bankcardContainer--kBXHx .addCardListScroll--iuXvA::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.3); }
+.bankcardContainer--kBXHx .cardsWraper--j0Cbc, .bankcardContainer--kBXHx .content--FPgkg { scrollbar-width: thin; scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0); }
+.bankcardContainer--kBXHx .cardsWraper--j0Cbc::-webkit-scrollbar, .bankcardContainer--kBXHx .content--FPgkg::-webkit-scrollbar { width: 4px; }
+.bankcardContainer--kBXHx .cardsWraper--j0Cbc::-webkit-scrollbar-track, .bankcardContainer--kBXHx .content--FPgkg::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0); }
+.bankcardContainer--kBXHx .cardsWraper--j0Cbc::-webkit-scrollbar-thumb, .bankcardContainer--kBXHx .content--FPgkg::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.2); border-radius: 3px; transition: background 0.2s; }
+.bankcardContainer--kBXHx .cardsWraper--j0Cbc::-webkit-scrollbar-thumb:hover, .bankcardContainer--kBXHx .content--FPgkg::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.3); }
+.bankcardContainer--kBXHx .tags--T7wqx { display: flex; flex-wrap: wrap; gap: 8px; }
+.bankcardContainer--kBXHx .tags--T7wqx span { padding: 4px 8px; background-color: rgba(0, 122, 239, 0.08); color: rgb(0, 122, 239); font-size: 12px; border-radius: 6px; }
+.bankcardContainer--kBXHx .line--TfmWn { width: 100%; border-bottom: 1px dashed rgb(230, 230, 230); }
+.bankcardContainer--kBXHx .binifits--IpOyy { display: flex; flex-direction: column; gap: 2px; }
+.bankcardContainer--kBXHx .binifits--IpOyy .title--GAMZa { color: rgb(34, 34, 34); font-size: 14px; font-weight: 600; }
+.bankcardContainer--kBXHx .description--uom7i { color: rgb(153, 153, 153); font-size: 12px; font-weight: 400; }
+.bankcardContainer--kBXHx .cardImage--n4uZE { width: 56px; height: 36px; }
+.bankcardContainer--kBXHx .cardImage--n4uZE img { width: 100%; height: 100%; object-fit: cover; }
+.bankcardContainer--kBXHx .cardsHeader--WXjDE { display: flex; flex-direction: column; gap: 8px; }
+.bankcardContainer--kBXHx .cardsList--diwEc { display: flex; flex-direction: column; max-height: 320px; }
+.bankcardContainer--kBXHx .cardsList--diwEc.bankcardList--KIl6X { gap: 16px; }
+.bankcardContainer--kBXHx .loadingContainer--mHHfy { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px; gap: 12px; color: rgb(102, 102, 102); font-size: 14px; }
+.bankcardContainer--kBXHx .card--cWls9 { display: flex; align-items: center; gap: 8px; background-color: rgb(248, 248, 248); }
+.bankcardContainer--kBXHx .card--cWls9:hover { cursor: pointer; }
+.bankcardContainer--kBXHx .card--cWls9:hover .addButton--a2yJB { color: rgb(0, 0, 0); }
+.bankcardContainer--kBXHx .card--cWls9 .cardContent--MG98O { flex: 1 1 0%; min-width: 0px; color: rgb(0, 0, 0); font-size: 14px; font-weight: 400; line-height: 1.5; }
+.bankcardContainer--kBXHx .card--cWls9 .iconChecked--voJxE, .bankcardContainer--kBXHx .card--cWls9 .addButton--a2yJB { font-size: 20px; }
+.bankcardContainer--kBXHx .card--cWls9 .addButton--a2yJB { color: rgb(204, 204, 204); }
+.bankcardContainer--kBXHx .footer--ptes1 { position: relative; justify-content: center; background-color: rgb(255, 255, 255); padding: 8px 12px 12px; }
+.bankcardContainer--kBXHx .selectedCardsContainer--IOH_0 { margin-bottom: 12px; width: 100%; }
+.bankcardContainer--kBXHx .selectedCardsHeader--FUI0E { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+.bankcardContainer--kBXHx .selectedCardsHeader--FUI0E .suffix--QqS58 { display: flex; gap: 8px; }
+.bankcardContainer--kBXHx .selectedCardsHeader--FUI0E .sliderArrow--dvyci { width: 20px; height: 20px; cursor: pointer; color: rgb(102, 102, 102); transition: color 0.3s; }
+.bankcardContainer--kBXHx .selectedCardsHeader--FUI0E .sliderArrow--dvyci:hover { color: rgb(51, 51, 51); }
+.bankcardContainer--kBXHx .selectedCardsHeader--FUI0E .sliderArrow--dvyci.disabled--mw0MJ { color: rgb(204, 204, 204); cursor: not-allowed; }
+.bankcardContainer--kBXHx .swiperContainer--Alu0v { width: 100%; padding: 10px 0px; overflow: auto hidden; scrollbar-width: none; }
+.bankcardContainer--kBXHx .swiperContainer--Alu0v::-webkit-scrollbar { display: none; }
+.bankcardContainer--kBXHx .swiperContainer--Alu0v .swiper { width: 100%; height: 100%; margin: 0px; padding: 0px; list-style: none; overflow: hidden; }
+.bankcardContainer--kBXHx .swiperContainer--Alu0v .swiper-wrapper { position: relative; width: 100%; height: 100%; z-index: 1; display: flex; transition-property: transform; box-sizing: content-box; gap: 0px; }
+.bankcardContainer--kBXHx .swiperContainer--Alu0v .swiper-slide { flex-shrink: 0; width: auto; height: 100%; position: relative; transition-property: transform; }
+.bankcardContainer--kBXHx .selectedCard--O2IMM { position: relative; display: flex; flex-direction: column; align-items: center; cursor: pointer; }
+.bankcardContainer--kBXHx .selectedCard--O2IMM .cardImage--n4uZE { width: 56px; height: 36px; }
+.bankcardContainer--kBXHx .selectedCard--O2IMM .cardImage--n4uZE img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.bankcardContainer--kBXHx .selectedCard--O2IMM .deleteIcon--eT0BH { width: 16px; height: 16px; border-radius: 50%; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.6); position: absolute; top: -8px; right: -8px; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; }
+.bankcardContainer--kBXHx .selectedCard--O2IMM .deleteIcon--eT0BH:hover { background-color: rgba(0, 0, 0, 0.8); transform: scale(1.1); }
+.cardMain--eSsNS { display: flex; gap: 9px; }
+.cardImage--fY_Vp { width: 80px; height: 100px; border-radius: 8px; overflow: hidden; flex-shrink: 0; }
+.cardImage--fY_Vp img { width: 100%; height: 100%; object-fit: cover; }
+.cardInfo--MS0GT { flex: 1 1 0%; min-width: 0px; display: flex; flex-direction: column; gap: 8px; }
+.cardInfoTop--b0JGG { display: flex; flex-direction: column; gap: 4px; }
+.card--MG_Zg { display: flex; flex-direction: column; width: 100%; box-sizing: border-box; background: rgb(255, 255, 255); border: 1px solid rgb(240, 240, 240); border-radius: 14px; overflow: hidden; }
+.card--tFZel { width: 100%; margin-bottom: 16px; border-radius: 12px; border: 1px solid rgb(240, 240, 240); background: rgb(248, 248, 248); overflow: hidden; }
+.card--z0yF0 { box-sizing: border-box; display: flex; flex-direction: column; align-items: flex-start; width: 100%; padding: 12px; border: 1px solid rgb(240, 240, 240); border-radius: 12px; background: rgb(250, 250, 250); text-align: left; }
+.freeship--gxaSZ .card--z0yF0 { gap: 10px; }
+.multibuy--UVtm7 .card--z0yF0 { gap: 6px; }
+.cardLabel--yOPO6 { color: rgb(153, 153, 153); font-size: 12px; font-weight: 700; line-height: normal; text-transform: uppercase; white-space: nowrap; }
+.cardValue--oErWd { display: -webkit-box; width: 100%; overflow: hidden; color: rgb(34, 34, 34); font-size: 14px; font-weight: 700; line-height: normal; word-break: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+.card--mtsN3 { display: flex; flex-direction: column; align-items: center; padding: 8px 16px 20px; gap: 16px; }
+.cardsWrap--Zw2ts { position: relative; }
+.cards--aeWhg { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.cards--aeWhg::-webkit-scrollbar { display: none; }
+.card--TQtlS { box-sizing: border-box; display: flex; flex: 0 0 100px; flex-direction: column; gap: 8px; width: 100px; padding: 8px; border-radius: 10px; background: rgb(248, 248, 248); opacity: 0.96; cursor: pointer; }
+.card--TQtlS:hover { background: rgb(246, 246, 246); }
+.cardImageBox--OMoGA { box-sizing: border-box; display: flex; height: 72px; padding: 6px; border-radius: 8px; background: rgb(255, 255, 255); overflow: hidden; }
+.cardImage--cH3ns { display: block; width: 100%; height: 100%; object-fit: contain; }
+.cardText--gY3lj { display: flex; flex-direction: column; gap: 4px; white-space: nowrap; }
+.cardDomain--BgKNn { font-size: 12px; line-height: 16px; color: rgb(102, 102, 102); overflow: hidden; text-overflow: ellipsis; }
+.cardPrice--HIuDN { font-size: 14px; line-height: 19px; font-weight: 700; color: rgb(34, 34, 34); overflow: hidden; text-overflow: ellipsis; }
+.streaks-toaster-content-component { display: flex; flex-direction: row; gap: var(--space-8); }
+[dir="ltr"] .streaks-toaster-content-component { padding: var(--space-4) var(--space-24) var(--space-4) var(--space-8); }
+[dir="rtl"] .streaks-toaster-content-component { padding: var(--space-4) var(--space-8) var(--space-4) var(--space-24); }
+.streaks-toaster-content-centered { align-items: center; display: flex; gap: var(--space-8); }
+.streaks-toaster-content-lines { display: flex; flex-direction: column; gap: var(--space-2); min-width: 0px; }
+.streaks-toaster-content-streak-count-text { color: var(--color-text-boldest); }
+.streaks-toaster-content-caption { color: var(--color-text-default); }

@@ -1,8 +1,9 @@
 import { useEffect, useState, type SyntheticEvent } from 'react'
-import { fetchArchives, fetchMonth, outcome, type CcGame } from '../lib/ccGames'
+import { fetchArchives, fetchMonth, formatTimeControl, outcome, type CcGame } from '../lib/ccGames'
 import { useStored } from '../lib/storage'
 import { openInReview } from './Review'
 import { TimeClassIcon } from '../components/TimeClassIcon'
+import { CcUsernameForm } from '../components/CcUsernameForm'
 
 function monthLabel(url: string) {
   const match = url.match(/\/(\d{4})\/(\d{2})$/)
@@ -10,23 +11,6 @@ function monthLabel(url: string) {
   return new Intl.DateTimeFormat(undefined, { month: 'long', year: 'numeric' }).format(
     new Date(Number(match[1]), Number(match[2]) - 1, 1),
   )
-}
-
-function formatTimeControl(value: string) {
-  if (value.includes('/')) {
-    const [moves, seconds] = value.split('/').map(Number)
-    if (moves === 1 && Number.isFinite(seconds)) {
-      const days = seconds / 86_400
-      return `${days} ${days === 1 ? 'day' : 'days'}`
-    }
-  }
-  if (value.includes('+')) {
-    const [seconds, increment] = value.split('+')
-    return `${Number(seconds) / 60} | ${increment}`
-  }
-  const seconds = Number(value)
-  if (Number.isFinite(seconds)) return `${seconds / 60} min`
-  return value
 }
 
 function GameRow({ game, username }: { game: CcGame; username: string }) {
@@ -71,7 +55,6 @@ function GameRow({ game, username }: { game: CcGame; username: string }) {
 
 export default function Games() {
   const [username, setUsername] = useStored('ccUsername', '')
-  const [draft, setDraft] = useState(username)
   const [editing, setEditing] = useState(!username)
   const [archives, setArchives] = useState<string[]>([])
   const [month, setMonth] = useState('')
@@ -135,15 +118,6 @@ export default function Games() {
     }
   }, [month, editing])
 
-  const submit = (event: React.FormEvent) => {
-    event.preventDefault()
-    const next = draft.trim()
-    if (!next) return
-    setUsername(next)
-    setEditing(false)
-    setError('')
-  }
-
   return (
     <div className="page games-page">
       <div className="games-panel">
@@ -156,7 +130,6 @@ export default function Games() {
             <button
               className="btn secondary"
               onClick={() => {
-                setDraft(username)
                 setEditing(true)
               }}
             >
@@ -166,21 +139,11 @@ export default function Games() {
         </div>
 
         {editing ? (
-          <form className="games-form" onSubmit={submit}>
-            <label htmlFor="games-username">Chess.com username</label>
-            <div className="games-form-row">
-              <input
-                id="games-username"
-                value={draft}
-                onChange={(event) => setDraft(event.target.value)}
-                placeholder="Username"
-                autoCapitalize="none"
-                autoCorrect="off"
-                autoFocus
-              />
-              <button className="btn primary" type="submit" disabled={!draft.trim()}>Load games</button>
-            </div>
-          </form>
+          <CcUsernameForm username={username} autoFocus onSubmit={(next) => {
+            setUsername(next)
+            setEditing(false)
+            setError('')
+          }} />
         ) : (
           archives.length > 0 && (
             <label className="games-month">

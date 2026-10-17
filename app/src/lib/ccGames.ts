@@ -131,3 +131,20 @@ export function outcome(game: CcGame, me: string): 'win' | 'loss' | 'draw' {
   if (DRAW_RESULTS.has(result)) return 'draw'
   return 'loss'
 }
+
+export function formatTimeControl(value: string) {
+  if (value.includes('/')) {
+    const [moves, seconds] = value.split('/').map(Number)
+    if (moves === 1 && Number.isFinite(seconds)) {
+      const days = seconds / 86_400
+      return `${days} ${days === 1 ? 'day' : 'days'}`
+    }
+  }
+  if (value.includes('+')) {
+    const [seconds, increment] = value.split('+')
+    return `${Number(seconds) / 60} | ${increment}`
+  }
+  const seconds = Number(value)
+  if (Number.isFinite(seconds)) return `${seconds / 60} min`
+  return value
+}

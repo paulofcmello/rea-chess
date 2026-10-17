@@ -1573,56 +1573,6 @@ h2 {
   border-color: var(--green);
 }
 
-/* ---------- Home ---------- */
-
-.home h1 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.home-logo {
-  width: 40px;
-}
-
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 14px;
-}
-
-.home-card {
-  background: var(--panel);
-  border-radius: var(--radius);
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  transition: background 0.1s, transform 0.1s;
-}
-
-.home-card:hover {
-  background: var(--panel-3);
-  transform: translateY(-2px);
-}
-
-.home-card.hero {
-  padding: 28px 20px;
-}
-
-.card-icon {
-  font-size: 40px;
-  width: 56px;
-  text-align: center;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 4px;
-}
-
 /* ---------- Responsive ---------- */
 
 @media (max-width: 1000px) {
@@ -2164,8 +2114,7 @@ h2 {
   }
 }
 
-.day-streak.inactive .puzzle-streak-icon,
-.home-streak:not(.active) .puzzle-streak-icon {
+.day-streak.inactive .puzzle-streak-icon {
   opacity: 0.6;
 }
 
@@ -2193,14 +2142,6 @@ h2 {
   word-break: break-word;
 }
 
-.home-streak {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 4px;
-  font-weight: 600;
-  font-size: 13px;
-}
 
 /* Game-result badges on the kings (chess.com .animated-effect: 37.5% icon circle at the square's top-right). */
 .board .result-badge {
@@ -2924,10 +2865,6 @@ h2 {
   font-weight: 800;
 }
 
-.home-bot-avatar {
-  border-radius: 5px;
-  object-fit: cover;
-}
 
 /* My Games */
 
@@ -3062,11 +2999,7 @@ h2 {
   white-space: nowrap;
 }
 
-.games-time-glyph { display: inline-block; flex-shrink: 0; text-transform: none; }
-.games-time-glyph.bullet { color: #e3aa24; }
-.games-time-glyph.blitz { color: #fad541; }
-.games-time-glyph.rapid { color: #81b64c; }
-.games-time-glyph.daily { color: #f7c631; }
+.games-time-glyph { display: inline-flex; flex-shrink: 0; vertical-align: middle; }
 
 .games-players {
   flex: 1;
@@ -3284,4 +3217,97 @@ h2 {
   .stats-card { padding: 14px; }
   .stats-card h2 { font-size: 17px; }
   .review-clock { min-width: 74px; padding: 5px 8px; font-size: 23px; }
+}
+
+/* Home: chess.com logged-in dashboard. */
+.home-page { max-width: 1100px; }
+.home-page h1, .home-page h2 { margin: 0; color: #fff; }
+.home-page h2 { font-size: 18px; }
+.home-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.home-profile, .home-header-streak { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.home-profile h1 { font-size: 20px; overflow-wrap: anywhere; }
+.home-header-streak { flex-shrink: 0; gap: 8px; font-family: var(--font-heading); font-size: 24px; color: #fff; }
+.home-avatar { display: block; flex-shrink: 0; border-radius: 3px; background: rgba(255,255,255,.15); object-fit: cover; }
+.home-dashboard { display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.home-page .cc-section { min-width: 0; background: var(--bg-deep); border-radius: 5px; overflow: hidden; }
+.home-hero { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; padding: 12px; }
+.home-play { display: flex; flex-direction: column; gap: 12px; }
+.home-play-links { display: flex; flex-direction: column; gap: 8px; }
+.home-page .cc-button { width: 100%; min-height: 44px; padding: 8px; border-radius: 8px; font-size: 16px; }
+.home-play > .cc-button { min-height: 50px; font-size: 20px; }
+.home-activity { display: flex; flex-direction: column; min-width: 0; background: var(--bg); border-radius: 5px; overflow: hidden; }
+.home-activity > a, .home-preview-button { display: block; width: 100%; }
+.board-preview { aspect-ratio: 1; width: 100%; position: relative; background-size: 100% 100%; overflow: hidden; }
+.board-preview img { position: absolute; width: 12.5%; height: 12.5%; user-select: none; pointer-events: none; }
+.home-preview-button { border: 0; background: none; padding: 0; cursor: pointer; }
+.home-preview-button:focus-visible { outline: 3px solid var(--green-hi); outline-offset: -3px; }
+.home-activity-body { flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 12px 16px 16px; }
+.home-activity-body > .cc-button { margin-top: auto; }
+.home-activity-body p { margin: 0; font-size: 13px; }
+.home-activity-label, .home-puzzle-stats { display: flex; align-items: center; gap: 6px; min-height: 32px; font-size: 13px; }
+.home-activity-label { margin-bottom: 8px; }
+.home-activity-label strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.home-puzzle-stats { min-height: 24px; }
+.home-puzzle-streak { display: inline-flex; align-items: center; color: #ffa459; font-weight: 700; }
+.home-puzzle-progress { height: 12px; border-radius: 12px; background: rgba(255,255,255,.1); overflow: hidden; margin-bottom: 4px; }
+.home-puzzle-progress > span { display: block; height: 100%; border-radius: inherit; background: #ffa459; }
+.home-last-empty, .home-preview-placeholder { aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 16px; background: rgba(0,0,0,.12); text-align: center; color: var(--muted); }
+.home-last-empty strong { color: var(--text); }
+.home-section-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px; }
+.home-section-header > a { overflow: hidden; text-overflow: ellipsis; }
+.home-history-empty { padding: 16px; }
+.home-history-empty > p { margin: 0 0 16px; }
+.home-history-scroll { overflow-x: auto; }
+.home-history-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.home-history-table th { height: 40px; color: var(--text-2); font-size: 12px; font-weight: 600; text-align: center; background: rgba(0,0,0,.08); }
+.home-history-table th:nth-child(2) { text-align: left; }
+.home-history-table td { padding: 12px 6px; }
+.home-history-table tbody tr { cursor: pointer; }
+.home-history-table tbody tr:nth-child(odd) { background: rgba(255,255,255,.025); }
+.home-history-table tbody tr:hover, .home-history-table tbody tr:focus-visible { background: rgba(255,255,255,.08); outline: none; }
+.home-history-time { min-width: 48px; display: flex; flex-direction: column; align-items: center; gap: 4px; font-weight: 600; white-space: nowrap; }
+.home-history-time > span:last-child { font-size: 11px; }
+.home-history-players { width: 100%; }
+.home-history-players > div { display: flex; align-items: center; gap: 5px; min-height: 26px; }
+.home-player-square { display: block; width: 10px; height: 10px; border: 1px solid rgba(255,255,255,.2); border-radius: 1px; flex-shrink: 0; }
+.home-player-square.white { background: #fff; }
+.home-player-square.black { background: #575653; }
+.home-player-name { font-weight: 700; white-space: nowrap; }
+.home-player-rating { font-weight: 400; color: var(--text-2); }
+.home-history-result { display: flex; justify-content: center; align-items: center; gap: 6px; }
+.home-stacked { display: flex; flex-direction: column; align-items: center; line-height: 24px; font-variant-numeric: tabular-nums; }
+.home-accuracy { font-weight: 700; }
+.home-draw { color: var(--muted); }
+.home-page .home-review-button { width: auto; min-height: 32px; padding: 6px 10px; font-size: 12px; border-radius: 3px; }
+.home-moves { text-align: center; }
+.home-history-date { text-align: right; white-space: nowrap; }
+.home-history-footer { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 12px; border-top: 1px solid rgba(255,255,255,.05); color: var(--text-2); font-weight: 600; }
+.home-history-footer:hover, a.home-section-header:hover { background: rgba(255,255,255,.05); color: #fff; }
+.home-rail { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.home-daily-body { display: flex; flex-direction: column; gap: 12px; padding: 0 12px 12px; }
+.home-daily-title { line-height: 1.2; }
+.home-streak-card { display: flex; align-items: center; gap: 12px; padding: 12px; }
+.home-streak-card h2 { font-size: 18px; margin-bottom: 4px; }
+.home-week { display: flex; gap: 4px; }
+.home-week > div { display: flex; flex-direction: column; align-items: center; gap: 4px; color: var(--muted); font-size: 11px; }
+.home-day-check { display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 3px; background: rgba(255,255,255,.08); }
+.home-day-check.solved { color: #fff; background: var(--green); font-size: 20px; font-weight: 700; }
+.home-stats .home-section-header { border-bottom: 1px solid rgba(255,255,255,.08); }
+.home-stat-row { display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 12px; font-size: 13px; font-weight: 600; color: var(--text-2); }
+.home-stat-row strong { margin-left: auto; font-variant-numeric: tabular-nums; }
+.home-stat-row + .home-stat-row { border-top: 1px solid rgba(255,255,255,.035); }
+.home-stats-error { padding: 0 12px 12px; }
+
+@media (max-width: 900px) {
+  .home-dashboard { grid-template-columns: minmax(0, 1fr); }
+  .home-hero { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-play { padding-bottom: 8px; }
+  .home-play-links { margin-top: 12px; }
+}
+@media (max-width: 560px) {
+  .home-page { padding-top: 0; }
+  .home-header-streak { font-size: 20px; }
+  .home-hero { grid-template-columns: minmax(0, 1fr); }
+  .home-activity-body { padding: 12px; }
+  .home-history-table { min-width: 620px; }
 }
