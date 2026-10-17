@@ -5,6 +5,7 @@ import Rush from './pages/Rush'
 import Themes from './pages/Themes'
 import Daily from './pages/Daily'
 import Bots from './pages/Bots'
+import Games from './pages/Games'
 import Analysis from './pages/Analysis'
 import { Modal } from './components/ui'
 import Board from './components/Board'
@@ -20,6 +21,7 @@ const routes = {
   rush: { label: 'Puzzle Rush', icon: 'puzzle-rush', el: Rush },
   daily: { label: 'Daily Puzzle', icon: 'pawn-green', el: Daily },
   themes: { label: 'Themes', icon: 'training', el: Themes },
+  games: { label: 'My Games', icon: 'binoculars', el: Games },
   analysis: { label: 'Analysis', icon: 'binoculars', el: Analysis },
 } as const
 
