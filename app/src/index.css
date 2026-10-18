@@ -2526,7 +2526,8 @@ h2 {
 
 .bot-tile img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 3px;
   display: block;

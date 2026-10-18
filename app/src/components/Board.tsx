@@ -142,8 +142,7 @@ function premoveDests(fen: string, sq: string) {
       }
       break
   }
-  // Can't premove onto your own piece's current (displayed) square.
-  for (const row of new Chess(fen).board()) for (const p of row) if (p && p.color === piece.color) out.delete(p.square)
+  // Own-piece squares stay allowed: chess.com lets you premove a recapture there.
   return out
 }
 
@@ -393,7 +392,9 @@ export default function Board({
       setUserArrows([])
     }
     if (!sq) return
-    if (selected && selected !== sq && dests.has(sq)) {
+    // In premove mode, clicking another own piece reselects; dragging onto it premoves.
+    const ownPremoveTarget = premoveMode && display.get(sq as Square)?.color === premoveColor
+    if (selected && selected !== sq && dests.has(sq) && !ownPremoveTarget) {
       tryMove(selected, sq, false)
       return
     }
