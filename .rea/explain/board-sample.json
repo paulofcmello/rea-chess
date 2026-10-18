@@ -1,0 +1,73 @@
+{
+  "source": "https://www.chess.com/analysis/game/live/185342069780/review?move=24",
+  "position": {
+    "move": 1915776,
+    "epSquare": -1,
+    "halfMoves": 4,
+    "castlingW": 0,
+    "castlingB": 0,
+    "color": 1,
+    "hash": [
+      3262377813,
+      1443020271
+    ],
+    "san": "Rhe1",
+    "fen": "r4rk1/p1p2ppp/3pbn2/2p5/4P3/1BN5/PPP2PPP/2KRR3 b - - 5 13",
+    "beforeFen": "r4rk1/p1p2ppp/3pbn2/2p5/4P3/1BN5/PPP2PPP/2KR3R w - - 4 13",
+    "moveNumber": 24,
+    "previous": {
+      "move": 23,
+      "line": 0
+    },
+    "flags": 0,
+    "to": "e1",
+    "from": "h1",
+    "piece": "r",
+    "ids": {
+      "move": 24,
+      "line": 0
+    },
+    "commands": {
+      "clk": "0:04:26.9",
+      "timestamp": "28",
+      "openLineParent": "open-line-2"
+    },
+    "time": 2669,
+    "ply": 25,
+    "wholeMoveNumber": 13,
+    "lines": null
+  },
+  "markings": {
+    "arrow": {},
+    "customItem": {},
+    "effect": {
+      "e1": {
+        "markingType": "effect",
+        "key": "e1",
+        "color": "d",
+        "square": "e1",
+        "type": "Excellent",
+        "size": "100%",
+        "animated": false
+      }
+    },
+    "square": {
+      "h1": {
+        "markingType": "square",
+        "key": "h1",
+        "color": "#81b64c",
+        "square": "h1",
+        "opacity": 0.5
+      },
+      "e1": {
+        "markingType": "square",
+        "key": "e1",
+        "color": "#81b64c",
+        "square": "e1",
+        "opacity": 0.5
+      }
+    }
+  },
+  "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.10.14\"]\n[Round \"-\"]\n[White \"PauloM18\"]\n[Black \"sparta-et\"]\n[Result \"1-0\"]\n[CurrentPosition \"2k5/2Q5/2K5/8/8/7p/7P/8 b - - 5 47\"]\n[Timezone \"UTC\"]\n[ECO \"C45\"]\n[ECOUrl \"https://www.chess.com/openings/Scotch-Game-3...exd4-4.Nxd4-Nxd4-5.Qxd4\"]\n[UTCDate \"2026.10.14\"]\n[UTCTime \"23:14:52\"]\n[WhiteElo \"727\"]\n[BlackElo \"708\"]\n[TimeControl \"300\"]\n[Termination \"PauloM18 won by checkmate\"]\n[StartTime \"23:14:52\"]\n[EndDate \"2026.10.14\"]\n[EndTime \"23:18:59\"]\n[Link \"https://www.chess.com/game/live/185342069780\"]\n[WhiteUrl \"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif\"]\n[WhiteCountry \"27\"]\n[WhiteTitle \"\"]\n[BlackUrl \"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif\"]\n[BlackCountry \"69\"]\n[BlackTitle \"\"]\n\n1. e4 {[%clk 0:04:58.1][%timestamp 19][%openLineParent open-line-1]} 1... e5\n{[%clk 0:04:59.5][%timestamp 5]} 2. Nf3 {[%clk 0:04:51.4][%timestamp 67]} 2...\nNc6 {[%clk 0:04:57.6][%timestamp 19]} 3. d4 {[%clk 0:04:49.9][%timestamp 15]}\n3... exd4 {[%clk 0:04:56.5][%timestamp 11]} 4. Nxd4 {[%clk 0:04:49.8][%timestamp\n1]} 4... Nxd4 {[%clk 0:04:55.5][%timestamp 10]} 5. Qxd4 {[%clk\n0:04:49.7][%timestamp 1]} 5... Qf6 {[%clk 0:04:48.3][%timestamp 72]} 6. Be3\n{[%clk 0:04:43.6][%timestamp 61]} 6... b6?! {[%clk 0:04:44.7][%timestamp\n36][%c_effect\nb6;square;b6;type;Inaccuracy;size;100%25;animated;false;persistent;true]} 7.\nNc3?! {[%clk 0:04:41.1][%timestamp 25][%c_effect\nc3;square;c3;type;Inaccuracy;size;100%25;animated;false;persistent;true]} 7...\nBc5 {[%clk 0:04:42.7][%timestamp 20]} 8. Qxf6 {[%clk 0:04:37][%timestamp 41]}\n8... Nxf6 {[%clk 0:04:41.3][%timestamp 14]} 9. Bxc5 {[%clk 0:04:35.5][%timestamp\n15]} 9... bxc5 {[%clk 0:04:40][%timestamp 13]} 10. Bc4 {[%clk\n0:04:34.9][%timestamp 6]} 10... d6 {[%clk 0:04:33.6][%timestamp 64]} 11. O-O-O\n{[%clk 0:04:33.6][%timestamp 13]} 11... Be6 {[%clk 0:04:31.1][%timestamp 25]}\n12. Bb3?! {[%clk 0:04:29.7][%timestamp 39][%c_effect\nb3;square;b3;type;Inaccuracy;size;100%25;animated;false;persistent;true]} 12...\nO-O {[%clk 0:04:29.3][%timestamp 18]} 13. Rhe1 {[%clk 0:04:26.9][%timestamp\n28][%openLineParent open-line-2]} 13... Bxb3 {[%clk 0:04:15.7][%timestamp 136]}\n14. axb3 {[%clk 0:04:24][%timestamp 29]} 14... a5 {[%clk 0:04:15.2][%timestamp\n5]} 15. Nd5 {[%clk 0:04:19.2][%timestamp 48]} 15... Nxd5 {[%clk\n0:04:13.9][%timestamp 13]} 16. exd5 {[%clk 0:04:19.1][%timestamp 1]} 16... Rae8\n{[%clk 0:04:12][%timestamp 19]} 17. f4 {[%clk 0:04:13.4][%timestamp 57]} 17...\nRxe1 {[%clk 0:04:09.8][%timestamp 22]} 18. Rxe1 {[%clk 0:04:13.3][%timestamp 1]}\n18... g6 {[%clk 0:04:08.4][%timestamp 14]} 19. g3 {[%clk 0:04:12.4][%timestamp\n9]} 19... f6 {[%clk 0:04:03][%timestamp 54]} 20. Kd2 {[%clk\n0:04:07.2][%timestamp 52]} 20... Kf7 {[%clk 0:04:02.3][%timestamp 7]} 21. Kc3\n{[%clk 0:04:03.1][%timestamp 41]} 21... Re8 {[%clk 0:04:01][%timestamp 13]} 22.\nRxe8 {[%clk 0:03:53][%timestamp 101]} 22... Kxe8 {[%clk 0:04:00.1][%timestamp\n9]} 23. Kc4 {[%clk 0:03:52.6][%timestamp 4]} 23... Kd7 {[%clk\n0:03:59.2][%timestamp 9]} 24. Kb5 {[%clk 0:03:51.5][%timestamp 11]} 24... g5\n{[%clk 0:03:52.9][%timestamp 63]} 25. fxg5 {[%clk 0:03:48.9][%timestamp 26]}\n25... fxg5 {[%clk 0:03:52.2][%timestamp 7]} 26. Kxa5 {[%clk\n0:03:47.5][%timestamp 14]} 26... h5 {[%clk 0:03:50.4][%timestamp 18]} 27. b4\n{[%clk 0:03:45.6][%timestamp 19]} 27... cxb4 {[%clk 0:03:48.8][%timestamp 16]}\n28. Kxb4 {[%clk 0:03:45.4][%timestamp 2]} 28... c5+ {[%clk 0:03:46.8][%timestamp\n20]} 29. dxc6+ {[%clk 0:03:42.6][%timestamp 28]} 29... Kxc6 {[%clk\n0:03:46.1][%timestamp 7]} 30. c4 {[%clk 0:03:37.8][%timestamp 48]} 30... d5\n{[%clk 0:03:43][%timestamp 31]} 31. cxd5+ {[%clk 0:03:36.5][%timestamp 13]}\n31... Kxd5 {[%clk 0:03:42.6][%timestamp 4]} 32. Ka5 {[%clk 0:03:31.3][%timestamp\n52]} 32... Kc4 {[%clk 0:03:40.5][%timestamp 21]} 33. b4 {[%clk\n0:03:30.5][%timestamp 8]} 33... Kd5 {[%clk 0:03:38.8][%timestamp 17]} 34. b5\n{[%clk 0:03:30.1][%timestamp 4]} 34... Kd6 {[%clk 0:03:35.3][%timestamp 35]} 35.\nb6 {[%clk 0:03:29.3][%timestamp 8]} 35... Kc6 {[%clk 0:03:34.6][%timestamp 7]}\n36. Ka6 {[%clk 0:03:28.7][%timestamp 6]} 36... Kd7 {[%clk 0:03:31.1][%timestamp\n35]} 37. Ka7 {[%clk 0:03:25.7][%timestamp 30]} 37... Kc8 {[%clk\n0:03:30][%timestamp 11]} 38. b7+ {[%clk 0:03:20.5][%timestamp 52]} 38... Kc7\n{[%clk 0:03:29.3][%timestamp 7]} 39. b8=Q+ {[%clk 0:03:19.2][%timestamp 13]}\n39... Kd7 {[%clk 0:03:28][%timestamp 13]} 40. Qb5+ {[%clk 0:03:16.7][%timestamp\n25]} 40... Kc7 {[%clk 0:03:26.9][%timestamp 11]} 41. Qb6+ {[%clk\n0:03:14.7][%timestamp 20]} 41... Kc8 {[%clk 0:03:25.7][%timestamp 12]} 42. Ka6\n{[%clk 0:03:12.7][%timestamp 20]} 42... h4 {[%clk 0:03:22.6][%timestamp 31]} 43.\ngxh4 {[%clk 0:03:10.6][%timestamp 21]} 43... gxh4 {[%clk 0:03:21.7][%timestamp\n9]} 44. Kb5 {[%clk 0:03:09][%timestamp 16]} 44... h3 {[%clk\n0:03:19.3][%timestamp 24]} 45. Qa7 {[%clk 0:03:07.1][%timestamp 19]} 45... Kd8\n{[%clk 0:03:15.5][%timestamp 38]} 46. Kc6 {[%clk 0:03:06.7][%timestamp 4]} 46...\nKc8 {[%clk 0:03:14.7][%timestamp 8]} 47. Qc7# {[%clk 0:03:05.2][%c_effect\nc6;square;c6;type;Winner;animated;true,c8;square;c8;type;CheckmateBlack;animated;true][%timestamp\n15]} 1-0",
+  "coach": "Game Review\n he1\nis excellent\n+0.52\nExplain\nBest\nNext\n"
+}

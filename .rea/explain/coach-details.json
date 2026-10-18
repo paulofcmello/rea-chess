@@ -1,0 +1,66 @@
+[
+  {
+    "index": 9,
+    "collapsed": "Game Review\n f6\nis best\n+0.65\nExplain\nNext\n",
+    "expanded": {
+      "text": "Game Review\nExplaining \n c4\n+0.65\nGot it!\n",
+      "markings": {
+        "arrow": {},
+        "customItem": {},
+        "effect": {},
+        "square": {}
+      },
+      "buttons": [
+        "Got it!"
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "collapsed": "Game Review\nb6\nis an inaccuracy\n+1.36\nExplain\nBest\nNext\n",
+    "expanded": {
+      "text": "Game Review\nExplaining \ne5\n+0.32\nGot it!\n",
+      "markings": {
+        "arrow": {},
+        "customItem": {},
+        "effect": {},
+        "square": {}
+      },
+      "buttons": [
+        "Got it!"
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "collapsed": "Game Review\n c3\nis an inaccuracy\n+0.30\nExplain\nBest\nNext\n",
+    "expanded": {
+      "text": "Game Review\nExplaining \ne5\n+1.36\nGot it!\n",
+      "markings": {
+        "arrow": {},
+        "customItem": {},
+        "effect": {},
+        "square": {}
+      },
+      "buttons": [
+        "Got it!"
+      ]
+    }
+  },
+  {
+    "index": 22,
+    "collapsed": "Game Review\n b3\nis an inaccuracy\n+0.22\nExplain\nBest\nNext\n",
+    "expanded": {
+      "text": "Game Review\nExplaining \n xb3\n+0.22\nGot it!\n",
+      "markings": {
+        "arrow": {},
+        "customItem": {},
+        "effect": {},
+        "square": {}
+      },
+      "buttons": [
+        "Got it!"
+      ]
+    }
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "url": "https://text-and-audio.chess.com/text_prod/released/Generic_coach/en-US/cee_asset_v2.json.bzp",
+  "status": 200,
+  "encodedBytes": 609372,
+  "note": "Encoded coach text/audio asset, not plain JSON; no decoder or raw proprietary phrase table incorporated in the app."
+}

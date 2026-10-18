@@ -76,3 +76,19 @@ export function CoachAvatar({ emotion }: { emotion: CoachEmotion }) {
 
   return <canvas ref={canvas} className="coach-canvas" width={128} height={128} />
 }
+
+/** The review coach keeps the first sentence readable; detail is revealed on demand. */
+export function MoveExplanation({ explanation, expanded, onToggle }: {
+  explanation: import('../lib/explain').Explanation
+  expanded: boolean
+  onToggle: () => void
+}) {
+  return <div className="review-explanation">
+    <p>{explanation.short}</p>
+    <button className="review-explain-toggle" aria-expanded={expanded} aria-controls="review-explanation-details" onClick={onToggle}>{expanded ? 'Hide explanation' : 'Explain'}</button>
+    {expanded && <div id="review-explanation-details" className="review-explanation-details">
+      {explanation.details.slice(1).map((text) => <p key={text}>{text}</p>)}
+      {explanation.bestText && <p className="review-best-reason">{explanation.bestText}</p>}
+    </div>}
+  </div>
+}

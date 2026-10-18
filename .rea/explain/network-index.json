@@ -1,0 +1,572 @@
+[
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.DB-TfGH86I.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/analysis.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/analysis.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/rolldown-runtime.BKgabsiw8J.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.eager.DYV62_EUMx.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.BXQyhekRrj.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.Dda1z9Gwo-.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.YO2Lp2as1x.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.DVf98_GU-X.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.DiTIVfCzZW.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.DCAezIXxGf.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/tab-review.C32H-BzVhO.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.CFpxA2Qmpq.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.BLyxhAH_T9.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.DFFkZ5F5uI.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.EjaSeZ-NSv.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.BT7xKpLU2x.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.lZQi9aq9C8.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.D8q-TtAOBn.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.XV8rLqLKxx.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.DfyLEF6NAv.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.BRddMj_0tN.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.CBS9So5a7S.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.BO3siOPA-1.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.BwscypKwd5.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.PG5epe2WBd.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.l0R5MRIi1F.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.DAj2ycGy7j.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.4g0bosbmGP.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/add-games-modal.D5Xs0Cgq4o.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/mobile-top-section.BTAGogi_RW.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.DU6r4PASCI.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.BnxXD4zYON.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/exploring-skills-menu.Bu9VvTt7uQ.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/add-chessboard-slam-animation.b44146bc.HrlK9423kL.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/chessboard-636d356.62221e19.CVTmyOPJAZ.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/client.411a4358.DKTOHqJBWG.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/client.dbeb9287.UIn0TuSpvC.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/client.7b2a3a15.C3bXFtDneN.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/add-games-modal.b296a6be.Dv1QRmZVxt.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/tab-review.88a71be6.BEJz7GN__i.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/mobile-top-section.6ed8bdc5.D4rZ75Nhdz.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/exploring-skills-menu.dff52af2.56vxqe0AA7.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.bbef8d49.BajPyD-UtG.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.fa85ee52.BJsGmugmwi.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.33ac4184.DEF5Qs9Qgp.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.6a60d0d3.sJDR55IW6F.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.525adf09.BWU_kZC0jU.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.cbfaaa0d.CSsTVG0x7J.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.c972eccb.Bd0ca0GwJ9.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.afff22b9.SntM_JwDIq.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.36dcc507.DDOfLe_czO.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.a3c617d1.B8FoZJmVY_.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.3fa9d5df.CJgza5XVkW.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.5980b7d8.DIz6qEXsus.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.a89285a2.DKDOgOxz7F.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.39e302ce.B_ZFkR2x_4.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.bdf70bb6.wLSk6_PW9I.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.683751ea.lASG_2Utaz.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.0174e7a8.CDeXhp56ma.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.b5468368.DVv1worEOL.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.d02718ed.D274h_9Zvc.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.1d06fede.4d-HwktrSi.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.6b4f74cd.DRS-9YFa9D.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.ba7a4914.CTYzBm3teJ.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.c313f711.B97Z5Ef38v.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/coaches.dd1c6bed.q6hE5JW7NC.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.afd5ac8f.BkaoeuApcj.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.af1e5fa0.B61Md9lD4v.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.d3072b30.W5SUNzGiNx.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.79059e6a.DRo5KtfjsW.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.a09e04cf.8G6CH2-6RK.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.5e87fb53.asY8peQNnx.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.6f921e36.CqtVpJ0rKv.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.9add8153.DUYZZNAyRV.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.47f6fb7f.ZngTrfHE8p.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.533ee0c1.BCYWMb1soZ.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.194e8f97.DNh8XSmgKt.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.bdf87995.DkSry1PyxP.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.c6910d0d.Dp6NSbirqT.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.d61ac2c5.uSFB-Vj3n6.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.f43dfc81.DF0LVHns3d.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.93023eda.sIoJiiGBQK.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.9e060ce8.DNIqbeNI7n.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.452ea5f2.Iqoy-cc62j.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.0e54b533.C5hCe5ZZjT.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.9df69a43.B6_lX-hVSy.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/client.84ddf004.C3qD3xmoy0.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/client.832f50bc.D-vzNRzJYx.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/client.03a446da.DAtkY_YtVY.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/client.0cab8053.DbGPUwHWQm.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.533b6e25.Dvkl06mri_.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.671cf06a.B9arG2Y4Q3.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.3f51b01d.B3U5vc1JOo.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.44aaf7d5.3lP8D1s6Vy.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.fa954c51.D2aHuaaLLc.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.fe7dcb3d.CmvSTCUs8G.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.4c124cda.CEZoAYhIuq.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.f80e062d.BRSZeBSjG5.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.8922d4ae.BfsOkrbpHP.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.d500c548.CPDdRI2WnE.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.be38871f.DQFjLT3CMF.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.36d161d9.B2CtQgug5z.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.4e912aa0.DehRoWRwYP.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.4bda5bf4.CuaDvZm8Nx.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.786bb3ed.5-glR2lrr_.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.1370e462.BYQmoOrFmQ.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/index.afa035cd.BAyIqyIyqL.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/skills-tally-row.7fc603bb.CrS4N1YC3c.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/shared.36fcb91b.B0O1aV67yd.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/evaluation-bar.Dw4H_kZZAR.css",
+    "status": 200,
+    "type": "Stylesheet"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/analysis/2026.10.2/evaluation-bar.b2490faa.CaC7xWVF1Y.chunk.js",
+    "status": 200,
+    "type": "Script"
+  },
+  {
+    "url": "https://www.chess.com/callback/analysis/game/live/185342069780/all",
+    "status": 200,
+    "type": "Fetch"
+  },
+  {
+    "url": "https://www.chess.com/callback/eco/search/Scotch-Game-3...exd4-4.Nxd4-Nxd4-5.Qxd4/paulom18/1",
+    "status": 200,
+    "type": "Fetch"
+  }
+]

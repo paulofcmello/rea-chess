@@ -1,0 +1,21 @@
+PASS hanging queen: hanging-piece
+PASS allows mate in one: allows-mate
+PASS missed knight fork: fork
+PASS missed mate: missed-mate
+PASS developing knight: development
+PASS castling: castling
+PASS losing the exchange: losing-exchange
+PASS book opening: book
+PASS black development: development
+PASS passed pawn push: passed-pawn
+PASS stalemate trap: stalemate
+PASS skewer: skewer
+PASS discovered attack: discovered-attack
+PASS trapped knight: trapped-piece
+PASS back rank mate: back-rank
+PASS promotion threat: promotion-threat
+PASS king shield: weakens-king
+PASS trade while ahead: trade-when-ahead
+PASS centre control: centre-control
+PASS missed pin: pin
+20 detector cases and cache/legal-line/sacrifice checks passed.

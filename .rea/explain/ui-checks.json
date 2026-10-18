@@ -1,0 +1,34 @@
+[
+  {
+    "check": "black blunder expands with threats",
+    "coach": "exf3 is a blunder\n+5.0\n\nThis leaves your queen on f5 vulnerable. Your opponent can capture it with the queen on c2.\n\nHide explanation\n\nYou missed a tactic: the queen on g5 pins the pawn on g2 to the king on g1.\n\nBest was Qg5, which creates a pin: the queen on g5 pins the pawn on g2 to the king on g1.",
+    "fen": "4r1k1/4rpp1/pp5p/2pP1q2/2P5/4Rp2/PPQ3PP/5RK1 w - - 0 23"
+  },
+  {
+    "check": "follow-up changes board",
+    "fen": "4r1k1/4rpp1/pp5p/2pP1Q2/2P5/4Rp2/PP4PP/5RK1 b - - 0 23"
+  },
+  {
+    "check": "return restores reviewed position"
+  },
+  {
+    "check": "best line begins before played move, return restores it"
+  },
+  {
+    "check": "retry returns to position before blunder"
+  },
+  {
+    "check": "retry accepts exact engine move",
+    "best": "f5g5"
+  },
+  {
+    "check": "best move expands",
+    "coach": "d3 is the best move\n-0.6\n\nThis increases your control of the centre, giving your pieces more room to work.\n\nHide explanation\n\nThe engine recommends d3, which preserves the strongest engine evaluation."
+  },
+  {
+    "check": "Escape leaves playback"
+  },
+  {
+    "check": "390px layout has no horizontal overflow"
+  }
+]

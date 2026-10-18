@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
+import { DEFAULT_POSITION } from 'chess.js'
 import Board from '../components/Board'
 import PuzzlePathCard from '../components/PuzzlePathCard'
 import { loadPuzzles, pickPuzzle, updateRating, themeLabels, type Puzzle } from '../lib/puzzles'
@@ -77,16 +78,13 @@ export default function Puzzles() {
 
   return (
     <>
-    <div className="page cc-puzzle-hub" hidden={playing}>
-      <PuzzlePathCard onSolve={start} active={!playing} loading={!all.length} />
-      <section className="cc-puzzle-modes" aria-label="Puzzle modes">
-        <h2>Train your tactical vision</h2>
-        <p className="muted">A little practice every day goes a long way.</p>
-        {error ? <p role="alert">{error} <button className="cc-button cc-secondary" onClick={() => location.reload()}>Try again</button></p> : !all.length && <p role="status">Loading puzzles…</p>}
-        <a className="cc-section" href="#/rush"><img src="https://assets-ds.chess.com/color-icons/puzzle-rush.svg" alt="" /><div><h3>Puzzle Rush</h3><p className="muted">Race the clock and build your streak.</p></div></a>
-        <a className="cc-section" href="#/daily"><img src="https://assets-ds.chess.com/color-icons/pawn-green.svg" alt="" /><div><h3>Daily Puzzle</h3><p className="muted">A fresh challenge every day.</p></div></a>
-        <a className="cc-section" href="#/themes"><img src="https://assets-ds.chess.com/color-icons/training.svg" alt="" /><div><h3>Themes</h3><p className="muted">Practice a specific tactic.</p></div></a>
-      </section>
+    <div className="cc-layout cc-puzzle-hub" hidden={playing}>
+      <div className="cc-board-area"><Board fen={DEFAULT_POSITION} movable="none" /></div>
+      <BoardControls />
+      <div className="cc-sidebar cc-puzzle-hub-sidebar">
+        <PuzzlePathCard onSolve={start} active={!playing} loading={!all.length} />
+        {error && <div className="cc-puzzle-hub-error" role="alert">{error} <button className="cc-button cc-secondary" onClick={() => location.reload()}>Try again</button></div>}
+      </div>
     </div>
     {playing && <div className="cc-layout">
       <div className="cc-board-area">

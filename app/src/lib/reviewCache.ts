@@ -7,7 +7,11 @@ export function reviewKey(pgn: string, url?: string) {
   for (let i = 0; i < pgn.length; i++) hash = Math.imul(hash ^ pgn.charCodeAt(i), 16777619)
   return `review:${(hash >>> 0).toString(16)}`
 }
-export function loadReview(key: string) { return load<Review | null>(key, null) }
+export function loadReview(key: string) {
+  const review = load<Review | null>(key, null)
+  // Older reviews discarded PVs; recompute once so follow-up never silently disappears.
+  return review?.moves.every(move => Array.isArray(move.bestLine) && Array.isArray(move.refutation)) ? review : null
+}
 export function saveReview(key: string, review: Review) {
   const keys = [key, ...load<string[]>('review:index', []).filter((k) => k !== key)]
   save(key, review)

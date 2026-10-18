@@ -1,0 +1,11 @@
+{
+  "url": "https://www.chess.com/callback/analysis/game/live/185342069780/all",
+  "status": 200,
+  "type": "Fetch",
+  "body": {
+    "data": null,
+    "selfAnalysis": [],
+    "pgn": null,
+    "analysisLogExists": true
+  }
+}

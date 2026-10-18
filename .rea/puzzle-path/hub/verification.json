@@ -1,0 +1,552 @@
+[
+  {
+    "name": "Level 17, current tile 7: all 20 tiles fit; board 728px and standard sidebar 868px match reference",
+    "width": 1440,
+    "height": 900,
+    "scrollWidth": 1440,
+    "board": {
+      "x": 192,
+      "y": 16,
+      "width": 728,
+      "height": 728,
+      "top": 16,
+      "right": 920,
+      "bottom": 744,
+      "left": 192
+    },
+    "card": {
+      "x": 952,
+      "y": 16,
+      "width": 300,
+      "height": 868,
+      "top": 16,
+      "right": 1252,
+      "bottom": 884,
+      "left": 952
+    },
+    "view": {
+      "x": 952,
+      "y": 232.078125,
+      "width": 300,
+      "height": 498.421875,
+      "top": 232.078125,
+      "right": 1252,
+      "bottom": 730.5,
+      "left": 952
+    },
+    "pawn": {
+      "x": 1072.07421875,
+      "y": 464.0933532714844,
+      "width": 44.8515625,
+      "height": 44.8515625,
+      "top": 464.0933532714844,
+      "right": 1116.92578125,
+      "bottom": 508.9449157714844,
+      "left": 1072.07421875
+    },
+    "current": "Puzzle 7: current",
+    "tiles": [
+      {
+        "label": "Puzzle 1: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 2: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 3: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 4: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 5: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 6: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 7: current",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 8: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 9: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 10: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 11: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 12: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 13: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 14: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 15: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 16: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 17: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 18: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 19: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 20: upcoming",
+        "inside": true
+      }
+    ],
+    "failedImages": []
+  },
+  {
+    "name": "Menu routes, focus, and Escape return",
+    "links": [
+      {
+        "text": "Daily Puzzle",
+        "href": "#/daily"
+      },
+      {
+        "text": "Puzzle Rush",
+        "href": "#/rush"
+      },
+      {
+        "text": "Themes",
+        "href": "#/themes"
+      },
+      {
+        "text": "Endgames",
+        "href": "#/endgames"
+      }
+    ],
+    "focused": "Back to Puzzle Path"
+  },
+  {
+    "name": "Solve Puzzles opens existing local rated flow; Back returns to hub",
+    "pass": true
+  },
+  {
+    "name": "All mode links navigate to existing REA pages",
+    "pass": true
+  },
+  {
+    "name": "Responsive 390",
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "board": {
+      "x": 22,
+      "y": 68,
+      "width": 352,
+      "height": 352,
+      "top": 68,
+      "right": 374,
+      "bottom": 420,
+      "left": 22
+    },
+    "card": {
+      "x": 22,
+      "y": 436,
+      "width": 352,
+      "height": 740,
+      "top": 436,
+      "right": 374,
+      "bottom": 1176,
+      "left": 22
+    },
+    "view": {
+      "x": 22,
+      "y": 626,
+      "width": 352,
+      "height": 396.5,
+      "top": 626,
+      "right": 374,
+      "bottom": 1022.5,
+      "left": 22
+    },
+    "pawn": {
+      "x": 171.35546875,
+      "y": 810.5753784179688,
+      "width": 35.6796875,
+      "height": 35.6796875,
+      "top": 810.5753784179688,
+      "right": 207.03515625,
+      "bottom": 846.2550659179688,
+      "left": 171.35546875
+    },
+    "current": "Puzzle 7: current",
+    "tiles": [
+      {
+        "label": "Puzzle 1: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 2: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 3: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 4: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 5: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 6: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 7: current",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 8: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 9: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 10: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 11: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 12: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 13: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 14: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 15: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 16: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 17: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 18: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 19: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 20: upcoming",
+        "inside": true
+      }
+    ],
+    "failedImages": []
+  },
+  {
+    "name": "Responsive 760",
+    "width": 760,
+    "height": 844,
+    "scrollWidth": 760,
+    "board": {
+      "x": 86,
+      "y": 16,
+      "width": 626,
+      "height": 626,
+      "top": 16,
+      "right": 712,
+      "bottom": 642,
+      "left": 86
+    },
+    "card": {
+      "x": 86,
+      "y": 658,
+      "width": 626,
+      "height": 740,
+      "top": 658,
+      "right": 712,
+      "bottom": 1398,
+      "left": 86
+    },
+    "view": {
+      "x": 86,
+      "y": 848,
+      "width": 626,
+      "height": 396.5,
+      "top": 848,
+      "right": 712,
+      "bottom": 1244.5,
+      "left": 86
+    },
+    "pawn": {
+      "x": 365.50390625,
+      "y": 1032.575439453125,
+      "width": 35.6796875,
+      "height": 35.6796875,
+      "top": 1032.575439453125,
+      "right": 401.18359375,
+      "bottom": 1068.255126953125,
+      "left": 365.50390625
+    },
+    "current": "Puzzle 7: current",
+    "tiles": [
+      {
+        "label": "Puzzle 1: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 2: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 3: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 4: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 5: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 6: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 7: current",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 8: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 9: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 10: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 11: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 12: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 13: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 14: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 15: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 16: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 17: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 18: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 19: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 20: upcoming",
+        "inside": true
+      }
+    ],
+    "failedImages": []
+  },
+  {
+    "name": "Responsive 900",
+    "width": 900,
+    "height": 844,
+    "scrollWidth": 900,
+    "board": {
+      "x": 86,
+      "y": 16,
+      "width": 640,
+      "height": 640,
+      "top": 16,
+      "right": 726,
+      "bottom": 656,
+      "left": 86
+    },
+    "card": {
+      "x": 86,
+      "y": 672,
+      "width": 640,
+      "height": 740,
+      "top": 672,
+      "right": 726,
+      "bottom": 1412,
+      "left": 86
+    },
+    "view": {
+      "x": 86,
+      "y": 862,
+      "width": 640,
+      "height": 396.5,
+      "top": 862,
+      "right": 726,
+      "bottom": 1258.5,
+      "left": 86
+    },
+    "pawn": {
+      "x": 372.16015625,
+      "y": 1046.575439453125,
+      "width": 35.6796875,
+      "height": 35.6796875,
+      "top": 1046.575439453125,
+      "right": 407.83984375,
+      "bottom": 1082.255126953125,
+      "left": 372.16015625
+    },
+    "current": "Puzzle 7: current",
+    "tiles": [
+      {
+        "label": "Puzzle 1: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 2: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 3: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 4: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 5: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 6: completed",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 7: current",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 8: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 9: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 10: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 11: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 12: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 13: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 14: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 15: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 16: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 17: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 18: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 19: upcoming",
+        "inside": true
+      },
+      {
+        "label": "Puzzle 20: upcoming",
+        "inside": true
+      }
+    ],
+    "failedImages": []
+  }
+]

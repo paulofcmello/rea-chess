@@ -1,0 +1,15 @@
+
+> rea-chess@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 91 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.51 kB │ gzip:   0.32 kB
+dist/assets/index-B7EZxCaL.css   75.01 kB │ gzip:  15.18 kB
+dist/assets/Friend-DIg2_IxG.js  109.83 kB │ gzip:  30.32 kB
+dist/assets/index-5gknSr07.js   463.76 kB │ gzip: 143.93 kB
+
+✓ built in 149ms

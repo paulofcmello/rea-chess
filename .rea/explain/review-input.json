@@ -1,0 +1,19 @@
+{
+  "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2026.10.16\"]\n[Round \"-\"]\n[White \"Gracetamayo\"]\n[Black \"PauloM18\"]\n[Result \"1-0\"]\n[CurrentPosition \"8/5RQk/pp5p/2p5/7P/8/8/7K b - - 0 42\"]\n[Timezone \"UTC\"]\n[ECO \"A00\"]\n[ECOUrl \"https://www.chess.com/openings/Saragossa-Opening-1...e5\"]\n[UTCDate \"2026.10.16\"]\n[UTCTime \"01:57:55\"]\n[WhiteElo \"741\"]\n[BlackElo \"719\"]\n[TimeControl \"300\"]\n[Termination \"Gracetamayo won by checkmate\"]\n[StartTime \"01:57:55\"]\n[EndDate \"2026.10.16\"]\n[EndTime \"02:07:59\"]\n[Link \"https://www.chess.com/game/live/185399382196\"]\n\n1. c3 {[%clk 0:04:56.3]} 1... e5 {[%clk 0:04:58.6]} 2. e3 {[%clk 0:04:55.5]} 2... Nc6 {[%clk 0:04:57]} 3. Be2 {[%clk 0:04:55.4]} 3... d5 {[%clk 0:04:54]} 4. Nf3 {[%clk 0:04:55.3]} 4... Nf6 {[%clk 0:04:52.2]} 5. O-O {[%clk 0:04:53.5]} 5... Bf5 {[%clk 0:04:44.6]} 6. d3 {[%clk 0:04:53.4]} 6... e4 {[%clk 0:04:42.6]} 7. Nd4 {[%clk 0:04:49.2]} 7... Nxd4 {[%clk 0:04:40.2]} 8. exd4 {[%clk 0:04:47.7]} 8... Bd6 {[%clk 0:04:35.7]} 9. Bg5 {[%clk 0:03:53.7]} 9... O-O {[%clk 0:04:31.1]} 10. dxe4 {[%clk 0:03:32]} 10... dxe4 {[%clk 0:04:24.1]} 11. Nd2 {[%clk 0:03:30.4]} 11... Re8 {[%clk 0:04:19.3]} 12. Nc4 {[%clk 0:03:21.6]} 12... h6 {[%clk 0:04:13.6]} 13. Bxf6 {[%clk 0:02:59.8]} 13... Qxf6 {[%clk 0:04:13.5]} 14. Nxd6 {[%clk 0:02:58.3]} 14... Qxd6 {[%clk 0:03:39.8]} 15. Bg4 {[%clk 0:02:46.3]} 15... Qe6 {[%clk 0:03:34.9]} 16. Bxf5 {[%clk 0:02:43.2]} 16... Qxf5 {[%clk 0:03:34.8]} 17. Qc2 {[%clk 0:02:34.8]} 17... b6 {[%clk 0:03:28.1]} 18. Rae1 {[%clk 0:02:31.2]} 18... Re7 {[%clk 0:03:22.1]} 19. c4 {[%clk 0:02:28.6]} 19... c5 {[%clk 0:03:10.5]} 20. d5 {[%clk 0:02:26.8]} 20... Rae8 {[%clk 0:03:06.7]} 21. Re3 {[%clk 0:01:51.1]} 21... a6 {[%clk 0:01:58]} 22. f3 {[%clk 0:01:25.1]} 22... exf3 {[%clk 0:01:54.7]} 23. Qxf5 {[%clk 0:01:22.2]} 23... Rxe3 {[%clk 0:01:52.8]} 24. Qd7 {[%clk 0:01:19.6]} 24... fxg2 {[%clk 0:01:43.3]} 25. Kxg2 {[%clk 0:01:17]} 25... Re2+ {[%clk 0:01:41.5]} 26. Kg1 {[%clk 0:01:12.8]} 26... R8e4 {[%clk 0:01:34.6]} 27. Kh1 {[%clk 0:01:03.8]} 27... Rxc4 {[%clk 0:01:29.2]} 28. Qd8+ {[%clk 0:00:58.5]} 28... Kh7 {[%clk 0:01:27.6]} 29. d6 {[%clk 0:00:48.1]} 29... Rcc2 {[%clk 0:01:23.2]} 30. Qh4 {[%clk 0:00:44.1]} 30... Re8 {[%clk 0:00:59.1]} 31. d7 {[%clk 0:00:37.4]} 31... Rb8 {[%clk 0:00:55.8]} 32. d8=Q {[%clk 0:00:34.1]} 32... Rxd8 {[%clk 0:00:53.7]} 33. Qxd8 {[%clk 0:00:32.6]} 33... Rxb2 {[%clk 0:00:52.6]} 34. Qd3+ {[%clk 0:00:28.4]} 34... Kg8 {[%clk 0:00:50.2]} 35. h4 {[%clk 0:00:21]} 35... Rxa2 {[%clk 0:00:47]} 36. Qc4 {[%clk 0:00:19.5]} 36... Ra4 {[%clk 0:00:11.3]} 37. Qxa4 {[%clk 0:00:16.6]} 37... Kh7 {[%clk 0:00:10.3]} 38. Qe8 {[%clk 0:00:14.6]} 38... Kg6 {[%clk 0:00:08.4]} 39. Qxf7+ {[%clk 0:00:13.5]} 39... Kh7 {[%clk 0:00:07.3]} 40. Qf8 {[%clk 0:00:11.8]} 40... Kg6 {[%clk 0:00:06.5]} 41. Rf7 {[%clk 0:00:09.5]} 41... Kh7 {[%clk 0:00:06.1]} 42. Qxg7# {[%clk 0:00:08]} 1-0\n",
+  "url": "https://www.chess.com/game/live/185399382196",
+  "white": {
+    "rating": 741,
+    "result": "win",
+    "@id": "https://api.chess.com/pub/player/gracetamayo",
+    "username": "Gracetamayo",
+    "uuid": "34201d78-8b3f-11ea-9331-49127f369a48"
+  },
+  "black": {
+    "rating": 719,
+    "result": "checkmated",
+    "@id": "https://api.chess.com/pub/player/paulom18",
+    "username": "PauloM18",
+    "uuid": "30308662-862d-11ed-bd99-0f87d5ded6ce"
+  },
+  "me": "PauloM18"
+}

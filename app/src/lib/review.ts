@@ -7,6 +7,8 @@ export interface PlyEval { cp?: number; mate?: number }
 export interface ReviewedMove {
   san: string; uci: string; color: 'w' | 'b'; cls: Classification
   before: PlyEval; after: PlyEval; best: string; bestSan: string; loss: number
+  /** UCI continuations from before the move and after it, respectively. */
+  bestLine?: string[]; refutation?: string[]
 }
 export interface Review {
   moves: ReviewedMove[]
@@ -169,7 +171,7 @@ export async function reviewGame(startFen: string, sans: string[], engine: Pick<
       previousClass: moves[i - 1]?.cls,
       previousEP: i > 0 ? expectedPoints(evals[i - 1], color) : undefined,
     })
-    moves.push({ san: sans[i], uci, color, cls, before: evals[i], after: evals[i + 1], best, bestSan, loss })
+    moves.push({ san: sans[i], uci, color, cls, before: evals[i], after: evals[i + 1], best, bestSan, loss, bestLine: lines[0]?.pv.slice(0, 12) ?? [], refutation: searches[i + 1]?.lines[0]?.pv.slice(0, 12) ?? [] })
     counts[color][cls]++
   }
   return { moves, evals, counts, accuracy: { w: accuracyOf(moves.filter((m) => m.color === 'w')), b: accuracyOf(moves.filter((m) => m.color === 'b')) } }
