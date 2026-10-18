@@ -51,7 +51,21 @@ function kingSquare(fen: string, color: 'w' | 'b') {
 
 export default function Bots() {
   const [groups, setGroups] = useState<BotGroup[]>([])
-  const [tip, setTip] = useState<{ bot: Bot; x: number; y: number } | null>(null)
+  const [tip, setTip] = useState<{ bot: Bot; x: number; y: number; visible: boolean } | null>(null)
+  const tipTimer = useRef<ReturnType<typeof setTimeout>>(undefined)
+  // chess.com cc-tooltip: mounts hidden, becomes visible after a 200ms delay, fades/slides out over 200ms.
+  const showTip = (bot: Bot, x: number, y: number) => {
+    clearTimeout(tipTimer.current)
+    const instant = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
+    setTip({ bot, x, y, visible: !!instant })
+    if (!instant) tipTimer.current = setTimeout(() => setTip((t) => t && { ...t, visible: true }), 200)
+  }
+  const hideTip = (now = false) => {
+    clearTimeout(tipTimer.current)
+    if (now) return setTip(null)
+    setTip((t) => t && { ...t, visible: false })
+    tipTimer.current = setTimeout(() => setTip(null), 200)
+  }
   const [botId, setBotId] = useStored('botId', '')
   const [openGroup, setOpenGroup] = useStored('botGroup', 'The Cryptids')
   const [colorChoice, setColorChoice] = useStored<ColorChoice>('botColor', 'w')
@@ -405,7 +419,7 @@ export default function Bots() {
                   </span>
                 ) : null}
               </div>
-              <div className="bot-groups" onScroll={() => setTip(null)}>
+              <div className="bot-groups" onScroll={() => hideTip(true)}>
                 {groups.map((g) =>
                   g.name === openGroup ? (
                     <div key={g.name} className="bot-group open">
@@ -418,9 +432,9 @@ export default function Bots() {
                           <button key={b.id} className={`bot-tile ${b.id === bot.id ? 'selected' : ''}`} onClick={() => setBotId(b.id)}
                             onMouseEnter={(e) => {
                               const r = e.currentTarget.getBoundingClientRect()
-                              setTip({ bot: b, x: r.left + r.width / 2, y: r.top })
+                              showTip(b, r.left + r.width / 2, r.top)
                             }}
-                            onMouseLeave={() => setTip(null)}
+                            onMouseLeave={() => hideTip()}
                           >
                             <img src={b.image} alt={b.name} loading="lazy" />
                             {records[b.id]?.w ? <span className="bot-tile-check">✓</span> : null}
@@ -439,7 +453,7 @@ export default function Bots() {
               </div>
             </div>
             {tip && (
-              <div className="bot-tooltip" style={{ left: tip.x, top: tip.y }}>
+              <div className={`bot-tooltip ${tip.visible ? 'visible' : ''}`} style={{ left: tip.x, top: tip.y }}>
                 {tip.bot.name} <span className="bot-tooltip-rating">({tip.bot.rating})</span> {flag(tip.bot.country)}
               </div>
             )}

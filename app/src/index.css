@@ -2419,7 +2419,9 @@ h2 {
 .bot-tooltip {
   position: fixed;
   z-index: 50;
-  transform: translate(-50%, calc(-100% - 9px));
+  transform: translate(-50%, calc(-100% + 1px));
+  opacity: 0;
+  transition: opacity 200ms cubic-bezier(0, 0, 0.2, 1), transform 200ms cubic-bezier(0, 0, 0.2, 1);
   white-space: nowrap;
   background: rgba(0, 0, 0, 0.77);
   color: #fff;
@@ -2430,6 +2432,10 @@ h2 {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+}
+.bot-tooltip.visible {
+  transform: translate(-50%, calc(-100% - 9px));
+  opacity: 1;
 }
 .bot-tooltip::before {
   content: '';
