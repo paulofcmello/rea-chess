@@ -54,6 +54,22 @@ export interface Settings {
   highlightMoves: boolean
   coords: boolean
   animation: 'none' | 'slow' | 'default' | 'fast'
+  notation: 'figurine' | 'letter'
+  boardMarks: boolean
+  autoQueen: boolean
+  premoves: boolean
+  confirmResignDraw: boolean
+  botColor: 'w' | 'b' | 'random'
+  moveMethod: 'both' | 'drag' | 'click'
+  volume: number
+  puzzleTimer: boolean
+  puzzleAutoAdvance: boolean
+  puzzleRating: boolean
+  engineDepth: number
+  showEvalBar: boolean
+  bestMoveArrow: boolean
+  reviewCoach: boolean
+  reduceMotion: boolean
 }
 
 export const defaultSettings: Settings = {
@@ -65,10 +81,26 @@ export const defaultSettings: Settings = {
   highlightMoves: true,
   coords: true,
   animation: 'default',
+  notation: 'figurine',
+  boardMarks: true,
+  autoQueen: false,
+  premoves: true,
+  confirmResignDraw: true,
+  botColor: 'w',
+  moveMethod: 'both',
+  volume: 1,
+  puzzleTimer: true,
+  puzzleAutoAdvance: false,
+  puzzleRating: true,
+  engineDepth: 20,
+  showEvalBar: true,
+  bestMoveArrow: true,
+  reviewCoach: true,
+  reduceMotion: false,
 }
 
 /** Settings merged over defaults, so older saved settings pick up new fields. */
 export function useSettings() {
-  const [stored, setStored] = useStored<Partial<Settings>>('settings', defaultSettings)
-  return [{ ...defaultSettings, ...stored } as Settings, setStored as (s: Settings) => void] as const
+  const [stored, setStored] = useStored<Partial<Settings>>('settings', {})
+  return [{ ...defaultSettings, botColor: load<Settings['botColor']>('botColor', defaultSettings.botColor), ...stored } as Settings, setStored as (s: Settings) => void] as const
 }

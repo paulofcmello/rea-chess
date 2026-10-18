@@ -1,3 +1,4 @@
+import { useSettings } from '../lib/storage'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Chess } from 'chess.js'
 import Board from '../components/Board'
@@ -28,6 +29,7 @@ function pvToSan(fen: string, pv: string[], max = 10) {
 }
 
 export default function Analysis() {
+  const [settings] = useSettings()
   const init = useMemo(() => {
     try {
       const raw = sessionStorage.getItem('rea-chess:analysis')
@@ -71,8 +73,9 @@ export default function Analysis() {
       engine.current.stop()
       return
     }
-    engine.current.search(fen, { depth: 20, multipv: 3, onInfo: setLines, options: { UCI_LimitStrength: false, 'Skill Level': 20 } })
-  }, [fen, engineOn])
+    engine.current.search(fen, { depth: settings.engineDepth, multipv: 3, onInfo: setLines, options: { UCI_LimitStrength: false, 'Skill Level': 20 } })
+    return () => engine.current?.stop()
+  }, [fen, engineOn, settings.engineDepth])
 
   const toWhite = (l?: EngineLine): Score | null => {
     if (!l) return null
@@ -145,13 +148,13 @@ export default function Analysis() {
     return c.pgn()
   }, [startFen, sans])
 
-  const bestArrow = engineOn && lines[0] ? [{ from: lines[0].move.slice(0, 2), to: lines[0].move.slice(2, 4), color: 'rgba(80,140,220,0.85)' }] : []
+  const bestArrow = settings.bestMoveArrow && engineOn && lines[0] ? [{ from: lines[0].move.slice(0, 2), to: lines[0].move.slice(2, 4), color: 'rgba(80,140,220,0.85)' }] : []
   const score = checkmateScore() ?? toWhite(lines[0])
 
   return (
     <div className="layout">
-      <div className="board-col with-eval">
-        {engineOn && <EvalBar score={score} flip={orientation === 'black'} />}
+      <div className={`board-col ${engineOn && settings.showEvalBar ? 'with-eval' : ''}`}>
+        {engineOn && settings.showEvalBar && <EvalBar score={score} flip={orientation === 'black'} />}
         <Board
           fen={fen}
           orientation={orientation}

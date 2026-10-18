@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import Board from '../components/Board'
 import { loadPuzzles, pickPuzzle, updateRating, themeLabels, type Puzzle } from '../lib/puzzles'
 import { usePuzzle } from '../lib/usePuzzle'
-import { useStored } from '../lib/storage'
+import { useSettings, useStored } from '../lib/storage'
 import { openInAnalysis } from './Analysis'
 import { BoardControls, PuzzleCoach, PuzzleFooter } from './puzzleUi'
 import { RatedStreakInfo, SidebarShell, StreakRow } from '../components/PuzzleSidebar'
@@ -16,6 +16,7 @@ interface HistoryItem {
 }
 
 export default function Puzzles() {
+  const [settings] = useSettings()
   const [all, setAll] = useState<Puzzle[]>([])
   const [rating, setRating] = useStored('puzzleRating', 800)
   const [history, setHistory] = useStored<HistoryItem[]>('puzzleHistory', [])
@@ -44,6 +45,7 @@ export default function Puzzles() {
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const p = usePuzzle(puzzle, {
+    onNext: () => next(),
     onResult: (solved, pz) => {
       recordRatedResult(solved)
       const nr = updateRating(rating, pz.rating, solved)
@@ -55,10 +57,10 @@ export default function Puzzles() {
 
   const finished = p.status === 'solved' || p.status === 'revealed' || p.status === 'wrong'
   useEffect(() => {
-    if (finished) return
+    if (finished || !settings.puzzleTimer) return
     const t = window.setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(t)
-  }, [finished, startedAt])
+  }, [finished, startedAt, settings.puzzleTimer])
   const secs = Math.max(0, Math.floor((now - startedAt) / 1000))
   const clock = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`
 
@@ -77,25 +79,25 @@ export default function Puzzles() {
       >
         <PuzzleCoach status={p.status} color={p.solverColor} usedHint={p.usedHint} />
         <div className="rated-box">
-          <div className="rated-box-item">
+          {settings.puzzleRating && <div className="rated-box-item">
             <span className="rated-box-label">Rating</span>
             <span className="rated-box-value">
               {rating}
               {delta != null && <span className={`rated-delta ${delta >= 0 ? 'up' : 'down'}`}>{delta >= 0 ? `+${delta}` : delta}</span>}
             </span>
-          </div>
-          <div className="rated-box-item">
+          </div>}
+          {settings.puzzleTimer && <div className="rated-box-item">
             <span className="rated-box-label">Time</span>
             <span className="rated-box-value clock">{clock}</span>
-          </div>
+          </div>}
         </div>
         <RatedStreakInfo />
         <StreakRow />
         {puzzle && finished && (
           <div className="puzzle-info">
-            <div>
+            {settings.puzzleRating && <div>
               Puzzle rating <b>{puzzle.rating}</b>
-            </div>
+            </div>}
             <div className="puzzle-themes">
               {puzzle.themes
                 .filter((t) => themeLabels[t])
@@ -107,7 +109,7 @@ export default function Puzzles() {
         )}
         <div className="recent-results">
           {history.slice(-24).map((h, i) => (
-            <span key={i} className={h.solved ? 'ok' : 'bad'} title={`${h.rating} (${h.delta >= 0 ? '+' : ''}${h.delta})`} />
+            <span key={i} className={h.solved ? 'ok' : 'bad'} title={settings.puzzleRating ? `${h.rating} (${h.delta >= 0 ? '+' : ''}${h.delta})` : h.solved ? 'Solved' : 'Missed'} />
           ))}
         </div>
       </SidebarShell>

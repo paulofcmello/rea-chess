@@ -252,7 +252,7 @@ export default function Board({
 }: Props) {
   const [settings] = useSettings()
   const theme = boards[settings.board] ?? boards.green
-  const moveMs = SPEEDS[settings.animation]
+  const moveMs = settings.reduceMotion ? 0 : SPEEDS[settings.animation]
   const ref = useRef<HTMLDivElement>(null)
   const noAnimId = useRef<number | null>(null)
   const flip = orientation === 'black'
@@ -285,7 +285,7 @@ export default function Board({
     }
   }, [fen])
   const turn = chess.turn()
-  const premoveMode = !!premoveColor && turn !== premoveColor
+  const premoveMode = settings.premoves && !!premoveColor && turn !== premoveColor
   const displayFen = useMemo(() => applyPremoves(fen, premoves), [fen, premoves])
   const display = useMemo(() => (displayFen === fen ? chess : new Chess(displayFen)), [displayFen, fen, chess])
 
@@ -352,7 +352,7 @@ export default function Board({
     return flip ? FILES[7 - x] + (y + 1) : FILES[x] + (8 - y)
   }
 
-  const tryMove = (from: string, to: string, byDrag: boolean) => {
+  const tryMove = (from: string, to: string, byDrag: boolean, forcePicker = false) => {
     if (premoveMode) {
       if (!premoveDests(displayFen, from).has(to)) return false
       if (byDrag) noAnimId.current = pieces.find((p) => p.square === from)?.id ?? null
@@ -363,6 +363,11 @@ export default function Board({
     const legal = chess.moves({ square: from as Square, verbose: true }).filter((m) => m.to === to)
     if (!legal.length) return false
     if (legal.some((m) => m.promotion)) {
+      if (settings.autoQueen && !forcePicker) {
+        setSelected(null)
+        onMove?.(from, to, 'q')
+        return true
+      }
       setPromo({ from, to })
       return true
     }
@@ -382,7 +387,7 @@ export default function Board({
         setSelected(null)
         return
       }
-      if (sq) setRightDrag({ from: sq, to: sq, color: ARROW_COLORS[modifier(e)] })
+      if (settings.boardMarks && sq) setRightDrag({ from: sq, to: sq, color: ARROW_COLORS[modifier(e)] })
       return
     }
     if (e.button !== 0) return
@@ -394,8 +399,8 @@ export default function Board({
     if (!sq) return
     // In premove mode, clicking another own piece reselects; dragging onto it premoves.
     const ownPremoveTarget = premoveMode && display.get(sq as Square)?.color === premoveColor
-    if (selected && selected !== sq && dests.has(sq) && !ownPremoveTarget) {
-      tryMove(selected, sq, false)
+    if (settings.moveMethod !== 'drag' && selected && selected !== sq && dests.has(sq) && !ownPremoveTarget) {
+      tryMove(selected, sq, false, e.altKey)
       return
     }
     const piece = display.get(sq as Square)
@@ -406,6 +411,10 @@ export default function Board({
       return
     }
     if (piece && canMove(piece.color)) {
+      if (settings.moveMethod === 'click') {
+        setSelected(selected === sq ? null : sq)
+        return
+      }
       const rect = ref.current!.getBoundingClientRect()
       ref.current!.setPointerCapture(e.pointerId)
       // Like chess.com, the piece jumps under the cursor on press; no drag threshold.
@@ -462,11 +471,11 @@ export default function Board({
     setDrag(null)
     setHover(null)
     if (to && to !== drag.sq) {
-      if (!tryMove(drag.sq, to, true)) snapSq.current = drag.sq
+      if (!tryMove(drag.sq, to, true, e.altKey)) snapSq.current = drag.sq
     } else {
       snapSq.current = drag.sq
       // Clicking an already-selected piece deselects it.
-      if (!drag.moved && drag.wasSelected) setSelected(null)
+      if (settings.moveMethod === 'drag' || (!drag.moved && drag.wasSelected)) setSelected(null)
     }
   }
 
@@ -505,10 +514,10 @@ export default function Board({
     allHighlights.push({ square: from, color: PREMOVE_COLOR, opacity: 0.5 })
     allHighlights.push({ square: to, color: PREMOVE_COLOR, opacity: 0.5 })
   }
-  for (const m of marks) allHighlights.push({ square: m.square, color: m.color, opacity: MARK_OPACITY })
+  for (const m of settings.boardMarks ? marks : []) allHighlights.push({ square: m.square, color: m.color, opacity: MARK_OPACITY })
 
   const promoColor = promo ? chess.get(promo.from as Square)?.color ?? 'w' : 'w'
-  const allArrows = [...arrows, ...userArrows, ...(rightDrag && rightDrag.from !== rightDrag.to ? [{ from: rightDrag.from, to: rightDrag.to, color: rightDrag.color }] : [])]
+  const allArrows = [...arrows, ...(settings.boardMarks ? userArrows : []), ...(settings.boardMarks && rightDrag && rightDrag.from !== rightDrag.to ? [{ from: rightDrag.from, to: rightDrag.to, color: rightDrag.color }] : [])]
 
   return (
     <div

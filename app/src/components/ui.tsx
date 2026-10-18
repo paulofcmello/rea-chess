@@ -1,3 +1,4 @@
+import { useSettings } from '../lib/storage'
 import { useEffect, useRef, type ReactNode } from 'react'
 
 export interface Score {
@@ -11,6 +12,8 @@ const FIGURINES = {
 }
 
 export function SanText({ san, color }: { san: string; color: 'w' | 'b' }) {
+  const [settings] = useSettings()
+  if (settings.notation === 'letter') return <>{san}</>
   return <>{san.split(/(^[KQRBN]|=[QRBN])/).map((part, i) => {
     const piece = part.startsWith('=') ? part.slice(1) : part
     if (piece in FIGURINES[color]) return <span key={i}>{part.startsWith('=') && '='}<span className="figurine">{FIGURINES[color][piece as keyof typeof FIGURINES.w]}</span></span>

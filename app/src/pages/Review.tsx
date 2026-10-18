@@ -1,3 +1,4 @@
+import { useSettings } from '../lib/storage'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Chess } from 'chess.js'
 import Board from '../components/Board'
@@ -118,6 +119,7 @@ function PlayerBar({ player, color, clock, active }: { player: ReviewInput['whit
 }
 
 export default function Review() {
+  const [settings] = useSettings()
   const data = useMemo(() => readInput(), [])
   const key = data ? reviewKey(data.input.pgn, data.input.url) : ''
   const [review, setReview] = useState<GameReview | null>(() => key ? loadReview(key) : null)
@@ -214,7 +216,7 @@ export default function Review() {
   const finished = draw || result === '1-0' || result === '0-1'
   const greeting = draw ? "A hard-fought draw. Let's review it together." : win ? "Nice win! Let's review it together." : finished ? "Tough loss — let's review it together." : "Let's review this game together."
   const emotion: CoachEmotion = retry ? retry.status === 'correct' ? 'impressed' : retry.status === 'incorrect' ? 'concerned' : 'thinking' : !review ? 'thinking' : move ? BAD_MOVES.includes(move.cls) ? 'concerned' : ['brilliant', 'great'].includes(move.cls) ? 'impressed' : 'idle' : win ? 'happy' : finished && !draw ? 'concerned' : 'idle'
-  const autoArrow = !!move && BAD_MOVES.includes(move.cls)
+  const autoArrow = settings.bestMoveArrow && !!move && BAD_MOVES.includes(move.cls)
   const showArrow = !retry && (arrowOverride?.ply === ply ? arrowOverride.show : autoArrow)
   const arrows = move && showArrow && move.best ? [{ from: move.best.slice(0, 2), to: move.best.slice(2, 4), color: '#81b64c', opacity: 0.85 }] : []
   const jump = (p: number) => {
@@ -256,10 +258,10 @@ export default function Review() {
   const graph = review && <ReviewGraph review={review} ply={ply} onSelect={jump} />
 
   return <div className="cc-layout review-layout">
-    <div className="cc-board-area with-players with-eval">
+    <div className={`cc-board-area with-players ${settings.showEvalBar ? 'with-eval' : ''}`}>
       <PlayerBar player={players[topColor]} color={topColor} clock={clockFor(topColor)} active={turn === topColor} />
       <div className="cc-board-row">
-        <EvalBar score={review?.evals[ply] ?? null} flip={orientation === 'black'} />
+        {settings.showEvalBar && <EvalBar score={review?.evals[ply] ?? null} flip={orientation === 'black'} />}
         <div className="cc-board-wrap"><Board fen={boardFen} orientation={orientation}
           movable={retry && !retry.fen && retry.status !== 'correct' && retry.status !== 'checking' ? myColor : 'none'} onMove={onRetryMove}
           lastMove={retry || move ? null : ply > 0 ? moves[ply - 1] : null}
@@ -277,11 +279,11 @@ export default function Review() {
         </button>
       </header>
       <div className={`review-body ${started ? 'review-playing' : ''}`}>
-        <div className="review-coach"><div className="review-coach-avatar"><CoachAvatar emotion={emotion} /></div>
+        {(settings.reviewCoach || retry) && <div className="review-coach"><div className="review-coach-avatar"><CoachAvatar emotion={emotion} /></div>
           <div className="review-bubble" aria-live="polite">
             {retry ? <strong>{retry.status === 'correct' ? `Great find! ${retry.san} is the best move.` : retry.status === 'incorrect' ? `${retry.san} isn't best. Try again.` : 'Find a better move'}</strong> : !review ? <strong>{error ? 'Analysis paused' : 'Analyzing your game…'}</strong> : feedback && move ? <><div className="review-feedback-title"><ClassIcon c={move.cls} /><strong><SanText san={move.san} color={new Chess(fens[ply - 1]).turn()} />{feedback.title.slice(move.san.length)}</strong><span className="review-eval-chip">{formatScore(move.after)}</span></div><p>{feedback.text}</p></> : <strong>{started ? 'Start at the first move to see your coach’s feedback.' : greeting}</strong>}
           </div>
-        </div>
+        </div>}
         {!review ? <div className="review-loading">
           {error ? <><p className="error" role="alert">{error}</p><button className="cc-button cc-primary" onClick={() => setAttempt((n) => n + 1)}>Try again</button></> : <><progress value={progress.done} max={progress.total} aria-label="Positions analyzed" /><p>{Math.round(progress.done / progress.total * 100)}% · {progress.done} / {progress.total} positions</p></>}
         </div> : !started ? <>

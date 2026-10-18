@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import Board from '../components/Board'
 import { loadPuzzles, pickPuzzle, type Puzzle } from '../lib/puzzles'
 import { usePuzzle } from '../lib/usePuzzle'
-import { useStored } from '../lib/storage'
+import { useSettings, useStored } from '../lib/storage'
 import { play } from '../lib/sound'
 import { BoardControls } from './puzzleUi'
 import { CCButton, SidebarShell } from '../components/PuzzleSidebar'
@@ -182,12 +182,13 @@ export default function Rush() {
 }
 
 function ResultsGrid({ results }: { results: Result[] }) {
+  const [settings] = useSettings()
   return (
     <div className="rush-results">
       {results.map((r, i) => (
-        <div key={i} className={`rush-cell ${r.solved ? 'ok' : 'bad'}`} title={`#${i + 1} · ${r.puzzle.rating}`}>
+        <div key={i} className={`rush-cell ${r.solved ? 'ok' : 'bad'}`} title={settings.puzzleRating ? `#${i + 1} · ${r.puzzle.rating}` : `#${i + 1}`}>
           <span className="rush-cell-icon">{r.solved ? '✓' : '✕'}</span>
-          <span>{r.puzzle.rating}</span>
+          {settings.puzzleRating && <span>{r.puzzle.rating}</span>}
         </div>
       ))}
     </div>

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Board from '../components/Board'
 import { loadPuzzles, pickPuzzle, themeLabels, type Puzzle } from '../lib/puzzles'
 import { usePuzzle } from '../lib/usePuzzle'
-import { useStored } from '../lib/storage'
+import { useSettings, useStored } from '../lib/storage'
 import { openInAnalysis } from './Analysis'
 import { BoardControls, PuzzleCoach, PuzzleFooter } from './puzzleUi'
 import { SidebarShell, StreakRow } from '../components/PuzzleSidebar'
@@ -16,6 +16,7 @@ const levels = [
 ]
 
 export default function Themes() {
+  const [settings] = useSettings()
   const [all, setAll] = useState<Puzzle[]>([])
   const [rating] = useStored('puzzleRating', 800)
   const [theme, setTheme] = useStored<string | null>('practiceTheme', null)
@@ -43,6 +44,7 @@ export default function Themes() {
   }
 
   const p = usePuzzle(puzzle, {
+    onNext: () => next(),
     onResult: (solved) => setStats((s) => ({ solved: s.solved + (solved ? 1 : 0), total: s.total + 1 })),
   })
 
@@ -109,10 +111,10 @@ export default function Themes() {
               {stats.solved}/{stats.total}
             </span>
           </div>
-          <div className="rated-box-item">
+          {settings.puzzleRating && <div className="rated-box-item">
             <span className="rated-box-label">Puzzle</span>
             <span className="rated-box-value">{p.status === 'playing' || p.status === 'loading' ? '?' : puzzle.rating}</span>
-          </div>
+          </div>}
         </div>
         <StreakRow />
       </SidebarShell>

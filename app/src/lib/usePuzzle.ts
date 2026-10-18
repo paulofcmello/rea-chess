@@ -1,3 +1,4 @@
+import { useSettings } from './storage'
 // Puzzle flow modelled on chess.com's puzzles.js (via REA):
 // - correct move: from/to highlighted #acce59 @ .5 + "correct" badge on the target square
 // - wrong move: the move stays on the board, highlighted #ff7769 @ .5 + "incorrect" badge,
@@ -20,6 +21,7 @@ export const HINT_COLOR = '#1baca6'
 interface Options {
   /** Called once per puzzle with whether it was solved cleanly (no mistakes, no hints). */
   onResult?: (solved: boolean, puzzle: Puzzle) => void
+  onNext?: () => void
   firstMoveDelay?: number
   mode?: 'rated' | 'rush'
 }
@@ -29,6 +31,7 @@ function uciToMove(uci: string) {
 }
 
 export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
+  const [settings] = useSettings()
   const chess = useRef(new Chess())
   const [fen, setFen] = useState(chess.current.fen())
   const [step, setStep] = useState(0)
@@ -45,6 +48,13 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
   const optsRef = useRef(opts)
   optsRef.current = opts
   const rush = opts.mode === 'rush'
+
+  const hasNext = !!opts.onNext
+  useEffect(() => {
+    if (status !== 'solved' || !settings.puzzleAutoAdvance || !hasNext) return
+    const timer = window.setTimeout(() => optsRef.current.onNext?.(), 1200)
+    return () => window.clearTimeout(timer)
+  }, [status, settings.puzzleAutoAdvance, hasNext, puzzle])
 
   const later = (fn: () => void, ms: number) => {
     timers.current.push(window.setTimeout(fn, ms))

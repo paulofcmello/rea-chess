@@ -1486,72 +1486,6 @@ h2 {
   font-weight: 800;
 }
 
-.settings {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.modal:has(.settings) {
-  width: min(720px, 100%);
-}
-
-.settings-preview {
-  width: 100%;
-  max-width: 260px;
-  --board-size: 260px;
-  pointer-events: none;
-}
-
-.settings {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 16px 24px;
-  align-items: start;
-}
-
-.settings > .btn {
-  grid-column: 1 / -1;
-}
-
-.settings-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.settings-grid label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.settings-grid select {
-  background: var(--panel-3);
-  color: #fff;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 9px 10px;
-  font: inherit;
-  font-weight: 600;
-}
-
-.settings-checks {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-@media (max-width: 640px) {
-  .settings {
-    grid-template-columns: 1fr;
-  }
-  .settings-preview {
-    margin: 0 auto;
-  }
-}
-
 .theme-swatches {
   display: flex;
   gap: 10px;
@@ -3380,4 +3314,63 @@ h2 {
 }
 @media (max-width: 560px) {
   .friend-layout .cc-board-area.with-players { --board-size: calc(100vw - 32px - 6px); }
+}
+
+
+/* Settings: measured against chess.com /settings (240px nav, 48px rows, 24px switches). */
+.cc-settings-page { max-width: 1120px; margin: 16px auto 48px; font-size: 14px; }
+.cc-settings-page > h1 { margin: 0 0 24px; font-size: 28px; line-height: 32px; }
+.cc-settings-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 24px; align-items: start; }
+.cc-settings-nav { display: flex; flex-direction: column; padding: 8px 0; border-radius: 5px; background: rgba(0,0,0,.12); }
+.cc-settings-nav a { display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 12px 24px; font-weight: 700; color: var(--muted); }
+.cc-settings-nav a:hover, .cc-settings-nav a.active { background: rgba(255,255,255,.05); color: #fff; }
+.cc-settings-nav img { width: 24px; height: 24px; flex-shrink: 0; }
+.cc-settings-chevron { margin-left: auto; font-size: 24px; line-height: 20px; }
+.cc-settings-card { min-width: 0; border-radius: 8px; background: var(--panel); overflow: hidden; }
+.cc-settings-card > header { padding: 24px; border-bottom: 1px solid var(--line); }
+.cc-settings-card h2 { margin: 0; font-size: 22px; line-height: 28px; }
+.cc-settings-card header p { margin: 8px 0 0; color: var(--muted); }
+.cc-settings-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 24px; border-bottom: 1px solid var(--line); min-width: 0; }
+.cc-settings-row:last-child { border-bottom: 0; }
+.cc-settings-label { min-width: 0; }
+.cc-settings-label label { font-weight: 700; line-height: 20px; cursor: pointer; }
+.cc-settings-label p { margin: 6px 0 0; line-height: 20px; color: var(--muted); max-width: 420px; }
+.cc-settings-control { flex-shrink: 0; max-width: 48%; min-width: 0; }
+.cc-select { width: 200px; max-width: 100%; height: 40px; padding: 4px 30px 4px 8px; background-color: rgba(255,255,255,.08); border: 1px solid var(--line); border-radius: 5px; color: var(--text); font: inherit; }
+.cc-select option { background: var(--panel); color: var(--text); }
+.cc-switch { display: block; width: 48px; height: 24px; padding: 0; border: 0; border-radius: 12px; background: rgba(117,117,117,.4); cursor: pointer; }
+.cc-switch span { display: block; width: 24px; height: 24px; border-radius: 50%; background: #e8e7e6; transition: transform .2s ease; }
+.cc-switch[aria-checked="true"] { background: #81b64c; }
+.cc-switch[aria-checked="true"] span { transform: translateX(24px); }
+.cc-switch:focus-visible, .cc-select:focus-visible { outline: 2px solid #009fd9; outline-offset: 3px; }
+.cc-settings-preview { width: min(320px, calc(100% - 48px)); margin: 24px auto; text-align: center; color: var(--muted); }
+.cc-settings-preview .board { width: 100%; height: auto; aspect-ratio: 1; }
+.cc-settings-preview > span { display: block; margin-top: 10px; font-size: 12px; }
+.cc-settings-volume { display: flex; align-items: center; gap: 12px; width: 200px; max-width: 100%; }
+.cc-settings-volume input { min-width: 0; width: 140px; accent-color: var(--green); }
+.cc-settings-volume output { min-width: 38px; text-align: right; font-variant-numeric: tabular-nums; }
+.cc-settings-username { display: flex; gap: 6px; max-width: 240px; }
+.cc-settings-username input { width: 140px; min-width: 0; }
+.cc-settings-file { width: 232px; max-width: 100%; font: inherit; }
+.cc-settings-file::file-selector-button { padding: 8px; margin-right: 8px; border: 0; border-radius: 4px; cursor: pointer; }
+.cc-settings-message { padding: 0 24px 20px; color: var(--muted); overflow-wrap: anywhere; }
+.cc-confirm-dialog { color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 24px; width: min(440px, calc(100vw - 32px)); box-shadow: 0 12px 48px #0008; }
+.cc-confirm-dialog::backdrop { background: #0009; }
+.cc-confirm-dialog h2 { margin: 0 0 12px; }
+.cc-confirm-dialog p { line-height: 1.6; color: var(--muted); margin: 0 0 24px; }
+.cc-confirm-dialog .cc-buttons { justify-content: flex-end; }
+.reduce-motion *, .reduce-motion *::before, .reduce-motion *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+@media (max-width: 760px) {
+  .cc-settings-page { margin-top: 8px; }
+  .cc-settings-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .cc-settings-nav { flex-direction: row; overflow-x: auto; padding: 0; }
+  .cc-settings-nav a { flex-shrink: 0; padding: 12px 16px; }
+  .cc-settings-chevron { display: none; }
+  .cc-settings-card > header { padding: 20px 16px; }
+  .cc-settings-row { padding: 18px 16px; gap: 16px; }
+}
+@media (max-width: 480px) {
+  .cc-settings-row:has(.cc-select, .cc-settings-volume, .cc-settings-username, .cc-settings-file) { flex-direction: column; align-items: stretch; gap: 12px; }
+  .cc-settings-control { max-width: 100%; }
+  .cc-settings-preview { width: calc(100% - 32px); max-width: 320px; }
 }

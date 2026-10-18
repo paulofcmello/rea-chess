@@ -1,3 +1,4 @@
+import ConfirmDialog from '../components/ConfirmDialog'
 // Play Bots, laid out like chess.com /play/computer (structure, sizes and roster captured with REA).
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Chess } from 'chess.js'
@@ -9,7 +10,7 @@ import { botMove, chat as lines, loadBots, type Bot, type BotGroup } from '../li
 import { Engine } from '../lib/engine'
 import { buildPositions, material } from '../lib/game'
 import { play, playMove } from '../lib/sound'
-import { useStored } from '../lib/storage'
+import { useSettings, useStored } from '../lib/storage'
 import { pieceUrl } from '../lib/theme'
 import { openReview } from './Review'
 import { BoardControls } from './puzzleUi'
@@ -50,13 +51,15 @@ function kingSquare(fen: string, color: 'w' | 'b') {
 }
 
 export default function Bots() {
+  const [settings] = useSettings()
+  const [confirmResign, setConfirmResign] = useState(false)
   const [groups, setGroups] = useState<BotGroup[]>([])
   const [tip, setTip] = useState<{ bot: Bot; x: number; y: number; visible: boolean } | null>(null)
   const tipTimer = useRef<ReturnType<typeof setTimeout>>(undefined)
   // chess.com cc-tooltip: mounts hidden, becomes visible after a 200ms delay, fades/slides out over 200ms.
   const showTip = (bot: Bot, x: number, y: number) => {
     clearTimeout(tipTimer.current)
-    const instant = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
+    const instant = settings.reduceMotion || window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
     setTip({ bot, x, y, visible: !!instant })
     if (!instant) tipTimer.current = setTimeout(() => setTip((t) => t && { ...t, visible: true }), 200)
   }
@@ -68,7 +71,7 @@ export default function Bots() {
   }
   const [botId, setBotId] = useStored('botId', '')
   const [openGroup, setOpenGroup] = useStored('botGroup', 'The Cryptids')
-  const [colorChoice, setColorChoice] = useStored<ColorChoice>('botColor', 'w')
+  const [colorChoice, setColorChoice] = useState<ColorChoice>(settings.botColor)
   const [assist, setAssist] = useStored('botAssist', { hints: true, takebacks: true, evalBar: false })
   const [records, setRecords] = useStored<Record<string, Record3>>('botRecords', {})
   const [showOptions, setShowOptions] = useState(false)
@@ -162,7 +165,7 @@ export default function Bots() {
 
   // Queued premoves play 200ms after the bot moves (chess.com premoveDelay); an illegal one drops the queue.
   useEffect(() => {
-    if (phase !== 'playing' || result || turn !== userColor || !premoves.length) return
+    if (!settings.premoves || phase !== 'playing' || result || turn !== userColor || !premoves.length) return
     const id = gameId.current
     const fen = liveFen
     const t = window.setTimeout(() => {
@@ -179,7 +182,7 @@ export default function Bots() {
       }
     }, 200)
     return () => clearTimeout(t)
-  }, [liveFen, premoves, phase, result]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [liveFen, premoves, phase, result, settings.premoves]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // Optional eval bar.
   useEffect(() => {
@@ -347,8 +350,8 @@ export default function Bots() {
               lastMove={playing && ply > 0 ? moves[ply - 1] : null}
               arrows={playing && atLive ? hintArrow : []}
               results={results}
-              premoves={playing && atLive ? premoves : []}
-              premoveColor={playing && atLive && !result ? userColor : undefined}
+              premoves={settings.premoves && playing && atLive ? premoves : []}
+              premoveColor={settings.premoves && playing && atLive && !result ? userColor : undefined}
               onPremove={(from, to) => setPremoves((p) => [...p, [from, to]])}
               onClearPremoves={() => setPremoves([])}
             />
@@ -514,7 +517,7 @@ export default function Bots() {
             <div className="cc-sidebar-footer bots-game-footer">
               {!result ? (
                 <div className="cc-buttons">
-                  <CCButton icon="resign" title="Resign" onClick={resign} grow />
+                  <CCButton icon="resign" title="Resign" onClick={() => settings.confirmResignDraw ? setConfirmResign(true) : resign()} grow />
                   {assist.takebacks && <CCButton icon="undo" title="Takeback" onClick={takeback} grow disabled={!sans.length} />}
                   {assist.hints && <CCButton icon="bulb" title="Hint" onClick={hint} grow disabled={turn !== userColor} />}
                 </div>
@@ -548,6 +551,7 @@ export default function Bots() {
           </>
         )}
       </section>
+      {confirmResign && <ConfirmDialog title="Resign this game?" description="Your opponent will win by resignation." confirmLabel="Resign" onCancel={() => setConfirmResign(false)} onConfirm={() => { setConfirmResign(false); resign() }} />}
     </div>
   )
 }

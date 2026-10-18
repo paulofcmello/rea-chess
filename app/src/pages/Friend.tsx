@@ -1,3 +1,4 @@
+import ConfirmDialog from '../components/ConfirmDialog'
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react'
 import { Chess } from 'chess.js'
 import Board, { type ResultBadge } from '../components/Board'
@@ -9,7 +10,7 @@ import { buildPositions, material } from '../lib/game'
 import { currentClocks, opposite, type Color } from '../lib/friendGame'
 import { FriendSession, type FriendView } from '../lib/friendPeer'
 import { play, playMove } from '../lib/sound'
-import { useStored } from '../lib/storage'
+import { useSettings, useStored } from '../lib/storage'
 import { pieceUrl } from '../lib/theme'
 import { openReview } from './Review'
 
@@ -61,6 +62,12 @@ function Chat({ session, view }: { session: FriendSession; view: FriendView }) {
   </div>
 }
 function FriendGameView({ session, view }: { session: FriendSession; view: FriendView }) {
+  const [settings] = useSettings()
+  const [confirmAction, setConfirmAction] = useState<'resign' | 'draw-offer' | 'draw-accept' | null>(null)
+  const action = (kind: 'resign' | 'draw-offer' | 'draw-accept') => {
+    if (settings.confirmResignDraw) setConfirmAction(kind)
+    else session.action(kind)
+  }
   const game = view.game!
   const [selectedPly, setSelectedPly] = useState<number | null>(null)
   const [premoves, setPremoves] = useState<[string, string][]>([])
@@ -86,13 +93,13 @@ function FriendGameView({ session, view }: { session: FriendSession; view: Frien
   const name = (color: Color) => color === myColor ? view.name : view.opponentName
   const result = game.result
   useEffect(() => {
-    if (!atLive || result || !view.connected || turn !== myColor || !premoves.length) return
+    if (!settings.premoves || !atLive || result || !view.connected || turn !== myColor || !premoves.length) return
     const t = window.setTimeout(() => {
       const [[from, to], ...rest] = premoves
       setPremoves(session.move(from, to, 'q') ? rest : [])
     }, 200)
     return () => clearTimeout(t)
-  }, [liveFen, premoves, atLive, result, view.connected, turn, myColor, session])
+  }, [liveFen, premoves, atLive, result, view.connected, turn, myColor, session, settings.premoves])
   const review = () => {
     const chess = new Chess()
     for (const san of game.sans) chess.move(san)
@@ -116,7 +123,7 @@ function FriendGameView({ session, view }: { session: FriendSession; view: Frien
       {bar(topColor)}
       <div className="cc-board-row"><div className="cc-board-wrap">
         <Board fen={fen} orientation={orientation} movable={atLive && !result && view.connected ? myColor : 'none'} onMove={(from, to, promotion) => session.move(from, to, promotion)} lastMove={ply ? moves[ply - 1] : null} results={results}
-          premoves={atLive && !result ? premoves : []} premoveColor={atLive && !result && view.connected ? myColor : undefined} onPremove={(from, to) => setPremoves((p) => [...p, [from, to]])} onClearPremoves={() => setPremoves([])} />
+          premoves={settings.premoves && atLive && !result ? premoves : []} premoveColor={settings.premoves && atLive && !result && view.connected ? myColor : undefined} onPremove={(from, to) => setPremoves((p) => [...p, [from, to]])} onClearPremoves={() => setPremoves([])} />
         {result && showResult && <div className="board-modal-backdrop" onClick={() => setShowResult(false)}>
           <div className="board-modal" role="dialog" aria-modal="true" aria-label="Game result" onClick={(e) => e.stopPropagation()}>
             <button className="board-modal-close" aria-label="Close" onClick={() => setShowResult(false)}>×</button>
@@ -141,11 +148,12 @@ function FriendGameView({ session, view }: { session: FriendSession; view: Frien
       </div>
       <div className="cc-sidebar-footer bots-game-footer">
         {result ? <div className="bots-after"><strong>{result.reason === 'aborted' ? 'Game aborted' : `Game over: ${result.reason}`}</strong>{rematchButton}<button className="cc-button cc-primary" onClick={review}>Game Review</button><button className="cc-button" onClick={session.newInvite}>New Invite</button></div> : <>
-          {view.draw === 'incoming' ? <div className="friend-draw"><span>Your friend offers a draw.</span><div className="cc-buttons"><button className="cc-button cc-primary" disabled={!view.connected} onClick={() => session.action('draw-accept')}>Accept</button><button className="cc-button" disabled={!view.connected} onClick={() => session.action('draw-decline')}>Decline</button></div></div> : <div className="friend-actions"><button className="cc-button" disabled={!view.connected || view.draw === 'outgoing'} onClick={() => session.action('draw-offer')}>½ {view.draw === 'outgoing' ? 'Draw offered…' : 'Offer Draw'}</button><button className="cc-button" disabled={!view.connected} onClick={() => session.action('resign')}>⚑ Resign</button>{game.sans.length < 2 && <button className="cc-button" disabled={!view.connected} onClick={() => session.action('abort')}>Abort</button>}</div>}
+          {view.draw === 'incoming' ? <div className="friend-draw"><span>Your friend offers a draw.</span><div className="cc-buttons"><button className="cc-button cc-primary" disabled={!view.connected} onClick={() => action('draw-accept')}>Accept</button><button className="cc-button" disabled={!view.connected} onClick={() => session.action('draw-decline')}>Decline</button></div></div> : <div className="friend-actions"><button className="cc-button" disabled={!view.connected || view.draw === 'outgoing'} onClick={() => action('draw-offer')}>½ {view.draw === 'outgoing' ? 'Draw offered…' : 'Offer Draw'}</button><button className="cc-button" disabled={!view.connected} onClick={() => action('resign')}>⚑ Resign</button>{game.sans.length < 2 && <button className="cc-button" disabled={!view.connected} onClick={() => session.action('abort')}>Abort</button>}</div>}
         </>}
         <Chat session={session} view={view} />
       </div>
     </section>
+    {confirmAction && <ConfirmDialog title={confirmAction === 'resign' ? 'Resign this game?' : confirmAction === 'draw-offer' ? 'Offer a draw?' : 'Accept this draw?'} description={confirmAction === 'resign' ? 'Your opponent will win by resignation.' : confirmAction === 'draw-offer' ? 'Send a draw offer to your opponent.' : 'This game will end in a draw.'} onCancel={() => setConfirmAction(null)} onConfirm={() => { session.action(confirmAction); setConfirmAction(null) }} />}
   </div>
 }
 function Header() {

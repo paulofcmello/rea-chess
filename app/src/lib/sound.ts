@@ -26,20 +26,32 @@ export type PuzzleSound = keyof typeof PUZZLE_SOUNDS
 
 const cache = new Map<string, HTMLAudioElement>()
 
+// Apply mute/volume changes immediately, including to a preview that is still playing.
+window.addEventListener('rea-chess-store', (event) => {
+  if ((event as CustomEvent).detail !== 'settings') return
+  const s = settings()
+  for (const audio of cache.values()) {
+    audio.volume = Math.max(0, Math.min(1, s.volume))
+    if (!s.sound || s.volume === 0) audio.pause()
+  }
+})
+
 export function playPuzzle(name: PuzzleSound) {
-  if (!settings().sound) return
+  const s = settings()
+  if (!s.sound || s.volume === 0) return
   let audio = cache.get(name)
   if (!audio) {
     audio = new Audio(PUZZLE_SOUNDS[name])
     cache.set(name, audio)
   }
+  audio.volume = Math.max(0, Math.min(1, s.volume))
   audio.currentTime = 0
   audio.play().catch(() => {})
 }
 
 export function play(name: SoundName) {
   const s = settings()
-  if (!s.sound) return
+  if (!s.sound || s.volume === 0) return
   const key = `${s.soundTheme}/${name}`
   let audio = cache.get(key)
   if (!audio) {
@@ -48,6 +60,7 @@ export function play(name: SoundName) {
     if (s.soundTheme !== 'default') audio.onerror = () => cache.set(key, new Audio(soundUrl(name, 'default')))
     cache.set(key, audio)
   }
+  audio.volume = Math.max(0, Math.min(1, s.volume))
   audio.currentTime = 0
   audio.play().catch(() => {})
 }

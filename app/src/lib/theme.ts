@@ -96,7 +96,7 @@ export const soundThemes: Record<string, string> = {
 }
 
 export function settings(): Settings {
-  return { ...defaultSettings, ...load<Partial<Settings>>('settings', {}) }
+  return { ...defaultSettings, botColor: load<Settings['botColor']>('botColor', defaultSettings.botColor), ...load<Partial<Settings>>('settings', {}) }
 }
 
 /** `code` is color + piece type, e.g. "wp", "bk". */
