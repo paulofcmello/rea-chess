@@ -23,8 +23,8 @@ This project recreates chess.com by reverse-engineering it with **REA** (`npx re
 ## Features (done)
 Home (chess.com logged-in home), Play Bots, Puzzles/Rush/Daily/Themes, My Games (chess.com public API import), Game Review (`pages/Review.tsx`, `lib/review.ts`: classifications, accuracy calibrated to chess.com, eval graph, coach), Stats, Play a Friend (`pages/Friend.tsx`, PeerJS P2P, `lib/friendGame.ts`), Analysis. Figurine notation via chess.com "Chess V3" font.
 
-## Codex workflow (saves Claude tokens)
-Claude plans + reviews + browser-tests; Codex builds. Write `docs/plan-<x>.md` (exact files, values from `.rea/` evidence, acceptance steps), then run
+## Codex workflow (DEFAULT: saves Claude tokens)
+Use Codex for every task, small fixes included: implementation, evidence digging in `.rea/`, and headless/CDP testing. Claude is the architect: it scopes the task, writes the plan or prompt, reviews the diff, builds, then commits and pushes. Work inline only when that's quicker than writing the prompt. Write `docs/plan-<x>.md` (exact files, values from `.rea/` evidence, acceptance steps), then run
 `codex exec -m gpt-6.1-sol -C . -s workspace-write -c sandbox_workspace_write.network_access=true -c model_reasoning_effort=high -o <out.md> "Read AGENTS.md, then implement docs/plan-<x>.md exactly." < /dev/null` (the `< /dev/null` is required or it hangs on stdin). `AGENTS.md` holds Codex's rules (no commits).
 
 ## Roadmap / gaps
