@@ -3247,6 +3247,7 @@ h2 {
 .home-dashboard { display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr); gap: 16px; align-items: start; }
 .home-page .cc-section { min-width: 0; background: var(--bg-deep); border-radius: 5px; overflow: hidden; }
 .home-hero { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; padding: 12px; }
+.home-activities { display: contents; }
 .home-play { display: flex; flex-direction: column; gap: 12px; }
 .home-play-links { display: flex; flex-direction: column; gap: 8px; }
 .home-page .cc-button { width: 100%; min-height: 44px; padding: 8px; border-radius: 8px; font-size: 16px; }
@@ -3324,8 +3325,13 @@ h2 {
   .home-page { padding-top: 0; }
   .home-header-streak { font-size: 20px; }
   .home-hero { grid-template-columns: minmax(0, 1fr); }
+  .home-activities { display: flex; gap: 12px; min-width: 0; overflow-x: auto; scroll-snap-type: x mandatory; }
+  .home-activity { flex: 0 0 72vw; scroll-snap-align: start; }
   .home-activity-body { padding: 12px; }
-  .home-history-table { min-width: 620px; }
+  .home-history-table th:nth-child(5), .home-history-table th:nth-child(6),
+  .home-history-table .home-moves, .home-history-table .home-history-date { display: none; }
+  .home-history-players { max-width: 0; }
+  .home-player-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 }
 
 /* Play a Friend: shared Bots board and sidebar, with live clocks and chat. */

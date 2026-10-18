@@ -104,6 +104,10 @@ export default function Analysis() {
   }
 
   const playUci = (uci: string) => onMove(uci.slice(0, 2), uci.slice(2, 4), uci[4])
+  const jump = (p: number) => {
+    if (p === ply + 1) playMove(sans[p - 1])
+    setPly(p)
+  }
 
   const doImport = () => {
     const text = importText.trim()
@@ -180,7 +184,7 @@ export default function Analysis() {
               {!lines.length && <div className="muted small">{new Chess(fen).isGameOver() ? 'Game over' : 'Thinking…'}</div>}
             </div>
           )}
-          <MoveList sans={sans} ply={ply} onSelect={setPly} startFen={startFen} />
+          <MoveList sans={sans} ply={ply} onSelect={jump} startFen={startFen} />
           <details className="import">
             <summary>Load FEN / PGN · Copy PGN</summary>
             <textarea value={importText} onChange={(e) => setImportText(e.target.value)} placeholder="Paste a FEN or PGN" rows={4} />
@@ -194,7 +198,7 @@ export default function Analysis() {
         </div>
         <div className="panel-footer">
           <div className="btn-row">
-            <NavButtons ply={ply} max={sans.length} onSelect={setPly} />
+            <NavButtons ply={ply} max={sans.length} onSelect={jump} />
             <button className="btn icon" title="Flip board" onClick={() => setOrientation((o) => (o === 'white' ? 'black' : 'white'))}>⇅</button>
             <button
               className="btn icon"

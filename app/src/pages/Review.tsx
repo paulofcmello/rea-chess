@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Chess } from 'chess.js'
 import Board from '../components/Board'
 import { CoachAvatar, type CoachEmotion } from '../components/Coach'
@@ -11,6 +11,14 @@ import { BAD_MOVES, CLASS_COLOR, CLASS_LABEL, CLASSIFICATIONS, MARKED_MOVES, boo
 import { ClassIcon } from '../lib/reviewIcons'
 import { loadReview, reviewKey, saveReview } from '../lib/reviewCache'
 import { openInAnalysis } from './Analysis'
+import { playMove } from '../lib/sound'
+
+interface RetryState {
+  status: 'ready' | 'checking' | 'correct' | 'incorrect'
+  fen?: string
+  san?: string
+  square?: string
+}
 
 export interface ReviewInput {
   pgn: string
@@ -119,15 +127,47 @@ export default function Review() {
   const [started, setStarted] = useState(false)
   const [ply, setPly] = useState(0)
   const [arrowOverride, setArrowOverride] = useState<{ ply: number; show: boolean } | null>(null)
+  const [retry, setRetry] = useState<RetryState | null>(null)
+  const engineRef = useRef<Engine | null>(null)
+  const engineBusy = useRef(false)
+  const retryRequest = useRef(0)
+
+  useEffect(() => {
+    const engine = new Engine()
+    engineRef.current = engine
+    return () => { engine.stop(); engine.destroy(); engineRef.current = null }
+  }, [])
+
+  const exitRetry = useCallback(() => {
+    retryRequest.current++
+    if (engineBusy.current) engineRef.current?.stop()
+    setRetry(null)
+  }, [])
+
+  useEffect(() => {
+    if (!retry) return
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); exitRetry() }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [retry, exitRetry])
+
+  useEffect(() => {
+    if (retry?.status !== 'incorrect' || !retry.fen) return
+    const timer = window.setTimeout(() => setRetry((current) => current === retry ? { ...current, fen: undefined } : current), 600)
+    return () => window.clearTimeout(timer)
+  }, [retry])
 
   useEffect(() => {
     if (!data || review) return
     let active = true
-    const engine = new Engine()
+    const engine = engineRef.current!
     const run = async () => {
       await Promise.resolve()
       if (!active) return
       setError('')
+      engineBusy.current = true
       try {
         const result = await reviewGame(data.startFen, data.sans, engine, (done, total) => {
           if (active) setProgress({ done, total })
@@ -138,10 +178,10 @@ export default function Review() {
         }
       } catch (reason) {
         if (active) setError(reason instanceof Error ? reason.message : 'Could not analyze this game.')
-      }
+      } finally { engineBusy.current = false }
     }
     void run()
-    return () => { active = false; engine.stop(); engine.destroy() }
+    return () => { active = false; engine.stop() }
   }, [data, key, review, attempt])
 
   if (!data) return <div className="page"><h1>Game Review</h1><p>Choose a game from <a href="#/games">My Games</a> to start a review.</p></div>
@@ -150,7 +190,8 @@ export default function Review() {
   const topColor = orientation === 'white' ? 'b' : 'w'
   const bottomColor = topColor === 'w' ? 'b' : 'w'
   const players = { w: input.white, b: input.black }
-  const turn = new Chess(fens[ply]).turn()
+  const boardFen = retry ? retry.fen ?? fens[ply - 1] : fens[ply]
+  const turn = new Chess(boardFen).turn()
   const clockFor = (color: 'w' | 'b') => {
     if (!clocks.length) return undefined
     const blackFirst = startFen.split(' ')[1] === 'b'
@@ -172,11 +213,46 @@ export default function Review() {
   const win = result === (myColor === 'w' ? '1-0' : '0-1')
   const finished = draw || result === '1-0' || result === '0-1'
   const greeting = draw ? "A hard-fought draw. Let's review it together." : win ? "Nice win! Let's review it together." : finished ? "Tough loss — let's review it together." : "Let's review this game together."
-  const emotion: CoachEmotion = !review ? 'thinking' : move ? BAD_MOVES.includes(move.cls) ? 'concerned' : ['brilliant', 'great'].includes(move.cls) ? 'impressed' : 'idle' : win ? 'happy' : finished && !draw ? 'concerned' : 'idle'
+  const emotion: CoachEmotion = retry ? retry.status === 'correct' ? 'impressed' : retry.status === 'incorrect' ? 'concerned' : 'thinking' : !review ? 'thinking' : move ? BAD_MOVES.includes(move.cls) ? 'concerned' : ['brilliant', 'great'].includes(move.cls) ? 'impressed' : 'idle' : win ? 'happy' : finished && !draw ? 'concerned' : 'idle'
   const autoArrow = !!move && BAD_MOVES.includes(move.cls)
-  const showArrow = arrowOverride?.ply === ply ? arrowOverride.show : autoArrow
+  const showArrow = !retry && (arrowOverride?.ply === ply ? arrowOverride.show : autoArrow)
   const arrows = move && showArrow && move.best ? [{ from: move.best.slice(0, 2), to: move.best.slice(2, 4), color: '#81b64c', opacity: 0.85 }] : []
-  const jump = (p: number) => { setStarted(true); setPly(p); setArrowOverride(null) }
+  const jump = (p: number) => {
+    if (p === ply + 1) playMove(sans[p - 1])
+    exitRetry()
+    setStarted(true); setPly(p); setArrowOverride(null)
+  }
+  const canRetry = !!move && BAD_MOVES.includes(move.cls) && players[move.color].username.toLowerCase() === input.me.trim().toLowerCase()
+  const startRetry = () => { exitRetry(); setRetry({ status: 'ready' }); setArrowOverride(null) }
+  const onRetryMove = async (from: string, to: string, promotion?: string) => {
+    if (!move || !retry || retry.fen || retry.status === 'correct' || retry.status === 'checking') return
+    const chess = new Chess(fens[ply - 1])
+    let played
+    try { played = chess.move({ from, to, promotion }) } catch { return }
+    const request = ++retryRequest.current
+    const candidate = { fen: chess.fen(), san: played.san, square: to }
+    let correct = from + to + (played.promotion ?? '') === move.best
+    if (!correct && engineRef.current && !engineBusy.current) {
+      setRetry({ ...candidate, status: 'checking' })
+      engineBusy.current = true
+      try {
+        let score
+        if (chess.isCheckmate()) score = { mate: 0, cp: chess.turn() === 'w' ? -100000 : 100000 }
+        else if (chess.isDraw()) score = { cp: 0 }
+        else {
+          const result = await engineRef.current.search(chess.fen(), { depth: 12 })
+          const line = result?.lines[0]
+          const sign = chess.turn() === 'w' ? 1 : -1
+          if (line && line.depth >= 12) score = line.mate != null ? { mate: line.mate * sign } : line.cp != null ? { cp: line.cp * sign } : undefined
+        }
+        if (score) correct = expectedPoints(move.before, move.color) - expectedPoints(score, move.color) <= 0.02
+      } catch { /* If evaluation fails, only the exact best move is accepted. */ }
+      finally { engineBusy.current = false }
+    }
+    if (request !== retryRequest.current || !engineRef.current) return
+    setRetry({ ...candidate, status: correct ? 'correct' : 'incorrect' })
+    if (correct) playMove(played.san)
+  }
   const graph = review && <ReviewGraph review={review} ply={ply} onSelect={jump} />
 
   return <div className="cc-layout review-layout">
@@ -184,16 +260,17 @@ export default function Review() {
       <PlayerBar player={players[topColor]} color={topColor} clock={clockFor(topColor)} active={turn === topColor} />
       <div className="cc-board-row">
         <EvalBar score={review?.evals[ply] ?? null} flip={orientation === 'black'} />
-        <div className="cc-board-wrap"><Board fen={fens[ply]} orientation={orientation}
-          lastMove={move ? null : ply > 0 ? moves[ply - 1] : null}
-          highlights={move ? [move.uci.slice(0, 2), move.uci.slice(2, 4)].map((square) => ({ square, color: CLASS_COLOR[move.cls], opacity: 0.5 })) : []}
-          effects={move ? [{ square: move.uci.slice(2, 4), type: move.cls }] : []} arrows={arrows} /></div>
+        <div className="cc-board-wrap"><Board fen={boardFen} orientation={orientation}
+          movable={retry && !retry.fen && retry.status !== 'correct' && retry.status !== 'checking' ? myColor : 'none'} onMove={onRetryMove}
+          lastMove={retry || move ? null : ply > 0 ? moves[ply - 1] : null}
+          highlights={!retry && move ? [move.uci.slice(0, 2), move.uci.slice(2, 4)].map((square) => ({ square, color: CLASS_COLOR[move.cls], opacity: 0.5 })) : []}
+          effects={retry ? retry.square && (retry.status === 'correct' || retry.status === 'incorrect') ? [{ square: retry.square, type: retry.status }] : [] : move ? [{ square: move.uci.slice(2, 4), type: move.cls }] : []} arrows={arrows} /></div>
       </div>
       <PlayerBar player={players[bottomColor]} color={bottomColor} clock={clockFor(bottomColor)} active={turn === bottomColor} />
     </div>
     <section className="cc-sidebar review-sidebar">
       <header className="cc-sidebar-header secondary review-header">
-        {started && <button className="review-back" aria-label="Back to summary" onClick={() => { setStarted(false); setPly(0); setArrowOverride(null) }}>←</button>}
+        {started && <button className="review-back" aria-label="Back to summary" onClick={() => { exitRetry(); setStarted(false); setPly(0); setArrowOverride(null) }}>←</button>}
         <h1 className="cc-sidebar-header-title small"><img src="https://assets-ds.chess.com/color-icons/magnifier-star.svg" alt="" />Game Review</h1>
         <button className="review-analysis" title="Open in Analysis" aria-label="Open in Analysis" onClick={() => openInAnalysis(startFen, sans, orientation)}>
           <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 0 1 5.96 12.05l4.25 4.24a1 1 0 0 1-1.42 1.42l-4.24-4.25A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm0 2a1 1 0 0 1 1 1v1.5H13a1 1 0 1 1 0 2h-1.5V13a1 1 0 1 1-2 0v-1.5H8a1 1 0 1 1 0-2h1.5V8a1 1 0 0 1 1-1Z" /></svg>
@@ -202,7 +279,7 @@ export default function Review() {
       <div className={`review-body ${started ? 'review-playing' : ''}`}>
         <div className="review-coach"><div className="review-coach-avatar"><CoachAvatar emotion={emotion} /></div>
           <div className="review-bubble" aria-live="polite">
-            {!review ? <strong>{error ? 'Analysis paused' : 'Analyzing your game…'}</strong> : feedback && move ? <><div className="review-feedback-title"><ClassIcon c={move.cls} /><strong><SanText san={move.san} color={new Chess(fens[ply - 1]).turn()} />{feedback.title.slice(move.san.length)}</strong><span className="review-eval-chip">{formatScore(move.after)}</span></div><p>{feedback.text}</p></> : <strong>{started ? 'Start at the first move to see your coach’s feedback.' : greeting}</strong>}
+            {retry ? <strong>{retry.status === 'correct' ? `Great find! ${retry.san} is the best move.` : retry.status === 'incorrect' ? `${retry.san} isn't best. Try again.` : 'Find a better move'}</strong> : !review ? <strong>{error ? 'Analysis paused' : 'Analyzing your game…'}</strong> : feedback && move ? <><div className="review-feedback-title"><ClassIcon c={move.cls} /><strong><SanText san={move.san} color={new Chess(fens[ply - 1]).turn()} />{feedback.title.slice(move.san.length)}</strong><span className="review-eval-chip">{formatScore(move.after)}</span></div><p>{feedback.text}</p></> : <strong>{started ? 'Start at the first move to see your coach’s feedback.' : greeting}</strong>}
           </div>
         </div>
         {!review ? <div className="review-loading">
@@ -219,7 +296,13 @@ export default function Review() {
             <span>{CLASS_LABEL[c]}</span><strong style={{ color: CLASS_COLOR[c] }}>{review.counts.w[c]}</strong><ClassIcon c={c} size={22} /><strong style={{ color: CLASS_COLOR[c] }}>{review.counts.b[c]}</strong>
           </div>)}</div>
         </> : <>
-          <div className="review-flow"><button className="cc-button cc-secondary" disabled={!move} aria-pressed={showArrow} onClick={() => setArrowOverride({ ply, show: !showArrow })}>★ Best</button><button className="cc-button cc-primary" disabled={ply >= sans.length} onClick={() => jump(Math.min(sans.length, ply + 1))}>➜ Next</button></div>
+          <div className="review-flow">
+            {retry?.status === 'correct' ? <button className="cc-button cc-primary" onClick={exitRetry}>Continue</button> : <>
+              {canRetry && <button className="cc-button cc-secondary" disabled={retry?.status === 'checking'} onClick={startRetry}>↻ Retry</button>}
+              <button className="cc-button cc-secondary" disabled={!move} aria-pressed={showArrow} onClick={() => { exitRetry(); setArrowOverride({ ply, show: retry ? true : !showArrow }) }}>{retry ? '★ Show Best' : '★ Best'}</button>
+            </>}
+            <button className="cc-button cc-primary" disabled={ply >= sans.length} onClick={() => jump(Math.min(sans.length, ply + 1))}>➜ Next</button>
+          </div>
           <ReviewMoves review={review} startFen={startFen} ply={ply} onSelect={jump} />
           {graph}
           <NavButtons ply={ply} max={sans.length} onSelect={jump} />

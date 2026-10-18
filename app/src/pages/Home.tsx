@@ -170,27 +170,29 @@ export default function Home() {
             <a className="cc-button cc-secondary" href="#/rush"><CcGlyph name="game-type-puzzle" />Puzzle Rush</a>
           </div>
         </div>
-        <article className="home-activity">
-          <a href="#/puzzles" aria-label="Open rated puzzles"><PuzzlePreview puzzle={previews.next} /></a>
-          <div className="home-activity-body">
-            <div className="home-puzzle-stats"><CcGlyph name="game-type-puzzle" color="#FFA459" /><strong>{rating.toLocaleString()}</strong><span className="home-puzzle-streak"><CcGlyph name="element-fire-blank" size={16} />{streak.current}</span></div>
-            <div className="home-puzzle-progress" role="progressbar" aria-label="Today's puzzle solves" aria-valuenow={Math.min(streak.today, 10)} aria-valuemin={0} aria-valuemax={10}><span style={{ width: `${Math.min(streak.today / 10, 1) * 100}%` }} /></div>
-            <a className="cc-button cc-secondary" href="#/puzzles">Solve Puzzles</a>
-          </div>
-        </article>
-        <article className="home-activity">
-          <a href="#/themes" aria-label="Open puzzle themes"><PuzzlePreview puzzle={previews.themed} /></a>
-          <div className="home-activity-body"><div className="home-activity-label"><CcGlyph name="game-lesson" color="#5DADCE" /><strong>{themeTitle(previews.themed)}</strong></div><a className="cc-button cc-secondary" href="#/themes">Practice Theme</a></div>
-        </article>
-        <article className="home-activity">
-          {latest && lastPosition ? <>
-            <button className="home-preview-button" aria-label={`Review last game vs ${opponent}`} onClick={() => openInReview(latest, username)}><BoardPreview fen={lastPosition.fen} orientation={latest.black.username.toLowerCase() === username.toLowerCase() ? 'black' : 'white'} /></button>
-            <div className="home-activity-body"><div className="home-activity-label"><UserAvatar username={opponent} /><strong title={`vs ${opponent}`}>vs {opponent}</strong></div><button className="cc-button cc-secondary" onClick={() => openInReview(latest, username)}>Review Game</button></div>
-          </> : <>
-            <div className="home-last-empty"><CcGlyph name="board" size={56} /><strong>{account.loading ? 'Loading last game…' : account.error ? 'Games unavailable' : username ? 'No games yet' : 'Import your games'}</strong></div>
-            <div className="home-activity-body"><p className="muted">{username ? 'Your latest chess.com game will appear here.' : 'Connect your chess.com username to get started.'}</p><a className="cc-button cc-secondary" href="#/games">{username ? 'My Games' : 'Import your games'}</a></div>
-          </>}
-        </article>
+        <div className="home-activities" role="region" aria-label="Activity previews" tabIndex={0}>
+          <article className="home-activity">
+            <a href="#/puzzles" aria-label="Open rated puzzles"><PuzzlePreview puzzle={previews.next} /></a>
+            <div className="home-activity-body">
+              <div className="home-puzzle-stats"><CcGlyph name="game-type-puzzle" color="#FFA459" /><strong>{rating.toLocaleString()}</strong><span className="home-puzzle-streak"><CcGlyph name="element-fire-blank" size={16} />{streak.current}</span></div>
+              <div className="home-puzzle-progress" role="progressbar" aria-label="Today's puzzle solves" aria-valuenow={Math.min(streak.today, 10)} aria-valuemin={0} aria-valuemax={10}><span style={{ width: `${Math.min(streak.today / 10, 1) * 100}%` }} /></div>
+              <a className="cc-button cc-secondary" href="#/puzzles">Solve Puzzles</a>
+            </div>
+          </article>
+          <article className="home-activity">
+            <a href="#/themes" aria-label="Open puzzle themes"><PuzzlePreview puzzle={previews.themed} /></a>
+            <div className="home-activity-body"><div className="home-activity-label"><CcGlyph name="game-lesson" color="#5DADCE" /><strong>{themeTitle(previews.themed)}</strong></div><a className="cc-button cc-secondary" href="#/themes">Practice Theme</a></div>
+          </article>
+          <article className="home-activity">
+            {latest && lastPosition ? <>
+              <button className="home-preview-button" aria-label={`Review last game vs ${opponent}`} onClick={() => openInReview(latest, username)}><BoardPreview fen={lastPosition.fen} orientation={latest.black.username.toLowerCase() === username.toLowerCase() ? 'black' : 'white'} /></button>
+              <div className="home-activity-body"><div className="home-activity-label"><UserAvatar username={opponent} /><strong title={`vs ${opponent}`}>vs {opponent}</strong></div><button className="cc-button cc-secondary" onClick={() => openInReview(latest, username)}>Review Game</button></div>
+            </> : <>
+              <div className="home-last-empty"><CcGlyph name="board" size={56} /><strong>{account.loading ? 'Loading last game…' : account.error ? 'Games unavailable' : username ? 'No games yet' : 'Import your games'}</strong></div>
+              <div className="home-activity-body"><p className="muted">{username ? 'Your latest chess.com game will appear here.' : 'Connect your chess.com username to get started.'}</p><a className="cc-button cc-secondary" href="#/games">{username ? 'My Games' : 'Import your games'}</a></div>
+            </>}
+          </article>
+        </div>
       </section>
 
       <section className="cc-section home-history" aria-labelledby="home-history-title">
