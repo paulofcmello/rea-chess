@@ -10,6 +10,7 @@ import Stats from './pages/Stats'
 import Analysis from './pages/Analysis'
 import Review from './pages/Review'
 import Settings from './pages/Settings'
+import Endgames from './pages/Endgames'
 import { useSettings } from './lib/storage'
 import { pieceUrl } from './lib/theme'
 
@@ -24,6 +25,7 @@ const routes = {
   rush: { label: 'Puzzle Rush', icon: 'puzzle-rush', el: Rush },
   daily: { label: 'Daily Puzzle', icon: 'pawn-green', el: Daily },
   themes: { label: 'Themes', icon: 'training', el: Themes },
+  endgames: { label: 'Endgames', icon: 'game-endgames', el: Endgames },
   games: { label: 'My Games', icon: 'binoculars', el: Games },
   stats: { label: 'Stats', icon: 'binoculars', el: Stats },
   review: { label: 'Game Review', icon: 'magnifier-star', el: Review },
@@ -72,7 +74,7 @@ export default function App() {
           .filter((r) => r !== '' && r !== 'review' && r !== 'settings')
           .map((r) => (
             <a key={r} href={`#/${r}`} className={`nav-item ${route === r ? 'active' : ''}`}>
-              <img className="nav-icon" src={`${ICONS}/${routes[r].icon}.svg`} alt="" />
+              <img className="nav-icon" src={r === 'endgames' ? 'https://www.chess.com/bundles/web/images/color-icons/game-endgames.svg' : `${ICONS}/${routes[r].icon}.svg`} alt="" />
               <span className="nav-label">{routes[r].label}</span>
             </a>
           ))}

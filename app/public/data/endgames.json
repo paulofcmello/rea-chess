@@ -1,0 +1,2754 @@
+{
+  "source": "https://www.chess.com/endgames",
+  "categories": [
+    {
+      "id": "64eb5b5a-716e-11eb-92da-9f475379b702",
+      "url": "checkmates",
+      "name": "Checkmates",
+      "themes": [
+        {
+          "id": "64eb7a72-716e-11eb-b9f1-35bd9d82e37d",
+          "url": "two-rooks-mate",
+          "name": "Two Rooks Mate",
+          "description": "Checkmate with two Rooks or Rook and Queen",
+          "drills": [
+            {
+              "id": "64ebc34c-716e-11eb-85cd-afb7715f3f08",
+              "sortOrder": 1,
+              "fen": "8/3k4/7R/8/8/8/8/R3K3 w - - 0 1",
+              "alternativeFens": [
+                "8/4k3/R7/8/8/8/8/3K3R w - - 0 1",
+                "3K3R/8/8/8/8/R7/4k3/8 w - - 0 1",
+                "2R5/8/8/1k6/7K/8/8/3R4 w - - 0 1",
+                "5R2/8/8/6k1/1K6/8/8/4R3 w - - 0 1",
+                "8/3k4/6R1/8/8/8/R7/4K3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ec19fa-716e-11eb-abfc-451563a85882",
+              "sortOrder": 2,
+              "fen": "8/7R/8/4k3/8/1R6/8/4K3 w - - 0 1",
+              "alternativeFens": [
+                "4K3/8/1R6/8/4k3/8/7R/8 w - - 0 1",
+                "8/1R6/8/4k3/8/7R/8/4K3 w - - 0 1",
+                "4K3/8/7R/8/4k3/1R6/8/8 w - - 0 1",
+                "8/R7/8/3k3K/8/8/5R2/8 w - - 0 1",
+                "8/R7/8/4k3/8/7R/8/4K3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ec4830-716e-11eb-8523-b7b84d5a6446",
+              "sortOrder": 3,
+              "fen": "8/8/2k5/8/8/1R6/5Q2/4K3 w - - 0 1",
+              "alternativeFens": [
+                "4K3/5Q2/1R6/8/8/2k5/8/8 w - - 0 1",
+                "8/8/1Q4R1/K7/8/5k2/8/8 w - - 0 1",
+                "8/8/5k2/8/8/6R1/2Q5/3K4 w - - 0 1",
+                "8/5K2/1Q6/6R1/8/5k2/8/8 w - - 0 1",
+                "8/8/2k5/8/8/4Q3/1R6/4K3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ec72a6-716e-11eb-931b-7f613233a36f",
+              "sortOrder": 4,
+              "fen": "8/8/8/3k4/8/8/8/R3K2R w - - 0 1",
+              "alternativeFens": [
+                "7R/8/8/7K/3k4/8/8/7R w - - 0 1",
+                "R3K2R/8/8/8/3k4/8/8/8 w - - 0 1",
+                "R7/8/8/K7/4k3/8/8/R7 w - - 0 1",
+                "R7/8/8/4k3/1K6/8/R7/8 w - - 0 1",
+                "8/8/8/8/4k3/8/3K4/R6R w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ec9be6-716e-11eb-9dec-f78e52baa6d3",
+              "sortOrder": 5,
+              "fen": "8/8/8/1R6/2k5/6R1/8/4K3 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/6R1/5k2/1R6/8/3K4 w - - 0 1",
+                "8/5R2/8/8/4k1K1/3R4/8/8 w - - 0 1",
+                "8/2R5/8/8/1K2k3/5R2/8/8 w - - 0 1",
+                "8/8/4k3/5R2/2R5/4K3/8/8 w - - 0 1",
+                "8/8/8/4R3/2k5/5R2/8/4K3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64ecd142-716e-11eb-bde3-1d64c05bc2bc",
+          "url": "queen-mate",
+          "name": "Queen Mate",
+          "description": "Checkmate with King and Queen",
+          "drills": [
+            {
+              "id": "64ecf08c-716e-11eb-8525-bde8d177bcd0",
+              "sortOrder": 6,
+              "fen": "6k1/3Q4/8/5K2/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "k7/3Q4/8/3K4/8/8/8/8 w - - 0 1",
+                "8/8/8/2Q5/8/3K4/8/k7 w - - 0 1",
+                "8/8/8/8/7K/8/4Q3/6k1 w - - 0 1",
+                "6k1/3Q4/8/7K/8/8/8/8 w - - 0 1",
+                "k7/3Q4/8/K7/8/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ed1396-716e-11eb-a289-b35407be5604",
+              "sortOrder": 7,
+              "fen": "1k6/8/8/8/K3Q3/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "6k1/8/2Q5/8/5K2/8/8/8 w - - 0 1",
+                "8/8/8/3Q3K/8/8/8/6k1 w - - 0 1",
+                "8/8/1Q6/8/8/4K3/8/k7 w - - 0 1",
+                "1k6/8/8/8/K3Q3/8/8/8 w - - 0 1",
+                "1k6/8/4Q3/8/2K5/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ed4b36-716e-11eb-a037-c54d3ade72f4",
+              "sortOrder": 8,
+              "fen": "8/4k3/8/8/2Q3K1/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/2Q3K1/4k3/8/8 w - - 0 1",
+                "8/8/3k4/8/2Q3K1/8/8/8 w - - 0 1",
+                "8/8/5k2/8/2Q3K1/8/8/8 w - - 0 1",
+                "8/8/8/3Q2K1/8/4k3/8/8 w - - 0 1",
+                "8/8/8/6K1/3Q4/5k2/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ed839e-716e-11eb-b62f-85a1f912cd18",
+              "sortOrder": 9,
+              "fen": "8/8/2K5/8/4Q3/1k6/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/5k2/2K5/8/4Q3/8/8 w - - 0 1",
+                "8/8/8/5Q2/8/6k1/3K4/8 w - - 0 1",
+                "8/8/8/1K6/4Q3/2k5/8/8 w - - 0 1",
+                "8/8/8/1Q6/4K3/2k5/8/8 w - - 0 1",
+                "8/8/8/8/3Q1K2/8/6k1/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64eda5ae-716e-11eb-9393-29d6136e7935",
+              "sortOrder": 10,
+              "fen": "8/8/2KP4/8/8/2k5/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/4KP2/8/8/2k5/8/8 w - - 0 1",
+                "8/8/4K3/6P1/8/2k5/8/8 w - - 0 1",
+                "8/8/P1K5/8/3k4/8/8/8 w - - 0 1",
+                "8/8/1PK5/8/4k3/8/8/8 w - - 0 1",
+                "8/8/2K1P3/8/8/5k2/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64edcc0a-716e-11eb-b341-d9b83ad680d9",
+          "url": "rook-mate",
+          "name": "Rook Mate",
+          "description": "Checkmate with King and Rook",
+          "drills": [
+            {
+              "id": "64edeb5e-716e-11eb-be9f-53b3cf823a0f",
+              "sortOrder": 11,
+              "fen": "1k6/6R1/3K4/8/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "1k6/4R3/3K4/8/8/8/8/8 w - - 0 1",
+                "1R6/8/2K5/k7/8/8/8/8 w - - 0 1",
+                "8/8/8/8/k7/2K5/8/1R6 w - - 0 1",
+                "8/8/8/8/8/3K4/R7/4k3 w - - 0 1",
+                "8/8/8/7k/8/5K2/8/6R1 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ee1160-716e-11eb-a915-ffbafa5f93a2",
+              "sortOrder": 12,
+              "fen": "1k6/2R5/1K6/8/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "1k6/8/1K6/2R5/8/8/8/8 w - - 0 1",
+                "8/k1K5/2R5/8/8/8/8/8 w - - 0 1",
+                "8/8/8/8/8/2R5/k1K5/8 w - - 0 1",
+                "8/8/8/8/8/5R2/5K1k/8 w - - 0 1",
+                "8/8/8/8/8/2R5/5K1k/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ee3c80-716e-11eb-9f5a-f58f9c4770ab",
+              "sortOrder": 13,
+              "fen": "8/8/8/3K4/1k6/5R2/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/3K4/1k6/7R/8/8 w - - 0 1",
+                "8/8/8/8/1k1K4/3R4/8/8 w - - 0 1",
+                "8/8/8/1k1K4/3R4/8/8/8 w - - 0 1",
+                "8/8/8/1k6/2R5/2K5/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ee6836-716e-11eb-a1a9-fbaf494e92e9",
+              "sortOrder": 14,
+              "fen": "8/8/8/8/4k3/8/8/3K2R1 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/4k3/8/4K3/7R w - - 0 1",
+                "8/8/8/8/3k4/8/3K4/R7 w - - 0 1",
+                "8/8/8/8/3k4/8/1R1K4/8 w - - 0 1",
+                "8/8/8/8/3k4/8/6R1/4K3 w - - 0 1",
+                "8/8/8/8/3k4/5R2/4K3/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ee94e6-716e-11eb-8ac8-efbeec6e7497",
+              "sortOrder": 15,
+              "fen": "8/8/8/3k4/2R5/8/8/4K3 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/3k4/6R1/8/3K4/8 w - - 0 1",
+                "8/8/8/3k4/R7/8/3K4/8 w - - 0 1",
+                "8/8/4K3/R7/8/4k3/8/8 w - - 0 1",
+                "8/8/4K3/7R/8/4k3/8/8 w - - 0 1",
+                "8/8/8/3k4/6K1/8/4R3/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64eedc44-716e-11eb-8bbf-85b1ab4b2206",
+          "url": "two-bishops-mate",
+          "name": "Two Bishops Mate",
+          "description": "Checkmate with two Bishops",
+          "drills": [
+            {
+              "id": "64ef0d72-716e-11eb-89fb-3962a326ceda",
+              "sortOrder": 16,
+              "fen": "8/8/8/8/8/1K6/3B4/1k3B2 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/8/6K1/3B4/5B1k w - - 0 1",
+                "7k/8/6KB/8/8/8/8/5B2 w - - 0 1",
+                "1k1B4/8/1K6/8/8/7B/8/8 w - - 0 1",
+                "1k1B4/8/1K2B3/8/8/8/8/8 w - - 0 1",
+                "8/8/4B3/8/8/1K6/8/k1B5 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ef80ea-716e-11eb-9373-eb6b62adeb42",
+              "sortOrder": 17,
+              "fen": "1k6/4B3/1K2B3/8/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "1k6/3B4/1K6/6B1/8/8/8/8 w - - 0 1",
+                "6k1/3BB3/7K/8/8/8/8/8 w - - 0 1",
+                "8/8/8/1B4B1/8/7K/8/6k1 w - - 0 1",
+                "8/8/8/8/2B5/6K1/3B4/6k1 w - - 0 1",
+                "8/8/8/3B4/8/1K6/3B4/1k6 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "4d12d368-8bd2-11eb-ba6d-7171653d1f8a",
+              "sortOrder": 18,
+              "fen": "8/8/2k5/5B2/3K4/4B3/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/2k5/8/2K5/3BB3/8/8 w - - 0 1",
+                "8/8/2k5/5B2/3K1B2/8/8/8 w - - 0 1",
+                "8/8/5k2/8/3K4/4B3/2B5/8 w - - 0 1",
+                "8/8/8/8/3K2k1/4B3/2B5/8 w - - 0 1",
+                "8/8/8/2BK4/4B3/8/4k3/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f05f4c-716e-11eb-818d-edc4ed95f0c1",
+              "sortOrder": 19,
+              "fen": "8/8/8/4k3/8/8/8/2B1KB2 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/2k5/8/8/8/2B1KB2 w - - 0 1",
+                "8/8/8/5k2/8/8/8/2B1KB2 w - - 0 1",
+                "8/8/4k3/8/8/8/8/2B1KB2 w - - 0 1",
+                "8/8/3k4/8/8/8/8/2B1KB2 w - - 0 1",
+                "8/8/8/8/3k4/8/8/2B1KB2 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f09b38-716e-11eb-8a56-dfccd9888495",
+              "sortOrder": 20,
+              "fen": "8/8/8/8/3Bk3/1K6/8/5B2 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/3k4/3B4/1K6/8/5B2 w - - 0 1",
+                "8/8/8/8/8/1K2Bk2/8/5B2 w - - 0 1",
+                "8/8/2k5/2B5/8/1K6/8/5B2 w - - 0 1",
+                "8/8/2k5/2B5/8/4K3/8/5B2 w - - 0 1",
+                "8/8/8/3k4/3B4/8/4K3/5B2 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64f0c752-716e-11eb-82d7-9bcc0b6fd06c",
+          "url": "bishop-and-knight-mate",
+          "name": "Bishop and Knight Mate",
+          "description": "Checkmate with Knight and Bishop",
+          "drills": [
+            {
+              "id": "64f0e926-716e-11eb-b99a-f9a7152b032f",
+              "sortOrder": 21,
+              "fen": "8/8/8/8/8/BK6/8/1k1N4 w - - 0 1",
+              "alternativeFens": [
+                "1k6/8/BK6/2N5/8/8/8/8 w - - 0 1",
+                "2B5/k1K5/8/N7/8/8/8/8 w - - 0 1",
+                "5B2/5K1k/4N3/8/8/8/8/8 w - - 0 1",
+                "5B2/5K1k/8/7N/8/8/8/8 w - - 0 1",
+                "8/8/8/8/5N2/6KB/8/6k1 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f11072-716e-11eb-bd5c-096ca08dacb6",
+              "sortOrder": 22,
+              "fen": "k7/8/1K2B3/8/3N4/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "k7/8/1K1N4/8/6B1/8/8/8 w - - 0 1",
+                "8/8/8/8/4NB2/1K6/8/k7 w - - 0 1",
+                "8/8/7B/3N4/8/1K6/8/k7 w - - 0 1",
+                "8/8/8/7B/3N4/6K1/8/7k w - - 0 1",
+                "8/8/8/5N2/6B1/6K1/8/7k w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f13318-716e-11eb-8916-4dd2a66f8454",
+              "sortOrder": 23,
+              "fen": "7k/8/5K2/5B2/5N2/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/2N5/2K5/2B5/k7 w - - 0 1",
+                "8/8/8/8/B7/2K1N3/8/k7 w - - 0 1",
+                "k7/8/2K5/2B5/2N5/8/8/8 w - - 0 1",
+                "8/8/8/8/8/8/3BNK2/7k w - - 0 1",
+                "8/8/8/5N2/5B2/5K2/8/7k w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f15b04-716e-11eb-92cc-7f5eeb2e8cb4",
+              "sortOrder": 24,
+              "fen": "8/8/8/4k3/8/8/8/2B1K1N1 w - - 0 1",
+              "alternativeFens": [
+                "8/8/7B/3k4/7K/8/7N/8 w - - 0 1",
+                "1N1K1B2/8/8/8/4k3/8/8/8 w - - 0 1",
+                "2B1K1N1/8/8/8/3k4/8/8/8 w - - 0 1",
+                "8/8/B7/4k3/K7/8/N7/8 w - - 0 1",
+                "8/8/8/3k4/8/8/8/1N1K1B2 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f182e6-716e-11eb-aefc-390355a13cec",
+              "sortOrder": 25,
+              "fen": "8/8/8/4k3/4N3/8/3B4/1K6 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/4k3/4N3/8/2K5/4B3 w - - 0 1",
+                "8/8/8/4k3/4N3/8/5B2/5K2 w - - 0 1",
+                "8/8/8/4k3/5N2/8/5BK1/8 w - - 0 1",
+                "8/8/8/8/8/2kN4/5BK1/8 w - - 0 1",
+                "8/8/2k5/3N4/8/8/5BK1/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64f1aa96-716e-11eb-a8ac-91f9a169a9b6",
+          "url": "queen-vs-rook",
+          "name": "Queen vs Rook",
+          "description": "Checkmate with Queen vs Rook",
+          "drills": [
+            {
+              "id": "d5efb020-8d6c-11eb-b998-99f25e2dab0f",
+              "sortOrder": 26,
+              "fen": "6k1/2r5/5K2/7Q/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "1k6/5r2/2K5/Q7/8/8/8/8 w - - 0 1",
+                "8/8/8/8/Q7/2K5/5r2/1k6 w - - 0 1",
+                "8/8/8/8/7Q/5K2/2r5/6k1 w - - 0 1",
+                "8/8/6r1/8/8/5K2/7k/4Q3 w - - 0 1",
+                "4Q3/7k/5K2/8/8/6r1/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "f2a3efec-8d6c-11eb-bb93-d9e83ed82f1b",
+              "sortOrder": 27,
+              "fen": "1k6/1r6/2K5/8/8/8/8/Q7 w - - 0 1",
+              "alternativeFens": [
+                "7Q/8/8/8/8/5K2/6r1/6k1 w - - 0 1",
+                "Q7/8/8/8/8/2K5/1r6/1k6 w - - 0 1",
+                "1k6/1r6/2K5/8/8/8/8/Q7 w - - 0 1",
+                "1k6/1r6/2K5/8/8/Q7/8/8 w - - 0 1",
+                "6k1/6r1/5K2/8/8/7Q/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f22d54-716e-11eb-b0d9-ef777e418b79",
+              "sortOrder": 28,
+              "fen": "1k6/1r6/2K5/Q7/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "6k1/6r1/5K2/7Q/8/8/8/8 w - - 0 1",
+                "8/8/8/8/7Q/5K2/6r1/6k1 w - - 0 1",
+                "8/8/8/8/Q7/2K5/1r6/1k6 w - - 0 1",
+                "8/8/8/8/8/5K2/6rk/4Q3 w - - 0 1",
+                "4Q3/6rk/5K2/8/8/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "7e476146-8d6d-11eb-854c-8ddf0079f1b4",
+              "sortOrder": 29,
+              "fen": "8/1k2r3/8/8/3K1Q2/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/2k1r3/8/3K1Q2/8/8/8 w - - 0 1",
+                "8/1k1r4/8/8/2K2Q2/8/8/8 w - - 0 1",
+                "8/1k6/8/1r3K2/8/4Q3/8/8 w - - 0 1",
+                "8/8/2k5/5K2/2r5/4Q3/8/8 w - - 0 1",
+                "8/8/4K3/1k6/2r5/4Q3/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "9d6c1314-8d6d-11eb-a580-bb0aa5eef317",
+              "sortOrder": 30,
+              "fen": "4k3/4r3/8/3K4/8/8/8/5Q2 w - - 0 1",
+              "alternativeFens": [
+                "3k4/3r4/8/4K3/8/8/8/2Q5 w - - 0 1",
+                "3k4/3r4/8/4K3/8/2Q5/8/8 w - - 0 1",
+                "3k4/3r4/8/4K3/8/5Q2/8/8 w - - 0 1",
+                "4k3/4r3/8/8/2K5/5Q2/8/8 w - - 0 1",
+                "4k3/4r3/8/8/2K5/8/8/5Q2 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            }
+          ]
+        }
+      ],
+      "imageUrl": "https://www.chess.com/bundles/web/images/color-icons/checkmate-light.svg",
+      "lightModeImageUrl": "https://www.chess.com/bundles/web/images/color-icons/checkmate-dark.svg"
+    },
+    {
+      "id": "64f2a388-716e-11eb-8f19-772c6f43c6ed",
+      "url": "pawn",
+      "name": "Pawn",
+      "themes": [
+        {
+          "id": "64f2cade-716e-11eb-9532-53b1b7d70e37",
+          "url": "winning-king-and-pawn",
+          "name": "Winning King and Pawn",
+          "description": "Win with King and Pawn",
+          "drills": [
+            {
+              "id": "64f2e99c-716e-11eb-8ee1-7b132601e328",
+              "sortOrder": 31,
+              "fen": "4k3/8/4K3/8/4P3/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "3k4/8/3K4/8/3P4/8/8/8 w - - 0 1",
+                "2k5/8/2K5/8/2P5/8/8/8 w - - 0 1",
+                "5k2/8/5K2/8/5P2/8/8/8 w - - 0 1",
+                "6k1/8/6K1/8/6P1/8/8/8 w - - 0 1",
+                "1k6/8/1K6/8/1P6/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f311e2-716e-11eb-b652-25fdf031a0e3",
+              "sortOrder": 32,
+              "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "3k4/8/3K4/3P4/8/8/8/8 w - - 0 1",
+                "2k5/8/2K5/2P5/8/8/8/8 w - - 0 1",
+                "1k6/8/1K6/1P6/8/8/8/8 w - - 0 1",
+                "5k2/8/5K2/5P2/8/8/8/8 w - - 0 1",
+                "6k1/8/6K1/6P1/8/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f33820-716e-11eb-927b-631a0c873f38",
+              "sortOrder": 33,
+              "fen": "4k3/8/8/8/8/8/4P3/4K3 w - - 0 1",
+              "alternativeFens": [
+                "3k4/8/8/8/8/8/3P4/3K4 w - - 0 1",
+                "8/4k3/8/8/8/8/3PK3/8 w - - 0 1",
+                "8/2k5/8/8/8/8/2PK4/8 w - - 0 1",
+                "8/4k3/8/8/8/8/5PK1/8 w - - 0 1",
+                "5k2/8/8/8/8/8/5P2/5K2 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f35cd8-716e-11eb-a1a1-073327d372e5",
+              "sortOrder": 34,
+              "fen": "8/1k6/8/8/8/2P1K3/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/k7/8/8/8/1P1K4/8/8 w - - 0 1",
+                "8/3k4/8/8/8/4P1K1/8/8 w - - 0 1",
+                "1k6/8/8/8/2P1K3/8/8/8 w - - 0 1",
+                "2k5/8/8/8/3P1K2/8/8/8 w - - 0 1",
+                "3k4/8/8/8/4P1K1/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f3a3dc-716e-11eb-985d-b99d3d4e48b8",
+              "sortOrder": 35,
+              "fen": "8/6k1/4K3/8/8/6P1/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/5k2/3K4/8/8/5P2/8/8 w - - 0 1",
+                "8/8/4k3/2K5/8/8/4P3/8 w - - 0 1",
+                "8/8/3k4/1K6/8/8/3P4/8 w - - 0 1",
+                "8/8/2k5/K7/8/8/2P5/8 w - - 0 1",
+                "8/6k1/4K3/8/8/6P1/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64f3df78-716e-11eb-b778-9f256f4ede81",
+          "url": "drawn-king-and-pawn",
+          "name": "Drawn King and Pawn",
+          "description": "Draw vs King and Pawn",
+          "drills": [
+            {
+              "id": "64f4087c-716e-11eb-b5e4-497258ae60dc",
+              "sortOrder": 36,
+              "fen": "8/8/8/4k3/4p3/8/4K3/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/3k4/3p4/8/3K4/8 w - - 0 1",
+                "8/8/8/6k1/6p1/8/6K1/8 w - - 0 1",
+                "8/8/8/1k6/1p6/8/1K6/8 w - - 0 1",
+                "8/8/2k5/8/2p5/8/2K5/8 w - - 0 1",
+                "8/8/3k4/8/3p4/8/3K4/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f49102-716e-11eb-8183-597245515955",
+              "sortOrder": 37,
+              "fen": "4k3/4p3/8/8/8/4K3/8/8 w - - 0 1",
+              "alternativeFens": [
+                "4k3/8/4p3/8/8/4K3/8/8 w - - 0 1",
+                "2k5/2p5/8/8/8/3K4/8/8 w - - 0 1",
+                "8/4k3/5p2/8/8/4K3/8/8 w - - 0 1",
+                "8/8/3k4/1p6/8/3K4/8/8 w - - 0 1",
+                "8/8/3pk3/8/8/3K4/8/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f4c3e8-716e-11eb-bea4-cfef6e2e38fd",
+              "sortOrder": 38,
+              "fen": "8/8/8/p7/k7/8/2K5/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/p7/8/k7/2K5/8 w - - 0 1",
+                "8/8/8/7p/7k/8/5K2/8 w - - 0 1",
+                "8/8/8/7p/8/7k/5K2/8 w - - 0 1",
+                "8/8/8/8/7p/7k/5K2/8 w - - 0 1",
+                "8/8/8/8/7p/8/5K1k/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f5379c-716e-11eb-80b2-0766351b1fb9",
+              "sortOrder": 39,
+              "fen": "8/8/8/8/4k3/4p3/8/5K2 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/3k4/3p4/8/4K3 w - - 0 1",
+                "8/8/8/8/2k5/2p5/8/3K4 w - - 0 1",
+                "8/8/8/8/2k5/2p5/8/1K6 w - - 0 1",
+                "8/8/8/8/3k4/3p4/8/2K5 w - - 0 1",
+                "8/8/8/8/6k1/6p1/8/5K2 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f58a94-716e-11eb-97f5-51800cefe970",
+              "sortOrder": 40,
+              "fen": "8/8/8/5p2/5k2/8/8/5K2 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/4p3/4k3/8/8/4K3 w - - 0 1",
+                "8/8/8/3p4/3k4/8/8/3K4 w - - 0 1",
+                "8/8/8/2p5/2k5/8/8/2K5 w - - 0 1",
+                "8/8/8/3p4/2k5/8/8/2K5 w - - 0 1",
+                "8/8/8/1p6/2k5/8/8/2K5 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Beginner",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64f5b1c2-716e-11eb-9cd6-6948e287d12e",
+          "url": "intermediate-wins",
+          "name": "Intermediate Wins",
+          "description": "Win more difficult Pawn endings",
+          "drills": [
+            {
+              "id": "dff208f6-8d6d-11eb-912b-db76ff48e202",
+              "sortOrder": 41,
+              "fen": "2k5/8/2K5/1P6/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "1k6/8/1K6/1P6/8/8/8/8 w - - 0 1",
+                "6k1/8/7K/6P1/8/8/8/8 w - - 0 1",
+                "3k4/8/8/4K3/3P4/8/8/8 w - - 0 1",
+                "8/6k1/8/7K/6P1/8/8/8 w - - 0 1",
+                "8/6k1/8/6K1/8/6P1/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "f8034fb8-8d6d-11eb-a06b-9f4485c0fadf",
+              "sortOrder": 42,
+              "fen": "5k2/8/3P4/8/6K1/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "2k5/8/4P3/8/1K6/8/8/8 w - - 0 1",
+                "4k3/8/6P1/8/3K4/8/8/8 w - - 0 1",
+                "5k2/8/3P2K1/8/8/8/8/8 w - - 0 1",
+                "3k4/8/1P6/8/4K3/8/8/8 w - - 0 1",
+                "5k2/K7/3P4/8/8/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "13cd2746-8d6e-11eb-a2ca-9f519645cdd1",
+              "sortOrder": 43,
+              "fen": "8/5k2/4p3/4P1K1/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/2k5/3p4/1K1P4/8/8/8/8 w - - 0 1",
+                "8/5k2/6p1/4K1P1/8/8/8/8 w - - 0 1",
+                "8/3k4/5p2/5P2/3K4/8/8/8 w - - 0 1",
+                "8/2k5/1p6/1P6/3K4/8/8/8 w - - 0 1",
+                "8/p7/P2K4/8/2k5/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f63f84-716e-11eb-9257-539594c379fb",
+              "sortOrder": 44,
+              "fen": "3k4/8/8/8/6P1/8/5K2/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/2k5/8/8/1KP5/8/8 w - - 0 1",
+                "2k5/8/8/8/8/5P2/8/4K3 w - - 0 1",
+                "4k3/8/8/8/8/1P6/8/2K5 w - - 0 1",
+                "8/5k2/8/4K3/8/8/P7/8 w - - 0 1",
+                "5k2/8/8/8/1P6/8/8/3K4 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "29907632-8d6e-11eb-9b13-0b65152b5aad",
+              "sortOrder": 45,
+              "fen": "8/5ppp/8/5PPP/8/2k5/8/1K6 w - - 0 1",
+              "alternativeFens": [
+                "8/ppp5/8/PPP5/8/5k2/8/6K1 w - - 0 1",
+                "8/p7/8/PPpk4/8/8/1K6/8 w - - 0 1",
+                "8/8/5p2/5P2/6Pp/2k5/8/5K2 w - - 0 1",
+                "8/8/2p2k2/pp6/P2P4/1P1K4/8/8 w - - 0 1",
+                "8/8/1pp2k2/p7/P1PK4/1P6/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64f6a97e-716e-11eb-b1ef-599015d6f615",
+          "url": "intermediate-draws",
+          "name": "Intermediate Draws",
+          "description": "Defend more difficult Pawn endings",
+          "drills": [
+            {
+              "id": "64f6cdbe-716e-11eb-bfc6-63e21c6c0a16",
+              "sortOrder": 46,
+              "fen": "8/8/8/4p3/4P3/3k1K2/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/2p5/2P5/1K1k4/8/8 w - - 0 1",
+                "8/8/8/6p1/6P1/5k1K/8/8 w - - 0 1",
+                "8/8/8/5p2/8/8/4kP2/6K1 w - - 0 1",
+                "8/8/5p2/5P2/7k/5K2/8/8 w - - 0 1",
+                "8/8/1p6/k7/2P5/8/8/K7 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f6fa64-716e-11eb-8b51-47528755e404",
+              "sortOrder": 47,
+              "fen": "8/8/7p/6p1/8/7P/4k1K1/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/p7/1p6/8/P7/1K1k4/8 w - - 0 1",
+                "8/8/3p4/2k5/4P3/8/8/1K6 w - - 0 1",
+                "8/5p2/8/6Pk/5P2/8/8/7K w - - 0 1",
+                "8/8/6p1/5k2/3K3P/8/8/8 w - - 0 1",
+                "8/1p6/8/k1P5/8/8/K7/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f72836-716e-11eb-a9dc-49d6648129e2",
+              "sortOrder": 48,
+              "fen": "8/8/8/p6p/P4k1P/8/3K4/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/p6p/P1k4P/8/4K3/8 w - - 0 1",
+                "8/8/p3p3/P3P3/6k1/8/5K2/8 w - - 0 1",
+                "8/8/4p1k1/1p2P3/1P6/3K4/8/8 w - - 0 1",
+                "8/8/2k1p3/4P1p1/6P1/3K4/8/8 w - - 0 1",
+                "8/3k4/4p3/p3P3/P7/8/3K4/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f76c74-716e-11eb-b8ed-378663ed511e",
+              "sortOrder": 49,
+              "fen": "8/5p2/p1p5/4kp1p/PPP1p2P/4K1P1/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/2p2p1p/p1pk4/P2p1PPP/1P1K4/8/8 w - - 0 1",
+                "8/5p2/1k6/1p4p1/1K4P1/1P3P2/8/8 w - - 0 1",
+                "8/8/8/8/5k1p/5p2/5K1P/8 w - - 0 1",
+                "8/8/8/p7/2k5/2p5/P1K5/8 w - - 0 1",
+                "8/8/p6p/3K2kP/8/P7/8/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f78e8e-716e-11eb-8ab4-efd4140d9f67",
+              "sortOrder": 50,
+              "fen": "5k2/6p1/7p/8/7P/7K/8/8 w - - 0 1",
+              "alternativeFens": [
+                "2k5/1p6/p7/8/P7/1K6/8/8 w - - 0 1",
+                "8/8/8/8/p4k2/2p4P/8/1K6 w - - 0 1",
+                "8/8/8/pp1k4/8/P1K5/8/8 w - - 0 1",
+                "8/7p/6p1/8/7P/2Pk4/8/3K4 w - - 0 1",
+                "8/1k6/2pPp3/2K5/8/8/8/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64f7bc38-716e-11eb-a43b-87033966f0e4",
+          "url": "advanced-wins",
+          "name": "Advanced Wins",
+          "description": "Win these tricky Pawn endings",
+          "drills": [
+            {
+              "id": "76508f2a-8d6e-11eb-b6f6-25f3da1d7e79",
+              "sortOrder": 51,
+              "fen": "8/1p6/p1p2kp1/2P1p2p/1P2PP1P/P4K2/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/6p1/1pk2p1p/p2p1P2/P1PP2P1/2K4P/8/8 w - - 0 1",
+                "8/7p/p7/4kpPP/3p4/3K4/P7/8 w - - 0 1",
+                "8/8/p1k5/1pPp1pp1/1P6/3K4/P5P1/8 w - - 0 1",
+                "8/4k3/4p3/3p1pP1/5P2/3KP3/8/8 w - - 0 1",
+                "8/7p/6k1/4Kp2/5PpP/6P1/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "8654ce36-8d6e-11eb-9f60-130d6e9b743e",
+              "sortOrder": 52,
+              "fen": "8/8/4k2p/8/pP1pp3/P5P1/3K3P/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/4k3/p2p4/4p1Pp/PP5P/3K4/8 w - - 0 1",
+                "8/8/p3k3/P2p3p/1P2p3/7P/3K2P1/8 w - - 0 1",
+                "8/8/p7/P7/1P1kp2p/7P/3K2P1/8 w - - 0 1",
+                "8/8/3k4/1p1pp1p1/8/1P5P/P2K2P1/8 w - - 0 1",
+                "8/8/6p1/1pp1k3/4p1PP/1PPpK3/P7/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "9d7ad312-8d6e-11eb-9112-cfc467ef9c26",
+              "sortOrder": 53,
+              "fen": "8/8/1p1k4/5pp1/PPK1p2p/6P1/5PP1/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/4k1p1/1pp5/p2p1KPP/1P6/1PP5/8 w - - 0 1",
+                "8/5k2/2p2p2/1p4p1/1p4PP/1P1K4/1PP5/8 w - - 0 1",
+                "8/8/1p1kp3/5ppp/PP1K4/6P1/5PP1/8 w - - 0 1",
+                "8/8/1p1pkpp1/p1p5/P3KPP1/1PP5/1P6/8 w - - 0 1",
+                "8/8/4k1p1/ppp5/4KPP1/1P6/P1P5/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "b1af8274-8d6e-11eb-94a4-872e6f69a111",
+              "sortOrder": 54,
+              "fen": "8/2k3pp/p3p3/1pK1Pp2/1p6/8/P1P2PPP/8 w - - 0 1",
+              "alternativeFens": [
+                "8/pp3k2/3p3p/2pP1Kp1/6p1/8/PPP2P1P/8 w - - 0 1",
+                "8/ppp1k3/3p3p/6p1/2PPK3/6P1/PP3P2/8 w - - 0 1",
+                "8/2p5/1p1p2k1/p2P2p1/P1P1K1P1/5P2/1P6/8 w - - 0 1",
+                "8/2pk4/pp1p3p/3P2p1/PPPK2P1/5P2/8/8 w - - 0 1",
+                "8/2k5/2p3p1/1pK2p2/1p3P1P/6P1/P1P5/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f89900-716e-11eb-9965-d1d4a71ce429",
+              "sortOrder": 55,
+              "fen": "4k3/ppp2ppp/2p5/8/4P3/8/PPP2PPP/4K3 w - - 0 1",
+              "alternativeFens": [
+                "4k3/ppp2ppp/5p2/8/3P4/8/PPP2PPP/4K3 w - - 0 1",
+                "4k3/pp3ppp/2p2p2/8/3P4/8/PPP2PPP/4K3 w - - 0 1",
+                "3k4/ppp2ppp/2p5/4P3/8/8/PPP2PPP/4K3 w - - 0 1",
+                "8/pp1k2pp/2pp2p1/8/PP1PP3/2PK4/6PP/8 w - - 0 1",
+                "4k3/5ppp/p4p2/1p6/4P3/1P3P2/P5PP/4K3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64f8dc3a-716e-11eb-b065-81ba9c02aeb0",
+          "url": "advanced-draws",
+          "name": "Advanced Draws",
+          "description": "Defend these tricky Pawn endings",
+          "drills": [
+            {
+              "id": "64f903c2-716e-11eb-bd70-e335ec91d10f",
+              "sortOrder": 56,
+              "fen": "8/6k1/4K1p1/6Pp/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/1k6/1p6/pP1K4/8/8/8/8 w - - 0 1",
+                "8/5k2/6p1/6Pp/8/5K2/8/8 w - - 0 1",
+                "8/8/1p1k4/pP6/8/3K4/8/8 w - - 0 1",
+                "8/8/1p2k3/pP6/8/3K4/8/8 w - - 0 1",
+                "8/4k1p1/6Pp/8/3K4/8/8/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "d84c8404-8d6e-11eb-93e4-abdb65989a30",
+              "sortOrder": 57,
+              "fen": "8/4k3/5p2/4p3/4P3/8/5K2/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/3kp3/5p2/2K2P2/8/8 w - - 0 1",
+                "8/1k6/2p5/3p4/3P4/8/1K6/8 w - - 0 1",
+                "8/8/5k2/7p/6p1/6P1/8/5K2 w - - 0 1",
+                "8/8/5k1p/6p1/5pP1/5P2/5K2/8 w - - 0 1",
+                "8/1k6/p7/1p6/8/8/1P6/1K6 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64f9e99a-716e-11eb-a7e7-71c1281ee385",
+              "sortOrder": 58,
+              "fen": "8/5ppp/8/5PPP/1p6/2k5/5K2/8 w - - 0 1",
+              "alternativeFens": [
+                "8/ppp5/8/PPP5/6p1/K6k/8/8 w - - 0 1",
+                "8/2p1pp2/8/3PPP2/2K4p/6k1/8/8 w - - 0 1",
+                "8/ppp5/8/PP1P4/2K2p2/6k1/8/8 w - - 0 1",
+                "8/3p4/2p5/4P3/1P1P2p1/2K3k1/8/8 w - - 0 1",
+                "8/3p4/p1p5/P7/1PP2p2/3K1k2/8/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64fa6082-716e-11eb-b3f2-c9a91a01ce6c",
+              "sortOrder": 59,
+              "fen": "8/6pp/5p2/3k1PP1/5K1P/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/pp6/2p5/1PP1k3/P1K5/8/8/8 w - - 0 1",
+                "8/pp6/2p5/1PPk4/PK6/8/8/8 w - - 0 1",
+                "8/pp6/2p5/1PP5/P7/1K1k4/8/8 w - - 0 1",
+                "8/6pp/5p2/5PP1/5K1P/3k4/8/8 w - - 0 1",
+                "8/pp6/2p5/1PP1k3/P7/2K5/8/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "64faa9ac-716e-11eb-98b3-fd143daa2fd5",
+              "sortOrder": 60,
+              "fen": "8/p7/3k4/3P4/3K1Ppp/8/P6P/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/4k3/4P3/ppP1K2p/8/P6P/8 w - - 0 1",
+                "8/8/1p4k1/p3P3/P1P1K1pp/8/7P/8 w - - 0 1",
+                "8/3k4/8/p7/P1PK2pp/8/7P/8 w - - 0 1",
+                "8/8/2pp1k2/p6p/P2P1P2/5K2/7P/8 w - - 0 1",
+                "8/8/8/kpp5/5p2/2PP1P1p/4K2P/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            }
+          ]
+        }
+      ],
+      "imageUrl": "https://www.chess.com/bundles/web/images/color-icons/piece-white-pawn.svg",
+      "lightModeImageUrl": "https://www.chess.com/bundles/web/images/color-icons/piece-black-pawn.svg"
+    },
+    {
+      "id": "64fae642-716e-11eb-a8d7-e52722ac068d",
+      "url": "minor-piece",
+      "name": "Minor Piece",
+      "themes": [
+        {
+          "id": "64fb2224-716e-11eb-b3bd-31b1a77cb233",
+          "url": "bishop",
+          "name": "Bishop",
+          "description": "Win with the Bishop",
+          "drills": [
+            {
+              "id": "64fb5226-716e-11eb-934d-f587e949baf0",
+              "sortOrder": 61,
+              "fen": "7K/2k4B/6P1/8/2b5/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "K7/B4k2/1P6/8/8/6b1/8/8 w - - 0 1",
+                "5K2/5B2/4P3/8/b7/2k5/8/8 w - - 0 1",
+                "3K4/2P5/b7/8/8/7B/5k2/8 w - - 0 1",
+                "4K3/8/7B/2b2P2/8/8/1k6/8 w - - 0 1",
+                "4K3/8/8/5Pb1/1B6/8/1k6/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "4e3c6c04-8d71-11eb-9d57-6db9638d7740",
+              "sortOrder": 62,
+              "fen": "8/p4p2/1p1k1pbp/3p4/3P1KBP/8/PP3PP1/8 w - - 0 1",
+              "alternativeFens": [
+                "8/2p4p/pbp1k1p1/4p3/PBK1P3/8/1PP3PP/8 w - - 0 1",
+                "8/pp3p1b/3k1p2/3p4/P2P1K2/1P3P1B/2P3P1/8 w - - 0 1",
+                "2k5/pp1b1pp1/8/8/P4KP1/1P1B1P2/2P5/8 w - - 0 1",
+                "8/pp3ppb/3k4/3p2PP/3K4/1P3P2/P7/5B2 w - - 0 1",
+                "4k3/p2p1b2/5pp1/7p/P2K3P/1P4P1/5P2/5B2 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "7b99fdc4-8d71-11eb-9301-359cf4fb3113",
+              "sortOrder": 63,
+              "fen": "5k2/3b1P2/3p1K2/4p3/1pP1P3/1P1B4/8/8 w - - 0 1",
+              "alternativeFens": [
+                "2k5/2P1b3/2K1p3/3p4/3P1Pp1/4B1P1/8/8 w - - 0 1",
+                "6k1/4b1P1/4p1K1/5p2/3P1Pp1/4B1P1/8/8 w - - 0 1",
+                "3k4/2p3b1/3pK3/1P1Pp3/4P3/4B3/8/8 w - - 0 1",
+                "4b1k1/2p2p2/5Kp1/4P1Pp/3P3P/1B6/8/8 w - - 0 1",
+                "2k5/2P1pb2/2Kp4/4pP2/2P1P3/8/4B3/8 w - - 0 7"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "8e109490-8d71-11eb-9312-d576c7e37ffa",
+              "sortOrder": 64,
+              "fen": "8/BK6/6p1/b2k4/P5P1/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/6KB/1p6/4k2b/1P5P/8/8/8 w - - 0 1",
+                "8/1k4p1/p7/3KPPb1/P2B4/8/8/8 w - - 0 1",
+                "8/1BK5/7p/1b2k3/1P5P/8/8/8 w - - 0 1",
+                "8/4k3/7p/2K5/3P2BP/8/8/5b2 w - - 0 1",
+                "8/4k3/8/1p6/1P1K1P2/5b1B/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "644c2fd4-8d71-11eb-bd49-0b89324a97ff",
+              "sortOrder": 65,
+              "fen": "2b5/pp3p2/6k1/5p1p/4pK2/1P2P2P/P3BPP1/8 w - - 0 1",
+              "alternativeFens": [
+                "5b2/2p3pp/1k6/p1p5/2Kp4/P2P2P1/1PPB3P/8 w - - 0 1",
+                "5b2/2p3p1/5k1p/2p5/p2pK2P/P2P2P1/1PPB4/8 w - - 0 1",
+                "5b2/6p1/4k2p/B1p5/p2pK2P/P2P2P1/1PP5/8 w - - 0 1",
+                "6b1/pB4k1/1p4p1/1P3p1p/P2Kp2P/6P1/4PP2/8 w - - 0 1",
+                "6b1/1B2k3/1p4p1/1p3p1p/1P2pK1P/P5P1/4PP2/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64fc0dba-716e-11eb-8654-3f01b56f3081",
+          "url": "knight",
+          "name": "Knight",
+          "description": "Win with the Knight",
+          "drills": [
+            {
+              "id": "64fc334e-716e-11eb-8160-17636d555110",
+              "sortOrder": 66,
+              "fen": "8/1n2k3/8/P7/8/8/8/6K1 w - - 0 1",
+              "alternativeFens": [
+                "8/3k2n1/8/7P/8/8/8/2K5 w - - 0 1",
+                "4n3/8/5P2/3k4/8/5K2/8/8 w - - 0 1",
+                "1n6/8/2P5/4k3/8/K7/8/8 w - - 0 1",
+                "8/n7/4K3/8/7P/k7/8/8 w - - 0 1",
+                "3k4/8/3N4/P1n5/8/8/K7/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64fc60e4-716e-11eb-93e4-2f4706b8ce0d",
+              "sortOrder": 67,
+              "fen": "8/1pn1k3/8/P5p1/6P1/1P2N1KP/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/3k1np1/8/1p5P/1P6/PK1N2P1/8/8 w - - 0 1",
+                "4k3/5np1/1p6/1P5P/P1KN4/6P1/8/8 w - - 0 1",
+                "4k3/4n3/7p/8/1p1N3P/1P6/PK4P1/8 w - - 0 1",
+                "4k3/4n3/1p4p1/1P6/2P1N1P1/4K3/5P2/8 w - - 0 1",
+                "4k3/2n5/2p3p1/2P5/1P1KN1P1/8/7P/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64fc85e2-716e-11eb-8acd-ffb37fae445b",
+              "sortOrder": 68,
+              "fen": "7k/1p3K1n/8/P7/8/8/5N2/8 w - - 0 1",
+              "alternativeFens": [
+                "k7/n1K3p1/8/7P/8/8/2N5/8 w - - 0 1",
+                "8/6p1/8/k1K4P/1n1N4/8/8/8 w - - 0 1",
+                "k7/n1K2p2/8/6P1/8/8/2N5/8 w - - 0 1",
+                "n7/k5p1/2K5/7P/8/2N5/8/8 w - - 0 1",
+                "8/5p2/8/4P3/8/4N3/n1K5/k7 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64fcbad0-716e-11eb-8d4a-1d9c0274b016",
+              "sortOrder": 69,
+              "fen": "5n2/1p3kp1/p7/8/2P1N3/1P1K4/P5P1/8 w - - 0 1",
+              "alternativeFens": [
+                "2n5/1pk3p1/7p/8/3N1P2/4K1P1/1P5P/8 w - - 0 1",
+                "4k3/1p1n2p1/7p/8/4NP2/4K1P1/1P5P/8 w - - 0 1",
+                "2nk4/1p6/6pp/6N1/5P2/4K1P1/1P5P/8 w - - 0 1",
+                "5kn1/2p3p1/1p6/8/2PN4/PP2K1P1/8/8 w - - 0 1",
+                "2k5/1pn2p2/4p1p1/8/4NPP1/4K2P/1P6/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "b481f862-8d71-11eb-a208-251f09edddae",
+              "sortOrder": 70,
+              "fen": "8/8/PK1n3p/7P/1k3p2/5Np1/6P1/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/p3n1KP/P7/2p3k1/1pN5/1P6/8 w - - 0 1",
+                "8/4n1K1/8/p6P/P1p3k1/1pN5/1P6/8 w - - 0 1",
+                "2n5/8/2K4p/P4p2/5Pk1/5Np1/6P1/8 w - - 0 1",
+                "8/1K1n4/5kpp/P4p2/5P2/4N1P1/8/8 w - - 0 1",
+                "8/1k3n2/p7/1p3K1P/1PpN4/2P5/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64fd09cc-716e-11eb-8ff1-697fce944f1e",
+          "url": "knight-vs-bishop",
+          "name": "Knight vs Bishop",
+          "description": "Win with the Knight or Bishop",
+          "drills": [
+            {
+              "id": "64fd2966-716e-11eb-8d03-ef74df3433a8",
+              "sortOrder": 71,
+              "fen": "8/p1p3k1/5p2/8/8/P7/4BKP1/2n5 w - - 0 1",
+              "alternativeFens": [
+                "8/1k3p1p/2p5/8/8/7P/1PKB4/5n2 w - - 0 1",
+                "6k1/5p2/5Bp1/8/2K5/5P2/6P1/3n4 w - - 0 1",
+                "7k/7p/6p1/n3Pp2/5P2/3K1B2/8/8 w - - 0 1",
+                "k7/p7/8/3K3n/8/1P6/P6B/8 w - - 0 1",
+                "1k3n2/pp6/8/7K/2P5/1P6/P1B5/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64fd4cca-716e-11eb-9d48-41f5341a9917",
+              "sortOrder": 72,
+              "fen": "8/8/4b1p1/2k2p2/p1p1pP2/PpP1P1PK/1P1N4/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/1p1b4/2p2k2/2Pp1p1p/KP1P1PpP/4N1P1/8 w - - 0 1",
+                "8/8/6k1/2p1b3/KpPp1p1p/1P1P1PpP/4N1P1/8 w - - 0 1",
+                "8/4bk2/5p2/2p3p1/1pP1K1Pp/1P3P1P/P3N3/8 w - - 0 1",
+                "8/2kb4/p7/1p3p1p/1PpK1Pp1/P1P3P1/4N2P/8 w - - 0 1",
+                "8/3b2k1/p1p3p1/1pP2pP1/1P1K1P2/P3N3/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "b98ecfbe-8d72-11eb-af76-f9901161ee0b",
+              "sortOrder": 73,
+              "fen": "8/1p6/p1n3pp/2P1k3/PPKp4/5BP1/7P/8 w - - 0 1",
+              "alternativeFens": [
+                "8/6p1/pp3n1p/3k1P2/4pKPP/1PB5/P7/8 w - - 0 1",
+                "8/5kp1/pp1n4/2pp1P1P/5KP1/1PB5/P7/8 w - - 0 1",
+                "4n3/p5p1/1p1k2Pp/2p2P2/4PK2/1PB5/P7/8 w - - 0 1",
+                "3n4/1p6/2p5/1Pp1k2p/P1P3p1/3K2P1/5PB1/8 w - - 0 1",
+                "8/5n2/1p2k2p/2p3p1/P1P3P1/1P1K1PB1/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "d17019da-8d72-11eb-ba06-9dc86221acfc",
+              "sortOrder": 74,
+              "fen": "8/8/2p5/B5kP/p3n3/PP6/K7/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/5p2/Pk5B/3n3p/6PP/7K/8 w - - 0 1",
+                "8/2B5/k4p2/2n4p/P5PP/7K/8/8 w - - 0 1",
+                "8/6k1/2p3p1/1pn5/P6P/KP6/3B4/8 w - - 0 1",
+                "8/6k1/4n1p1/1p6/7P/PPK1B3/8/8 w - - 0 1",
+                "2n5/1p2k3/6p1/8/5PPK/P3B3/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "e8a4e1d0-8d72-11eb-9123-95bf6cfbe6c9",
+              "sortOrder": 75,
+              "fen": "2k5/8/P7/2KNp1P1/4b2p/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "5k2/8/7P/1P1pNK2/p2b4/8/8/8 w - - 0 1",
+                "5k2/8/7P/pP1pN3/5K2/8/5b2/8 w - - 0 1",
+                "3k4/8/2p5/P2pN3/5KP1/8/5b2/8 w - - 0 1",
+                "8/3k4/8/P2Np1KP/5p2/8/4b3/8 w - - 0 1",
+                "8/8/4k3/1P2pN1p/4K1PP/8/4b3/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64fe2244-716e-11eb-baa3-2f6043bc42a5",
+          "url": "knight-vs-pawns",
+          "name": "Knight vs Pawns",
+          "description": "Win with a Knight vs Pawns",
+          "drills": [
+            {
+              "id": "15c86d3a-8d73-11eb-8eef-b13a853dc3d6",
+              "sortOrder": 76,
+              "fen": "8/8/8/8/8/4N2p/5K2/7k w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/8/p2N4/2K5/k7 w - - 0 1",
+                "4N3/8/6p1/8/8/7p/5K1k/8 w - - 0 1",
+                "3N4/8/8/1p6/8/p7/k1K5/8 w - - 0 1",
+                "8/4N3/8/8/8/7p/7k/5K2 w - - 0 1",
+                "8/8/8/8/7p/8/7N/5K1k w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "23ade718-8d73-11eb-bc35-9588a49f5f39",
+              "sortOrder": 77,
+              "fen": "4k3/8/4N3/5n1P/8/8/8/7K w - - 0 1",
+              "alternativeFens": [
+                "3k4/8/3N4/P1n5/8/8/8/K7 w - - 0 1",
+                "5k2/P7/1n6/2N5/6K1/8/8/8 w - - 0 1",
+                "6K1/4k3/7P/8/5Nn1/8/8/8 w - - 0 1",
+                "1K6/3k4/P7/8/1n6/5N2/8/8 w - - 0 1",
+                "8/5n2/2k5/5KP1/8/3N4/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "34e45d32-8d73-11eb-8f31-f9bec5c2fe63",
+              "sortOrder": 78,
+              "fen": "8/5p2/5Np1/4k1P1/8/8/4K3/8 w - - 0 1",
+              "alternativeFens": [
+                "8/2p5/1pN5/1P1k4/8/8/3K4/8 w - - 0 1",
+                "8/5p2/4pN2/4P1k1/8/8/4K3/8 w - - 0 1",
+                "8/8/1pN5/1Ppk4/8/8/4K3/8 w - - 0 1",
+                "8/8/8/5Np1/4kpP1/8/4K3/8 w - - 0 1",
+                "8/8/8/8/2k5/2p5/2PpKN2/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "44159be0-8d73-11eb-b6dc-332c4073bda6",
+              "sortOrder": 79,
+              "fen": "8/7p/5K2/5N2/6k1/6P1/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/p7/2K5/2N5/1k6/1P6/8/8 w - - 0 1",
+                "8/6p1/4K3/4N3/5k2/5P2/8/8 w - - 0 1",
+                "8/8/4p3/2K5/2N5/3k4/3P4/8 w - - 0 1",
+                "8/8/1pk5/8/N7/K7/P7/8 w - - 0 1",
+                "8/8/8/3p4/3k4/5K2/3NP3/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "567cfaee-8d73-11eb-846a-7bc2779c5e62",
+              "sortOrder": 80,
+              "fen": "8/6p1/2P1n3/KPk1p2P/3pP2P/3P1P2/2P5/8 w - - 0 1",
+              "alternativeFens": [
+                "8/1p6/3n1P2/P2p1kPK/P2Pp3/2P1P3/5P2/8 w - - 0 1",
+                "3n4/8/1p3Pk1/3p2P1/P2PpK2/P1P1P3/5P2/8 w - - 0 1",
+                "2k5/Kn6/1P1p4/3P2p1/P1P1P3/7P/7P/8 w - - 0 1",
+                "5n2/4k1p1/3p4/3PpKPP/1P2P3/2P5/8/8 w - - 0 1",
+                "8/4n1p1/8/K1P1p2P/1PkpP2P/5P2/1P1P4/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "64ff8ce2-716e-11eb-9758-8b79a187796f",
+          "url": "bishop-vs-pawns",
+          "name": "Bishop vs Pawns",
+          "description": "Win with a Bishop vs Pawns",
+          "drills": [
+            {
+              "id": "95f47210-8d73-11eb-85ec-3b89d5056195",
+              "sortOrder": 81,
+              "fen": "8/3b3p/8/1P2P3/8/2K5/5k2/8 w - - 0 1",
+              "alternativeFens": [
+                "8/p3b3/8/3P2P1/8/5K2/2k5/8 w - - 0 1",
+                "8/8/7p/2P1bP2/8/8/8/2K3k1 w - - 0 1",
+                "5b2/p7/5P1p/2P5/8/4k3/8/2K5 w - - 0 1",
+                "8/1p6/8/3P2P1/5b2/3k4/8/3K4 w - - 0 1",
+                "8/4b3/8/1pP2P2/8/3k4/8/3K4 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "64ffdf08-716e-11eb-844e-679daae6c183",
+              "sortOrder": 82,
+              "fen": "8/8/6p1/3k1pBp/7P/4K3/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/1p6/pBp1k3/P7/3K4/8/8 w - - 0 1",
+                "8/8/2p5/1pBp1k2/1P6/4K3/8/8 w - - 0 1",
+                "8/8/8/8/5p2/4pBpk/4P3/6K1 w - - 0 1",
+                "8/6p1/4kpBp/7P/5K2/8/8/8 w - - 0 1",
+                "8/8/8/4p3/3pBp1k/3P4/6K1/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "aa9acd22-8d73-11eb-8640-57a8c2f797e7",
+              "sortOrder": 83,
+              "fen": "8/p7/8/1p1k3p/8/7P/6P1/B5K1 w - - 0 1",
+              "alternativeFens": [
+                "8/7p/8/p3k1p1/8/P7/1P6/1K5B w - - 0 1",
+                "8/7p/1p2k3/6p1/1P6/2P5/2K5/7B w - - 0 1",
+                "8/8/1p4p1/4k2p/1P6/2P5/2K3B1/8 w - - 0 1",
+                "8/5p2/2p5/1kP5/1P6/6B1/2K5/8 w - - 0 1",
+                "8/1p6/8/4k2p/1P4p1/P7/2K2B2/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "65002792-716e-11eb-baab-83a31c2c0b15",
+              "sortOrder": 84,
+              "fen": "4k3/8/8/7P/8/4K2B/8/8 w - - 0 1",
+              "alternativeFens": [
+                "3k4/8/8/P7/8/B2K4/8/8 w - - 0 1",
+                "8/4k3/8/7P/8/4K3/B7/8 w - - 0 1",
+                "2k5/8/8/P7/8/4K3/7B/8 w - - 0 1",
+                "2k5/8/P7/2K5/8/8/8/B7 w - - 0 1",
+                "B4k2/8/7P/2K5/8/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "65005bcc-716e-11eb-b0da-0343843ccb6e",
+              "sortOrder": 85,
+              "fen": "6k1/6p1/6Bp/3K3P/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "1k6/1p6/pB6/P3K3/8/8/8/8 w - - 0 1",
+                "2k5/1p6/pB3K2/P7/8/8/8/8 w - - 0 1",
+                "1k6/1p6/p7/P7/3BK3/8/8/8 w - - 0 1",
+                "7k/6p1/7p/7P/4K3/8/B7/8 w - - 0 1",
+                "5k2/6p1/4K2p/7P/8/8/B7/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        }
+      ],
+      "imageUrl": "https://www.chess.com/bundles/web/images/color-icons/piece-white-bishop.svg",
+      "lightModeImageUrl": "https://www.chess.com/bundles/web/images/color-icons/piece-black-bishop.svg"
+    },
+    {
+      "id": "6500880e-716e-11eb-96e1-89d141a75f2d",
+      "url": "rook",
+      "name": "Rook",
+      "themes": [
+        {
+          "id": "6500aa64-716e-11eb-8e4c-a782dc7814b6",
+          "url": "winning-rook-endings",
+          "name": "Winning Rook Endings",
+          "description": "Win with the Rook",
+          "drills": [
+            {
+              "id": "6500c968-716e-11eb-b9ec-ab35eca9333d",
+              "sortOrder": 86,
+              "fen": "R7/P5k1/8/8/5P2/8/r7/6K1 w - - 0 1",
+              "alternativeFens": [
+                "7R/1k5P/8/8/2P5/8/7r/1K6 w - - 0 1",
+                "7R/1k6/7P/8/7r/2P5/8/1K6 w - - 0 1",
+                "R7/6k1/8/P7/4P3/r7/8/6K1 w - - 0 1",
+                "R7/P6k/8/8/8/5P2/r7/4K3 w - - 0 1",
+                "7R/k7/8/2P4P/8/8/r7/4K3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "6500f0dc-716e-11eb-bcd8-45683ec89a39",
+              "sortOrder": 87,
+              "fen": "1K1k4/1P6/8/8/8/8/r7/2R5 w - - 0 1",
+              "alternativeFens": [
+                "4k1K1/6P1/8/8/8/8/7r/5R2 w - - 0 1",
+                "4K3/1k2P3/8/8/8/8/5r2/2R5 w - - 0 1",
+                "5K2/3k1P2/8/8/8/8/6r1/4R3 w - - 0 1",
+                "8/2P5/3K1k2/8/4R3/8/8/2r5 w - - 0 1",
+                "1K6/1P1k4/8/8/8/8/r7/4R3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "1ef7f52c-8d75-11eb-b32b-816d8d8472cc",
+              "sortOrder": 88,
+              "fen": "8/6k1/R7/7P/6PK/8/p7/r7 w - - 0 1",
+              "alternativeFens": [
+                "8/1k6/7R/P7/KP6/8/7p/7r w - - 0 1",
+                "8/2k5/6R1/1P6/2PK4/8/6p1/6r1 w - - 0 1",
+                "1R6/5k2/8/5P2/3KP3/8/1p6/1r6 w - - 0 1",
+                "1R6/6k1/8/8/5P2/6PK/1p6/1r6 w - - 0 1",
+                "7R/1k6/8/3P4/4PK2/8/7p/7r w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "31411d9e-8d75-11eb-ac14-a7f7bea59a99",
+              "sortOrder": 89,
+              "fen": "5rk1/1RR2pp1/p1p1P2p/5r2/5P2/2P3P1/6KP/8 w - - 0 1",
+              "alternativeFens": [
+                "1kr5/1pp2RR1/p2P1p1p/2r5/2P5/1P2P3/PK6/8 w - - 0 1",
+                "5rk1/1R1R1pp1/p6p/1p2Pr2/5P2/2P3P1/6KP/8 w - - 0 1",
+                "5rk1/R2R1p2/p5p1/4P2p/5P2/5KP1/2P4r/8 w - - 0 1",
+                "1r3rk1/R2R1pp1/7p/1p2PP1P/p5P1/6K1/1P6/8 w - - 2 2",
+                "3r1rk1/1RR2pp1/p6p/4PP2/8/2P3P1/6KP/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "441b908e-8d75-11eb-8d9e-1be0e36c55fe",
+              "sortOrder": 90,
+              "fen": "8/5pk1/r5pp/P7/3R3P/6P1/5PK1/8 w - - 0 1",
+              "alternativeFens": [
+                "8/pk6/1pp4r/7P/P3R3/1P6/1KP5/8 w - - 0 1",
+                "k7/2p4r/1p6/p7/P2K4/1P5P/2PR4/8 w - - 0 1",
+                "8/r4pk1/P5p1/3R3p/8/6PP/5PK1/8 w - - 0 1",
+                "3r4/P4pk1/6p1/7p/5K2/6PP/4RP2/8 w - - 0 1",
+                "8/pk1r4/1pp5/8/3P3P/2PR4/1PK5/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "6501aa36-716e-11eb-8ef8-fba27fcb28ee",
+          "url": "drawn-rook-endings",
+          "name": "Drawn Rook Endings",
+          "description": "Draw with the Rook",
+          "drills": [
+            {
+              "id": "6501c6f6-716e-11eb-b937-7143288b0cff",
+              "sortOrder": 91,
+              "fen": "8/8/8/8/2R5/6pk/1r6/6K1 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/5R2/kp6/6r1/1K6 w - - 0 1",
+                "8/8/8/R7/6p1/7k/1r6/6K1 w - - 0 1",
+                "8/4R3/8/8/6p1/5k2/1r6/6K1 w - - 0 1",
+                "8/4R3/7r/8/1p6/2k5/8/1K6 w - - 0 1",
+                "6r1/5R2/8/8/1k6/p7/8/K7 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "6501f126-716e-11eb-99e2-b7721adde114",
+              "sortOrder": 92,
+              "fen": "8/8/7R/8/3pk3/8/1r6/3K4 w - - 0 1",
+              "alternativeFens": [
+                "8/8/R7/8/3kp3/8/6r1/4K3 w - - 0 1",
+                "7r/1R6/8/8/4kp2/8/8/4K3 w - - 0 1",
+                "r7/7R/8/8/2p5/3k4/8/3K4 w - - 0 1",
+                "7R/8/8/3pk3/8/8/r7/3K4 w - - 0 1",
+                "R7/8/8/3kp3/8/8/7r/5K2 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "6502161a-716e-11eb-bf33-2f6010e4475d",
+              "sortOrder": 93,
+              "fen": "8/8/1k6/1p6/8/7R/1K5p/7r w - - 0 1",
+              "alternativeFens": [
+                "8/8/6k1/6p1/8/R7/p5K1/r7 w - - 0 1",
+                "R7/8/5k2/8/6p1/8/p6K/r7 w - - 0 1",
+                "7R/8/8/1p6/3k4/8/1K4p1/6r1 w - - 0 1",
+                "6R1/8/2k5/1p6/8/8/1K3p2/5r2 w - - 0 1",
+                "7R/8/8/8/1p6/3k4/1K2p3/4r3 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "65023c08-716e-11eb-930e-57b6bcf3de9e",
+              "sortOrder": 94,
+              "fen": "8/7k/8/5pKp/8/6pr/2R5/8 w - - 0 1",
+              "alternativeFens": [
+                "8/k7/8/pKp5/8/rp6/5R2/8 w - - 0 1",
+                "8/7k/5K2/5p1p/8/8/2R3pr/8 w - - 0 1",
+                "8/k7/2K5/p7/2p5/8/rp5R/8 w - - 0 1",
+                "8/k7/8/pK6/2p5/rp6/7R/8 w - - 0 1",
+                "8/7k/5K2/8/5p2/6pr/R6p/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "791e951a-8d75-11eb-8521-91e1015a9235",
+              "sortOrder": 95,
+              "fen": "8/8/4ppk1/3pP3/1P1RpPP1/8/1r6/6K1 w - - 0 1",
+              "alternativeFens": [
+                "8/8/1kpp4/3Pp3/1PPpR1P1/8/6r1/1K6 w - - 0 1",
+                "8/8/2kpp3/4Pp2/2PPpR1P/8/2K5/7r w - - 0 1",
+                "8/8/4ppk1/3pP3/P2RpPP1/6K1/r7/8 w - - 0 1",
+                "8/8/5ppk/4pP2/1P2RpPP/8/1r6/7K w - - 0 1",
+                "8/8/kpp5/2Pp4/PPpR1P2/8/5r2/K7 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "65028726-716e-11eb-b500-351d4d11dda6",
+          "url": "rook-vs-pawns",
+          "name": "Rook vs Pawns",
+          "description": "Win with Rook vs Pawns",
+          "drills": [
+            {
+              "id": "5e108f3e-8d76-11eb-9ec8-e9ab4efc64dd",
+              "sortOrder": 96,
+              "fen": "8/8/8/6p1/3R4/7k/3K4/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/1p6/4R3/k7/4K3/8 w - - 0 1",
+                "8/8/8/8/6p1/3R4/7k/3K4 w - - 0 1",
+                "8/8/6p1/3R4/7k/3K4/8/8 w - - 0 1",
+                "8/8/8/8/1p6/7R/k7/4K3 w - - 0 1",
+                "8/8/1p6/7R/k7/8/8/4K3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "6dc741fc-8d76-11eb-b449-3913d322367b",
+              "sortOrder": 97,
+              "fen": "3R4/8/8/8/8/8/4K1pk/8 w - - 0 1",
+              "alternativeFens": [
+                "4R3/8/8/8/8/8/kp1K4/8 w - - 0 1",
+                "4R3/8/8/8/8/8/kp6/3K4 w - - 0 1",
+                "3R4/8/8/8/8/8/6pk/4K3 w - - 0 1",
+                "3R4/8/8/8/8/8/4K1p1/7k w - - 0 1",
+                "7R/8/8/8/8/1k1K4/1p6/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "7ca31e26-8d76-11eb-b1e5-811be45983ad",
+              "sortOrder": 98,
+              "fen": "8/7r/1P6/2P2k2/3K4/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/r7/6P1/2k2P2/4K3/8/8/8 w - - 0 1",
+                "8/r7/5P2/2k3P1/8/5K2/8/8 w - - 0 1",
+                "8/8/6P1/2k2P2/5K2/8/r7/8 w - - 0 1",
+                "8/8/1P6/2P2k2/8/K7/5r2/8 w - - 0 1",
+                "3r4/8/1P6/2P2k2/2K5/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "8c16cec0-8d76-11eb-9fde-cd12e237e750",
+              "sortOrder": 99,
+              "fen": "8/7r/1P1K4/3P4/8/5k2/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/r7/4K1P1/4P3/8/2k5/8/8 w - - 0 1",
+                "8/7r/1P6/1K1P4/8/5k2/8/8 w - - 0 1",
+                "8/7r/3P4/1PK5/8/5k2/8/8 w - - 0 1",
+                "8/2r5/4K1P1/4P3/8/2k5/8/8 w - - 0 1",
+                "8/8/r7/4PKP1/8/8/3k4/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "9c26bb68-8d76-11eb-bf07-436b5c7edcc7",
+              "sortOrder": 100,
+              "fen": "8/8/P7/1PK5/8/8/8/r3k3 w - - 0 1",
+              "alternativeFens": [
+                "8/8/7P/5KP1/8/8/8/3k3r w - - 0 1",
+                "8/8/P7/1PK5/8/8/8/r2k4 w - - 0 1",
+                "8/2K5/P7/1P6/8/8/r7/5k2 w - - 0 1",
+                "8/8/6P1/4KP2/8/8/8/3k2r1 w - - 0 1",
+                "8/8/4P3/2KP4/8/8/8/2k1r3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        }
+      ],
+      "imageUrl": "https://www.chess.com/bundles/web/images/color-icons/piece-white-rook.svg",
+      "lightModeImageUrl": "https://www.chess.com/bundles/web/images/color-icons/piece-black-rook.svg"
+    },
+    {
+      "id": "6503e62a-716e-11eb-b722-dd5f7945b257",
+      "url": "queen",
+      "name": "Queen",
+      "themes": [
+        {
+          "id": "65041082-716e-11eb-b3dc-55db3f72b534",
+          "url": "basic-queen-endings",
+          "name": "Basic Queen Endings",
+          "description": "Win these basic Queen endings",
+          "drills": [
+            {
+              "id": "65048238-716e-11eb-bcd2-6373c6f4975b",
+              "sortOrder": 101,
+              "fen": "8/8/2k5/8/8/6Q1/4K3/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/5k2/8/8/1Q6/3K4/8 w - - 0 1",
+                "8/8/4k3/8/8/Q7/2K5/8 w - - 0 1",
+                "8/8/3k4/8/8/7Q/4K3/8 w - - 0 1",
+                "8/2k5/8/8/7Q/3K4/8/8 w - - 0 1",
+                "8/5k2/8/8/Q7/4K3/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "ec53bc4e-ba7f-11ec-8726-09e04fa81ed4",
+              "sortOrder": 102,
+              "fen": "8/5k2/4q3/2Q5/2KP4/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "2k5/3q4/5Q2/4PK2/8/8/8/8 w - - 0 1",
+                "k7/1q6/8/7Q/3PK3/8/8/8 w - - 0 1",
+                "7k/6q1/8/Q7/3KP3/8/8/8 w - - 0 1",
+                "2k5/3q4/8/7Q/5PK1/8/8/8 w - - 0 1",
+                "5k2/4q3/8/Q7/1KP5/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "6504daee-716e-11eb-87b2-c796d29b82ac",
+              "sortOrder": 103,
+              "fen": "8/2q5/8/4P2Q/5PK1/8/1k6/8 w - - 0 1",
+              "alternativeFens": [
+                "8/5q2/8/Q2P4/1KP5/8/6k1/8 w - - 0 1",
+                "8/6q1/8/1Q2P3/2KP4/8/7k/8 w - - 0 1",
+                "8/1q6/8/3P2Q1/4PK2/8/k7/8 w - - 0 1",
+                "8/7q/8/2Q2P2/3KP3/8/6k1/8 w - - 0 1",
+                "8/1q6/8/3P2K1/4PQ2/8/2k5/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "650505d2-716e-11eb-8674-95e86de4dd00",
+              "sortOrder": 104,
+              "fen": "6k1/1pq2p2/6p1/7p/P1P1Q3/1P3PP1/5PK1/8 w - - 0 1",
+              "alternativeFens": [
+                "1k6/2p2qp1/1p6/p7/3Q1P1P/1PP3P1/1KP5/8 w - - 0 1",
+                "1k6/p1p2qp1/1p6/8/3Q1P2/1PP3P1/1KP4P/8 w - - 0 1",
+                "6k1/1pq2p1p/6p1/8/P3Q3/1P3PP1/2P2P1K/8 w - - 0 1",
+                "5k2/1pq2p1p/6p1/8/PPP1Q3/5PP1/5P2/6K1 w - - 0 1",
+                "6k1/1pq2p2/6p1/1P5p/P1P1Q3/5PP1/5PK1/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "65052c06-716e-11eb-8a35-a381ff865ad3",
+              "sortOrder": 105,
+              "fen": "6k1/1pq2p2/p3p1p1/7p/P2PQ2P/1P4P1/2P2PK1/8 w - - 0 1",
+              "alternativeFens": [
+                "1k6/2p2qp1/1p1p3p/p7/P2QP2P/1P4P1/1KP2P2/8 w - - 0 1",
+                "8/p1q2p1k/1p2p1p1/7p/P2PQ3/1P4P1/2P2PKP/8 w - - 0 1",
+                "6k1/qp3p1p/2p1p1p1/8/3PQ3/P1P3P1/1P3PKP/8 w - - 0 1",
+                "6k1/1pq2p2/p3p1p1/7p/P2P4/1P4P1/2P1QPKP/8 w - - 0 1",
+                "6k1/1pq2p2/p3p1p1/7p/P2P4/1P4P1/2P2P1P/4Q1K1 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "65054ede-716e-11eb-a738-f571467018aa",
+          "url": "defending-queen-endings",
+          "name": "Defending Queen Endings",
+          "description": "Use your Queen to save the draw",
+          "drills": [
+            {
+              "id": "65056c2a-716e-11eb-be4f-a31839431c89",
+              "sortOrder": 106,
+              "fen": "1K6/8/P7/8/5k2/8/3q4/8 w - - 0 1",
+              "alternativeFens": [
+                "6K1/8/7P/8/2k5/8/4q3/8 w - - 0 1",
+                "8/5K2/7P/2k5/8/8/4q3/8 w - - 0 1",
+                "5K2/8/7P/2k5/8/8/6q1/8 w - - 0 1",
+                "1K6/8/P7/8/5k2/2q5/8/8 w - - 0 1",
+                "1K6/8/P7/8/8/8/2k5/5q2 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "6505989e-716e-11eb-a977-77c4a723e6cd",
+              "sortOrder": 107,
+              "fen": "K7/8/2P5/8/3q4/8/5k2/8 w - - 0 1",
+              "alternativeFens": [
+                "7K/8/5P2/8/4q3/8/2k5/8 w - - 0 1",
+                "1K6/8/2P5/8/8/8/8/k6q w - - 0 1",
+                "8/K7/2P5/8/8/8/8/k6q w - - 0 1",
+                "6K1/5P2/8/8/8/1q2k3/8/8 w - - 0 1",
+                "5K2/5P2/8/8/2k5/8/5q2/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "6505f4a6-716e-11eb-a02e-c33a227266ff",
+              "sortOrder": 108,
+              "fen": "K7/2Q5/8/8/3q3p/3p4/3P1k2/8 w - - 0 1",
+              "alternativeFens": [
+                "7K/5Q2/8/8/p3q3/4p3/2k1P3/8 w - - 0 1",
+                "K7/4Q3/8/p7/5q2/5p2/5P1k/8 w - - 0 1",
+                "K1Q5/8/8/4q3/2p5/2P2p2/5P1k/8 w - - 0 1",
+                "4Q2K/8/8/3q1p1p/5P2/2p5/k1P5/8 w - - 0 1",
+                "K2Q4/8/6qp/4p3/4P3/8/1k6/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "650625c0-716e-11eb-9473-3985d9d9ae9b",
+              "sortOrder": 109,
+              "fen": "7K/3Q4/8/7p/4k3/8/4q3/8 w - - 0 1",
+              "alternativeFens": [
+                "K7/4Q3/8/p7/3k4/8/3q4/8 w - - 0 1",
+                "1K6/3Q4/8/1p6/4k3/8/4q3/8 w - - 0 1",
+                "2K1Q3/8/8/8/1p3k2/8/5q2/8 w - - 0 5",
+                "5K2/3Q4/8/8/2k5/6p1/2q5/8 w - - 0 1",
+                "3Q1K2/8/8/8/2k2p2/8/2q5/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "65064dd4-716e-11eb-a663-7f4fa2e39992",
+              "sortOrder": 110,
+              "fen": "7K/4Q3/8/5k2/p3qp2/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "K7/3Q4/8/2k5/2pq3p/8/8/8 w - - 0 1",
+                "1K6/3Q4/8/2k5/2pq4/7p/8/8 w - - 0 1",
+                "3K4/4Q3/8/5k2/4qp2/p7/8/8 w - - 0 1",
+                "2K5/Q7/8/5k2/1p2qp2/8/8/8 w - - 0 1",
+                "5K2/6Q1/8/2k5/2pq4/7p/8/8 w - - 0 1"
+              ],
+              "goal": "Draw",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "650681f0-716e-11eb-836f-eb3f57f8b957",
+          "url": "advanced-queen-endings",
+          "name": "Advanced Queen Endings",
+          "description": "Win these tricky positions with your Queen",
+          "drills": [
+            {
+              "id": "6506a8b0-716e-11eb-9d94-896432ef787c",
+              "sortOrder": 111,
+              "fen": "8/7k/6p1/4pQ2/3q2PK/7P/5P2/8 w - - 0 1",
+              "alternativeFens": [
+                "8/k7/1p6/2Qp4/KP2q3/P7/2P5/8 w - - 0 1",
+                "8/k7/1p6/3p4/KP2q3/P5Q1/2P5/8 w - - 0 1",
+                "8/7k/6p1/4p1Q1/3q2PK/5P1P/8/8 w - - 0 1",
+                "8/7k/6p1/4p3/3q2PK/Q4P1P/8/8 w - - 0 1",
+                "8/k7/1p6/3p4/KP1q4/P7/2P4Q/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "6506d43e-716e-11eb-b9d8-d9d785039442",
+              "sortOrder": 112,
+              "fen": "1k6/2q2p2/5p2/KP3P1p/P2Q3P/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "6k1/2p2q2/2p5/p1P3PK/P3Q2P/8/8/8 w - - 0 1",
+                "1k6/2q5/5p1p/KP3p1P/P2Q1P2/8/8/8 w - - 0 1",
+                "1k6/2q5/5p2/KP3p1p/P4P1P/4Q3/8/8 w - - 0 1",
+                "1k6/2q3p1/6p1/KP4Pp/P2Q3P/8/8/8 w - - 0 1",
+                "1k6/2q5/7p/KP3p1P/P2Q1p2/5P2/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "65070120-716e-11eb-8606-5183d1bb3999",
+              "sortOrder": 113,
+              "fen": "3K4/6k1/3P4/3Q4/8/8/1q6/8 w - - 0 1",
+              "alternativeFens": [
+                "4K3/1k6/4P3/4Q3/8/8/6q1/8 w - - 0 1",
+                "3K4/5k2/3P4/4Q3/8/8/8/1q6 w - - 0 1",
+                "3K4/6k1/3P4/3Q4/8/8/8/6q1 w - - 0 1",
+                "4K3/2k5/4P3/8/4Q3/8/8/6q1 w - - 0 1",
+                "3K4/6k1/3P4/3Q4/8/8/8/q7 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "65072394-716e-11eb-aad4-6d7b3d62d916",
+              "sortOrder": 114,
+              "fen": "7k/6p1/4Q2p/5P1K/5qPP/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "k7/1p6/p2Q4/K1P5/PPq5/8/8/8 w - - 0 1",
+                "k7/1p2Q3/p7/K1P5/PP1q4/8/8/8 w - - 0 1",
+                "7k/3Q2p1/7p/5P1K/4q1PP/8/8/8 w - - 0 1",
+                "7k/6p1/6Qp/5P1K/5qPP/8/8/8 w - - 0 1",
+                "7k/5Qp1/7p/5P1K/6PP/4q3/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "650749f0-716e-11eb-a8fe-6b7f3b426219",
+              "sortOrder": 115,
+              "fen": "6k1/2q2p2/4p1p1/4p2p/7P/1P3QP1/P4PK1/8 w - - 0 1",
+              "alternativeFens": [
+                "6k1/5p2/3qp1p1/4p2p/Q6P/1P4P1/P4PK1/8 w - - 0 1",
+                "6k1/5p2/3qp1p1/4p2p/4Q2P/1P4P1/P4PK1/8 w - - 0 1",
+                "1k6/2p5/1p1pq3/p2p4/P2Q4/1P5P/1KP3P1/8 w - - 0 1",
+                "1k6/2p5/1p1pq3/p2p4/P4Q2/1P6/1KP3PP/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "650771aa-716e-11eb-97ac-255db1db5886",
+          "url": "queen-vs-pawns",
+          "name": "Queen vs Pawns",
+          "description": "Win with Queen vs Pawns",
+          "drills": [
+            {
+              "id": "650794d2-716e-11eb-a27b-0d46ad39197e",
+              "sortOrder": 116,
+              "fen": "8/8/8/8/1K6/8/2p3Q1/1k6 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/6K1/8/1Q3p2/6k1 w - - 0 1",
+                "8/8/8/8/2K5/8/2p4Q/1k6 w - - 0 1",
+                "8/8/8/8/K7/8/2p1Q3/1k6 w - - 0 1",
+                "8/8/8/8/7K/8/Q4p2/6k1 w - - 0 1",
+                "8/8/8/8/8/7K/1Q3p2/6k1 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "6507c1c8-716e-11eb-a2e2-77428714e3b7",
+              "sortOrder": 117,
+              "fen": "8/8/8/8/8/6Q1/1p2K3/1k6 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/8/1Q6/3K2p1/6k1 w - - 0 1",
+                "1Q6/8/8/8/8/8/3K2p1/6k1 w - - 0 1",
+                "8/8/8/8/8/Q7/4K1p1/6k1 w - - 0 1",
+                "8/8/4Q3/8/8/8/1p2K3/1k6 w - - 0 1",
+                "8/8/8/8/8/6Q1/1p3K2/1k6 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "6507f670-716e-11eb-a328-c37aa5ae8e6b",
+              "sortOrder": 118,
+              "fen": "8/3K2Q1/8/8/8/8/4p3/4k3 w - - 0 1",
+              "alternativeFens": [
+                "8/1Q2K3/8/8/8/8/3p4/3k4 w - - 0 1",
+                "8/5K2/1Q6/8/8/8/3p4/3k4 w - - 0 1",
+                "8/5Q2/1K6/8/8/8/4p3/4k3 w - - 0 1",
+                "2K5/7Q/8/8/8/8/4p3/4k3 w - - 0 1",
+                "8/7K/1Q6/8/8/8/3p4/4k3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "65082bea-716e-11eb-83a0-37ff111b059a",
+              "sortOrder": 119,
+              "fen": "8/3K2Q1/8/1p6/2p5/4p3/3k4/8 w - - 0 1",
+              "alternativeFens": [
+                "8/1Q2K3/8/6p1/5p2/3p4/4k3/8 w - - 0 1",
+                "8/8/3K4/8/Q4pp1/3p4/4k3/8 w - - 0 1",
+                "8/3K4/8/8/1pp4Q/4p3/3k4/8 w - - 0 1",
+                "7Q/8/4K3/2p5/1p6/4p3/3k4/8 w - - 0 1",
+                "Q7/8/4K3/6p1/5p2/3p4/4k3/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "650856ec-716e-11eb-af67-d172479125b6",
+              "sortOrder": 120,
+              "fen": "8/7Q/8/7K/2p2p2/3p1p2/4k3/8 w - - 0 1",
+              "alternativeFens": [
+                "8/Q7/8/K7/2p2p2/2p1p3/3k4/8 w - - 0 1",
+                "7Q/8/4K3/8/2p2p2/2p1p3/3k4/8 w - - 0 1",
+                "Q7/8/3K4/8/2p2p2/3p1p2/4k3/8 w - - 0 1",
+                "8/8/2K3Q1/8/5p2/3p1p2/4k3/8 w - - 0 1",
+                "8/Q7/4K3/8/2p2p2/2p1p3/3k4/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            }
+          ]
+        }
+      ],
+      "imageUrl": "https://www.chess.com/bundles/web/images/color-icons/piece-white-queen.svg",
+      "lightModeImageUrl": "https://www.chess.com/bundles/web/images/color-icons/piece-black-queen.svg"
+    },
+    {
+      "id": "65088b9e-716e-11eb-8ae9-2f915f10de86",
+      "url": "imbalances",
+      "name": "Imbalances",
+      "themes": [
+        {
+          "id": "6508c690-716e-11eb-b686-454b48f92223",
+          "url": "rook-vs-minor-piece",
+          "name": "Rook vs Minor Piece",
+          "description": "Win with Rook vs Bishop or Knight",
+          "drills": [
+            {
+              "id": "6508eb70-716e-11eb-884a-0769ec7d2a8b",
+              "sortOrder": 121,
+              "fen": "8/8/8/8/6K1/8/R7/6kn w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/1K6/8/7R/nk6 w - - 0 1",
+                "8/8/8/8/6K1/8/R7/5k1n w - - 0 1",
+                "8/8/8/8/1K6/8/7R/n1k5 w - - 0 1",
+                "8/8/8/8/5K2/8/3R4/6kn w - - 0 1",
+                "8/8/8/8/K7/8/4R3/nk6 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "650922fc-716e-11eb-ab6d-c3934ec55a74",
+              "sortOrder": 122,
+              "fen": "8/8/8/8/5K2/8/R7/5bk1 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/8/2K5/8/7R/1kb5 w - - 0 1",
+                "8/8/8/8/2K5/8/7R/k1b5 w - - 0 1",
+                "8/8/8/8/5K2/8/R7/5b1k w - - 0 1",
+                "8/8/8/8/7K/8/3R4/5bk1 w - - 0 1",
+                "8/8/8/8/2K5/8/5R2/1kb5 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "cfcf08d8-bcc6-11eb-99a6-132f4a3195ea",
+              "sortOrder": 123,
+              "fen": "8/8/5p2/3nk2K/6P1/5R2/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/2p5/K2kn3/1P6/2R5/8/8 w - - 0 1",
+                "8/K7/2p5/3kn3/1P6/8/8/2R5 w - - 0 1",
+                "8/8/2p5/3kn3/KP6/8/8/2R5 w - - 0 1",
+                "8/7K/5p2/3nk3/6P1/8/5R2/8 w - - 0 1",
+                "8/8/5p2/3nk3/6PK/8/8/5R2 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "e9380ff4-bcc6-11eb-bdcc-e339b670f493",
+              "sortOrder": 124,
+              "fen": "8/4k3/4p3/1p2Ppp1/1Pb5/4KP2/2R3P1/8 w - - 0 1",
+              "alternativeFens": [
+                "8/3k4/3p4/1ppP2p1/5bP1/2PK4/1P3R2/8 w - - 0 1",
+                "8/4k3/4p3/1p2Ppp1/1Pb5/5P2/3K2P1/2R5 w - - 0 1",
+                "8/3k4/4p3/1p2Ppp1/1Pb5/2R2P2/1K4P1/8 w - - 0 1",
+                "8/1k6/4p3/1p2Ppp1/1PbR4/5P2/3K2P1/8 w - - 0 1",
+                "8/1k6/4p1p1/1p2Pp2/1Pb4R/5P2/1K4P1/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "fc81b43e-bcc6-11eb-9b72-21dccb473697",
+              "sortOrder": 125,
+              "fen": "8/8/8/2k1K2p/6bP/8/3R4/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/8/p2K1k2/Pb6/8/4R3/8 w - - 0 1",
+                "3R4/8/8/2k1K2p/6bP/8/8/8 w - - 0 1",
+                "2R5/8/8/p2K1k2/Pb6/8/8/8 w - - 0 1",
+                "8/8/8/p2K1k2/Pb6/8/7R/8 w - - 0 1",
+                "8/8/8/2k1K2p/6bP/8/8/R7 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "650a1d9c-716e-11eb-a5e4-b1987d4e872a",
+          "url": "rook-vs-two-minor-pieces",
+          "name": "Rook vs Two Minor Pieces",
+          "description": "Win with Rook vs Minor Pieces",
+          "drills": [
+            {
+              "id": "5b48430c-bcc7-11eb-af50-bd27673f08fb",
+              "sortOrder": 126,
+              "fen": "8/2k5/2n3p1/2pb4/6PP/2P1P3/1P5K/6R1 w - - 0 1",
+              "alternativeFens": [
+                "8/5k2/1p3n2/4bp2/PP6/3P1P2/K5P1/1R6 w - - 0 1",
+                "5k2/8/1p3n2/4bp2/PP6/1K1P1P2/6P1/1R6 w - - 0 1",
+                "4k3/8/1p1b1n2/5p2/PP6/1R1P1P2/2K3P1/8 w - - 0 1",
+                "8/2k5/6p1/1npb4/6PP/2P1P3/1P2K3/6R1 w - - 0 1",
+                "3k4/2n5/2b3p1/2p5/6PP/2P1P1R1/1P5K/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "6aae46fc-bcc7-11eb-8f63-ef4d6753ee28",
+              "sortOrder": 127,
+              "fen": "b5k1/6pR/p1nB2P1/1p1npPP1/3p4/8/PPP5/2K5 w - - 0 1",
+              "alternativeFens": [
+                "1k5b/Rp6/1P2Bn1p/1PPpn1p1/4p3/8/5PPP/5K2 w - - 0 1",
+                "1k4nb/Rp6/1P5p/1PPpn1p1/4p3/7B/5PPP/5K2 w - - 0 1",
+                "b1n3k1/6pR/p5P1/1pB1pPP1/3pn3/P7/1PP5/2K5 w - - 0 1",
+                "b1n3k1/6pR/p5P1/1p1npPP1/3p4/B7/PPP5/2K5 w - - 0 1",
+                "b1n3k1/6pR/p5P1/1pBnpPP1/3p4/8/PPP5/2K5 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "7ab4215c-bcc7-11eb-b36b-3dc7b109b6e2",
+              "sortOrder": 128,
+              "fen": "4r3/5pk1/1p4p1/1Pp5/2P5/5P1P/5BP1/5BK1 w - - 0 1",
+              "alternativeFens": [
+                "3r4/1kp5/1p4p1/5pP1/5P2/P1P5/1PB5/1KB5 w - - 0 1",
+                "3r4/1kp5/1p4p1/5pP1/5P2/P1P5/1P1B4/2KB4 w - - 0 1",
+                "3r4/1kp5/1p4p1/5pP1/B4P2/P1P1B3/1P6/1K6 w - - 0 1",
+                "4r3/5pk1/1p4p1/1Pp5/2P4P/3B1P2/6P1/4B1K1 w - - 0 1",
+                "4r3/1B3pk1/1p4p1/1Pp5/2P3PP/5P2/5B2/6K1 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "8b455892-bcc7-11eb-bfde-83199390c7f1",
+              "sortOrder": 129,
+              "fen": "6rk/p5p1/1pQ1Np1p/8/3B3P/4P1P1/5PK1/1q6 w - - 0 1",
+              "alternativeFens": [
+                "kr6/1p5p/p1pN1Qp1/8/P3B3/1P1P4/1KP5/6q1 w - - 0 1",
+                "kr6/1p5p/p1pN2p1/8/P3B3/1PQP4/1KP5/6q1 w - - 0 1",
+                "kr6/1p6/p1p3Qp/N5p1/P3B3/1P1P4/1KP5/4q3 w - - 0 1",
+                "6rk/p5p1/1pQ2p1p/5N2/7P/2B1P1P1/5PK1/1q6 w - - 0 1",
+                "6rk/6p1/pQ3p1p/1p5N/3B3P/4P1P1/5PK1/4q3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "01899a56-8d78-11eb-a290-7d72dac14f2a",
+              "sortOrder": 130,
+              "fen": "r5k1/6pp/6q1/3pBp2/3N4/5P2/3Q1KP1/8 w - - 0 1",
+              "alternativeFens": [
+                "1k5r/pp6/1q6/2pBp3/4N3/2P5/1PK1Q3/8 w - - 0 1",
+                "1k5r/pp6/1q6/2pBp3/4N3/2P5/1P6/1K2Q3 w - - 0 1",
+                "1k5r/ppq5/8/2pBp3/4N3/2P5/1P6/1K2Q3 w - - 0 1",
+                "r5k1/6pp/6q1/3pBp2/3N4/8/5PP1/3Q2K1 w - - 0 1",
+                "r5k1/6pp/8/3pBp1q/3N4/5P2/6P1/3Q2K1 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "650afb86-716e-11eb-9f75-99424ef6bdc7",
+          "url": "queen-vs-two-rooks",
+          "name": "Queen vs Two Rooks",
+          "description": "Win with Queen vs two Rooks",
+          "drills": [
+            {
+              "id": "13f2d71e-bcc8-11eb-9f6c-1d133dfb4c03",
+              "sortOrder": 130,
+              "fen": "2r1r3/5k2/3p3p/8/4P1PP/2PP3Q/1P6/7K w - - 0 1",
+              "alternativeFens": [
+                "3r1r2/2k5/p3p3/8/PP1P4/Q3PP2/6P1/K7 w - - 0 1",
+                "3r2r1/2k5/p3p3/8/PP1P2P1/4PP2/1Q2K3/8 w - - 0 1",
+                "r3rk2/8/3p3p/8/P3P1PP/1P1PK3/4Q3/8 w - - 0 1",
+                "1r1r4/5k2/4p2p/8/1P2P1PP/P2PK3/8/4Q3 w - - 0 1",
+                "7r/2kr4/p3p3/8/PP1P3P/4P1P1/5K2/Q7 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "25e6e424-bcc8-11eb-acb1-1daf8cc6fb61",
+              "sortOrder": 131,
+              "fen": "8/8/5pkp/5Rp1/q5P1/3R1P1P/4P1K1/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/pkp5/1pR5/1P5q/P1P1R3/1K1P4/8 w - - 0 1",
+                "8/8/5pkp/5Rp1/6P1/5P1P/3RP1K1/q7 w - - 0 1",
+                "3R4/1q6/5pkp/5Rp1/6P1/5P1P/4P2K/8 w - - 0 1",
+                "4R3/7q/pkp5/1pR5/1P6/P1P5/3P4/2K5 w - - 0 1",
+                "8/8/1kp5/1pR5/pP6/P1P4q/1K1P4/5R2 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "36ccb232-bcc8-11eb-82bc-aba628197b9b",
+              "sortOrder": 132,
+              "fen": "r5k1/5p2/2p1r3/2P5/1Q5P/1P2P1P1/5P2/6K1 w - - 0 1",
+              "alternativeFens": [
+                "1k5r/2p5/3r1p2/5P2/P5Q1/1P1P2P1/2P5/1K6 w - - 0 1",
+                "r3r3/5pk1/2p5/2P5/1Q5P/1P2P1P1/5P1K/8 w - - 0 1",
+                "8/r4pk1/2p5/2P1r3/1Q6/4P1P1/1P3PKP/8 w - - 0 1",
+                "1k5r/2p5/3r1p2/5P2/4Q3/1P1P2P1/P1P5/2K5 w - - 0 1",
+                "1k1r4/2p5/5p2/2Q2P2/2P5/KP1P2P1/P6r/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "650bbe0e-716e-11eb-ae99-d15849563c2a",
+              "sortOrder": 134,
+              "fen": "6k1/5p2/5p2/2pR3p/7P/4P1P1/q4P2/2R3K1 w - - 0 1",
+              "alternativeFens": [
+                "1k6/2p5/2p5/p3Rp2/P7/1P1P4/2P4q/1K3R2 w - - 0 1",
+                "8/5pk1/5p2/2pR3p/7P/4P1P1/q4PK1/2R5 w - - 0 1",
+                "5k2/5p2/5p2/2pR3p/7P/2R1P1P1/q4PK1/8 w - - 0 1",
+                "8/1kp4q/2p5/p3Rp2/P7/1P1P4/2P5/1K3R2 w - - 0 1",
+                "1k6/2p3q1/2p5/p3Rp2/8/1P1P1R2/P1P5/1K6 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "263d5c8e-8d78-11eb-a1be-39873f4d7fa0",
+              "sortOrder": 135,
+              "fen": "6r1/8/p3p1k1/P1p1Bp1p/2P1pP1P/1r1bP3/6PK/Q7 w - - 0 1",
+              "alternativeFens": [
+                "1r6/8/1k1p3p/p1pB1p1P/P1Pp1P2/3Pb1r1/KP6/7Q w - - 0 1",
+                "6r1/p7/Pr2p1k1/2p1Bp1p/2P1pP1P/3bP3/6PK/Q7 w - - 0 1",
+                "6r1/p7/P3p1k1/2p1Bp1p/1rP1pP1P/3bP3/6PK/Q7 w - - 0 1",
+                "1r6/k7/3p3p/p1p2p1P/P1Pp1P2/3PbB2/KP6/6rQ w - - 0 1",
+                "1r2r3/k6p/p2p1p1P/2pB1P2/P1Pp4/3Pb3/KP6/4Q3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "650c3726-716e-11eb-929e-d7795a3c33cb",
+          "url": "basic-imbalances",
+          "name": "Basic Imbalances",
+          "description": "Win positions with material imbalances",
+          "drills": [
+            {
+              "id": "fcdc6554-8d79-11eb-93a0-6b5632c6d953",
+              "sortOrder": 136,
+              "fen": "8/PK3B2/1n6/2k5/8/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/2B3KP/6n1/5k2/8/8/8/8 w - - 0 1",
+                "1K6/P7/1n6/2k4B/8/8/8/8 w - - 0 1",
+                "6K1/7P/1B4n1/5k2/8/8/8/8 w - - 0 1",
+                "8/PK6/1n6/2k5/8/8/8/3B4 w - - 0 1",
+                "8/6KP/6n1/5k2/8/6B1/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "87e5765e-bcc8-11eb-8b25-e5a386dfd7cd",
+              "sortOrder": 137,
+              "fen": "5k2/1b1n2p1/6Qp/1p2p3/1b6/6P1/PPP2P1P/1K6 w - - 0 1",
+              "alternativeFens": [
+                "2k5/1p2n1b1/pQ6/3p2p1/6b1/1P6/P1P2PPP/6K1 w - - 0 1",
+                "5k2/1b1n3p/6p1/1p2p3/1b5P/4P3/PPP2P2/1K4Q1 w - - 0 1",
+                "2k5/1p2n1b1/p6p/3p4/6b1/1P6/P1PQ1PPP/6K1 w - - 0 1",
+                "k4n2/1p6/p6p/3p2b1/6b1/1P6/P1PQ1PPP/6K1 w - - 0 1",
+                "8/1b1n3k/p5pp/4p3/1b6/6P1/PPP1QP1P/1K6 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "1f8416b0-8d7a-11eb-bf68-2926721d2162",
+              "sortOrder": 138,
+              "fen": "r4r2/1b2bp2/pp5k/2ppp3/5PQ1/1P2P3/P1PP2PP/R5K1 w - - 0 1",
+              "alternativeFens": [
+                "2r4r/2pb2b1/k5pp/3ppp2/1QP5/3P2P1/PP2PP1P/1K5R w - - 0 1",
+                "r4r2/1b2bp2/pp5k/2ppp3/Q4P2/1P2P3/P1PP2PP/R5K1 w - - 0 1",
+                "2r4r/3b2b1/kp5p/p2pp3/2P5/Q2P2P1/PP2PP1P/1K5R w - - 0 1",
+                "k1r4r/3b2b1/1p5p/p1pp1p2/2P5/3PQ1P1/PP2PP1P/1K5R w - - 0 1",
+                "k4r2/3b2b1/2r4p/p1p1p3/2Pp3Q/3P2P1/PP2PP1P/1K5R w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "9d0dca72-bcc8-11eb-b732-ed9dd389d409",
+              "sortOrder": 139,
+              "fen": "8/8/p1P1k3/B5pp/5p2/5K2/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/8/3k1P1p/pp5B/2p5/2K5/8/8 w - - 0 1",
+                "8/p7/2P1k3/6pp/5p2/5K2/8/4B3 w - - 0 1",
+                "8/8/2P1k2p/6p1/p4p2/5K2/8/4B3 w - - 0 1",
+                "8/8/p2k1P2/1p6/2p4p/2K5/4B3/8 w - - 0 1",
+                "8/8/2pk1P2/1p5p/p7/2K5/2B5/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            },
+            {
+              "id": "466225b0-8d7a-11eb-a485-958d32ac42cd",
+              "sortOrder": 140,
+              "fen": "r2rk3/8/5p2/PPPPp1p1/2K4p/4NP1P/6P1/8 w - - 0 1",
+              "alternativeFens": [
+                "3kr2r/8/2p5/1p1pPPPP/p4K2/P1PN4/1P6/8 w - - 0 1",
+                "r2rk3/8/5p1p/PPPPp1p1/2K5/5PNP/6P1/8 w q - 0 1",
+                "4rk1r/1N6/2p5/pp1pPPPP/5K2/P1P5/1P6/8 w - - 0 1",
+                "4r2r/p1k5/2p5/1p1pPPPP/5K2/2PN4/PP6/8 w - - 0 1",
+                "4r2r/pk6/1p6/2ppPPPP/5K2/P1PN4/1P6/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Intermediate",
+              "relatedLinks": []
+            }
+          ]
+        },
+        {
+          "id": "650d4a3a-716e-11eb-8ade-e73054e29937",
+          "url": "advanced-imbalances",
+          "name": "Advanced Imbalances",
+          "description": "Win trickier positions with material imbalances",
+          "drills": [
+            {
+              "id": "70701c04-8d7a-11eb-b15e-a956ed9816d3",
+              "sortOrder": 141,
+              "fen": "3k4/1pR5/pPbN1K2/3pPp2/7r/8/8/8 w - - 0 1",
+              "alternativeFens": [
+                "4k3/5Rp1/2K1NbPp/2pPp3/r7/8/8/8 w - - 0 1",
+                "3k4/1pR5/pPbN1K2/3pP3/4p3/8/8/6r1 w - - 0 1",
+                "3k4/1p5R/pPb2K2/3pP1N1/4p3/8/8/6r1 w - - 0 1",
+                "4k3/1K3Rp1/4NbPp/3Pp3/8/1p6/8/r7 w - - 0 1",
+                "4k3/2K2Rp1/4NbPp/3Pp3/8/8/2p5/4r3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": false,
+              "isLocked": false,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "f8d8c6a4-bcc8-11eb-82dc-edcdc5dfc1dc",
+              "sortOrder": 142,
+              "fen": "8/5k2/6p1/3K2p1/6B1/7P/8/8 w - - 0 1",
+              "alternativeFens": [
+                "8/2k5/1p6/1p2K3/1B6/P7/8/8 w - - 0 1",
+                "8/5k2/3K2p1/6p1/B7/7P/8/8 w - - 0 1",
+                "5k2/8/3K2p1/1B4p1/8/7P/8/8 w - - 0 1",
+                "8/1k6/1p6/1p2K3/7B/P7/8/8 w - - 0 1",
+                "2k5/4K3/1p6/1p6/7B/P7/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "0c227458-bcc9-11eb-acff-af5362029ac4",
+              "sortOrder": 143,
+              "fen": "4r1k1/8/4P2p/P2P1Pp1/4P1R1/r7/6KP/8 w - - 0 1",
+              "alternativeFens": [
+                "1k1r4/8/p2P4/1pP1P2P/1R1P4/7r/PK6/8 w - - 0 1",
+                "4r1k1/8/4P2p/3P1Pp1/P3P3/r7/6RP/6K1 w - - 0 1",
+                "4r1k1/8/4P2p/P2P1Pp1/4P1R1/7K/r6P/8 w - - 0 1",
+                "1k1r4/8/p2P4/1pP1P2P/3P4/7r/PR6/K7 w - - 0 1",
+                "k2r4/pp6/3P4/1RP1P2P/3P4/8/PK6/7r w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "a979ee76-8d7a-11eb-ae17-752b15cdf558",
+              "sortOrder": 144,
+              "fen": "2r5/3k4/3Pp1p1/1NP2p1p/1P3P1P/2B3P1/1P3K2/3r4 w - - 0 1",
+              "alternativeFens": [
+                "5r2/4k3/1p1pP3/p1p2PN1/P1P3P1/1P3B2/2K3P1/4r3 w - - 0 1",
+                "2r5/8/2kPp1p1/2P2p1p/1P3P1P/2B2KP1/1P2N3/3r4 w - - 0 1",
+                "2rk4/6B1/3Pp1p1/2P2p1p/1P3P1P/1N4P1/1P3K2/3r4 w - - 0 1",
+                "6r1/8/1p1pPk2/p1p2P2/P1P3P1/1PNK1B2/6P1/4r3 w - - 0 1",
+                "4k2r/8/1p1pP3/p1p2P2/P1P3P1/1P3B2/2K2NP1/4r3 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            },
+            {
+              "id": "434a39fa-cd55-11ec-b7fb-ff744600fb93",
+              "sortOrder": 145,
+              "fen": "4k3/7q/8/4PR1N/5P1K/8/8/8 w - - 0 133",
+              "alternativeFens": [
+                "3k4/q7/8/N1RP4/K1P5/8/8/8 w - - 0 1",
+                "4k2q/8/8/4PR1N/5P2/7K/8/8 w - - 0 133",
+                "4k3/1q6/8/1N1RPP2/1K6/8/8/8 w - - 0 133",
+                "q2k4/8/8/N1RP4/K1P5/8/8/8 w - - 0 1",
+                "4k3/1q6/8/1N1RP3/1K1P4/8/8/8 w - - 0 1"
+              ],
+              "goal": "Win",
+              "isPremium": true,
+              "isLocked": true,
+              "skillLevel": "Advanced",
+              "relatedLinks": []
+            }
+          ]
+        }
+      ],
+      "imageUrl": "https://www.chess.com/bundles/web/images/color-icons/imbalance-light.svg",
+      "lightModeImageUrl": "https://www.chess.com/bundles/web/images/color-icons/imbalance-dark.svg"
+    }
+  ]
+}

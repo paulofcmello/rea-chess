@@ -3507,3 +3507,80 @@ h2 {
   .cc-path-viewport { height: 460px; }
   .cc-puzzle-modes { padding-top: 8px; }
 }
+
+/* Endgame catalogue and training, measured from chess.com's /endgames sidebar. */
+.cc-endgames-layout { max-width: 1400px; }
+.cc-endgames-board { display: flex; flex-direction: column; gap: 10px; }
+.cc-endgames-player { display: flex; align-items: center; gap: 10px; min-height: 40px; }
+.cc-endgames-player img { width: 40px; height: 40px; padding: 3px; background: var(--panel-2); border-radius: 4px; }
+.cc-endgames-player strong { font-size: 16px; }
+.cc-endgames-sidebar { min-width: 0; }
+.cc-endgames-heading { text-align: center; padding: 16px 24px 20px; background: radial-gradient(ellipse at top, var(--panel-2) 65%, transparent 66%); }
+.cc-endgames-heading h1 { font-size: 32px; margin: 0 0 12px; }
+.cc-endgames-heading > img { width: 80px; height: 80px; }
+.cc-endgames-tabs { display: flex; flex-shrink: 0; border-bottom: 2px solid var(--line); min-height: 48px; align-items: stretch; }
+.cc-endgames-tabs > * { flex: 1; text-align: center; padding: 12px 6px; font-weight: 700; }
+.cc-endgames-tabs > button { border: 0; border-bottom: 3px solid transparent; background: none; cursor: pointer; color: var(--muted); }
+.cc-endgames-tabs > button[aria-pressed='true'] { color: var(--text); border-bottom-color: var(--text); }
+.cc-endgames-catalogue { gap: 6px; padding: 24px 20px; }
+.cc-endgames-card { display: flex; flex-direction: column; text-align: left; gap: 6px; padding: 18px 16px; background: var(--panel-2); border: 0; border-radius: var(--radius); cursor: pointer; flex-shrink: 0; }
+.cc-endgames-card:hover { background: rgba(255, 255, 255, .06); }
+.cc-endgames-card strong { font-family: var(--font-heading); font-size: 18px; }
+.cc-endgames-category { flex-direction: row; align-items: center; gap: 18px; min-height: 90px; }
+.cc-endgames-category > img { width: 36px; height: 44px; object-fit: contain; }
+.cc-endgames-category > div { flex: 1; min-width: 0; }
+.cc-endgames-progress { width: 100%; margin-top: 6px; }
+.cc-endgames-progress > span { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; color: var(--muted); }
+.cc-endgames-progress b { color: var(--green-hi); }
+.cc-endgames-progress progress { display: block; width: 100%; height: 4px; margin-top: 6px; border: 0; border-radius: 3px; overflow: hidden; background: var(--panel-2); }
+.cc-endgames-progress progress::-webkit-progress-bar { background: var(--panel-2); }
+.cc-endgames-progress progress::-webkit-progress-value { background: var(--green); }
+.cc-endgames-progress progress::-moz-progress-bar { background: var(--green); }
+.cc-endgames-secondary { display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 8px 12px; flex-shrink: 0; background: var(--panel-2); }
+.cc-endgames-secondary button { border: 0; background: none; font-size: 24px; width: 32px; cursor: pointer; }
+.cc-endgames-secondary strong { flex: 1; font-family: var(--font-heading); font-size: 17px; }
+.cc-endgames-secondary img { width: 28px; height: 28px; object-fit: contain; }
+.cc-endgames-theme-heading { padding: 20px 20px 8px; text-align: center; }
+.cc-endgames-theme-heading h1 { font-size: 26px; }
+.cc-endgames-theme-heading p { margin: 6px 0 12px; }
+.cc-endgames-label { font-family: var(--font-heading); text-transform: uppercase; font-size: 13px; color: var(--muted); margin: 0; }
+.cc-endgames-positions { display: flex; gap: 8px; flex-wrap: wrap; }
+.cc-endgames-positions button { background: var(--panel-2); border: 2px solid transparent; border-radius: 4px; width: 36px; height: 36px; font-size: 16px; font-weight: 700; cursor: pointer; }
+.cc-endgames-positions button.selected { border-color: var(--green); }
+.cc-endgames-positions button.completed { color: var(--green-hi); }
+.cc-endgames-preview { width: 120px; margin: 0 auto; }
+.cc-endgames-details { display: grid; gap: 10px; margin: 0; }
+.cc-endgames-details > div { display: flex; align-items: baseline; gap: 8px; }
+.cc-endgames-details dt { font-family: var(--font-heading); text-transform: uppercase; font-size: 12px; color: var(--muted); }
+.cc-endgames-details dt::after { content: ':'; margin-left: 6px; }
+.cc-endgames-details dd { margin: 0; overflow-wrap: anywhere; }
+.cc-endgames-actions { display: flex; flex-direction: column; gap: 12px; min-height: auto; padding: 20px; }
+.cc-endgames-actions > .cc-button { width: 100%; }
+.cc-endgames-actions .cc-button { min-width: 0; font-size: 15px; padding-inline: 12px; }
+.cc-endgames-challenge { text-align: center; }
+.cc-endgames-challenge > img { display: block; width: 72px; height: 72px; margin: 4px auto 20px; }
+.cc-endgames-challenge h2 { font-size: 22px; margin-bottom: 10px; }
+.cc-endgames-challenge > strong { display: block; font-size: 30px; padding-top: 10px; color: var(--green-hi); }
+.cc-endgames-run-meta { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); }
+.cc-endgames-sidebar .coach { flex-direction: column; align-items: center; gap: 8px; }
+.cc-endgames-sidebar .coach-bubble { width: 100%; min-width: 0; }
+.cc-endgames-sidebar .coach-bubble-tip { display: none; }
+.cc-endgames-moves { list-style: none; padding: 0; margin: 0; font-size: 15px; }
+.cc-endgames-moves li { display: grid; grid-template-columns: 28px 1fr 1fr; gap: 8px; padding: 8px; }
+.cc-endgames-moves li:nth-child(odd) { background: var(--panel-2); }
+.cc-endgames-moves li > span { color: var(--muted); }
+.cc-endgames-link { background: none; border: 0; color: var(--green-hi); padding: 0; cursor: pointer; text-decoration: underline; }
+@media (max-width: 1000px) {
+  .cc-endgames-sidebar { max-height: none; }
+  .cc-endgames-sidebar .cc-sidebar-body { overflow: visible; }
+  .cc-endgames-catalogue { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cc-endgames-category { gap: 12px; }
+  .cc-endgames-card { min-width: 0; }
+}
+@media (max-width: 560px) {
+  .cc-endgames-catalogue { grid-template-columns: 1fr; }
+  .cc-endgames-player { min-height: 32px; }
+  .cc-endgames-player img { width: 32px; height: 32px; }
+  .cc-endgames-sidebar .coach { flex-direction: row; align-items: flex-start; }
+  .cc-endgames-sidebar .coach-bubble { flex: 1; }
+}

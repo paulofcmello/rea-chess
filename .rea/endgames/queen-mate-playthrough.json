@@ -1,0 +1,15 @@
+[
+  {
+    "fen": "6k1/3Q4/8/5K2/8/8/8/8 w - - 0 1",
+    "move": "f5f6"
+  },
+  {
+    "fen": "5k2/3Q4/5K2/8/8/8/8/8 w - - 2 2",
+    "move": "d7f7"
+  },
+  {
+    "fen": "5k2/5Q2/5K2/8/8/8/8/8 b - - 3 2",
+    "status": "Well done!\nYou achieved the goal. Your progress is saved.",
+    "progress": "{\"drills\":{\"64ecf08c-716e-11eb-8525-bde8d177bcd0\":{\"attempts\":1,\"completed\":true,\"bestMoves\":2,\"bestMs\":1086,\"assisted\":false}},\"challenges\":{}}"
+  }
+]
