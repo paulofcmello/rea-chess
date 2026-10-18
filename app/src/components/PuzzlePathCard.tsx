@@ -14,16 +14,23 @@ const tips = [
   'In every Puzzle position, only one move works... Can you find it?',
 ]
 
-// chess.com's eight-step zigzag, scaled to a 300px wide scene.
+// Fixed isometric spacing in a 300px-wide scene. Move the camera with the
+// pawn instead of shrinking the entire level to fit the viewport.
 function position(index: number, current: number) {
-  // Fit the whole level between the coach and footer, with the pawn near the middle.
-  // Reserve more room above it when many upcoming tiles remain.
-  const anchor = 50 + Math.max(0, 10 - current) * 1.5
-  const y = index >= current
-    ? anchor - (index - current) * (anchor - 13) / Math.max(1, 19 - current)
-    : anchor + (current - index) * (94 - anchor) / Math.max(1, current)
-  return { x: 180 + [0.5, 0, -0.5, -1, -1.5, -1, -0.5, 0][index % 8] * 75, y }
+  return {
+    x: 180 + [0.5, 0, -0.5, -1, -1.5, -1, -0.5, 0][index % 8] * 75,
+    y: `calc(52cqh + ${(current - index) * 10.667}cqw)`,
+  }
 }
+
+// Props sit outside the matching bends, rather than alongside a fixed tile
+// index that can put them on top of the path as the camera advances.
+const props = [
+  { art: 'L1', index: 8, left: '4%' },
+  { art: 'R1', index: 4, left: '56%' },
+  { art: 'L2', index: 16, left: '4%' },
+  { art: 'R2', index: 12, left: '50%' },
+]
 
 const modes = [
   { label: 'Daily Puzzle', route: 'daily', icon: 'calendar-dailypuzzle' },
@@ -80,21 +87,21 @@ export default function PuzzlePathCard({ onSolve, active = true, loading = false
       <img className="cc-path-cloud cc-path-cloud-right" src={art('path-fog-R1')} alt="" /></div>
     </div>
     <div className="cc-path-viewport" role="region" aria-label={`Puzzle path, level ${level}. ${tile} of 20 puzzles completed.`}>
-      <div className="cc-path-scene">
-        <div className="cc-path-next-region" />
-        <div className="cc-path-tile cc-path-next-tile" aria-label={`Level ${level + 1}, puzzle 1`}><img src={art('silver-level-light')} alt="" /><span>1</span></div>
-        {(['L1', 'R1', 'L2', 'R2'] as const).map((side, index) => <img key={side} className="cc-path-prop" src={art(`bronze-art-${side}`)} alt="" style={{ left: side[0] === 'L' ? '0%' : '70%', top: `${position(index * 4, tile).y}%` }} />)}
+      <div className="cc-path-scene" style={{ backgroundPosition: `center ${position(0, tile).y}` }}>
+        <div className="cc-path-next-region" style={{ top: `calc(${position(19, tile).y} - 72cqw)` }} />
+        <div className="cc-path-tile cc-path-next-tile" style={{ top: `calc(${position(19, tile).y} - 32cqw)` }} aria-label={`Level ${level + 1}, puzzle 1`}><img src={art('silver-level-light')} alt="" /><span>1</span></div>
+        {props.map((prop) => <img key={prop.art} className="cc-path-prop" src={art(`bronze-art-${prop.art}`)} alt="" style={{ left: prop.left, top: position(prop.index, tile).y }} />)}
         <ol className="cc-path-tiles" aria-label="Puzzles in this level">
           {Array.from({ length: PUZZLES_PER_LEVEL }, (_, index) => {
             const point = position(index, tile)
             const completed = index < tile
-            return <li key={index} className={`cc-path-tile ${completed ? 'completed' : ''}`} aria-current={index === tile ? 'step' : undefined} aria-label={`Puzzle ${index + 1}: ${completed ? 'completed' : index === tile ? 'current' : 'upcoming'}`} style={{ left: `${point.x / 3}%`, top: `${point.y}%` }}>
+            return <li key={index} className={`cc-path-tile ${completed ? 'completed' : ''}`} aria-current={index === tile ? 'step' : undefined} aria-label={`Puzzle ${index + 1}: ${completed ? 'completed' : index === tile ? 'current' : 'upcoming'}`} style={{ left: `${point.x / 3}%`, top: point.y }}>
               <img src={art(`bronze-level-${completed ? 'checked' : index % 2 ? 'light' : 'dark'}`)} alt="" />
               {!completed && <span>{index + 1}</span>}
             </li>
           })}
         </ol>
-        <div className="cc-path-pawn" style={{ left: `${pawn.x / 3}%`, top: `${pawn.y}%` }}>
+        <div className="cc-path-pawn" style={{ left: `${pawn.x / 3}%`, top: pawn.y }}>
           <div key={display.solved} className="cc-path-pawn-hop"><span className="cc-path-pawn-bubble" aria-hidden="true">♟</span><img src={art('bronze-level-pawn')} alt={`Your pawn, puzzle ${tile + 1}`} /></div>
         </div>
       </div>

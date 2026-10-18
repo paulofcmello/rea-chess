@@ -1,0 +1,380 @@
+{
+  "desktop": [
+    {
+      "solved": 320,
+      "card": {
+        "x": 952,
+        "y": 16,
+        "width": 300,
+        "height": 868,
+        "top": 16,
+        "right": 1252,
+        "bottom": 884,
+        "left": 952
+      },
+      "viewport": {
+        "x": 952,
+        "y": 212.0625,
+        "width": 300,
+        "height": 518.4375,
+        "top": 212.0625,
+        "right": 1252,
+        "bottom": 730.5,
+        "left": 952
+      },
+      "current": {
+        "x": 1134.50390625,
+        "y": 446.65234375,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 446.65234375,
+        "right": 1204.49609375,
+        "bottom": 516.64453125,
+        "left": 1134.50390625
+      },
+      "pawn": {
+        "x": 1134.50390625,
+        "y": 412.0863342285156,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 412.0863342285156,
+        "right": 1204.49609375,
+        "bottom": 482.0785217285156,
+        "left": 1134.50390625
+      },
+      "font": "27.999px",
+      "currentInViewport": true,
+      "currentCardFraction": 0.5364613335253456,
+      "currentViewportFraction": 0.5199969861362267,
+      "horizontalOverflow": false,
+      "brokenImages": [],
+      "visibleTiles": [
+        "Puzzle 1: current",
+        "Puzzle 2: upcoming",
+        "Puzzle 3: upcoming",
+        "Puzzle 4: upcoming",
+        "Puzzle 5: upcoming",
+        "Puzzle 6: upcoming",
+        "Puzzle 7: upcoming",
+        "Puzzle 8: upcoming"
+      ]
+    },
+    {
+      "solved": 326,
+      "card": {
+        "x": 952,
+        "y": 16,
+        "width": 300,
+        "height": 868,
+        "top": 16,
+        "right": 1252,
+        "bottom": 884,
+        "left": 952
+      },
+      "viewport": {
+        "x": 952,
+        "y": 212.0625,
+        "width": 300,
+        "height": 518.4375,
+        "top": 212.0625,
+        "right": 1252,
+        "bottom": 730.5,
+        "left": 952
+      },
+      "current": {
+        "x": 1059.50390625,
+        "y": 446.65234375,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 446.65234375,
+        "right": 1129.49609375,
+        "bottom": 516.64453125,
+        "left": 1059.50390625
+      },
+      "pawn": {
+        "x": 1059.50390625,
+        "y": 411.3050842285156,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 411.3050842285156,
+        "right": 1129.49609375,
+        "bottom": 481.2972717285156,
+        "left": 1059.50390625
+      },
+      "font": "27.999px",
+      "currentInViewport": true,
+      "currentCardFraction": 0.5364613335253456,
+      "currentViewportFraction": 0.5199969861362267,
+      "horizontalOverflow": false,
+      "brokenImages": [],
+      "visibleTiles": [
+        "Puzzle 1: completed",
+        "Puzzle 2: completed",
+        "Puzzle 3: completed",
+        "Puzzle 4: completed",
+        "Puzzle 5: completed",
+        "Puzzle 6: completed",
+        "Puzzle 7: current",
+        "Puzzle 8: upcoming",
+        "Puzzle 9: upcoming",
+        "Puzzle 10: upcoming",
+        "Puzzle 11: upcoming",
+        "Puzzle 12: upcoming",
+        "Puzzle 13: upcoming",
+        "Puzzle 14: upcoming"
+      ]
+    },
+    {
+      "solved": 334,
+      "card": {
+        "x": 952,
+        "y": 16,
+        "width": 300,
+        "height": 868,
+        "top": 16,
+        "right": 1252,
+        "bottom": 884,
+        "left": 952
+      },
+      "viewport": {
+        "x": 952,
+        "y": 212.0625,
+        "width": 300,
+        "height": 518.4375,
+        "top": 212.0625,
+        "right": 1252,
+        "bottom": 730.5,
+        "left": 952
+      },
+      "current": {
+        "x": 1059.50390625,
+        "y": 446.65234375,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 446.65234375,
+        "right": 1129.49609375,
+        "bottom": 516.64453125,
+        "left": 1059.50390625
+      },
+      "pawn": {
+        "x": 1059.50390625,
+        "y": 411.3050842285156,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 411.3050842285156,
+        "right": 1129.49609375,
+        "bottom": 481.2972717285156,
+        "left": 1059.50390625
+      },
+      "font": "27.999px",
+      "currentInViewport": true,
+      "currentCardFraction": 0.5364613335253456,
+      "currentViewportFraction": 0.5199969861362267,
+      "horizontalOverflow": false,
+      "brokenImages": [],
+      "visibleTiles": [
+        "Puzzle 9: completed",
+        "Puzzle 10: completed",
+        "Puzzle 11: completed",
+        "Puzzle 12: completed",
+        "Puzzle 13: completed",
+        "Puzzle 14: completed",
+        "Puzzle 15: current",
+        "Puzzle 16: upcoming",
+        "Puzzle 17: upcoming",
+        "Puzzle 18: upcoming",
+        "Puzzle 19: upcoming",
+        "Puzzle 20: upcoming"
+      ]
+    },
+    {
+      "solved": 339,
+      "card": {
+        "x": 952,
+        "y": 16,
+        "width": 300,
+        "height": 868,
+        "top": 16,
+        "right": 1252,
+        "bottom": 884,
+        "left": 952
+      },
+      "viewport": {
+        "x": 952,
+        "y": 212.0625,
+        "width": 300,
+        "height": 518.4375,
+        "top": 212.0625,
+        "right": 1252,
+        "bottom": 730.5,
+        "left": 952
+      },
+      "current": {
+        "x": 1022.00390625,
+        "y": 446.65234375,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 446.65234375,
+        "right": 1091.99609375,
+        "bottom": 516.64453125,
+        "left": 1022.00390625
+      },
+      "pawn": {
+        "x": 1022.00390625,
+        "y": 411.3050842285156,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 411.3050842285156,
+        "right": 1091.99609375,
+        "bottom": 481.2972717285156,
+        "left": 1022.00390625
+      },
+      "font": "27.999px",
+      "currentInViewport": true,
+      "currentCardFraction": 0.5364613335253456,
+      "currentViewportFraction": 0.5199969861362267,
+      "horizontalOverflow": false,
+      "brokenImages": [],
+      "visibleTiles": [
+        "Puzzle 14: completed",
+        "Puzzle 15: completed",
+        "Puzzle 16: completed",
+        "Puzzle 17: completed",
+        "Puzzle 18: completed",
+        "Puzzle 19: completed",
+        "Puzzle 20: current"
+      ]
+    },
+    {
+      "solved": 340,
+      "card": {
+        "x": 952,
+        "y": 16,
+        "width": 300,
+        "height": 868,
+        "top": 16,
+        "right": 1252,
+        "bottom": 884,
+        "left": 952
+      },
+      "viewport": {
+        "x": 952,
+        "y": 212.0625,
+        "width": 300,
+        "height": 518.4375,
+        "top": 212.0625,
+        "right": 1252,
+        "bottom": 730.5,
+        "left": 952
+      },
+      "current": {
+        "x": 1134.50390625,
+        "y": 446.65234375,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 446.65234375,
+        "right": 1204.49609375,
+        "bottom": 516.64453125,
+        "left": 1134.50390625
+      },
+      "pawn": {
+        "x": 1134.50390625,
+        "y": 411.3050842285156,
+        "width": 69.9921875,
+        "height": 69.9921875,
+        "top": 411.3050842285156,
+        "right": 1204.49609375,
+        "bottom": 481.2972717285156,
+        "left": 1134.50390625
+      },
+      "font": "27.999px",
+      "currentInViewport": true,
+      "currentCardFraction": 0.5364613335253456,
+      "currentViewportFraction": 0.5199969861362267,
+      "horizontalOverflow": false,
+      "brokenImages": [],
+      "visibleTiles": [
+        "Puzzle 1: current",
+        "Puzzle 2: upcoming",
+        "Puzzle 3: upcoming",
+        "Puzzle 4: upcoming",
+        "Puzzle 5: upcoming",
+        "Puzzle 6: upcoming",
+        "Puzzle 7: upcoming",
+        "Puzzle 8: upcoming"
+      ]
+    }
+  ],
+  "mobile": [
+    {
+      "solved": 326,
+      "card": {
+        "x": 22,
+        "y": 436,
+        "width": 352,
+        "height": 740,
+        "top": 436,
+        "right": 374,
+        "bottom": 1176,
+        "left": 22
+      },
+      "viewport": {
+        "x": 22,
+        "y": 626,
+        "width": 352,
+        "height": 396.5,
+        "top": 626,
+        "right": 374,
+        "bottom": 1022.5,
+        "left": 22
+      },
+      "current": {
+        "x": 148.1328125,
+        "y": 791.1171875,
+        "width": 82.125,
+        "height": 82.125,
+        "top": 791.1171875,
+        "right": 230.2578125,
+        "bottom": 873.2421875,
+        "left": 148.1328125
+      },
+      "pawn": {
+        "x": 148.1328125,
+        "y": 812.5031127929688,
+        "width": 82.125,
+        "height": 82.125,
+        "top": 812.5031127929688,
+        "right": 230.2578125,
+        "bottom": 894.6281127929688,
+        "left": 148.1328125
+      },
+      "font": "32.8522px",
+      "currentInViewport": true,
+      "currentCardFraction": 0.5353779560810811,
+      "currentViewportFraction": 0.51999921185372,
+      "horizontalOverflow": false,
+      "brokenImages": [],
+      "visibleTiles": [
+        "Puzzle 4: completed",
+        "Puzzle 5: completed",
+        "Puzzle 6: completed",
+        "Puzzle 7: current",
+        "Puzzle 8: upcoming",
+        "Puzzle 9: upcoming",
+        "Puzzle 10: upcoming",
+        "Puzzle 11: upcoming"
+      ]
+    }
+  ],
+  "runtimeErrors": [],
+  "menu": {
+    "open": true,
+    "closedWithEscape": true
+  },
+  "chessMenuClose": [
+    {
+      "cls": "cc-close-button-component cc-close-button-medium cc-close-button-subtle cc-transition-color-hover bottom-nav-menu-close",
+      "label": "Close"
+    }
+  ]
+}

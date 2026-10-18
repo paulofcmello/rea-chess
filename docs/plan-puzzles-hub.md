@@ -23,3 +23,6 @@ User compared chess.com `/puzzles` with REA `#/puzzles` (Puzzle Path card from `
 2. Screenshots (REA vs chess.com: landing + list view) at 1440x900 in `.rea/puzzle-path/hub/compare/`, visually matching layout.
 3. With stored progress at tile 7 of level 17 (set localStorage), the current tile + pawn and tiles 8–20 are visible.
 4. Do not commit. Final message: files changed + deviations.
+
+## Pass 2: path zoom
+Compare `.rea/puzzle-path/hub/compare/rea-landing.png` with `chesscom-landing.png`: REA's scene is zoomed out (tiny tiles, whole 1–20 path visible). chess.com shows the scene at ~2x scale: tile numbers ~28px, only roughly current-3 .. 20 plus a few completed tiles visible, props large (globe, clocks), camera centred so the current tile sits slightly below the middle. Match chess.com's scale and camera; keep the card height unchanged. Update compare screenshots. Do not commit.
