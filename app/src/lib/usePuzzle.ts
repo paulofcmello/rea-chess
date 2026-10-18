@@ -10,6 +10,7 @@ import { Chess } from 'chess.js'
 import type { Puzzle } from './puzzles'
 import { playMove, playPuzzle } from './sound'
 import { recordSolve } from './streak'
+import { recordPathSolve } from './puzzlePath'
 import type { Arrow, Effect, Highlight } from '../components/Board'
 
 export type PuzzleStatus = 'loading' | 'playing' | 'wrong' | 'solved' | 'revealed'
@@ -44,6 +45,8 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
   const [hintLevel, setHintLevel] = useState(0)
   const [attempt, setAttempt] = useState(0)
   const reported = useRef(false)
+  const completed = useRef(false)
+  const firstTry = useRef(true)
   const timers = useRef<number[]>([])
   const optsRef = useRef(opts)
   optsRef.current = opts
@@ -105,6 +108,8 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
 
   useEffect(() => {
     reported.current = false
+    completed.current = false
+    firstTry.current = true
   }, [puzzle])
 
   const userMove = useCallback(
@@ -131,7 +136,11 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
         if (next >= puzzle.moves.length || isMate) {
           setStep(puzzle.moves.length)
           setStatus('solved')
-          recordSolve()
+          if (!completed.current) {
+            recordPathSolve(firstTry.current)
+            recordSolve()
+            completed.current = true
+          }
           playPuzzle(rush ? 'rush-correct' : 'puzzle-solved')
           report(hintLevel === 0)
         } else {
@@ -140,6 +149,7 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
           later(() => applyOpponent(puzzle.moves[next]), 500)
         }
       } else {
+        firstTry.current = false
         setLastMoveColor(INCORRECT_COLOR)
         setEffects([{ square: m.to, type: 'incorrect' }])
         setStatus('wrong')
@@ -167,6 +177,7 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
 
   const showSolution = useCallback(() => {
     if (!puzzle || status === 'solved' || status === 'revealed' || status === 'loading') return
+    firstTry.current = false
     report(false)
     if (status === 'wrong') chess.current.undo()
     clearTimers()
@@ -190,6 +201,7 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
   const hint = useCallback(() => {
     if (!puzzle || status !== 'playing') return
     const { from, to } = uciToMove(puzzle.moves[step])
+    firstTry.current = false
     report(false)
     setHighlights([{ square: from, color: HINT_COLOR, opacity: 0.5 }])
     if (hintLevel >= 1) setArrows([{ from, to }])

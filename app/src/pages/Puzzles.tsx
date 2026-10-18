@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import Board from '../components/Board'
+import PuzzlePathCard from '../components/PuzzlePathCard'
 import { loadPuzzles, pickPuzzle, updateRating, themeLabels, type Puzzle } from '../lib/puzzles'
 import { usePuzzle } from '../lib/usePuzzle'
 import { useSettings, useStored } from '../lib/storage'
@@ -17,6 +18,8 @@ interface HistoryItem {
 
 export default function Puzzles() {
   const [settings] = useSettings()
+  const [playing, setPlaying] = useState(false)
+  const [error, setError] = useState('')
   const [all, setAll] = useState<Puzzle[]>([])
   const [rating, setRating] = useStored('puzzleRating', 800)
   const [history, setHistory] = useStored<HistoryItem[]>('puzzleHistory', [])
@@ -40,9 +43,8 @@ export default function Puzzles() {
   useEffect(() => {
     loadPuzzles().then((list) => {
       setAll(list)
-      next(list)
-    })
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+    }).catch(() => setError('Puzzles could not be loaded. Please try again.'))
+  }, [])
 
   const p = usePuzzle(puzzle, {
     onNext: () => next(),
@@ -57,24 +59,43 @@ export default function Puzzles() {
 
   const finished = p.status === 'solved' || p.status === 'revealed' || p.status === 'wrong'
   useEffect(() => {
-    if (finished || !settings.puzzleTimer) return
+    if (!playing || finished || !settings.puzzleTimer) return
     const t = window.setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(t)
-  }, [finished, startedAt, settings.puzzleTimer])
+  }, [playing, finished, startedAt, settings.puzzleTimer])
   const secs = Math.max(0, Math.floor((now - startedAt) / 1000))
   const clock = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`
 
   const analyze = () => puzzle && openInAnalysis(puzzle.fen, p.history(), p.orientation)
   const orientation = flipped ? (p.orientation === 'white' ? 'black' : 'white') : p.orientation
 
+  const start = () => {
+    if (!all.length) return
+    next()
+    setPlaying(true)
+  }
+
   return (
-    <div className="cc-layout">
+    <>
+    <div className="page cc-puzzle-hub" hidden={playing}>
+      <PuzzlePathCard onSolve={start} active={!playing} loading={!all.length} />
+      <section className="cc-puzzle-modes" aria-label="Puzzle modes">
+        <h2>Train your tactical vision</h2>
+        <p className="muted">A little practice every day goes a long way.</p>
+        {error ? <p role="alert">{error} <button className="cc-button cc-secondary" onClick={() => location.reload()}>Try again</button></p> : !all.length && <p role="status">Loading puzzles…</p>}
+        <a className="cc-section" href="#/rush"><img src="https://assets-ds.chess.com/color-icons/puzzle-rush.svg" alt="" /><div><h3>Puzzle Rush</h3><p className="muted">Race the clock and build your streak.</p></div></a>
+        <a className="cc-section" href="#/daily"><img src="https://assets-ds.chess.com/color-icons/pawn-green.svg" alt="" /><div><h3>Daily Puzzle</h3><p className="muted">A fresh challenge every day.</p></div></a>
+        <a className="cc-section" href="#/themes"><img src="https://assets-ds.chess.com/color-icons/training.svg" alt="" /><div><h3>Themes</h3><p className="muted">Practice a specific tactic.</p></div></a>
+      </section>
+    </div>
+    {playing && <div className="cc-layout">
       <div className="cc-board-area">
         <Board {...p.boardProps} orientation={orientation} />
       </div>
       <BoardControls onFlip={() => setFlipped((f) => !f)} />
       <SidebarShell
         title="Puzzles"
+        onBack={() => { setPlaying(false); setPuzzle(null) }}
         footer={<PuzzleFooter status={p.status} onHint={p.hint} onRetry={p.status === 'wrong' ? p.retry : p.restart} onSolution={p.showSolution} onAnalysis={analyze} onNext={() => next()} />}
       >
         <PuzzleCoach status={p.status} color={p.solverColor} usedHint={p.usedHint} />
@@ -113,6 +134,7 @@ export default function Puzzles() {
           ))}
         </div>
       </SidebarShell>
-    </div>
+    </div>}
+    </>
   )
 }

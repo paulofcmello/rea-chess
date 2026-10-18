@@ -3446,3 +3446,64 @@ h2 {
   .cc-settings-move-preview { flex-wrap: wrap; }
   .cc-settings-mini-board { max-width: 100%; }
 }
+
+/* Puzzle Path: live chess.com SVG tiles/props over its bronze isometric palette. */
+.cc-puzzle-hub { display: grid; grid-template-columns: minmax(280px, 360px) minmax(240px, 420px); gap: 32px; align-items: start; }
+.cc-puzzle-hub[hidden] { display: none; }
+.cc-path-card { position: relative; width: 100%; overflow: hidden; border-radius: 6px; background: #663c15; isolation: isolate; }
+.cc-path-header { position: relative; z-index: 4; display: flex; justify-content: center; align-items: center; gap: 10px; height: 72px; background: linear-gradient(115deg, #7c929a, #98a79d); }
+.cc-path-header h1 { margin: 0; color: #fff; font-size: 32px; }
+.cc-path-badge { position: relative; display: inline-grid; place-items: center; flex: 0 0 46px; width: 46px; height: 46px; }
+.cc-path-badge img { position: absolute; width: 100%; height: 100%; }
+.cc-path-badge strong { position: relative; font: 800 22px var(--font-heading); color: #fff; text-shadow: -2px -2px #774618, 2px -2px #774618, -2px 2px #774618, 2px 2px #774618; padding-bottom: 4px; }
+.cc-path-coach { position: absolute; z-index: 3; top: 80px; left: 12px; right: 16px; display: flex; align-items: flex-start; gap: 8px; pointer-events: none; }
+.cc-path-coach > img { width: 64px; height: 72px; object-fit: cover; object-position: top; }
+.cc-path-coach p { position: relative; margin: 0; padding: 12px 14px; min-height: 98px; border-radius: 12px; background: #fff; color: #312e2b; font-size: 14px; font-weight: 600; box-shadow: 0 2px 6px #0002; }
+.cc-path-coach p::before { content: ''; position: absolute; top: 24px; left: -11px; border-width: 9px 12px 9px 0; border-style: solid; border-color: transparent white transparent transparent; }
+.cc-path-viewport { height: 540px; overflow-y: auto; overflow-x: hidden; scrollbar-width: none; overscroll-behavior: contain; background: #774618; }
+.cc-path-viewport::-webkit-scrollbar { display: none; }
+.cc-path-scene { position: relative; height: 1150px; background-color: #774618; background-image: conic-gradient(from 45deg, #663c15 25%, transparent 0 50%, #663c15 0 75%, transparent 0); background-size: 50% 128px; }
+.cc-path-next-region { position: absolute; inset: 0 0 auto; height: 470px; background-color: #90adc7; background-image: conic-gradient(from 45deg, #6e93b5 25%, transparent 0 50%, #6e93b5 0 75%, transparent 0); background-size: 50% 128px; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 36%); }
+.cc-path-prop { position: absolute; width: 44%; height: auto; pointer-events: none; }
+.cc-path-cloud { position: absolute; z-index: 2; width: 90%; top: 140px; pointer-events: none; }
+.cc-path-cloud-left { left: -40%; }
+.cc-path-cloud-right { right: -36%; top: 25px; }
+.cc-path-tiles { list-style: none; padding: 0; margin: 0; }
+.cc-path-tile { position: absolute; width: 18%; aspect-ratio: 1; transform: translate(-50%, -50%); }
+.cc-path-tile > img { width: 100%; height: 100%; }
+.cc-path-tile > span { position: absolute; left: 0; right: 0; top: 22%; text-align: center; color: #fff; font: 800 16px var(--font-heading); text-shadow: 1px 2px 2px #774618; }
+.cc-path-pawn { position: absolute; z-index: 2; width: 18%; aspect-ratio: 1; transform: translate(-50%, -105%); transition: left 400ms ease, top 400ms ease; pointer-events: none; }
+.cc-path-pawn-hop { position: relative; width: 100%; height: 100%; animation: cc-path-hop 400ms ease; }
+.cc-path-pawn-hop > img { width: 100%; height: 100%; filter: hue-rotate(48deg) saturate(.8); }
+.cc-path-pawn-bubble { position: absolute; bottom: 105%; left: 36%; display: grid; place-items: center; height: 25px; width: 25px; color: #65645f; background: white; border-radius: 4px; font-size: 20px; box-shadow: 0 2px 3px #0003; }
+.cc-path-pawn-bubble::after { content: ''; position: absolute; bottom: -4px; border-width: 5px 5px 0; border-style: solid; border-color: white transparent transparent; }
+@keyframes cc-path-hop { 50% { transform: translateY(-16px) rotate(-6deg); } }
+.cc-path-footer { position: relative; z-index: 3; padding: 16px 24px 24px; background: #663c15; }
+.cc-path-footer::before { content: ''; position: absolute; bottom: 100%; left: 0; right: 0; height: 45px; background: linear-gradient(transparent, #663c15); pointer-events: none; }
+.cc-path-stats { display: flex; align-items: center; gap: 10px; color: white; font: 800 19px var(--font-heading); }
+.cc-path-stats > span { display: inline-flex; align-items: center; gap: 3px; color: #fad541; }
+.cc-path-progress-row { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; }
+.cc-path-progress { flex: 1; height: 16px; border-radius: 16px; background: #ffffff26; overflow: hidden; }
+.cc-path-progress > span { display: block; height: 100%; background: #fad541; border-radius: inherit; transition: width 400ms ease; }
+.cc-path-progress-row .cc-path-badge { flex-basis: 32px; height: 32px; width: 32px; }
+.cc-path-progress-row .cc-path-badge strong { font-size: 16px; }
+.cc-path-actions { display: flex; align-items: stretch; gap: 8px; }
+.cc-path-actions > .cc-primary { flex: 1; min-width: 0; font-size: 21px; padding-inline: 8px; }
+.cc-path-actions .cc-path-modes { display: grid; place-items: center; flex: 0 0 54px; padding: 12px; }
+.cc-puzzle-modes { padding-top: 24px; }
+.cc-puzzle-modes h2 { margin-bottom: 8px; }
+.cc-puzzle-modes > a { display: flex; align-items: center; gap: 20px; padding: 20px; margin-top: 16px; }
+.cc-puzzle-modes > a:hover { background: #ffffff0d; }
+.cc-puzzle-modes > a > img { width: 54px; height: 54px; }
+.cc-puzzle-modes h3, .cc-puzzle-modes a p { margin: 0; }
+.reduce-motion .cc-path-pawn, .reduce-motion .cc-path-progress > span { transition: none; }
+.reduce-motion .cc-path-pawn-hop { animation: none; }
+@media (prefers-reduced-motion: reduce) {
+  .cc-path-pawn, .cc-path-progress > span { transition: none; }
+  .cc-path-pawn-hop { animation: none; }
+}
+@media (max-width: 800px) {
+  .cc-puzzle-hub { grid-template-columns: minmax(0, 360px); justify-content: center; gap: 8px; }
+  .cc-path-viewport { height: 460px; }
+  .cc-puzzle-modes { padding-top: 8px; }
+}

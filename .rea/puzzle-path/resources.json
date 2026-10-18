@@ -1,0 +1,714 @@
+[
+  {
+    "url": "https://www.chess.com/bundles/web/fonts/chess-sans/ChessSans-Bold.19a3983f.woff2",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/web/fonts/chess-sans/ChessSans-ExtraBold.3b60f736.woff2",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/design-system-global-styles.DlEpehyHwn.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/main-global-styles.CGUkza8HpV.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.BJ4C_amH8R.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/toaster-center._Jyaitqsh3.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/global-ads-global-styles.DCBP-SFpIq.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.BxeJCt1Imd.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/global-ads.gq0bBbrQHV.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/global-global-styles.D10t7xPVfa.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/sprites-global-styles.DnnYg9lCFU.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/chessboard-layout.Cn7fJCzylQ.css",
+    "type": "link"
+  },
+  {
+    "url": "https://assets-ds.chess.com/color-icons/play-white.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://assets-ds.chess.com/color-icons/puzzle-piece.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://assets-ds.chess.com/color-icons/lessons.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://assets-ds.chess.com/color-icons/training.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://assets-ds.chess.com/color-icons/binoculars.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://assets-ds.chess.com/color-icons/friends.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://assets-ds.chess.com/color-icons/ellipsis.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/shared.Bpf5JS-h4J.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.Dz8jm50iLN.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/puzzles.css",
+    "type": "link"
+  },
+  {
+    "url": "https://assets-ds.chess.com/color-icons/commerce-diamond.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/comments.BWLzQkMrs3.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/js/client/es6-translations/es6-translation.en_US.4d234165.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/award-delivery.UoiHg-WIes.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/global.DjJ_7AzydW.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/sentry.sGzKJdPHz-.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/pubsub-connection.BzLoSSKa0v.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/chessboard-layout.HnVOpg4u5j.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/turnstile.C6_siBvkDB.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/diagram-viewer.BOlVRGm5Uo.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/puzzles.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/global-ads.CGUPuv-NCn.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/rolldown-runtime.CNC7AqOflz.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.eager.CLNRbjq1VY.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.eager.CN_dmv2B1a.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/rolldown-runtime.BX80bFGj3K.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.eager.DDJB8ambzr.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/rolldown-runtime.B-a1K2Sipg.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.eager.BWXoiF9-M0.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/shared.eager.CZJHaxB19i.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.eager.BCas--iu1N.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/index.70f7c8eb.BI8Qdd1qFn.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.3313dd43.F5yzcp_4T8.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-openings-limit.f906a457.tfYNEcG-WY.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-drills-limit.b51903cc.Dd_NjCl79l.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-videos-limit.03df9d5a.D7SK80T_z_.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-bots-limit.a54d3fd8.BxfgUkM2Aj.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-daily-puzzle-limit.9c1716e2.BM3-lCsth3.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/monetization-end-games-limit.aa1b2c83.DOyU_Y9aaR.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/chessboard-636d356.62221e19.BvBnUAvPMT.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/add-chessboard-slam-animation.b44146bc.DiWVvzxomW.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/client.411a4358.DaUs43Cy5P.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/client.dbeb9287.BLAxM7Ijm4.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/client.7b2a3a15.DyVRFMS7pU.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/coaches.dd1c6bed.DilvuGDYAb.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://assets-ds.chess.com/motion/rive/workstreams/puzzles/puzzlepath/puzzles-path-pawn-ae4d1f4.riv",
+    "type": "fetch"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/wood-art-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/wood-art-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/wood-level-light.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/wood-art-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/wood-level-dark.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/wood-level-checked.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/stone-art-R1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/stone-art-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/stone-art-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/stone-level-light.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/stone-art-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/stone-level-checked.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/stone-level-dark.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/bronze-art-R1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/bronze-art-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/bronze-art-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/bronze-art-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/bronze-level-light.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/bronze-level-dark.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/bronze-level-checked.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/silver-art-R1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/silver-art-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/silver-art-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/silver-art-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/silver-level-light.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/silver-level-dark.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/silver-level-checked.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/crystal-art-R1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/crystal-art-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/crystal-art-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/crystal-art-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/crystal-level-light.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/crystal-level-dark.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/crystal-level-checked.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/elite-art-R1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/elite-art-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/elite-art-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/elite-art-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/elite-level-light.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/elite-level-dark.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/elite-level-checked.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/champion-art-R1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/champion-art-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/champion-art-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/champion-art-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/champion-level-light.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/champion-level-dark.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/champion-level-checked.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/legend-art-R1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/legend-art-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/legend-art-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/legend-art-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/legend-level-light.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/legend-level-dark.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/legend-level-checked.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/wood-level-pawn.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/stone-level-pawn.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/bronze-level-pawn.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/silver-level-pawn.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/crystal-level-pawn.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/elite-level-pawn.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/champion-level-pawn.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/legend-level-pawn.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/path-fog-L0.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/path-fog-L1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/path-fog-L2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/path-fog-R1.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/path-fog-R2.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/path-fog-R3.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/path-fog-following-BG.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/path-fog-initial-BG.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/puzzles/prestige-platform.svg",
+    "type": "img"
+  },
+  {
+    "url": "https://assets-coaches.chess.com/image/coach_david.riv?v=6ae35776",
+    "type": "fetch"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/index.afa035cd.DamBLq9wrA.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://assets-ds.chess.com/motion/rive/workstreams/puzzles/puzzlepath/puzzles-r1-wood-5a4a097.riv",
+    "type": "fetch"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/shared.6a60d0d3.BeXa4FZzWB.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/shared.525adf09.MTX5un5VSS.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/color-icons/puzzle-tier-wood.svg",
+    "type": "css"
+  },
+  {
+    "url": "https://www.chess.com//bundles/web/images/color-icons/puzzle-tier-bronze.svg",
+    "type": "css"
+  },
+  {
+    "url": "https://assets-coaches.chess.com/image/coach_david.riv?v=6ae35776",
+    "type": "fetch"
+  },
+  {
+    "url": "https://www.chess.com/r2/client-packages/puzzles/2026.10.3/client.832f50bc.6HJ2KZgt0C.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.CcAPVYVPyI.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.BOkGehLWaW.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.CaRMgmM2It.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.B6sqqQMUzF.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.CPpR6vrLKp.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.v_XJTolLWV.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/init.CFqzZp73SE.css",
+    "type": "link"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/init.b5384744.Czb0UnpT4I.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.10af10ff.Dv4_1HuDMl.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.edc0d583.UowUxXvg4l.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.5d81904b.BT-TInxQYR.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.3334ece5.BRDsP4lKul.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.3d17d0ae.Bj06Cx7KBw.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.c95c8cc1.CjchB6NZ3N.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.f9423ee1.ChsQT7Rn1_.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.82e924f2.GxodpdYe9T.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.8484eeb6.1VVGe7YYJ3.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.b58d97a8.B5IGNUgjjz.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.17c6863b.6seinjANkD.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.b9f938b8.nN2219GvzB.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.b7c8d420.DsDWPWfC7F.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.91fa3c51.DLVa4p-Kxe.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.feac4f45.CMQ_blVpuV.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.4305f82a.DsztW0nk42.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.ebcd97a5.CS6OV9E0WD.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.4a8e6a10.C_gJbKEpFL.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.9d4aed9a.D_DWjmRUNb.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.79933fe1.o2GhEUikAM.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.d1c28101.9NjUeRAVtd.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.2cf42cfa.BqoBWgIfbp.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.e7d28bcd.6iagvbldmU.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.e0d2d574.NrGyGor8__.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.a3a69ef0.B5yeVx55Yv.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.064effd0.CtGWpmK19V.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.71b99fbf.DZO6ALwTmX.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.5906cc39.BM6IbbRRM6.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.0b38b0a2.BxzK5ggfb7.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.7a5bb6ee.B6LnRsgc2p.chunk.js",
+    "type": "script"
+  },
+  {
+    "url": "https://www.chess.com/bundles/app/vite/shared.004e88f7.hGs5eUlAdo.chunk.js",
+    "type": "script"
+  }
+]

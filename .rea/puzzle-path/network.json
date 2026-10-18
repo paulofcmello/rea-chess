@@ -1,0 +1,3476 @@
+[
+  {
+    "url": "https://www.chess.com/callback/tactics/stats/user",
+    "body": {
+      "rating": 1561,
+      "highestRating": 1664,
+      "percentCorrect": 50,
+      "todayAttempted": 0,
+      "totalAttempted": 6882,
+      "lastPositiveStreak": 5,
+      "currentStreak": 2,
+      "highestStreak": 15,
+      "isNewHighestStreak": false,
+      "puzzlePath": {
+        "xp": 31039,
+        "bestStreak": 8,
+        "totalEasyPuzzles": 581,
+        "totalHardPuzzles": 313,
+        "totalXHardPuzzles": 75,
+        "totalLessonChallenges": 0,
+        "tier": 3,
+        "level": 15,
+        "currentStreak": 2,
+        "hardestSolvedPuzzleRating": 2074,
+        "prestigeLevel": 1
+      }
+    }
+  },
+  {
+    "url": "https://www.chess.com/service/puzzle-path-gateway/chesscom.puzzle_path.v1.PuzzlePathGatewayService/GetPuzzlePathUserWithFriends",
+    "body": {
+      "tier": 3,
+      "level": 15,
+      "xpPoints": 31039,
+      "prestige": 1
+    }
+  },
+  {
+    "url": "https://www.chess.com/callback/tactics/prestige-level-point-system-config/1",
+    "body": {
+      "data": {
+        "tier": [
+          {
+            "tier": 1,
+            "prestige": 1,
+            "awards": [
+              {
+                "puzzle_type": "easy_puzzle",
+                "base_point": 30,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 5,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 50,
+                    "repeat": false
+                  },
+                  {
+                    "milestone": 100,
+                    "bonus_point": 50,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "lesson",
+                "base_point": 30,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 5,
+                "time_points": [],
+                "milestones": []
+              },
+              {
+                "puzzle_type": "hard_puzzle",
+                "base_point": 40,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 8,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 75,
+                    "bonus_point": 75,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "xhard_puzzle",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 10
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 15
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 100,
+                    "repeat": true
+                  }
+                ]
+              }
+            ],
+            "levels": [
+              {
+                "level": 1,
+                "next_level_required_points": 35,
+                "next_level_total_required_points": 35
+              },
+              {
+                "level": 2,
+                "next_level_required_points": 60,
+                "next_level_total_required_points": 95
+              },
+              {
+                "level": 3,
+                "next_level_required_points": 110,
+                "next_level_total_required_points": 205
+              },
+              {
+                "level": 4,
+                "next_level_required_points": 125,
+                "next_level_total_required_points": 330
+              },
+              {
+                "level": 5,
+                "next_level_required_points": 150,
+                "next_level_total_required_points": 480
+              },
+              {
+                "level": 6,
+                "next_level_required_points": 160,
+                "next_level_total_required_points": 640
+              },
+              {
+                "level": 7,
+                "next_level_required_points": 170,
+                "next_level_total_required_points": 810
+              },
+              {
+                "level": 8,
+                "next_level_required_points": 180,
+                "next_level_total_required_points": 990
+              },
+              {
+                "level": 9,
+                "next_level_required_points": 190,
+                "next_level_total_required_points": 1180
+              },
+              {
+                "level": 10,
+                "next_level_required_points": 210,
+                "next_level_total_required_points": 1390
+              },
+              {
+                "level": 11,
+                "next_level_required_points": 215,
+                "next_level_total_required_points": 1605
+              },
+              {
+                "level": 12,
+                "next_level_required_points": 225,
+                "next_level_total_required_points": 1830
+              },
+              {
+                "level": 13,
+                "next_level_required_points": 230,
+                "next_level_total_required_points": 2060
+              },
+              {
+                "level": 14,
+                "next_level_required_points": 240,
+                "next_level_total_required_points": 2300
+              },
+              {
+                "level": 15,
+                "next_level_required_points": 250,
+                "next_level_total_required_points": 2550
+              },
+              {
+                "level": 16,
+                "next_level_required_points": 265,
+                "next_level_total_required_points": 2815
+              },
+              {
+                "level": 17,
+                "next_level_required_points": 275,
+                "next_level_total_required_points": 3090
+              },
+              {
+                "level": 18,
+                "next_level_required_points": 280,
+                "next_level_total_required_points": 3370
+              },
+              {
+                "level": 19,
+                "next_level_required_points": 290,
+                "next_level_total_required_points": 3660
+              },
+              {
+                "level": 20,
+                "next_level_required_points": 300,
+                "next_level_total_required_points": 3960
+              }
+            ],
+            "bonuses": {
+              "streak_points": 1,
+              "streak_bonus_points": 0,
+              "hardest_puzzle_solved_points": 0,
+              "best_streak_bonus_points": 0,
+              "daily_3_puzzles_solved": 30,
+              "xhard_puzzle_bonus_points": 0,
+              "hard_puzzle_bonus_points": 0,
+              "easy_puzzle_bonus_points": 0
+            }
+          },
+          {
+            "tier": 2,
+            "prestige": 1,
+            "awards": [
+              {
+                "puzzle_type": "easy_puzzle",
+                "base_point": 30,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 5,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 50,
+                    "repeat": false
+                  },
+                  {
+                    "milestone": 100,
+                    "bonus_point": 50,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "lesson",
+                "base_point": 30,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 5,
+                "time_points": [],
+                "milestones": []
+              },
+              {
+                "puzzle_type": "hard_puzzle",
+                "base_point": 40,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 8,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 75,
+                    "bonus_point": 75,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "xhard_puzzle",
+                "base_point": 60,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 10
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 15
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 100,
+                    "repeat": true
+                  }
+                ]
+              }
+            ],
+            "levels": [
+              {
+                "level": 1,
+                "next_level_required_points": 400,
+                "next_level_total_required_points": 4360
+              },
+              {
+                "level": 2,
+                "next_level_required_points": 430,
+                "next_level_total_required_points": 4790
+              },
+              {
+                "level": 3,
+                "next_level_required_points": 460,
+                "next_level_total_required_points": 5250
+              },
+              {
+                "level": 4,
+                "next_level_required_points": 490,
+                "next_level_total_required_points": 5740
+              },
+              {
+                "level": 5,
+                "next_level_required_points": 520,
+                "next_level_total_required_points": 6260
+              },
+              {
+                "level": 6,
+                "next_level_required_points": 550,
+                "next_level_total_required_points": 6810
+              },
+              {
+                "level": 7,
+                "next_level_required_points": 580,
+                "next_level_total_required_points": 7390
+              },
+              {
+                "level": 8,
+                "next_level_required_points": 610,
+                "next_level_total_required_points": 8000
+              },
+              {
+                "level": 9,
+                "next_level_required_points": 640,
+                "next_level_total_required_points": 8640
+              },
+              {
+                "level": 10,
+                "next_level_required_points": 670,
+                "next_level_total_required_points": 9310
+              },
+              {
+                "level": 11,
+                "next_level_required_points": 700,
+                "next_level_total_required_points": 10010
+              },
+              {
+                "level": 12,
+                "next_level_required_points": 730,
+                "next_level_total_required_points": 10740
+              },
+              {
+                "level": 13,
+                "next_level_required_points": 760,
+                "next_level_total_required_points": 11500
+              },
+              {
+                "level": 14,
+                "next_level_required_points": 790,
+                "next_level_total_required_points": 12290
+              },
+              {
+                "level": 15,
+                "next_level_required_points": 820,
+                "next_level_total_required_points": 13110
+              },
+              {
+                "level": 16,
+                "next_level_required_points": 850,
+                "next_level_total_required_points": 13960
+              },
+              {
+                "level": 17,
+                "next_level_required_points": 880,
+                "next_level_total_required_points": 14840
+              },
+              {
+                "level": 18,
+                "next_level_required_points": 920,
+                "next_level_total_required_points": 15760
+              },
+              {
+                "level": 19,
+                "next_level_required_points": 960,
+                "next_level_total_required_points": 16720
+              },
+              {
+                "level": 20,
+                "next_level_required_points": 1000,
+                "next_level_total_required_points": 17720
+              }
+            ],
+            "bonuses": {
+              "streak_points": 2,
+              "streak_bonus_points": 0,
+              "hardest_puzzle_solved_points": 50,
+              "best_streak_bonus_points": 50,
+              "daily_3_puzzles_solved": 30,
+              "xhard_puzzle_bonus_points": 6,
+              "hard_puzzle_bonus_points": 0,
+              "easy_puzzle_bonus_points": 0
+            }
+          },
+          {
+            "tier": 3,
+            "prestige": 1,
+            "awards": [
+              {
+                "puzzle_type": "easy_puzzle",
+                "base_point": 30,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 5,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 50,
+                    "repeat": false
+                  },
+                  {
+                    "milestone": 100,
+                    "bonus_point": 50,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "lesson",
+                "base_point": 30,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 5,
+                "time_points": [],
+                "milestones": []
+              },
+              {
+                "puzzle_type": "hard_puzzle",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 8,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 75,
+                    "bonus_point": 75,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "xhard_puzzle",
+                "base_point": 60,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 10
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 15
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 100,
+                    "repeat": true
+                  }
+                ]
+              }
+            ],
+            "levels": [
+              {
+                "level": 1,
+                "next_level_required_points": 700,
+                "next_level_total_required_points": 18420
+              },
+              {
+                "level": 2,
+                "next_level_required_points": 720,
+                "next_level_total_required_points": 19140
+              },
+              {
+                "level": 3,
+                "next_level_required_points": 740,
+                "next_level_total_required_points": 19880
+              },
+              {
+                "level": 4,
+                "next_level_required_points": 770,
+                "next_level_total_required_points": 20650
+              },
+              {
+                "level": 5,
+                "next_level_required_points": 800,
+                "next_level_total_required_points": 21450
+              },
+              {
+                "level": 6,
+                "next_level_required_points": 830,
+                "next_level_total_required_points": 22280
+              },
+              {
+                "level": 7,
+                "next_level_required_points": 860,
+                "next_level_total_required_points": 23140
+              },
+              {
+                "level": 8,
+                "next_level_required_points": 890,
+                "next_level_total_required_points": 24030
+              },
+              {
+                "level": 9,
+                "next_level_required_points": 920,
+                "next_level_total_required_points": 24950
+              },
+              {
+                "level": 10,
+                "next_level_required_points": 950,
+                "next_level_total_required_points": 25900
+              },
+              {
+                "level": 11,
+                "next_level_required_points": 980,
+                "next_level_total_required_points": 26880
+              },
+              {
+                "level": 12,
+                "next_level_required_points": 1010,
+                "next_level_total_required_points": 27890
+              },
+              {
+                "level": 13,
+                "next_level_required_points": 1040,
+                "next_level_total_required_points": 28930
+              },
+              {
+                "level": 14,
+                "next_level_required_points": 1070,
+                "next_level_total_required_points": 30000
+              },
+              {
+                "level": 15,
+                "next_level_required_points": 1100,
+                "next_level_total_required_points": 31100
+              },
+              {
+                "level": 16,
+                "next_level_required_points": 1130,
+                "next_level_total_required_points": 32230
+              },
+              {
+                "level": 17,
+                "next_level_required_points": 1160,
+                "next_level_total_required_points": 33390
+              },
+              {
+                "level": 18,
+                "next_level_required_points": 1190,
+                "next_level_total_required_points": 34580
+              },
+              {
+                "level": 19,
+                "next_level_required_points": 1220,
+                "next_level_total_required_points": 35800
+              },
+              {
+                "level": 20,
+                "next_level_required_points": 1250,
+                "next_level_total_required_points": 37050
+              }
+            ],
+            "bonuses": {
+              "streak_points": 3,
+              "streak_bonus_points": 0,
+              "hardest_puzzle_solved_points": 50,
+              "best_streak_bonus_points": 50,
+              "daily_3_puzzles_solved": 60,
+              "xhard_puzzle_bonus_points": 6,
+              "hard_puzzle_bonus_points": 0,
+              "easy_puzzle_bonus_points": 0
+            }
+          },
+          {
+            "tier": 4,
+            "prestige": 1,
+            "awards": [
+              {
+                "puzzle_type": "easy_puzzle",
+                "base_point": 40,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 5,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 50,
+                    "repeat": false
+                  },
+                  {
+                    "milestone": 100,
+                    "bonus_point": 50,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "lesson",
+                "base_point": 40,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 5,
+                "time_points": [],
+                "milestones": []
+              },
+              {
+                "puzzle_type": "hard_puzzle",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 8,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 75,
+                    "bonus_point": 75,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "xhard_puzzle",
+                "base_point": 60,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 10
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 15
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 100,
+                    "repeat": true
+                  }
+                ]
+              }
+            ],
+            "levels": [
+              {
+                "level": 1,
+                "next_level_required_points": 900,
+                "next_level_total_required_points": 37950
+              },
+              {
+                "level": 2,
+                "next_level_required_points": 920,
+                "next_level_total_required_points": 38870
+              },
+              {
+                "level": 3,
+                "next_level_required_points": 940,
+                "next_level_total_required_points": 39810
+              },
+              {
+                "level": 4,
+                "next_level_required_points": 960,
+                "next_level_total_required_points": 40770
+              },
+              {
+                "level": 5,
+                "next_level_required_points": 980,
+                "next_level_total_required_points": 41750
+              },
+              {
+                "level": 6,
+                "next_level_required_points": 1000,
+                "next_level_total_required_points": 42750
+              },
+              {
+                "level": 7,
+                "next_level_required_points": 1020,
+                "next_level_total_required_points": 43770
+              },
+              {
+                "level": 8,
+                "next_level_required_points": 1040,
+                "next_level_total_required_points": 44810
+              },
+              {
+                "level": 9,
+                "next_level_required_points": 1060,
+                "next_level_total_required_points": 45870
+              },
+              {
+                "level": 10,
+                "next_level_required_points": 1080,
+                "next_level_total_required_points": 46950
+              },
+              {
+                "level": 11,
+                "next_level_required_points": 1100,
+                "next_level_total_required_points": 48050
+              },
+              {
+                "level": 12,
+                "next_level_required_points": 1130,
+                "next_level_total_required_points": 49180
+              },
+              {
+                "level": 13,
+                "next_level_required_points": 1160,
+                "next_level_total_required_points": 50340
+              },
+              {
+                "level": 14,
+                "next_level_required_points": 1190,
+                "next_level_total_required_points": 51530
+              },
+              {
+                "level": 15,
+                "next_level_required_points": 1220,
+                "next_level_total_required_points": 52750
+              },
+              {
+                "level": 16,
+                "next_level_required_points": 1250,
+                "next_level_total_required_points": 54000
+              },
+              {
+                "level": 17,
+                "next_level_required_points": 1280,
+                "next_level_total_required_points": 55280
+              },
+              {
+                "level": 18,
+                "next_level_required_points": 1310,
+                "next_level_total_required_points": 56590
+              },
+              {
+                "level": 19,
+                "next_level_required_points": 1350,
+                "next_level_total_required_points": 57940
+              },
+              {
+                "level": 20,
+                "next_level_required_points": 1400,
+                "next_level_total_required_points": 59340
+              }
+            ],
+            "bonuses": {
+              "streak_points": 4,
+              "streak_bonus_points": 0,
+              "hardest_puzzle_solved_points": 50,
+              "best_streak_bonus_points": 50,
+              "daily_3_puzzles_solved": 60,
+              "xhard_puzzle_bonus_points": 6,
+              "hard_puzzle_bonus_points": 5,
+              "easy_puzzle_bonus_points": 0
+            }
+          },
+          {
+            "tier": 5,
+            "prestige": 1,
+            "awards": [
+              {
+                "puzzle_type": "easy_puzzle",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 50,
+                    "repeat": false
+                  },
+                  {
+                    "milestone": 100,
+                    "bonus_point": 50,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "lesson",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [],
+                "milestones": []
+              },
+              {
+                "puzzle_type": "hard_puzzle",
+                "base_point": 60,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 15,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 75,
+                    "bonus_point": 75,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "xhard_puzzle",
+                "base_point": 70,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 10
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 15
+                  }
+                ],
+                "retry_points": 20,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 100,
+                    "repeat": true
+                  }
+                ]
+              }
+            ],
+            "levels": [
+              {
+                "level": 1,
+                "next_level_required_points": 1200,
+                "next_level_total_required_points": 60540
+              },
+              {
+                "level": 2,
+                "next_level_required_points": 1220,
+                "next_level_total_required_points": 61760
+              },
+              {
+                "level": 3,
+                "next_level_required_points": 1240,
+                "next_level_total_required_points": 63000
+              },
+              {
+                "level": 4,
+                "next_level_required_points": 1260,
+                "next_level_total_required_points": 64260
+              },
+              {
+                "level": 5,
+                "next_level_required_points": 1280,
+                "next_level_total_required_points": 65540
+              },
+              {
+                "level": 6,
+                "next_level_required_points": 1300,
+                "next_level_total_required_points": 66840
+              },
+              {
+                "level": 7,
+                "next_level_required_points": 1320,
+                "next_level_total_required_points": 68160
+              },
+              {
+                "level": 8,
+                "next_level_required_points": 1340,
+                "next_level_total_required_points": 69500
+              },
+              {
+                "level": 9,
+                "next_level_required_points": 1360,
+                "next_level_total_required_points": 70860
+              },
+              {
+                "level": 10,
+                "next_level_required_points": 1380,
+                "next_level_total_required_points": 72240
+              },
+              {
+                "level": 11,
+                "next_level_required_points": 1400,
+                "next_level_total_required_points": 73640
+              },
+              {
+                "level": 12,
+                "next_level_required_points": 1420,
+                "next_level_total_required_points": 75060
+              },
+              {
+                "level": 13,
+                "next_level_required_points": 1440,
+                "next_level_total_required_points": 76500
+              },
+              {
+                "level": 14,
+                "next_level_required_points": 1460,
+                "next_level_total_required_points": 77960
+              },
+              {
+                "level": 15,
+                "next_level_required_points": 1480,
+                "next_level_total_required_points": 79440
+              },
+              {
+                "level": 16,
+                "next_level_required_points": 1500,
+                "next_level_total_required_points": 80940
+              },
+              {
+                "level": 17,
+                "next_level_required_points": 1510,
+                "next_level_total_required_points": 82450
+              },
+              {
+                "level": 18,
+                "next_level_required_points": 1540,
+                "next_level_total_required_points": 83990
+              },
+              {
+                "level": 19,
+                "next_level_required_points": 1570,
+                "next_level_total_required_points": 85560
+              },
+              {
+                "level": 20,
+                "next_level_required_points": 1600,
+                "next_level_total_required_points": 87160
+              }
+            ],
+            "bonuses": {
+              "streak_points": 5,
+              "streak_bonus_points": 0,
+              "hardest_puzzle_solved_points": 50,
+              "best_streak_bonus_points": 50,
+              "daily_3_puzzles_solved": 60,
+              "xhard_puzzle_bonus_points": 7,
+              "hard_puzzle_bonus_points": 6,
+              "easy_puzzle_bonus_points": 5
+            }
+          },
+          {
+            "tier": 6,
+            "prestige": 1,
+            "awards": [
+              {
+                "puzzle_type": "easy_puzzle",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 50,
+                    "repeat": false
+                  },
+                  {
+                    "milestone": 100,
+                    "bonus_point": 50,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "lesson",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [],
+                "milestones": []
+              },
+              {
+                "puzzle_type": "hard_puzzle",
+                "base_point": 60,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 15,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 75,
+                    "bonus_point": 75,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "xhard_puzzle",
+                "base_point": 70,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 10
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 15
+                  }
+                ],
+                "retry_points": 20,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 100,
+                    "repeat": true
+                  }
+                ]
+              }
+            ],
+            "levels": [
+              {
+                "level": 1,
+                "next_level_required_points": 1400,
+                "next_level_total_required_points": 88560
+              },
+              {
+                "level": 2,
+                "next_level_required_points": 1420,
+                "next_level_total_required_points": 89980
+              },
+              {
+                "level": 3,
+                "next_level_required_points": 1440,
+                "next_level_total_required_points": 91420
+              },
+              {
+                "level": 4,
+                "next_level_required_points": 1460,
+                "next_level_total_required_points": 92880
+              },
+              {
+                "level": 5,
+                "next_level_required_points": 1480,
+                "next_level_total_required_points": 94360
+              },
+              {
+                "level": 6,
+                "next_level_required_points": 1500,
+                "next_level_total_required_points": 95860
+              },
+              {
+                "level": 7,
+                "next_level_required_points": 1530,
+                "next_level_total_required_points": 97390
+              },
+              {
+                "level": 8,
+                "next_level_required_points": 1560,
+                "next_level_total_required_points": 98950
+              },
+              {
+                "level": 9,
+                "next_level_required_points": 1590,
+                "next_level_total_required_points": 100540
+              },
+              {
+                "level": 10,
+                "next_level_required_points": 1620,
+                "next_level_total_required_points": 102160
+              },
+              {
+                "level": 11,
+                "next_level_required_points": 1650,
+                "next_level_total_required_points": 103810
+              },
+              {
+                "level": 12,
+                "next_level_required_points": 1680,
+                "next_level_total_required_points": 105490
+              },
+              {
+                "level": 13,
+                "next_level_required_points": 1710,
+                "next_level_total_required_points": 107200
+              },
+              {
+                "level": 14,
+                "next_level_required_points": 1740,
+                "next_level_total_required_points": 108940
+              },
+              {
+                "level": 15,
+                "next_level_required_points": 1770,
+                "next_level_total_required_points": 110710
+              },
+              {
+                "level": 16,
+                "next_level_required_points": 1800,
+                "next_level_total_required_points": 112510
+              },
+              {
+                "level": 17,
+                "next_level_required_points": 1850,
+                "next_level_total_required_points": 114360
+              },
+              {
+                "level": 18,
+                "next_level_required_points": 1900,
+                "next_level_total_required_points": 116260
+              },
+              {
+                "level": 19,
+                "next_level_required_points": 1950,
+                "next_level_total_required_points": 118210
+              },
+              {
+                "level": 20,
+                "next_level_required_points": 2000,
+                "next_level_total_required_points": 120210
+              }
+            ],
+            "bonuses": {
+              "streak_points": 6,
+              "streak_bonus_points": 5,
+              "hardest_puzzle_solved_points": 50,
+              "best_streak_bonus_points": 50,
+              "daily_3_puzzles_solved": 60,
+              "xhard_puzzle_bonus_points": 7,
+              "hard_puzzle_bonus_points": 6,
+              "easy_puzzle_bonus_points": 5
+            }
+          },
+          {
+            "tier": 7,
+            "prestige": 1,
+            "awards": [
+              {
+                "puzzle_type": "easy_puzzle",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 50,
+                    "repeat": false
+                  },
+                  {
+                    "milestone": 100,
+                    "bonus_point": 50,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "lesson",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [],
+                "milestones": []
+              },
+              {
+                "puzzle_type": "hard_puzzle",
+                "base_point": 60,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 15,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 75,
+                    "bonus_point": 75,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "xhard_puzzle",
+                "base_point": 70,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 10
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 15
+                  }
+                ],
+                "retry_points": 20,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 5
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 5
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 100,
+                    "repeat": true
+                  }
+                ]
+              }
+            ],
+            "levels": [
+              {
+                "level": 1,
+                "next_level_required_points": 1600,
+                "next_level_total_required_points": 121810
+              },
+              {
+                "level": 2,
+                "next_level_required_points": 1630,
+                "next_level_total_required_points": 123440
+              },
+              {
+                "level": 3,
+                "next_level_required_points": 1660,
+                "next_level_total_required_points": 125100
+              },
+              {
+                "level": 4,
+                "next_level_required_points": 1690,
+                "next_level_total_required_points": 126790
+              },
+              {
+                "level": 5,
+                "next_level_required_points": 1720,
+                "next_level_total_required_points": 128510
+              },
+              {
+                "level": 6,
+                "next_level_required_points": 1750,
+                "next_level_total_required_points": 130260
+              },
+              {
+                "level": 7,
+                "next_level_required_points": 1780,
+                "next_level_total_required_points": 132040
+              },
+              {
+                "level": 8,
+                "next_level_required_points": 1810,
+                "next_level_total_required_points": 133850
+              },
+              {
+                "level": 9,
+                "next_level_required_points": 1840,
+                "next_level_total_required_points": 135690
+              },
+              {
+                "level": 10,
+                "next_level_required_points": 1870,
+                "next_level_total_required_points": 137560
+              },
+              {
+                "level": 11,
+                "next_level_required_points": 1900,
+                "next_level_total_required_points": 139460
+              },
+              {
+                "level": 12,
+                "next_level_required_points": 1940,
+                "next_level_total_required_points": 141400
+              },
+              {
+                "level": 13,
+                "next_level_required_points": 1980,
+                "next_level_total_required_points": 143380
+              },
+              {
+                "level": 14,
+                "next_level_required_points": 2020,
+                "next_level_total_required_points": 145400
+              },
+              {
+                "level": 15,
+                "next_level_required_points": 2060,
+                "next_level_total_required_points": 147460
+              },
+              {
+                "level": 16,
+                "next_level_required_points": 2100,
+                "next_level_total_required_points": 149560
+              },
+              {
+                "level": 17,
+                "next_level_required_points": 2150,
+                "next_level_total_required_points": 151710
+              },
+              {
+                "level": 18,
+                "next_level_required_points": 2200,
+                "next_level_total_required_points": 153910
+              },
+              {
+                "level": 19,
+                "next_level_required_points": 2250,
+                "next_level_total_required_points": 156160
+              },
+              {
+                "level": 20,
+                "next_level_required_points": 2300,
+                "next_level_total_required_points": 158460
+              }
+            ],
+            "bonuses": {
+              "streak_points": 7,
+              "streak_bonus_points": 5,
+              "hardest_puzzle_solved_points": 50,
+              "best_streak_bonus_points": 50,
+              "daily_3_puzzles_solved": 60,
+              "xhard_puzzle_bonus_points": 14,
+              "hard_puzzle_bonus_points": 12,
+              "easy_puzzle_bonus_points": 10
+            }
+          },
+          {
+            "tier": 8,
+            "prestige": 1,
+            "awards": [
+              {
+                "puzzle_type": "easy_puzzle",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 10
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 50,
+                    "repeat": false
+                  },
+                  {
+                    "milestone": 100,
+                    "bonus_point": 50,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "lesson",
+                "base_point": 50,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 10,
+                "time_points": [],
+                "milestones": []
+              },
+              {
+                "puzzle_type": "hard_puzzle",
+                "base_point": 60,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 10
+                  }
+                ],
+                "retry_points": 15,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 15
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 10
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 75,
+                    "bonus_point": 75,
+                    "repeat": true
+                  }
+                ]
+              },
+              {
+                "puzzle_type": "xhard_puzzle",
+                "base_point": 70,
+                "base_partial_points": [
+                  {
+                    "type": "base_partial",
+                    "trigger": 25,
+                    "value": 5
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 50,
+                    "value": 10
+                  },
+                  {
+                    "type": "base_partial",
+                    "trigger": 75,
+                    "value": 15
+                  }
+                ],
+                "retry_points": 20,
+                "time_points": [
+                  {
+                    "type": "time",
+                    "trigger": 5,
+                    "value": 20
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 10,
+                    "value": 20
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 15,
+                    "value": 20
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 20,
+                    "value": 10
+                  },
+                  {
+                    "type": "time",
+                    "trigger": 25,
+                    "value": 10
+                  }
+                ],
+                "milestones": [
+                  {
+                    "milestone": 50,
+                    "bonus_point": 100,
+                    "repeat": true
+                  }
+                ]
+              }
+            ],
+            "levels": [
+              {
+                "level": 1,
+                "next_level_required_points": 1900,
+                "next_level_total_required_points": 160360
+              },
+              {
+                "level": 2,
+                "next_level_required_points": 1930,
+                "next_level_total_required_points": 162290
+              },
+              {
+                "level": 3,
+                "next_level_required_points": 1960,
+                "next_level_total_required_points": 164250
+              },
+              {
+                "level": 4,
+                "next_level_required_points": 1990,
+                "next_level_total_required_points": 166240
+              },
+              {
+                "level": 5,
+                "next_level_required_points": 2020,
+                "next_level_total_required_points": 168260
+              },
+              {
+                "level": 6,
+                "next_level_required_points": 2050,
+                "next_level_total_required_points": 170310
+              },
+              {
+                "level": 7,
+                "next_level_required_points": 2080,
+                "next_level_total_required_points": 172390
+              },
+              {
+                "level": 8,
+                "next_level_required_points": 2120,
+                "next_level_total_required_points": 174510
+              },
+              {
+                "level": 9,
+                "next_level_required_points": 2160,
+                "next_level_total_required_points": 176670
+              },
+              {
+                "level": 10,
+                "next_level_required_points": 2200,
+                "next_level_total_required_points": 178870
+              },
+              {
+                "level": 11,
+                "next_level_required_points": 2240,
+                "next_level_total_required_points": 181110
+              },
+              {
+                "level": 12,
+                "next_level_required_points": 2280,
+                "next_level_total_required_points": 183390
+              },
+              {
+                "level": 13,
+                "next_level_required_points": 2320,
+                "next_level_total_required_points": 185710
+              },
+              {
+                "level": 14,
+                "next_level_required_points": 2360,
+                "next_level_total_required_points": 188070
+              },
+              {
+                "level": 15,
+                "next_level_required_points": 2400,
+                "next_level_total_required_points": 190470
+              },
+              {
+                "level": 16,
+                "next_level_required_points": 2450,
+                "next_level_total_required_points": 192920
+              },
+              {
+                "level": 17,
+                "next_level_required_points": 2500,
+                "next_level_total_required_points": 195420
+              },
+              {
+                "level": 18,
+                "next_level_required_points": 2550,
+                "next_level_total_required_points": 197970
+              },
+              {
+                "level": 19,
+                "next_level_required_points": 2600,
+                "next_level_total_required_points": 200570
+              },
+              {
+                "level": 20,
+                "next_level_required_points": 2700,
+                "next_level_total_required_points": 203270
+              }
+            ],
+            "bonuses": {
+              "streak_points": 8,
+              "streak_bonus_points": 5,
+              "hardest_puzzle_solved_points": 50,
+              "best_streak_bonus_points": 50,
+              "daily_3_puzzles_solved": 100,
+              "xhard_puzzle_bonus_points": 35,
+              "hard_puzzle_bonus_points": 30,
+              "easy_puzzle_bonus_points": 25
+            }
+          }
+        ],
+        "easy_puzzle_relative_rating": 300,
+        "hard_puzzle_relative_rating": 150
+      }
+    }
+  },
+  {
+    "url": "https://api.chess.com/rpc/chesscom.coaches.v2.CoachesService/GetCurrentCoach",
+    "body": {
+      "currentCoach": {
+        "id": "377706c2-d0a4-11ee-b135-19f9e53c40f5",
+        "name": "David",
+        "titledName": "Coach David",
+        "imageUrl": "https://assets-coaches.chess.com/image/coachdavid.png?v=41de5a5d",
+        "voiceId": "David_coach",
+        "country": {
+          "id": 112,
+          "name": "Poland",
+          "nameLocalized": "Poland",
+          "code": "PL"
+        },
+        "locale": "en-US",
+        "textId": "Generic_coach",
+        "analyticsId": "David",
+        "iconUrl": "https://assets-coaches.chess.com/image/coachdavid-icon.png?v=fd8652ae",
+        "taglines": [
+          {
+            "text": "Hi, I\u2019m Coach David. I\u2019m here to teach you all about chess.",
+            "audioUrlHash": "6547b8d0c97cd470556c1cab780d520750e1474f9566199395fd640507931de8"
+          },
+          {
+            "text": "Hi, I\u2019m David. Choose me and I\u2019ll help you learn chess.",
+            "audioUrlHash": "1cb21b7c928dc9a9f07fa11cc233be4b9ae88c5b9152a07415c23ee8d5bb4a8a"
+          },
+          {
+            "text": "Hi, Coach David here! I\u2019m ready to share my chess knowledge with you.",
+            "audioUrlHash": "13e432e30b5beb3b5489608781c1bdc968fc6dbe28aebe4bd0db78c1fae43a54"
+          },
+          {
+            "text": "David is my name, coaching is my game. Choose me!",
+            "audioUrlHash": "cfc736c0df6ab8438427e5df841f849800a16690668fce360a5aeda99a50860d"
+          },
+          {
+            "text": "Hey, I\u2019m David. Will you be my student?",
+            "audioUrlHash": "c1376a09ff6ae0925e3c480e0ef667d4c5780e6db54c3f389329d4df8ff6974a"
+          }
+        ],
+        "i18nMeta": {
+          "languageIndicator": ""
+        },
+        "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_david.riv?v=6ae35776",
+        "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_david_greeting.riv?v=5b1b0874",
+        "hasVisemes": true
+      }
+    }
+  },
+  {
+    "url": "https://api.chess.com/rpc/chesscom.coaches.v2.CoachesService/ListCoaches",
+    "body": {
+      "coachCategories": [
+        {
+          "id": "376e1e7c-d0a4-11ee-9954-f753ad80334f",
+          "name": "Coaches",
+          "coaches": [
+            {
+              "id": "377706c2-d0a4-11ee-b135-19f9e53c40f5",
+              "name": "David",
+              "titledName": "Coach David",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachdavid.png?v=41de5a5d",
+              "voiceId": "David_coach",
+              "country": {
+                "id": 112,
+                "name": "Poland",
+                "nameLocalized": "Poland",
+                "code": "PL"
+              },
+              "locale": "en-US",
+              "textId": "Generic_coach",
+              "analyticsId": "David",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachdavid-icon.png?v=fd8652ae",
+              "taglines": [
+                {
+                  "text": "Hi, I\u2019m Coach David. I\u2019m here to teach you all about chess.",
+                  "audioUrlHash": "6547b8d0c97cd470556c1cab780d520750e1474f9566199395fd640507931de8"
+                },
+                {
+                  "text": "Hi, I\u2019m David. Choose me and I\u2019ll help you learn chess.",
+                  "audioUrlHash": "1cb21b7c928dc9a9f07fa11cc233be4b9ae88c5b9152a07415c23ee8d5bb4a8a"
+                },
+                {
+                  "text": "Hi, Coach David here! I\u2019m ready to share my chess knowledge with you.",
+                  "audioUrlHash": "13e432e30b5beb3b5489608781c1bdc968fc6dbe28aebe4bd0db78c1fae43a54"
+                },
+                {
+                  "text": "David is my name, coaching is my game. Choose me!",
+                  "audioUrlHash": "cfc736c0df6ab8438427e5df841f849800a16690668fce360a5aeda99a50860d"
+                },
+                {
+                  "text": "Hey, I\u2019m David. Will you be my student?",
+                  "audioUrlHash": "c1376a09ff6ae0925e3c480e0ef667d4c5780e6db54c3f389329d4df8ff6974a"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_david.riv?v=6ae35776",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_david_greeting.riv?v=5b1b0874",
+              "hasVisemes": true
+            },
+            {
+              "id": "167864ce-ab73-11f0-8bbc-45df3aeaea91",
+              "name": "Sloane",
+              "titledName": "Coach Sloane",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachsloane.png?v=6c448cfa",
+              "voiceId": "Sloane_coach",
+              "country": {
+                "id": 17,
+                "name": "Australia",
+                "nameLocalized": "Australia",
+                "code": "AU"
+              },
+              "locale": "en-US",
+              "textId": "Sloane_coach",
+              "analyticsId": "Sloane",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachsloane-icon.png?v=0a4c5293",
+              "taglines": [
+                {
+                  "text": "Hey, I\u2019m Sloane. Choose me as your coach and I\u2019ll teach you everything I know.",
+                  "audioUrlHash": "a2b10a8003dcc3ab992476750cc6508f25bbe37c2b8b7482d682ee53af4f0fb7"
+                },
+                {
+                  "text": "My chess vision is up there with the greats. Ready to see what I see?",
+                  "audioUrlHash": "d8d61000b04386e25d1650a47719c7050b62d4674430a67421588f1ce5bff93f"
+                },
+                {
+                  "text": "Want to build confidence while you learn? Pick me.",
+                  "audioUrlHash": "b0f06747b5989f80ee3dda81defcceb4ea856c36ee7ea41200431d1a153238b1"
+                },
+                {
+                  "text": "I\u2019m ready to guide you, move by move. Pick me and let\u2019s learn some chess.",
+                  "audioUrlHash": "04e4e3e1a7b065764d80e8b97b36b8774923bc06cca8de8fb732ce1c62c1b5f3"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_sloane.riv?v=c3e13fe7",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_sloane_greeting.riv?v=efa3d5ef",
+              "hasVisemes": true
+            },
+            {
+              "id": "d628d4bc-a0f1-11ef-9a6c-59c0254292e3",
+              "name": "Magnus",
+              "titledName": "Coach Magnus",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachmagnus.png?v=819d9dba",
+              "voiceId": "Magnus_coach",
+              "country": {
+                "id": 104,
+                "name": "Norway",
+                "nameLocalized": "Norway",
+                "code": "NO"
+              },
+              "locale": "en-US",
+              "textId": "Magnus_coach",
+              "analyticsId": "Magnus",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachmagnus-icon.png?v=9e82f767",
+              "taglines": [
+                {
+                  "text": "Want to be coached by the highest rated chess player in history? Pick me.",
+                  "audioUrlHash": "41993d324d439ec0bd16d2dd8f5ca671e8cada7eb3e41c5a77724886d7b5a943"
+                },
+                {
+                  "text": "I was the World Champion for ten years, I\u2019m the perfect chess coach for you.",
+                  "audioUrlHash": "f3bd2678e8c8e0dec28b4ff6555d73a0652c3018e654d5ff1a5a8f2dfe462d2e"
+                },
+                {
+                  "text": "I mean, come on... you\u2019re going to choose me, right?",
+                  "audioUrlHash": "182b4ad628d4f50d963aa9b1b819527ce1f4efa0e66b1d0b90fe4f78524462eb"
+                },
+                {
+                  "text": "Now\u2019s your chance to tell people Magnus Carlsen is your chess coach.",
+                  "audioUrlHash": "3800c857c7898c2a98cb73c2bc5847fe828a0124b8472c6a571fccc79cb11a1f"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_magnus.riv?v=971e249f",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_magnus_greeting.riv?v=36611f00",
+              "hasVisemes": true
+            },
+            {
+              "id": "6ddf1ca2-ff6c-11ef-baea-5dc78a000edb",
+              "name": "Levy",
+              "titledName": "Coach Levy",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachlevy.png?v=9f98615d",
+              "voiceId": "Levy_coach",
+              "country": {
+                "id": 2,
+                "name": "United States",
+                "nameLocalized": "United States",
+                "code": "US"
+              },
+              "locale": "en-US",
+              "textId": "Levy_coach",
+              "analyticsId": "Levy",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachlevy-icon.png?v=19825017",
+              "taglines": [
+                {
+                  "text": "GothamChess here! I\u2019m the internet\u2019s chess teacher, who else could you possibly pick?",
+                  "audioUrlHash": "b36a35b100e1ad842020b45f1bbcac3421b83588423e578ad1e2ffa245d259dd"
+                },
+                {
+                  "text": "Choose me as your coach and I\u2019ll make you a better chess player!",
+                  "audioUrlHash": "f0ee85ebd9cded2c4c233a4b33d0f40261987f035a4d9820f9b36a66a27e95a8"
+                },
+                {
+                  "text": "I\u2019m just a chill guy who can improve your chess game. Pick me!",
+                  "audioUrlHash": "14cd9bf73b06b4a5d46d703de37a0adcda2c93ff3f2e83cd9e0cd0bee7e3ca1b"
+                },
+                {
+                  "text": "Levy Rozman reporting for duty. I\u2019m the best possible choice here, no clickbait.",
+                  "audioUrlHash": "364aa165570aa0cbe4be362d0dea2c5aeb5611d0453679186f733899d36ba5d7"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_levy.riv?v=21120709",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_levy_greeting.riv?v=38752839",
+              "hasVisemes": true
+            },
+            {
+              "id": "1678e624-ab73-11f0-9644-6fc23344afd8",
+              "name": "Calvin",
+              "titledName": "Coach Calvin",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachcalvin.png?v=2fa90df5",
+              "voiceId": "Calvin_coach",
+              "country": {
+                "id": 2,
+                "name": "United States",
+                "nameLocalized": "United States",
+                "code": "US"
+              },
+              "locale": "en-US",
+              "textId": "Calvin_coach",
+              "analyticsId": "Calvin",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachcalvin-icon.png?v=730ed413",
+              "taglines": [
+                {
+                  "text": "You need an expert chess coach? Say no more.",
+                  "audioUrlHash": "7ce3682d495ecec0536dc32f6445a6814a527d369d3872c78f7b37aa858e9731"
+                },
+                {
+                  "text": "I\u2019m the best chess player in my school. Ready to learn?",
+                  "audioUrlHash": "fcb3f2e9e3f1fc2ce88b39f965088f9cfe3451da888788ecd1de162da5463fcd"
+                },
+                {
+                  "text": "I\u2019m the coach you want in your corner. Let\u2019s do this.",
+                  "audioUrlHash": "0a14582301c14e9b7b56a0fb20cfce290bb21e43f5719ffdd4447db567799a23"
+                },
+                {
+                  "text": "Are we standing around or are we playing chess? C\u2019mon!",
+                  "audioUrlHash": "c7d519fde47bc45b1bb9425d18bc6e581cbe7419805c3a0766d2b5c446589a47"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": "",
+              "hasVisemes": false
+            },
+            {
+              "id": "4fdf1a48-7917-11f0-83ed-d56e6dd5307c",
+              "name": "Anna",
+              "titledName": "Coach Anna",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachanna.png?v=745c4e84",
+              "voiceId": "Anna_coach",
+              "country": {
+                "id": 132,
+                "name": "Sweden",
+                "nameLocalized": "Sweden",
+                "code": "SE"
+              },
+              "locale": "en-US",
+              "textId": "Anna_coach",
+              "analyticsId": "Anna",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachanna-icon.png?v=ac97bcaa",
+              "taglines": [
+                {
+                  "text": "Hello from Sweden! Want to learn from one of the most popular chess YouTubers?",
+                  "audioUrlHash": "37eb03999bac8f1688f4fd407acbbf74dc31d025b0a2e120ee76867064e11d1a"
+                },
+                {
+                  "text": "I\u2019m Anna, and I\u2019m here to make learning fun and easy.",
+                  "audioUrlHash": "0178691a89ba37649fe2a13b0883b3a6d65fc6217fbe48acb4807db0558ba3d6"
+                },
+                {
+                  "text": "Let\u2019s have some fun learning chess together. What do you say?",
+                  "audioUrlHash": "6f6898a63e6c7376a8d583687d6aa8a4c1dc7942f880c9bbdcf09bdbe7211d09"
+                },
+                {
+                  "text": "I love chess! Let me teach you how to play the best game in the world.",
+                  "audioUrlHash": "0afcf003a459ce263ec41acc868eba1a19786581ec5fb03bad07fc66e2840880"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_anna.riv?v=463ea5bc",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_anna_greeting.riv?v=96a72104",
+              "hasVisemes": true
+            },
+            {
+              "id": "167962e8-ab73-11f0-8281-4de448a78c1a",
+              "name": "Ruben",
+              "titledName": "Coach Ruben",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachruben.png?v=a50e65f4",
+              "voiceId": "Ruben_coach",
+              "country": {
+                "id": 37,
+                "name": "Cuba",
+                "nameLocalized": "Cuba",
+                "code": "CU"
+              },
+              "locale": "en-US",
+              "textId": "Ruben_coach",
+              "analyticsId": "Ruben",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachruben-icon.png?v=87a78d9c",
+              "taglines": [
+                {
+                  "text": "Want to learn chess from a park hustler? Choose me.",
+                  "audioUrlHash": "f20c93c8dd6fc31bf8d2e2ffcbedde47c407752671d2885ab28b1a8bbde07fc8"
+                },
+                {
+                  "text": "Stick with me, and I\u2019ll teach you a thing or two about chess and trash talking.",
+                  "audioUrlHash": "8e2078128996e7754bfac61e72a25fba9b0f193e38d9e25c060585fd491fbfd0"
+                },
+                {
+                  "text": "Ready for some expert coaching? Let\u2019s do it.",
+                  "audioUrlHash": "5015d396ed4354ce9e0811973b0499e66fa87c64f233081010b0a4ddd218a766"
+                },
+                {
+                  "text": "Choose me, and watch your chess rating skyrocket! It\u2019s simple.",
+                  "audioUrlHash": "1411caad304cb3407918f0e3239a26d2db27d1faa1dba1b49d4799afb213d253"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": "",
+              "hasVisemes": false
+            },
+            {
+              "id": "c4106a5e-337d-11f1-b0fb-c9f8e5a66472",
+              "name": "Judit",
+              "titledName": "Coach Judit",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachjudit.png?v=4e581e71",
+              "voiceId": "Judit_coach",
+              "country": {
+                "id": 67,
+                "name": "Hungary",
+                "nameLocalized": "Hungary",
+                "code": "HU"
+              },
+              "locale": "en-US",
+              "textId": "Judit_coach",
+              "analyticsId": "Judit",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachjudit-icon.png?v=0fce7644",
+              "taglines": [
+                {
+                  "text": "Chess has given me skills I use every single day. I\u2019d love to share what I\u2019ve learned.",
+                  "audioUrlHash": "b3967aeea4041b00be777b540ac6789b88e2b15d30fbae7838fc1ea10509316e"
+                },
+                {
+                  "text": "Practice, perseverance, and passion. That\u2019s what chess taught me.",
+                  "audioUrlHash": "072c05de5ff714b043ed96847c5fa95cc2ab7bf0fded278d7790ea1874d9ed5c"
+                },
+                {
+                  "text": "Ready to learn from the highest rated woman of all time?",
+                  "audioUrlHash": "ded08d20246458ca53119b6d0c7342cb0cc59a7644c13e9da29c962014741cef"
+                },
+                {
+                  "text": "I was once the youngest grandmaster in chess history. Let me help you learn chess.",
+                  "audioUrlHash": "2cb706410a580e8952dae5eb3523875542ccfdaf8ba2408085ccc2a652281ad0"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": "",
+              "hasVisemes": false
+            },
+            {
+              "id": "167107ba-ab73-11f0-a6d9-3d00a545bfed",
+              "name": "Dr. Wolf",
+              "titledName": "Coach Dr. Wolf",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachdrwolf.png?v=0f2770b3",
+              "voiceId": "Drwolf_coach",
+              "country": {
+                "id": 159,
+                "name": "England",
+                "nameLocalized": "England",
+                "code": "XE"
+              },
+              "locale": "en-US",
+              "textId": "Drwolf_coach",
+              "analyticsId": "DrWolf",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachdrwolf-icon.png?v=de69116b",
+              "taglines": [
+                {
+                  "text": "It would be my honor to guide you through this beautiful game.",
+                  "audioUrlHash": "e674c460472aa128483cdd69f0e007eccdf1a41f34f53e1554875b597da87272"
+                },
+                {
+                  "text": "Under my tutelage, you\u2019ll see the beauty of chess like never before.",
+                  "audioUrlHash": "541d81a406ed9af0d4a4361eea042066f2644cb9c9ff1bd283e70fece4f1bffa"
+                },
+                {
+                  "text": "Chess teaches us about life, and I can teach you about chess.",
+                  "audioUrlHash": "8cd77f2338bb6911e31bd302e1a4ea8526fe496efa2632f68d2bf00c9dee7123"
+                },
+                {
+                  "text": "We\u2019re all students of the game. Though I\u2019d love to be your teacher.",
+                  "audioUrlHash": "425e6a3926c49c7c0669d728b1bbb6e18b9014ccf523ba193eb044d40f418b10"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_drwolf.riv?v=0584b8d3",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_drwolf_greeting.riv?v=55348ffd",
+              "hasVisemes": true
+            },
+            {
+              "id": "1679dcb4-ab73-11f0-a6ed-99cb9657accb",
+              "name": "Mittens",
+              "titledName": "Coach Mittens",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachmittens.png?v=226e1021",
+              "voiceId": "Mittens_coach",
+              "country": {
+                "id": 225,
+                "name": "International",
+                "nameLocalized": "International",
+                "code": "XX"
+              },
+              "locale": "en-US",
+              "textId": "Mittens_coach",
+              "analyticsId": "Mittens",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachmittens-icon.png?v=9a8ed720",
+              "taglines": [
+                {
+                  "text": "Greetings. It would appear our destinies are intertwined.",
+                  "audioUrlHash": "0216ead7bc338a78f00e8f2632c3775764b7df23b7c50de3985d1a1f094919ff"
+                },
+                {
+                  "text": "Free will is an illusion. You have already chosen me, you just don\u2019t know it yet.",
+                  "audioUrlHash": "8fe98dac9d0b8c22ec2d8c4da2387a432fc237e0ec2b92db088ac187baab6529"
+                },
+                {
+                  "text": "I must guide you on your chess journey. Do not click away again.",
+                  "audioUrlHash": "c17be23ee0259db947e4ed5ade8770b29e3f4ec2a27ed26a70a415bc38551520"
+                },
+                {
+                  "text": "This is your last chance. I am a powerful enemy to have.",
+                  "audioUrlHash": "ae6b01d37b665c041d7d5fd46d514e6f17f6fab36b33e97c116b7f2608a0a49a"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_mittens.riv?v=a32b8580",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_mittens_greeting.riv?v=6388da23",
+              "hasVisemes": true
+            },
+            {
+              "id": "d629aff4-a0f1-11ef-aaf7-8b2bcff97341",
+              "name": "Hikaru",
+              "titledName": "Coach Hikaru",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachhikaru.png?v=28d7093b",
+              "voiceId": "Hikaru_coach",
+              "country": {
+                "id": 2,
+                "name": "United States",
+                "nameLocalized": "United States",
+                "code": "US"
+              },
+              "locale": "en-US",
+              "textId": "Hikaru_coach",
+              "analyticsId": "Hikaru",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachhikaru-icon.png?v=4d444e2e",
+              "taglines": [
+                {
+                  "text": "Hi, I\u2019m 5-time US Champion Hikaru Nakamura. Ready to learn some chess?",
+                  "audioUrlHash": "ecab2b84127ec2110ff56f43366c53f5b926bcbc7d201c0e1eba5a32563b0bf2"
+                },
+                {
+                  "text": "I\u2019m the right choice, I\u2019m one of the most famous chess players in the world.",
+                  "audioUrlHash": "851f369ff7f5f09c7ac5768cc71db160ecf6ca8609d6dc7edb12dfd2c35d47f1"
+                },
+                {
+                  "text": "I\u2019ve been doing this for years, let me coach you.",
+                  "audioUrlHash": "ef9bb4a92f1ab15a5c39dabcd410dcf61346358c5bb03b0dc90948145f2bb8f5"
+                },
+                {
+                  "text": "Look, I can\u2019t promise to make you a grandmaster, but I can teach you some things.",
+                  "audioUrlHash": "27fdbb94d46f270f9362b84b0674e10f72bb1e69c4a53ba15ec8b1ab03defd52"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_hikaru.riv?v=a60640d7",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_hikaru_greeting.riv?v=4da5762e",
+              "hasVisemes": true
+            },
+            {
+              "id": "d62b98a0-a0f1-11ef-bf0b-b5dcb6c5161b",
+              "name": "Canty",
+              "titledName": "Coach Canty",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachcanty.png?v=fe8bc7a2",
+              "voiceId": "Canty_coach",
+              "country": {
+                "id": 2,
+                "name": "United States",
+                "nameLocalized": "United States",
+                "code": "US"
+              },
+              "locale": "en-US",
+              "textId": "Canty_coach",
+              "analyticsId": "Canty",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachcanty-icon.png?v=20e7d9f0",
+              "taglines": [
+                {
+                  "text": "Want to spar with a chessboxing world champ? I\u2019m your man.",
+                  "audioUrlHash": "7f8c5e1531f95ff5222d02b21976659615f8fc8abd6c223483865572efb3e6f5"
+                },
+                {
+                  "text": "I\u2019m a titled chess player, popular streamer, and your next chess coach.",
+                  "audioUrlHash": "61844de18c921a7c198bed711030fd991216117cc91a7db83bc987625ed5c8a2"
+                },
+                {
+                  "text": "BOOM! I got you with all the tips and tricks if you pick me as your coach.",
+                  "audioUrlHash": "59a408724ab3d6732020bd5defeb94ab9005ef76d0bd0786fe04a17df7b3e8fe"
+                },
+                {
+                  "text": "If you pick me as your coach I\u2019ll teach you all the tactinos and gambinos that make a great player.",
+                  "audioUrlHash": "a8d7874d422ebb0492130a3718536111ec2aee2ff61efc53cc7cc8e9c412ae66"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": ""
+            },
+            {
+              "id": "d62b1920-a0f1-11ef-ba68-b103c62ed2bc",
+              "name": "Vishy",
+              "titledName": "Coach Vishy",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachvishy.png?v=ea3d532d",
+              "voiceId": "Anand_coach",
+              "country": {
+                "id": 69,
+                "name": "India",
+                "nameLocalized": "India",
+                "code": "IN"
+              },
+              "locale": "en-US",
+              "textId": "Anand_coach",
+              "analyticsId": "Vishy",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachvishy-icon.png?v=9c622a35",
+              "taglines": [
+                {
+                  "text": "I am Vishy Anand, the 5-time World Champion. Nice to meet you.",
+                  "audioUrlHash": "d2689d438642593a08f47fd4835d930f6df87bcd57e0ad3415ceeb239dd48ec1"
+                },
+                {
+                  "text": "Pick me to take your game to the next level.",
+                  "audioUrlHash": "e26c17c481882a068753bff37b7a5d4dde7854350e550aa9a3ac8bcf89be3afe"
+                },
+                {
+                  "text": "Let me help you get better at this lovely game! Take it from a World Champion.",
+                  "audioUrlHash": "cf32d8ee814e63f65740039ca2d010e679865687b2667649b135f3f518cfedbc"
+                },
+                {
+                  "text": "Vishy Anand, naam to suna hi hoga.",
+                  "audioUrlHash": "568bc7ee87aab52a130827498d9fe70e7be009329169ac62ff3dc621cbf752ea"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": "",
+              "hasVisemes": false
+            },
+            {
+              "id": "d62aa12a-a0f1-11ef-8c86-0b794ad057db",
+              "name": "Tania",
+              "titledName": "Coach Tania",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachtania.png?v=dc1e4f9f",
+              "voiceId": "Tania_coach",
+              "country": {
+                "id": 69,
+                "name": "India",
+                "nameLocalized": "India",
+                "code": "IN"
+              },
+              "locale": "en-US",
+              "textId": "Tania_coach",
+              "analyticsId": "Tania",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachtania-icon.png?v=271636b6",
+              "taglines": [
+                {
+                  "text": "I\u2019ve commentated on the best in the world. Now I\u2019m here to help you play like them!",
+                  "audioUrlHash": "91581b8ddbb50042a22d52e8702d8f3c9060c545fd20b413069c631f3114c63c"
+                },
+                {
+                  "text": "Want to learn chess from an Olympiad gold medalist? Pick me.",
+                  "audioUrlHash": "92388d370eeec75aef641267e8ecc78499c4749b233dd7b52c2824b468407b21"
+                },
+                {
+                  "text": "Coach Tania here! I can help you become a better chess player!",
+                  "audioUrlHash": "381a903056cac3a440df8780ca6ec4e726a5b591a8e90d42d7f37ad0eaefcc8f"
+                },
+                {
+                  "text": "It\u2019s Tania. You\u2019re going to want to be my student. Trust me!",
+                  "audioUrlHash": "57cdbda82e9abe2fd695621285d67c9a7b7ab76083663f0d449c55cbd3aa4c54"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": "",
+              "hasVisemes": false
+            },
+            {
+              "id": "6dd9d7b0-ff6c-11ef-9341-ff6621b6b8b5",
+              "name": "Danny",
+              "titledName": "Coach Danny",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachdanny.png?v=7fd13701",
+              "voiceId": "Danny_coach",
+              "country": {
+                "id": 2,
+                "name": "United States",
+                "nameLocalized": "United States",
+                "code": "US"
+              },
+              "locale": "en-US",
+              "textId": "Danny_coach",
+              "analyticsId": "Danny",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachdanny-icon.png?v=2fc4419f",
+              "taglines": [
+                {
+                  "text": "Want to learn from Chess.com\u2019s Chief Chess Officer?",
+                  "audioUrlHash": "331029009912d371cbaee9aad487a2402e3cc9ea6e08135946c66a489ad35a84"
+                },
+                {
+                  "text": "Have no fear, Coach Danny is here! I\u2019ll teach you everything you need to know.",
+                  "audioUrlHash": "dabbc9e92028d617bce30a421c8fd8a14742794ac98d255a9632e37c58829016"
+                },
+                {
+                  "text": "Nice job finding my avatar, now click the big green button. You\u2019re so close. You can do this.",
+                  "audioUrlHash": "7cfa01dff35858df653ae1dcc00a0cf6916affeda8eb6b7d111cfd83483c53e9"
+                },
+                {
+                  "text": "Improve your game with tips from me, a world-class chess commentator.",
+                  "audioUrlHash": "e1f1f1e5bf7c885c922f5af5c883e33510ae4d18951c7c06b68491b27a38c7f9"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": ""
+            },
+            {
+              "id": "d62a2aba-a0f1-11ef-a2f0-9118eb9f958d",
+              "name": "Botez",
+              "titledName": "Coach Botez",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachbotezsisters.png?v=794138d4",
+              "voiceId": "Botez_coach",
+              "country": {
+                "id": 2,
+                "name": "United States",
+                "nameLocalized": "United States",
+                "code": "US"
+              },
+              "locale": "en-US",
+              "textId": "Botez_coach",
+              "analyticsId": "Botez Sisters",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachbotezsisters-icon.png?v=8824e754",
+              "taglines": [
+                {
+                  "text": "Recognize us from YouTube? We\u2019ll make you a better chess player!",
+                  "audioUrlHash": "26d978719bebb2b2c0dd6c558932ce76b77aef5d5e700e8262c57a9ca28fc5a1"
+                },
+                {
+                  "text": "Double trouble! We can help you achieve chess glory.",
+                  "audioUrlHash": "d9dbca669e1ecf98fdd9ca5e48c2fad9bbe44c19871d3393c0942086a571e83c"
+                },
+                {
+                  "text": "Want TWO chess coaches instead of one? We\u2019re the right choice.",
+                  "audioUrlHash": "17f6652dcb38d254525c8e787589cbc1a927fb083353d954e56b32bf8854a83a"
+                },
+                {
+                  "text": "Alexandra and Andrea here! You\u2019d be a FOOL not to pick us!",
+                  "audioUrlHash": "0e9bbd8c90284fce7385adf07a745c340b29d88434f6feecc73b30bc3dd35446"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "https://assets-coaches.chess.com/image/coach_botez.riv?v=ce5847dc",
+              "greetingRiveAnimationUrl": "https://assets-coaches.chess.com/image/coach_botez_greeting.riv?v=1c071485",
+              "hasVisemes": false
+            },
+            {
+              "id": "6dde8ddc-ff6c-11ef-a8d2-d5eb2eeec084",
+              "name": "Ben",
+              "titledName": "Coach Ben",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachben.png?v=80369bf7",
+              "voiceId": "Ben_coach",
+              "country": {
+                "id": 2,
+                "name": "United States",
+                "nameLocalized": "United States",
+                "code": "US"
+              },
+              "locale": "en-US",
+              "textId": "Ben_coach",
+              "analyticsId": "Ben",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachben-icon.png?v=b27b2f23",
+              "taglines": [
+                {
+                  "text": "Hey, it\u2019s Ben. You can pick me if you want, but I\u2019ll probably make fun of your blunders.",
+                  "audioUrlHash": "f97764e9163395c49e103ebc2366ddfacfa8ae12bf56428697789e02701fdb9f"
+                },
+                {
+                  "text": "If you pick me, you may learn a thing or two. I am a grandmaster after all.",
+                  "audioUrlHash": "061e36df97a1e330252c842168034958803803af2173402815622e20e8c83903"
+                },
+                {
+                  "text": "Trust me, you\u2019ll want me as your coach. The horsey goes diagonally, right?",
+                  "audioUrlHash": "b4f71b3595e0ec9c992edd91c1b4a1a0a75baf08dcfbdaaab12ff3b0ef994391"
+                },
+                {
+                  "text": "You\u2019re thinking about picking me? Think twice, bucko.",
+                  "audioUrlHash": "03cf87a5f7572b20ffd3661e8064a0f599595ab48b1924cf9290f1a74d4a04ae"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "isCelebrity": true,
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": ""
+            },
+            {
+              "id": "3779595e-d0a4-11ee-a188-05b5e2276152",
+              "name": "Mae",
+              "titledName": "Coach Mae",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachmae.png?v=7a787cbc",
+              "voiceId": "Mae_coach",
+              "country": {
+                "id": 78,
+                "name": "Japan",
+                "nameLocalized": "Japan",
+                "code": "JP"
+              },
+              "locale": "en-US",
+              "textId": "Generic_coach",
+              "analyticsId": "Mae",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachmae-icon.png?v=6e323575",
+              "taglines": [
+                {
+                  "text": "Hey, I\u2019m Mae! Choose me and let\u2019s start learning.",
+                  "audioUrlHash": "1f37eb5ce41f900a3a771920313d70625477b43a33020674fc282bf301017b39"
+                },
+                {
+                  "text": "Hey, it\u2019s Coach Mae! I can help you improve your chess game.",
+                  "audioUrlHash": "5ee315915acc75abef70ee00c3b621b2940136666bf10a5346fd98df4bc48897"
+                },
+                {
+                  "text": "Hi, I\u2019m Coach Mae. I\u2019d love to help you learn chess.",
+                  "audioUrlHash": "725866514a2dc39fa59f4251c1d4650cb29d3ff57b1006270dbf46625e44354e"
+                },
+                {
+                  "text": "My name is Mae and I\u2019d love to help you learn chess.",
+                  "audioUrlHash": "2fdbe96f626b7be4ef7cf401e67751504ba4e65fdec4fb5b1e0fb4ca368a8428"
+                },
+                {
+                  "text": "Coach Mae here! Ready to learn?",
+                  "audioUrlHash": "c38a533cbb451e8aca013dc34ace6f8adc602441b2f9ed9ec55a30d7634bc4f2"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": "",
+              "hasVisemes": false
+            },
+            {
+              "id": "37791f20-d0a4-11ee-b634-89fef0259834",
+              "name": "Dante",
+              "titledName": "Coach Dante",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachdante.png?v=0b81d46d",
+              "voiceId": "Dante_coach",
+              "country": {
+                "id": 3,
+                "name": "Canada",
+                "nameLocalized": "Canada",
+                "code": "CA"
+              },
+              "locale": "en-US",
+              "textId": "Generic_coach",
+              "analyticsId": "Dante",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachdante-icon.png?v=b5ed3f44",
+              "taglines": [
+                {
+                  "text": "Hi, I\u2019m Coach Dante. I want to help you learn chess!",
+                  "audioUrlHash": "24384ec55eff42b3f8a6db7c059740fdd8f47121947efd4f8cfadf92167bd6e0"
+                },
+                {
+                  "text": "Hello, I\u2019m Coach Dante! I can help you get better at chess.",
+                  "audioUrlHash": "e21a3cbbc9a9b96d2ba5d5bf0f1fadd277932c260e6578709f7d52dc3a1032fa"
+                },
+                {
+                  "text": "I\u2019m Dante! Let me coach you to chess success.",
+                  "audioUrlHash": "4e1840dc184b8a23abe71839f3972e07020316f9cb2ec98c670d94072f329e1e"
+                },
+                {
+                  "text": "I\u2019m Dante and it\u2019s my mission to teach you chess!",
+                  "audioUrlHash": "354937996a4d8ca923d470f6157511c70ba7c92aa69847f402e077048e1f6193"
+                },
+                {
+                  "text": "Dante here! Pick me and we\u2019ll learn a lot together.",
+                  "audioUrlHash": "51760dc161aca85d9b69cd6eb67aa5c771ce1edd643d85b2fa3835a56dfedf42"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": "",
+              "hasVisemes": false
+            },
+            {
+              "id": "3778e546-d0a4-11ee-803d-937400864b17",
+              "name": "Nadia",
+              "titledName": "Coach Nadia",
+              "imageUrl": "https://assets-coaches.chess.com/image/coachnadia.png?v=056739d3",
+              "voiceId": "Nadia_coach",
+              "country": {
+                "id": 138,
+                "name": "T\u00fcrkiye",
+                "nameLocalized": "Turkey",
+                "code": "TR"
+              },
+              "locale": "en-US",
+              "textId": "Generic_coach",
+              "analyticsId": "Nadia",
+              "iconUrl": "https://assets-coaches.chess.com/image/coachnadia-icon.png?v=b8007451",
+              "taglines": [
+                {
+                  "text": "Hey, I\u2019m Coach Nadia! I can help you improve at chess.",
+                  "audioUrlHash": "383d01808be1075cca567646909c86bbcc7ef3cd6501f30024923cfabb9c0fe2"
+                },
+                {
+                  "text": "Coach Nadia here! I could be a good coach for you.",
+                  "audioUrlHash": "6e3461aa795acde235c3cf7af4d2319b204c2b2682ae5ae41a06820acfda8cbd"
+                },
+                {
+                  "text": "Hello, I\u2019m Coach Nadia. If you choose me, I will make you a better chess player.",
+                  "audioUrlHash": "24b356e078a25b5515db86bbc7bf3963e55da777f621318b7635831455e3ff1e"
+                },
+                {
+                  "text": "Hi, I\u2019m Coach Nadia! I\u2019d love to coach you.",
+                  "audioUrlHash": "22c4dcf8c428eebe3d45da8a996020b790df7f7e9a119c84c75eb1e5bccb3fde"
+                },
+                {
+                  "text": "Coach Nadia here! Pick me and let\u2019s get started.",
+                  "audioUrlHash": "6d3b25278347165c5535341a789ccb5e58408eec902aad2a4f357b55fe678eef"
+                }
+              ],
+              "i18nMeta": {
+                "languageIndicator": ""
+              },
+              "riveAnimationUrl": "",
+              "greetingRiveAnimationUrl": "",
+              "hasVisemes": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

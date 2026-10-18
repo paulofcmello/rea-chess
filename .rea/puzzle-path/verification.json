@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Rated flow starts with a puzzle",
+    "ok": true,
+    "details": "1GjyM"
+  },
+  {
+    "name": "First-try solve advances one tile and awards 30 points",
+    "ok": true,
+    "details": {
+      "solved": 20,
+      "points": 600
+    }
+  },
+  {
+    "name": "20th solve rolls into the next level",
+    "ok": true,
+    "details": {
+      "level": "Level 2",
+      "tile": "Puzzle 1: current",
+      "bar": "0"
+    }
+  },
+  {
+    "name": "Incorrect move earns no path points",
+    "ok": true
+  },
+  {
+    "name": "Retry solve advances one tile and awards 5 points",
+    "ok": true,
+    "details": {
+      "solved": 21,
+      "points": 605
+    }
+  },
+  {
+    "name": "Restarting a completed puzzle does not award points twice",
+    "ok": true,
+    "details": {
+      "solved": 21,
+      "points": 605
+    }
+  },
+  {
+    "name": "List button opens existing themes list",
+    "ok": true
+  },
+  {
+    "name": "Path persists after reload",
+    "ok": true
+  },
+  {
+    "name": "Mobile has no horizontal overflow",
+    "ok": true
+  },
+  {
+    "name": "All card images loaded",
+    "ok": true
+  }
+]
