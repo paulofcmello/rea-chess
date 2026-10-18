@@ -1,0 +1,1032 @@
+{
+  "url": "https://www.chess.com/settings/social",
+  "text": "Skip to content\nPlay\nPuzzles\nLearn\nTrain\nWatch\nCommunity\nOther\nFree Trial\nSearch\nPauloM18\nSettings\nBoard & Pieces\nGameplay\nProfile\nInterface\nSocial\nCoach\nNotifications\nAccount\nMembership\nAccessibility\nSocial\nManage your social, privacy, chat, and blog settings.\nChat & Messaging\nSend and Receive Direct Messages\n\nEveryone\nOnly friends\nNobody\nGame Chat\n\nEveryone\nRequest only\nFriends only\nBlog\nchess.com/blog/\n The URL of your Chess.com blog.\nBlog title\nWho can see my blog?\nEveryone\nOnly my friends\nNobody\nCustom sidebar block\n15px\nSave\nPrivacy\nAllow Friend Requests\n\nAllow Friends to Find You via Phone Contacts\n\nAllow Challenges\n\nEveryone\nOnly friends\nNobody (rematches are still allowed)\nAllow Club Invitations\n\nAllow Tournament Invitations\n\nAllow Classroom Invites\n\nWho can see my friends list?\nEveryone\nOnly my friends\nNobody\nWho can see my insights?\nEveryone\nNobody\nSave\nBlocking\n\nYou are blocking 0 players\n\nFollowing\n\nYou follow 18 players\n\ndanielnmh14\nUnfollow\nCarecaBenefico\nUnfollow\nhdberg\nUnfollow\nSrCui\nUnfollow\nmateus_bcm\nUnfollow\nPedrocam7\nUnfollow\nMo7ndXD\nUnfollow\nhollowdivine\nUnfollow\nImBadAtChess014\nUnfollow\nMatthew9878\nUnfollow\nnetobalaboy\nUnfollow\nTheLegggend27\nUnfollow\nPOIERUT\nUnfollow\ntavs53\nUnfollow\nkennethkingz\nUnfollow\nTavs99ProGame\nUnfollow\nwaak10\nUnfollow\ntedreidelas\nUnfollow\nSupport Language About Jobs Developers User Agreement Privacy Policy Privacy Settings Cheating & Fair Play Partners Compliance Chess.com, LLC © 2026",
+  "styles": [
+    {
+      "selector": "[class*=\"s-sidebar-component\"]",
+      "elements": [
+        {
+          "html": "<div class=\"s-sidebar-component\"><form autocomplete=\"settings-search\" class=\"settings-layout-searchPlaceholder\"><div class=\"cc-input-group-component cc-input-group-medium\"><input class=\"cc-input-component cc-input-medium cc-input-group-space-prepend\" type=\"text\" placeholder=\"Search Settings\" spellcheck=\"false\" value=\"\"> <div class=\"cc-input-group-pre\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-20_d8b7587 cc-input-group-glyph\"><svg data-glyph=\"tool-magnifier-blank\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m11 18.33c4.15 0 7.33-3.19 7.33-7.33 0-4.15-3.19-7.33-7.33-7.33-4.15 0-7.33 3.19-7.33 7.33 0 4.15 3.19 7.33 7.33 7.33zm0 3c-5.79 0-10.33-4.55-10.33-10.33 0-5.79 4.55-10.33 10.33-10.33 5.79 0 10.33 4.55 10.33 10.33 0 5.79-4.55 10.33-10.33 10.33zm10.67 2.24c-.53 0-1.03-.2-1.8-1.07l-3.5-3.67 2.47-2.47 3.6 3.43c.93.8 1.13 1.33 1.13 1.87 0 1.03-.87 1.9-1.9 1.9zm0 0\"></path></svg></span></div> <!----> <!----> <!----></div></form> <a href=\"/settings/board\" class=\"s-sidebar-item-component cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"board\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m19.33 22h-14.67c-2 0-2.67-.67-2.67-2.67v-14.67c0-2 .67-2.67 2.67-2.67h14.67c2 0 2.67",
+          "styles": {
+            "width": "240px",
+            "height": "532px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "[class*=\"s-sidebar-item-component\"]",
+      "elements": [
+        {
+          "html": "<a href=\"/settings/board\" class=\"s-sidebar-item-component cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"board\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m19.33 22h-14.67c-2 0-2.67-.67-2.67-2.67v-14.67c0-2 .67-2.67 2.67-2.67h14.67c2 0 2.67.67 2.67 2.67v14.67c0 2-.67 2.67-2.67 2.67zm-15.33-2h4v-4h-4zm8 0h4v-4h-4zm-4-4h4v-4h-4zm-4-4h4v-4h-4zm12 4h4v-4h-4zm-4-4h4v-4h-4zm-4-4h4v-4h-4zm8 0h4v-4h-4zm0 0\"></path></svg></span> Board &amp; Pieces <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.73l6.37-6.4-6.37-6.4c-1.13-1.13-1.13-1.6 0-2.73zm0 0\"></path></svg></span></a>",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.72)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<a href=\"/settings/gameplay\" class=\"s-sidebar-item-component cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"hand-pawn\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m10.97 19.13c.83.57 1.33 1.6 1.33 2.87h-9.97c0-1.27.5-2.3 1.37-2.87 2.33-1.43 2.4-3 2.4-3.53v-.6h-1.4c-.17-.3-.23-.67-.23-1l1.63-1.03c-.83-.4-1.2-1.27-1.2-2.07 0-1.33 1.1-2.4 2.43-2.4.66 0 1.27.28 1.71.72-2.03 1.89-1.08 4.63 1.1 5.14-.03.22-.09.44-.21.63h-1.4l.03.6c.03.53.07 2.1 2.4 3.53zm9.63-8.76-9 2.4c-1.7.47-2.9-1.47-1.3-2.43l3-1.83c.9-.57.93-1.03.17-1.73l.8.7c-1.47-1.33-2.6-1.67-4.57-1.2l-3.67.83-1.97 2.1c-.4.47-.93.57-1.47.3l-.17-.07c-.53-.27-.63-.67-.3-1.17l1.47-2.17c.57-.87 1.17-1.37 2.1-1.8l3.47-1.53c1.83-.83 3.1-1 5.07-.67l6.37 1c1 .17 1.4.63 1.4 1.67v3.8c0 1.03-.4 1.53-1.4 1.8zm0 0\"></path></svg></span> Gameplay <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.73l6.37-6.4-6.37-6.4c-1.13-1.13-1.13-1.6 0-2.73zm0 0\"></path></svg></spa",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.72)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<a href=\"/settings/profile\" class=\"s-sidebar-item-component cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"user\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m2 20.03c0-2 .63-2.9 2.47-3.63l1.5-.6c2.87-1.13 3.23-1.37 3.23-2.13 0-2.3-1.83-2.3-1.83-6.27 0-3.17 1.47-5.57 4.57-5.57 3.23 0 4.7 2.4 4.7 5.57 0 3.97-1.93 3.97-1.93 6.27 0 .77.4.97 3.23 2.1l1.6.63c1.83.73 2.47 1.63 2.47 3.63v1.97h-20zm0 0\"></path></svg></span> Profile <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.73l6.37-6.4-6.37-6.4c-1.13-1.13-1.13-1.6 0-2.73zm0 0\"></path></svg></span></a>",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.72)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<a href=\"/settings/interface\" class=\"s-sidebar-item-component cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"device-computer\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m9.07 20h5.9l-.13-2h-5.57zm12.76 2h-19.73c-2 0-2.1-1.47-1.27-3.43l1.13-2.57h20l1.17 2.57c.73 1.73.87 3.43-1.3 3.43zm-1.83-6v-11.33c0-.67 0-.67-.67-.67h-14.67c-.67 0-.67 0-.67.67v11.33h-2v-11.33c0-2 .67-2.67 2.67-2.67h14.67c2 0 2.67.67 2.67 2.67v11.33zm0 0\"></path></svg></span> Interface <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.73l6.37-6.4-6.37-6.4c-1.13-1.13-1.13-1.6 0-2.73zm0 0\"></path></svg></span></a>",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.72)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<a aria-current=\"page\" href=\"/settings/social\" class=\"router-link-active router-link-exact-active s-sidebar-item-component s-sidebar-item-active cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"users\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m8 18v-1.87c0-1.83.63-2.7 2.4-3.23l1.38-.48c-.4 1.52-1.21 1.74-1.21 2.61 0 .6.17.9.73 1.07l2.3.8c.87.26 1.46.6 1.84 1.1zm4.07-12.76c.28-2.1 1.4-3.24 3.36-3.24 2.47 0 3.57 1.57 3.57 4.4 0 3.6-1.43 3.4-1.43 4.63 0 .6.2.9.73 1.07l2.33.8c1.73.53 2.37 1.4 2.37 3.23v1.87h-5.39c-.57-1.44-1.75-2.51-3.39-3l-1.07-.37c.4-.78.86-2.27.86-4.23 0-2.39-.72-4.11-1.93-5.16zm-11.07 16.76v-1.87c0-1.83.63-2.7 2.4-3.23l2.2-.77c.53-.2.77-.47.77-1.1 0-1.17-1.37-1.17-1.37-4.63 0-2.83 1.1-4.4 3.43-4.4 2.47 0 3.57 1.57 3.57 4.4 0 3.47-1.43 3.47-1.43 4.63 0 .6.17.9.73 1.07l2.3.8c1.77.53 2.4 1.4 2.4 3.23v1.87zm0 0\"></path></svg></span> Social <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.7",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(255, 255, 255, 0.05)",
+            "border": "",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<a href=\"/settings/coach\" class=\"s-sidebar-item-component cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"game-lesson\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m3.07 13.53-2.03-1.8c-1.47-1.37-1.4-2.17.3-3.2l8.4-5.23c1.7-1.03 2.83-1.03 4.53 0l8.37 5.23c1.7 1.03 1.77 1.87.3 3.2l-1.93 1.8c0-2.77-3.43-4.5-8.97-4.5-5.5 0-8.97 1.73-8.97 4.5zm1.93 4.74v-4.87c0-1.47 2.7-2.37 6.97-2.37 4.33 0 7.03.9 7.03 2.37v4.87c-4.5 3-5.23 3.73-7 3.73s-2.5-.73-7-3.73zm17.03 5.73c-1.17 0-2.03-.03-1.73-1.43l.7-3.23v-5.8l2-2.33v8.13l.77 3.23c.33 1.4-.63 1.43-1.73 1.43zm0 0\"></path></svg></span> Coach <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.73l6.37-6.4-6.37-6.4c-1.13-1.13-1.13-1.6 0-2.73zm0 0\"></path></svg></span></a>",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.72)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<a href=\"/settings/notifications\" class=\"s-sidebar-item-component cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"media-bell-fill\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m9.27 22h5.53c-.33 1.4-1.7 2-2.77 2s-2.43-.6-2.77-2zm11.8-2h-18.13c-.6 0-.93-.33-.93-.93.03-2.5.23-2.93 2.33-5.1.43-.43.67-1 .67-1.6v-3.5c0-4.43 2.7-7.2 7-7.2s7 2.77 7 7.2v3.5c0 .6.23 1.17.67 1.6 2.1 2.17 2.3 2.63 2.33 5.1 0 .6-.33.93-.93.93zm0 0\"></path></svg></span> Notifications <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.73l6.37-6.4-6.37-6.4c-1.13-1.13-1.13-1.6 0-2.73zm0 0\"></path></svg></span></a>",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.72)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<a href=\"/settings/account\" class=\"s-sidebar-item-component cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"piece-pawn-brand\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m12 21.97c-6.43-.03-6.7-1.17-6.7-1.3 0-1.67.53-3.3 1.9-4.27 2.57-1.93 2.9-3.73 3-4.87v-.83h-2.07c-.23-.47-.37-.87-.37-1.37l2.33-1.53c-.8-.57-1.33-1.53-1.33-2.6 0-1.8 1.43-3.23 3.23-3.23s3.23 1.43 3.23 3.23c0 1.07-.53 2.03-1.33 2.6l2.33 1.53c0 .5-.13.9-.37 1.37h-2.07v.83c.1 1.13.43 2.93 3 4.87 1.37.97 1.9 2.6 1.9 4.27 0 .13-.27 1.27-6.7 1.3zm0 0\"></path></svg></span> Account <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.73l6.37-6.4-6.37-6.4c-1.13-1.13-1.13-1.6 0-2.73zm0 0\"></path></svg></span></a>",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.72)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "[class*=\"s-sidebar-item-active\"]",
+      "elements": [
+        {
+          "html": "<a aria-current=\"page\" href=\"/settings/social\" class=\"router-link-active router-link-exact-active s-sidebar-item-component s-sidebar-item-active cc-text-medium-bold\" style=\"--cbce0cfa: 0rem;\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"users\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m8 18v-1.87c0-1.83.63-2.7 2.4-3.23l1.38-.48c-.4 1.52-1.21 1.74-1.21 2.61 0 .6.17.9.73 1.07l2.3.8c.87.26 1.46.6 1.84 1.1zm4.07-12.76c.28-2.1 1.4-3.24 3.36-3.24 2.47 0 3.57 1.57 3.57 4.4 0 3.6-1.43 3.4-1.43 4.63 0 .6.2.9.73 1.07l2.33.8c1.73.53 2.37 1.4 2.37 3.23v1.87h-5.39c-.57-1.44-1.75-2.51-3.39-3l-1.07-.37c.4-.78.86-2.27.86-4.23 0-2.39-.72-4.11-1.93-5.16zm-11.07 16.76v-1.87c0-1.83.63-2.7 2.4-3.23l2.2-.77c.53-.2.77-.47.77-1.1 0-1.17-1.37-1.17-1.37-4.63 0-2.83 1.1-4.4 3.43-4.4 2.47 0 3.57 1.57 3.57 4.4 0 3.47-1.43 3.47-1.43 4.63 0 .6.17.9.73 1.07l2.3.8c1.77.53 2.4 1.4 2.4 3.23v1.87zm0 0\"></path></svg></span> Social <!----> <span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-expand\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m7.73 2.87.07-.07c1.13-1.13 1.6-1.13 2.73 0l6.4 6.37c1.73 1.77 1.73 3.9 0 5.67l-6.4 6.37c-1.13 1.13-1.6 1.13-2.73 0l-.07-.07c-1.13-1.13-1.13-1.6 0-2.7",
+          "styles": {
+            "width": "240px",
+            "height": "48px",
+            "display": "flex",
+            "gap": "normal",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(255, 255, 255, 0.05)",
+            "border": "",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "[class*=\"s-sidebar-item-icon\"]",
+      "elements": [
+        {
+          "html": "<span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"board\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m19.33 22h-14.67c-2 0-2.67-.67-2.67-2.67v-14.67c0-2 .67-2.67 2.67-2.67h14.67c2 0 2.67.67 2.67 2.67v14.67c0 2-.67 2.67-2.67 2.67zm-15.33-2h4v-4h-4zm8 0h4v-4h-4zm-4-4h4v-4h-4zm-4-4h4v-4h-4zm12 4h4v-4h-4zm-4-4h4v-4h-4zm-4-4h4v-4h-4zm8 0h4v-4h-4zm0 0\"></path></svg></span>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 10px 0px 0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.4)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.4)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "center"
+          }
+        },
+        {
+          "html": "<span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"hand-pawn\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m10.97 19.13c.83.57 1.33 1.6 1.33 2.87h-9.97c0-1.27.5-2.3 1.37-2.87 2.33-1.43 2.4-3 2.4-3.53v-.6h-1.4c-.17-.3-.23-.67-.23-1l1.63-1.03c-.83-.4-1.2-1.27-1.2-2.07 0-1.33 1.1-2.4 2.43-2.4.66 0 1.27.28 1.71.72-2.03 1.89-1.08 4.63 1.1 5.14-.03.22-.09.44-.21.63h-1.4l.03.6c.03.53.07 2.1 2.4 3.53zm9.63-8.76-9 2.4c-1.7.47-2.9-1.47-1.3-2.43l3-1.83c.9-.57.93-1.03.17-1.73l.8.7c-1.47-1.33-2.6-1.67-4.57-1.2l-3.67.83-1.97 2.1c-.4.47-.93.57-1.47.3l-.17-.07c-.53-.27-.63-.67-.3-1.17l1.47-2.17c.57-.87 1.17-1.37 2.1-1.8l3.47-1.53c1.83-.83 3.1-1 5.07-.67l6.37 1c1 .17 1.4.63 1.4 1.67v3.8c0 1.03-.4 1.53-1.4 1.8zm0 0\"></path></svg></span>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 10px 0px 0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.4)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.4)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "center"
+          }
+        },
+        {
+          "html": "<span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"user\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m2 20.03c0-2 .63-2.9 2.47-3.63l1.5-.6c2.87-1.13 3.23-1.37 3.23-2.13 0-2.3-1.83-2.3-1.83-6.27 0-3.17 1.47-5.57 4.57-5.57 3.23 0 4.7 2.4 4.7 5.57 0 3.97-1.93 3.97-1.93 6.27 0 .77.4.97 3.23 2.1l1.6.63c1.83.73 2.47 1.63 2.47 3.63v1.97h-20zm0 0\"></path></svg></span>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 10px 0px 0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.4)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.4)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "center"
+          }
+        },
+        {
+          "html": "<span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"device-computer\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m9.07 20h5.9l-.13-2h-5.57zm12.76 2h-19.73c-2 0-2.1-1.47-1.27-3.43l1.13-2.57h20l1.17 2.57c.73 1.73.87 3.43-1.3 3.43zm-1.83-6v-11.33c0-.67 0-.67-.67-.67h-14.67c-.67 0-.67 0-.67.67v11.33h-2v-11.33c0-2 .67-2.67 2.67-2.67h14.67c2 0 2.67.67 2.67 2.67v11.33zm0 0\"></path></svg></span>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 10px 0px 0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.4)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.4)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "center"
+          }
+        },
+        {
+          "html": "<span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"users\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m8 18v-1.87c0-1.83.63-2.7 2.4-3.23l1.38-.48c-.4 1.52-1.21 1.74-1.21 2.61 0 .6.17.9.73 1.07l2.3.8c.87.26 1.46.6 1.84 1.1zm4.07-12.76c.28-2.1 1.4-3.24 3.36-3.24 2.47 0 3.57 1.57 3.57 4.4 0 3.6-1.43 3.4-1.43 4.63 0 .6.2.9.73 1.07l2.33.8c1.73.53 2.37 1.4 2.37 3.23v1.87h-5.39c-.57-1.44-1.75-2.51-3.39-3l-1.07-.37c.4-.78.86-2.27.86-4.23 0-2.39-.72-4.11-1.93-5.16zm-11.07 16.76v-1.87c0-1.83.63-2.7 2.4-3.23l2.2-.77c.53-.2.77-.47.77-1.1 0-1.17-1.37-1.17-1.37-4.63 0-2.83 1.1-4.4 3.43-4.4 2.47 0 3.57 1.57 3.57 4.4 0 3.47-1.43 3.47-1.43 4.63 0 .6.17.9.73 1.07l2.3.8c1.77.53 2.4 1.4 2.4 3.23v1.87zm0 0\"></path></svg></span>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 10px 0px 0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(255, 255, 255)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "center"
+          }
+        },
+        {
+          "html": "<span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"game-lesson\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m3.07 13.53-2.03-1.8c-1.47-1.37-1.4-2.17.3-3.2l8.4-5.23c1.7-1.03 2.83-1.03 4.53 0l8.37 5.23c1.7 1.03 1.77 1.87.3 3.2l-1.93 1.8c0-2.77-3.43-4.5-8.97-4.5-5.5 0-8.97 1.73-8.97 4.5zm1.93 4.74v-4.87c0-1.47 2.7-2.37 6.97-2.37 4.33 0 7.03.9 7.03 2.37v4.87c-4.5 3-5.23 3.73-7 3.73s-2.5-.73-7-3.73zm17.03 5.73c-1.17 0-2.03-.03-1.73-1.43l.7-3.23v-5.8l2-2.33v8.13l.77 3.23c.33 1.4-.63 1.43-1.73 1.43zm0 0\"></path></svg></span>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 10px 0px 0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.4)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.4)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "center"
+          }
+        },
+        {
+          "html": "<span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"media-bell-fill\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m9.27 22h5.53c-.33 1.4-1.7 2-2.77 2s-2.43-.6-2.77-2zm11.8-2h-18.13c-.6 0-.93-.33-.93-.93.03-2.5.23-2.93 2.33-5.1.43-.43.67-1 .67-1.6v-3.5c0-4.43 2.7-7.2 7-7.2s7 2.77 7 7.2v3.5c0 .6.23 1.17.67 1.6 2.1 2.17 2.3 2.63 2.33 5.1 0 .6-.33.93-.93.93zm0 0\"></path></svg></span>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 10px 0px 0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.4)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.4)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "center"
+          }
+        },
+        {
+          "html": "<span aria-hidden=\"true\" class=\"cc-icon-glyph_d8b7587 cc-icon-size-24_d8b7587 s-sidebar-item-icon\"><svg data-glyph=\"piece-pawn-brand\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m12 21.97c-6.43-.03-6.7-1.17-6.7-1.3 0-1.67.53-3.3 1.9-4.27 2.57-1.93 2.9-3.73 3-4.87v-.83h-2.07c-.23-.47-.37-.87-.37-1.37l2.33-1.53c-.8-.57-1.33-1.53-1.33-2.6 0-1.8 1.43-3.23 3.23-3.23s3.23 1.43 3.23 3.23c0 1.07-.53 2.03-1.33 2.6l2.33 1.53c0 .5-.13.9-.37 1.37h-2.07v.83c.1 1.13.43 2.93 3 4.87 1.37.97 1.9 2.6 1.9 4.27 0 .13-.27 1.27-6.7 1.3zm0 0\"></path></svg></span>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 10px 0px 0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.4)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.4)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "center"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "h1",
+      "elements": [
+        {
+          "html": "<h1 class=\"cc-page-header-title cc-heading-small\">\n    Settings\n  </h1>",
+          "styles": {
+            "width": "116.039px",
+            "height": "32px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "\"Chess Sans\", sans-serif",
+            "fontSize": "28px",
+            "fontWeight": "700",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(255, 255, 255)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "h2",
+      "elements": [
+        {
+          "html": "<h2 class=\"sidebar-link-text-subtle cc-text-medium-bold\">Search</h2>",
+          "styles": {
+            "width": "102px",
+            "height": "16px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.5)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.5)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<h2 class=\"sidebar-link-text-subtle cc-text-medium-bold\">Search</h2>",
+          "styles": {
+            "width": "auto",
+            "height": "auto",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.5)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.5)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<h2 class=\"sidebar-link-text cc-text-medium-bold\">PauloM18</h2>",
+          "styles": {
+            "width": "102px",
+            "height": "16px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "[class*=\"row\"]",
+      "elements": [
+        {
+          "html": "<div class=\"user-list-user-row\"><div class=\"user-list-user-info\"><a class=\"cc-avatar-component cc-avatar-size-40\" href=\"/member/danielnmh14\" title=\"danielnmh14\"><img class=\"cc-avatar-img\" loading=\"lazy\" src=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif\" srcset=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif 1x, https://www.chess.com/bundles/web/images/noavatar_l.84a92436@2x.gif 2x\" alt=\"Avatar of danielnmh14\" height=\"40\" width=\"40\"> </a> <div class=\"cc-user-block-component cc-user-block-default cc-user-block-small\" uuid=\"c2e49b82-8250-11ed-952d-9fc70345d6fe\" avatar=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif\"><!----> <!----> <div class=\"cc-text-medium-bold cc-user-username-component cc-user-username-default cc-user-block-username\" data-test-element=\"user-tagline-username\">danielnmh14</div> <!----> <div class=\"cc-country-flag-component country-br cc-country-flag-small\"><!----></div> <!----> </div></div> <button class=\"cc-button-component cc-button-secondary cc-button-medium cc-bg-secondary cc-button-min-width\" type=\"button\"><!----> <!----> <span class=\"\">Unfollow</span> <!----></button></div>",
+          "styles": {
+            "width": "629px",
+            "height": "64px",
+            "display": "grid",
+            "gap": "8px",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          }
+        },
+        {
+          "html": "<div class=\"user-list-user-row\"><div class=\"user-list-user-info\"><a class=\"cc-avatar-component cc-avatar-size-40\" href=\"/member/carecabenefico\" title=\"CarecaBenefico\"><img class=\"cc-avatar-img\" loading=\"lazy\" src=\"https://images.chesscomfiles.com/uploads/v1/user/232776463.48de9974.50x50o.666980d9d3f0.jpg\" srcset=\"https://images.chesscomfiles.com/uploads/v1/user/232776463.48de9974.50x50o.666980d9d3f0.jpg 1x, https://images.chesscomfiles.com/uploads/v1/user/232776463.48de9974.50x50o.666980d9d3f0@2x.jpg 2x\" alt=\"Avatar of CarecaBenefico\" height=\"40\" width=\"40\"> </a> <div class=\"cc-user-block-component cc-user-block-default cc-user-block-small\" uuid=\"bcf0f336-9d82-11ed-9af8-a5731c45f331\" avatar=\"https://images.chesscomfiles.com/uploads/v1/user/232776463.48de9974.50x50o.666980d9d3f0.jpg\"><!----> <!----> <div class=\"cc-text-medium-bold cc-user-username-component cc-user-username-default cc-user-block-username\" data-test-element=\"user-tagline-username\">CarecaBenefico</div> <!----> <div class=\"cc-country-flag-component country-br cc-country-flag-small\"><!----></div> <!----> </div></div> <button class=\"cc-button-component cc-button-secondary cc-button-medium cc-bg-secondary cc-button-min-width\" type=\"button\"><!----> <!----> <span class=\"\">Unfollow</span> <!----></button></div>",
+          "styles": {
+            "width": "629px",
+            "height": "64px",
+            "display": "grid",
+            "gap": "8px",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(255, 255, 255, 0.05)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          }
+        },
+        {
+          "html": "<div class=\"user-list-user-row\"><div class=\"user-list-user-info\"><a class=\"cc-avatar-component cc-avatar-size-40\" href=\"/member/hdberg\" title=\"hdberg\"><img class=\"cc-avatar-img\" loading=\"lazy\" src=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif\" srcset=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif 1x, https://www.chess.com/bundles/web/images/noavatar_l.84a92436@2x.gif 2x\" alt=\"Avatar of hdberg\" height=\"40\" width=\"40\"> </a> <div class=\"cc-user-block-component cc-user-block-default cc-user-block-small\" uuid=\"f7cde328-82e9-11ed-ba01-ddb9ad0cdf58\" avatar=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif\"><!----> <!----> <div class=\"cc-text-medium-bold cc-user-username-component cc-user-username-default cc-user-block-username\" data-test-element=\"user-tagline-username\">hdberg</div> <!----> <div class=\"cc-country-flag-component country-gb cc-country-flag-small\"><!----></div> <!----> </div></div> <button class=\"cc-button-component cc-button-secondary cc-button-medium cc-bg-secondary cc-button-min-width\" type=\"button\"><!----> <!----> <span class=\"\">Unfollow</span> <!----></button></div>",
+          "styles": {
+            "width": "629px",
+            "height": "64px",
+            "display": "grid",
+            "gap": "8px",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          }
+        },
+        {
+          "html": "<div class=\"user-list-user-row\"><div class=\"user-list-user-info\"><a class=\"cc-avatar-component cc-avatar-size-40\" href=\"/member/srcui\" title=\"SrCui\"><img class=\"cc-avatar-img\" loading=\"lazy\" src=\"https://images.chesscomfiles.com/uploads/v1/user/124685696.b4c2c104.50x50o.e016c575666e.jpg\" srcset=\"https://images.chesscomfiles.com/uploads/v1/user/124685696.b4c2c104.50x50o.e016c575666e.jpg 1x, https://images.chesscomfiles.com/uploads/v1/user/124685696.b4c2c104.50x50o.e016c575666e@2x.jpg 2x\" alt=\"Avatar of SrCui\" height=\"40\" width=\"40\"> </a> <div class=\"cc-user-block-component cc-user-block-default cc-user-block-small\" uuid=\"b7f90f40-7a01-11eb-a39e-27c59607f0c7\" avatar=\"https://images.chesscomfiles.com/uploads/v1/user/124685696.b4c2c104.50x50o.e016c575666e.jpg\"><!----> <!----> <div class=\"cc-text-medium-bold cc-user-username-component cc-user-username-default cc-user-block-username\" data-test-element=\"user-tagline-username\">SrCui</div> <!----> <div class=\"cc-country-flag-component country-ar cc-country-flag-small\"><!----></div> <!----> </div></div> <button class=\"cc-button-component cc-button-secondary cc-button-medium cc-bg-secondary cc-button-min-width\" type=\"button\"><!----> <!----> <span class=\"\">Unfollow</span> <!----></button></div>",
+          "styles": {
+            "width": "629px",
+            "height": "64px",
+            "display": "grid",
+            "gap": "8px",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(255, 255, 255, 0.05)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          }
+        },
+        {
+          "html": "<div class=\"user-list-user-row\"><div class=\"user-list-user-info\"><a class=\"cc-avatar-component cc-avatar-size-40\" href=\"/member/mateus_bcm\" title=\"mateus_bcm\"><img class=\"cc-avatar-img\" loading=\"lazy\" src=\"https://images.chesscomfiles.com/uploads/v1/user/232792551.f569ed7d.50x50o.f321f390ddbe.jpg\" srcset=\"https://images.chesscomfiles.com/uploads/v1/user/232792551.f569ed7d.50x50o.f321f390ddbe.jpg 1x, https://images.chesscomfiles.com/uploads/v1/user/232792551.f569ed7d.50x50o.f321f390ddbe@2x.jpg 2x\" alt=\"Avatar of mateus_bcm\" height=\"40\" width=\"40\"> </a> <div class=\"cc-user-block-component cc-user-block-default cc-user-block-small\" uuid=\"0f2c113c-9d86-11ed-b7e2-3163906f7f8b\" avatar=\"https://images.chesscomfiles.com/uploads/v1/user/232792551.f569ed7d.50x50o.f321f390ddbe.jpg\"><!----> <!----> <div class=\"cc-text-medium-bold cc-user-username-component cc-user-username-default cc-user-block-username\" data-test-element=\"user-tagline-username\">mateus_bcm</div> <!----> <div class=\"cc-country-flag-component country-br cc-country-flag-small\"><!----></div> <!----> </div></div> <button class=\"cc-button-component cc-button-secondary cc-button-medium cc-bg-secondary cc-button-min-width\" type=\"button\"><!----> <!----> <span class=\"\">Unfollow</span> <!----></button></div>",
+          "styles": {
+            "width": "629px",
+            "height": "64px",
+            "display": "grid",
+            "gap": "8px",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          }
+        },
+        {
+          "html": "<div class=\"user-list-user-row\"><div class=\"user-list-user-info\"><a class=\"cc-avatar-component cc-avatar-size-40\" href=\"/member/pedrocam7\" title=\"Pedrocam7\"><img class=\"cc-avatar-img\" loading=\"lazy\" src=\"https://images.chesscomfiles.com/uploads/v1/user/174541949.eccdda80.50x50o.aef27b58f88c.jpg\" srcset=\"https://images.chesscomfiles.com/uploads/v1/user/174541949.eccdda80.50x50o.aef27b58f88c.jpg 1x, https://images.chesscomfiles.com/uploads/v1/user/174541949.eccdda80.50x50o.aef27b58f88c@2x.jpg 2x\" alt=\"Avatar of Pedrocam7\" height=\"40\" width=\"40\"> </a> <div class=\"cc-user-block-component cc-user-block-default cc-user-block-small\" uuid=\"23ec31e8-9660-11ec-9b21-2fda7c73dc93\" avatar=\"https://images.chesscomfiles.com/uploads/v1/user/174541949.eccdda80.50x50o.aef27b58f88c.jpg\"><!----> <!----> <div class=\"cc-text-medium-bold cc-user-username-component cc-user-username-default cc-user-block-username\" data-test-element=\"user-tagline-username\">Pedrocam7</div> <!----> <div class=\"cc-country-flag-component country-br cc-country-flag-small\"><!----></div> <!----> </div></div> <button class=\"cc-button-component cc-button-secondary cc-button-medium cc-bg-secondary cc-button-min-width\" type=\"button\"><!----> <!----> <span class=\"\">Unfollow</span> <!----></button></div>",
+          "styles": {
+            "width": "629px",
+            "height": "64px",
+            "display": "grid",
+            "gap": "8px",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(255, 255, 255, 0.05)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          }
+        },
+        {
+          "html": "<div class=\"user-list-user-row\"><div class=\"user-list-user-info\"><a class=\"cc-avatar-component cc-avatar-size-40\" href=\"/member/mo7ndxd\" title=\"Mo7ndXD\"><img class=\"cc-avatar-img\" loading=\"lazy\" src=\"https://images.chesscomfiles.com/uploads/v1/user/180727533.98450cf3.50x50o.aeb88948ee09.png\" srcset=\"https://images.chesscomfiles.com/uploads/v1/user/180727533.98450cf3.50x50o.aeb88948ee09.png 1x, https://images.chesscomfiles.com/uploads/v1/user/180727533.98450cf3.50x50o.aeb88948ee09@2x.png 2x\" alt=\"Avatar of Mo7ndXD\" height=\"40\" width=\"40\"> </a> <div class=\"cc-user-block-component cc-user-block-default cc-user-block-small\" uuid=\"bee69d2e-be5f-11ec-8d1d-4d5000d3130f\" avatar=\"https://images.chesscomfiles.com/uploads/v1/user/180727533.98450cf3.50x50o.aeb88948ee09.png\"><!----> <!----> <div class=\"cc-text-medium-bold cc-user-username-component cc-user-username-default cc-user-block-username\" data-test-element=\"user-tagline-username\">Mo7ndXD</div> <!----> <div class=\"cc-country-flag-component country-jo cc-country-flag-small\"><!----></div> <!----> </div></div> <button class=\"cc-button-component cc-button-secondary cc-button-medium cc-bg-secondary cc-button-min-width\" type=\"button\"><!----> <!----> <span class=\"\">Unfollow</span> <!----></button></div>",
+          "styles": {
+            "width": "629px",
+            "height": "64px",
+            "display": "grid",
+            "gap": "8px",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          }
+        },
+        {
+          "html": "<div class=\"user-list-user-row\"><div class=\"user-list-user-info\"><a class=\"cc-avatar-component cc-avatar-size-40\" href=\"/member/hollowdivine\" title=\"hollowdivine\"><img class=\"cc-avatar-img\" loading=\"lazy\" src=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif\" srcset=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif 1x, https://www.chess.com/bundles/web/images/noavatar_l.84a92436@2x.gif 2x\" alt=\"Avatar of hollowdivine\" height=\"40\" width=\"40\"> </a> <div class=\"cc-user-block-component cc-user-block-default cc-user-block-small\" uuid=\"0fbbc48e-ac00-11ed-bf4e-7b3380a7637f\" avatar=\"https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif\"><!----> <!----> <div class=\"cc-text-medium-bold cc-user-username-component cc-user-username-default cc-user-block-username\" data-test-element=\"user-tagline-username\">hollowdivine</div> <!----> <div class=\"cc-country-flag-component country-us cc-country-flag-small\"><!----></div> <!----> </div></div> <button class=\"cc-button-component cc-button-secondary cc-button-medium cc-bg-secondary cc-button-min-width\" type=\"button\"><!----> <!----> <span class=\"\">Unfollow</span> <!----></button></div>",
+          "styles": {
+            "width": "629px",
+            "height": "64px",
+            "display": "grid",
+            "gap": "8px",
+            "padding": "12px 24px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(255, 255, 255, 0.05)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "[class*=\"cc-switch\"]",
+      "elements": [
+        {
+          "html": "<div class=\"cc-switch-component cc-switch-primary cc-switch-large\"><input type=\"checkbox\" class=\"cc-switch-checkbox\" checked=\"\" id=\"v-0\"> <label class=\"cc-switch-label\" for=\"v-0\"><div class=\"cc-switch-button\"><!----></div></label></div>",
+          "styles": {
+            "width": "48px",
+            "height": "24px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "10px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<input type=\"checkbox\" class=\"cc-switch-checkbox\" checked=\"\" id=\"v-0\">",
+          "styles": {
+            "width": "1px",
+            "height": "1px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "3px 3px 3px 4px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "13.3333px",
+            "fontWeight": "400",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(255, 255, 255)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<label class=\"cc-switch-label\" for=\"v-0\"><div class=\"cc-switch-button\"><!----></div></label>",
+          "styles": {
+            "width": "48px",
+            "height": "24px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "10px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgb(93, 153, 72)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "12px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<div class=\"cc-switch-button\"><!----></div>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 0px 0px 24px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "10px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgb(232, 231, 230)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "50%",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<div class=\"cc-switch-component cc-switch-primary cc-switch-large\"><input type=\"checkbox\" class=\"cc-switch-checkbox\" checked=\"\" id=\"v-1\"> <label class=\"cc-switch-label\" for=\"v-1\"><div class=\"cc-switch-button\"><!----></div></label></div>",
+          "styles": {
+            "width": "48px",
+            "height": "24px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "10px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<input type=\"checkbox\" class=\"cc-switch-checkbox\" checked=\"\" id=\"v-1\">",
+          "styles": {
+            "width": "1px",
+            "height": "1px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "3px 3px 3px 4px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "13.3333px",
+            "fontWeight": "400",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": "0px none rgb(255, 255, 255)",
+            "borderRadius": "0px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<label class=\"cc-switch-label\" for=\"v-1\"><div class=\"cc-switch-button\"><!----></div></label>",
+          "styles": {
+            "width": "48px",
+            "height": "24px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "10px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgb(93, 153, 72)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "12px",
+            "alignItems": "normal",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<div class=\"cc-switch-button\"><!----></div>",
+          "styles": {
+            "width": "24px",
+            "height": "24px",
+            "display": "grid",
+            "gap": "normal",
+            "padding": "0px",
+            "margin": "0px 0px 0px 24px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "10px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.85)",
+            "backgroundColor": "rgb(232, 231, 230)",
+            "border": "0px none rgba(255, 255, 255, 0.85)",
+            "borderRadius": "50%",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "[class*=\"cc-select\"]",
+      "elements": [
+        {
+          "html": "<select class=\"cc-select-component cc-select-medium blog-controller-privacy-select\"><!----> <!----> <option value=\"public\" selected=\"\">Everyone</option><option value=\"friends\">Only my friends</option><option value=\"nobody\">Nobody</option></select>",
+          "styles": {
+            "width": "216px",
+            "height": "40px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "4px 30px 4px 8px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(255, 255, 255, 0.08)",
+            "border": "1px solid rgba(255, 255, 255, 0.1)",
+            "borderRadius": "5px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<select class=\"cc-select-component cc-select-medium privacy-controller-privacy-select\"><!----> <!----> <option value=\"public\" selected=\"\">Everyone</option><option value=\"friends\">Only my friends</option><option value=\"nobody\">Nobody</option></select>",
+          "styles": {
+            "width": "141.5px",
+            "height": "40px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "4px 30px 4px 8px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(255, 255, 255, 0.08)",
+            "border": "1px solid rgba(255, 255, 255, 0.1)",
+            "borderRadius": "5px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<select class=\"cc-select-component cc-select-medium privacy-controller-privacy-select\"><!----> <!----> <option value=\"public\" selected=\"\">Everyone</option><option value=\"nobody\">Nobody</option></select>",
+          "styles": {
+            "width": "141.5px",
+            "height": "40px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "4px 30px 4px 8px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(255, 255, 255, 0.08)",
+            "border": "1px solid rgba(255, 255, 255, 0.1)",
+            "borderRadius": "5px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "select",
+      "elements": [
+        {
+          "html": "<select class=\"cc-select-component cc-select-medium blog-controller-privacy-select\"><!----> <!----> <option value=\"public\" selected=\"\">Everyone</option><option value=\"friends\">Only my friends</option><option value=\"nobody\">Nobody</option></select>",
+          "styles": {
+            "width": "216px",
+            "height": "40px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "4px 30px 4px 8px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(255, 255, 255, 0.08)",
+            "border": "1px solid rgba(255, 255, 255, 0.1)",
+            "borderRadius": "5px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<select class=\"cc-select-component cc-select-medium privacy-controller-privacy-select\"><!----> <!----> <option value=\"public\" selected=\"\">Everyone</option><option value=\"friends\">Only my friends</option><option value=\"nobody\">Nobody</option></select>",
+          "styles": {
+            "width": "141.5px",
+            "height": "40px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "4px 30px 4px 8px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(255, 255, 255, 0.08)",
+            "border": "1px solid rgba(255, 255, 255, 0.1)",
+            "borderRadius": "5px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        },
+        {
+          "html": "<select class=\"cc-select-component cc-select-medium privacy-controller-privacy-select\"><!----> <!----> <option value=\"public\" selected=\"\">Everyone</option><option value=\"nobody\">Nobody</option></select>",
+          "styles": {
+            "width": "141.5px",
+            "height": "40px",
+            "display": "block",
+            "gap": "normal",
+            "padding": "4px 30px 4px 8px",
+            "margin": "0px",
+            "fontFamily": "-apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "color": "rgba(255, 255, 255, 0.72)",
+            "backgroundColor": "rgba(255, 255, 255, 0.08)",
+            "border": "1px solid rgba(255, 255, 255, 0.1)",
+            "borderRadius": "5px",
+            "alignItems": "center",
+            "justifyContent": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "selector": "wc-chess-board",
+      "elements": []
+    },
+    {
+      "selector": "[class*=\"board-preview\"]",
+      "elements": []
+    }
+  ],
+  "assets": [
+    "https://assets-ds.chess.com/color-icons/play-white.svg",
+    "",
+    "https://assets-ds.chess.com/color-icons/play-white.svg",
+    "",
+    "https://assets-ds.chess.com/color-icons/puzzle-piece.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/puzzle-piece.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/lessons.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/lessons.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/training.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/training.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/binoculars.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/binoculars.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/friends.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/friends.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/ellipsis.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/ellipsis.svg",
+    "https://www.chess.com/settings/social",
+    "https://assets-ds.chess.com/color-icons/commerce-diamond.svg",
+    "https://www.chess.com/bundles/web/images/user-image.007dad08.svg",
+    "",
+    "https://assets-ds.chess.com/color-icons/settings.svg",
+    "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif",
+    "https://images.chesscomfiles.com/uploads/v1/user/232776463.48de9974.50x50o.666980d9d3f0.jpg",
+    "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif",
+    "https://images.chesscomfiles.com/uploads/v1/user/124685696.b4c2c104.50x50o.e016c575666e.jpg",
+    "https://images.chesscomfiles.com/uploads/v1/user/232792551.f569ed7d.50x50o.f321f390ddbe.jpg",
+    "https://images.chesscomfiles.com/uploads/v1/user/174541949.eccdda80.50x50o.aef27b58f88c.jpg",
+    "https://images.chesscomfiles.com/uploads/v1/user/180727533.98450cf3.50x50o.aeb88948ee09.png",
+    "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif",
+    "https://images.chesscomfiles.com/uploads/v1/user/253437085.9c7561d5.50x50o.b7361edbcec8.png",
+    "https://images.chesscomfiles.com/uploads/v1/user/252923737.eef6e7d0.50x50o.06563fa2db98.png",
+    "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif",
+    "https://images.chesscomfiles.com/uploads/v1/user/169335977.d5241966.50x50o.58fdfdb632cf.png",
+    "https://images.chesscomfiles.com/uploads/v1/user/352010655.b2542c31.50x50o.092f8724669b.jpg",
+    "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif",
+    "https://images.chesscomfiles.com/uploads/v1/user/195721133.47515506.50x50o.e8e137452041.jpg",
+    "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif",
+    "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif",
+    "https://images.chesscomfiles.com/uploads/v1/user/593481012.406c21da.50x50o.496cce25e69a.jpg"
+  ],
+  "css": [
+    "https://www.chess.com/bundles/app/vite/design-system-global-styles.DlEpehyHwn.css",
+    "https://www.chess.com/bundles/app/vite/main-global-styles.CGUkza8HpV.css",
+    "https://www.chess.com/bundles/app/vite/shared.BJ4C_amH8R.css",
+    "https://www.chess.com/bundles/app/vite/toaster-center._Jyaitqsh3.css",
+    "https://www.chess.com/r2/client-packages/checkmate/2026.10.14/checkmate.css",
+    "https://www.chess.com/r2/client-packages/navigation/2026.10.3/navigation-global-styles.C-Fxy_qT_D.css",
+    "https://www.chess.com/r2/client-packages/navigation/2026.10.3/shared.Dr1J0HhOG2.css",
+    "https://www.chess.com/r2/client-packages/navigation/2026.10.3/navigation.css",
+    "https://www.chess.com/bundles/app/vite/global-global-styles.D10t7xPVfa.css",
+    "https://www.chess.com/bundles/app/vite/sprites-global-styles.DnnYg9lCFU.css",
+    "https://www.chess.com/bundles/app/vite/navigation-footer-global-styles.3if4Mo9HAD.css",
+    "https://www.chess.com/bundles/app/vite/navigation-footer.CdObNLlWCl.css",
+    "https://www.chess.com/bundles/app/vite/content-global-styles.mTrg5Ea8in.css",
+    "https://www.chess.com/bundles/app/vite/layout-global-styles.Bk4v-OEjoC.css",
+    "https://www.chess.com/bundles/app/vite/settings-global-styles.Cs66PQuGe5.css",
+    "https://www.chess.com/bundles/app/vite/shared.CfJAAK4dSL.css",
+    "https://www.chess.com/themes/css?background_id=7110af10-b2f4-11ed-b059-6f5f46f8585e&board_style_id=7117f00e-b2f4-11ed-a79b-97d5a5754a11&piece_set_id=711ccf98-b2f4-11ed-8971-033836b38940&sound_set_id=7120f8de-b2f4-11ed-8c3d-a12327de8f3b&board_size=200&pieces_size=150",
+    "https://www.chess.com/bundles/app/vite/settings-layout.DC1_aN2LgE.css",
+    "https://www.chess.com/bundles/app/vite/shared.CSjqSVsL_o.css",
+    "https://www.chess.com/bundles/app/vite/config-driven-page-controller.OvhiHfZbSZ.css",
+    "https://www.chess.com/bundles/app/vite/shared.CcAPVYVPyI.css",
+    "https://www.chess.com/bundles/app/vite/shared.BOkGehLWaW.css",
+    "https://www.chess.com/bundles/app/vite/shared.CaRMgmM2It.css",
+    "https://www.chess.com/bundles/app/vite/shared.B6sqqQMUzF.css",
+    "https://www.chess.com/bundles/app/vite/shared.CPpR6vrLKp.css",
+    "https://www.chess.com/bundles/app/vite/shared.v_XJTolLWV.css",
+    "https://www.chess.com/bundles/app/vite/init.CFqzZp73SE.css",
+    "https://www.chess.com/bundles/app/vite/client.cTY1PSrwEi.css",
+    "https://www.chess.com/bundles/app/vite/shared.D1GDcqG8QS.css",
+    "https://www.chess.com/bundles/app/vite/shared.Cfp0_cAH8j.css",
+    "https://www.chess.com/bundles/app/vite/client.BgU8MYi-Ln.css",
+    "https://www.chess.com/bundles/app/vite/shared.CRuMV0VnPj.css",
+    "https://www.chess.com/bundles/app/vite/client.Mugz-SJGHB.css",
+    "https://www.chess.com/bundles/app/js/vendor/tinymce/skins/ui/oxide/skin.min.css"
+  ]
+}

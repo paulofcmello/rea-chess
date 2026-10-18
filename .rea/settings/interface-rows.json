@@ -1,0 +1,282 @@
+[
+  {
+    "text": "Less\n                More",
+    "label": {
+      "width": "auto",
+      "height": "auto",
+      "display": "none",
+      "gap": "normal",
+      "padding": "0px",
+      "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgb(49, 46, 43)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(49, 46, 43)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"sidebar-pinned-tabs-wrapper\">\n      <div id=\"favorited-tabs\">\n                  \n<div data-pin=\"play\">\n    <div class=\"sidebar-link-desktop-wrapper sidebar-mobile-hidden\" data-interaction=\"play\">\n    \n\n\n  <a href=\"https://www.chess.com/play\" class=\"cc-button-component cc-button-ghost cc-bg-ghost cc-button-medium     sidebar-link\" target=\"_self\" rel=\"noopener noreferrer\">\n                \n        \n        \n  \n  \n    \n                              <img aria-hidden=\"true\" alt=\"play-white\" class=\"cc-icon-img cc-icon-size-24 cc-button-icon sidebar-link-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/play-white.svg\" width=\"24\" data-icon-img=\"true\" style=\"\">\n  \n  \n\n        <img data-override-img=\"true\" aria-hidden=\"true\" alt=\"Coach\" class=\"cc-icon-img cc-icon-size-24 cc",
+      "style": {
+        "width": "154px",
+        "height": "280px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgb(49, 46, 43)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(49, 46, 43)",
+        "borderRadius": "0px",
+        "alignItems": "stretch",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"checkbox\" id=\"sidebar-toggle\">"
+  },
+  {
+    "text": "Play Online",
+    "label": {
+      "width": "115.914px",
+      "height": "28px",
+      "display": "flex",
+      "gap": "12px",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-checkbox-component customize-sidebar-entry-children-panel-checkbox\"><input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.online-pinning-interaction\"> <!----> <label class=\"cc-checkbox-label cc-text-medium customize-sidebar-entry-children-panel-entry\" for=\"play.online-pinning-interaction\"><img data-cy=\"cc-icon\" alt=\"play-white\" aria-hidden=\"true\" class=\"cc-icon-img_d8b7587 cc-icon-size-24_d8b7587 customize-sidebar-entry-icon-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/play-white.svg\" width=\"24\"> <span class=\"customize-sidebar-entry-children-panel-label\">Play Online</span></label></div>",
+      "style": {
+        "width": "221px",
+        "height": "28px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "center",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.online-pinning-interaction\">"
+  },
+  {
+    "text": "Play Bots",
+    "label": {
+      "width": "103.828px",
+      "height": "28px",
+      "display": "flex",
+      "gap": "12px",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-checkbox-component customize-sidebar-entry-children-panel-checkbox\"><input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.bots-pinning-interaction\"> <!----> <label class=\"cc-checkbox-label cc-text-medium customize-sidebar-entry-children-panel-entry\" for=\"play.bots-pinning-interaction\"><img data-cy=\"cc-icon\" alt=\"device-bot\" aria-hidden=\"true\" class=\"cc-icon-img_d8b7587 cc-icon-size-24_d8b7587 customize-sidebar-entry-icon-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/device-bot.svg\" width=\"24\"> <span class=\"customize-sidebar-entry-children-panel-label\">Play Bots</span></label></div>",
+      "style": {
+        "width": "221px",
+        "height": "28px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "center",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.bots-pinning-interaction\">"
+  },
+  {
+    "text": "Play Coach",
+    "label": {
+      "width": "116.016px",
+      "height": "28px",
+      "display": "flex",
+      "gap": "12px",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-checkbox-component customize-sidebar-entry-children-panel-checkbox\"><input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.coach-pinning-interaction\"> <!----> <label class=\"cc-checkbox-label cc-text-medium customize-sidebar-entry-children-panel-entry\" for=\"play.coach-pinning-interaction\"><img aria-hidden=\"true\" alt=\"coach-david\" class=\"customize-sidebar-entry-icon-icon\" src=\"https://assets-coaches.chess.com/image/coachdavid-icon.png?v=fd8652ae\" width=\"24\" height=\"24\"> <span class=\"customize-sidebar-entry-children-panel-label\">Play Coach</span></label></div>",
+      "style": {
+        "width": "221px",
+        "height": "28px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "center",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.coach-pinning-interaction\">"
+  },
+  {
+    "text": "Stats",
+    "label": {
+      "width": "77.2578px",
+      "height": "28px",
+      "display": "flex",
+      "gap": "12px",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-checkbox-component customize-sidebar-entry-children-panel-checkbox\"><input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.stats-pinning-interaction\"> <!----> <label class=\"cc-checkbox-label cc-text-medium customize-sidebar-entry-children-panel-entry\" for=\"play.stats-pinning-interaction\"><img data-cy=\"cc-icon\" alt=\"rating-stats\" aria-hidden=\"true\" class=\"cc-icon-img_d8b7587 cc-icon-size-24_d8b7587 customize-sidebar-entry-icon-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/rating-stats.svg\" width=\"24\"> <span class=\"customize-sidebar-entry-children-panel-label\">Stats</span></label></div>",
+      "style": {
+        "width": "221px",
+        "height": "28px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "center",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.stats-pinning-interaction\">"
+  },
+  {
+    "text": "Tournaments",
+    "label": {
+      "width": "128.281px",
+      "height": "28px",
+      "display": "flex",
+      "gap": "12px",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-checkbox-component customize-sidebar-entry-children-panel-checkbox\"><input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.tournaments-pinning-interaction\"> <!----> <label class=\"cc-checkbox-label cc-text-medium customize-sidebar-entry-children-panel-entry\" for=\"play.tournaments-pinning-interaction\"><img data-cy=\"cc-icon\" alt=\"tournament-gold\" aria-hidden=\"true\" class=\"cc-icon-img_d8b7587 cc-icon-size-24_d8b7587 customize-sidebar-entry-icon-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/tournament-gold.svg\" width=\"24\"> <span class=\"customize-sidebar-entry-children-panel-label\">Tournaments</span></label></div>",
+      "style": {
+        "width": "221px",
+        "height": "28px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "center",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.tournaments-pinning-interaction\">"
+  },
+  {
+    "text": "Variants",
+    "label": {
+      "width": "96.2344px",
+      "height": "28px",
+      "display": "flex",
+      "gap": "12px",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-checkbox-component customize-sidebar-entry-children-panel-checkbox\"><input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.variants-pinning-interaction\"> <!----> <label class=\"cc-checkbox-label cc-text-medium customize-sidebar-entry-children-panel-entry\" for=\"play.variants-pinning-interaction\"><img data-cy=\"cc-icon\" alt=\"variants\" aria-hidden=\"true\" class=\"cc-icon-img_d8b7587 cc-icon-size-24_d8b7587 customize-sidebar-entry-icon-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/variants.svg\" width=\"24\"> <span class=\"customize-sidebar-entry-children-panel-label\">Variants</span></label></div>",
+      "style": {
+        "width": "221px",
+        "height": "28px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "center",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.variants-pinning-interaction\">"
+  },
+  {
+    "text": "Game History",
+    "label": {
+      "width": "131.859px",
+      "height": "28px",
+      "display": "flex",
+      "gap": "12px",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "center",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-checkbox-component customize-sidebar-entry-children-panel-checkbox\"><input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.game_history-pinning-interaction\"> <!----> <label class=\"cc-checkbox-label cc-text-medium customize-sidebar-entry-children-panel-entry\" for=\"play.game_history-pinning-interaction\"><img data-cy=\"cc-icon\" alt=\"board-archive\" aria-hidden=\"true\" class=\"cc-icon-img_d8b7587 cc-icon-size-24_d8b7587 customize-sidebar-entry-icon-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/board-archive.svg\" width=\"24\"> <span class=\"customize-sidebar-entry-children-panel-label\">Game History</span></label></div>",
+      "style": {
+        "width": "221px",
+        "height": "28px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "center",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input class=\"cc-checkbox-input\" type=\"checkbox\" id=\"play.game_history-pinning-interaction\">"
+  }
+]

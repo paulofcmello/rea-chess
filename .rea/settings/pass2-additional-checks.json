@@ -1,0 +1,61 @@
+{
+  "reports": [
+    {
+      "name": "Analysis best-move arrow shown",
+      "passed": true
+    },
+    {
+      "name": "Analysis best-move arrow hidden after toggle",
+      "passed": true
+    },
+    {
+      "name": "Bot resign asks for in-page confirmation",
+      "passed": true
+    },
+    {
+      "name": "Bot resign cancel keeps game active",
+      "passed": true
+    },
+    {
+      "name": "Bot resign toggle skips confirmation",
+      "passed": true
+    },
+    {
+      "name": "Review coach and evaluation bar shown",
+      "passed": true
+    },
+    {
+      "name": "Review automatic best arrow shown",
+      "passed": true
+    },
+    {
+      "name": "Review move explanation shown by default",
+      "passed": true
+    },
+    {
+      "name": "Move explanation preference hides prose and keeps coach title",
+      "passed": true
+    },
+    {
+      "name": "Move explanation preference restores prose",
+      "passed": true
+    },
+    {
+      "name": "Review coach, evaluation bar, auto arrow hidden",
+      "passed": true
+    },
+    {
+      "name": "Review without evaluation bar fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Old settings merge new defaults",
+      "passed": true
+    },
+    {
+      "name": "Existing bot color preference is retained",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

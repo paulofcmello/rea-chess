@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Board & Pieces",
+    "url": "https://www.chess.com/settings/board"
+  },
+  {
+    "name": "Gameplay",
+    "url": "https://www.chess.com/settings/gameplay"
+  },
+  {
+    "name": "Profile",
+    "url": "https://www.chess.com/settings/profile"
+  },
+  {
+    "name": "Interface",
+    "url": "https://www.chess.com/settings/interface"
+  },
+  {
+    "name": "Social",
+    "url": "https://www.chess.com/settings/social"
+  },
+  {
+    "name": "Coach",
+    "url": "https://www.chess.com/settings/coach"
+  },
+  {
+    "name": "Notifications",
+    "url": "https://www.chess.com/settings/notifications"
+  },
+  {
+    "name": "Account",
+    "url": "https://www.chess.com/settings/account"
+  },
+  {
+    "name": "Membership",
+    "url": "https://www.chess.com/settings/membership"
+  },
+  {
+    "name": "Accessibility",
+    "url": "https://www.chess.com/settings/accessibility"
+  }
+]

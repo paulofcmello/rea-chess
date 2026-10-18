@@ -1,0 +1,249 @@
+{
+  "reports": [
+    {
+      "name": "Seven settings sections",
+      "passed": true
+    },
+    {
+      "name": "Default board coordinates visible",
+      "passed": true
+    },
+    {
+      "name": "Coordinate switch changes live board",
+      "passed": true
+    },
+    {
+      "name": "Section board",
+      "passed": true
+    },
+    {
+      "name": "Section gameplay",
+      "passed": true
+    },
+    {
+      "name": "Section sound",
+      "passed": true
+    },
+    {
+      "name": "Section puzzles",
+      "passed": true
+    },
+    {
+      "name": "Section analysis",
+      "passed": true
+    },
+    {
+      "name": "Section interface",
+      "passed": true
+    },
+    {
+      "name": "Section data",
+      "passed": true
+    },
+    {
+      "name": "Sidebar Settings navigates to full page",
+      "passed": true
+    },
+    {
+      "name": "open-settings event navigates",
+      "passed": true
+    },
+    {
+      "name": "390px no overflow: board",
+      "passed": true
+    },
+    {
+      "name": "390px no overflow: gameplay",
+      "passed": true
+    },
+    {
+      "name": "390px no overflow: sound",
+      "passed": true
+    },
+    {
+      "name": "390px no overflow: puzzles",
+      "passed": true
+    },
+    {
+      "name": "390px no overflow: analysis",
+      "passed": true
+    },
+    {
+      "name": "390px no overflow: interface",
+      "passed": true
+    },
+    {
+      "name": "390px no overflow: data",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion is global",
+      "passed": true
+    },
+    {
+      "name": "Volume zero is silent for move and puzzle sounds",
+      "passed": true
+    },
+    {
+      "name": "Volume applies to both sound families",
+      "passed": true
+    },
+    {
+      "name": "Sound toggle mutes both families",
+      "passed": true
+    },
+    {
+      "name": "Legal move dots visible",
+      "passed": true
+    },
+    {
+      "name": "Legal move toggle hides dots",
+      "passed": true
+    },
+    {
+      "name": "Drag-only rejects click move",
+      "passed": true
+    },
+    {
+      "name": "Drag-only permits drag move",
+      "passed": true
+    },
+    {
+      "name": "Click-only rejects drag move",
+      "passed": true
+    },
+    {
+      "name": "Click-only permits click move",
+      "passed": true
+    },
+    {
+      "name": "Autoqueen bypasses picker",
+      "passed": true
+    },
+    {
+      "name": "Alt overrides autoqueen",
+      "passed": true
+    },
+    {
+      "name": "Alt picker allows underpromotion",
+      "passed": true
+    },
+    {
+      "name": "Black orientation promotion picker",
+      "passed": true
+    },
+    {
+      "name": "Black orientation underpromotion",
+      "passed": true
+    },
+    {
+      "name": "Last move highlighting on",
+      "passed": true
+    },
+    {
+      "name": "Last move highlighting off",
+      "passed": true
+    },
+    {
+      "name": "Right-click marks enabled",
+      "passed": true
+    },
+    {
+      "name": "Right-click marks disabled",
+      "passed": true
+    },
+    {
+      "name": "Premoves enabled",
+      "passed": true
+    },
+    {
+      "name": "Premoves disabled",
+      "passed": true
+    },
+    {
+      "name": "Animation speed changes",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion overrides board animation",
+      "passed": true
+    },
+    {
+      "name": "Solved puzzle auto-advances once",
+      "passed": true
+    },
+    {
+      "name": "Auto-advance off waits",
+      "passed": true
+    },
+    {
+      "name": "Analysis evaluation bar hidden",
+      "passed": true
+    },
+    {
+      "name": "Analysis best arrow hidden",
+      "passed": true
+    },
+    {
+      "name": "Analysis evaluation bar shown",
+      "passed": true
+    },
+    {
+      "name": "Analysis uses engine depth preference",
+      "passed": true
+    },
+    {
+      "name": "Letter notation in move list",
+      "passed": true
+    },
+    {
+      "name": "Figurine notation in move list",
+      "passed": true
+    },
+    {
+      "name": "Puzzle timer hidden",
+      "passed": true
+    },
+    {
+      "name": "Puzzle rating hidden",
+      "passed": true
+    },
+    {
+      "name": "Puzzle timer and rating shown",
+      "passed": true
+    },
+    {
+      "name": "Default bot color applied",
+      "passed": true
+    },
+    {
+      "name": "Export includes every namespaced key only",
+      "passed": true
+    },
+    {
+      "name": "Reset uses in-page modal",
+      "passed": true
+    },
+    {
+      "name": "Reset cancel preserves progress",
+      "passed": true
+    },
+    {
+      "name": "Import stages confirmation before writing",
+      "passed": true
+    },
+    {
+      "name": "Import restores data and preserves unrelated storage",
+      "passed": true
+    },
+    {
+      "name": "Reset clears progress, keeps settings and username",
+      "passed": true
+    },
+    {
+      "name": "Malformed settings import rejected",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,109 @@
+{
+  "reports": [
+    {
+      "name": "Single shared dark settings card and divider",
+      "passed": true
+    },
+    {
+      "name": "Measured title, nav, active accent and switch alignment",
+      "passed": true
+    },
+    {
+      "name": "Every board theme has a thumbnail",
+      "passed": true
+    },
+    {
+      "name": "Board tile saves instantly and updates preview",
+      "passed": true
+    },
+    {
+      "name": "Every piece set has a loaded thumbnail",
+      "passed": true
+    },
+    {
+      "name": "Piece tile saves instantly and updates preview",
+      "passed": true
+    },
+    {
+      "name": "Outside coordinates render in a gutter",
+      "passed": true
+    },
+    {
+      "name": "Coordinate switch hides outside coordinates and disables radios",
+      "passed": true
+    },
+    {
+      "name": "Animation switch turns off slides and disables radios",
+      "passed": true
+    },
+    {
+      "name": "Animation switch restores selected speed",
+      "passed": true
+    },
+    {
+      "name": "Search finds a row across sections",
+      "passed": true
+    },
+    {
+      "name": "Search result control persists real setting",
+      "passed": true
+    },
+    {
+      "name": "Search displays matching rows from multiple sections",
+      "passed": true
+    },
+    {
+      "name": "Search has accessible empty state",
+      "passed": true
+    },
+    {
+      "name": "Section navigation clears search",
+      "passed": true
+    },
+    {
+      "name": "Notation switch sets letters",
+      "passed": true
+    },
+    {
+      "name": "Import username saves without a button",
+      "passed": true
+    },
+    {
+      "name": "Outside coordinate board accepts moves in Analysis",
+      "passed": true
+    },
+    {
+      "name": "Outside coordinate board remains square beside evaluation bar",
+      "passed": true
+    },
+    {
+      "name": "Analysis outside coordinates fit at 390px",
+      "passed": true
+    },
+    {
+      "name": "Outside coordinate settings preview fits at 390px",
+      "passed": true
+    },
+    {
+      "name": "Search results fit at 390px",
+      "passed": true
+    },
+    {
+      "name": "Piece grid fits at 390px",
+      "passed": true
+    },
+    {
+      "name": "Settings fit at 760px",
+      "passed": true
+    },
+    {
+      "name": "Settings fit at 820px",
+      "passed": true
+    },
+    {
+      "name": "Settings fit at 1024px",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

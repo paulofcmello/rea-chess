@@ -1,0 +1,387 @@
+[
+  {
+    "text": "Less\n                More",
+    "label": {
+      "width": "auto",
+      "height": "auto",
+      "display": "none",
+      "gap": "normal",
+      "padding": "0px",
+      "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgb(49, 46, 43)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(49, 46, 43)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"sidebar-pinned-tabs-wrapper\">\n      <div id=\"favorited-tabs\">\n                  \n<div data-pin=\"play\">\n    <div class=\"sidebar-link-desktop-wrapper sidebar-mobile-hidden\" data-interaction=\"play\">\n    \n\n\n  <a href=\"https://www.chess.com/play\" class=\"cc-button-component cc-button-ghost cc-bg-ghost cc-button-medium     sidebar-link\" target=\"_self\" rel=\"noopener noreferrer\">\n                \n        \n        \n  \n  \n    \n                              <img aria-hidden=\"true\" alt=\"play-white\" class=\"cc-icon-img cc-icon-size-24 cc-button-icon sidebar-link-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/play-white.svg\" width=\"24\" data-icon-img=\"true\" style=\"\">\n  \n  \n\n        <img data-override-img=\"true\" aria-hidden=\"true\" alt=\"Coach\" class=\"cc-icon-img cc-icon-size-24 cc",
+      "style": {
+        "width": "154px",
+        "height": "280px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgb(49, 46, 43)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(49, 46, 43)",
+        "borderRadius": "0px",
+        "alignItems": "stretch",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"checkbox\" id=\"sidebar-toggle\">"
+  },
+  {
+    "text": "Inside",
+    "label": {
+      "width": "46.3984px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" checked=\"\" id=\"board.coordinates-inside\"> <label class=\"cc-radio-button-label\" for=\"board.coordinates-inside\">Inside</label> </div>",
+      "style": {
+        "width": "60.3984px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" checked=\"\" id=\"board.coordinates-inside\">"
+  },
+  {
+    "text": "Outside",
+    "label": {
+      "width": "58.2578px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.coordinates-outside\"> <label class=\"cc-radio-button-label\" for=\"board.coordinates-outside\">Outside</label> </div>",
+      "style": {
+        "width": "72.2578px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.coordinates-outside\">"
+  },
+  {
+    "text": "Win Celebration",
+    "label": {
+      "width": "302.5px",
+      "height": "16px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "0px",
+      "font": "600 14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.85)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.85)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"game-animation-controller-winCelebration\"><label for=\"win-celebration-select\" class=\"game-animation-controller-label cc-text-medium-bold\"><span class=\"search-highlight-block\">Win Celebration</span></label> <select class=\"cc-select-component cc-select-medium game-animation-controller-select\" id=\"win-celebration-select\"><!----> <!----> <option value=\"none\">None</option><option selected=\"\" value=\"confetti\">Confetti</option></select></div>",
+      "style": {
+        "width": "302.5px",
+        "height": "64px",
+        "display": "block",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "normal",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<select class=\"cc-select-component cc-select-medium game-animation-controller-select\" id=\"win-celebration-select\"><!----> <!----> <option value=\"none\">None</option><option selected=\"\" value=\"confetti\">Confetti</option></select>"
+  },
+  {
+    "text": "Slow",
+    "label": {
+      "width": "38.7031px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-slow\"> <label class=\"cc-radio-button-label\" for=\"board.animation_type-slow\">Slow</label> </div>",
+      "style": {
+        "width": "52.7031px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-slow\">"
+  },
+  {
+    "text": "Medium (default)",
+    "label": {
+      "width": "118.711px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-medium\"> <label class=\"cc-radio-button-label\" for=\"board.animation_type-medium\">Medium (default)</label> </div>",
+      "style": {
+        "width": "132.711px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-medium\">"
+  },
+  {
+    "text": "Fast",
+    "label": {
+      "width": "35.0078px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-fast\"> <label class=\"cc-radio-button-label\" for=\"board.animation_type-fast\">Fast</label> </div>",
+      "style": {
+        "width": "49.0078px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-fast\">"
+  },
+  {
+    "text": "Natural",
+    "label": {
+      "width": "54.9219px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-natural\"> <label class=\"cc-radio-button-label\" for=\"board.animation_type-natural\">Natural</label> </div>",
+      "style": {
+        "width": "68.9219px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-natural\">"
+  },
+  {
+    "text": "Arcade",
+    "label": {
+      "width": "53.8203px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-arcade\"> <label class=\"cc-radio-button-label\" for=\"board.animation_type-arcade\">Arcade</label> </div>",
+      "style": {
+        "width": "67.8203px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-arcade\">"
+  },
+  {
+    "text": "Dynamic",
+    "label": {
+      "width": "64.0938px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-dynamic\"> <label class=\"cc-radio-button-label\" for=\"board.animation_type-dynamic\">Dynamic</label> </div>",
+      "style": {
+        "width": "78.0938px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"board.animation_type-dynamic\">"
+  },
+  {
+    "text": "Sound Theme",
+    "label": {
+      "width": "auto",
+      "height": "auto",
+      "display": "inline",
+      "gap": "normal",
+      "padding": "0px",
+      "font": "600 14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.85)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.85)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-text-medium-bold sounds-controller-soundSelectorLabel\"><label for=\"sound-theme-select\"><span class=\"search-highlight-inline\">Sound Theme</span></label></div>",
+      "style": {
+        "width": "160px",
+        "height": "16px",
+        "display": "block",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "600 14px / 16px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "normal",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<select class=\"cc-select-component cc-select-medium\" id=\"sound-theme-select\"><!----> <!----> </select>"
+  }
+]

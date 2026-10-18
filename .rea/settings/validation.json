@@ -1,0 +1,14 @@
+{
+  "typescript": "passed",
+  "productionBuild": "passed, no warnings",
+  "lint": {
+    "sourceBaseline": 29,
+    "sourceCurrent": 29,
+    "newSourceWarnings": [],
+    "existingEngineVendorWarnings": 125
+  },
+  "runtimeChecks": 61,
+  "runtimeErrors": [],
+  "additionalRuntimeChecks": 11,
+  "additionalRuntimeErrors": []
+}

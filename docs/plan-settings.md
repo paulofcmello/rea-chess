@@ -30,3 +30,15 @@ Extend `Settings` + `defaultSettings` in `app/src/lib/storage.ts` (merged over d
 4. At 390px: no horizontal page scroll.
 5. Save comparison screenshots (REA vs chess.com) into `.rea/settings/compare/`.
 6. Do not commit. Final message: files changed, which chess.com settings you skipped and why, deviations.
+
+## Pass 2: visual fidelity (do this now; pass 1 is committed)
+Compare `.rea/settings/compare/rea-board-desktop.png` with `chesscom-board-desktop.png` — REA's layout is too different. Fix to match chess.com exactly:
+- Page title: gear icon + "Settings" (chess.com size/weight), at top-left of content like chess.com.
+- ONE dark card containing both the left nav and the content (not two separate cards). Nav: "Search Settings" input at top (filters rows across sections, real), items with icon + label, no chevrons; active item = lighter background + right border accent as captured. Vertical divider between nav and content.
+- Content: section title + grey subtitle; sub-headings inside a section ("Piece Movement", "Board Effects", "Sounds") with horizontal dividers, like chess.com.
+- Toggles on the LEFT of the label (chess.com), label bold + grey description below. Choices like coordinates (Inside/Outside) and piece animation speed as radio lists under their toggle, as captured. Selects styled like chess.com's (dark, small caret).
+- Board & Pieces: tabs "Boards | Pieces" with a thumbnail grid of all board themes / piece sets (hotlinked chess.com thumbnails; click selects, selected outline) and a large preview to the right, like chess.com. Move Method select + small illustrative board like chess.com.
+- Group sections like chess.com: Board & Pieces (boards, pieces, coordinates, highlight, Piece Movement, Board Effects incl. animations, Sounds); Gameplay; Interface; Coach (Review/Analysis coach + explanations prefs); Accessibility (reduce motion); plus REA-only Puzzles and Data at the bottom. Use chess.com's icons for nav items where they exist (if inline SVGs, copy the SVG path markup into a small icon component — SVG markup is fine).
+- Drop the "Save Preferences" buttons concept: REA saves instantly (keep that), but no need for explicit buttons.
+- Update compare screenshots (`rea-*`) and keep acceptance checks from pass 1 green (tsc/build, 390px no overflow, settings still wired).
+Do not commit. Final message: what changed.

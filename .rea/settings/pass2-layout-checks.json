@@ -1,0 +1,146 @@
+[
+  {
+    "section": "board",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Board & Pieces",
+    "badImages": []
+  },
+  {
+    "section": "gameplay",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Gameplay",
+    "badImages": []
+  },
+  {
+    "section": "interface",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Interface",
+    "badImages": []
+  },
+  {
+    "section": "coach",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Coach",
+    "badImages": []
+  },
+  {
+    "section": "accessibility",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Accessibility",
+    "badImages": []
+  },
+  {
+    "section": "puzzles",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Puzzles",
+    "badImages": []
+  },
+  {
+    "section": "data",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Data",
+    "badImages": []
+  },
+  {
+    "section": "sound",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Board & Pieces",
+    "badImages": []
+  },
+  {
+    "section": "analysis",
+    "size": "desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "title": "Coach",
+    "badImages": []
+  },
+  {
+    "section": "board",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Board & Pieces",
+    "badImages": []
+  },
+  {
+    "section": "gameplay",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Gameplay",
+    "badImages": []
+  },
+  {
+    "section": "interface",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Interface",
+    "badImages": []
+  },
+  {
+    "section": "coach",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Coach",
+    "badImages": []
+  },
+  {
+    "section": "accessibility",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Accessibility",
+    "badImages": []
+  },
+  {
+    "section": "puzzles",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Puzzles",
+    "badImages": []
+  },
+  {
+    "section": "data",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Data",
+    "badImages": []
+  },
+  {
+    "section": "sound",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Board & Pieces",
+    "badImages": []
+  },
+  {
+    "section": "analysis",
+    "size": "mobile",
+    "width": 390,
+    "scroll": 390,
+    "title": "Coach",
+    "badImages": []
+  }
+]

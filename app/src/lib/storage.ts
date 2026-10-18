@@ -53,6 +53,7 @@ export interface Settings {
   showLegal: boolean
   highlightMoves: boolean
   coords: boolean
+  coordsPosition: 'inside' | 'outside'
   animation: 'none' | 'slow' | 'default' | 'fast'
   notation: 'figurine' | 'letter'
   boardMarks: boolean
@@ -69,6 +70,7 @@ export interface Settings {
   showEvalBar: boolean
   bestMoveArrow: boolean
   reviewCoach: boolean
+  reviewExplanations: boolean
   reduceMotion: boolean
 }
 
@@ -80,6 +82,7 @@ export const defaultSettings: Settings = {
   showLegal: true,
   highlightMoves: true,
   coords: true,
+  coordsPosition: 'inside',
   animation: 'default',
   notation: 'figurine',
   boardMarks: true,
@@ -96,6 +99,7 @@ export const defaultSettings: Settings = {
   showEvalBar: true,
   bestMoveArrow: true,
   reviewCoach: true,
+  reviewExplanations: true,
   reduceMotion: false,
 }
 

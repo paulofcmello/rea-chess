@@ -1,0 +1,212 @@
+[
+  {
+    "text": "Less\n                More",
+    "label": {
+      "width": "auto",
+      "height": "auto",
+      "display": "none",
+      "gap": "normal",
+      "padding": "0px",
+      "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgb(49, 46, 43)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgb(49, 46, 43)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"sidebar-pinned-tabs-wrapper\">\n      <div id=\"favorited-tabs\">\n                  \n<div data-pin=\"play\">\n    <div class=\"sidebar-link-desktop-wrapper sidebar-mobile-hidden\" data-interaction=\"play\">\n    \n\n\n  <a href=\"https://www.chess.com/play\" class=\"cc-button-component cc-button-ghost cc-bg-ghost cc-button-medium     sidebar-link\" target=\"_self\" rel=\"noopener noreferrer\">\n                \n        \n        \n  \n  \n    \n                              <img aria-hidden=\"true\" alt=\"play-white\" class=\"cc-icon-img cc-icon-size-24 cc-button-icon sidebar-link-icon\" height=\"24\" src=\"https://assets-ds.chess.com/color-icons/play-white.svg\" width=\"24\" data-icon-img=\"true\" style=\"\">\n  \n  \n\n        <img data-override-img=\"true\" aria-hidden=\"true\" alt=\"Coach\" class=\"cc-icon-img cc-icon-size-24 cc",
+      "style": {
+        "width": "154px",
+        "height": "280px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgb(49, 46, 43)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(49, 46, 43)",
+        "borderRadius": "0px",
+        "alignItems": "stretch",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"checkbox\" id=\"sidebar-toggle\">"
+  },
+  {
+    "text": "Everyone",
+    "label": {
+      "width": "67.6172px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" checked=\"\" id=\"gameplay.allow_challenges_from-everyone\"> <label class=\"cc-radio-button-label\" for=\"gameplay.allow_challenges_from-everyone\">Everyone</label> </div>",
+      "style": {
+        "width": "81.6172px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" checked=\"\" id=\"gameplay.allow_challenges_from-everyone\">"
+  },
+  {
+    "text": "Only friends",
+    "label": {
+      "width": "86.2031px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"gameplay.allow_challenges_from-friends\"> <label class=\"cc-radio-button-label\" for=\"gameplay.allow_challenges_from-friends\">Only friends</label> </div>",
+      "style": {
+        "width": "100.203px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"gameplay.allow_challenges_from-friends\">"
+  },
+  {
+    "text": "Nobody (rematches are still allowed)",
+    "label": {
+      "width": "243.883px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"gameplay.allow_challenges_from-nobody\"> <label class=\"cc-radio-button-label\" for=\"gameplay.allow_challenges_from-nobody\">Nobody (rematches are still allowed)</label> </div>",
+      "style": {
+        "width": "257.883px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"gameplay.allow_challenges_from-nobody\">"
+  },
+  {
+    "text": "Everyone",
+    "label": {
+      "width": "67.6172px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" checked=\"\" id=\"gameplay.live.challenge_alerts-everyone\"> <label class=\"cc-radio-button-label\" for=\"gameplay.live.challenge_alerts-everyone\">Everyone</label> </div>",
+      "style": {
+        "width": "81.6172px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" checked=\"\" id=\"gameplay.live.challenge_alerts-everyone\">"
+  },
+  {
+    "text": "Friends only",
+    "label": {
+      "width": "86.6172px",
+      "height": "20px",
+      "display": "block",
+      "gap": "normal",
+      "padding": "2px 0px 2px 8px",
+      "font": "14px / 15.9992px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+      "color": "rgba(255, 255, 255, 0.72)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "border": "0px none rgba(255, 255, 255, 0.72)",
+      "borderRadius": "0px",
+      "alignItems": "normal",
+      "justifyContent": "normal"
+    },
+    "row": {
+      "html": "<div class=\"cc-radio-button-component\"><input type=\"radio\" class=\"cc-radio-button-input\" id=\"gameplay.live.challenge_alerts-friends\"> <label class=\"cc-radio-button-label\" for=\"gameplay.live.challenge_alerts-friends\">Friends only</label> </div>",
+      "style": {
+        "width": "100.617px",
+        "height": "20px",
+        "display": "flex",
+        "gap": "normal",
+        "padding": "0px",
+        "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+        "color": "rgba(255, 255, 255, 0.85)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgba(255, 255, 255, 0.85)",
+        "borderRadius": "0px",
+        "alignItems": "flex-start",
+        "justifyContent": "normal"
+      }
+    },
+    "control": "<input type=\"radio\" class=\"cc-radio-button-input\" id=\"gameplay.live.challenge_alerts-friends\">"
+  }
+]

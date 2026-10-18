@@ -519,7 +519,7 @@ export default function Board({
   const promoColor = promo ? chess.get(promo.from as Square)?.color ?? 'w' : 'w'
   const allArrows = [...arrows, ...(settings.boardMarks ? userArrows : []), ...(settings.boardMarks && rightDrag && rightDrag.from !== rightDrag.to ? [{ from: rightDrag.from, to: rightDrag.to, color: rightDrag.color }] : [])]
 
-  return (
+  const board = (
     <div
       ref={ref}
       className={`board ${drag ? 'is-dragging' : grab ? 'piece-hover' : ''}`}
@@ -534,7 +534,7 @@ export default function Board({
       onPointerLeave={() => setGrab(false)}
       onContextMenu={(e) => e.preventDefault()}
     >
-      {settings.coords && (
+      {settings.coords && settings.coordsPosition !== 'outside' && (
         <svg viewBox="0 0 100 100" className="coordinates" aria-hidden="true">
           {Array.from({ length: 8 }, (_, i) => (
             <text key={'r' + i} x="0.75" y={3.5 + i * 12.5} fontSize="2.8" fill={i % 2 === 0 ? theme.dark : theme.light}>
@@ -655,4 +655,10 @@ export default function Board({
       )}
     </div>
   )
+  if (!settings.coords || settings.coordsPosition !== 'outside') return board
+  return <div className="board-outside-frame">
+    {board}
+    <div className="board-outside-ranks" aria-hidden="true">{Array.from({ length: 8 }, (_, i) => <span key={i}>{flip ? i + 1 : 8 - i}</span>)}</div>
+    <div className="board-outside-files" aria-hidden="true">{Array.from({ length: 8 }, (_, i) => <span key={i}>{flip ? FILES[7 - i] : FILES[i]}</span>)}</div>
+  </div>
 }
