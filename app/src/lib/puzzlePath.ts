@@ -1,6 +1,31 @@
 import { load, updateStored, useStored } from './storage'
 
 export const PUZZLES_PER_LEVEL = 20
+// Live /puzzles canvas geometry: 108 × 92 ground cells, 78px tile art.
+// At a 300px card width this is 54px art on 37.5 × 32px steps.
+export function pathGeometry(width: number) {
+  const scale = width < 432 ? width / 432 : width < 700 ? 1 : 92 / 64
+  return {
+    rowWidth: Math.round(108 * scale),
+    rowHeight: Math.round(92 * scale),
+    tileSize: Math.round(78 * scale),
+    pawnSize: Math.round(80 * scale),
+    numberSize: Math.round(22 * scale),
+  }
+}
+
+// Three steps separate the last bronze tile from the first silver tile.
+export const NEXT_PATH_START = PUZZLES_PER_LEVEL + 2
+export const PATH_STEPS = NEXT_PATH_START + PUZZLES_PER_LEVEL - 1
+
+export function pathPosition(index: number, nextLevel = false) {
+  const bend = [0.5, 0, -0.5, -1, -1.5, -1, -0.5, 0][index % 8]
+  return {
+    x: `calc(50% + ${bend + 0.5} * var(--path-row-width))`,
+    y: `calc(52cqh + ${PATH_STEPS - index - (nextLevel ? NEXT_PATH_START : 0)} * var(--path-step-y))`,
+  }
+}
+
 export interface PuzzlePathProgress {
   solved: number
   points: number

@@ -1,0 +1,65 @@
+{
+  "details": {
+    "card": {
+      "x": 865,
+      "y": 16,
+      "width": 300,
+      "height": 781,
+      "top": 16,
+      "right": 1165,
+      "bottom": 797,
+      "left": 865
+    },
+    "viewport": {
+      "x": 865,
+      "y": 212.0625,
+      "width": 300,
+      "height": 431.4375,
+      "top": 212.0625,
+      "right": 1165,
+      "bottom": 643.5,
+      "left": 865
+    },
+    "pawn": {
+      "x": 1062,
+      "y": 386.0062255859375,
+      "width": 56,
+      "height": 56,
+      "top": 386.0062255859375,
+      "right": 1118,
+      "bottom": 442.0062255859375,
+      "left": 1062
+    },
+    "nextNumber": {
+      "x": 1025.5,
+      "y": 389.28125,
+      "width": 54,
+      "height": 18.5,
+      "top": 389.28125,
+      "right": 1079.5,
+      "bottom": 407.78125,
+      "left": 1025.5
+    },
+    "current": {
+      "x": 1063,
+      "y": 409.40625,
+      "width": 54,
+      "height": 54,
+      "top": 409.40625,
+      "right": 1117,
+      "bottom": 463.40625,
+      "left": 1063
+    },
+    "vars": "--path-row-width: 75px; --path-row-height: 64px; --path-step-y: 32px; --path-tile-size: 54px; --path-pawn-size: 56px; --path-number-size: 15px;"
+  },
+  "scroll": {
+    "before": 800,
+    "after": 920,
+    "delta": 120,
+    "bottom": 1312,
+    "top": 0,
+    "dragged": 80,
+    "coasted": 213.148,
+    "touchDelta": 59.99999999999994
+  }
+}

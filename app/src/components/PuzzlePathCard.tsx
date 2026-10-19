@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { pathLevel, PUZZLES_PER_LEVEL, usePuzzlePath } from '../lib/puzzlePath'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { pathGeometry, pathLevel, pathPosition, PATH_STEPS, PUZZLES_PER_LEVEL, usePuzzlePath } from '../lib/puzzlePath'
 import { useStreak } from '../lib/streak'
 import { Glyph } from './glyphs'
 
@@ -13,15 +13,6 @@ const tips = [
   'When you get a Puzzle wrong, you should always retry it and review the solution to see what you missed.',
   'In every Puzzle position, only one move works... Can you find it?',
 ]
-
-// Fixed isometric spacing in a 300px-wide scene. Move the camera with the
-// pawn instead of shrinking the entire level to fit the viewport.
-function position(index: number, current: number) {
-  return {
-    x: 180 + [0.5, 0, -0.5, -1, -1.5, -1, -0.5, 0][index % 8] * 75,
-    y: `calc(52cqh + ${(current - index) * 10.667}cqw)`,
-  }
-}
 
 // Props sit outside the matching bends, rather than alongside a fixed tile
 // index that can put them on top of the path as the camera advances.
@@ -51,8 +42,135 @@ export default function PuzzlePathCard({ onSolve, active = true, loading = false
   const [showModes, setShowModes] = useState(false)
   const modesButton = useRef<HTMLButtonElement>(null)
   const closeButton = useRef<HTMLButtonElement>(null)
+  const viewport = useRef<HTMLDivElement>(null)
+  const scene = useRef<HTMLDivElement>(null)
   const { level, tile } = pathLevel(display.solved)
-  const pawn = position(tile, tile)
+  const pawn = pathPosition(tile)
+
+  useLayoutEffect(() => {
+    const view = viewport.current
+    const world = scene.current
+    if (!view || !world || !active) return
+    let offset = 0
+    let maximum = 0
+    let pending = 0
+    let frame = 0
+    let momentum = 0
+    let velocity = 0
+    let pointer: number | null = null
+    let lastY = 0
+    let lastTime = 0
+
+    const move = (delta: number) => {
+      const previous = offset
+      offset = Math.max(0, Math.min(maximum, offset + delta))
+      world.style.transform = `translate3d(0, ${-offset}px, 0)`
+      return previous !== offset
+    }
+    const stop = () => {
+      cancelAnimationFrame(momentum)
+      momentum = 0
+      velocity = 0
+    }
+    // Like the reference, coalesce wheel/drag deltas into one paint per frame.
+    const queue = (delta: number) => {
+      pending += delta
+      if (!frame) frame = requestAnimationFrame(() => {
+        frame = 0
+        move(pending)
+        pending = 0
+      })
+    }
+    const resize = () => {
+      if (!view.clientWidth || !view.clientHeight) return
+      stop()
+      cancelAnimationFrame(frame)
+      frame = 0
+      pending = 0
+      const geometry = pathGeometry(view.clientWidth)
+      view.style.setProperty('--path-row-width', `${geometry.rowWidth}px`)
+      view.style.setProperty('--path-row-height', `${geometry.rowHeight}px`)
+      view.style.setProperty('--path-step-y', `${geometry.rowHeight / 2}px`)
+      view.style.setProperty('--path-tile-size', `${geometry.tileSize}px`)
+      view.style.setProperty('--path-pawn-size', `${geometry.pawnSize}px`)
+      view.style.setProperty('--path-number-size', `${geometry.numberSize}px`)
+      const previousMaximum = maximum
+      maximum = PATH_STEPS * geometry.rowHeight / 2
+      // Coach text and responsive layout can resize the viewport while exploring.
+      // Preserve the camera until the current tile changes or the hub reopens.
+      offset = previousMaximum ? offset / previousMaximum * maximum : (PATH_STEPS - tile) * geometry.rowHeight / 2
+      move(0)
+    }
+    const wheel = (event: WheelEvent) => {
+      event.preventDefault()
+      stop()
+      const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? view.clientHeight : 1
+      queue(event.deltaY * unit)
+    }
+    const down = (event: PointerEvent) => {
+      if (!event.isPrimary || event.button !== 0) return
+      stop()
+      pointer = event.pointerId
+      lastY = event.clientY
+      lastTime = performance.now()
+      view.setPointerCapture(pointer)
+      view.classList.add('is-dragging')
+    }
+    const drag = (event: PointerEvent) => {
+      if (pointer !== event.pointerId) return
+      const now = performance.now()
+      const delta = lastY - event.clientY
+      if (now > lastTime) velocity = delta / (now - lastTime) * 16
+      lastY = event.clientY
+      lastTime = now
+      queue(delta)
+    }
+    const up = (event: PointerEvent) => {
+      if (pointer !== event.pointerId) return
+      pointer = null
+      view.classList.remove('is-dragging')
+      if (view.hasPointerCapture(event.pointerId)) view.releasePointerCapture(event.pointerId)
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches || view.closest('.reduce-motion')
+      if (event.type === 'pointercancel' || reduced) { stop(); return }
+      const coast = () => {
+        velocity *= 0.95
+        if (Math.abs(velocity) < 0.5 || !move(velocity)) { stop(); return }
+        momentum = requestAnimationFrame(coast)
+      }
+      momentum = requestAnimationFrame(coast)
+    }
+    const key = (event: KeyboardEvent) => {
+      const delta = { ArrowDown: 32, ArrowUp: -32, PageDown: view.clientHeight * 0.8, PageUp: -view.clientHeight * 0.8, Home: -maximum, End: maximum }[event.key]
+      if (delta === undefined) return
+      event.preventDefault()
+      stop()
+      queue(delta)
+    }
+    resize()
+    const observer = new ResizeObserver(resize)
+    observer.observe(view)
+    view.addEventListener('wheel', wheel, { passive: false })
+    view.addEventListener('pointerdown', down)
+    view.addEventListener('pointermove', drag)
+    view.addEventListener('pointerup', up)
+    view.addEventListener('pointercancel', up)
+    view.addEventListener('lostpointercapture', up)
+    view.addEventListener('keydown', key)
+    return () => {
+      stop()
+      cancelAnimationFrame(frame)
+      observer.disconnect()
+      view.classList.remove('is-dragging')
+      if (pointer !== null && view.hasPointerCapture(pointer)) view.releasePointerCapture(pointer)
+      view.removeEventListener('wheel', wheel)
+      view.removeEventListener('pointerdown', down)
+      view.removeEventListener('pointermove', drag)
+      view.removeEventListener('pointerup', up)
+      view.removeEventListener('pointercancel', up)
+      view.removeEventListener('lostpointercapture', up)
+      view.removeEventListener('keydown', key)
+    }
+  }, [active, tile, level])
 
   useEffect(() => {
     if (!active) return
@@ -86,22 +204,27 @@ export default function PuzzlePathCard({ onSolve, active = true, loading = false
       <div className="cc-path-clouds" aria-hidden="true"><img className="cc-path-cloud cc-path-cloud-left" src={art('path-fog-L0')} alt="" />
       <img className="cc-path-cloud cc-path-cloud-right" src={art('path-fog-R1')} alt="" /></div>
     </div>
-    <div className="cc-path-viewport" role="region" aria-label={`Puzzle path, level ${level}. ${tile} of 20 puzzles completed.`}>
-      <div className="cc-path-scene" style={{ backgroundPosition: `center ${position(0, tile).y}` }}>
-        <div className="cc-path-next-region" style={{ top: `calc(${position(19, tile).y} - 72cqw)` }} />
-        <div className="cc-path-tile cc-path-next-tile" style={{ top: `calc(${position(19, tile).y} - 32cqw)` }} aria-label={`Level ${level + 1}, puzzle 1`}><img src={art('silver-level-light')} alt="" /><span>1</span></div>
-        {props.map((prop) => <img key={prop.art} className="cc-path-prop" src={art(`bronze-art-${prop.art}`)} alt="" style={{ left: prop.left, top: position(prop.index, tile).y }} />)}
+    <div ref={viewport} className="cc-path-viewport" role="region" tabIndex={0} aria-label={`Puzzle path, level ${level}. ${tile} of 20 puzzles completed. Scroll or drag to explore.`}>
+      <div ref={scene} className="cc-path-scene" style={{ height: `calc(100cqh + ${PATH_STEPS} * var(--path-step-y))`, backgroundPosition: `center ${pathPosition(0).y}` }}>
+        <div className="cc-path-next-region" style={{ height: `calc(${pathPosition(19).y} + var(--path-row-height))` }} />
+        <ol className="cc-path-tiles cc-path-next-tiles" aria-label={`Upcoming level ${level + 1}`}>
+          {Array.from({ length: PUZZLES_PER_LEVEL }, (_, index) => {
+            const point = pathPosition(index, true)
+            return <li key={index} className="cc-path-tile" style={{ left: point.x, top: point.y }} aria-label={`Level ${level + 1}, puzzle ${index + 1}`}><img src={art(`silver-level-${index % 2 ? 'dark' : 'light'}`)} alt="" /><span>{index + 1}</span></li>
+          })}
+        </ol>
+        {props.map((prop) => <img key={prop.art} className="cc-path-prop" src={art(`bronze-art-${prop.art}`)} alt="" style={{ left: prop.left, top: pathPosition(prop.index).y }} />)}
         <ol className="cc-path-tiles" aria-label="Puzzles in this level">
           {Array.from({ length: PUZZLES_PER_LEVEL }, (_, index) => {
-            const point = position(index, tile)
+            const point = pathPosition(index)
             const completed = index < tile
-            return <li key={index} className={`cc-path-tile ${completed ? 'completed' : ''}`} aria-current={index === tile ? 'step' : undefined} aria-label={`Puzzle ${index + 1}: ${completed ? 'completed' : index === tile ? 'current' : 'upcoming'}`} style={{ left: `${point.x / 3}%`, top: point.y }}>
-              <img src={art(`bronze-level-${completed ? 'checked' : index % 2 ? 'light' : 'dark'}`)} alt="" />
+            return <li key={index} className={`cc-path-tile ${completed ? 'completed' : ''}`} aria-current={index === tile ? 'step' : undefined} aria-label={`Puzzle ${index + 1}: ${completed ? 'completed' : index === tile ? 'current' : 'upcoming'}`} style={{ left: point.x, top: point.y }}>
+              <img src={art(`bronze-level-${completed ? 'checked' : index % 2 ? 'dark' : 'light'}`)} alt="" />
               {!completed && <span>{index + 1}</span>}
             </li>
           })}
         </ol>
-        <div className="cc-path-pawn" style={{ left: `${pawn.x / 3}%`, top: pawn.y }}>
+        <div className="cc-path-pawn" style={{ left: pawn.x, top: pawn.y }}>
           <div key={display.solved} className="cc-path-pawn-hop"><span className="cc-path-pawn-bubble" aria-hidden="true">♟</span><img src={art('bronze-level-pawn')} alt={`Your pawn, puzzle ${tile + 1}`} /></div>
         </div>
       </div>

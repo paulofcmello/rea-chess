@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "centeringAndRollover": [
+    {
+      "solved": 0,
+      "level": "1",
+      "label": "Puzzle 1: current",
+      "width": 300,
+      "height": 437.5,
+      "anchor": 0.52,
+      "size": 54,
+      "offset": 1312,
+      "max": 1312
+    },
+    {
+      "solved": 16,
+      "level": "1",
+      "label": "Puzzle 17: current",
+      "width": 300,
+      "height": 437.5,
+      "anchor": 0.52,
+      "size": 54,
+      "offset": 800,
+      "max": 1312
+    },
+    {
+      "solved": 19,
+      "level": "1",
+      "label": "Puzzle 20: current",
+      "width": 300,
+      "height": 437.5,
+      "anchor": 0.52,
+      "size": 54,
+      "offset": 704,
+      "max": 1312
+    },
+    {
+      "solved": 20,
+      "level": "2",
+      "label": "Puzzle 1: current",
+      "width": 300,
+      "height": 437.5,
+      "anchor": 0.52,
+      "size": 54,
+      "offset": 1312,
+      "max": 1312
+    }
+  ],
+  "number18Clearance": {
+    "text": {
+      "x": 1043.96875,
+      "y": 386.375,
+      "width": 17.0625,
+      "height": 18.5,
+      "top": 386.375,
+      "right": 1061.03125,
+      "bottom": 404.875,
+      "left": 1043.96875
+    },
+    "pawn": {
+      "x": 1062,
+      "y": 383.0999755859375,
+      "width": 56,
+      "height": 56,
+      "top": 383.0999755859375,
+      "right": 1118,
+      "bottom": 439.0999755859375,
+      "left": 1062
+    },
+    "glyphGap": 0.96875
+  },
+  "mobile": {
+    "level": "1",
+    "label": "Puzzle 17: current",
+    "width": 352,
+    "height": 396.5,
+    "anchor": -0.9932416456494325,
+    "size": 64,
+    "offset": 1537.5,
+    "max": 1537.5
+  },
+  "centeredMobile": {
+    "level": "1",
+    "label": "Puzzle 17: current",
+    "width": 352,
+    "height": 396.5,
+    "anchor": 0.51999921185372,
+    "size": 64,
+    "offset": 937.5,
+    "max": 1537.5
+  },
+  "coachResizePreservesOffset": true,
+  "keyboardBounds": true
+}

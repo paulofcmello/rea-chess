@@ -1,0 +1,57 @@
+{
+  "reference": {
+    "url": "https://www.chess.com/puzzles",
+    "viewport": [
+      1440,
+      813
+    ],
+    "cardWidth": 300,
+    "groundCell": [
+      75,
+      64
+    ],
+    "tileArtwork": 54,
+    "centerStep": [
+      37.5,
+      32
+    ],
+    "centerDistance": 49.29756586282937,
+    "numberFontSize": 15,
+    "normalized": {
+      "cell": [
+        108,
+        92
+      ],
+      "tile": 78,
+      "scale": "cardWidth/432, rounded"
+    },
+    "scroll": {
+      "wheelDelta": 120,
+      "offsetBefore": 3548.296,
+      "offsetAfter": 3668.296,
+      "actualDelta": 120,
+      "frictionPerFrame": 0.95,
+      "velocityStop": 0.5
+    },
+    "source": "Read-only inspection of the live puzzles canvas and its loaded 2026.10.3/puzzles.js bundle. No puzzles started or solved."
+  },
+  "rea": {
+    "tileArtwork": 54,
+    "centerStep": [
+      37.5,
+      32
+    ],
+    "scroll": {
+      "before": 800,
+      "after": 920,
+      "delta": 120,
+      "bottom": 1312,
+      "top": 0,
+      "dragged": 80,
+      "coasted": 213.148,
+      "touchDelta": 59.99999999999994
+    },
+    "referenceRemainsReadOnly": true,
+    "progressTests": "Temporary local progress seeded only in isolated browser contexts; existing REA and chess.com progress unchanged."
+  }
+}
