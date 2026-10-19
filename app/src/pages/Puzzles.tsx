@@ -15,6 +15,7 @@ interface HistoryItem {
   rating: number
   solved: boolean
   delta: number
+  playedAt?: number
 }
 
 export default function Puzzles() {
@@ -54,7 +55,7 @@ export default function Puzzles() {
       const nr = updateRating(rating, pz.rating, solved)
       setDelta(nr - rating)
       setRating(nr)
-      setHistory((h) => [...h.slice(-499), { id: pz.id, rating: pz.rating, solved, delta: nr - rating }])
+      setHistory((h) => [...h.slice(-499), { id: pz.id, rating: pz.rating, solved, delta: nr - rating, playedAt: Date.now() }])
     },
   })
 

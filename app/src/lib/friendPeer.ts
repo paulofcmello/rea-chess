@@ -1,5 +1,6 @@
 import Peer, { type DataConnection } from 'peerjs'
 import { load } from './storage'
+import { localGameId, rememberLocalGame, timeClassFor } from './insightsStore'
 import { applyFriendMove, currentClocks, makeFriendMove, newFriendGame, opposite, position, reconcileGame, validGame, validSettings, type Color, type FriendGame, type FriendSettings, type Msg } from './friendGame'
 
 const KEY = 'rea-chess:friend'
@@ -53,7 +54,21 @@ export class FriendSession {
   getSnapshot = () => this.view
   subscribe = (listener: () => void) => { this.listeners.add(listener); return () => { this.listeners.delete(listener) } }
   private update(patch: Partial<FriendView>, persist = true) {
+    const finished = patch.game?.result && !this.view.game?.result
     this.view = { ...this.view, ...patch }
+    if (finished && this.view.game?.result && this.view.game.result.reason !== 'aborted') {
+      const { game, name, opponentName, settings, peerId } = this.view
+      const color = this.color()
+      const chess = position(game.sans)
+      const playedAt = Date.now()
+      const control = settings.base ? `${settings.base / 1000}+${settings.inc / 1000}` : '-'
+      chess.setHeader('White', color === 'w' ? name : opponentName)
+      chess.setHeader('Black', color === 'b' ? name : opponentName)
+      chess.setHeader('Result', game.result!.winner === 'w' ? '1-0' : game.result!.winner === 'b' ? '0-1' : '1/2-1/2')
+      chess.setHeader('Date', new Date(playedAt).toISOString().slice(0, 10).replaceAll('-', '.'))
+      chess.setHeader('TimeControl', control)
+      rememberLocalGame({ id: localGameId(peerId, game.round), pgn: chess.pgn(), source: 'REA', me: name, color, opponent: opponentName, timeClass: timeClassFor(control), timeControl: control, playedAt, result: game.result!.winner == null ? 'draw' : game.result!.winner === color ? 'win' : 'loss', termination: game.result!.reason })
+    }
     if (persist && this.view.peerId) {
       const { peerId, role, hostId, opponentId, name, opponentName, settings, game } = this.view
       try { sessionStorage.setItem(KEY, JSON.stringify({ peerId, role, hostId, opponentId, name, opponentName, settings, game })) } catch { /* storage unavailable */ }

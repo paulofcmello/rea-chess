@@ -21,7 +21,7 @@ This project recreates chess.com by reverse-engineering it with **REA** (`npx re
 - Testing UI: debug Chrome with `--remote-debugging-port=9222` + a small CDP script (bring tab to front before synthetic input).
 
 ## Features (done)
-Home (chess.com logged-in home), Play Bots, Puzzles/Rush/Daily/Themes, My Games (chess.com public API import), Game Review (`pages/Review.tsx`, `lib/review.ts`: classifications, accuracy calibrated to chess.com, eval graph, coach), Stats, Play a Friend (`pages/Friend.tsx`, PeerJS P2P, `lib/friendGame.ts`), Analysis. Figurine notation via chess.com "Chess V3" font.
+Home (chess.com logged-in home), Play Bots, Puzzles/Rush/Daily/Themes, My Games (chess.com public API import), Game Review (`pages/Review.tsx`, `lib/review.ts`: classifications, accuracy calibrated to chess.com, eval graph, coach), Stats, Play a Friend (`pages/Friend.tsx`, PeerJS P2P, `lib/friendGame.ts`), Analysis, Settings (`#/settings`, chess.com layout), Puzzle Path hub (`components/PuzzlePathCard.tsx`), Train Endgames (`#/endgames`, `public/data/endgames.json`), Move Explanations (`lib/explain.ts`), Insights/Advanced Stats (`pages/Stats.tsx`, `lib/insights.ts`). Figurine notation via chess.com "Chess V3" font.
 
 ## Codex workflow (DEFAULT: saves Claude tokens)
 Use Codex for every task, small fixes included: implementation, evidence digging in `.rea/`, and headless/CDP testing. Claude is the architect: it scopes the task, writes the plan or prompt, reviews the diff, builds, then commits and pushes. Work inline only when that's quicker than writing the prompt. Write `docs/plan-<x>.md` (exact files, values from `.rea/` evidence, acceptance steps), then run
@@ -29,7 +29,8 @@ Use Codex for every task, small fixes included: implementation, evidence digging
 
 ## Roadmap / gaps
 - Puzzle punish-move arrow, time-bonus rating, Puzzle Path (need logged-in chess.com captures; don't solve puzzles on the user's real account without asking).
-- Game Review: Brilliant detection untested; coach "Explain" deeper comments.
+- Game Review: Brilliant detection untested.
+- Diamond gaps left: Lessons, Play Coach.
 - Play a Friend: cross-network (NAT) connectivity untested; may need a TURN server.
 - ~~3D piece sets~~ (user doesn't care).
 

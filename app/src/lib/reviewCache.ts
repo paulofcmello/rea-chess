@@ -1,4 +1,5 @@
 import { load, save } from './storage'
+import { rememberInsightReview } from './insightsStore'
 import type { Review } from './review'
 
 export function reviewKey(pgn: string, url?: string) {
@@ -13,6 +14,7 @@ export function loadReview(key: string) {
   return review?.moves.every(move => Array.isArray(move.bestLine) && Array.isArray(move.refutation)) ? review : null
 }
 export function saveReview(key: string, review: Review) {
+  rememberInsightReview(key, review)
   const keys = [key, ...load<string[]>('review:index', []).filter((k) => k !== key)]
   save(key, review)
   save('review:index', keys.slice(0, 30))

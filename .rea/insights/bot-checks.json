@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Completed bot game persists final SAN and result",
+    "passed": true,
+    "saved": {
+      "id": "rea:bot:4308a359-7165-4908-b0df-c8c204733e7d",
+      "pgn": "[Event \"?\"]\n[Site \"?\"]\n[Date \"2026.10.18\"]\n[Round \"?\"]\n[White \"You\"]\n[Black \"Martinfoot\"]\n[Result \"0-1\"]\n\n1. e4 e6 0-1",
+      "source": "REA",
+      "me": "You",
+      "color": "w",
+      "opponent": "Martinfoot",
+      "opponentRating": 250,
+      "timeClass": "untimed",
+      "timeControl": "-",
+      "playedAt": 1792353800574,
+      "result": "loss",
+      "termination": "resignation"
+    }
+  },
+  {
+    "name": "Bot review shares persistent game ID",
+    "passed": true,
+    "id": "rea:bot:4308a359-7165-4908-b0df-c8c204733e7d"
+  }
+]

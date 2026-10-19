@@ -13,6 +13,7 @@ import { play, playMove } from '../lib/sound'
 import { useSettings, useStored } from '../lib/storage'
 import { pieceUrl } from '../lib/theme'
 import { openReview } from './Review'
+import { localGameId } from '../lib/insightsStore'
 
 const START = new Chess().fen()
 const TIMES = [
@@ -108,7 +109,7 @@ function FriendGameView({ session, view }: { session: FriendSession; view: Frien
     chess.setHeader('Result', result?.winner === 'w' ? '1-0' : result?.winner === 'b' ? '0-1' : result?.reason === 'aborted' ? '*' : '1/2-1/2')
     chess.setHeader('Date', new Date().toISOString().slice(0, 10).replaceAll('-', '.'))
     chess.setHeader('TimeControl', view.settings.base ? `${view.settings.base / 1000}+${view.settings.inc / 1000}` : '-')
-    openReview({ pgn: chess.pgn(), white: { username: name('w') }, black: { username: name('b') }, me: view.name })
+    openReview({ pgn: chess.pgn(), url: localGameId(view.peerId, game.round), white: { username: name('w') }, black: { username: name('b') }, me: view.name })
   }
   const rematch = () => session.action(view.rematch === 'incoming' ? 'rematch-accept' : 'rematch-offer')
   const rematchButton = <button className="cc-button" disabled={!view.connected || view.rematch === 'outgoing'} onClick={rematch}>{view.rematch === 'incoming' ? 'Accept Rematch' : view.rematch === 'outgoing' ? 'Rematch offered…' : 'Rematch'}</button>

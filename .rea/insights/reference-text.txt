@@ -1,0 +1,476 @@
+Skip to content
+Play
+Puzzles
+Learn
+Train
+Watch
+Community
+Other
+Free Trial
+Search
+PauloM18
+Insights
+Demo Profile:
+Hikaru
+(3200)
+Upgrade to View Your Insights
+GM
+Hikaru
+Hikaru Nakamura
+
+Advanced Stats is replacing Insights at the end of the year!
+Take our survey and help shape what comes next.
+
+TYPE
+All
+TIME CLASS
+Blitz
+DATE RANGE
+All Time
+Games
+How accurately are you playing in your games?
+Overview
+Games played
+47,292
+78.9%
+37,317 Won
+9.3%
+4,385 Drawn
+11.8%
+5,590 Lost
+Average accuracy
+87.83
+When you win
+88.5
+When you draw
+89.4
+When you lose
+81.9
+Accuracy by move number
+Display:
+Overall
+By Piece Color
+Similar Players
+Past Performance
+Results by opponent rating
+Game Results
+Display:
+Overall
+Similar Players
+Games you won by...
+Checkmate 7.6%
+Abandonment 0.2%
+Timeout 12.9%
+Resignation 79.4%
+Games you drew by...
+50 Move Rule 1.5%
+Insufficient Material 17.8%
+Timeout vs Insufficient Material 5.6%
+Repetition 41.1%
+Agreement 30.5%
+Stalemate 3.4%
+Games you lost by...
+Checkmate 9.7%
+Abandonment 2.2%
+Timeout 8.9%
+Resignation 79.2%
+Game Shapes
+Games per game shape
+Results by game shape
+Accuracy by game shape
+Game Phases
+Display:
+Overall
+By Piece Color
+Similar Players
+Games that ended in the...
+Opening
+304
+Middlegame
+19,910
+Endgame
+27,078
+Accuracy by game phase
+Results for games that ended in the...
+Openings
+How well do you play your openings?
+Performance
+When Playing:
+White
+Black
+How well you perform in your 10 most played openings
+Opening Name
+Moves
+Total Games
+Nimzowitsch-Larsen Attack
+1. b3
+2786
+84.3%
+6.4%
+9.3%
+Réti Opening
+1. Nf3
+2698
+82.4%
+8.1%
+9.5%
+Sicilian Defense
+1. e4 c5
+1950
+79.5%
+9.3%
+11.2%
+Queen's Pawn Opening
+1. d4
+1850
+82%
+8.2%
+9.8%
+Caro-Kann Defense
+1. e4 c6
+1244
+81.2%
+8.8%
+10%
+English Opening
+1. c4
+1218
+79.8%
+8.5%
+11.7%
+Bishop's Opening
+1. e4 e5 2. Bc4
+1112
+80.6%
+9.6%
+9.8%
+Closed Sicilian Defense
+1. e4 c5 2. Nc3
+1076
+86%
+5.7%
+8.3%
+French Defense
+1. e4 e6
+946
+84.9%
+6.4%
+8.7%
+Queen's Gambit
+1. d4 d5 2. c4
+791
+79.1%
+10.4%
+10.5%
+Mastery
+When Playing:
+White
+Black
+The average number of book moves you make in a game when you are the one to leave book first
+5
+Based on 47,292 of your games
+Opening Name
+Total Games
+Percent of games when you leave book first
+Average move number when you leave book first
+Nimzowitsch-Larsen Attack
+2786
+51%
+2.72
+Réti Opening
+2698
+50.3%
+3.92
+Sicilian Defense
+1950
+47.1%
+6.29
+Queen's Pawn Opening
+1850
+48.7%
+4.82
+Caro-Kann Defense
+1244
+34.4%
+5.24
+English Opening
+1218
+53%
+5.67
+Bishop's Opening
+1112
+54.6%
+4.71
+Closed Sicilian Defense
+1076
+47%
+4.96
+French Defense
+946
+46.9%
+6.1
+Queen's Gambit
+791
+61.1%
+6.53
+1
+2
+3
+4
+...
+Tactics
+How often are you finding the winning moves?
+Forks
+Show Comparison:
+None
+Similar Players
+Past Performance
+Found vs missed forks
+Found
+Missed
+Pawn
+714
+91.9%
+8.1%
+656
+58
+Knight
+4,706
+90.5%
+9.5%
+4260
+446
+Bishop
+616
+90.3%
+9.7%
+556
+60
+Rook
+1,015
+89.3%
+10.7%
+906
+109
+Queen
+2,930
+89.8%
+10.2%
+2630
+300
+King
+75
+92%
+8.0%
+69
+6
+Pins
+Show Comparison:
+None
+Similar Players
+Past Performance
+Found vs missed pins
+Found
+Missed
+Bishop
+2,375
+87.8%
+12.2%
+2086
+289
+Rook
+2,983
+88%
+12.0%
+2624
+359
+Queen
+1,832
+85%
+15.0%
+1557
+275
+Mates
+Show Comparison:
+None
+Similar Players
+Past Performance
+Found vs missed mates
+Found
+Missed
+Mate in 1
+2,303
+67.7%
+32.3%
+1559
+744
+Mate in 2
+751
+89.2%
+10.8%
+670
+81
+Mate in 3
+425
+81.2%
+18.8%
+345
+80
+Mate in 4
+261
+53.3%
+46.7%
+139
+122
+Mate in 5+
+266
+43.6%
+56.4%
+116
+150
+Hanging Pieces
+Pieces you left hanging
+Pawn
+7,347
+82.1%
+7347
+Knight
+478
+5.3%
+478
+Bishop
+396
+4.4%
+396
+Rook
+558
+6.2%
+558
+Queen
+170
+1.9%
+170
+Free Pieces
+Show Comparison:
+None
+Similar Players
+Past Performance
+Pieces your opponent left hanging
+Found
+Missed
+Pawn
+73,104
+87.7%
+12.3%
+64117
+8987
+Knight
+6,290
+92.2%
+7.8%
+5798
+492
+Bishop
+5,858
+91.6%
+8.4%
+5364
+494
+Rook
+6,601
+93.2%
+6.8%
+6155
+446
+Queen
+2,013
+93.3%
+6.7%
+1878
+135
+Moves
+What are your strengths and areas to improve?
+Move Quality
+Display:
+Overall
+By Piece Color
+Similar Players
+Percentage
+Total
+Brilliant
+0.3%
+6,943
+Best
+41.3%
+843,589
+Excellent
+16.2%
+331,455
+Good
+13.8%
+281,310
+Book
+9.5%
+194,570
+Inaccuracy
+9.9%
+201,360
+Mistake
+5.1%
+104,536
+Blunder
+1.8%
+36,870
+Missed Win
+0.3%
+5,296
+Move quality over time
+Pieces
+Display:
+Overall
+By Phase
+Similar Players
+Moves per piece
+Average accuracy per piece
+Castling
+Display:
+By Phase
+Short vs Long
+Games where you castled in the...
+Results when you castled in the...
+Calendar
+When do you play your best?
+Time of Day
+Accuracy by time of day
+Results by time of day
+Day of Week
+Games by day of week
+Accuracy by day of week
+Results by day of week
+Geography
+How do you perform in the global chess community?
+Geography
+Display:
+World Map
+List View
+Chess Insights
+Get analytics based on your game history
+See personal strengths/weaknesses
+View your performance trends
+Remove Ads
+DATE RANGE
+GAMES
+All Time
+47,292 
+ 
+Games
+Overview
+Game Results
+Game Shapes
+Game Phases
+Openings
+Tactics
+Moves
+Calendar
+Geography
+Support Language About Jobs Developers User Agreement Privacy Policy Privacy Settings Cheating & Fair Play Partners Compliance Chess.com, LLC © 2026

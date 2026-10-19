@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Combined UI filters show correct real count",
+    "passed": true,
+    "expected": 101,
+    "text": "101 games · 0 reviewed · hikaru\nImport latest month\nImport other months ↗"
+  },
+  {
+    "name": "Chart tooltips work on focus",
+    "passed": true,
+    "tip": "White: 78.2% · 101 games · 79 W / 5 D / 17 L"
+  },
+  {
+    "name": "Tab keyboard navigation",
+    "passed": true,
+    "active": "Accuracy"
+  },
+  {
+    "name": "Empty filters offer import CTA",
+    "passed": true,
+    "empty": "♟\nNo games match these filters\n\nTry a wider date range, another colour, or a different source.\n\nImport your games"
+  }
+]

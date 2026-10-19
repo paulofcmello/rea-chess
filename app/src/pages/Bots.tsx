@@ -13,6 +13,7 @@ import { play, playMove } from '../lib/sound'
 import { useSettings, useStored } from '../lib/storage'
 import { pieceUrl } from '../lib/theme'
 import { openReview } from './Review'
+import { rememberLocalGame } from '../lib/insightsStore'
 import { BoardControls } from './puzzleUi'
 
 const START = new Chess().fen()
@@ -92,6 +93,7 @@ export default function Bots() {
   const botEngine = useRef<Engine | null>(null)
   const helperEngine = useRef<Engine | null>(null)
   const gameId = useRef(0)
+  const historyId = useRef('')
 
   useEffect(() => {
     loadBots().then(setGroups)
@@ -117,7 +119,7 @@ export default function Bots() {
   const turn = new Chess(liveFen).turn()
   const botColor = userColor === 'w' ? 'b' : 'w'
 
-  const finish = (r: GameResult) => {
+  const finish = (r: GameResult, finalSans = sans) => {
     if (!bot) return
     setPremoves([])
     setResult(r)
@@ -128,6 +130,14 @@ export default function Bots() {
       const cur = rec[bot.id] ?? { w: 0, l: 0, d: 0 }
       return { ...rec, [bot.id]: { ...cur, [outcome]: cur[outcome] + 1 } }
     })
+    const chess = new Chess()
+    for (const san of finalSans) chess.move(san)
+    const playedAt = Date.now()
+    chess.setHeader('White', userColor === 'w' ? 'You' : bot.name)
+    chess.setHeader('Black', userColor === 'b' ? 'You' : bot.name)
+    chess.setHeader('Result', r.winner == null ? '1/2-1/2' : r.winner === 'w' ? '1-0' : '0-1')
+    chess.setHeader('Date', new Date(playedAt).toISOString().slice(0, 10).replaceAll('-', '.'))
+    rememberLocalGame({ id: historyId.current, pgn: chess.pgn(), source: 'REA', me: 'You', color: userColor, opponent: bot.name, opponentRating: bot.rating, timeClass: 'untimed', timeControl: '-', playedAt, result: outcome === 'w' ? 'win' : outcome === 'l' ? 'loss' : 'draw', termination: r.reason.replace(/^by /, '') })
     setSpeech(r.winner == null ? lines.draw() : r.winner === botColor ? lines.botWon() : lines.botLost())
   }
 
@@ -137,7 +147,7 @@ export default function Bots() {
     setPly(next.length)
     setHintArrow([])
     const r = gameOver(next)
-    if (r) finish(r)
+    if (r) finish(r, next)
     return next
   }
 
@@ -208,6 +218,7 @@ export default function Bots() {
 
   const start = () => {
     if (!bot) return
+    historyId.current = `rea:bot:${crypto.randomUUID()}`
     gameId.current++
     botEngine.current?.stop()
     botEngine.current?.newGame()
@@ -289,7 +300,7 @@ export default function Bots() {
     c.setHeader('Date', new Date().toISOString().slice(0, 10).replaceAll('-', '.'))
     const user = { username: 'You' }
     const opponent = { username: bot.name, rating: bot.rating, avatar: bot.image }
-    openReview({ pgn: c.pgn(), white: userColor === 'w' ? user : opponent, black: userColor === 'b' ? user : opponent, me: 'You' })
+    openReview({ pgn: c.pgn(), url: historyId.current || undefined, white: userColor === 'w' ? user : opponent, black: userColor === 'b' ? user : opponent, me: 'You' })
   }
 
   if (!bot) return <div className="page muted">Loading bots…</div>

@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Friend completion persists PGN/result/source/colour/time class",
+    "passed": true,
+    "detail": {
+      "id": "rea:friend:rea-chess-insight1:7",
+      "pgn": "[Event \"?\"]\n[Site \"?\"]\n[Date \"2026.10.18\"]\n[Round \"?\"]\n[White \"Local Test\"]\n[Black \"Friend Test\"]\n[Result \"0-1\"]\n[TimeControl \"180+2\"]\n\n1. f3 e5 2. g4 Qh4# 0-1",
+      "source": "REA",
+      "me": "Local Test",
+      "color": "w",
+      "opponent": "Friend Test",
+      "timeClass": "blitz",
+      "timeControl": "180+2",
+      "playedAt": 1792353588162,
+      "result": "loss",
+      "termination": "checkmate"
+    }
+  },
+  {
+    "name": "Friend result persisted once per round",
+    "passed": true
+  },
+  {
+    "name": "Aborted friend games excluded",
+    "passed": true
+  },
+  {
+    "name": "Real reviews exist",
+    "passed": true,
+    "detail": {
+      "moves": 107,
+      "accuracy": {
+        "w": 76.6,
+        "b": 78.3
+      }
+    }
+  },
+  {
+    "name": "Insight summaries survive full-review eviction",
+    "passed": true
+  },
+  {
+    "name": "Batch reviews persist and join by game ID",
+    "passed": true,
+    "detail": {
+      "reviewed": 5,
+      "averageAccuracy": 77.66,
+      "classifiedMoves": 230
+    }
+  },
+  {
+    "name": "Only user moves enter breakdowns",
+    "passed": true
+  },
+  {
+    "name": "All reviewed phases have real evaluations",
+    "passed": true
+  }
+]

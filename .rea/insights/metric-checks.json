@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Parses real PGN clock annotations",
+    "passed": true,
+    "detail": [
+      {
+        "piece": "p",
+        "color": "w",
+        "phase": "Opening",
+        "clock": 180,
+        "seconds": 2
+      },
+      {
+        "piece": "p",
+        "color": "b",
+        "phase": "Opening",
+        "clock": 179,
+        "seconds": 3
+      },
+      {
+        "piece": "n",
+        "color": "w",
+        "phase": "Opening",
+        "clock": 177,
+        "seconds": 5
+      },
+      {
+        "piece": "n",
+        "color": "b",
+        "phase": "Opening",
+        "clock": 178,
+        "seconds": 3
+      },
+      {
+        "piece": "b",
+        "color": "w",
+        "phase": "Opening",
+        "clock": 175,
+        "seconds": 4
+      },
+      {
+        "piece": "p",
+        "color": "b",
+        "phase": "Opening"
+      }
+    ]
+  },
+  {
+    "name": "Opening detection from moves",
+    "passed": true,
+    "detail": "Ruy Lopez"
+  },
+  {
+    "name": "Phase: first 10 moves are opening",
+    "passed": true
+  },
+  {
+    "name": "Missing clocks stay absent",
+    "passed": true
+  },
+  {
+    "name": "Clock gaps do not invent duration",
+    "passed": true
+  },
+  {
+    "name": "Untimed games skip clock metrics",
+    "passed": true
+  },
+  {
+    "name": "Material heuristic detects endgame in FEN",
+    "passed": true,
+    "detail": {
+      "piece": "k",
+      "color": "w",
+      "phase": "Endgame"
+    }
+  },
+  {
+    "name": "Invalid PGN skipped safely",
+    "passed": true
+  },
+  {
+    "name": "Date filter excludes older games",
+    "passed": true
+  },
+  {
+    "name": "Colour filter",
+    "passed": true
+  },
+  {
+    "name": "Source and time filters",
+    "passed": true
+  },
+  {
+    "name": "Win draw loss totals",
+    "passed": true
+  },
+  {
+    "name": "No accuracy without review",
+    "passed": true
+  },
+  {
+    "name": "Termination labels preserve draw types",
+    "passed": true
+  },
+  {
+    "name": "Time class follows base plus 40 increments",
+    "passed": true
+  },
+  {
+    "name": "Imported month all parses",
+    "passed": true,
+    "detail": {
+      "imported": 313,
+      "parsed": 313,
+      "timedMoves": 13494
+    }
+  },
+  {
+    "name": "Imported player colour both sides",
+    "passed": true
+  },
+  {
+    "name": "Imported results conserved",
+    "passed": true
+  },
+  {
+    "name": "Imported clocks nonnegative finite",
+    "passed": true
+  }
+]

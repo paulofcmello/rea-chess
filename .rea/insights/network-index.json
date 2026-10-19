@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.chess.com/service/insights/6f4deb88-7718-11e3-8016-000000000000/blitz/all-time?uuid=6f4deb88-7718-11e3-8016-000000000000",
+    "status": 200
+  },
+  {
+    "url": "https://www.chess.com/service/insights/6f4deb88-7718-11e3-8016-000000000000/game-counts",
+    "status": 200
+  },
+  {
+    "url": "https://www.chess.com/service/insights/6f4deb88-7718-11e3-8016-000000000000/blitz/split-by/color/all-time?uuid=6f4deb88-7718-11e3-8016-000000000000&insights=movesByClassification%2CaccuracyByGamePly%2CgamePhase%2CmovesBeforeLeavingBook%2CecoFamilies",
+    "status": 200
+  },
+  {
+    "url": "https://www.chess.com/service/insights/6f4deb88-7718-11e3-8016-000000000000/blitz/all-time?uuid=6f4deb88-7718-11e3-8016-000000000000",
+    "status": 200
+  },
+  {
+    "url": "https://www.chess.com/service/insights/6f4deb88-7718-11e3-8016-000000000000/game-counts",
+    "status": 200
+  },
+  {
+    "url": "https://www.chess.com/service/insights/6f4deb88-7718-11e3-8016-000000000000/blitz/split-by/color/all-time?uuid=6f4deb88-7718-11e3-8016-000000000000&insights=movesByClassification%2CaccuracyByGamePly%2CgamePhase%2CmovesBeforeLeavingBook%2CecoFamilies",
+    "status": 200
+  }
+]

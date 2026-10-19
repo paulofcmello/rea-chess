@@ -1,5 +1,6 @@
 import { Chess } from 'chess.js'
 import { load, save } from './storage'
+import { rememberImportedGames } from './insightsStore'
 
 export const TIME_CLASSES = ['bullet', 'blitz', 'rapid', 'daily'] as const
 
@@ -76,12 +77,16 @@ export function fetchArchives(username: string): Promise<string[]> {
   })
 }
 
-export function fetchMonth(url: string): Promise<CcGame[]> {
+export function fetchMonth(url: string, refresh = false): Promise<CcGame[]> {
+  if (refresh) monthCache.delete(url)
   return cached(monthCache, url, async () => {
     const response = await fetch(url)
     if (!response.ok) throw new Error('Could not load games')
     const data = (await response.json()) as { games?: CcGame[] }
-    return (data.games ?? []).filter((game) => game.rules === 'chess').reverse()
+    const games = (data.games ?? []).filter((game) => game.rules === 'chess').reverse()
+    const username = url.match(/\/player\/([^/]+)\/games\//)?.[1]
+    if (username) rememberImportedGames(decodeURIComponent(username), games)
+    return games
   })
 }
 
