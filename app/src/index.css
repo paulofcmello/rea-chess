@@ -1581,8 +1581,9 @@ h2 {
 
 /* ---------- chess.com board layout + puzzle sidebar (values from the live DOM, via REA) ---------- */
 
+/* Puzzle boards fill the viewport height minus chess.com's 16px top/bottom gutter. */
 .cc-layout {
-  --board-size: min(calc(100vh - 172px), calc(100vw - 170px - 32px - 300px - 32px - 22px));
+  --board-size: min(calc(100vh - 32px), calc(100vw - 170px - 32px - 300px - 32px - 22px));
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -3521,6 +3522,10 @@ h2 {
 /* Endgame catalogue and training, measured from chess.com's /endgames sidebar. */
 .cc-endgames-layout { max-width: 1400px; }
 .cc-endgames-board { display: flex; flex-direction: column; gap: 10px; }
+@media (min-width: 1001px) {
+  /* Endgames has player bars above and below the board. */
+  .cc-endgames-board { --board-size: min(calc(100vh - 172px), calc(100vw - 170px - 32px - 300px - 32px - 22px)); }
+}
 .cc-endgames-player { display: flex; align-items: center; gap: 10px; min-height: 40px; }
 .cc-endgames-player img { width: 40px; height: 40px; padding: 3px; background: var(--panel-2); border-radius: 4px; }
 .cc-endgames-player strong { font-size: 16px; }
