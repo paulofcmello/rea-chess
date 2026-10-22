@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { BarChart, LineChart, ResultBar, ResultDonut, type ChartPoint } from '../components/InsightCharts'
+import ProfileStats from '../components/ProfileStats'
 import { TIME_CLASSES, fetchArchives, fetchMonth, type CcGame } from '../lib/ccGames'
 import { Engine } from '../lib/engine'
 import { PHASES, PIECES, analyzedMoves, average, dateKey, filterGames, gameAccuracy, groups, importedGame, moveAccuracy, prepareGames, record, terminationLabel, withReviews, type AnalyzedMove, type ReviewedGame } from '../lib/insights'
@@ -52,6 +53,7 @@ export default function Stats() {
   const [batchSize, setBatchSize] = useState('5')
   const [progress, setProgress] = useState<{ done: number; total: number; fraction: number; message: string; running: boolean } | null>(null)
   const jobRef = useRef<{ cancelled: boolean; engine: Engine } | null>(null)
+  const insightsHeader = useRef<HTMLElement>(null)
   const mounted = useRef(true)
   useEffect(() => {
     mounted.current = true
@@ -142,7 +144,8 @@ export default function Stats() {
   }
 
   return <div className="page insights-page">
-    <header className="insights-header"><div><span className="insights-eyebrow">YOUR CHESS, IN FOCUS</span><h1><span aria-hidden="true">💡</span> Insights</h1><p>Discover the patterns behind your play.</p></div><a className="cc-button cc-secondary" href="#/games">My Games ↗</a></header>
+    <ProfileStats username={username} onTimeClassChange={(timeClass, scroll) => { setFilters(f => ({ ...f, timeClass })); if (scroll) insightsHeader.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }} />
+    <header className="insights-header" ref={insightsHeader}><div><span className="insights-eyebrow">YOUR CHESS, IN FOCUS</span><h1><span aria-hidden="true">💡</span> Insights</h1><p>Discover the patterns behind your play.</p></div><a className="cc-button cc-secondary" href="#/games">My Games ↗</a></header>
     <div className="insights-filters" aria-label="Game filters">
       <label>Time class<select value={filters.timeClass} onChange={e => setFilters(f => ({ ...f, timeClass: e.target.value as InsightFilters['timeClass'] }))}><option value="all">All time classes</option>{[...TIME_CLASSES, 'untimed'].map(t => <option key={t} value={t}>{t[0].toUpperCase() + t.slice(1)}</option>)}</select></label>
       <label>Colour<select value={filters.color} onChange={e => setFilters(f => ({ ...f, color: e.target.value as InsightFilters['color'] }))}><option value="all">Both colours</option><option value="w">White</option><option value="b">Black</option></select></label>

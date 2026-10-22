@@ -1,0 +1,99 @@
+{
+ "rows": [
+  {
+   "cls": "",
+   "html": "<tr><th class=\"cc-paragraph-medium-bold all-stats-header all-stats-type\">Type</th> <th class=\"cc-paragraph-medium-bold all-stats-header\">Rating</th> <th class=\"cc-paragraph-medium-bold all-stats-header all-stats-delta\">Change</th> <th class=\"cc-paragraph-medium-bold all-stats-header\">Games</th> <th class=\"cc-paragraph-medium-bold all-stats-header\"><div class=\"all-stats-percentile\">Percentile</div></th> <th class=\"all-stats-header all-stats-chevron\"></th></tr>"
+  },
+  {
+   "cls": "all-stats-item-row",
+   "html": "<tr class=\"all-stats-item-row\"><td class=\"all-stats-item-cell all-stats-item-label\"><div><img data-cy=\"cc-icon\" alt=\"time-rapid\" aria-hidden=\"true\" class=\"cc-icon-img_7b0aa4a cc-icon-size-32_7b0aa4a all-stats-item-icon\" height=\"32\" src=\"https://assets-ds.chess.com/color-icons/time-rapid.svg\" width=\"32\"> <span class=\"cc-heading-xx-small-bold all-stats-item-name\">Rapid</span></div></td> <td class=\"cc-heading-xx-small-bold all-stats-item-cell all-stats-item-rating\">847</td> <td class=\"all-stats-item-cell\"><div class=\"all-stats-item-delta\"><div class=\"delta-component delta-positive\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_7b0aa4a cc-icon-size-12_7b0aa4a delta-icon\"><svg data-glyph=\"arrow-line-top\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m14 20.07c0 1.6-.33 1.93-1.93 1.93h-.13c-1.6 0-1.93-.33-1.93-1.93v-15.57h4zm-11.13-8.14-.07-.07c-1.13-1.13-1"
+  },
+  {
+   "cls": "all-stats-item-row",
+   "html": "<tr class=\"all-stats-item-row\"><td class=\"all-stats-item-cell all-stats-item-label\"><div><img data-cy=\"cc-icon\" alt=\"time-blitz\" aria-hidden=\"true\" class=\"cc-icon-img_7b0aa4a cc-icon-size-32_7b0aa4a all-stats-item-icon\" height=\"32\" src=\"https://assets-ds.chess.com/color-icons/time-blitz.svg\" width=\"32\"> <span class=\"cc-heading-xx-small-bold all-stats-item-name\">Blitz</span></div></td> <td class=\"cc-heading-xx-small-bold all-stats-item-cell all-stats-item-rating\">719</td> <td class=\"all-stats-item-cell\"><div class=\"all-stats-item-delta\"><div class=\"delta-component delta-positive\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_7b0aa4a cc-icon-size-12_7b0aa4a delta-icon\"><svg data-glyph=\"arrow-line-top\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m14 20.07c0 1.6-.33 1.93-1.93 1.93h-.13c-1.6 0-1.93-.33-1.93-1.93v-15.57h4zm-11.13-8.14-.07-.07c-1.13-1.13-1"
+  },
+  {
+   "cls": "all-stats-item-row",
+   "html": "<tr class=\"all-stats-item-row\"><td class=\"all-stats-item-cell all-stats-item-label\"><div><img data-cy=\"cc-icon\" alt=\"time-daily\" aria-hidden=\"true\" class=\"cc-icon-img_7b0aa4a cc-icon-size-32_7b0aa4a all-stats-item-icon\" height=\"32\" src=\"https://assets-ds.chess.com/color-icons/time-daily.svg\" width=\"32\"> <span class=\"cc-heading-xx-small-bold all-stats-item-name\">Daily</span></div></td> <td class=\"cc-heading-xx-small-bold all-stats-item-cell all-stats-item-rating\">?</td> <td class=\"all-stats-item-cell\"><div class=\"all-stats-item-delta\"><span> - </span></div></td> <td class=\"cc-paragraph-medium-bold all-stats-item-cell\">-</td> <td class=\"cc-paragraph-medium all-stats-item-cell\">-</td> <td class=\"all-stats-item-cell all-stats-item-chevron\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_7b0aa4a cc-icon-size-16_7b0aa4a\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24"
+  },
+  {
+   "cls": "all-stats-item-row",
+   "html": "<tr class=\"all-stats-item-row\"><td class=\"all-stats-item-cell all-stats-item-label\"><div><img data-cy=\"cc-icon\" alt=\"time-bullet\" aria-hidden=\"true\" class=\"cc-icon-img_7b0aa4a cc-icon-size-32_7b0aa4a all-stats-item-icon\" height=\"32\" src=\"https://assets-ds.chess.com/color-icons/time-bullet.svg\" width=\"32\"> <span class=\"cc-heading-xx-small-bold all-stats-item-name\">Bullet</span></div></td> <td class=\"cc-heading-xx-small-bold all-stats-item-cell all-stats-item-rating\">387</td> <td class=\"all-stats-item-cell\"><div class=\"all-stats-item-delta\"><div class=\"delta-component delta-positive\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_7b0aa4a cc-icon-size-12_7b0aa4a delta-icon\"><svg data-glyph=\"arrow-line-top\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m14 20.07c0 1.6-.33 1.93-1.93 1.93h-.13c-1.6 0-1.93-.33-1.93-1.93v-15.57h4zm-11.13-8.14-.07-.07c-1.13-1.1"
+  },
+  {
+   "cls": "all-stats-item-row",
+   "html": "<tr class=\"all-stats-item-row\"><td class=\"all-stats-item-cell all-stats-item-label\"><div><img data-cy=\"cc-icon\" alt=\"puzzle-piece\" aria-hidden=\"true\" class=\"cc-icon-img_7b0aa4a cc-icon-size-32_7b0aa4a all-stats-item-icon\" height=\"32\" src=\"https://assets-ds.chess.com/color-icons/puzzle-piece.svg\" width=\"32\"> <span class=\"cc-heading-xx-small-bold all-stats-item-name\">Puzzles</span></div></td> <td class=\"cc-heading-xx-small-bold all-stats-item-cell all-stats-item-rating\">1561</td> <td class=\"all-stats-item-cell\"><div class=\"all-stats-item-delta\"><div class=\"delta-component delta-negative\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_7b0aa4a cc-icon-size-12_7b0aa4a delta-icon\"><svg data-glyph=\"arrow-line-bottom\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m10 3.93c0-1.6.33-1.93 1.93-1.93h.13c1.6 0 1.93.33 1.93 1.93v15.57h-4zm11.13 8.14.07.07c1.13 1.13 "
+  },
+  {
+   "cls": "all-stats-item-row",
+   "html": "<tr class=\"all-stats-item-row\"><td class=\"all-stats-item-cell all-stats-item-label\"><div><img data-cy=\"cc-icon\" alt=\"tournament-gold\" aria-hidden=\"true\" class=\"cc-icon-img_7b0aa4a cc-icon-size-32_7b0aa4a all-stats-item-icon\" height=\"32\" src=\"https://assets-ds.chess.com/color-icons/tournament-gold.svg\" width=\"32\"> <span class=\"cc-heading-xx-small-bold all-stats-item-name\">Tournaments (Daily)</span></div></td> <td class=\"cc-heading-xx-small-bold all-stats-item-cell all-stats-item-rating\"></td> <td class=\"all-stats-item-cell\"><!----></td> <td class=\"cc-paragraph-medium-bold all-stats-item-cell\"></td> <td class=\"cc-paragraph-medium all-stats-item-cell\"></td> <td class=\"all-stats-item-cell all-stats-item-chevron\"><span aria-hidden=\"true\" class=\"cc-icon-glyph_7b0aa4a cc-icon-size-16_7b0aa4a\"><svg data-glyph=\"arrow-chevron-right\" aria-hidden=\"true\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2"
+  }
+ ],
+ "styles": [
+  {
+   "sel": ".stats-dropdown-button",
+   "font": "13.3333px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px 12px 0px 16px",
+   "h": 64
+  },
+  {
+   "sel": "table",
+   "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+   "color": "rgba(255, 255, 255, 0.85)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px",
+   "h": 496
+  },
+  {
+   "sel": "thead th",
+   "font": "600 14px / 20px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+   "color": "rgba(255, 255, 255, 0.72)",
+   "bg": "rgba(0, 0, 0, 0.14)",
+   "pad": "16px 32px 16px 24px",
+   "h": 52
+  },
+  {
+   "sel": "tbody tr",
+   "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+   "color": "rgba(255, 255, 255, 0.85)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px",
+   "h": 74
+  },
+  {
+   "sel": "tbody td",
+   "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "16px 32px 16px 24px",
+   "h": 74
+  },
+  {
+   "sel": "tbody td:nth-child(2)",
+   "font": "",
+   "color": "rgb(255, 255, 255)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "16px 32px",
+   "h": 74
+  },
+  {
+   "sel": "tbody td:nth-child(3)",
+   "font": "14px / 20.02px -apple-system, \"system-ui\", \"Segoe UI\", system-ui, Helvetica, Arial, sans-serif",
+   "color": "rgba(255, 255, 255, 0.72)",
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "16px 32px",
+   "h": 74
+  }
+ ],
+ "entries": [
+  "https://www.chess.com/service/presence/users?ids=30308662-862d-11ed-bd99-0f87d5ded6ce",
+  "https://www.chess.com/callback/friends/paulom18/top-friends",
+  "https://www.chess.com/service/profile-gateway/chesscom.profile_gateway.v1.ProfileGatewayService/GetProfilePageByUsername",
+  "https://www.chess.com/callback/member/stats/paulom18/undefined",
+  "https://www.chess.com/service/stats/chesscom.stats.v1.StatsService/CheckEligibility",
+  "https://www.chess.com/service/stats/chesscom.stats.v1.StatsService/GetAllStats",
+  "https://www.chess.com/service/friends-search/idl/chesscom.friends_search.v2.FriendsSearchService/GetFriendsCount"
+ ]
+}

@@ -3613,6 +3613,72 @@ h2 {
 .review-line-controls .cc-button { min-width: 34px; padding: 8px; }
 .review-line-controls .cc-button:last-child { margin-left: auto; }
 
+/* Profile Stats — chess.com's free profile table above Insights. */
+.profile-stats { margin-bottom: 36px; min-width: 0; }
+.profile-stats-filters { display: flex; height: 64px; background: var(--panel); border-radius: 6px; margin-bottom: 24px; }
+.profile-stats-dropdown { position: relative; flex: 0 1 300px; min-width: 0; border-right: 1px solid rgba(255,255,255,.04); }
+.profile-stats-dropdown-button { display: flex; align-items: center; gap: 16px; width: 100%; height: 64px; padding: 0 12px 0 16px; border: 0; background: none; color: #fff; cursor: pointer; }
+.profile-stats-dropdown-button > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; font-size: 18px; font-weight: 700; white-space: nowrap; }
+.profile-stats-dropdown-button > img { flex-shrink: 0; }
+.profile-stats-dropdown-button > .profile-stats-chevron { margin-left: auto; color: #fff; }
+.profile-stats-dropdown-button:hover { background: rgba(255,255,255,.04); }
+.profile-stats-menu { position: absolute; z-index: 10; top: calc(100% + 4px); left: 0; width: 100%; min-width: 150px; padding: 8px 0; border-radius: 4px; background: var(--panel-3); box-shadow: 0 4px 16px #0006; }
+.profile-stats-menu button { display: block; width: 100%; padding: 10px 16px; border: 0; background: none; text-align: left; cursor: pointer; }
+.profile-stats-menu button:hover, .profile-stats-menu button:focus-visible { background: rgba(255,255,255,.08); }
+.profile-stats-menu button[aria-checked="true"] { color: #fff; font-weight: 700; background: rgba(0,0,0,.14); }
+.profile-stats-card { background: var(--panel); border-radius: 6px; overflow: hidden; }
+.profile-stats-card > h2 { margin: 0; padding: 14px 24px; font-size: 18px; line-height: 20px; }
+.profile-stats-table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 20px; }
+.profile-stats-table th { padding: 16px 32px 16px 24px; font-weight: 600; background: rgba(0,0,0,.14); color: var(--text-2); text-align: right; }
+.profile-stats-table th:first-child { text-align: left; width: 100%; }
+.profile-stats-table tbody tr { height: 74px; }
+.profile-stats-table td { padding: 16px 32px; text-align: right; color: var(--text-2); white-space: nowrap; }
+.profile-stats-table td:first-child { padding-left: 24px; text-align: left; white-space: normal; }
+.profile-stats-type { display: flex; align-items: center; gap: 16px; color: #fff; font-family: var(--font-heading); font-size: 18px; font-weight: 700; }
+.profile-stats-type img { flex-shrink: 0; }
+.profile-stats-type button { padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; text-align: left; }
+.profile-stats-table .profile-stats-rating { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: #fff; }
+.profile-stats-table td:nth-child(4) { font-weight: 600; }
+.profile-stats-table th:last-child, .profile-stats-table td:last-child { padding-left: 0; padding-right: 24px; }
+.profile-stats-chevron { display: block; width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.profile-stats-clickable { cursor: pointer; }
+.profile-stats-clickable:hover, .profile-stats-clickable:focus-within { background: rgba(255,255,255,.04); }
+.profile-stats button:focus-visible, .profile-stats a:focus-visible { outline: 2px solid var(--green-hi); outline-offset: -2px; }
+.profile-stats-delta { font-weight: 600; }
+.profile-stats-delta.delta-positive { color: var(--green); }
+.profile-stats-delta.delta-negative { color: var(--red); }
+.profile-stats-more { display: block; margin: 0 auto; padding: 16px 24px; border: 0; background: none; color: var(--text-2); font-weight: 600; cursor: pointer; }
+.profile-stats-more:hover { color: #fff; }
+.profile-stats-error { margin: 0; padding: 0 24px 16px; color: var(--red); }
+.profile-stats-empty { margin: 0; padding: 24px; color: var(--green-hi); }
+.profile-stats-empty a:hover { text-decoration: underline; }
+.insights-header { scroll-margin-top: 24px; }
+@media (max-width: 900px) {
+  .profile-stats-table th, .profile-stats-table td { padding-left: 16px; padding-right: 16px; }
+}
+@media (max-width: 560px) {
+  .profile-stats-dropdown { flex: 1 1 50%; }
+  .profile-stats-dropdown-button { gap: 8px; padding-left: 12px; }
+  .profile-stats-dropdown-button > span { font-size: 16px; }
+  .profile-stats-table { table-layout: fixed; }
+  .profile-stats-table th:first-child { width: 40%; }
+  .profile-stats-table th:nth-child(2) { width: 18%; }
+  .profile-stats-table th:nth-child(3) { width: 20%; }
+  .profile-stats-table th:nth-child(4) { width: 14%; }
+  .profile-stats-table th:last-child { width: 8%; }
+  .profile-stats-table .profile-stats-percentile { display: none; }
+  .profile-stats-table th, .profile-stats-table td { padding-left: 8px; padding-right: 8px; }
+  .profile-stats-table th:first-child, .profile-stats-table td:first-child { padding-left: 12px; }
+  .profile-stats-table th:last-child, .profile-stats-table td:last-child { padding-right: 12px; }
+  .profile-stats-type { gap: 8px; font-size: 16px; }
+  .profile-stats-type > span, .profile-stats-type > button { min-width: 0; overflow-wrap: anywhere; }
+  /* The tournament label can use its row's empty numeric cells. */
+  .profile-stats-type > span { flex-shrink: 0; white-space: nowrap; }
+  .profile-stats-table .profile-stats-rating { font-size: 16px; }
+  .profile-stats-card > h2 { padding-left: 12px; }
+  .insights-header { scroll-margin-top: 64px; }
+}
+
 /* Insights — dark cards, green accuracy, blue volume, green/grey/red results. */
 .insights-page { max-width: 1260px; margin: 0 auto; padding-bottom: 36px; min-width: 0; }
 .insights-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px; }

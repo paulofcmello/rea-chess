@@ -6,7 +6,6 @@ import Themes from './pages/Themes'
 import Daily from './pages/Daily'
 import Bots from './pages/Bots'
 import Games from './pages/Games'
-import Stats from './pages/Stats'
 import Analysis from './pages/Analysis'
 import Review from './pages/Review'
 import Settings from './pages/Settings'
@@ -15,6 +14,7 @@ import { useSettings } from './lib/storage'
 import { pieceUrl } from './lib/theme'
 
 const Friend = lazy(() => import('./pages/Friend'))
+const Stats = lazy(() => import('./pages/Stats'))
 
 const ICONS = 'https://assets-ds.chess.com/color-icons'
 const routes = {

@@ -18,7 +18,7 @@ export interface CcGame {
 }
 
 export interface TimeClassStats {
-  last?: { rating: number }
+  last?: { rating: number; rd?: number }
   best?: { rating: number }
   record?: { win: number; loss: number; draw: number }
 }
@@ -77,17 +77,17 @@ export function fetchArchives(username: string): Promise<string[]> {
   })
 }
 
-export function fetchMonth(url: string, refresh = false): Promise<CcGame[]> {
+export async function fetchMonth(url: string, refresh = false, options: { importGames?: boolean } = {}): Promise<CcGame[]> {
   if (refresh) monthCache.delete(url)
-  return cached(monthCache, url, async () => {
+  const games = await cached(monthCache, url, async () => {
     const response = await fetch(url)
     if (!response.ok) throw new Error('Could not load games')
     const data = (await response.json()) as { games?: CcGame[] }
-    const games = (data.games ?? []).filter((game) => game.rules === 'chess').reverse()
-    const username = url.match(/\/player\/([^/]+)\/games\//)?.[1]
-    if (username) rememberImportedGames(decodeURIComponent(username), games)
-    return games
+    return (data.games ?? []).filter((game) => game.rules === 'chess').reverse()
   })
+  const username = url.match(/\/player\/([^/]+)\/games\//)?.[1]
+  if (username && options.importGames !== false) rememberImportedGames(decodeURIComponent(username), games)
+  return games
 }
 
 export function gameToAnalysis(
