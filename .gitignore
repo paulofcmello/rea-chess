@@ -17,3 +17,7 @@ pnpm-debug.log*
 .vscode/
 .idea/
 *.local
+
+# chess.com bundles with embedded API keys (GitHub secret-scanning alert)
+/.rea/puzzles-src.json
+/.rea/scripts/files/origins/1e76d9acdaa1d09f7881b8ef8a593a6b926a3cd57d263a84ce6cf6edf900e283/bundles/app/vite/shared.8e8b702d.DWFViyq4PN.chunk.js
