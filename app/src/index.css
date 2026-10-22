@@ -1509,15 +1509,47 @@ h2 {
 
 /* ---------- Responsive ---------- */
 
-@media (max-width: 1000px) {
+/* Board starts 18px after the full nav, as on chess.com (12px here + the board's 6px margin). */
+.main:has(.cc-layout) {
+  padding-left: 12px;
+}
+
+/* chess.com collapses its nav to 40px icon buttons in a 56px rail below 1250px. */
+@media (max-width: 1249px) {
   .sidebar {
-    width: 64px;
+    width: 56px;
   }
 
   .nav-label,
   .logo span {
     display: none;
   }
+
+  .logo {
+    width: 40px;
+    height: 52px;
+    padding: 6px 5px 16px;
+  }
+
+  .nav-item {
+    grid-template-columns: 24px;
+    gap: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Board sits 12px from the rail, as on chess.com (6px here + the board's 6px margin). */
+  .main:has(.cc-layout) {
+    padding-left: 6px;
+  }
+}
+
+@media (max-width: 1000px) {
 
   .layout {
     flex-direction: column;
@@ -1581,10 +1613,16 @@ h2 {
 
 /* ---------- chess.com board layout + puzzle sidebar (values from the live DOM, via REA) ---------- */
 
+/* chess.com bands (measured via CDP): >=1250px full nav (170 + 12 gap) and a 192px right column;
+   1200-1249 icon nav (56 + 12); below 1200 the right column shrinks to a 16px gutter. */
+:root { --cc-nav-space: 182px; --cc-right-col: 192px; }
+@media (max-width: 1249px) { :root { --cc-nav-space: 68px; } }
+@media (max-width: 1199px) { :root { --cc-right-col: 16px; } }
+
 /* chess.com puzzle sizing (measured via CDP): viewport height minus 16px gutters, or the width left
    after nav, controls, sidebar and its 192px right column, snapped down to a multiple of 8px. */
 .cc-layout {
-  --board-size: round(down, min(calc(100vh - 32px), calc(100vw - 170px - 18px - 32px - 300px - 192px)), 8px);
+  --board-size: round(down, min(calc(100vh - 32px), calc(100vw - var(--cc-nav-space) - 32px - 300px - var(--cc-right-col))), 8px);
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -3526,7 +3564,7 @@ h2 {
 @media (min-width: 1001px) {
   /* chess.com's puzzle sidebar is full height and takes the width left before the 192px right column. */
   .cc-layout:not(:has(.with-players, .cc-endgames-board)) > .cc-sidebar {
-    width: max(300px, calc(100vw - 170px - 18px - var(--board-size) - 32px - 192px));
+    width: max(300px, calc(100vw - var(--cc-nav-space) - var(--board-size) - 32px - var(--cc-right-col)));
     max-height: none;
   }
   /* Endgames has player bars above and below the board. */
