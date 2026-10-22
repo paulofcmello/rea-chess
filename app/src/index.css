@@ -1581,9 +1581,10 @@ h2 {
 
 /* ---------- chess.com board layout + puzzle sidebar (values from the live DOM, via REA) ---------- */
 
-/* Puzzle boards fill the viewport height minus chess.com's 16px top/bottom gutter. */
+/* chess.com puzzle sizing (measured via CDP): viewport height minus 16px gutters, or the width left
+   after nav, controls, sidebar and its 192px right column, snapped down to a multiple of 8px. */
 .cc-layout {
-  --board-size: min(calc(100vh - 32px), calc(100vw - 170px - 32px - 300px - 32px - 22px));
+  --board-size: round(down, min(calc(100vh - 32px), calc(100vw - 170px - 18px - 32px - 300px - 192px)), 8px);
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -3523,6 +3524,11 @@ h2 {
 .cc-endgames-layout { max-width: 1400px; }
 .cc-endgames-board { display: flex; flex-direction: column; gap: 10px; }
 @media (min-width: 1001px) {
+  /* chess.com's puzzle sidebar is full height and takes the width left before the 192px right column. */
+  .cc-layout:not(:has(.with-players, .cc-endgames-board)) > .cc-sidebar {
+    width: max(300px, calc(100vw - 170px - 18px - var(--board-size) - 32px - 192px));
+    max-height: none;
+  }
   /* Endgames has player bars above and below the board. */
   .cc-endgames-board { --board-size: min(calc(100vh - 172px), calc(100vw - 170px - 32px - 300px - 32px - 22px)); }
 }
