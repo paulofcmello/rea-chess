@@ -9,6 +9,7 @@ import { openInAnalysis } from './Analysis'
 import { BoardControls, PuzzleCoach, PuzzleFooter } from './puzzleUi'
 import { RatedStreakInfo, SidebarShell, StreakRow } from '../components/PuzzleSidebar'
 import { recordRatedResult } from '../lib/streak'
+import { loadPuzzleSeen, markSeen } from '../lib/puzzleSeen'
 
 interface HistoryItem {
   id: string
@@ -33,13 +34,12 @@ export default function Puzzles() {
 
   const next = useCallback(
     (list = all, r = rating) => {
-      const seen = new Set(history.slice(-300).map((h) => h.id))
-      setPuzzle(pickPuzzle(list, r, seen))
+      setPuzzle(pickPuzzle(list, r, loadPuzzleSeen(), undefined, new Set(puzzle ? [puzzle.id] : [])))
       setDelta(null)
       setFlipped(false)
       setStartedAt(Date.now())
     },
-    [all, rating, history],
+    [all, rating, puzzle],
   )
 
   useEffect(() => {
@@ -51,6 +51,7 @@ export default function Puzzles() {
   const p = usePuzzle(puzzle, {
     onNext: () => next(),
     onResult: (solved, pz) => {
+      markSeen(pz.id, solved)
       recordRatedResult(solved)
       const nr = updateRating(rating, pz.rating, solved)
       setDelta(nr - rating)

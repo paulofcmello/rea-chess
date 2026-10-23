@@ -1,9 +1,9 @@
 #!/bin/sh
 # Regenerates public/data/puzzles.json from the Lichess puzzle database (CC0).
-# Streams the first 400k rows, keeps popular well-rated puzzles, samples 170 per 100-point band.
+# Streams the first 3M rows, keeps popular well-rated puzzles, samples 1500 per 100-point band.
 set -e
 cd "$(dirname "$0")/.."
-curl -sL https://database.lichess.org/lichess_db_puzzle.csv.zst | zstd -dc 2>/dev/null | head -n 400001 > /tmp/rea-puzzles.csv || true
+curl -fsSL https://database.lichess.org/lichess_db_puzzle.csv.zst | zstd -dc 2>/dev/null | head -n 3000001 > /tmp/rea-puzzles.csv || true
 python3 - <<'PY'
 import csv, json, random, collections
 random.seed(7)
@@ -13,9 +13,11 @@ for r in csv.DictReader(open("/tmp/rea-puzzles.csv")):
     rt = int(r["Rating"])
     if 400 <= rt < 3000: b[rt // 100].append(r)
 out = []
-for k in sorted(b):
+for k in range(4, 30):
     random.shuffle(b[k])
-    out += [[r["PuzzleId"], r["FEN"], r["Moves"], int(r["Rating"]), r["Themes"]] for r in b[k][:170]]
+    sample = b[k][:1500]
+    out += [[r["PuzzleId"], r["FEN"], r["Moves"], int(r["Rating"]), r["Themes"]] for r in sample]
+    print(f"{k * 100}-{k * 100 + 99}: {len(sample)}")
 out.sort(key=lambda x: x[3])
 json.dump(out, open("public/data/puzzles.json", "w"), separators=(",", ":"))
 print(len(out), "puzzles written")

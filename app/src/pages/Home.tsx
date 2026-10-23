@@ -11,6 +11,7 @@ import { dayKey, useStreak } from '../lib/streak'
 import { useStored } from '../lib/storage'
 import { pieceUrl } from '../lib/theme'
 import { openInReview } from './Review'
+import { loadPuzzleSeen } from '../lib/puzzleSeen'
 
 const START = new Chess().fen()
 
@@ -124,6 +125,7 @@ export default function Home() {
   const username = storedUsername.trim()
   const [rating] = useStored('puzzleRating', 800)
   const [history] = useStored<{ id: string; solved: boolean }[]>('puzzleHistory', [])
+  const [seen] = useStored('puzzleSeen', loadPuzzleSeen())
   const [daily] = useStored<Record<string, boolean>>('dailyLog', {})
   const [records] = useStored<Record<string, { w: number }>>('botRecords', {})
   const [solveLog] = useStored<Record<string, number>>('solveLog', Object.fromEntries(Object.entries(daily).filter(([, solved]) => solved).map(([date]) => [date, 1])))
@@ -140,11 +142,10 @@ export default function Home() {
     return () => { active = false }
   }, [])
   const previews = useMemo(() => {
-    const exclude = new Set(history.filter((item) => item.solved).map((item) => item.id))
-    const next = pickPuzzle(all, rating, exclude)
-    const themed = pickPuzzle(all, rating, exclude, (p) => p.id !== next?.id && p.themes.some((theme) => !!themeLabels[theme]))
+    const next = pickPuzzle(all, rating, seen)
+    const themed = pickPuzzle(all, rating, seen, (p) => p.id !== next?.id && p.themes.some((theme) => !!themeLabels[theme]))
     return { next, themed, daily: all.length ? dailyPuzzle(all) ?? null : null }
-  }, [all, rating, history])
+  }, [all, rating, seen])
   const latest = account.games[0]
   const lastPosition = useMemo(() => latest ? gamePosition(latest) : null, [latest])
   const opponent = latest ? (latest.white.username.toLowerCase() === username.toLowerCase() ? latest.black.username : latest.white.username) : ''

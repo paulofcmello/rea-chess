@@ -2,6 +2,8 @@
 // Each puzzle's FEN is the position *before* the opponent's move; moves[0] is that move,
 // and the solver plays moves[1], moves[3], ...
 
+import { seenWeight, type PuzzleSeen } from './puzzleSeen'
+
 export interface Puzzle {
   id: string
   fen: string
@@ -27,21 +29,36 @@ export function loadPuzzles(): Promise<Puzzle[]> {
   return cache
 }
 
-/** Picks a random puzzle near `target` rating, avoiding ids in `exclude`. */
+/** Favors unseen puzzles near `target`, with hard exclusions for the current session. */
 export function pickPuzzle(
   all: Puzzle[],
   target: number,
-  exclude: Set<string>,
+  seen: PuzzleSeen,
   filter: (p: Puzzle) => boolean = () => true,
+  avoid?: Set<string>,
 ): Puzzle | null {
-  for (const spread of [75, 150, 300, 600, 3000]) {
-    const pool = all.filter(
-      (p) => Math.abs(p.rating - target) <= spread && !exclude.has(p.id) && filter(p),
-    )
-    if (pool.length) return pool[Math.floor(Math.random() * pool.length)]
+  const now = Date.now()
+  const weighted = (pool: Puzzle[]): Puzzle | null => {
+    const weights = pool.map((p) => avoid?.has(p.id) ? 0 : seenWeight(p.id, seen, now))
+    const total = weights.reduce((sum, weight) => sum + weight, 0)
+    if (!total) return null
+    let roll = Math.random() * total
+    for (let i = 0; i < pool.length; i++) {
+      roll -= weights[i]
+      if (roll < 0) return pool[i]
+    }
+    return null
   }
-  const pool = all.filter(filter)
-  return pool.length ? pool[Math.floor(Math.random() * pool.length)] : null
+
+  for (const spread of [75, 150, 300, 600, 3000]) {
+    const pool = all.filter((p) => Math.abs(p.rating - target) <= spread && filter(p))
+    const unseen = pool.filter((p) => !seen[p.id] && !avoid?.has(p.id)).length
+    if (unseen >= 15 || spread === 3000) {
+      const puzzle = weighted(pool)
+      if (puzzle) return puzzle
+    }
+  }
+  return weighted(all.filter(filter))
 }
 
 /** Elo-style update. Returns the new rating. */

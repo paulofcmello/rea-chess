@@ -6,6 +6,7 @@ import { useSettings, useStored } from '../lib/storage'
 import { openInAnalysis } from './Analysis'
 import { BoardControls, PuzzleCoach, PuzzleFooter } from './puzzleUi'
 import { SidebarShell, StreakRow } from '../components/PuzzleSidebar'
+import { loadPuzzleSeen, markSeen } from '../lib/puzzleSeen'
 
 const levels = [
   { id: 'easiest', label: 'Easiest', offset: -600 },
@@ -38,14 +39,17 @@ export default function Themes() {
   const next = (t = theme) => {
     if (!t) return
     const offset = levels.find((l) => l.id === level)!.offset
-    const pz = pickPuzzle(all, rating + offset, seen, (p) => p.themes.includes(t))
+    const pz = pickPuzzle(all, rating + offset, loadPuzzleSeen(), (p) => p.themes.includes(t), seen)
     if (pz) seen.add(pz.id)
     setPuzzle(pz)
   }
 
   const p = usePuzzle(puzzle, {
     onNext: () => next(),
-    onResult: (solved) => setStats((s) => ({ solved: s.solved + (solved ? 1 : 0), total: s.total + 1 })),
+    onResult: (solved, pz) => {
+      markSeen(pz.id, solved)
+      setStats((s) => ({ solved: s.solved + (solved ? 1 : 0), total: s.total + 1 }))
+    },
   })
 
   if (!puzzle) {

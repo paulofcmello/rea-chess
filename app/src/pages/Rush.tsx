@@ -6,6 +6,7 @@ import { useSettings, useStored } from '../lib/storage'
 import { play } from '../lib/sound'
 import { BoardControls } from './puzzleUi'
 import { CCButton, SidebarShell } from '../components/PuzzleSidebar'
+import { loadPuzzleSeen, markSeen } from '../lib/puzzleSeen'
 
 type Mode = '3min' | '5min' | 'survival'
 const modes: { id: Mode; label: string; desc: string; seconds: number | null }[] = [
@@ -41,7 +42,7 @@ export default function Rush() {
   const nextPuzzle = (n: number) => {
     // Difficulty ramps from ~400 up, chess.com-style.
     const target = 400 + n * 55 + Math.max(0, n - 20) * 30
-    const pz = pickPuzzle(all, target, seen.current)
+    const pz = pickPuzzle(all, target, loadPuzzleSeen(), undefined, seen.current)
     if (pz) seen.current.add(pz.id)
     setPuzzle(pz)
   }
@@ -59,6 +60,7 @@ export default function Rush() {
     firstMoveDelay: 250,
     mode: 'rush',
     onResult: (solved, pz) => {
+      markSeen(pz.id, solved)
       const nr = [...results, { puzzle: pz, solved }]
       setResults(nr)
       const s = nr.filter((r) => r.solved).length
