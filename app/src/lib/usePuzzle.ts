@@ -1,4 +1,5 @@
 import { useSettings } from './storage'
+import type { Premove } from '../components/Board'
 // Puzzle flow modelled on chess.com's puzzles.js (via REA):
 // - correct move: from/to highlighted #acce59 @ .5 + "correct" badge on the target square
 // - wrong move: the move stays on the board, highlighted #ff7769 @ .5 + "incorrect" badge,
@@ -46,7 +47,7 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
   const [arrows, setArrows] = useState<Arrow[]>([])
   const [hintLevel, setHintLevel] = useState(0)
   const [attempt, setAttempt] = useState(0)
-  const [premoves, setPremoves] = useState<[string, string][]>([])
+  const [premoves, setPremoves] = useState<Premove[]>([])
   /** Ply being viewed with the arrow keys (null = live). Never before the opponent's first move. */
   const [viewPly, setViewPly] = useState<number | null>(null)
   const reported = useRef(false)
@@ -223,11 +224,11 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
   useEffect(() => {
     if (!settings.premoves || status !== 'playing' || !premoves.length || chess.current.turn() !== solverColor) return
     const t = window.setTimeout(() => {
-      const [[from, to], ...rest] = premoves
+      const [[from, to, promotion], ...rest] = premoves
       const legal = chess.current.moves({ verbose: true }).some((m) => m.from === from && m.to === to)
       if (!legal) return setPremoves([])
       setPremoves(rest)
-      userMove(from, to)
+      userMove(from, to, promotion)
     }, 200)
     return () => clearTimeout(t)
   }, [fen, premoves, status, settings.premoves, userMove]) // eslint-disable-line react-hooks/exhaustive-deps
@@ -279,7 +280,7 @@ export function usePuzzle(puzzle: Puzzle | null, opts: Options = {}) {
       arrows: viewing ? [] : arrows,
       premoves: premoveOn ? premoves : [],
       premoveColor: premoveOn ? solverColor : undefined,
-      onPremove: (from: string, to: string) => setPremoves((p) => [...p, [from, to]]),
+      onPremove: (from: string, to: string, promotion?: string) => setPremoves((p) => [...p, [from, to, promotion]]),
       onClearPremoves: () => setPremoves([]),
     },
   }

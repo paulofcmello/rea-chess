@@ -2,7 +2,7 @@ import ConfirmDialog from '../components/ConfirmDialog'
 // Play Bots, laid out like chess.com /play/computer (structure, sizes and roster captured with REA).
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Chess } from 'chess.js'
-import Board, { type Arrow, type ResultBadge } from '../components/Board'
+import Board, { type Arrow, type Premove, type ResultBadge } from '../components/Board'
 import { EvalBar, SanText, type Score } from '../components/ui'
 import { Glyph } from '../components/glyphs'
 import { CCButton, ICONS } from '../components/PuzzleSidebar'
@@ -85,7 +85,7 @@ export default function Bots() {
   const [showResult, setShowResult] = useState(false)
   const [speech, setSpeech] = useState('')
   const [hintArrow, setHintArrow] = useState<Arrow[]>([])
-  const [premoves, setPremoves] = useState<[string, string][]>([])
+  const [premoves, setPremoves] = useState<Premove[]>([])
   const [evalScore, setEvalScore] = useState<Score | null>(null)
   const [thinking, setThinking] = useState(false)
   const [orientationFlip, setOrientationFlip] = useState(false)
@@ -180,10 +180,10 @@ export default function Bots() {
     const fen = liveFen
     const t = window.setTimeout(() => {
       if (id !== gameId.current) return
-      const [[from, to], ...rest] = premoves
+      const [[from, to, promotion], ...rest] = premoves
       const c = new Chess(fen)
       try {
-        const m = c.move({ from, to, promotion: 'q' })
+        const m = c.move({ from, to, promotion: promotion ?? 'q' })
         playMove(m.san)
         setPremoves(rest)
         pushMove(m.san)
@@ -363,7 +363,7 @@ export default function Bots() {
               results={results}
               premoves={settings.premoves && playing && atLive ? premoves : []}
               premoveColor={settings.premoves && playing && atLive && !result ? userColor : undefined}
-              onPremove={(from, to) => setPremoves((p) => [...p, [from, to]])}
+              onPremove={(from, to, promotion) => setPremoves((p) => [...p, [from, to, promotion]])}
               onClearPremoves={() => setPremoves([])}
             />
             {showResult && result && (

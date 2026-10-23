@@ -45,24 +45,27 @@ interface Props {
   results?: ResultBadge[]
   arrows?: Arrow[]
   /** Queued premoves (shown on the board in chess.com's premove red) and who may premove. */
-  premoves?: [string, string][]
+  premoves?: Premove[]
   premoveColor?: 'w' | 'b'
-  onPremove?: (from: string, to: string) => void
+  onPremove?: (from: string, to: string, promotion?: string) => void
   onClearPremoves?: () => void
 }
 
 const PREMOVE_COLOR = '#f42a32' // chess.com premoveHighlightColor, opacity .5
 
+/** [from, to, promotion piece] */
+export type Premove = [string, string, string?]
+
 /** Applies queued premoves to the piece placement only (no legality), for display. */
-function applyPremoves(fen: string, premoves: [string, string][]) {
+function applyPremoves(fen: string, premoves: Premove[]) {
   if (!premoves.length) return fen
   const map = new Map<string, string>()
   for (const row of new Chess(fen).board()) for (const p of row) if (p) map.set(p.square, p.color + p.type)
-  for (const [from, to] of premoves) {
+  for (const [from, to, promotion] of premoves) {
     const code = map.get(from)
     if (!code) continue
     map.delete(from)
-    map.set(to, code[1] === 'p' && (to[1] === '8' || to[1] === '1') ? code[0] + 'q' : code)
+    map.set(to, code[1] === 'p' && (to[1] === '8' || to[1] === '1') ? code[0] + (promotion ?? 'q') : code)
     // Castling premove: bring the rook along.
     if (code[1] === 'k' && from[0] === 'e' && (to[0] === 'g' || to[0] === 'c')) {
       const rf = (to[0] === 'g' ? 'h' : 'a') + from[1]
@@ -267,7 +270,7 @@ export default function Board({
   useEffect(() => {
     snapSq.current = null
   })
-  const [promo, setPromo] = useState<{ from: string; to: string } | null>(null)
+  const [promo, setPromo] = useState<{ from: string; to: string; premove?: boolean } | null>(null)
   const [marks, setMarks] = useState<{ square: string; color: string }[]>([])
   const [userArrows, setUserArrows] = useState<Arrow[]>([])
   const [rightDrag, setRightDragState] = useState<{ from: string; to: string; color: string } | null>(null)
@@ -304,7 +307,8 @@ export default function Board({
 
   useLayoutEffect(() => {
     setSelected(null)
-    setPromo(null)
+    // A premove promotion picker stays open once the opponent replies; the pick then plays as a normal move.
+    setPromo((p) => (p?.premove ? { ...p, premove: false } : null))
     setMarks([])
     setUserArrows([])
   }, [fen])
@@ -355,6 +359,11 @@ export default function Board({
   const tryMove = (from: string, to: string, byDrag: boolean, forcePicker = false) => {
     if (premoveMode) {
       if (!premoveDests(displayFen, from).has(to)) return false
+      if (display.get(from as Square)?.type === 'p' && (to[1] === '8' || to[1] === '1') && (!settings.autoQueen || forcePicker)) {
+        setSelected(null)
+        setPromo({ from, to, premove: true })
+        return true
+      }
       if (byDrag) noAnimId.current = pieces.find((p) => p.square === from)?.id ?? null
       setSelected(null)
       onPremove?.(from, to)
@@ -516,7 +525,7 @@ export default function Board({
   }
   for (const m of settings.boardMarks ? marks : []) allHighlights.push({ square: m.square, color: m.color, opacity: MARK_OPACITY })
 
-  const promoColor = promo ? chess.get(promo.from as Square)?.color ?? 'w' : 'w'
+  const promoColor = promo ? display.get(promo.from as Square)?.color ?? 'w' : 'w'
   const allArrows = [...arrows, ...(settings.boardMarks ? userArrows : []), ...(settings.boardMarks && rightDrag && rightDrag.from !== rightDrag.to ? [{ from: rightDrag.from, to: rightDrag.to, color: rightDrag.color }] : [])]
 
   const board = (
@@ -643,7 +652,8 @@ export default function Board({
                   e.stopPropagation()
                   const p = promo
                   setPromo(null)
-                  onMove?.(p.from, p.to, t)
+                  if (p.premove) onPremove?.(p.from, p.to, t)
+                  else onMove?.(p.from, p.to, t)
                 }}
               />
             ))}
