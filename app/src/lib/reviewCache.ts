@@ -10,8 +10,8 @@ export function reviewKey(pgn: string, url?: string) {
 }
 export function loadReview(key: string) {
   const review = load<Review | null>(key, null)
-  // Older reviews discarded PVs; recompute once so follow-up never silently disappears.
-  return review?.moves.every(move => Array.isArray(move.bestLine) && Array.isArray(move.refutation)) ? review : null
+  // Older reviews discarded PVs or predate the opening book; recompute once.
+  return review?.book !== undefined && review.moves.every(move => Array.isArray(move.bestLine) && Array.isArray(move.refutation)) ? review : null
 }
 export function saveReview(key: string, review: Review) {
   rememberInsightReview(key, review)

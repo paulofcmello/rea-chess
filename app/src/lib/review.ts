@@ -15,6 +15,8 @@ export interface Review {
   evals: PlyEval[]
   accuracy: { w: number; b: number }
   counts: { w: Record<Classification, number>; b: Record<Classification, number> }
+  /** Leading book plies used for this review (absent in reviews made before the opening book). */
+  book?: number
 }
 
 export const CLASSIFICATIONS: Classification[] = ['brilliant', 'great', 'best', 'excellent', 'good', 'book', 'inaccuracy', 'mistake', 'miss', 'blunder', 'forced']
@@ -174,7 +176,7 @@ export async function reviewGame(startFen: string, sans: string[], engine: Pick<
     moves.push({ san: sans[i], uci, color, cls, before: evals[i], after: evals[i + 1], best, bestSan, loss, bestLine: lines[0]?.pv.slice(0, 12) ?? [], refutation: searches[i + 1]?.lines[0]?.pv.slice(0, 12) ?? [] })
     counts[color][cls]++
   }
-  return { moves, evals, counts, accuracy: { w: accuracyOf(moves.filter((m) => m.color === 'w')), b: accuracyOf(moves.filter((m) => m.color === 'b')) } }
+  return { moves, evals, counts, book: bookPlies, accuracy: { w: accuracyOf(moves.filter((m) => m.color === 'w')), b: accuracyOf(moves.filter((m) => m.color === 'b')) } }
 }
 
 const PHRASES: Record<Classification, string[]> = {

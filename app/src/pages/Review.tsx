@@ -11,6 +11,7 @@ import { pieceUrl } from '../lib/theme'
 import { BAD_MOVES, CLASS_COLOR, CLASS_LABEL, CLASSIFICATIONS, MARKED_MOVES, bookPliesFromEcoUrl, coachLine, expectedPoints, reviewGame, type Review as GameReview } from '../lib/review'
 import { ClassIcon } from '../lib/reviewIcons'
 import { loadReview, reviewKey, saveReview } from '../lib/reviewCache'
+import { bookPlies, loadOpenings, openingName } from '../lib/openings'
 import { openInAnalysis } from './Analysis'
 import { playMove } from '../lib/sound'
 import { bestMoveArrow, explainMove } from '../lib/explain'
@@ -126,6 +127,8 @@ export default function Review() {
   const data = useMemo(() => readInput(), [])
   const key = data ? reviewKey(data.input.pgn, data.input.url) : ''
   const [review, setReview] = useState<GameReview | null>(() => key ? loadReview(key) : null)
+  const [openingsReady, setOpeningsReady] = useState(false)
+  useEffect(() => { loadOpenings().then(() => setOpeningsReady(true), () => undefined) }, [])
   const [progress, setProgress] = useState({ done: 0, total: data?.fens.length ?? 1 })
   const [error, setError] = useState('')
   const [attempt, setAttempt] = useState(0)
@@ -176,9 +179,11 @@ export default function Review() {
       setError('')
       engineBusy.current = true
       try {
+        await loadOpenings().catch(() => undefined)
+        const book = Math.max(bookPlies(data.startFen, data.sans), bookPliesFromEcoUrl(data.headers.ECOUrl))
         const result = await reviewGame(data.startFen, data.sans, engine, (done, total) => {
           if (active) setProgress({ done, total })
-        }, bookPliesFromEcoUrl(data.headers.ECOUrl))
+        }, book)
         if (active) {
           saveReview(key, result)
           setReview(result)
@@ -240,6 +245,7 @@ export default function Review() {
     return hours ? `${hours}:${String(minutes).padStart(2, '0')}:${rest}` : `${minutes}:${rest}`
   }
   const feedback = move ? coachLine(move, ply - 1) : null
+  const opening = move?.cls === 'book' && openingsReady && data ? openingName(data.startFen, data.sans, ply) : undefined
   const myColor = orientation === 'white' ? 'w' : 'b'
   const result = headers.Result
   const draw = result === '1/2-1/2'
@@ -316,7 +322,7 @@ export default function Review() {
       <div className={`review-body ${started ? 'review-playing' : ''}`}>
         {(settings.reviewCoach || retry) && <div className="review-coach"><div className="review-coach-avatar"><CoachAvatar emotion={emotion} /></div>
           <div className="review-bubble" aria-live="polite">
-            {retry ? <strong>{retry.status === 'correct' ? `Great find! ${retry.san} is the best move.` : retry.status === 'incorrect' ? `${retry.san} isn't best. Try again.` : 'Find a better move'}</strong> : !review ? <strong>{error ? 'Analysis paused' : 'Analyzing your game…'}</strong> : feedback && move ? <><div className="review-feedback-title"><ClassIcon c={move.cls} /><strong><SanText san={move.san} color={new Chess(fens[ply - 1]).turn()} />{feedback.title.slice(move.san.length)}</strong><span className="review-eval-chip">{formatScore(move.after)}</span></div>{settings.reviewExplanations && explanation && <MoveExplanation explanation={explanation} expanded={expanded} onToggle={() => { setExpandedPly(expanded ? null : ply); setPlayback(null); setArrowOverride({ ply, show: false }) }} />}</> : <strong>{started ? 'Start at the first move to see your coach’s feedback.' : greeting}</strong>}
+            {retry ? <strong>{retry.status === 'correct' ? `Great find! ${retry.san} is the best move.` : retry.status === 'incorrect' ? `${retry.san} isn't best. Try again.` : 'Find a better move'}</strong> : !review ? <strong>{error ? 'Analysis paused' : 'Analyzing your game…'}</strong> : feedback && move ? <><div className="review-feedback-title"><ClassIcon c={move.cls} /><strong><SanText san={move.san} color={new Chess(fens[ply - 1]).turn()} />{feedback.title.slice(move.san.length)}</strong><span className="review-eval-chip">{formatScore(move.after)}</span></div>{opening && <div className="review-opening-name">{opening}</div>}{settings.reviewExplanations && explanation && <MoveExplanation explanation={explanation} expanded={expanded} onToggle={() => { setExpandedPly(expanded ? null : ply); setPlayback(null); setArrowOverride({ ply, show: false }) }} />}</> : <strong>{started ? 'Start at the first move to see your coach’s feedback.' : greeting}</strong>}
           </div>
         </div>}
         {!review ? <div className="review-loading">
