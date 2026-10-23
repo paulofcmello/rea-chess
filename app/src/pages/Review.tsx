@@ -262,7 +262,7 @@ export default function Review() {
     setPlayback(null); setExpandedPly(null)
     setStarted(true); setPly(p); setArrowOverride(null)
   }
-  const canRetry = !!move && BAD_MOVES.includes(move.cls) && players[move.color].username.toLowerCase() === input.me.trim().toLowerCase()
+  const canRetry =!!move && BAD_MOVES.includes(move.cls) && players[move.color].username.toLowerCase() === input.me.trim().toLowerCase()
   const startRetry = () => { exitRetry(); setPlayback(null); setExpandedPly(null); setRetry({ status: 'ready' }); setArrowOverride(null) }
   const startPlayback = (kind: Playback['kind']) => {
     exitRetry(); setArrowOverride({ ply, show: false }); setPlayback({ ply, kind, step: 0, playing: true })
@@ -369,8 +369,24 @@ export default function Review() {
       {review && !started && (
         <div className="cc-sidebar-footer review-footer">
           <button className="cc-button cc-primary review-start" onClick={() => jump(Math.min(1, sans.length))}>Start Review</button>
+          <StartKeys onStart={(last) => jump(last ? sans.length : Math.min(1, sans.length))} />
         </div>
       )}
     </section>
   </div>
+}
+
+/** Like chess.com, arrow keys on the summary start the review. */
+function StartKeys({ onStart }: { onStart: (last: boolean) => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.target as HTMLElement)?.tagName === 'INPUT' || (e.target as HTMLElement)?.tagName === 'TEXTAREA') return
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowDown') return
+      e.preventDefault()
+      onStart(e.key === 'ArrowDown')
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onStart])
+  return null
 }
