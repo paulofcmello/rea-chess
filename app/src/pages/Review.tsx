@@ -228,13 +228,17 @@ export default function Review() {
   const move = viewedMove
   const autoArrow = settings.bestMoveArrow && !!move && BAD_MOVES.includes(move.cls)
   const showArrow = !retry && !activePlayback && (arrowOverride?.ply === ply ? arrowOverride.show : autoArrow)
+  // Auto best-move arrows draw over the played move; only the Best button rewinds to the position before it.
+  const bestView = showArrow && arrowOverride?.ply === ply
+  // The summary shows the final position, like chess.com.
+  const viewPly = started ? ply : sans.length
   const expanded = expandedPly === ply
-  const boardFen = retry ? retry.fen ?? fens[ply - 1] : activePlayback ? activePlayback.step > 0 ? continuation[activePlayback.step - 1].fen : fens[activePlayback.kind === 'best' ? ply - 1 : ply] : showArrow ? fens[ply - 1] : fens[ply]
+  const boardFen = retry ? retry.fen ?? fens[ply - 1] : activePlayback ? activePlayback.step > 0 ? continuation[activePlayback.step - 1].fen : fens[activePlayback.kind === 'best' ? ply - 1 : ply] : bestView ? fens[ply - 1] : fens[viewPly]
   const turn = new Chess(boardFen).turn()
   const clockFor = (color: 'w' | 'b') => {
     if (!clocks.length) return undefined
     const blackFirst = startFen.split(' ')[1] === 'b'
-    for (let i = ply - 1; i >= 0; i--) {
+    for (let i = viewPly - 1; i >= 0; i--) {
       if (((i + Number(blackFirst)) % 2 === 0 ? 'w' : 'b') === color && clocks[i]) return clocks[i]
     }
     const seconds = Number(headers.TimeControl?.match(/^(\d+)(?:\+|$)/)?.[1])
@@ -255,7 +259,7 @@ export default function Review() {
   const emotion: CoachEmotion = retry ? retry.status === 'correct' ? 'impressed' : retry.status === 'incorrect' ? 'concerned' : 'thinking' : !review ? 'thinking' : move ? BAD_MOVES.includes(move.cls) ? 'concerned' : ['brilliant', 'great'].includes(move.cls) ? 'impressed' : 'idle' : win ? 'happy' : finished && !draw ? 'concerned' : 'idle'
   const nextStep = activePlayback ? continuation[activePlayback.step] : undefined
   const arrows = retry ? [] : activePlayback ? nextStep ? [{ from: nextStep.from, to: nextStep.to, color: nextStep.color === move?.color ? '#81b64c' : '#fa412d', opacity: 0.85 }] : [] : showArrow && move ? bestMoveArrow(move) : expanded && settings.reviewExplanations ? explanation?.threats ?? [] : []
-  const showingVariation = !!activePlayback || showArrow
+  const showingVariation = !!activePlayback || bestView
   const jump = (p: number) => {
     if (p === ply + 1) playMove(sans[p - 1])
     exitRetry()
@@ -302,10 +306,10 @@ export default function Review() {
     <div className={`cc-board-area with-players ${settings.showEvalBar ? 'with-eval' : ''}`}>
       <PlayerBar player={players[topColor]} color={topColor} clock={clockFor(topColor)} active={turn === topColor} />
       <div className="cc-board-row">
-        {settings.showEvalBar && <EvalBar score={activePlayback && activePlayback.step > 0 ? null : review?.evals[showArrow || activePlayback?.kind === 'best' ? ply - 1 : ply] ?? null} flip={orientation === 'black'} />}
+        {settings.showEvalBar && <EvalBar score={activePlayback && activePlayback.step > 0 ? null : review?.evals[bestView || activePlayback?.kind === 'best' ? ply - 1 : viewPly] ?? null} flip={orientation === 'black'} />}
         <div className="cc-board-wrap"><Board fen={boardFen} orientation={orientation}
           movable={retry && !retry.fen && retry.status !== 'correct' && retry.status !== 'checking' ? myColor : 'none'} onMove={onRetryMove}
-          lastMove={activePlayback && activePlayback.step > 0 ? [continuation[activePlayback.step - 1].from, continuation[activePlayback.step - 1].to] : retry || move ? null : ply > 0 ? moves[ply - 1] : null}
+          lastMove={activePlayback && activePlayback.step > 0 ? [continuation[activePlayback.step - 1].from, continuation[activePlayback.step - 1].to] : retry || move ? null : viewPly > 0 ? moves[viewPly - 1] : null}
           highlights={!retry && !showingVariation && move ? [move.uci.slice(0, 2), move.uci.slice(2, 4)].map((square) => ({ square, color: CLASS_COLOR[move.cls], opacity: 0.5 })) : []}
           effects={retry ? retry.square && (retry.status === 'correct' || retry.status === 'incorrect') ? [{ square: retry.square, type: retry.status }] : [] : move && !showingVariation ? [{ square: move.uci.slice(2, 4), type: move.cls }] : []} arrows={arrows} /></div>
       </div>
@@ -342,7 +346,7 @@ export default function Review() {
           <div className="review-flow">
             {retry?.status === 'correct' ? <button className="cc-button cc-primary" onClick={exitRetry}>Continue</button> : <>
               {canRetry && <button className="cc-button cc-secondary" disabled={retry?.status === 'checking'} onClick={startRetry}>↻ Retry</button>}
-              <button className="cc-button cc-secondary" disabled={!move} aria-pressed={showArrow} onClick={() => { exitRetry(); setPlayback(null); setArrowOverride({ ply, show: retry ? true : !showArrow }) }}>{retry ? '★ Show Best' : '★ Best'}</button>
+              <button className="cc-button cc-secondary" disabled={!move} aria-pressed={bestView} onClick={() => { exitRetry(); setPlayback(null); setArrowOverride({ ply, show: retry ? true : !bestView }) }}>{retry ? '★ Show Best' : '★ Best'}</button>
             </>}
             <button className="cc-button cc-primary" disabled={ply >= sans.length} onClick={() => jump(Math.min(sans.length, ply + 1))}>➜ Next</button>
           </div>
