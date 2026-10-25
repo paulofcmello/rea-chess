@@ -111,8 +111,8 @@ export function analyzedMoves(games: ReviewedGame[]): AnalyzedMove[] {
   }) ?? [])
 }
 export function average(values: number[]): number | null { return values.length ? values.reduce((a, b) => a + b, 0) / values.length : null }
-export function moveAccuracy(moves: AnalyzedMove[]) { return moves.length ? accuracyOf(moves.map(m => m.evaluation)) : null }
-export function gameAccuracy(game: ReviewedGame) { return game.review ? game.review.accuracy[game.color] : null }
+export function moveAccuracy(moves: AnalyzedMove[]) { return moves.length ? accuracyOf(moves.map(m => ({ ...m.evaluation, rating: m.game.rating }))) : null }
+export function gameAccuracy(game: ReviewedGame) { return game.review ? accuracyOf(game.review.moves.filter(m => m.color === game.color), game.rating) : null }
 export function groups<T>(items: T[], key: (item: T) => string): [string, T[]][] {
   const map = new Map<string, T[]>()
   for (const item of items) {

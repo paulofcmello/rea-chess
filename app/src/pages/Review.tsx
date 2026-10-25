@@ -8,7 +8,8 @@ import { Engine } from '../lib/engine'
 import { buildPositions } from '../lib/game'
 import { fetchAvatar, parseClocks, type CcGame } from '../lib/ccGames'
 import { pieceUrl } from '../lib/theme'
-import { BAD_MOVES, CLASS_COLOR, CLASS_LABEL, CLASSIFICATIONS, MARKED_MOVES, bookPliesFromEcoUrl, coachLine, expectedPoints, reviewGame, type Review as GameReview } from '../lib/review'
+import { BAD_MOVES, CLASS_COLOR, CLASS_LABEL, CLASSIFICATIONS, MARKED_MOVES, bookPliesFromEcoUrl, coachLine, expectedPoints, gameRatingOf, reviewGame, type Review as GameReview } from '../lib/review'
+import { REVIEW_CALIBRATION } from '../lib/reviewCalibration'
 import { ClassIcon } from '../lib/reviewIcons'
 import { loadReview, reviewKey, saveReview } from '../lib/reviewCache'
 import { bookPlies, loadOpenings, openingName } from '../lib/openings'
@@ -53,7 +54,12 @@ function readInput() {
     const headers = chess.getHeaders()
     const sans = chess.history()
     const startFen = headers.FEN ?? new Chess().fen()
-    return { input, sans, clocks: parseClocks(input.pgn), startFen, headers, ...buildPositions(startFen, sans) }
+    const validRating = (header: string | undefined, fallback?: number) => {
+      const value = Number(header)
+      return Number.isFinite(value) && value > 0 ? value : fallback
+    }
+    const ratings = { w: validRating(headers.WhiteElo, input.white.rating), b: validRating(headers.BlackElo, input.black.rating) }
+    return { input, sans, clocks: parseClocks(input.pgn), startFen, headers, ratings, ...buildPositions(startFen, sans) }
   } catch { return null }
 }
 
@@ -126,7 +132,7 @@ export default function Review() {
   const [settings] = useSettings()
   const data = useMemo(() => readInput(), [])
   const key = data ? reviewKey(data.input.pgn, data.input.url) : ''
-  const [review, setReview] = useState<GameReview | null>(() => key ? loadReview(key) : null)
+  const [review, setReview] = useState<GameReview | null>(() => key ? loadReview(key, data?.ratings) : null)
   const [openingsReady, setOpeningsReady] = useState(false)
   useEffect(() => { loadOpenings().then(() => setOpeningsReady(true), () => undefined) }, [])
   const [progress, setProgress] = useState({ done: 0, total: data?.fens.length ?? 1 })
@@ -183,7 +189,7 @@ export default function Review() {
         const book = Math.max(bookPlies(data.startFen, data.sans), bookPliesFromEcoUrl(data.headers.ECOUrl))
         const result = await reviewGame(data.startFen, data.sans, engine, (done, total) => {
           if (active) setProgress({ done, total })
-        }, book)
+        }, book, data.ratings)
         if (active) {
           saveReview(key, result)
           setReview(result)
@@ -292,7 +298,7 @@ export default function Review() {
           const sign = chess.turn() === 'w' ? 1 : -1
           if (line && line.depth >= 12) score = line.mate != null ? { mate: line.mate * sign } : line.cp != null ? { cp: line.cp * sign } : undefined
         }
-        if (score) correct = expectedPoints(move.before, move.color) - expectedPoints(score, move.color) <= 0.02
+        if (score) correct = expectedPoints(move.before, move.color, data.ratings[move.color]) - expectedPoints(score, move.color, data.ratings[move.color]) <= 0.02
       } catch { /* If evaluation fails, only the exact best move is accepted. */ }
       finally { engineBusy.current = false }
     }
@@ -342,6 +348,17 @@ export default function Review() {
           <div className="review-tallies" aria-label="Move classifications">{CLASSIFICATIONS.filter((c) => c !== 'forced').map((c) => <div className="review-tally" key={c}>
             <span>{CLASS_LABEL[c]}</span><strong style={{ color: CLASS_COLOR[c] }}>{review.counts.w[c]}</strong><ClassIcon c={c} size={22} /><strong style={{ color: CLASS_COLOR[c] }}>{review.counts.b[c]}</strong>
           </div>)}</div>
+          <hr className="review-summary-divider" />
+          <div className="review-players review-game-rating" aria-label="Game Rating">
+            <strong>Game Rating</strong>
+            {(['w', 'b'] as const).map(color => {
+              const opponent = color === 'w' ? 'b' : 'w'
+              const value = review.gameRating ? review.gameRating[color] : gameRatingOf({ accuracy: review.accuracy[color], rating: data.ratings[color], opponentRating: data.ratings[opponent], opponentAccuracy: review.accuracy[opponent], moveCount: review.moves.filter(m => m.color === color).length })
+              const message = value === null ? 'There were not enough moves to rate this game.' : value === undefined ? 'Game Rating is currently unavailable.' : undefined
+              return <div key={color} className={`review-accuracy ${color === 'w' ? 'white' : 'black'}`} title={message} aria-label={`${color === 'w' ? 'White' : 'Black'} Game Rating: ${message ?? value}`}>{value ?? '—'}</div>
+            })}
+          </div>
+          {(['w', 'b'] as const).some(color => review.moves.filter(m => m.color === color).length < REVIEW_CALIBRATION.minimumMoves) && <p className="review-rating-message">There were not enough moves to rate this game.</p>}
         </> : <>
           <div className="review-flow">
             {retry?.status === 'correct' ? <button className="cc-button cc-primary" onClick={exitRetry}>Continue</button> : <>

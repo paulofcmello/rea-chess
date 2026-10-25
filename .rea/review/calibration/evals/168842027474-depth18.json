@@ -1,0 +1,2541 @@
+{
+  "fingerprint": "7e44d5a95ef2692fca6572d4aa301e6e638c20fda1315599a75ed8c750458179",
+  "engineHash": "38f7c90e0576527dfe61d4fc44553ac2d525a4eb67a97c657bc8528a3be47f89",
+  "depth": 18,
+  "multipv": 2,
+  "seconds": 39.538330458000004,
+  "fens": [
+    "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "rnbqkbnr/pppppppp/8/8/8/7N/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+    "rnbqkbnr/pppp1ppp/8/4p3/8/7N/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+    "rnbqkbnr/pppp1ppp/8/4p3/8/6PN/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+    "rnbqkbnr/ppp2ppp/8/3pp3/8/6PN/PPPPPP1P/RNBQKB1R w KQkq - 0 3",
+    "rnbqkbnr/ppp2ppp/8/3pp3/5P2/6PN/PPPPP2P/RNBQKB1R b KQkq - 0 3",
+    "r1bqkbnr/ppp2ppp/2n5/3pp3/5P2/6PN/PPPPP2P/RNBQKB1R w KQkq - 1 4",
+    "r1bqkbnr/ppp2ppp/2n5/3pp3/5P2/4P1PN/PPPP3P/RNBQKB1R b KQkq - 0 4",
+    "r1bqkb1r/ppp2ppp/2n2n2/3pp3/5P2/4P1PN/PPPP3P/RNBQKB1R w KQkq - 1 5",
+    "r1bqkb1r/ppp2ppp/2n2n2/3pp3/5P2/2N1P1PN/PPPP3P/R1BQKB1R b KQkq - 2 5",
+    "r1bqk2r/ppp2ppp/2n2n2/3pp3/1b3P2/2N1P1PN/PPPP3P/R1BQKB1R w KQkq - 3 6",
+    "r1bqk2r/ppp2ppp/2n2n2/3pp3/1b3P2/1PN1P1PN/P1PP3P/R1BQKB1R b KQkq - 0 6",
+    "r2qk2r/ppp2ppp/2n2n2/3pp3/1b3Pb1/1PN1P1PN/P1PP3P/R1BQKB1R w KQkq - 1 7",
+    "r2qk2r/ppp2ppp/2n2n2/3pp3/Pb3Pb1/1PN1P1PN/2PP3P/R1BQKB1R b KQkq - 0 7",
+    "r2qk2r/ppp2ppp/2n2n2/3pp3/Pb3P2/1PN1P1PN/2PP3P/R1BbKB1R w KQkq - 0 8",
+    "r2qk2r/ppp2ppp/2n2n2/3pp3/Pb3P2/1PN1P1PN/2PP3P/R1BK1B1R b kq - 0 8",
+    "r2qk2r/ppp2ppp/2n2n2/4p3/Pb1p1P2/1PN1P1PN/2PP3P/R1BK1B1R w kq - 0 9",
+    "r2qk2r/ppp2ppp/2n2n2/1B2p3/Pb1p1P2/1PN1P1PN/2PP3P/R1BK3R b kq - 1 9",
+    "r2qk2r/1pp2ppp/p1n2n2/1B2p3/Pb1p1P2/1PN1P1PN/2PP3P/R1BK3R w kq - 0 10",
+    "r2qk2r/1pp2ppp/p1B2n2/4p3/Pb1p1P2/1PN1P1PN/2PP3P/R1BK3R b kq - 0 10",
+    "r2qk2r/2p2ppp/p1p2n2/4p3/Pb1p1P2/1PN1P1PN/2PP3P/R1BK3R w kq - 0 11",
+    "r2qk2r/2p2ppp/p1p2n2/4p3/Pb1P1P2/1PN3PN/2PP3P/R1BK3R b kq - 0 11",
+    "r2qk2r/2p2ppp/p1p2n2/8/Pb1p1P2/1PN3PN/2PP3P/R1BK3R w kq - 0 12",
+    "r2qk2r/2p2ppp/p1p2n2/3N4/Pb1p1P2/1P4PN/2PP3P/R1BK3R b kq - 1 12",
+    "r3k2r/2p2ppp/p1p2n2/3q4/Pb1p1P2/1P4PN/2PP3P/R1BK3R w kq - 0 13",
+    "r3k2r/2p2ppp/p1p2n2/3q4/Pb1p1P2/1P1P2PN/2P4P/R1BK3R b kq - 0 13",
+    "r3k2r/2p2ppp/p1p2n2/8/Pb1p1P2/1P1P2PN/2P4P/R1BK3q w kq - 0 14",
+    "r3k2r/2p2ppp/p1p2n2/8/Pb1p1P2/1P1P2PN/2P1K2P/R1B4q b kq - 1 14",
+    "r3k2r/2p2ppp/p1p2n2/8/Pb1p1P2/1P1P2PN/2P1K2P/R1B1q3 w kq - 2 15",
+    "r3k2r/2p2ppp/p1p2n2/8/Pb1p1P2/1P1P1KPN/2P4P/R1B1q3 b kq - 3 15",
+    "r4rk1/2p2ppp/p1p2n2/8/Pb1p1P2/1P1P1KPN/2P4P/R1B1q3 w - - 4 16",
+    "r4rk1/2p2ppp/p1p2n2/8/Pb1p1P2/1P1P1KPN/2PB3P/R3q3 b - - 5 16",
+    "r4rk1/2p2ppp/p1p2n2/8/P2p1P2/1P1P1KPN/2Pb3P/R3q3 w - - 0 17",
+    "r4rk1/2p2ppp/p1p2n2/8/P2p1P2/1P1P1KPN/2Pb3P/4R3 b - - 0 17",
+    "r4rk1/2p2ppp/p1p2n2/8/P2p1P2/1P1P1KPN/2P4P/4b3 w - - 0 18",
+    "r4rk1/2p2ppp/p1p2n2/8/P2p1P2/1P1P2PN/2P1K2P/4b3 b - - 1 18",
+    "r3r1k1/2p2ppp/p1p2n2/8/P2p1P2/1P1P2PN/2P1K2P/4b3 w - - 2 19",
+    "r3r1k1/2p2ppp/p1p2n2/8/P2p1P2/1P1P2PN/2P4P/4bK2 b - - 3 19",
+    "r5k1/2p2ppp/p1p2n2/8/P2p1P2/1P1Pr1PN/2P4P/4bK2 w - - 4 20",
+    "r5k1/2p2ppp/p1p2n2/8/P2p1P2/1P1Pr1P1/2P2N1P/4bK2 b - - 5 20",
+    "4r1k1/2p2ppp/p1p2n2/8/P2p1P2/1P1Pr1P1/2P2N1P/4bK2 w - - 6 21",
+    "4r1k1/2p2ppp/p1p2n2/8/P2pNP2/1P1Pr1P1/2P4P/4bK2 b - - 7 21",
+    "4r1k1/2p2ppp/p1p5/8/P2pnP2/1P1Pr1P1/2P4P/4bK2 w - - 0 22",
+    "4r1k1/2p2ppp/p1p5/8/P2pPP2/1P2r1P1/2P4P/4bK2 b - - 0 22",
+    "6k1/2p2ppp/p1p5/8/P2prP2/1P2r1P1/2P4P/4bK2 w - - 0 23",
+    "6k1/2p2ppp/p1p5/8/P2prPP1/1P2r3/2P4P/4bK2 b - - 0 23",
+    "6k1/2p2ppp/p1p5/8/P2prPPb/1P2r3/2P4P/5K2 w - - 1 24",
+    "6k1/2p2ppp/p1p5/8/P2prPPb/1P2r3/2P3KP/8 b - - 2 24",
+    "6k1/2p2ppp/p1p5/8/P2prPPb/1P6/2P1r1KP/8 w - - 3 25",
+    "6k1/2p2ppp/p1p5/8/P2prPPb/1P5K/2P1r2P/8 b - - 4 25",
+    "6k1/2p2ppp/p1p2b2/8/P2prPP1/1P5K/2P1r2P/8 w - - 5 26",
+    "6k1/2p2ppp/p1p2b2/8/P2prPP1/1P4K1/2P1r2P/8 b - - 6 26"
+  ],
+  "searches": [
+    {
+      "bestmove": "e2e4",
+      "lines": [
+        {
+          "move": "e2e4",
+          "pv": [
+            "e2e4",
+            "e7e5",
+            "g1f3",
+            "b8c6",
+            "d2d4",
+            "e5d4",
+            "f3d4",
+            "g8f6",
+            "d4c6",
+            "b7c6",
+            "f1d3",
+            "f8c5",
+            "e1g1",
+            "e8g8",
+            "e4e5",
+            "f6d5",
+            "c2c4"
+          ],
+          "depth": 18,
+          "cp": 37
+        },
+        {
+          "move": "d2d4",
+          "pv": [
+            "d2d4",
+            "d7d5",
+            "c2c4",
+            "e7e6",
+            "b1c3",
+            "g8f6",
+            "c1g5",
+            "f8e7",
+            "e2e3",
+            "h7h6",
+            "g5f6",
+            "e7f6",
+            "c4d5",
+            "e6d5",
+            "g1e2"
+          ],
+          "depth": 18,
+          "cp": 24
+        }
+      ]
+    },
+    {
+      "bestmove": "e7e5",
+      "lines": [
+        {
+          "move": "e7e5",
+          "pv": [
+            "e7e5",
+            "d2d4",
+            "e5d4",
+            "d1d4",
+            "b8c6",
+            "d4d1",
+            "d7d5",
+            "g2g3",
+            "c6e5",
+            "h3f4",
+            "c7c6",
+            "f4d3",
+            "f8d6",
+            "f1g2",
+            "h7h5",
+            "d3e5",
+            "d6e5",
+            "b1d2",
+            "g8f6",
+            "c2c4",
+            "h5h4",
+            "c4d5",
+            "f6d5",
+            "d2f3"
+          ],
+          "depth": 18,
+          "cp": 43
+        },
+        {
+          "move": "d7d5",
+          "pv": [
+            "d7d5",
+            "d2d4",
+            "c8h3",
+            "g2h3",
+            "e7e6",
+            "c2c4",
+            "c7c6",
+            "d1b3",
+            "d8b6",
+            "e2e3",
+            "f8e7",
+            "c1d2",
+            "b8d7",
+            "b3b6",
+            "d7b6",
+            "c4c5",
+            "b6d7",
+            "e1d1",
+            "g8f6"
+          ],
+          "depth": 18,
+          "cp": 42
+        }
+      ]
+    },
+    {
+      "bestmove": "c2c4",
+      "lines": [
+        {
+          "move": "c2c4",
+          "pv": [
+            "c2c4",
+            "d7d5",
+            "c4d5",
+            "c8h3",
+            "g2h3",
+            "d8d5",
+            "h1g1",
+            "b8c6",
+            "b1c3",
+            "d5e6",
+            "d1a4",
+            "e8c8",
+            "f1g2",
+            "g8e7",
+            "a1b1",
+            "d8d4"
+          ],
+          "depth": 18,
+          "cp": -48
+        },
+        {
+          "move": "d2d4",
+          "pv": [
+            "d2d4",
+            "e5d4",
+            "d1d4",
+            "b8c6",
+            "d4d1",
+            "d7d5",
+            "g2g3",
+            "c6e5",
+            "f1g2",
+            "g8f6",
+            "h3f4",
+            "c7c6",
+            "b1d2",
+            "f8d6",
+            "e1g1",
+            "e8g8",
+            "b2b3",
+            "c8f5",
+            "c1b2",
+            "d8e7",
+            "c2c4",
+            "d5c4",
+            "b3c4",
+            "a8d8"
+          ],
+          "depth": 18,
+          "cp": -50
+        }
+      ]
+    },
+    {
+      "bestmove": "b8c6",
+      "lines": [
+        {
+          "move": "b8c6",
+          "pv": [
+            "b8c6",
+            "c2c3",
+            "d7d5",
+            "d2d4",
+            "c8f5",
+            "d4e5",
+            "c6e5",
+            "f1g2",
+            "c7c6",
+            "b1d2",
+            "g8f6",
+            "d2f3",
+            "f8d6",
+            "e1g1",
+            "e8g8",
+            "f3e5",
+            "d6e5",
+            "c1f4",
+            "f8e8",
+            "f4e5",
+            "e8e5"
+          ],
+          "depth": 18,
+          "cp": 62
+        },
+        {
+          "move": "d7d5",
+          "pv": [
+            "d7d5",
+            "d2d4",
+            "e5d4",
+            "f1g2",
+            "c7c5",
+            "c2c3",
+            "b8c6",
+            "e1g1",
+            "g8f6",
+            "c3d4",
+            "c5d4",
+            "c1g5",
+            "f8d6",
+            "h3f4",
+            "d6f4",
+            "g5f4",
+            "e8g8"
+          ],
+          "depth": 18,
+          "cp": 49
+        }
+      ]
+    },
+    {
+      "bestmove": "d2d4",
+      "lines": [
+        {
+          "move": "d2d4",
+          "pv": [
+            "d2d4",
+            "e5d4",
+            "f1g2",
+            "c7c5",
+            "c2c3",
+            "b8c6",
+            "c3d4",
+            "c5d4",
+            "h3f4",
+            "g8f6",
+            "e1g1",
+            "h7h5",
+            "d1b3",
+            "h5h4",
+            "f4d5",
+            "f6d5",
+            "g2d5"
+          ],
+          "depth": 18,
+          "cp": -51
+        },
+        {
+          "move": "f1g2",
+          "pv": [
+            "f1g2",
+            "b8c6",
+            "d2d3",
+            "g8f6",
+            "b1d2",
+            "h7h6",
+            "c2c3",
+            "c8e6",
+            "f2f4",
+            "f6g4",
+            "d2b3",
+            "d8d7",
+            "f4e5",
+            "g4e5"
+          ],
+          "depth": 18,
+          "cp": -88
+        }
+      ]
+    },
+    {
+      "bestmove": "e5e4",
+      "lines": [
+        {
+          "move": "e5e4",
+          "pv": [
+            "e5e4",
+            "d2d3",
+            "f7f5",
+            "d3e4",
+            "f5e4",
+            "f1g2",
+            "c8f5",
+            "c2c4",
+            "d5d4",
+            "h3g5",
+            "g8f6",
+            "b1d2",
+            "e4e3",
+            "d2b3",
+            "f8b4",
+            "e1f1",
+            "b8c6",
+            "g2c6",
+            "b7c6",
+            "d1d4",
+            "d8e7",
+            "d4e3"
+          ],
+          "depth": 18,
+          "cp": 78
+        },
+        {
+          "move": "h7h5",
+          "pv": [
+            "h7h5",
+            "f4e5",
+            "d5d4",
+            "d2d3",
+            "b8c6",
+            "c2c3",
+            "d8d5",
+            "h3f2",
+            "g8h6",
+            "c3d4",
+            "d5d4",
+            "e2e3",
+            "d4e5",
+            "d3d4"
+          ],
+          "depth": 18,
+          "cp": 67
+        }
+      ]
+    },
+    {
+      "bestmove": "f4e5",
+      "lines": [
+        {
+          "move": "f4e5",
+          "pv": [
+            "f4e5",
+            "d5d4",
+            "c2c3",
+            "d8d5",
+            "h3f2",
+            "f8c5",
+            "d1b3",
+            "c8e6",
+            "b3d5",
+            "e6d5",
+            "h1g1",
+            "c6e5",
+            "d2d3",
+            "g8f6",
+            "c1f4",
+            "e5g4",
+            "b2b4",
+            "c5e7",
+            "f2g4",
+            "f6g4",
+            "c3d4",
+            "e7b4",
+            "f4d2"
+          ],
+          "depth": 18,
+          "cp": -57
+        },
+        {
+          "move": "d2d3",
+          "pv": [
+            "d2d3",
+            "f8d6",
+            "f4e5",
+            "c6e5",
+            "f1g2",
+            "c7c6",
+            "d3d4",
+            "e5g4",
+            "d1d3",
+            "g8f6",
+            "b1c3",
+            "e8g8",
+            "e1g1",
+            "f8e8",
+            "e2e4",
+            "d5e4",
+            "c3e4",
+            "f6e4",
+            "g2e4",
+            "g4f6",
+            "e4g2",
+            "c8g4",
+            "h3f2"
+          ],
+          "depth": 18,
+          "cp": -100
+        }
+      ]
+    },
+    {
+      "bestmove": "g8f6",
+      "lines": [
+        {
+          "move": "g8f6",
+          "pv": [
+            "g8f6",
+            "h3f2",
+            "e5f4",
+            "g3f4",
+            "h7h5",
+            "f1g2",
+            "c8g4",
+            "f2g4",
+            "h5g4",
+            "a2a3",
+            "d8d7",
+            "b2b4",
+            "a7a6",
+            "c1b2",
+            "d5d4",
+            "c2c3",
+            "d4e3",
+            "d2e3",
+            "d7e6",
+            "d1e2",
+            "e8c8",
+            "b1d2",
+            "d8e8",
+            "e1c1",
+            "e6e3",
+            "e2e3",
+            "e8e3",
+            "c3c4"
+          ],
+          "depth": 18,
+          "cp": 196
+        },
+        {
+          "move": "h7h5",
+          "pv": [
+            "h7h5",
+            "h3f2",
+            "e5f4",
+            "g3f4",
+            "g8f6",
+            "f1g2",
+            "c8g4",
+            "f2g4",
+            "h5g4",
+            "d2d4",
+            "d8d7",
+            "d1d3",
+            "e8c8",
+            "a2a3",
+            "d7e6",
+            "b1c3",
+            "f8d6",
+            "d3e2",
+            "c6e7",
+            "c1d2",
+            "c7c6",
+            "e1c1"
+          ],
+          "depth": 18,
+          "cp": 192
+        }
+      ]
+    },
+    {
+      "bestmove": "h3f2",
+      "lines": [
+        {
+          "move": "h3f2",
+          "pv": [
+            "h3f2",
+            "e5f4",
+            "g3f4",
+            "h7h5",
+            "f1g2",
+            "c8g4",
+            "f2g4",
+            "h5g4",
+            "d2d4",
+            "d8e7",
+            "a2a3",
+            "e8c8",
+            "b1c3",
+            "e7e6",
+            "d1d3",
+            "f8d6",
+            "c3e2",
+            "c6e7",
+            "c1d2",
+            "e7f5",
+            "e1c1",
+            "f5h4",
+            "h1g1"
+          ],
+          "depth": 18,
+          "cp": -188
+        },
+        {
+          "move": "f4e5",
+          "pv": [
+            "f4e5",
+            "c8g4",
+            "f1e2",
+            "g4h3",
+            "e5f6",
+            "d8f6",
+            "d2d4",
+            "f6e6",
+            "c2c4",
+            "f8b4",
+            "b1c3",
+            "e8c8",
+            "c4d5",
+            "e6d5",
+            "h1g1",
+            "h8e8",
+            "a2a3",
+            "b4c3",
+            "b2c3",
+            "h3f5",
+            "g1f1",
+            "g7g6",
+            "e1f2",
+            "f5h3",
+            "e2f3"
+          ],
+          "depth": 18,
+          "cp": -209
+        }
+      ]
+    },
+    {
+      "bestmove": "c8g4",
+      "lines": [
+        {
+          "move": "c8g4",
+          "pv": [
+            "c8g4",
+            "c3e2",
+            "g4f3",
+            "h1g1",
+            "f6g4",
+            "h3g5",
+            "g4h2",
+            "f1g2",
+            "f3g2",
+            "g1g2",
+            "h2g4",
+            "e2d4",
+            "h7h5",
+            "d4c6",
+            "b7c6",
+            "b2b3",
+            "d8d7",
+            "f4e5",
+            "d7f5",
+            "g5f3",
+            "g4e5",
+            "f3h4",
+            "f5f6"
+          ],
+          "depth": 18,
+          "cp": 289
+        },
+        {
+          "move": "d5d4",
+          "pv": [
+            "d5d4",
+            "c3e2",
+            "c8g4",
+            "f1g2",
+            "d4e3",
+            "f4e5",
+            "c6e5",
+            "d2d4",
+            "g4f3",
+            "h3f4",
+            "f3g2",
+            "f4g2",
+            "e5f3",
+            "e1f1",
+            "d8d7",
+            "c1e3",
+            "d7e6"
+          ],
+          "depth": 18,
+          "cp": 253
+        }
+      ]
+    },
+    {
+      "bestmove": "c3e2",
+      "lines": [
+        {
+          "move": "c3e2",
+          "pv": [
+            "c3e2",
+            "h7h5",
+            "f1g2",
+            "h5h4",
+            "a2a3",
+            "b4d6",
+            "b2b4",
+            "d8e7",
+            "b4b5",
+            "c6a5",
+            "d2d3",
+            "c8g4",
+            "d1d2",
+            "b7b6",
+            "c1b2",
+            "e8c8"
+          ],
+          "depth": 18,
+          "cp": -160
+        },
+        {
+          "move": "f4e5",
+          "pv": [
+            "f4e5",
+            "c6e5",
+            "h3f2",
+            "h7h5",
+            "d1e2",
+            "c7c6",
+            "f1g2",
+            "h5h4",
+            "d2d4",
+            "b4c3",
+            "b2c3",
+            "h4g3",
+            "h2g3",
+            "h8h1",
+            "g2h1",
+            "c8g4",
+            "f2g4",
+            "e5g4",
+            "e3e4",
+            "d5e4",
+            "c1g5"
+          ],
+          "depth": 18,
+          "cp": -179
+        }
+      ]
+    },
+    {
+      "bestmove": "d5d4",
+      "lines": [
+        {
+          "move": "d5d4",
+          "pv": [
+            "d5d4",
+            "c3e2",
+            "d8d5",
+            "h1g1",
+            "d4e3",
+            "c2c3",
+            "e3d2",
+            "d1d2",
+            "d5d2",
+            "c1d2",
+            "b4c5",
+            "g1h1",
+            "c8g4",
+            "b3b4",
+            "g4f3",
+            "h1g1",
+            "c5g1",
+            "e2g1",
+            "f3g4",
+            "b4b5",
+            "c6e7",
+            "f4e5",
+            "f6d7",
+            "h3f2",
+            "d7e5",
+            "d2f4"
+          ],
+          "depth": 18,
+          "cp": 432
+        },
+        {
+          "move": "c8g4",
+          "pv": [
+            "c8g4",
+            "c3e2",
+            "d5d4",
+            "f1g2",
+            "d4e3",
+            "c2c3",
+            "d8d7",
+            "h3g5",
+            "h7h6",
+            "h2h3",
+            "h6g5",
+            "h3g4",
+            "h8h1",
+            "g2h1",
+            "g5f4",
+            "d2e3",
+            "d7g4",
+            "h1c6",
+            "b7c6",
+            "c3b4",
+            "f4f3",
+            "d1c2"
+          ],
+          "depth": 18,
+          "cp": 375
+        }
+      ]
+    },
+    {
+      "bestmove": "c3e2",
+      "lines": [
+        {
+          "move": "c3e2",
+          "pv": [
+            "c3e2",
+            "g4f3",
+            "h1g1",
+            "f6g4",
+            "c2c3",
+            "b4e7",
+            "f4e5",
+            "c6e5",
+            "d2d4",
+            "e5g6",
+            "h3f2",
+            "g4h2",
+            "f1g2",
+            "e8g8",
+            "g1h1",
+            "f3g2",
+            "h1h2"
+          ],
+          "depth": 18,
+          "cp": -362
+        },
+        {
+          "move": "d1g4",
+          "pv": [
+            "d1g4",
+            "f6g4",
+            "h3g5",
+            "e8g8",
+            "f1h3",
+            "d8d6",
+            "h3g4",
+            "f8e8"
+          ],
+          "depth": 18,
+          "cp": -675
+        }
+      ]
+    },
+    {
+      "bestmove": "g4d1",
+      "lines": [
+        {
+          "move": "g4d1",
+          "pv": [
+            "g4d1",
+            "c3d1",
+            "e8g8",
+            "f4e5",
+            "c6e5",
+            "f1g2",
+            "f8e8",
+            "e1g1",
+            "c7c6",
+            "h3f4",
+            "b4a5",
+            "c1b2",
+            "a5d2",
+            "f4d3",
+            "e5g6",
+            "g1h1"
+          ],
+          "depth": 18,
+          "cp": 780
+        },
+        {
+          "move": "b4c3",
+          "pv": [
+            "b4c3",
+            "d1g4",
+            "f6g4",
+            "d2c3",
+            "e5e4",
+            "h3f2",
+            "d8f6",
+            "f2g4",
+            "f6c3",
+            "c1d2",
+            "c3a1",
+            "e1f2",
+            "e8c8"
+          ],
+          "depth": 18,
+          "cp": 731
+        }
+      ]
+    },
+    {
+      "bestmove": "c3d1",
+      "lines": [
+        {
+          "move": "c3d1",
+          "pv": [
+            "c3d1",
+            "e8g8",
+            "c1b2",
+            "d5d4",
+            "f1d3",
+            "e5e4",
+            "h3f2",
+            "e4d3",
+            "c2c3",
+            "d4e3",
+            "d1e3",
+            "b4e7",
+            "e3f5",
+            "e7d6",
+            "e1g1"
+          ],
+          "depth": 18,
+          "cp": -723
+        },
+        {
+          "move": "e1d1",
+          "pv": [
+            "e1d1",
+            "b4c3",
+            "d2c3",
+            "e8g8",
+            "d1e1",
+            "f8e8",
+            "c1d2",
+            "e5f4",
+            "h3f4",
+            "e8e5",
+            "f4d3",
+            "e5e6",
+            "f1h3"
+          ],
+          "depth": 18,
+          "cp": -802
+        }
+      ]
+    },
+    {
+      "bestmove": "d5d4",
+      "lines": [
+        {
+          "move": "d5d4",
+          "pv": [
+            "d5d4",
+            "c3a2",
+            "b4d2",
+            "e3e4",
+            "d2e3",
+            "d1e1",
+            "g7g5",
+            "c1e3",
+            "d4e3",
+            "a1d1",
+            "d8e7",
+            "f4g5"
+          ],
+          "depth": 18,
+          "cp": 806
+        },
+        {
+          "move": "e8g8",
+          "pv": [
+            "e8g8",
+            "c3a2",
+            "b4c5",
+            "c1b2",
+            "d5d4",
+            "h3g5",
+            "d4e3",
+            "f1d3",
+            "c6d4",
+            "d2e3",
+            "d4e6",
+            "d1e1",
+            "c5e3",
+            "a1d1",
+            "e5f4"
+          ],
+          "depth": 18,
+          "cp": 782
+        }
+      ]
+    },
+    {
+      "bestmove": "c3a2",
+      "lines": [
+        {
+          "move": "c3a2",
+          "pv": [
+            "c3a2",
+            "b4d2",
+            "e3e4",
+            "d2e3",
+            "f1d3",
+            "e5f4",
+            "h3f4",
+            "g7g5",
+            "c1e3",
+            "d4e3"
+          ],
+          "depth": 18,
+          "cp": -849
+        },
+        {
+          "move": "f4e5",
+          "pv": [
+            "f4e5",
+            "d4c3",
+            "d2d4",
+            "c6e5",
+            "h3f2",
+            "e8g8",
+            "d1e2",
+            "e5g6",
+            "e3e4",
+            "f8e8",
+            "e2f3",
+            "c7c6",
+            "f1d3",
+            "b4d6"
+          ],
+          "depth": 18,
+          "cp": -861
+        }
+      ]
+    },
+    {
+      "bestmove": "d4c3",
+      "lines": [
+        {
+          "move": "d4c3",
+          "pv": [
+            "d4c3",
+            "d2d3",
+            "d8d7",
+            "f4e5",
+            "d7h3",
+            "e5f6",
+            "h3g2",
+            "f6g7",
+            "e8c8",
+            "g7h8q",
+            "d8h8",
+            "d3d4",
+            "g2h1",
+            "d1e2",
+            "h1h2",
+            "e2f3",
+            "h2c2"
+          ],
+          "depth": 18,
+          "cp": 939
+        },
+        {
+          "move": "d4e3",
+          "pv": [
+            "d4e3",
+            "f4e5",
+            "e3d2",
+            "c1a3",
+            "b4c3",
+            "e5f6",
+            "d8f6",
+            "h1f1",
+            "e8c8",
+            "h3g1",
+            "c3a1",
+            "f1f6",
+            "g7f6",
+            "b5c6",
+            "b7c6"
+          ],
+          "depth": 18,
+          "cp": 933
+        }
+      ]
+    },
+    {
+      "bestmove": "b5c6",
+      "lines": [
+        {
+          "move": "b5c6",
+          "pv": [
+            "b5c6",
+            "b7c6",
+            "c3a2",
+            "b4e7",
+            "h3g5",
+            "c6c5",
+            "d2d3",
+            "f6g4",
+            "e3e4",
+            "g4f2",
+            "d1e2",
+            "f2h1",
+            "g5f3"
+          ],
+          "depth": 18,
+          "cp": -760
+        },
+        {
+          "move": "e3d4",
+          "pv": [
+            "e3d4",
+            "a6b5",
+            "c1b2",
+            "b4c3",
+            "b2c3",
+            "b5a4",
+            "d4e5",
+            "f6d5",
+            "c3b2",
+            "c6b4",
+            "a1a4",
+            "a8a4",
+            "b3a4"
+          ],
+          "depth": 18,
+          "cp": -849
+        }
+      ]
+    },
+    {
+      "bestmove": "b7c6",
+      "lines": [
+        {
+          "move": "b7c6",
+          "pv": [
+            "b7c6",
+            "c3a2",
+            "b4e7",
+            "f4e5",
+            "f6g4",
+            "h1f1",
+            "e8g8",
+            "d1e1",
+            "d4e3",
+            "h3f4",
+            "f8e8",
+            "h2h3",
+            "g4h2",
+            "f1h1",
+            "e3d2",
+            "c1d2"
+          ],
+          "depth": 18,
+          "cp": 769
+        },
+        {
+          "move": "f6d7",
+          "pv": [
+            "f6d7",
+            "c6b7",
+            "d4c3",
+            "d1e2",
+            "a8b8",
+            "b7d5",
+            "d7f6",
+            "d5c6",
+            "e8f8",
+            "h3g5",
+            "c3d2",
+            "g5h7",
+            "h8h7"
+          ],
+          "depth": 18,
+          "cp": 591
+        }
+      ]
+    },
+    {
+      "bestmove": "e3e4",
+      "lines": [
+        {
+          "move": "e3e4",
+          "pv": [
+            "e3e4",
+            "b4c3",
+            "d2c3",
+            "f6e4",
+            "h1e1",
+            "e4c3",
+            "d1d2",
+            "e8g8",
+            "e1e5",
+            "f8e8",
+            "c1a3",
+            "e8e5",
+            "f4e5",
+            "d8d5",
+            "h3f4",
+            "d5e5",
+            "a1e1"
+          ],
+          "depth": 18,
+          "cp": -783
+        },
+        {
+          "move": "c3a2",
+          "pv": [
+            "c3a2",
+            "b4d2",
+            "e3e4",
+            "f6e4",
+            "c1d2",
+            "e8g8",
+            "h1e1",
+            "f7f5",
+            "f4e5",
+            "d4d3",
+            "c2d3",
+            "d8d3",
+            "e1e4",
+            "d3e4"
+          ],
+          "depth": 18,
+          "cp": -791
+        }
+      ]
+    },
+    {
+      "bestmove": "d8d4",
+      "lines": [
+        {
+          "move": "d8d4",
+          "pv": [
+            "d8d4",
+            "c1b2",
+            "e8c8",
+            "d1c1",
+            "d4d2",
+            "c1b1",
+            "b4c3",
+            "f4e5",
+            "c3b2",
+            "b1b2",
+            "f6e4",
+            "h1c1",
+            "d2c3",
+            "b2a3"
+          ],
+          "depth": 18,
+          "cp": 956
+        },
+        {
+          "move": "b4c3",
+          "pv": [
+            "b4c3",
+            "d2c3",
+            "d8d5",
+            "h1e1",
+            "d5f3",
+            "d1d2",
+            "e8c8",
+            "h3g5",
+            "f3h5",
+            "g5f7",
+            "h5f7",
+            "h2h3",
+            "e5d4"
+          ],
+          "depth": 18,
+          "cp": 814
+        }
+      ]
+    },
+    {
+      "bestmove": "h1e1",
+      "lines": [
+        {
+          "move": "h1e1",
+          "pv": [
+            "h1e1",
+            "e8f8",
+            "c3a2",
+            "b4d6",
+            "h3g5",
+            "d8d7",
+            "c1a3",
+            "d6a3",
+            "a2c1",
+            "a3d6",
+            "c1d3"
+          ],
+          "depth": 18,
+          "cp": -703
+        },
+        {
+          "move": "c1a3",
+          "pv": [
+            "c1a3",
+            "b4a3",
+            "h1e1",
+            "e8f8",
+            "c3e4",
+            "d8d5",
+            "a1a3",
+            "f6e4",
+            "b3b4",
+            "c6c5"
+          ],
+          "depth": 18,
+          "cp": -719
+        }
+      ]
+    },
+    {
+      "bestmove": "d8d5",
+      "lines": [
+        {
+          "move": "d8d5",
+          "pv": [
+            "d8d5",
+            "h1e1",
+            "e8d7",
+            "h3g5",
+            "a8e8",
+            "h2h3",
+            "e8e1",
+            "d1e1",
+            "d5h1",
+            "e1f2",
+            "h8e8",
+            "c1b2",
+            "h1h2",
+            "f2f1",
+            "h2d2",
+            "g5f7",
+            "e8e1",
+            "a1e1",
+            "d2e1",
+            "f1g2",
+            "e1e4",
+            "g2g1"
+          ],
+          "depth": 18,
+          "cp": 1486
+        },
+        {
+          "move": "c6d5",
+          "pv": [
+            "c6d5",
+            "h1e1",
+            "f6e4",
+            "c1a3",
+            "b4a3",
+            "a1a3",
+            "e8g8",
+            "d1c1",
+            "f8e8",
+            "h3g1",
+            "c7c5",
+            "g1f3",
+            "a8b8",
+            "a3a1",
+            "d8a5"
+          ],
+          "depth": 18,
+          "cp": 927
+        }
+      ]
+    },
+    {
+      "bestmove": "h1e1",
+      "lines": [
+        {
+          "move": "h1e1",
+          "pv": [
+            "h1e1",
+            "e8d7",
+            "c1b2",
+            "d5g2",
+            "c2c3",
+            "d4c3",
+            "b2c3",
+            "b4c3",
+            "d2c3",
+            "g2h3",
+            "d1c1",
+            "h8e8",
+            "c1b2",
+            "h3h2",
+            "b2a3",
+            "e8e1",
+            "a1e1",
+            "h2g3"
+          ],
+          "depth": 18,
+          "cp": -1532
+        },
+        {
+          "move": "h3f2",
+          "pv": [
+            "h3f2",
+            "e8c8",
+            "c1a3",
+            "b4a3",
+            "a1a3",
+            "d5f3",
+            "d1c1",
+            "h8e8",
+            "g3g4",
+            "f3f2",
+            "b3b4",
+            "f6g4",
+            "b4b5",
+            "a6b5"
+          ],
+          "depth": 18,
+          "cp": -1701
+        }
+      ]
+    },
+    {
+      "bestmove": "d5f3",
+      "lines": [
+        {
+          "move": "d5f3",
+          "pv": [
+            "d5f3"
+          ],
+          "depth": 18,
+          "mate": 1
+        },
+        {
+          "move": "d5h5",
+          "pv": [
+            "d5h5",
+            "g3g4",
+            "h5g4"
+          ],
+          "depth": 18,
+          "mate": 2
+        }
+      ]
+    },
+    {
+      "bestmove": "d1e2",
+      "lines": [
+        {
+          "move": "d1e2",
+          "pv": [
+            "d1e2",
+            "e8d7",
+            "c1e3",
+            "h1g2",
+            "h3f2",
+            "a8e8",
+            "a1h1",
+            "e8e3",
+            "e2d1",
+            "g2h1",
+            "f2h1",
+            "e3e1"
+          ],
+          "depth": 18,
+          "mate": -6
+        },
+        {
+          "move": "h3g1",
+          "pv": [
+            "h3g1",
+            "h1g1",
+            "d1e2",
+            "g1g2",
+            "e2d1",
+            "g2f3"
+          ],
+          "depth": 18,
+          "mate": -3
+        }
+      ]
+    },
+    {
+      "bestmove": "e8d7",
+      "lines": [
+        {
+          "move": "e8d7",
+          "pv": [
+            "e8d7",
+            "c1e3",
+            "h1g2",
+            "h3f2",
+            "a8e8",
+            "a1h1",
+            "e8e3",
+            "e2d1",
+            "g2h1",
+            "f2h1",
+            "e3e1"
+          ],
+          "depth": 18,
+          "mate": 6
+        },
+        {
+          "move": "e8c8",
+          "pv": [
+            "e8c8",
+            "c1e3",
+            "h1g2",
+            "h3f2",
+            "h8e8",
+            "c2c3",
+            "e8e3",
+            "e2d1",
+            "g2f1",
+            "d1c2",
+            "e3e2"
+          ],
+          "depth": 18,
+          "mate": 6
+        }
+      ]
+    },
+    {
+      "bestmove": "e2f3",
+      "lines": [
+        {
+          "move": "e2f3",
+          "pv": [
+            "e2f3",
+            "e1h1",
+            "f3e2",
+            "e8d7",
+            "c1e3",
+            "h1g2",
+            "h3f2",
+            "a8e8",
+            "a1h1",
+            "e8e3",
+            "e2d1",
+            "g2h1",
+            "f2h1",
+            "e3e1"
+          ],
+          "depth": 18,
+          "mate": -7
+        }
+      ]
+    },
+    {
+      "bestmove": "e1h1",
+      "lines": [
+        {
+          "move": "e1h1",
+          "pv": [
+            "e1h1",
+            "f3e2",
+            "e8d7",
+            "c1e3",
+            "h1g2",
+            "h3f2",
+            "a8e8",
+            "a1h1",
+            "e8e3",
+            "e2d1",
+            "g2h1",
+            "f2h1",
+            "e3e1"
+          ],
+          "depth": 18,
+          "mate": 7
+        },
+        {
+          "move": "e1d1",
+          "pv": [
+            "e1d1",
+            "f3g2",
+            "d1c2",
+            "g2g1",
+            "f6g4",
+            "f4f5",
+            "c2h2",
+            "g1f1",
+            "h2h3",
+            "f1e2",
+            "h3g2",
+            "e2d1",
+            "g4f2",
+            "d1c2",
+            "e8c8",
+            "c1d2",
+            "b4d2",
+            "c2d2"
+          ],
+          "depth": 18,
+          "cp": 2820
+        }
+      ]
+    },
+    {
+      "bestmove": "c1b2",
+      "lines": [
+        {
+          "move": "c1b2",
+          "pv": [
+            "c1b2",
+            "e1e6",
+            "h3g5",
+            "e6d5",
+            "f3f2",
+            "f8e8",
+            "f2g1",
+            "h7h6",
+            "g5h3",
+            "c6c5",
+            "h3f2",
+            "e8e2",
+            "f2e4",
+            "f6e4",
+            "d3e4",
+            "d5e4"
+          ],
+          "depth": 18,
+          "cp": -2027
+        },
+        {
+          "move": "h3f2",
+          "pv": [
+            "h3f2",
+            "a8e8",
+            "c1b2",
+            "e1e6",
+            "f3g2",
+            "c6c5",
+            "a1f1",
+            "f6d5",
+            "b2c1",
+            "f7f6",
+            "g3g4",
+            "e6c6",
+            "f4f5"
+          ],
+          "depth": 18,
+          "cp": -2069
+        }
+      ]
+    },
+    {
+      "bestmove": "e1a1",
+      "lines": [
+        {
+          "move": "e1a1",
+          "pv": [
+            "e1a1",
+            "h3f2",
+            "b4d2",
+            "f3g2",
+            "f8e8",
+            "f2e4",
+            "f6e4",
+            "d3e4",
+            "e8e4",
+            "a4a5",
+            "a1a5",
+            "g2g1",
+            "a5f5",
+            "g1f2"
+          ],
+          "depth": 18,
+          "cp": 4153
+        },
+        {
+          "move": "e1d2",
+          "pv": [
+            "e1d2",
+            "h3f2",
+            "f8e8",
+            "f4f5",
+            "d2c2",
+            "h2h3",
+            "e8e5",
+            "g3g4",
+            "a8e8",
+            "h3h4"
+          ],
+          "depth": 18,
+          "cp": 3055
+        }
+      ]
+    },
+    {
+      "bestmove": "a1e1",
+      "lines": [
+        {
+          "move": "a1e1",
+          "pv": [
+            "a1e1",
+            "d2e1",
+            "h3f2",
+            "f6d5",
+            "f2e4",
+            "f7f5",
+            "e4c5",
+            "f8e8",
+            "c5d7",
+            "e1b4",
+            "d7e5"
+          ],
+          "depth": 18,
+          "cp": -1760
+        },
+        {
+          "move": "f3g2",
+          "pv": [
+            "f3g2",
+            "e1a1",
+            "h3f2",
+            "a1e1",
+            "f2e4",
+            "f6e4",
+            "d3e4",
+            "e1e4",
+            "g2f2",
+            "e4c2",
+            "f4f5",
+            "d2e3",
+            "f2e1"
+          ],
+          "depth": 18,
+          "cp": -4265
+        }
+      ]
+    },
+    {
+      "bestmove": "d2e1",
+      "lines": [
+        {
+          "move": "d2e1",
+          "pv": [
+            "d2e1",
+            "h3g5",
+            "f8e8",
+            "g5e4",
+            "f6d5",
+            "g3g4",
+            "e1b4",
+            "f4f5",
+            "g8f8",
+            "e4g5"
+          ],
+          "depth": 18,
+          "cp": 1748
+        },
+        {
+          "move": "d2b4",
+          "pv": [
+            "d2b4",
+            "e1e5",
+            "f8e8",
+            "h3g5",
+            "f6d5",
+            "e5e8",
+            "a8e8",
+            "f4f5",
+            "e8e5",
+            "g3g4",
+            "h7h6",
+            "g5e4",
+            "g8f8",
+            "f3f2",
+            "d5e3",
+            "f2f3",
+            "e3c2"
+          ],
+          "depth": 18,
+          "cp": 932
+        }
+      ]
+    },
+    {
+      "bestmove": "h3g5",
+      "lines": [
+        {
+          "move": "h3g5",
+          "pv": [
+            "h3g5",
+            "f8e8",
+            "g5e4",
+            "f6d5",
+            "g3g4",
+            "g8f8",
+            "h2h4",
+            "e1b4",
+            "f4f5",
+            "e8e5",
+            "h4h5",
+            "h7h6",
+            "f3f2",
+            "a8d8",
+            "f2g3",
+            "e5e8",
+            "g3f3",
+            "a6a5",
+            "f3f2",
+            "e8e5",
+            "f2f3"
+          ],
+          "depth": 18,
+          "cp": -1753
+        },
+        {
+          "move": "h3f2",
+          "pv": [
+            "h3f2",
+            "e1f2",
+            "f3f2",
+            "f8e8",
+            "h2h3",
+            "g8f8",
+            "g3g4",
+            "f6d5",
+            "g4g5",
+            "a8d8",
+            "h3h4",
+            "d5f4",
+            "b3b4",
+            "f4d5",
+            "b4b5",
+            "c6b5",
+            "h4h5",
+            "e8e6",
+            "a4b5"
+          ],
+          "depth": 18,
+          "cp": -1753
+        }
+      ]
+    },
+    {
+      "bestmove": "f8e8",
+      "lines": [
+        {
+          "move": "f8e8",
+          "pv": [
+            "f8e8",
+            "e2f1",
+            "e1b4",
+            "h3f2",
+            "e8e1",
+            "f1g2",
+            "a8e8",
+            "g2h3",
+            "e1e6",
+            "f4f5",
+            "e6e5",
+            "g3g4"
+          ],
+          "depth": 18,
+          "cp": 1984
+        },
+        {
+          "move": "a8e8",
+          "pv": [
+            "a8e8",
+            "e2f1",
+            "e8e3",
+            "h3g1",
+            "f8e8",
+            "f1g2",
+            "e1b4",
+            "h2h4",
+            "c6c5",
+            "g2f1",
+            "f6d5",
+            "h4h5",
+            "e3e7",
+            "g1f3",
+            "f7f6"
+          ],
+          "depth": 18,
+          "cp": 1900
+        }
+      ]
+    },
+    {
+      "bestmove": "e2f1",
+      "lines": [
+        {
+          "move": "e2f1",
+          "pv": [
+            "e2f1",
+            "e1b4",
+            "h3f2",
+            "e8e1",
+            "f1g2",
+            "a8e8",
+            "g2h3",
+            "e1e2",
+            "f2g4",
+            "f6g4",
+            "h3g4",
+            "e2c2",
+            "h2h4",
+            "c2c3",
+            "h4h5",
+            "c3d3",
+            "h5h6",
+            "g7h6",
+            "g4h3",
+            "d3c3",
+            "h3g2"
+          ],
+          "depth": 18,
+          "cp": -2118
+        },
+        {
+          "move": "e2f3",
+          "pv": [
+            "e2f3",
+            "e8e3",
+            "f3g2",
+            "e3e2",
+            "g2f1",
+            "a8e8",
+            "b3b4",
+            "e1b4",
+            "h3g1",
+            "e2c2",
+            "g1f3",
+            "f6d5",
+            "f4f5",
+            "d5e3",
+            "f1g1"
+          ],
+          "depth": 18,
+          "cp": -2252
+        }
+      ]
+    },
+    {
+      "bestmove": "e1b4",
+      "lines": [
+        {
+          "move": "e1b4",
+          "pv": [
+            "e1b4",
+            "h3g5",
+            "e8e1",
+            "f1g2",
+            "a8e8",
+            "g2h3",
+            "e1e2",
+            "g5f3",
+            "c6c5",
+            "f3e5",
+            "e2c2",
+            "g3g4",
+            "f6d5",
+            "g4g5",
+            "d5f4",
+            "h3g4"
+          ],
+          "depth": 18,
+          "cp": 2211
+        },
+        {
+          "move": "e8e3",
+          "pv": [
+            "e8e3",
+            "h3g5",
+            "e1b4",
+            "h2h4",
+            "a8e8",
+            "h4h5",
+            "e3e1",
+            "f1f2",
+            "e1e2",
+            "f2g1",
+            "e2c2",
+            "g5f3",
+            "c6c5",
+            "f3e5",
+            "c2c1",
+            "g1h2"
+          ],
+          "depth": 18,
+          "cp": 2069
+        }
+      ]
+    },
+    {
+      "bestmove": "h3g1",
+      "lines": [
+        {
+          "move": "h3g1",
+          "pv": [
+            "h3g1",
+            "a8e8",
+            "f1g2",
+            "c6c5",
+            "g2h3",
+            "e1b4",
+            "h3h4",
+            "f6d5",
+            "h4g4",
+            "g8f8",
+            "g4h5",
+            "h7h6",
+            "f4f5",
+            "d5f6",
+            "h5h4",
+            "e3e5",
+            "g3g4",
+            "g7g5",
+            "f5g6"
+          ],
+          "depth": 18,
+          "cp": -2069
+        },
+        {
+          "move": "a4a5",
+          "pv": [
+            "a4a5",
+            "a8e8",
+            "h3g5",
+            "e1b4",
+            "f1g1",
+            "e3e1",
+            "g1g2",
+            "e1c1",
+            "g2h3",
+            "c1c2",
+            "g5f3",
+            "f6d5",
+            "f3d4",
+            "c2c3",
+            "f4f5"
+          ],
+          "depth": 18,
+          "cp": -2138
+        }
+      ]
+    },
+    {
+      "bestmove": "a8e8",
+      "lines": [
+        {
+          "move": "a8e8",
+          "pv": [
+            "a8e8",
+            "f2e4",
+            "f6e4",
+            "d3e4",
+            "e3e4",
+            "g3g4",
+            "e1b4",
+            "g4g5",
+            "e4f4",
+            "f1g2",
+            "f4e4",
+            "g2f1",
+            "e4e1",
+            "f1g2",
+            "e1e2",
+            "g2f3"
+          ],
+          "depth": 18,
+          "cp": 2221
+        },
+        {
+          "move": "e1f2",
+          "pv": [
+            "e1f2",
+            "f1f2",
+            "a8e8",
+            "f2f1",
+            "e3e1",
+            "f1g2",
+            "e1c1",
+            "g2h3",
+            "c1c2",
+            "f4f5",
+            "g8f8",
+            "b3b4",
+            "f6d5",
+            "b4b5",
+            "c6b5",
+            "a4b5",
+            "a6b5",
+            "h3g4",
+            "c2h2",
+            "g4f3",
+            "h2a2",
+            "g3g4"
+          ],
+          "depth": 18,
+          "cp": 2160
+        }
+      ]
+    },
+    {
+      "bestmove": "f2e4",
+      "lines": [
+        {
+          "move": "f2e4",
+          "pv": [
+            "f2e4",
+            "f6e4",
+            "d3e4",
+            "e3e4",
+            "f1g2",
+            "e1b4",
+            "f4f5",
+            "e4e2",
+            "g2f3",
+            "e2c2",
+            "f5f6",
+            "e8e3",
+            "f3g4",
+            "g7f6",
+            "g4h5"
+          ],
+          "depth": 18,
+          "cp": -2415
+        },
+        {
+          "move": "f2h3",
+          "pv": [
+            "f2h3",
+            "e3e2",
+            "h3g5",
+            "e2c2",
+            "g5f3",
+            "e1b4",
+            "f3e5",
+            "f6d5",
+            "h2h4",
+            "f7f6",
+            "g3g4",
+            "f6e5",
+            "f4e5",
+            "d5e3",
+            "f1g1",
+            "c2c1",
+            "g1h2",
+            "e3g4",
+            "h2h3",
+            "g4e5"
+          ],
+          "depth": 18,
+          "cp": -2525
+        }
+      ]
+    },
+    {
+      "bestmove": "f6e4",
+      "lines": [
+        {
+          "move": "f6e4",
+          "pv": [
+            "f6e4",
+            "d3e4",
+            "e3e4",
+            "f1g2",
+            "e4e2",
+            "g2h3",
+            "e2c2",
+            "b3b4",
+            "e1b4",
+            "f4f5",
+            "d4d3",
+            "a4a5",
+            "c6c5",
+            "f5f6"
+          ],
+          "depth": 18,
+          "cp": 2628
+        },
+        {
+          "move": "f6d5",
+          "pv": [
+            "f6d5",
+            "e4c5",
+            "a6a5",
+            "c5d7",
+            "f7f6",
+            "d7c5",
+            "e1b4",
+            "c5b7",
+            "e3e7",
+            "h2h4",
+            "h7h5",
+            "f4f5",
+            "d5e3",
+            "f1f2",
+            "e3f5",
+            "g3g4",
+            "h5g4"
+          ],
+          "depth": 18,
+          "cp": 1922
+        }
+      ]
+    },
+    {
+      "bestmove": "b3b4",
+      "lines": [
+        {
+          "move": "b3b4",
+          "pv": [
+            "b3b4",
+            "e1b4",
+            "d3e4",
+            "e3e4",
+            "f1g2",
+            "e4e2",
+            "g2h3",
+            "e2c2",
+            "h3g4",
+            "d4d3",
+            "g4h4",
+            "d3d2",
+            "a4a5",
+            "d2d1r",
+            "g3g4",
+            "b4e1",
+            "h4h5",
+            "d1d5",
+            "f4f5"
+          ],
+          "depth": 18,
+          "cp": -3070
+        },
+        {
+          "move": "d3e4",
+          "pv": [
+            "d3e4",
+            "e3e4",
+            "f1g2",
+            "e4e2",
+            "g2h3",
+            "e2c2",
+            "b3b4",
+            "e1b4",
+            "h3g4",
+            "d4d3",
+            "g4h4",
+            "d3d2",
+            "a4a5",
+            "d2d1r",
+            "g3g4",
+            "b4e1",
+            "h4h5",
+            "d1d5",
+            "f4f5"
+          ],
+          "depth": 18,
+          "cp": -3077
+        }
+      ]
+    },
+    {
+      "bestmove": "e3e4",
+      "lines": [
+        {
+          "move": "e3e4",
+          "pv": [
+            "e3e4",
+            "b3b4",
+            "e1b4",
+            "f1g2",
+            "e4e2",
+            "g2h3",
+            "e2c2",
+            "h3g4",
+            "d4d3",
+            "a4a5",
+            "c2h2",
+            "g4g5"
+          ],
+          "depth": 18,
+          "cp": 3187
+        },
+        {
+          "move": "e8e4",
+          "pv": [
+            "e8e4",
+            "f4f5",
+            "e3c3",
+            "f1g2",
+            "c3c2",
+            "g2f3",
+            "e4e3",
+            "f3g4",
+            "e1b4",
+            "f5f6",
+            "g7f6",
+            "g4f4",
+            "e3e8",
+            "h2h3"
+          ],
+          "depth": 18,
+          "cp": 2449
+        }
+      ]
+    },
+    {
+      "bestmove": "c2c3",
+      "lines": [
+        {
+          "move": "c2c3",
+          "pv": [
+            "c2c3",
+            "d4c3",
+            "f1g2",
+            "c3c2",
+            "b3b4",
+            "c2c1q",
+            "a4a5",
+            "c1d2",
+            "g2h3",
+            "d2d7",
+            "h3g2",
+            "e3e2",
+            "g2g1",
+            "e1f2",
+            "g1g2"
+          ],
+          "depth": 18,
+          "cp": -4045
+        },
+        {
+          "move": "f1g2",
+          "pv": [
+            "f1g2",
+            "e3e2",
+            "g2h3",
+            "e1b4",
+            "h3g4",
+            "e2c2",
+            "g4f3",
+            "e4e3",
+            "f3g4",
+            "e3e8",
+            "h2h3",
+            "d4d3",
+            "g4h4",
+            "e8e3",
+            "h4g4"
+          ],
+          "depth": 18,
+          "cp": -4187
+        }
+      ]
+    },
+    {
+      "bestmove": "e1h4",
+      "lines": [
+        {
+          "move": "e1h4",
+          "pv": [
+            "e1h4",
+            "f1g1",
+            "e3e2",
+            "c2c3",
+            "e2f2",
+            "c3d4",
+            "e4e1"
+          ],
+          "depth": 18,
+          "mate": 4
+        },
+        {
+          "move": "e4f4",
+          "pv": [
+            "e4f4",
+            "f1g1",
+            "e1h4",
+            "g1g2",
+            "f4g4",
+            "g2f1",
+            "e3e1"
+          ],
+          "depth": 18,
+          "mate": 4
+        }
+      ]
+    },
+    {
+      "bestmove": "h2h3",
+      "lines": [
+        {
+          "move": "h2h3",
+          "pv": [
+            "h2h3",
+            "e3e2",
+            "f1g1",
+            "e2f2",
+            "c2c3",
+            "e4e1"
+          ],
+          "depth": 18,
+          "mate": -3
+        },
+        {
+          "move": "c2c3",
+          "pv": [
+            "c2c3",
+            "e4f4",
+            "f1g1",
+            "f4g4",
+            "g1f1",
+            "e3e1"
+          ],
+          "depth": 18,
+          "mate": -3
+        }
+      ]
+    },
+    {
+      "bestmove": "e4f4",
+      "lines": [
+        {
+          "move": "e4f4",
+          "pv": [
+            "e4f4",
+            "g4g5",
+            "f4g4",
+            "g2f1",
+            "e3e1"
+          ],
+          "depth": 18,
+          "mate": 3
+        },
+        {
+          "move": "e3e2",
+          "pv": [
+            "e3e2",
+            "g2h3",
+            "h4g5",
+            "f4g5",
+            "e4e3",
+            "h3h4",
+            "e2h2"
+          ],
+          "depth": 18,
+          "mate": 4
+        }
+      ]
+    },
+    {
+      "bestmove": "g2h3",
+      "lines": [
+        {
+          "move": "g2h3",
+          "pv": [
+            "g2h3",
+            "h4g5",
+            "f4g5",
+            "e4e3",
+            "h3h4",
+            "e2h2"
+          ],
+          "depth": 18,
+          "mate": -3
+        },
+        {
+          "move": "g2g1",
+          "pv": [
+            "g2g1",
+            "e2f2",
+            "c2c3",
+            "e4e1"
+          ],
+          "depth": 18,
+          "mate": -2
+        }
+      ]
+    },
+    {
+      "bestmove": "h4g5",
+      "lines": [
+        {
+          "move": "h4g5",
+          "pv": [
+            "h4g5",
+            "f4g5",
+            "e4e3",
+            "h3h4",
+            "e2h2"
+          ],
+          "depth": 18,
+          "mate": 3
+        },
+        {
+          "move": "h4e1",
+          "pv": [
+            "h4e1",
+            "g4g5",
+            "e4f4",
+            "g5g6",
+            "f4h4"
+          ],
+          "depth": 18,
+          "mate": 3
+        }
+      ]
+    },
+    {
+      "bestmove": "g4g5",
+      "lines": [
+        {
+          "move": "g4g5",
+          "pv": [
+            "g4g5",
+            "e4e3",
+            "h3g4",
+            "e2g2",
+            "g4h4",
+            "g2h2",
+            "h4g4",
+            "h7h5",
+            "g5h6",
+            "h2g2",
+            "g4f5",
+            "g7g6",
+            "f5f6",
+            "e3e6"
+          ],
+          "depth": 18,
+          "mate": -7
+        },
+        {
+          "move": "c2c3",
+          "pv": [
+            "c2c3",
+            "e4e3"
+          ],
+          "depth": 18,
+          "mate": -1
+        }
+      ]
+    },
+    {
+      "bestmove": "e4e3",
+      "lines": [
+        {
+          "move": "e4e3",
+          "pv": [
+            "e4e3"
+          ],
+          "depth": 18,
+          "mate": 1
+        },
+        {
+          "move": "f6g5",
+          "pv": [
+            "f6g5",
+            "f4g5",
+            "e4e3",
+            "g3h4",
+            "e2h2"
+          ],
+          "depth": 18,
+          "mate": 3
+        }
+      ]
+    }
+  ]
+}

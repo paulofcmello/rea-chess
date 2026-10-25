@@ -11,7 +11,7 @@ const require = createRequire(import.meta.url)
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const temp = await mkdtemp(join(tmpdir(), 'rea-explanations-'))
 try {
-  for (const name of ['game', 'review', 'explain']) {
+  for (const name of ['game', 'review', 'reviewCalibration', 'explain']) {
     const source = await readFile(join(root, 'src/lib', `${name}.ts`), 'utf8')
     const { outputText } = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2023, module: ts.ModuleKind.ESNext } })
     await writeFile(join(temp, `${name}.mjs`), outputText.replaceAll("'chess.js'", JSON.stringify(pathToFileURL(require.resolve('chess.js')).href)).replace(/from '(\.\/\w+)'/g, "from '$1.mjs'"))

@@ -1,5 +1,6 @@
 import { load, save, updateStored } from './storage'
 import type { CcGame } from './ccGames'
+import { REVIEW_CALIBRATION } from './reviewCalibration'
 import type { Review, ReviewedMove } from './review'
 
 export const RESULT_COLORS = { win: '#81b64c', draw: '#8b8987', loss: '#fa412d' }
@@ -22,7 +23,7 @@ export interface InsightGame {
   termination: string
 }
 export type InsightMove = Pick<ReviewedMove, 'san' | 'uci' | 'color' | 'cls' | 'before' | 'after'>
-export interface InsightReview { accuracy: Review['accuracy']; moves: InsightMove[] }
+export interface InsightReview { calibrationVersion?: number; accuracy: Review['accuracy']; moves: InsightMove[] }
 
 export function rememberImportedGames(username: string, games: CcGame[]) {
   const key = `games:${username.trim().toLowerCase()}`
@@ -36,6 +37,7 @@ export function rememberLocalGame(game: InsightGame) {
 /** Compact summaries outlive the 30 full reviews retained for interactive playback. */
 export function rememberInsightReview(key: string, review: Review) {
   const summary: InsightReview = {
+    calibrationVersion: review.calibrationVersion ?? 1,
     accuracy: review.accuracy,
     moves: review.moves.map(({ san, uci, color, cls, before, after }) => ({ san, uci, color, cls, before, after })),
   }
@@ -44,7 +46,8 @@ export function rememberInsightReview(key: string, review: Review) {
 }
 
 export function insightReview(key: string): InsightReview | null {
-  return load<InsightReview | null>(`insights:${key}`, null) ?? load<Review | null>(key, null)
+  const review = load<InsightReview | null>(`insights:${key}`, null) ?? load<Review | null>(key, null)
+  return review && (review.calibrationVersion ?? 1) === REVIEW_CALIBRATION.classificationVersion ? review : null
 }
 
 export function timeClassFor(control: string): InsightTimeClass {

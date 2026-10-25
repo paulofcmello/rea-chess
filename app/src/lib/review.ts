@@ -1,6 +1,7 @@
 import { Chess } from 'chess.js'
 import type { Engine, EngineLine, SearchResult } from './engine'
 import { buildPositions, material } from './game'
+import { REVIEW_CALIBRATION } from './reviewCalibration'
 
 export type Classification = 'brilliant' | 'great' | 'best' | 'excellent' | 'good' | 'book' | 'inaccuracy' | 'mistake' | 'miss' | 'blunder' | 'forced'
 export interface PlyEval { cp?: number; mate?: number }
@@ -17,7 +18,11 @@ export interface Review {
   counts: { w: Record<Classification, number>; b: Record<Classification, number> }
   /** Leading book plies used for this review (absent in reviews made before the opening book). */
   book?: number
+  gameRating?: { w: number | null; b: number | null }
+  ratings?: PlayerRatings
+  calibrationVersion?: number
 }
+export interface PlayerRatings { w?: number; b?: number }
 
 export const CLASSIFICATIONS: Classification[] = ['brilliant', 'great', 'best', 'excellent', 'good', 'book', 'inaccuracy', 'mistake', 'miss', 'blunder', 'forced']
 export const CLASS_COLOR: Record<Classification, string> = {
@@ -31,14 +36,17 @@ export const CLASS_LABEL: Record<Classification, string> = {
 export const BAD_MOVES: Classification[] = ['inaccuracy', 'mistake', 'miss', 'blunder']
 export const MARKED_MOVES: Classification[] = ['brilliant', 'great', ...BAD_MOVES]
 
-export function ep(cp: number) { return 1 / (1 + Math.exp(-0.00368208 * cp)) }
+export function ep(cp: number, rating = 1500) {
+  const scale = REVIEW_CALIBRATION.epScale * Math.exp(REVIEW_CALIBRATION.epRatingSlope * ((Number.isFinite(rating) ? rating : 1500) - 1500) / 1000)
+  return 1 / (1 + Math.exp(-scale * cp))
+}
 
 /** Expected points from a white-perspective evaluation, for either player. */
-export function expectedPoints(score: PlyEval, color: 'w' | 'b' = 'w') {
+export function expectedPoints(score: PlyEval, color: 'w' | 'b' = 'w', rating?: number) {
   // A terminal mate has mate=0 and a signed cp sentinel to retain the winner.
   const white = score.mate != null
     ? ((score.mate === 0 ? (score.cp ?? 0) : score.mate) > 0 ? 1 : 0)
-    : ep(score.cp ?? 0)
+    : ep(score.cp ?? 0, rating)
   return color === 'w' ? white : 1 - white
 }
 
@@ -70,20 +78,43 @@ export function classifyMove({ loss, played, best, legalMoves, ply = 0, bookPlie
   return 'blunder'
 }
 
-// Lichess uses 0.04354; 0.08 calibrated against chess.com (87.9/79.2 vs ours 87.0/79.5 on a sample game).
-const ACCURACY_K = 0.08
-
 /** Arithmetic/harmonic mean of per-move Lichess accuracies, rounded to one decimal. */
-export function accuracyOf(moves: Pick<ReviewedMove, 'before' | 'after' | 'color' | 'cls'>[]) {
+export function accuracyOf(moves: (Pick<ReviewedMove, 'before' | 'after' | 'color' | 'cls'> & { rating?: number })[], rating?: number) {
   if (!moves.length) return 100
   const values = moves.map((m) => {
     if (m.cls === 'book' || m.cls === 'forced') return 100
-    const drop = 100 * (expectedPoints(m.before, m.color) - expectedPoints(m.after, m.color))
-    return Math.max(0, Math.min(100, 103.1668 * Math.exp(-ACCURACY_K * drop) - 3.1669))
+    const playerRating = rating ?? m.rating
+    const drop = 100 * (expectedPoints(m.before, m.color, playerRating) - expectedPoints(m.after, m.color, playerRating))
+    return Math.max(0, Math.min(100, 103.1668 * Math.exp(-REVIEW_CALIBRATION.accuracyK * drop) - 3.1669))
   })
   const arithmetic = values.reduce((a, b) => a + b, 0) / values.length
   const harmonic = values.includes(0) ? 0 : values.length / values.reduce((a, b) => a + 1 / b, 0)
-  return Math.round((arithmetic + harmonic) / 2 * 10) / 10
+  const weight = REVIEW_CALIBRATION.arithmeticWeight
+  return Math.round((weight * arithmetic + (1 - weight) * harmonic) * 10) / 10
+}
+
+/** null means too few moves; undefined means a validated model or player rating is unavailable. */
+export function gameRatingOf(input: {
+  accuracy: number; rating?: number; opponentRating?: number; opponentAccuracy: number; moveCount: number
+}): number | null | undefined {
+  if (input.moveCount < REVIEW_CALIBRATION.minimumMoves) return null
+  const model = REVIEW_CALIBRATION.gameRating
+  if (!model || model.features.some(feature => !Number.isFinite(input[feature]))) return undefined
+  const value = model.coefficients[0] + model.features.reduce((sum, feature, i) => sum + model.coefficients[i + 1] * input[feature]!, 0)
+  return Math.max(0, Math.round(value / 50) * 50)
+}
+
+/** Refresh derived summaries from cached evals without running Stockfish again. */
+export function refreshReview(review: Review, ratings: PlayerRatings = review.ratings ?? {}): Review {
+  const sides = { w: review.moves.filter(m => m.color === 'w'), b: review.moves.filter(m => m.color === 'b') }
+  const accuracy = { w: accuracyOf(sides.w, ratings.w), b: accuracyOf(sides.b, ratings.b) }
+  const rating = (color: 'w' | 'b') => {
+    const opponent = color === 'w' ? 'b' : 'w'
+    return gameRatingOf({ accuracy: accuracy[color], rating: ratings[color], opponentRating: ratings[opponent], opponentAccuracy: accuracy[opponent], moveCount: sides[color].length })
+  }
+  const w = rating('w'), b = rating('b')
+  return { ...review, accuracy, ratings, calibrationVersion: REVIEW_CALIBRATION.classificationVersion,
+    gameRating: w !== undefined && b !== undefined ? { w, b } : undefined }
 }
 
 /** Counts SAN tokens after the opening name's first numbered move in ECOUrl. */
@@ -129,7 +160,7 @@ function isSacrifice(beforeFen: string, afterFen: string, pv: string[], color: '
 }
 
 // bookPlies is optional because opening metadata lives in the PGN, outside SAN/startFen.
-export async function reviewGame(startFen: string, sans: string[], engine: Pick<Engine, 'search'>, onProgress: (done: number, total: number) => void, bookPlies = 0): Promise<Review> {
+export async function reviewGame(startFen: string, sans: string[], engine: Pick<Engine, 'search'>, onProgress: (done: number, total: number) => void, bookPlies = 0, ratings: PlayerRatings = {}): Promise<Review> {
   const { fens } = buildPositions(startFen, sans)
   const evals: PlyEval[] = []
   const searches: (SearchResult | null)[] = []
@@ -163,20 +194,20 @@ export async function reviewGame(startFen: string, sans: string[], engine: Pick<
     const best = lines[0]?.move ?? uci
     let bestSan = ''
     try { bestSan = uciMove(new Chess(fens[i]), best).san } catch { /* no legal engine line */ }
-    const beforeEP = expectedPoints(evals[i], color)
-    const afterEP = expectedPoints(evals[i + 1], color)
+    const beforeEP = expectedPoints(evals[i], color, ratings[color])
+    const afterEP = expectedPoints(evals[i + 1], color, ratings[color])
     const loss = Math.max(0, beforeEP - afterEP)
     const cls = classifyMove({
       loss, played: uci, best, legalMoves, ply: i, bookPlies, beforeEP, afterEP,
       sacrifice: isSacrifice(fens[i], fens[i + 1], searches[i + 1]?.lines[0]?.pv ?? [], color),
-      secondGap: lines[1] ? expectedPoints(toWhite(lines[0], color), color) - expectedPoints(toWhite(lines[1], color), color) : 0,
+      secondGap: lines[1] ? expectedPoints(toWhite(lines[0], color), color, ratings[color]) - expectedPoints(toWhite(lines[1], color), color, ratings[color]) : 0,
       previousClass: moves[i - 1]?.cls,
-      previousEP: i > 0 ? expectedPoints(evals[i - 1], color) : undefined,
+      previousEP: i > 0 ? expectedPoints(evals[i - 1], color, ratings[color]) : undefined,
     })
     moves.push({ san: sans[i], uci, color, cls, before: evals[i], after: evals[i + 1], best, bestSan, loss, bestLine: lines[0]?.pv.slice(0, 12) ?? [], refutation: searches[i + 1]?.lines[0]?.pv.slice(0, 12) ?? [] })
     counts[color][cls]++
   }
-  return { moves, evals, counts, book: bookPlies, accuracy: { w: accuracyOf(moves.filter((m) => m.color === 'w')), b: accuracyOf(moves.filter((m) => m.color === 'b')) } }
+  return refreshReview({ moves, evals, counts, book: bookPlies, accuracy: { w: 100, b: 100 } }, ratings)
 }
 
 const PHRASES: Record<Classification, string[]> = {

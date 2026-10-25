@@ -3125,6 +3125,8 @@ h2 {
 .review-accuracy { justify-self: center; width: 64px; padding: 8px 2px; border-radius: 5px; text-align: center; font-family: 'Chess Sans', sans-serif; font-size: 22px; font-weight: 800; }
 .review-accuracy.white { background: #fff; color: #312e2b; }
 .review-accuracy.black { background: #302e2b; color: #fff; }
+.review-rating-message { margin: 0; color: var(--muted); font-size: 13px; text-align: center; }
+.review-summary-divider { width: 100%; border: 0; border-top: 1px solid rgba(255,255,255,.1); margin: 0; }
 .review-tallies { border-top: 1px solid rgba(255,255,255,.1); padding-top: 12px; }
 /* Captured tally-row: 40px rows, heading font 17px/20px, weight 700. */
 .review-tally { display: grid; grid-template-columns: 1.5fr 1fr 22px 1fr; align-items: center; min-height: 33px; gap: 4px; }
